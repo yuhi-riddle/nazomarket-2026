@@ -7,7 +7,7 @@ import {
   exportCartText,
   nazocolleProgress,
   removeItem,
-  setPriority,
+  toggleItem,
   setQty,
   toggleBought,
   type CartItem,
@@ -19,32 +19,37 @@ const prices: Record<string, number | null> = { a: 1000, b: 2500, c: null, d: 50
 const priceOf = (id: string) => prices[id] ?? null;
 
 const items: CartItem[] = [
-  { productId: "a", priority: "must", qty: 2, bought: true },
-  { productId: "b", priority: "want", qty: 1, bought: false },
-  { productId: "c", priority: "want", qty: 1, bought: true },
-  { productId: "d", priority: "maybe", qty: 3, bought: false },
+  { productId: "a", qty: 2, bought: true },
+  { productId: "b", qty: 1, bought: false },
+  { productId: "c", qty: 1, bought: true },
+  { productId: "d", qty: 3, bought: false },
 ];
 
 describe("リストの操作", () => {
-  it("追加は末尾に数量1・未購入で入り、同じ商品なら優先度だけ変える", () => {
-    const one = addItem([], "a", "want");
-    expect(one).toEqual([{ productId: "a", priority: "want", qty: 1, bought: false }]);
-    expect(addItem(one, "a", "must")).toEqual([{ productId: "a", priority: "must", qty: 1, bought: false }]);
+  it("追加は末尾に数量1・未購入で入り、同じ商品なら何も変えない", () => {
+    const one = addItem([], "a");
+    expect(one).toEqual([{ productId: "a", qty: 1, bought: false }]);
+    expect(addItem(one, "a")).toEqual(one);
+  });
+  it("toggleItem は入っていなければ入れ、入っていれば外す", () => {
+    const one = toggleItem([], "a");
+    expect(one).toEqual([{ productId: "a", qty: 1, bought: false }]);
+    expect(toggleItem(one, "a")).toEqual([]);
   });
   it("数量は1〜99に収める", () => {
     expect(setQty(items, "a", 0)[0].qty).toBe(1);
     expect(setQty(items, "a", 120)[0].qty).toBe(99);
     expect(setQty(items, "a", 4.7)[0].qty).toBe(4);
   });
-  it("優先度の変更・削除・買った印の切り替え", () => {
-    expect(setPriority(items, "d", "must")[3].priority).toBe("must");
+  it("削除・買った印の切り替え", () => {
     expect(removeItem(items, "b").map((i) => i.productId)).toEqual(["a", "c", "d"]);
     expect(toggleBought(items, "b")[1].bought).toBe(true);
     expect(toggleBought(items, "a")[0].bought).toBe(false);
   });
   it("元の配列を変えない", () => {
     const copy = structuredClone(items);
-    addItem(items, "x", "must");
+    addItem(items, "x");
+    toggleItem(items, "a");
     setQty(items, "a", 5);
     toggleBought(items, "a");
     expect(items).toEqual(copy);
@@ -52,20 +57,11 @@ describe("リストの操作", () => {
 });
 
 describe("cartTotals", () => {
-  const t = cartTotals(items, priceOf);
-  it("優先度ごとの金額（価格×数量）と件数、価格不明の件数", () => {
-    expect(t.byPriority.must).toEqual({ amount: 2000, items: 1, qty: 2, unknownPrice: 0 });
-    expect(t.byPriority.want).toEqual({ amount: 2500, items: 2, qty: 2, unknownPrice: 1 });
-    expect(t.byPriority.maybe).toEqual({ amount: 1500, items: 1, qty: 3, unknownPrice: 0 });
-  });
-  it("累計は 絶対だけ / できれば込み / 全部。価格不明は混ぜず件数を別に出す", () => {
-    expect(t.cumulative).toEqual({ must: 2000, mustWant: 4500, all: 6000 });
-    expect(t.unknownPrice).toBe(1);
-    expect(t.items).toBe(4);
-    expect(t.qty).toBe(7);
+  it("合計（価格×数量）と件数・点数。価格不明は混ぜず件数を別に出す", () => {
+    expect(cartTotals(items, priceOf)).toEqual({ amount: 6000, unknownPrice: 1, items: 4, qty: 7 });
   });
   it("空のリスト", () => {
-    expect(cartTotals([], priceOf).cumulative).toEqual({ must: 0, mustWant: 0, all: 0 });
+    expect(cartTotals([], priceOf)).toEqual({ amount: 0, unknownPrice: 0, items: 0, qty: 0 });
   });
 });
 
@@ -78,7 +74,7 @@ describe("budgetStatus", () => {
   });
 });
 
-describe("daySummary（当日モード）", () => {
+describe("daySummary（買った分）", () => {
   it("買った分の金額・点数、残り予算、まだ買っていない件数", () => {
     expect(daySummary(items, priceOf, 10000)).toEqual({
       spent: 2000,
@@ -117,12 +113,12 @@ describe("exportCartText", () => {
     booths,
     layout,
   );
-  it("優先度ごとに ブース番号・団体・商品・価格×数量 を並べ、最後に合計を書く", () => {
+  it("ブース番号順に ブース番号・団体・商品・価格×数量 を並べ、最後に合計を書く（場所未定は最後）", () => {
     const text = exportCartText(
       [
-        { productId: "p01", priority: "must", qty: 1, bought: false },
-        { productId: "p02", priority: "must", qty: 1, bought: false },
-        { productId: "p03", priority: "maybe", qty: 2, bought: true },
+        { productId: "p01", qty: 1, bought: false },
+        { productId: "p02", qty: 1, bought: false },
+        { productId: "p03", qty: 2, bought: true },
       ],
       catalog,
     );
@@ -130,13 +126,11 @@ describe("exportCartText", () => {
       [
         "ナゾトキマーケット2026 買うものリスト",
         "",
-        "【絶対】",
+        "・A1 ナゾトキ商店「缶バッジ」500円×2（買った）",
         "・Ca1 謎屋「封筒の謎」2,000円",
         "・番号未定 場所未定「どこかの謎」価格不明",
-        "【余裕があれば】",
-        "・A1 ナゾトキ商店「缶バッジ」500円×2（買った）",
         "",
-        "絶対だけで2,000円／できれば込みで2,000円／全部で3,000円（価格不明1件）",
+        "合計3,000円（価格不明1件）",
       ].join("\n"),
     );
   });

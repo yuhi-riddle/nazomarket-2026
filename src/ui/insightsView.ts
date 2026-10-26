@@ -1,12 +1,9 @@
 import { catalog, products, productById, venueLayout } from "../data.ts";
 import {
-  addItem,
   cartTotals,
-  removeItem,
-  setPriority,
   setQty,
+  toggleItem,
   type CartItem,
-  type Priority,
 } from "../logic/cart.ts";
 import { areaMatchCounts, recommend, SCORE_RULES, type Prefs, type Scored } from "../logic/insights.ts";
 import type { AppState } from "../state.ts";
@@ -31,7 +28,7 @@ const playStyleNames: Record<Prefs["playStyle"], string> = {
 function remainingBudget(state: AppState): number | null {
   if (state.budget === null) return null;
   const totals = cartTotals(state.items, (id) => productById.get(id)?.price ?? null);
-  return Math.max(0, state.budget - totals.cumulative.all);
+  return Math.max(0, state.budget - totals.amount);
 }
 
 function difficultyValue(value: string): Prefs["difficultyMin"] {
@@ -222,6 +219,7 @@ export function insightsView(store: AppStore): InsightsView {
   let scoredForPrefs: Scored[] = [];
   let insightMap: VenueMapElement | undefined;
   let renderedRecommendationIds: string[] = [];
+  let pinnedRecommendationId: string | undefined;
 
   const syncControls = (state: AppState) => {
     const budgetChanged = state.prefs !== previousPrefs
@@ -290,29 +288,29 @@ export function insightsView(store: AppStore): InsightsView {
   const renderRecommendations = (state: AppState) => {
     const excluded = new Set(state.items.map((item) => item.productId));
     const recommendations = scoredForPrefs.filter((item) => !excluded.has(item.view.product.id)).slice(0, 10);
+    if (pinnedRecommendationId && !recommendations.some((item) => item.view.product.id === pinnedRecommendationId)) {
+      const pinned = scoredForPrefs.find((item) => item.view.product.id === pinnedRecommendationId);
+      if (pinned) {
+        const previousIndex = renderedRecommendationIds.indexOf(pinnedRecommendationId);
+        const insertAt = previousIndex < 0 ? recommendations.length : Math.min(previousIndex, recommendations.length);
+        recommendations.splice(insertAt, 0, pinned);
+        if (recommendations.length > 10) recommendations.pop();
+      }
+    }
     const active = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     const focusedCard = active && recommendationCards.contains(active)
       ? active.closest<HTMLElement>(".insights-product-card")
       : null;
     const focusedId = focusedCard?.dataset.productId;
-    const activePriority = active?.classList.contains("priority-button")
-      ? (["must", "want", "maybe"] as const).find((priority) => active.classList.contains("priority-" + priority))
-      : undefined;
+    const restoreFocus = active?.classList.contains("list-toggle") === true;
     const previousFocusIndex = focusedId ? renderedRecommendationIds.indexOf(focusedId) : -1;
     const itemById = new Map(state.items.map((item): [string, CartItem] => [item.productId, item]));
     const cards = recommendations.map((scored) => {
       const card = productCard(scored.view, itemById.get(scored.view.product.id), {
         onDetail: (view) => details.open(view),
-        onPriority(productId, priority: Priority) {
-          store.update((current) => {
-            const existing = current.items.find((item) => item.productId === productId);
-            const items = !existing
-              ? addItem(current.items, productId, priority)
-              : existing.priority === priority
-                ? removeItem(current.items, productId)
-                : setPriority(current.items, productId, priority);
-            return { ...current, items };
-          });
+        onToggle(productId) {
+          pinnedRecommendationId = productId;
+          store.update((current) => ({ ...current, items: toggleItem(current.items, productId) }));
         },
         onQty(productId, qty) {
           store.update((current) => ({ ...current, items: setQty(current.items, productId, qty) }));
@@ -335,7 +333,7 @@ export function insightsView(store: AppStore): InsightsView {
     recommendationCards.replaceChildren(...cards);
     resultCount.textContent = "おすすめ " + recommendations.length + "件";
     noRecommendations.hidden = recommendations.length > 0;
-    if (focusedId && activePriority && focusedCard) {
+    if (focusedId && restoreFocus && focusedCard) {
       const idStillVisible = recommendations.some((item) => item.view.product.id === focusedId);
       const focusTargetIndex = idStillVisible
         ? recommendations.findIndex((item) => item.view.product.id === focusedId)
@@ -344,11 +342,18 @@ export function insightsView(store: AppStore): InsightsView {
       if (focusTarget) {
         const nextCard = Array.from(recommendationCards.children).find((card) =>
           card instanceof HTMLElement && card.dataset.productId === focusTarget.view.product.id);
-        nextCard?.querySelector<HTMLButtonElement>(".priority-button.priority-" + activePriority)?.focus();
+        nextCard?.querySelector<HTMLButtonElement>(".list-toggle")?.focus();
       } else noRecommendations.focus();
     }
     renderedRecommendationIds = recommendations.map((item) => item.view.product.id);
   };
+
+  recommendationCards.addEventListener("focusout", (event) => {
+    if (event.relatedTarget instanceof Node && recommendationCards.contains(event.relatedTarget)) return;
+    if (!pinnedRecommendationId) return;
+    pinnedRecommendationId = undefined;
+    renderRecommendations(store.getState());
+  });
 
   budgetInput.addEventListener("input", () => {
     const value = budgetInput.value.trim();

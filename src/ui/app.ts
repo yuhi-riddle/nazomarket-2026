@@ -7,23 +7,20 @@ import { catalogView } from "./catalogView.ts";
 import { cartView } from "./cartView.ts";
 import { mapView } from "./mapView.ts";
 import { insightsView } from "./insightsView.ts";
-import { todayView } from "./todayView.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 
 const tabNames: Record<TabId, string> = {
   catalog: "一覧",
   cart: "リスト",
   map: "マップ",
-  insights: "傾向・おすすめ",
-  today: "当日",
+  insights: "おすすめ",
 };
-const tabOrder: TabId[] = ["catalog", "cart", "map", "insights", "today"];
+const tabOrder: TabId[] = ["catalog", "cart", "map", "insights"];
 const hashNames: Record<TabId, string> = {
   catalog: "catalog",
   cart: "list",
   map: "map",
   insights: "insights",
-  today: "today",
 };
 
 function tabFromHash(): TabId | null {
@@ -31,7 +28,7 @@ function tabFromHash(): TabId | null {
   if (hash === "catalog" || hash === "list") return hash === "list" ? "cart" : "catalog";
   if (hash === "map") return "map";
   if (hash === "insights") return "insights";
-  if (hash === "today") return "today";
+  if (hash === "today") return "cart";
   return null;
 }
 
@@ -144,15 +141,9 @@ export function app(root: HTMLElement): void {
         ? cartView(store)
         : tab === "map"
           ? mapView(store)
-          : tab === "insights"
-            ? insightsView(store)
-            : todayView(store);
+          : insightsView(store);
     pages.set(tab, page);
     panels.get(tab)?.append(page.element);
-    if (tab === "today") {
-      const summary = page.element.querySelector<HTMLElement>(".today-summary");
-      if (summary) overlayObserver.observe(summary);
-    }
     return page;
   };
 
@@ -175,8 +166,6 @@ export function app(root: HTMLElement): void {
         if (window.matchMedia("(max-width: 767px)").matches) {
           rootStyle.setProperty("--measured-tabs-height", tablist.getBoundingClientRect().height + "px");
         }
-      } else if (target instanceof HTMLElement && target.classList.contains("today-summary")) {
-        rootStyle.setProperty("--measured-today-summary-height", target.getBoundingClientRect().height + "px");
       }
     }
   });
@@ -190,7 +179,6 @@ export function app(root: HTMLElement): void {
     }
   };
   const syncHeader = (state: AppState) => {
-    document.documentElement.classList.toggle("is-today-tab", state.tab === "today");
     for (const [day, dayButton] of dayButtons) {
       const selected = state.day === day;
       dayButton.setAttribute("aria-pressed", String(selected));
@@ -212,7 +200,7 @@ export function app(root: HTMLElement): void {
       const panel = panels.get(tab);
       if (panel) panel.hidden = !selected;
     }
-    meter.update(state.items, state.budget, state.tab !== "today");
+    meter.update(state.items, state.budget, true);
   };
   let renderedTab: TabId | undefined;
   const render = (state: AppState, previous?: AppState) => {

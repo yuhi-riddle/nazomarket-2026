@@ -16,7 +16,7 @@ describe("parseState", () => {
       tab: "cart" as const,
       day: "sun" as const,
       budget: 15000,
-      items: [{ productId: "p01", priority: "must" as const, qty: 2, bought: true }],
+      items: [{ productId: "p01", qty: 2, bought: true }],
       sort: "priceAsc" as const,
       filters: { ...defaultState.filters, q: "封筒", categories: ["kit" as const], difficulties: [3 as const, "unknown" as const], onlyGoingDay: true },
     };
@@ -45,8 +45,9 @@ describe("parseState", () => {
     expect(s.budget).toBeNull();
     expect(s.sort).toBe("booth");
     expect(s.items).toEqual([
-      { productId: "p01", priority: "must", qty: 99, bought: false },
-      { productId: "no10-1", priority: "maybe", qty: 1, bought: true },
+      { productId: "p01", qty: 99, bought: false },
+      { productId: "p02", qty: 1, bought: false },
+      { productId: "no10-1", qty: 1, bought: true },
     ]);
     expect(s.filters).toEqual({
       ...defaultState.filters,
@@ -56,6 +57,16 @@ describe("parseState", () => {
       areas: ["Ca"],
       onlyGoingDay: true,
     });
+  });
+  it("古い保存の優先度は読み捨て、優先度が無い項目も読む。当日タブはリストタブとして開く", () => {
+    const raw = JSON.stringify({
+      version: 1,
+      tab: "today",
+      items: [{ productId: "p01", priority: "want", qty: 1, bought: false }, { productId: "p02", qty: 2, bought: true }],
+    });
+    const s = parseState(raw, known);
+    expect(s.tab).toBe("cart");
+    expect(s.items).toEqual([{ productId: "p01", qty: 1, bought: false }, { productId: "p02", qty: 2, bought: true }]);
   });
   it("保存キーは版付き", () => {
     expect(STORAGE_KEY).toBe("nazomarket2026:v1");

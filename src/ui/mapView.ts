@@ -1,11 +1,8 @@
 import { booths, catalog, venueLayout } from "../data.ts";
 import {
-  addItem,
-  removeItem,
-  setPriority,
   setQty,
+  toggleItem,
   type CartItem,
-  type Priority,
 } from "../logic/cart.ts";
 import { buildRouteStops, planRoute, type RouteStop } from "../logic/route.ts";
 import type { ProductView } from "../logic/catalog.ts";
@@ -41,9 +38,6 @@ for (const { code } of venueLayout.booths) {
   }
   boothByCodeForDay.set(code, dayBooths);
 }
-const priorityRank: Record<Priority, number> = { must: 0, want: 1, maybe: 2 };
-const priorityNames: Record<Priority, string> = { must: "絶対", want: "できれば", maybe: "余裕があれば" };
-
 type RouteBucket = { stop: RouteStop; items: CartItem[]; booth: ProductView["booth"] | undefined };
 type MapProduct = { view: ProductView; card: ProductCardHandle };
 
@@ -69,13 +63,11 @@ function boothPaints(state: AppState): Map<string, BoothPaint> {
   for (const booth of venueLayout.booths) {
     const items = itemsByCode.get(booth.code) ?? [];
     const vendor = boothForDay(booth.code, state.day)?.name ?? booth.labels[state.day] ?? "出展なし";
-    const priority = items.reduce<Priority | undefined>((highest, item) =>
-      highest === undefined || priorityRank[item.priority] < priorityRank[highest] ? item.priority : highest, undefined);
-    const status = items.length && priority
-      ? " リスト" + items.length + "件 " + priorityNames[priority]
+    const status = items.length
+      ? " リスト" + items.length + "件"
       : " リスト0件";
     paints.set(booth.code, {
-      color: priority,
+      color: items.length ? "must" : undefined,
       title: booth.labels[state.day] === null ? "出展なし" : vendor,
       ariaLabel: booth.code + " " + (booth.labels[state.day] === null ? "出展なし" : vendor) + status,
     });
@@ -190,15 +182,9 @@ export function mapView(store: AppStore): MapView {
   const legend = el("div", "map-legend");
   legend.setAttribute("role", "group");
   legend.setAttribute("aria-label", "地図の凡例");
-  for (const [priority, name] of [
-    ["must", "絶対"],
-    ["want", "できれば"],
-    ["maybe", "余裕があれば"],
-  ] as const) {
-    const entry = el("span", "map-legend-entry");
-    entry.append(el("span", "map-legend-swatch priority-" + priority), el("span", "", name));
-    legend.append(entry);
-  }
+  const listedEntry = el("span", "map-legend-entry");
+  listedEntry.append(el("span", "map-legend-swatch list"), el("span", "", "リストにある"));
+  legend.append(listedEntry);
   const noShowEntry = el("span", "map-legend-entry");
   noShowEntry.append(el("span", "map-legend-swatch map-no-show-swatch"), el("span", "", "出展なし"));
   legend.append(noShowEntry);
@@ -301,16 +287,10 @@ export function mapView(store: AppStore): MapView {
         for (const view of dayViews) {
           const card = productCard(view, itemById.get(view.product.id), {
             onDetail: (selected) => details.open(selected),
-            onPriority(productId, priority) {
-              store.update((current) => {
-                const existing = current.items.find((item) => item.productId === productId);
-                const items = !existing
-                  ? addItem(current.items, productId, priority)
-                  : existing.priority === priority
-                    ? removeItem(current.items, productId)
-                    : setPriority(current.items, productId, priority);
-                return { ...current, items };
-              });
+            onToggle(productId) {
+              store.update((current) => ({ ...current, items: toggleItem(current.items, productId) }));
+              productsInPanel.find(({ view: panelView }) => panelView.product.id === productId)
+                ?.card.element.querySelector<HTMLButtonElement>(".list-toggle")?.focus();
             },
             onQty(productId, qty) {
               store.update((current) => ({ ...current, items: setQty(current.items, productId, qty) }));
@@ -379,7 +359,7 @@ export function mapView(store: AppStore): MapView {
     routeSummary.hidden = !state.route.show;
     const nextRouteViewKey = JSON.stringify([
       state.route.show,
-      plan.buckets.map(({ stop, items, booth }) => [stop.code, stop.priority, booth?.name, items.length]),
+      plan.buckets.map(({ stop, items, booth }) => [stop.code, booth?.name, items.length]),
       plan.unplaced.map((item) => item.productId),
       plan.notSold.map((item) => item.productId),
     ]);
@@ -392,7 +372,7 @@ export function mapView(store: AppStore): MapView {
         return el(
           "li",
           "map-route-item",
-          stop.code + " " + name + " — " + priorityNames[stop.priority] + " " + items.length + "件",
+          stop.code + " " + name + " " + items.length + "件",
         );
       }));
 

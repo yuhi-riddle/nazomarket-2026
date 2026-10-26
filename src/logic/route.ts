@@ -1,12 +1,11 @@
 import type { Day, Point, VenueLayout } from "../types.ts";
 import type { ProductView } from "./catalog.ts";
-import type { CartItem, Priority } from "./cart.ts";
+import type { CartItem } from "./cart.ts";
 
 export type RouteStop = {
   boothId: string;
   code: string;
   point: Point;
-  priority: Priority;
   special: boolean;
 };
 
@@ -14,8 +13,6 @@ export type BuildRouteOptions = { onlyUnbought?: boolean };
 export type PlanRouteOptions = { frontLoadSpecial: boolean };
 export type BuildRouteResult = { stops: RouteStop[]; unplaced: string[]; notSoldThatDay: string[] };
 
-const priorityOrder: Priority[] = ["must", "want", "maybe"];
-const priorityRank: Record<Priority, number> = { must: 0, want: 1, maybe: 2 };
 const naturalCodeOrder = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
 
 export function buildRouteStops(
@@ -30,7 +27,7 @@ export function buildRouteStops(
     booth.code,
     { index, booth },
   ]));
-  const grouped = new Map<string, { view: ProductView; priority: Priority; special: boolean; layoutIndex: number }>();
+  const grouped = new Map<string, { view: ProductView; special: boolean; layoutIndex: number }>();
   const unplaced = new Set<string>();
   const notSoldThatDay: string[] = [];
 
@@ -52,12 +49,10 @@ export function buildRouteStops(
     const existing = grouped.get(view.booth.id);
     const itemSpecial = view.product.isNew === true || Boolean(view.product.limited);
     if (existing) {
-      if (priorityRank[item.priority] < priorityRank[existing.priority]) existing.priority = item.priority;
       existing.special ||= itemSpecial;
     } else {
       grouped.set(view.booth.id, {
         view,
-        priority: item.priority,
         special: itemSpecial,
         layoutIndex: layoutEntry.index,
       });
@@ -66,13 +61,12 @@ export function buildRouteStops(
 
   const stops = [...grouped.values()]
     .sort((a, b) => a.layoutIndex - b.layoutIndex)
-    .map(({ view, priority, special }) => {
+    .map(({ view, special }) => {
       const booth = layoutByCode.get(view.booth.boothCode as string)!.booth;
       return {
         boothId: view.booth.id,
         code: booth.code,
         point: { x: booth.x + booth.w / 2, y: booth.y + booth.h / 2 },
-        priority,
         special,
       };
     });
@@ -108,18 +102,9 @@ function nearestNeighbor(stops: RouteStop[], start: Point): RouteStop[] {
 }
 
 export function planRoute(stops: RouteStop[], entrance: Point, options: PlanRouteOptions): RouteStop[] {
-  const ordered: RouteStop[] = [];
-  let current = entrance;
-  for (const priority of priorityOrder) {
-    const group = stops.filter((stop) => stop.priority === priority);
-    const queues = options.frontLoadSpecial
-      ? [group.filter((stop) => stop.special), group.filter((stop) => !stop.special)]
-      : [group];
-    for (const queue of queues) {
-      const next = nearestNeighbor(queue, current);
-      ordered.push(...next);
-      if (next.length) current = next[next.length - 1].point;
-    }
-  }
-  return ordered;
+  if (!options.frontLoadSpecial) return nearestNeighbor(stops, entrance);
+  const special = nearestNeighbor(stops.filter((stop) => stop.special), entrance);
+  const remaining = stops.filter((stop) => !stop.special);
+  const lastPoint = special.at(-1)?.point ?? entrance;
+  return [...special, ...nearestNeighbor(remaining, lastPoint)];
 }

@@ -1,11 +1,10 @@
 import type { RouteStop } from "../logic/route.ts";
 import type { Day, LayoutBooth, VenueLayout } from "../types.ts";
-import type { Priority } from "../logic/cart.ts";
 
 const svgNamespace = "http://www.w3.org/2000/svg";
 let mapInstance = 0;
 
-export type BoothPaintColor = Priority | "chart-1" | "chart-2";
+export type BoothPaintColor = "must" | "chart-1" | "chart-2";
 export type BoothPaint = {
   color?: BoothPaintColor;
   intensity?: number;
@@ -277,14 +276,14 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       if (dayChanged) paintLabel(nodes.label, booth, day);
       if (nodes.title) nodes.title.textContent = paint?.title ?? vendorName;
 
-      const isPriority = paint?.color === "must" || paint?.color === "want" || paint?.color === "maybe";
+      const isListed = paint?.color === "must";
       const color = paint?.color;
       nodes.rect.style.setProperty(
         "--venue-map-fill",
-        noShow ? "url(#" + patternId + ")" : color ? "var(--" + color + (isPriority ? "-soft)" : ")") : "var(--surface)",
+        noShow ? "url(#" + patternId + ")" : color ? "var(--" + color + (isListed ? "-soft)" : ")") : "var(--surface)",
       );
       nodes.rect.style.setProperty("--venue-map-stroke", color ? "var(--" + color + ")" : "var(--line)");
-      nodes.rect.style.setProperty("--venue-map-stroke-width", color ? (isPriority ? "3" : "2") : "1");
+      nodes.rect.style.setProperty("--venue-map-stroke-width", color ? (isListed ? "3" : "2") : "1");
       if (paint?.intensity !== undefined && !noShow) {
         const intensity = Math.max(0, Math.min(1, paint.intensity));
         nodes.rect.style.setProperty("--venue-map-fill-opacity", String(intensity));

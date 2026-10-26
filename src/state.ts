@@ -1,11 +1,11 @@
 import type { Category, Day } from "./types.ts";
 import { emptyFilters, type DifficultyKey, type Filters, type SortKey } from "./logic/catalog.ts";
-import type { CartItem, Priority } from "./logic/cart.ts";
+import type { CartItem } from "./logic/cart.ts";
 import { defaultPrefs, type Prefs } from "./logic/insights.ts";
 import { FEATURE_TAGS } from "./logic/tags.ts";
 
 export const STORAGE_KEY = "nazomarket2026:v1";
-export type TabId = "catalog" | "cart" | "map" | "insights" | "today";
+export type TabId = "catalog" | "cart" | "map" | "insights";
 export type AppFilters = Omit<Filters, "day"> & { onlyGoingDay: boolean };
 export type AppState = {
   version: 1;
@@ -35,8 +35,7 @@ export const defaultState: AppState = {
   prefs: { ...defaultPrefs, categories: [...defaultPrefs.categories] },
 };
 
-const tabs: TabId[] = ["catalog", "cart", "map", "insights", "today"];
-const priorities: Priority[] = ["must", "want", "maybe"];
+const tabs: TabId[] = ["catalog", "cart", "map", "insights"];
 const categoryValues: Category[] = ["kit", "booklet", "online", "goods", "other"];
 const sorts: SortKey[] = ["booth", "priceAsc", "priceDesc", "difficultyAsc", "difficultyDesc"];
 const isRecord = (value: unknown): value is Record<string, unknown> =>
@@ -101,12 +100,10 @@ function parseItems(value: unknown, knownProductIds: Set<string>): CartItem[] {
   const result: CartItem[] = [];
   for (const item of value) {
     if (!isRecord(item) || typeof item.productId !== "string" || !knownProductIds.has(item.productId) || seen.has(item.productId)) continue;
-    if (!priorities.includes(item.priority as Priority)) continue;
     const qty = typeof item.qty === "number" && Number.isFinite(item.qty) ? item.qty : 1;
     seen.add(item.productId);
     result.push({
       productId: item.productId,
-      priority: item.priority as Priority,
       qty: Math.min(99, Math.max(1, Math.floor(qty))),
       bought: typeof item.bought === "boolean" ? item.bought : false,
     });
@@ -135,7 +132,7 @@ export function parseState(raw: string | null, knownProductIds: Set<string>): Ap
       : { ...defaultState.route };
     return {
       version: 1,
-      tab: tabs.includes(parsed.tab as TabId) ? parsed.tab as TabId : defaultState.tab,
+      tab: parsed.tab === "today" ? "cart" : tabs.includes(parsed.tab as TabId) ? parsed.tab as TabId : defaultState.tab,
       day: parsed.day === "sat" || parsed.day === "sun" ? parsed.day : defaultState.day,
       budget: isNullableAmount(parsed.budget) ? parsed.budget : defaultState.budget,
       items: parseItems(parsed.items, knownProductIds),

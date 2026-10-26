@@ -1,10 +1,10 @@
 import { CATEGORY_NAMES, type ProductView } from "../logic/catalog.ts";
-import { PRIORITIES, type CartItem, type Priority } from "../logic/cart.ts";
+import type { CartItem } from "../logic/cart.ts";
 import { button, el } from "./dom.ts";
 
 export type ProductCardActions = {
   onDetail: (view: ProductView) => void;
-  onPriority: (productId: string, priority: Priority) => void;
+  onToggle: (productId: string) => void;
   onQty: (productId: string, qty: number) => void;
   onFeatureTag?: (tag: string, productId: string) => void;
   selectedTags?: string[];
@@ -103,19 +103,9 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   body.append(tags);
 
   const actionsArea = el("div", "product-actions");
-  const actionsLabel = el("span", "product-actions-label", "リストに入れる");
-  const prioritySwitch = el("div", "priority-switch");
-  prioritySwitch.setAttribute("role", "group");
-  prioritySwitch.setAttribute("aria-label", "優先度");
-  const priorityButtons = new Map<Priority, HTMLButtonElement>();
-  for (const priority of PRIORITIES) {
-    const action = button(priority.label === "余裕があれば" ? "余裕あれば" : priority.label, "priority-button priority-" + priority.key);
-    action.setAttribute("aria-pressed", String(item?.priority === priority.key));
-    action.addEventListener("click", () => actions.onPriority(product.id, priority.key));
-    priorityButtons.set(priority.key, action);
-    prioritySwitch.append(action);
-  }
-  actionsArea.append(actionsLabel, prioritySwitch);
+  const listToggle = button("", "list-toggle");
+  listToggle.addEventListener("click", () => actions.onToggle(product.id));
+  actionsArea.append(listToggle);
   const quantity = el("div", "quantity-control");
   let currentItem = item;
   const minus = button("−", "quantity-button");
@@ -136,9 +126,8 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
 
   const update = (nextItem: CartItem | undefined) => {
     currentItem = nextItem;
-    for (const [priority, action] of priorityButtons) {
-      action.setAttribute("aria-pressed", String(nextItem?.priority === priority));
-    }
+    listToggle.setAttribute("aria-pressed", String(Boolean(nextItem)));
+    listToggle.textContent = nextItem ? "リストに入っています" : "リストに入れる";
     quantity.hidden = !nextItem;
     quantityText.textContent = nextItem ? String(nextItem.qty) : "1";
     minus.disabled = nextItem?.qty === 1;

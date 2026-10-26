@@ -1,6 +1,6 @@
 import type { SortKey } from "../logic/catalog.ts";
 import { countActiveFilters, emptyFilters, filterCatalog, sortCatalog } from "../logic/catalog.ts";
-import { addItem, removeItem, setPriority, setQty, type CartItem, type Priority } from "../logic/cart.ts";
+import { setQty, toggleItem, type CartItem } from "../logic/cart.ts";
 import type { AppState } from "../state.ts";
 import { catalog } from "../data.ts";
 import { button, el } from "./dom.ts";
@@ -21,7 +21,6 @@ const sortOptions: Array<[SortKey, string]> = [
 function sameCartItem(a: CartItem | undefined, b: CartItem | undefined): boolean {
   return a === b || (a !== undefined && b !== undefined
     && a.productId === b.productId
-    && a.priority === b.priority
     && a.qty === b.qty
     && a.bought === b.bought);
 }
@@ -138,16 +137,9 @@ export function catalogView(store: AppStore): CatalogView {
           else count.focus();
         },
         selectedTags: state.filters.tags,
-        onPriority(productId, priority: Priority) {
-          store.update((current) => {
-            const existing = current.items.find((item) => item.productId === productId);
-            const items = !existing
-              ? addItem(current.items, productId, priority)
-              : existing.priority === priority
-                ? removeItem(current.items, productId)
-                : setPriority(current.items, productId, priority);
-            return { ...current, items };
-          });
+        onToggle(productId) {
+          store.update((current) => ({ ...current, items: toggleItem(current.items, productId) }));
+          handles.get(productId)?.element.querySelector<HTMLButtonElement>(".list-toggle")?.focus();
         },
         onQty(productId, qty) {
           store.update((current) => ({ ...current, items: setQty(current.items, productId, qty) }));
