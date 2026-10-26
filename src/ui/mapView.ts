@@ -4,7 +4,8 @@ import {
   toggleItem,
   type CartItem,
 } from "../logic/cart.ts";
-import { buildRouteStops, planRoute, type RouteStop } from "../logic/route.ts";
+import { buildRouteStops } from "../logic/route.ts";
+import { getWalkGrid, planWalkingRoute, type WalkingRoute, type WalkingRouteStop } from "../logic/walkingRoute.ts";
 import type { ProductView } from "../logic/catalog.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import type { AppState } from "../state.ts";
@@ -38,8 +39,11 @@ for (const { code } of venueLayout.booths) {
   }
   boothByCodeForDay.set(code, dayBooths);
 }
-type RouteBucket = { stop: RouteStop; items: CartItem[]; booth: ProductView["booth"] | undefined };
+type RouteBucket = { stop: WalkingRouteStop; items: CartItem[]; booth: ProductView["booth"] | undefined };
 type MapProduct = { view: ProductView; card: ProductCardHandle };
+type MapRoutePlan = { route: WalkingRoute; buckets: RouteBucket[]; unplaced: CartItem[]; notSold: CartItem[] };
+
+const emptyWalkingRoute: WalkingRoute = { stops: [], legs: [], unreachable: [] };
 
 function boothForDay(code: string, day: AppState["day"]): ProductView["booth"] | undefined {
   return boothByCodeForDay.get(code)?.[day];
@@ -75,13 +79,10 @@ function boothPaints(state: AppState): Map<string, BoothPaint> {
   return paints;
 }
 
-function routePlan(state: AppState): { stops: RouteStop[]; buckets: RouteBucket[]; unplaced: CartItem[]; notSold: CartItem[] } {
-  if (state.items.length === 0) return { stops: [], buckets: [], unplaced: [], notSold: [] };
-  const result = buildRouteStops(state.items, catalog, venueLayout, state.day, { onlyUnbought: true });
-  const stops = planRoute(result.stops, venueLayout.entrance, { frontLoadSpecial: state.route.frontLoadSpecial });
-  const unplacedBooths = new Set(result.unplaced);
+function routePlan(state: AppState, result: ReturnType<typeof buildRouteStops>, route: WalkingRoute): MapRoutePlan {
+  const unplacedBooths = new Set([...result.unplaced, ...route.unreachable]);
   const notSoldIds = new Set(result.notSoldThatDay);
-  const stopByBooth = new Map(stops.map((stop): [string, RouteStop] => [stop.boothId, stop]));
+  const stopByBooth = new Map(route.stops.map((stop): [string, WalkingRouteStop] => [stop.boothId, stop]));
   const itemsByBooth = new Map<string, CartItem[]>();
   const unplaced: CartItem[] = [];
   const notSold: CartItem[] = [];
@@ -104,7 +105,7 @@ function routePlan(state: AppState): { stops: RouteStop[]; buckets: RouteBucket[
     itemsByBooth.set(view.booth.id, items);
   }
 
-  const buckets = stops.map((stop) => {
+  const buckets = route.stops.map((stop) => {
     const first = itemsByBooth.get(stop.boothId)?.[0];
     return {
       stop,
@@ -112,7 +113,7 @@ function routePlan(state: AppState): { stops: RouteStop[]; buckets: RouteBucket[
       booth: first ? viewsById.get(first.productId)?.booth : undefined,
     };
   });
-  return { stops, buckets, unplaced, notSold };
+  return { route, buckets, unplaced, notSold };
 }
 
 function organizationLinks(booth: ProductView["booth"] | undefined): HTMLElement | undefined {
@@ -322,11 +323,9 @@ export function mapView(store: AppStore): MapView {
   let routeViewKey = "";
   let previousPaintDay: Day | undefined;
   let previousPaintItems: CartItem[] | undefined;
-  let previousRouteDay: Day | undefined;
-  let previousRouteItems: CartItem[] | undefined;
-  let previousFrontLoadSpecial: boolean | undefined;
+  let previousRouteKey = "";
   let previousShowRoute: boolean | undefined;
-  let currentPlan: ReturnType<typeof routePlan> | undefined;
+  let currentRoute = emptyWalkingRoute;
   const sync = (state: AppState) => {
     const update: VenueMapUpdate = {};
     const paintsChanged = previousPaintDay !== state.day || previousPaintItems !== state.items;
@@ -337,23 +336,29 @@ export function mapView(store: AppStore): MapView {
       previousPaintDay = state.day;
       previousPaintItems = state.items;
     }
-    const routePlanChanged = previousRouteDay !== state.day
-      || previousRouteItems !== state.items
-      || previousFrontLoadSpecial !== state.route.frontLoadSpecial;
+    const routeInput = buildRouteStops(state.items, catalog, venueLayout, state.day, { onlyUnbought: true });
+    const nextRouteKey = JSON.stringify([
+      state.day,
+      state.route.frontLoadSpecial,
+      routeInput.stops.map(({ boothId, code, special }) => [boothId, code, special]),
+    ]);
+    const routePlanChanged = previousRouteKey !== nextRouteKey;
     const routeVisibilityChanged = previousShowRoute !== state.route.show;
     const routeChanged = routePlanChanged || routeVisibilityChanged;
-    if (routePlanChanged) currentPlan = routePlan(state);
+    if (routePlanChanged) {
+      currentRoute = routeInput.stops.length
+        ? planWalkingRoute(getWalkGrid(venueLayout), routeInput.stops, {
+          frontLoadSpecial: state.route.frontLoadSpecial,
+        })
+        : emptyWalkingRoute;
+      previousRouteKey = nextRouteKey;
+    }
+    const plan = routePlan(state, routeInput, currentRoute);
     if (routeChanged) {
-      const plan = currentPlan ?? routePlan(state);
-      currentPlan = plan;
-      update.order = state.route.show ? plan.stops : [];
-      previousRouteDay = state.day;
-      previousRouteItems = state.items;
-      previousFrontLoadSpecial = state.route.frontLoadSpecial;
+      update.route = state.route.show ? plan.route : emptyWalkingRoute;
       previousShowRoute = state.route.show;
     }
     if (paintsChanged || routeChanged) map.update(update);
-    const plan = currentPlan ?? routePlan(state);
     showRouteInput.checked = state.route.show;
     specialInput.checked = state.route.frontLoadSpecial;
     routeSummary.hidden = !state.route.show;

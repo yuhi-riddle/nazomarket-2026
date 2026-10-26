@@ -793,6 +793,13 @@ a {
   stroke-linejoin: round;
 }
 
+.venue-map-visit-connector {
+  stroke: var(--ink);
+  stroke-width: 1;
+  stroke-opacity: 0.55;
+  stroke-dasharray: 2 2;
+}
+
 .venue-map-route-marker circle {
   fill: #ffffff;
   stroke: var(--ink);

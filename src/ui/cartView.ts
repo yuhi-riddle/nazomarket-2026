@@ -10,7 +10,8 @@ import {
   type CartItem,
 } from "../logic/cart.ts";
 import type { ProductView } from "../logic/catalog.ts";
-import { buildRouteStops, planRoute, type RouteStop } from "../logic/route.ts";
+import { buildRouteStops } from "../logic/route.ts";
+import { getWalkGrid, planWalkingRoute } from "../logic/walkingRoute.ts";
 import type { AppState } from "../state.ts";
 import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
@@ -112,12 +113,15 @@ function routeBuckets(state: AppState): RouteBucket[] {
     state.day,
     { onlyUnbought: true },
   );
-  const ordered = planRoute(stops, venueLayout.entrance, { frontLoadSpecial: state.route.frontLoadSpecial });
+  const walkingRoute = stops.length
+    ? planWalkingRoute(getWalkGrid(venueLayout), stops, { frontLoadSpecial: state.route.frontLoadSpecial })
+    : { stops: [], legs: [], unreachable: [] };
+  const ordered = walkingRoute.stops;
   const placedByBooth = new Map<string, string[]>();
   for (const stop of ordered) placedByBooth.set(stop.boothId, []);
   const unplacedIds = new Set<string>();
   const notSoldIds = new Set(notSoldThatDay);
-  const unplacedBooths = new Set(unplaced);
+  const unplacedBooths = new Set([...unplaced, ...walkingRoute.unreachable]);
   const boughtIds: string[] = [];
 
   for (const item of state.items) {
@@ -133,7 +137,7 @@ function routeBuckets(state: AppState): RouteBucket[] {
   }
 
   const buckets: RouteBucket[] = [];
-  ordered.forEach((stop: RouteStop, index) => {
+  ordered.forEach((stop, index) => {
     const ids = placedByBooth.get(stop.boothId) ?? [];
     const booth = boothById.get(stop.boothId);
     if (!booth || !ids.length) return;

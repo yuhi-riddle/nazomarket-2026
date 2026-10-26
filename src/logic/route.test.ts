@@ -1,35 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { buildCatalog } from "./catalog.ts";
-import { buildRouteStops, planRoute, type RouteStop } from "./route.ts";
+import { buildRouteStops } from "./route.ts";
 import { booths, layout, product } from "./test-helpers.ts";
-
-const stop = (code: string, x: number, y: number, special = false): RouteStop => ({
-  boothId: code,
-  code,
-  point: { x, y },
-  special,
-});
-
-describe("planRoute", () => {
-  const entrance = { x: 100, y: 0 };
-
-  it("入口から最近傍法で並べる（優先度は無い）", () => {
-    const stops = [stop("far", 0, 0), stop("near", 90, 0), stop("mid", 50, 0), stop("w1", 95, 0)];
-    expect(planRoute(stops, entrance, { frontLoadSpecial: false }).map((s) => s.code)).toEqual(["w1", "near", "mid", "far"]);
-  });
-  it("新作・限定を前に寄せると、印のあるブースを先に回り、残りはその続きから最近傍法", () => {
-    const stops = [stop("plain", 90, 0), stop("special", 10, 0, true), stop("plain2", 5, 0)];
-    expect(planRoute(stops, entrance, { frontLoadSpecial: true }).map((s) => s.code)).toEqual(["special", "plain2", "plain"]);
-    expect(planRoute(stops, entrance, { frontLoadSpecial: false }).map((s) => s.code)).toEqual(["plain", "special", "plain2"]);
-  });
-  it("距離が同じならブース番号の小さい方（入力順ではなく code の自然順）", () => {
-    const stops = [stop("Ca10", 110, 0), stop("Ca2", 90, 0)];
-    expect(planRoute(stops, entrance, { frontLoadSpecial: false }).map((s) => s.code)).toEqual(["Ca2", "Ca10"]);
-  });
-  it("空なら空", () => {
-    expect(planRoute([], entrance, { frontLoadSpecial: true })).toEqual([]);
-  });
-});
 
 describe("buildRouteStops", () => {
   const catalog = buildCatalog(
