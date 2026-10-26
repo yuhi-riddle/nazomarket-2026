@@ -245,6 +245,10 @@ a {
 }
 
 .filter-panel {
+  position: sticky;
+  top: var(--header-height);
+  max-height: calc(100vh - var(--header-height) - var(--measured-meter-height));
+  overflow-y: auto;
   padding: var(--space-4);
   border: 1px solid var(--line);
   border-radius: var(--radius-panel);

@@ -387,12 +387,12 @@ export function mapView(store: AppStore): MapView {
       routeViewKey = nextRouteViewKey;
       routeEmpty.hidden = plan.buckets.length > 0;
       routeList.hidden = plan.buckets.length === 0;
-      routeList.replaceChildren(...plan.buckets.map(({ stop, items, booth }, index) => {
+      routeList.replaceChildren(...plan.buckets.map(({ stop, items, booth }) => {
         const name = booth?.name ?? stop.code;
         return el(
           "li",
           "map-route-item",
-          (index + 1) + ". " + stop.code + " " + name + " — " + priorityNames[stop.priority] + " " + items.length + "件",
+          stop.code + " " + name + " — " + priorityNames[stop.priority] + " " + items.length + "件",
         );
       }));
 

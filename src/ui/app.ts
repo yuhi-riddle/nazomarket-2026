@@ -202,6 +202,7 @@ export function app(root: HTMLElement): void {
     }
     renderedTab = state.tab;
     if (!previous || state.tab !== previous.tab) setHash(state.tab);
+    if (previous && tabChanged) window.scrollTo({ top: 0, behavior: "instant" });
   };
 
   window.addEventListener("hashchange", () => {
