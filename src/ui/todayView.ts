@@ -216,6 +216,19 @@ export function todayView(store: AppStore): TodayView {
   let previousRouteKey = "";
   let previousStructure = "";
 
+  const setRouteHeading = (heading: HTMLElement, title: string) => {
+    const match = title.match(/^(\d+\.\s+)(\S+)(.*)$/);
+    if (!match) {
+      heading.removeAttribute("aria-label");
+      heading.textContent = title;
+      return;
+    }
+    const boothCode = el("span", "today-route-booth", match[2]);
+    boothCode.setAttribute("aria-hidden", "true");
+    heading.replaceChildren(document.createTextNode(match[1]), boothCode, document.createTextNode(match[3]));
+    heading.setAttribute("aria-label", title);
+  };
+
   const getSection = (key: string): TodaySection => {
     const existing = sections.get(key);
     if (existing) return existing;
@@ -313,7 +326,7 @@ export function todayView(store: AppStore): TodayView {
         const orderedSections: HTMLElement[] = [];
         for (const bucket of buckets) {
           const section = getSection(bucket.key);
-          section.heading.textContent = bucket.title;
+          setRouteHeading(section.heading, bucket.title);
           section.rows.replaceChildren(...bucket.ids.flatMap((id) => {
             const row = rows.get(id);
             return row ? [row.element] : [];

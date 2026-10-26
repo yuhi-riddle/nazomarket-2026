@@ -43,6 +43,16 @@ export function app(root: HTMLElement): void {
   const title = el("h1", "", "ナゾマ買い物メモ 2026");
   const unofficial = el("span", "unofficial-label", "非公式");
   brand.append(title, unofficial);
+  const brandMark = el("span", "brand-mark", "?");
+  brandMark.setAttribute("aria-hidden", "true");
+  const brandCopy = el("div", "brand-copy");
+  title.replaceChildren(
+    el("span", "brand-title-mobile", "買い物メモ"),
+    el("span", "brand-title-desktop", "ナゾトキマーケット 買い物メモ"),
+  );
+  const eventMeta = el("span", "brand-event-meta", "11/7 土・11/8 日 東京ドームシティ プリズムホール ／ 非公式");
+  brandCopy.append(title, eventMeta, unofficial);
+  brand.replaceChildren(brandMark, brandCopy);
 
   const dayGroup = el("div", "day-picker");
   dayGroup.setAttribute("role", "group");
@@ -70,7 +80,23 @@ export function app(root: HTMLElement): void {
     tabButton.setAttribute("aria-controls", "panel-" + tab);
     tabButton.setAttribute("aria-selected", "false");
     tabButton.tabIndex = -1;
-    const label = el("span", "", tabNames[tab]);
+    const label = el("span", "tab-label");
+    if (tab === "cart") {
+      label.append(
+        el("span", "tab-label-text", tabNames[tab]),
+        el("span", "tab-count", String(store.getState().items.length)),
+      );
+    } else if (tab === "insights") {
+      label.append(
+        el("span", "tab-label-full", tabNames[tab]),
+        el("span", "tab-label-short", "おすすめ"),
+      );
+    } else {
+      label.textContent = tabNames[tab];
+    }
+    tabButton.setAttribute("aria-label", tab === "cart"
+      ? tabNames[tab] + " " + store.getState().items.length
+      : tabNames[tab]);
     tabButton.append(label);
     tabButton.addEventListener("click", () => store.update((state) => ({ ...state, tab })));
     tabButton.addEventListener("keydown", (event) => {
@@ -177,7 +203,11 @@ export function app(root: HTMLElement): void {
         tabButton.tabIndex = selected ? 0 : -1;
         const label = tabButton.firstElementChild;
         const labelText = tab === "cart" ? tabNames[tab] + " " + state.items.length : tabNames[tab];
-        if (label && label.textContent !== labelText) label.textContent = labelText;
+        if (tab === "cart") {
+          const count = label?.querySelector(".tab-count");
+          if (count && count.textContent !== String(state.items.length)) count.textContent = String(state.items.length);
+        }
+        tabButton.setAttribute("aria-label", labelText);
       }
       const panel = panels.get(tab);
       if (panel) panel.hidden = !selected;

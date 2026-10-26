@@ -20,6 +20,11 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const card = el("article", "product-card");
   card.dataset.productId = product.id;
 
+  const stub = el("div", "ticket-stub");
+  if (!view.booth.boothCode) stub.classList.add("is-undecided");
+  stub.append(el("span", "ticket-stub-label", "ブース"));
+  card.append(stub);
+
   const media = el("div", "product-media");
   const fallback = el("span", "image-fallback", CATEGORY_NAMES[product.category]);
   if (product.imageUrl) {
@@ -50,13 +55,23 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
 
   const boothCode = view.booth.boothCode ?? "番号未定";
   const boothLabel = el("p", "product-booth", boothCode + " " + view.booth.name);
-  body.append(boothLabel);
+  boothLabel.textContent = view.booth.boothCode ?? "未定";
+  stub.append(boothLabel);
 
   const price = product.price === null ? "価格未確認" : product.price.toLocaleString("ja-JP") + "円";
-  body.append(el("p", "product-price", price));
-  body.append(el("p", "product-one-liner", product.oneLiner));
+  const priceElement = el("p", "product-price");
+  if (product.price === null) {
+    priceElement.textContent = price;
+  } else {
+    priceElement.append(
+      el("span", "product-price-value", product.price.toLocaleString("ja-JP")),
+      el("span", "product-price-unit", "円"),
+    );
+  }
+  const oneLiner = el("p", "product-one-liner", product.oneLiner);
 
   const difficulty = el("div", "difficulty");
+  difficulty.append(el("span", "product-organization", view.booth.name));
   if (product.difficulty.level === null) {
     difficulty.append(el("span", "difficulty-unknown", "難易度不明"));
   } else {
@@ -65,7 +80,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     difficulty.append(stars, el("span", "sr-only", "難易度 " + product.difficulty.level + " / 5"));
     if (product.difficulty.source === "estimated") difficulty.append(el("span", "tag tag-small", "推定"));
   }
-  body.append(difficulty);
+  body.append(difficulty, priceElement, oneLiner);
 
   const tags = el("div", "product-tags");
   for (const tag of view.featureTags) {
@@ -88,14 +103,19 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   body.append(tags);
 
   const actionsArea = el("div", "product-actions");
+  const actionsLabel = el("span", "product-actions-label", "リストに入れる");
+  const prioritySwitch = el("div", "priority-switch");
+  prioritySwitch.setAttribute("role", "group");
+  prioritySwitch.setAttribute("aria-label", "優先度");
   const priorityButtons = new Map<Priority, HTMLButtonElement>();
   for (const priority of PRIORITIES) {
     const action = button(priority.label === "余裕があれば" ? "余裕あれば" : priority.label, "priority-button priority-" + priority.key);
     action.setAttribute("aria-pressed", String(item?.priority === priority.key));
     action.addEventListener("click", () => actions.onPriority(product.id, priority.key));
     priorityButtons.set(priority.key, action);
-    actionsArea.append(action);
+    prioritySwitch.append(action);
   }
+  actionsArea.append(actionsLabel, prioritySwitch);
   const quantity = el("div", "quantity-control");
   let currentItem = item;
   const minus = button("−", "quantity-button");
@@ -112,8 +132,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   });
   quantity.append(minus, quantityText, plus);
   actionsArea.append(quantity);
-  body.append(actionsArea);
-  card.append(body);
+  card.append(body, actionsArea);
 
   const update = (nextItem: CartItem | undefined) => {
     currentItem = nextItem;
