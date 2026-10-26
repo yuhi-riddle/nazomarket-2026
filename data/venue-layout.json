@@ -1,0 +1,1297 @@
+{
+  "source": {
+    "url": "https://www.scrapmagazine.com/s/nazomarket/img/top/map_2026.jpg",
+    "retrievedAt": "2026-10-24",
+    "note": "公式マップ画像の注記: 実際のレイアウトとは異なる場合があります"
+  },
+  "image": {
+    "width": 2000,
+    "height": 1413
+  },
+  "viewBox": {
+    "x": 440,
+    "y": 150,
+    "w": 1520,
+    "h": 580
+  },
+  "walkway": [
+    [
+      750,
+      170
+    ],
+    [
+      1905,
+      170
+    ],
+    [
+      1905,
+      708
+    ],
+    [
+      750,
+      708
+    ],
+    [
+      750,
+      695
+    ],
+    [
+      595,
+      695
+    ],
+    [
+      595,
+      510
+    ],
+    [
+      480,
+      510
+    ],
+    [
+      480,
+      420
+    ],
+    [
+      670,
+      420
+    ],
+    [
+      670,
+      610
+    ],
+    [
+      750,
+      610
+    ]
+  ],
+  "entrance": {
+    "x": 1905,
+    "y": 645,
+    "label": "入口"
+  },
+  "exit": {
+    "x": 480,
+    "y": 465,
+    "label": "出口"
+  },
+  "areas": [
+    {
+      "id": "A",
+      "label": "A（奥の大ブース）"
+    },
+    {
+      "id": "Ba",
+      "label": "Ba"
+    },
+    {
+      "id": "Bb",
+      "label": "Bb"
+    },
+    {
+      "id": "Ca",
+      "label": "Ca（入口側の手前列）"
+    },
+    {
+      "id": "Cb",
+      "label": "Cb"
+    },
+    {
+      "id": "Cc",
+      "label": "Cc"
+    },
+    {
+      "id": "Cd",
+      "label": "Cd"
+    },
+    {
+      "id": "Ce",
+      "label": "Ce"
+    }
+  ],
+  "booths": [
+    {
+      "code": "A1",
+      "area": "A",
+      "x": 1764,
+      "y": 197,
+      "w": 122,
+      "h": 123,
+      "labels": {
+        "sat": "Machihack！",
+        "sun": "Machihack！"
+      }
+    },
+    {
+      "code": "A2",
+      "area": "A",
+      "x": 1597,
+      "y": 197,
+      "w": 123,
+      "h": 123,
+      "labels": {
+        "sat": "よだかのレコード",
+        "sun": "よだかのレコード"
+      }
+    },
+    {
+      "code": "A3",
+      "area": "A",
+      "x": 1379,
+      "y": 197,
+      "w": 123,
+      "h": 123,
+      "labels": {
+        "sat": "SCRAP",
+        "sun": "SCRAP"
+      }
+    },
+    {
+      "code": "A4",
+      "area": "A",
+      "x": 1170,
+      "y": 197,
+      "w": 122,
+      "h": 123,
+      "labels": {
+        "sat": "タンブルウィード",
+        "sun": "タンブルウィード"
+      }
+    },
+    {
+      "code": "A5",
+      "area": "A",
+      "x": 960,
+      "y": 197,
+      "w": 122,
+      "h": 123,
+      "labels": {
+        "sat": "トキキル",
+        "sun": "トキキル"
+      }
+    },
+    {
+      "code": "A6",
+      "area": "A",
+      "x": 770,
+      "y": 197,
+      "w": 123,
+      "h": 123,
+      "labels": {
+        "sat": "RIDDLER",
+        "sun": "RIDDLER"
+      }
+    },
+    {
+      "code": "A7",
+      "area": "A",
+      "x": 770,
+      "y": 360,
+      "w": 123,
+      "h": 122,
+      "labels": {
+        "sat": "YTE",
+        "sun": "YTE"
+      }
+    },
+    {
+      "code": "Bb1",
+      "area": "Bb",
+      "x": 1789,
+      "y": 360,
+      "w": 97,
+      "h": 79,
+      "labels": {
+        "sat": "ヰ空間",
+        "sun": "ヰ空間"
+      }
+    },
+    {
+      "code": "Bb2",
+      "area": "Bb",
+      "x": 1660,
+      "y": 360,
+      "w": 97,
+      "h": 79,
+      "labels": {
+        "sat": "XEOXY",
+        "sun": "XEOXY"
+      }
+    },
+    {
+      "code": "Bb3",
+      "area": "Bb",
+      "x": 1560,
+      "y": 360,
+      "w": 97,
+      "h": 79,
+      "labels": {
+        "sat": "ファーニャー（Far&Near）",
+        "sun": "ファーニャー（Far&Near）"
+      }
+    },
+    {
+      "code": "Bb4",
+      "area": "Bb",
+      "x": 1446,
+      "y": 360,
+      "w": 98,
+      "h": 79,
+      "labels": {
+        "sat": "THE NAZO STORE",
+        "sun": "THE NAZO STORE"
+      }
+    },
+    {
+      "code": "Bb5",
+      "area": "Bb",
+      "x": 1346,
+      "y": 360,
+      "w": 97,
+      "h": 79,
+      "labels": {
+        "sat": "ナゾグラ by ClaGla",
+        "sun": "ナゾグラ by ClaGla"
+      }
+    },
+    {
+      "code": "Bb6",
+      "area": "Bb",
+      "x": 1233,
+      "y": 360,
+      "w": 97,
+      "h": 79,
+      "labels": {
+        "sat": "NAZO×NAZO劇団",
+        "sun": "NAZO×NAZO劇団"
+      }
+    },
+    {
+      "code": "Bb7",
+      "area": "Bb",
+      "x": 1133,
+      "y": 360,
+      "w": 97,
+      "h": 79,
+      "labels": {
+        "sat": "タカラッシュ！",
+        "sun": "タカラッシュ！"
+      }
+    },
+    {
+      "code": "Bb8",
+      "area": "Bb",
+      "x": 1019,
+      "y": 360,
+      "w": 98,
+      "h": 79,
+      "labels": {
+        "sat": "NazoLock",
+        "sun": "NazoLock"
+      }
+    },
+    {
+      "code": "Bb9",
+      "area": "Bb",
+      "x": 919,
+      "y": 360,
+      "w": 97,
+      "h": 79,
+      "labels": {
+        "sat": "謎組",
+        "sun": "謎組"
+      }
+    },
+    {
+      "code": "Ba1",
+      "area": "Ba",
+      "x": 1789,
+      "y": 442,
+      "w": 97,
+      "h": 78,
+      "labels": {
+        "sat": "ナゾトキマーケット",
+        "sun": "ナゾトキマーケット"
+      }
+    },
+    {
+      "code": "Ba2",
+      "area": "Ba",
+      "x": 1660,
+      "y": 442,
+      "w": 97,
+      "h": 78,
+      "labels": {
+        "sat": "エフェックス / アットビ",
+        "sun": "エフェックス / アットビ"
+      }
+    },
+    {
+      "code": "Ba3",
+      "area": "Ba",
+      "x": 1560,
+      "y": 442,
+      "w": 97,
+      "h": 78,
+      "labels": {
+        "sat": "グループSNE",
+        "sun": "グループSNE"
+      }
+    },
+    {
+      "code": "Ba4",
+      "area": "Ba",
+      "x": 1447,
+      "y": 442,
+      "w": 97,
+      "h": 78,
+      "labels": {
+        "sat": "ナゾトキゼペッツ",
+        "sun": "ナゾトキゼペッツ"
+      }
+    },
+    {
+      "code": "Ba5",
+      "area": "Ba",
+      "x": 1346,
+      "y": 442,
+      "w": 97,
+      "h": 78,
+      "labels": {
+        "sat": "空空-karakara-",
+        "sun": "空空-karakara-"
+      }
+    },
+    {
+      "code": "Ba6",
+      "area": "Ba",
+      "x": 1233,
+      "y": 442,
+      "w": 97,
+      "h": 78,
+      "labels": {
+        "sat": "KAGENAZO",
+        "sun": "KAGENAZO"
+      }
+    },
+    {
+      "code": "Ba7",
+      "area": "Ba",
+      "x": 1133,
+      "y": 442,
+      "w": 96,
+      "h": 78,
+      "labels": {
+        "sat": "ねずみの巣",
+        "sun": "ねずみの巣"
+      }
+    },
+    {
+      "code": "Ce1",
+      "area": "Ce",
+      "x": 1080,
+      "y": 455,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "PADDLE",
+        "sun": "PADDLE"
+      }
+    },
+    {
+      "code": "Ce2",
+      "area": "Ce",
+      "x": 1040,
+      "y": 455,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "NAZONE",
+        "sun": "NAZONE"
+      }
+    },
+    {
+      "code": "Ce3",
+      "area": "Ce",
+      "x": 1001,
+      "y": 455,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "髭とニチョ謎",
+        "sun": "髭とニチョ謎"
+      }
+    },
+    {
+      "code": "Ce4",
+      "area": "Ce",
+      "x": 961,
+      "y": 455,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "iMY",
+        "sun": "iMY"
+      }
+    },
+    {
+      "code": "Ce5",
+      "area": "Ce",
+      "x": 921,
+      "y": 455,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "立川茜＆なぞる",
+        "sun": null
+      }
+    },
+    {
+      "code": "Cd1",
+      "area": "Cd",
+      "x": 1080,
+      "y": 489,
+      "w": 39,
+      "h": 31,
+      "labels": {
+        "sat": "きりんぐたいむに象の群れ＆3年え組",
+        "sun": "きりんぐたいむに象の群れ＆3年え組"
+      }
+    },
+    {
+      "code": "Cd2",
+      "area": "Cd",
+      "x": 1040,
+      "y": 489,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "夕立工房",
+        "sun": "夕立工房"
+      }
+    },
+    {
+      "code": "Cd3",
+      "area": "Cd",
+      "x": 1000,
+      "y": 489,
+      "w": 39,
+      "h": 31,
+      "labels": {
+        "sat": "Primalade / プライマレード",
+        "sun": "Primalade / プライマレード"
+      }
+    },
+    {
+      "code": "Cd4",
+      "area": "Cd",
+      "x": 961,
+      "y": 489,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "あかずきん",
+        "sun": "あかずきん"
+      }
+    },
+    {
+      "code": "Cd5",
+      "area": "Cd",
+      "x": 921,
+      "y": 489,
+      "w": 38,
+      "h": 31,
+      "labels": {
+        "sat": "鯨井翔",
+        "sun": "鯨井翔"
+      }
+    },
+    {
+      "code": "Cc1",
+      "area": "Cc",
+      "x": 1759,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "ああああああああ",
+        "sun": "ああああああああ"
+      }
+    },
+    {
+      "code": "Cc2",
+      "area": "Cc",
+      "x": 1719,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "あき03Xteaparty",
+        "sun": "あき03Xteaparty"
+      }
+    },
+    {
+      "code": "Cc3",
+      "area": "Cc",
+      "x": 1679,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "N@ZO LAB.",
+        "sun": "N@ZO LAB."
+      }
+    },
+    {
+      "code": "Cc4",
+      "area": "Cc",
+      "x": 1639,
+      "y": 556,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "ミステリージャック",
+        "sun": "ミステリージャック"
+      }
+    },
+    {
+      "code": "Cc5",
+      "area": "Cc",
+      "x": 1599,
+      "y": 556,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "きまぐれボックス",
+        "sun": "きまぐれボックス"
+      }
+    },
+    {
+      "code": "Cc6",
+      "area": "Cc",
+      "x": 1560,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "4CE Dimension ＆ TRIQLET",
+        "sun": "WHYNU"
+      }
+    },
+    {
+      "code": "Cc7",
+      "area": "Cc",
+      "x": 1510,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "EscaPLUGGED",
+        "sun": "シングルズ＆成田高校クイズ研究部"
+      }
+    },
+    {
+      "code": "Cc8",
+      "area": "Cc",
+      "x": 1470,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "Calette",
+        "sun": "Calette"
+      }
+    },
+    {
+      "code": "Cc9",
+      "area": "Cc",
+      "x": 1430,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "作人",
+        "sun": "作人"
+      }
+    },
+    {
+      "code": "Cc10",
+      "area": "Cc",
+      "x": 1390,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "RI:Works",
+        "sun": "RI:Works"
+      }
+    },
+    {
+      "code": "Cc11",
+      "area": "Cc",
+      "x": 1351,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "早稲田大学謎解き企画algo",
+        "sun": "早稲田大学謎解き企画algo"
+      }
+    },
+    {
+      "code": "Cc12",
+      "area": "Cc",
+      "x": 1292,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "CrazyLemon",
+        "sun": "CrazyLemon"
+      }
+    },
+    {
+      "code": "Cc13",
+      "area": "Cc",
+      "x": 1252,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "RiddleTimez",
+        "sun": "RiddleTimez"
+      }
+    },
+    {
+      "code": "Cc14",
+      "area": "Cc",
+      "x": 1212,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "文目（あやめ）　ラ・シタデール",
+        "sun": "文目（あやめ）　ラ・シタデール"
+      }
+    },
+    {
+      "code": "Cc15",
+      "area": "Cc",
+      "x": 1172,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "ハテナボックス／百兎秋",
+        "sun": "ハテナボックス／百兎秋"
+      }
+    },
+    {
+      "code": "Cc16",
+      "area": "Cc",
+      "x": 1133,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "ミステリーケーキ",
+        "sun": "ミステリーケーキ"
+      }
+    },
+    {
+      "code": "Cc17",
+      "area": "Cc",
+      "x": 1080,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "SBGC",
+        "sun": "SBGC"
+      }
+    },
+    {
+      "code": "Cc18",
+      "area": "Cc",
+      "x": 1040,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "Flambeur's Coin",
+        "sun": "Flambeur's Coin"
+      }
+    },
+    {
+      "code": "Cc19",
+      "area": "Cc",
+      "x": 1001,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "NazoGram",
+        "sun": "NazoGram"
+      }
+    },
+    {
+      "code": "Cc20",
+      "area": "Cc",
+      "x": 961,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "九十九萬屋",
+        "sun": "九十九萬屋"
+      }
+    },
+    {
+      "code": "Cc21",
+      "area": "Cc",
+      "x": 921,
+      "y": 556,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "Sheep Rhythm",
+        "sun": "Sheep Rhythm"
+      }
+    },
+    {
+      "code": "Cb1",
+      "area": "Cb",
+      "x": 1719,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "sukuranburu",
+        "sun": "sukuranburu"
+      }
+    },
+    {
+      "code": "Cb2",
+      "area": "Cb",
+      "x": 1679,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "謎文具キツツキ堂",
+        "sun": "謎文具キツツキ堂"
+      }
+    },
+    {
+      "code": "Cb3",
+      "area": "Cb",
+      "x": 1639,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "祝井ゆん/NEPPA",
+        "sun": "祝井ゆん/NEPPA"
+      }
+    },
+    {
+      "code": "Cb4",
+      "area": "Cb",
+      "x": 1599,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "あまつパイセン",
+        "sun": "あまつパイセン"
+      }
+    },
+    {
+      "code": "Cb5",
+      "area": "Cb",
+      "x": 1560,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "K-dush2",
+        "sun": "K-dush2"
+      }
+    },
+    {
+      "code": "Cb6",
+      "area": "Cb",
+      "x": 1510,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "C-lock-row",
+        "sun": "C-lock-row"
+      }
+    },
+    {
+      "code": "Cb7",
+      "area": "Cb",
+      "x": 1470,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "F-enigma",
+        "sun": "F-enigma"
+      }
+    },
+    {
+      "code": "Cb8",
+      "area": "Cb",
+      "x": 1430,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "埼玉大学 site：Arcana",
+        "sun": "埼玉大学 site：Arcana"
+      }
+    },
+    {
+      "code": "Cb9",
+      "area": "Cb",
+      "x": 1390,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "return 0;",
+        "sun": "return 0;"
+      }
+    },
+    {
+      "code": "Cb10",
+      "area": "Cb",
+      "x": 1350,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "ハードナッツ",
+        "sun": "ハードナッツ"
+      }
+    },
+    {
+      "code": "Cb11",
+      "area": "Cb",
+      "x": 1292,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "Tri Möbius（トライメビウス）",
+        "sun": "Tri Möbius（トライメビウス）"
+      }
+    },
+    {
+      "code": "Cb12",
+      "area": "Cb",
+      "x": 1252,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "TERRA NOVA",
+        "sun": "TERRA NOVA"
+      }
+    },
+    {
+      "code": "Cb13",
+      "area": "Cb",
+      "x": 1212,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "たぬき探偵ジェリー",
+        "sun": "たぬき探偵ジェリー"
+      }
+    },
+    {
+      "code": "Cb14",
+      "area": "Cb",
+      "x": 1172,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "MOVIE ROCK",
+        "sun": "MOVIE ROCK"
+      }
+    },
+    {
+      "code": "Cb15",
+      "area": "Cb",
+      "x": 1132,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "NoEscape",
+        "sun": "NoEscape"
+      }
+    },
+    {
+      "code": "Cb16",
+      "area": "Cb",
+      "x": 1080,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "みかん箱&Toy× ボーズ& エレメンツ",
+        "sun": "みかん箱&Toy× ボーズ& エレメンツ"
+      }
+    },
+    {
+      "code": "Cb17",
+      "area": "Cb",
+      "x": 1040,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "CrossXOne",
+        "sun": "CrossXOne"
+      }
+    },
+    {
+      "code": "Cb18",
+      "area": "Cb",
+      "x": 1000,
+      "y": 589,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "MOT!&pintoLab& なぞねこ",
+        "sun": "MOT!&pintoLab& なぞねこ"
+      }
+    },
+    {
+      "code": "Cb19",
+      "area": "Cb",
+      "x": 961,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "ShareKOBE",
+        "sun": "ShareKOBE"
+      }
+    },
+    {
+      "code": "Cb20",
+      "area": "Cb",
+      "x": 921,
+      "y": 589,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "グータン森山",
+        "sun": "グータン森山"
+      }
+    },
+    {
+      "code": "Ca1",
+      "area": "Ca",
+      "x": 1719,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "Coda!",
+        "sun": "Coda!"
+      }
+    },
+    {
+      "code": "Ca2",
+      "area": "Ca",
+      "x": 1679,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "秋山クリエイト",
+        "sun": "秋山クリエイト"
+      }
+    },
+    {
+      "code": "Ca3",
+      "area": "Ca",
+      "x": 1639,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "朝灼けリパブリック",
+        "sun": "朝灼けリパブリック"
+      }
+    },
+    {
+      "code": "Ca4",
+      "area": "Ca",
+      "x": 1599,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "MICHI",
+        "sun": "MICHI"
+      }
+    },
+    {
+      "code": "Ca5",
+      "area": "Ca",
+      "x": 1559,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "シネマトリック",
+        "sun": "シネマトリック"
+      }
+    },
+    {
+      "code": "Ca6",
+      "area": "Ca",
+      "x": 1510,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "AnotherVision",
+        "sun": "AnotherVision"
+      }
+    },
+    {
+      "code": "Ca7",
+      "area": "Ca",
+      "x": 1470,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "広島大学ナゾサークル　おにラビ",
+        "sun": "広島大学ナゾサークル　おにラビ"
+      }
+    },
+    {
+      "code": "Ca8",
+      "area": "Ca",
+      "x": 1430,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "謎解きサークル NULOCK",
+        "sun": "謎解きサークル NULOCK"
+      }
+    },
+    {
+      "code": "Ca9",
+      "area": "Ca",
+      "x": 1390,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "Xcape",
+        "sun": "Xcape"
+      }
+    },
+    {
+      "code": "Ca10",
+      "area": "Ca",
+      "x": 1350,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "ENIG-ROID",
+        "sun": "ENIG-ROID"
+      }
+    },
+    {
+      "code": "Ca11",
+      "area": "Ca",
+      "x": 1292,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "TokiToki escapecafe",
+        "sun": "TokiToki escapecafe"
+      }
+    },
+    {
+      "code": "Ca12",
+      "area": "Ca",
+      "x": 1252,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "ミステリーカフェ謎屋珈琲店",
+        "sun": "ミステリーカフェ謎屋珈琲店"
+      }
+    },
+    {
+      "code": "Ca13",
+      "area": "Ca",
+      "x": 1212,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "JOKER PROJECT",
+        "sun": "JOKER PROJECT"
+      }
+    },
+    {
+      "code": "Ca14",
+      "area": "Ca",
+      "x": 1172,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "五月のカワセミ",
+        "sun": "五月のカワセミ"
+      }
+    },
+    {
+      "code": "Ca15",
+      "area": "Ca",
+      "x": 1132,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "ナゾトキアドベンチャー",
+        "sun": "ナゾトキアドベンチャー"
+      }
+    },
+    {
+      "code": "Ca16",
+      "area": "Ca",
+      "x": 1080,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "0001（ゼロイチ）",
+        "sun": "0001（ゼロイチ）"
+      }
+    },
+    {
+      "code": "Ca17",
+      "area": "Ca",
+      "x": 1040,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "滋賀県謎解きチーム　リドレイク",
+        "sun": "滋賀県謎解きチーム　リドレイク"
+      }
+    },
+    {
+      "code": "Ca18",
+      "area": "Ca",
+      "x": 1000,
+      "y": 656,
+      "w": 39,
+      "h": 32,
+      "labels": {
+        "sat": "ナゾトキ番長",
+        "sun": "ナゾトキ番長"
+      }
+    },
+    {
+      "code": "Ca19",
+      "area": "Ca",
+      "x": 961,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "チャンズファクトリー＋うーベー",
+        "sun": "チャンズファクトリー＋うーベー"
+      }
+    },
+    {
+      "code": "Ca20",
+      "area": "Ca",
+      "x": 921,
+      "y": 656,
+      "w": 38,
+      "h": 32,
+      "labels": {
+        "sat": "？無策師？",
+        "sun": "？無策師？"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "kind": "sponsor",
+      "label": "協賛ブース",
+      "rects": [
+        {
+          "x": 770,
+          "y": 487,
+          "w": 50,
+          "h": 133
+        },
+        {
+          "x": 843,
+          "y": 532,
+          "w": 50,
+          "h": 88
+        }
+      ]
+    },
+    {
+      "kind": "delivery",
+      "label": "宅配ブース",
+      "rects": [
+        {
+          "x": 690,
+          "y": 600,
+          "w": 38,
+          "h": 38
+        }
+      ]
+    },
+    {
+      "kind": "toilet",
+      "label": "トイレ（女性・男性・多目的）",
+      "rects": [
+        {
+          "x": 462,
+          "y": 560,
+          "w": 38,
+          "h": 37
+        },
+        {
+          "x": 462,
+          "y": 630,
+          "w": 38,
+          "h": 37
+        },
+        {
+          "x": 552,
+          "y": 595,
+          "w": 38,
+          "h": 37
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5953 @@
+[
+  {
+    "id": "p18",
+    "boothId": "no01",
+    "name": "おうちで遊べる！　名作リアル脱出ゲーム『君は明日と消えていった』",
+    "price": 3800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "亡き幼馴染の遺品を手がかりに、最後の手紙の謎を解く自宅用RDG",
+    "description": "亡くなった幼馴染の遺品が、あなたの家に届く。\n\n小包に入っていたのは、幼馴染が使用していた筆箱、あなたや友人と一緒に写ったプリクラ、ふたりで交わした交換日記、そしてあなたへ宛てた最後の手紙。残された品をたどりながら、彼女が最後に遺したメッセージの謎を解き明かす、自宅で遊べるリアル脱出ゲームです。\n\n2016年の初演から再演を重ねた名作を、おうちで遊べる形へ再構築しました。イベントで使用した映像とボイスを完全収録。好きな場所で、自分のペースで謎に向き合えるので、物語の世界に深く没入できます。謎解きが初めての方も、当時会場で遊んだ方も、新たな気持ちでお楽しみください。\n\n『ナゾトキマーケット2026』にて、発売日に先駆けて先行販売。各日数量限定のためお見逃しなく。\n\n▼特設サイト\nhttps://realdgame.jp/s/ouchi-kimiasu/",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "『謎解きが初めての方も』と案内され、約90分・物語重視の作りのため"
+    },
+    "playMinutes": 90,
+    "players": "推奨1人",
+    "isNew": true,
+    "limited": "先行販売・各日数量限定（一般発売は2026-12-08）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no01/product/p18_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p18",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://realdgame.jp/s/ouchi-kimiasu/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no03-1",
+    "name": "リドラコレクション",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "9人のクリエイターが作った9つの別々の謎解きが入った箱入りの新作",
+    "description": "9つの世界を、解き尽くせ。『リドラコレクション』 9人のクリエイターが贈る、全く異なる9つの謎解きが登場。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "最速先行販売(ナゾトキマーケット2026)",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HU0HtAVbYAEnYG9?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2111396810547704011",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2113571134272836012",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2113933526433411212",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2114295913439248418",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "リドラコレクション",
+        "sources": [
+          {
+            "url": "https://x.com/RIDDLER_nazo/status/2111396810547704011",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/RIDDLER_nazo/status/2113571134272836012",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/RIDDLER_nazo/status/2113933526433411212",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/RIDDLER_nazo/status/2114295913439248418",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no03",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no07-1",
+    "name": "UNKNOX:RED",
+    "price": 3850,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "箱型の未知物質を調査員として解析する謎解きキット(RED編)",
+    "description": "突如世界に現れた、謎の箱型物質。未知の物質を、解析せよ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 100,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://machihack.com/unknox-c9n2",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "アンノックス",
+        "sources": [
+          {
+            "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no07",
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no07-2",
+    "name": "UNKNOX:BLUE",
+    "price": 3850,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "箱型の未知物質を調査員として解析する謎解きキット(BLUE編)",
+    "description": "突如世界に現れた、謎の箱型物質。未知の物質を、解析せよ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 120,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://machihack.com/unknox-c9n2",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "アンノックス",
+        "sources": [
+          {
+            "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no07",
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no07-3",
+    "name": "UNKNOX:RED BLUE セット",
+    "price": 7000,
+    "priceNote": "ナゾトキマーケット限定価格(通常7,400円)",
+    "category": "kit",
+    "oneLiner": "UNKNOXのRED編とBLUE編のセット(会場限定価格)",
+    "description": "突如世界に現れた、謎の箱型物質。未知の物質を、解析せよ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 100,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://machihack.com/unknox-c9n2",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "アンノックス",
+        "sources": [
+          {
+            "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no07",
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no08-1",
+    "name": "MIXStars Project 天野茉乃のインスタント写真風カード",
+    "price": 2500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "アイドルの私生活を切り取った写真風カードの裏側を調べる没入型キット",
+    "description": "少女たちの夢をかけた、アイドルオーディション企画『MIXStars Project』",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間90分〜から推定"
+    },
+    "playMinutes": 90,
+    "players": "1人〜",
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://i-ku-kan.com/mixstars",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/i_kukan/status/2112123939187253663",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ミクスタ謎",
+        "sources": [
+          {
+            "url": "https://x.com/i_kukan/status/2112123939187253663",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no08",
+    "unconfirmed": [
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no08-2",
+    "name": "MIXStars Project 西園寺冬和の謎解きゲーム",
+    "price": 3300,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎解き好きのアイドルが作った謎解きゲームに隠れた秘密を探る",
+    "description": "少女たちの夢をかけた、アイドルオーディション企画『MIXStars Project』",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間120分〜から推定"
+    },
+    "playMinutes": 120,
+    "players": "1人〜",
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://i-ku-kan.com/mixstars",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/i_kukan/status/2112123939187253663",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ミクスタ謎",
+        "sources": [
+          {
+            "url": "https://x.com/i_kukan/status/2112123939187253663",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no08",
+    "unconfirmed": [
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no08-3",
+    "name": "MIXStars Project 望月野々香・矢野いろは・初瀬翠の履歴書",
+    "price": 2500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "流出した3人の履歴書に隠された嘘と秘密を暴く没入型キット",
+    "description": "少女たちの夢をかけた、アイドルオーディション企画『MIXStars Project』",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間90分〜から推定"
+    },
+    "playMinutes": 90,
+    "players": "1人〜",
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://i-ku-kan.com/mixstars",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/i_kukan/status/2112123939187253663",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ミクスタ謎",
+        "sources": [
+          {
+            "url": "https://x.com/i_kukan/status/2112123939187253663",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no08",
+    "unconfirmed": [
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no08-4",
+    "name": "MIXStars Project 3種セット",
+    "price": 7000,
+    "priceNote": "ナゾマ限定価格(通常7,700円)",
+    "category": "kit",
+    "oneLiner": "MIXStars Projectの3キットをまとめたお得なセット",
+    "description": "少女たちの夢をかけた、アイドルオーディション企画『MIXStars Project』",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "3キットの所要時間(90〜120分〜)と「中学生以上対象」から推定"
+    },
+    "playMinutes": 90,
+    "players": "1人〜",
+    "isNew": true,
+    "limited": "ナゾマ限定価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://i-ku-kan.com/mixstars",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/i_kukan/status/2112123939187253663",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ミクスタ謎",
+        "sources": [
+          {
+            "url": "https://x.com/i_kukan/status/2112123939187253663",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no08",
+    "unconfirmed": [
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p06",
+    "boothId": "no10",
+    "name": "KARIUDO-KRAKEN",
+    "price": 3800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "深海の怪物KRAKENを討伐する、組んで試す高難度パズルキット",
+    "description": "謎解き玄人に、新たな討伐依頼。今回の標的は、深海に潜む巨大怪物「KRAKEN」。立ちはだかるのは、ひらめきだけでは突破できない難解なパズルの数々。組み、試し、解き明かし、そのすべてを攻略せよ。己のパズル力を武器に、KRAKEN討伐に挑め。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★★★★★(5/5)をそのまま"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no10/product/p06_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p06",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/r/rKARIUDO/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/g/gkariudo002/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2113903329482887591",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "リバレ",
+        "sources": [
+          {
+            "url": "https://x.com/real_takara/status/2111744101880123430",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/real_takara/status/2113903329482887591",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "tag": "KADIURO",
+        "sources": [
+          {
+            "url": "https://x.com/real_takara/status/2113903329482887591",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p07",
+    "boothId": "no10",
+    "name": "THE ALPHABET ～Accelerate～",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "26分の1から届く、高難易度1問だけの挑戦状",
+    "description": "26分の1からあなたへ挑戦状が届きました。高難易度の1問をあなたへお届けいたします。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★★★★☆(4/5)をそのまま"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no10/product/p07_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p07",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p08",
+    "boothId": "no10",
+    "name": "SECRET＝SHERLOCK #CASE02 -対峙する因縁 2人のモリアーティ-",
+    "price": 2600,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "脅迫状と爆弾の事件で、2人のモリアーティの謎に挑む封筒キット",
+    "description": "ベーカー街の下宿で二人の男が共同生活を送っていた。\n私立探偵シャーロック・ホームズと、元軍医ジョン・H・ワトスン。\n\nそして彼らには、宿敵と呼ぶべき存在がいた。\nその名はジェームズ・モリアーティ。\n\nホームズに匹敵するほどの知能を持ち、目的のためなら手段を選ばない「犯罪会のナポレオン」とも呼ばれる犯罪者である。\n\nある日、ホームズのもとに一通の脅迫状とともに誘拐事件解決の依頼が持ち込まれる。\n犯人からのメッセージに従い調査を進めるなか、驚きの光景が待ち受ける。\n爆破までの残り時間が刻々と減っていく爆弾。\n\nそして、まったく同じ顔をした奇妙な2人のモリアーティ。\n果たして、全ての真実を明らかにし、事件を解決できるのか？\n\nこれは、かつてホームズとワトスンが体験した、まだ誰も知らない秘密の事件の物語。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★★★☆☆(3/5)をそのまま"
+    },
+    "playMinutes": 90,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no10/product/p08_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p08",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/g/gsherlock002/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/r/rSHERLOCK/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no10-1",
+    "name": "マトリョーシカ",
+    "price": 5000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "圧倒的なボリュームの玄人向け謎解き",
+    "description": "圧倒的ボリューム。謎解き玄人の方のみお買い求めください。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★★★★★(5/5)をそのまま"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no10",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no10-2",
+    "name": "TSUMUGI",
+    "price": 2600,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ガラスペン付きで、込められた想いを読み解く謎解き",
+    "description": "ガラスペンと謎解きがセットに。一本のガラスペンに紡がれた想いを読み解く体験。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★★☆☆☆(2/5)をそのまま"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no10",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no10-3",
+    "name": "MAGICAL BATH POWDER",
+    "price": 600,
+    "priceNote": "600〜1,500円(種類により異なる。お品書きの表記)",
+    "category": "goods",
+    "oneLiner": "5種類の入浴剤と謎解きゲームのセット",
+    "description": "5種類の入浴剤×謎解きゲーム！あなたのお気に入りはどれ？",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★★☆☆☆〜★★★☆☆(2〜3/5)の下限を採用"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no10",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no10-4",
+    "name": "走れよメロス",
+    "price": 2000,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "小説型の謎解き(なぞ紅文庫シリーズ・Web接続なし)",
+    "description": "WEB接続ナシ！書店人気No.1の小説型謎解き",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★★★☆☆(3/5)をそのまま"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no10",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no11-1",
+    "name": "逆転！クレーム百貨店",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "アットビ制作の百貨店テーマの新作持ち帰り謎",
+    "description": "ナゾマは『逆転！クレーム百貨店』を新作として持っていきます！",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/atobi_PR/status/2110577917424209971",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/atobi_PR/status/2111449634367480085",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "アットビ開発室",
+        "sources": [
+          {
+            "url": "https://x.com/atobi_PR/status/2111449634367480085",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no11",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-1",
+    "name": "迷路の塔",
+    "price": 3000,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "迷路ばかりの謎が詰まった迷路謎の新作",
+    "description": "聳え立つ迷路の塔を攻略せよ 盛り沢山の迷路が楽しめる、迷路謎の極致 迷路の塔に隠された秘密を解き明かせ",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット2026 最速先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/6ab3c34025a74157ab508624",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2113963734427226548",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "迷路の塔",
+        "sources": [
+          {
+            "url": "https://x.com/_XEOXY/status/2113963734427226548",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no12",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-2",
+    "name": "COUNT",
+    "price": 2200,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "「いつまでも、謎が解きたいあなたへ」の新作持ち帰り謎",
+    "description": "~いつまでも、謎が解きたいあなたへ~",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット2026 最速先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/6ab8139f97f4602e71363704",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2113956169182245219",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "カウントナゾ",
+        "sources": [
+          {
+            "url": "https://x.com/_XEOXY/status/2113956169182245219",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no12",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-3",
+    "name": "→［２］→",
+    "price": 2500,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "『→□→』に新要素を足した、辿って解く矢印の謎",
+    "description": "辿って飛んで、辿って解こう 『→□→』から新要素が加わり、ボリューム・難易度ともにアップ！ 『→□→』とは内容が全く異なりますので、お好きな方から遊んでいただけます。 謎解きに慣れた方向けの作品ですが、ヒント機能が充実していますので、謎解きに慣れていなくても最後まで遊んでいただけます。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "「慣れた方向け」だがヒント機能が充実との表記から推定"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット2026 最速先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/6acd418d760ca81904aa4797",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2113948626586042629",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "やじるしかくのなぞ2",
+        "sources": [
+          {
+            "url": "https://x.com/_XEOXY/status/2113948626586042629",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no12",
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-4",
+    "name": "謎が好きなら、作ってよ！",
+    "price": 2500,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "謎解き公演を作る側を体験する新感覚の持ち帰り謎",
+    "description": "無茶振りに応えてホール型公演の謎解き制作をする新感覚の持ち帰り謎！ あなたは「うぇるかむ食品」という食品メーカーの社員。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/69fa60213ee3fd7b8b846946",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-5",
+    "name": "UNIVERSE",
+    "price": 7000,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "ROOKIE・MEDIUM・EXPERTの3難易度で遊ぶ大型の高難度キット",
+    "description": "謎とパズルが織り成す深淵 終焉の淵に咲く珠玉の奇跡 UNIVERSEはROOKIE・MEDIUM・EXPERTの３つの難易度で構成されていますが、お好きな難易度の順番で遊んでいただけます。",
+    "difficulty": {
+      "level": 4,
+      "source": "estimated",
+      "basis": "EXPERTは5時間〜、タグに高難易度とあることから推定"
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/69f8afd53ee3fd40838469cc",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-6",
+    "name": "→□→",
+    "price": 2500,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "解いて辿る矢印の謎(慣れた人向け)",
+    "description": "解いて辿って、辿って解こう 謎解きに慣れた方向けの作品です。 ヒント機能が充実していますので、謎解きに慣れていなくても最後まで遊んでいただけます。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "「慣れた方向け」だがヒント機能が充実との表記から推定"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/69e94386b5941fff0710945d",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-7",
+    "name": "LOST",
+    "price": 2500,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "失われたものを推測して解く高難度の持ち帰り謎",
+    "description": "失われたものを、推測せよ。 【注意事項】 高難易度で謎解きに慣れた方向けの作品です。",
+    "difficulty": {
+      "level": 4,
+      "source": "estimated",
+      "basis": "「高難易度で謎解きに慣れた方向け」との表記から推定"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/68e19e6a40aa6275ad912484",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-8",
+    "name": "RAndOm",
+    "price": 2000,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "試行錯誤で答えを導くインク謎の高難度キット",
+    "description": "試行錯誤して答えを導け。 【注意事項】 高難易度で謎解きに慣れた方向けの作品です。",
+    "difficulty": {
+      "level": 4,
+      "source": "estimated",
+      "basis": "「高難易度で謎解きに慣れた方向け」との表記から推定"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/68e040309183255fd0239bdd",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-9",
+    "name": "解錠",
+    "price": 2000,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "ノート4冊を使いLINEで進める「解錠」の謎",
+    "description": "謎を解き、解錠せよ。 【内容物】 ・説明書 ・ノート１〜４",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/653982ac2d2599068ca2d3ba",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-10",
+    "name": "■",
+    "price": 2500,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "封筒4つとWebで進める「新たな■」を手に入れる謎",
+    "description": "謎を解き、新たな■を手に入れよう。 【商品説明】 謎解きに慣れた方向けの作品です。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "「謎解きに慣れた方向け」との表記から推定"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/62e6daa9ac366147ed5e0327",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-11",
+    "name": "晴天カクテル ノンアルコールVer.",
+    "price": 1300,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格(アルコールVer.とのセット割あり)。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "A5サイズ11枚とLINEで遊ぶ、背伸びをテーマにした謎",
+    "description": "何もかも嫌になってしまったときは、少し背伸びをしてみるといい。 大人だって、背伸びをして生きているんだ。 内容物 A5サイズ11枚",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/5ee2dcfbd26fa5765d4da43c",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-12",
+    "name": "晴天カクテル アルコールVer.",
+    "price": 1500,
+    "priceNote": "XEOXY ONLINE SHOPの表記価格(ノンアルコールVer.とのセット割あり)。会場価格は未確認",
+    "category": "kit",
+    "oneLiner": "晴天カクテルのアルコールVer.",
+    "description": "(ノンアルコールVer.とセット割の対象商品)",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://xeoxy.shop/items/5ee2dd80b5a42579c8fc4a99",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no12-13",
+    "name": "ナゾノミー症候群 簡易検査キット",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "XEOXYの持ち帰り謎(詳細未確認)",
+    "description": "告知に説明文なし（商品名のみ確認）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.xeoxy.com/news/20261025",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no12",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p15",
+    "boothId": "no13",
+    "name": "BEAUTIFUL",
+    "price": 3200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "黒い箱の大量の謎を、禁忌に触れず解き切る高難度キット",
+    "description": "黒い箱の中には、意味不明な記号や文字が書かれたカラフルな謎が大量に詰め込まれている。\n\nそしてその奥には、決して手を出してはならない禁忌【禁じられた道具】が、姿を現す隙を狙って息を潜めている。\n\nどうか、最後まで禁忌に触れること無く、すべての謎を解いてほしい。\n\n総合難易度：5/5\nプレイ時間：210分〜",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記『総合難易度：5/5』をそのまま"
+    },
+    "playMinutes": 210,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no13/product/p15_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p15",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/flapzero/status/2113933530220875952",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p16",
+    "boothId": "no13",
+    "name": "めくるめく謎",
+    "price": 2500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "カードをめくるたび謎が変わる、スタンド付きカード型謎解き",
+    "description": "カードをめくるたびに謎が姿を変え、文章がつながり、めくるめく展開があなたを待ち受けます。\n\nリングでとめられた3つのカードの束を専用のスタンドに立てて楽しむ新感覚の謎解きグッズ。\n\nすべてのカードをめくり、めくるめく謎を解き明かしてください。\n\n総合難易度：3/5\nプレイ時間：90分〜",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記『総合難易度：3/5』をそのまま"
+    },
+    "playMinutes": 90,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no13/product/p16_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p16",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/flapzero/status/2114295911899636076",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p17",
+    "boothId": "no13",
+    "name": "山陽電車 なぞときさんぽ旅 2023 リモートVer.",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "2023年の周遊謎を、動画と当時のアイテムで自宅復刻",
+    "description": "2023年に山陽電車にて開催した、あの大人気謎解きゲーム「なぞときさんぽ旅 2023」が自宅で遊べるリモートVer.で復刻！\n\n自宅にいながら、現地の周遊動画と当時のアイテムを使って、主人公「姫山 朝陽」の不思議で素敵な軌跡を見届けよう！\n\n総合難易度：3/5\nプレイ時間：120分〜",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記『総合難易度：3/5』をそのまま"
+    },
+    "playMinutes": 120,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no13/product/p17_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p17",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no14-1",
+    "name": "DOORS 1〜4",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "これまでの無料Web謎DOORSをデザイン一新して販売",
+    "description": "『DOORS 1〜4』 デザインを一新して、ナゾトキマーケット2026（11/7・8）で販売が決定しました！",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": "1人〜",
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/far_near_/status/2113223853254308136",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no14",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-1",
+    "name": "禁忌を犯す体験ゲーム「TETTUI」",
+    "price": 2500,
+    "priceNote": "2,500円は先行予約チケット(現地引換、別途発券手数料2%)の価格。オンライン先行(100個)も2,500円(送料込み・発送11/9以降)。会場での通常価格は告知なし",
+    "category": "kit",
+    "oneLiner": "SNSの嫌な相手を調べて「鉄槌」を下す没入型の持ち帰り謎",
+    "description": "ムカつく奴を裁いてみたくないですか？ ムカつく奴を思う存分制裁できる正義の鉄槌・没入型体験ゲーム。実際のSNSアカウントを調査／実際に自分の考えた罵詈雑言を叫べる／自分の正義のままムカつくやつに鉄槌を下せる。内容物: スタートガイド・封筒3種・二つ折りの紙。用意するもの: ネット接続できる端末・筆記用具・Xのアカウント・LINEのアカウント。(注意書き「性格のよいひとはプレイをお控えください」)",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 難易度★3/6(初心者でも安心) → 3/6×5=2.5 → 3"
+    },
+    "playMinutes": 60,
+    "players": "1人〜",
+    "isNew": true,
+    "limited": "ナゾマ現地引換の先行予約チケット(7日・8日 各50個)、オンライン先行100個",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVNkyEcb0AApJPz?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2113586235293761546",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2113571142631821472",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2113593779920015478",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazoxnazo-shop.com/items/6ad87b020479d2cc405206b8",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazoxnazo-shop.com/items/6ad87bc059cbf471274d93a1",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "禁忌体験TETTUI",
+        "sources": [
+          {
+            "url": "https://x.com/nazo_rpg/status/2113586235293761546",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/nazo_rpg/status/2113593779920015478",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no16",
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no17-1",
+    "name": "ユリイカの森からの招待状 vol.2 ～無限書庫に眠る謎～",
+    "price": null,
+    "priceNote": "価格は告知に記載なし。3作セットあり(価格不明)",
+    "category": "kit",
+    "oneLiner": "ユリイカの森シリーズ第2弾の持ち帰り謎",
+    "description": "（作品の説明文は告知に無し）ナゾトキマーケット2026先行販売の新作として告知されている。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売(2026年11月発売予定)。取り置き予約は予定数量に達し次第締切",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://nazotoki-project.com/blog/%e3%83%8a%e3%82%be%e3%83%88%e3%82%ad%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%83%e3%83%882026%e5%85%88%e8%a1%8c%e8%b2%a9%e5%a3%b2%e3%80%80%e6%96%b0%e4%bd%9c%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/NAZOGUMI/status/2113571137548611623",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no17",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no17-2",
+    "name": "ミステリーレターシリーズ「マレーシア・スプリット」",
+    "price": null,
+    "priceNote": "価格は告知に記載なし。3作セットあり(価格不明)",
+    "category": "kit",
+    "oneLiner": "破れた6枚の便箋をたどる手紙テーマの謎",
+    "description": "ーー二つに引き裂かれた、六枚の便箋。\nある理由から、あえて破れたままお届けします。\nこれは、日本から遠く離れたマレーシアから届いた、ある家族をめぐる物語です。\n手紙を手にしたあなたは、色とりどりの記録や絵に触れながら、思いがけない記憶の旅をたどることになるでしょう。\n累計販売数30,000部を超えた、謎組を象徴する“手紙”をテーマにしたシリーズの第4弾。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売(2026年11月発売予定)。取り置き予約は予定数量に達し次第締切",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2026/10/f06d62fac051a7afe62b16d3b896e940.jpg",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://nazotoki-project.com/blog/%e6%83%85%e5%a0%b1%e8%a7%a3%e7%a6%81%ef%bc%8f%e3%83%9f%e3%82%b9%e3%83%86%e3%83%aa%e3%83%bc%e3%83%ac%e3%82%bf%e3%83%bc%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba%e3%80%8c%e3%83%9e%e3%83%ac%e3%83%bc%e3%82%b7/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazotoki-project.com/blog/%e3%83%8a%e3%82%be%e3%83%88%e3%82%ad%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%83%e3%83%882026%e5%85%88%e8%a1%8c%e8%b2%a9%e5%a3%b2%e3%80%80%e6%96%b0%e4%bd%9c%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/NAZOGUMI/status/2113571137548611623",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no17",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no17-3",
+    "name": "幻境堂 完全新作",
+    "price": null,
+    "priceNote": "価格は告知に記載なし。3作セットあり(価格不明)。作品タイトルは未発表",
+    "category": "kit",
+    "oneLiner": "「曰く」つきの古い電話帳が主役の幻境堂新作",
+    "description": "幻と現の境目に、僅かな間だけ開く店ーー幻境堂。\nその店にひっそりと置かれた新たな品は、どうやら「曰く」つきの古い電話帳のようです。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売(2026年11月発売予定)。取り置き予約は予定数量に達し次第締切",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://nazotoki-project.com/blog/%e6%83%85%e5%a0%b1%e8%a7%a3%e7%a6%81%ef%bc%8f%e5%b9%bb%e5%a2%83%e5%a0%82%e3%80%80%e5%ae%8c%e5%85%a8%e6%96%b0%e4%bd%9c/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazotoki-project.com/blog/%e3%83%8a%e3%82%be%e3%83%88%e3%82%ad%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%83%e3%83%882026%e5%85%88%e8%a1%8c%e8%b2%a9%e5%a3%b2%e3%80%80%e6%96%b0%e4%bd%9c%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/NAZOGUMI/status/2113571137548611623",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no17",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-1",
+    "name": "あなたに捧げる殺人",
+    "price": 2970,
+    "priceNote": "税込(2,700円+税)。マーダーミステリーミニシリーズ。対象年齢15歳以上",
+    "category": "other",
+    "oneLiner": "作中作がテーマの4人用マーダーミステリー",
+    "description": "街の喧騒が、なぜかいつにもまして耳に残った。\n2021年の春。あなたたちは友人に招かれ、彼の自宅を訪問する。しかし肝心の友人の姿が見えない。\n困惑のさなか、メッセージが届く。\n「とあるゲームを遊んでほしい。事情は後で話す」\nそれは制作者の実体験を元に作られた“マーダーミステリー”だという。\n真意を掴み切れないまま、ゲームを始めることになるが――。\n物語の先で明らかになる真実と結末。これは、“あなたに捧げる殺人”。\n作中作をテーマに、過去のシリーズ作品にない構成やギミックが用意されています。\n一風変わった物語・推理体験をぜひお楽しみください。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 150,
+    "players": "4人(GM不要)",
+    "isNew": true,
+    "limited": "ナゾトキマーケット先行販売(一般発売は2026年11月13日)",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.groupsne.co.jp/products/bg/mmm/img/mmm29_top.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.groupsne.co.jp/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.groupsne.co.jp/products/bg/mmm/mmm29.html",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "payment"
+    ]
+  },
+  {
+    "id": "no20-1",
+    "name": "ねずみ探検隊シリーズ vol.2 RAGING OCEAN",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ナゾをちぎってサメに立ち向かう探検キット(2モード)",
+    "description": "ナゾをちぎって襲いくるサメに立ち向かえ。プレイスタイルに合わせた2つのモードを搭載。RAGING OCEANモード: どなたでも、歯ごたえのあるナゾトキを楽しめます。+大荒れモード: ナゾトキに慣れた方にオススメの高難度モード。限られた手がかりで、より手強いナゾトキに挑めます。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "通常モードが「歯ごたえのあるナゾトキ」、上位に高難度モードもある2モード構成のため標準の3とした"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVUjWKibUAAgIvH?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/ratsnest_works/status/2113948630058983519",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/ratsnest_works/status/2113948631610843556",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/ratsnest_works/status/2113948630826561767",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ねずみ探検隊オーシャン",
+        "sources": [
+          {
+            "url": "https://x.com/ratsnest_works/status/2113948630058983519",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/ratsnest_works/status/2113948630826561767",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/ratsnest_works/status/2113948631610843556",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no20",
+    "unconfirmed": [
+      "price",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no20-2",
+    "name": "ねずみ探検隊シリーズ vol.3 CRYSTAL SKY",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ナゾからのぞいてタカと宝探しする探検キット(2モード)",
+    "description": "ナゾからのぞいてタカと一緒に宝物を探そう。プレイスタイルに合わせた2つのモードを搭載。CRYSTAL SKYモード: 通常モード。じっくりと解きごたえのあるナゾトキを楽しめます。+そよかぜモード: ナゾトキが初めての方やゆったり遊びたい方にオススメのやさしいモード。手がかりを頼りに一歩一歩ナゾを解き進められます。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "通常モードが「解きごたえのあるナゾトキ」で、初心者向けのやさしいモードも選べるため標準の3とした"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVaO1a6bYAAkzHs?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/ratsnest_works/status/2114311011377557982",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/ratsnest_works/status/2114311012174475604",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/ratsnest_works/status/2114311011805335854",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ねずみ探検隊スカイ",
+        "sources": [
+          {
+            "url": "https://x.com/ratsnest_works/status/2114311011377557982",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/ratsnest_works/status/2114311011805335854",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/ratsnest_works/status/2114311012174475604",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no20",
+    "unconfirmed": [
+      "price",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no22-1",
+    "name": "Sandwich(ナゾロサンドイッチ)",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "NazoLockの新作持ち帰り謎『Sandwich』",
+    "description": "NazoLockの新作持ち帰り謎『Sandwich』。2026年10月17・18日のゲームマーケット2026秋で先行販売し、ナゾトキマーケット2026(Bb8)でも販売。後日、通販サイトQurioStoreでも取り扱い予定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/QurioStore_QK/status/2110966593761202308",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2110653152890413215",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2113216294669455599",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ナゾロサンドイッチ",
+        "sources": [
+          {
+            "url": "https://x.com/NazoLock_baton/status/2110653152890413215",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no22",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no23-1",
+    "name": "ナゾトキマーケット2026 参加記念ステッカーセット",
+    "price": 500,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "参加の記念に貼れる限定ステッカーの2枚セット",
+    "description": "『ナゾトキマーケット』への参加をアピールできる限定ステッカーです。\nサイズ：角型 H50×W50mm／丸型 φ55mm（2枚セット）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "会場限定(公式ブースで2日間のみ販売)",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.zaikei.co.jp/releases/3652687/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://news.cube-soft.jp/article/4104883",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no23",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no23-2",
+    "name": "ナゾトキマーケット2026 謎付きクリアファイル",
+    "price": 1200,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "メインビジュアルのA4クリアファイルにオリジナルの謎付き",
+    "description": "メインビジュアルをあしらった限定クリアファイルに、オリジナルの謎がついてくる\nA4サイズ・謎用紙入り",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "会場限定(公式ブースで2日間のみ販売)",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.zaikei.co.jp/releases/3652687/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://news.cube-soft.jp/article/4104883",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no23",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no23-3",
+    "name": "ナゾトキマーケット2026 公式トートバッグ",
+    "price": 1500,
+    "priceNote": "ナチュラル／ネイビーの2色(各1,500円)",
+    "category": "goods",
+    "oneLiner": "出展96団体の名前入り限定トートバッグ(2色)",
+    "description": "出展ブース全96組の名称がずらりと並んだ『ナゾトキマーケット2026』限定デザインです。\nサイズ：約W37×H42cm（綿）／カラー：ナチュラル・ネイビー",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "会場限定(公式ブースで2日間のみ販売)",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.zaikei.co.jp/releases/3652687/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://news.cube-soft.jp/article/4104883",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no23",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no25-1",
+    "name": "焼肉謎 -タン編-",
+    "price": null,
+    "priceNote": "通販価格は謎のみ800円・アクキー付き1,500円(公式ショップ)。ナゾマでの価格・仕様は告知なし",
+    "category": "kit",
+    "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
+    "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tanteijelly/status/2109933306947182650",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tanteijelly/status/2095473180953780601",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no25",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no25-2",
+    "name": "焼肉謎 -カルビ編-",
+    "price": null,
+    "priceNote": "通販価格は謎のみ800円・アクキー付き1,500円(公式ショップ)。ナゾマでの価格・仕様は告知なし",
+    "category": "kit",
+    "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
+    "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tanteijelly/status/2109933306947182650",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tanteijelly/status/2095473180953780601",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no25",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no25-3",
+    "name": "焼肉謎 -ロース編-",
+    "price": null,
+    "priceNote": "通販価格は謎のみ800円・アクキー付き1,500円(公式ショップ)。ナゾマでの価格・仕様は告知なし",
+    "category": "kit",
+    "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
+    "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tanteijelly/status/2109933306947182650",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tanteijelly/status/2095473180953780601",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no25",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no25-4",
+    "name": "焼肉謎 -ホルモン編-",
+    "price": null,
+    "priceNote": "通販価格は謎のみ800円・アクキー付き1,500円(公式ショップ)。ナゾマでの価格・仕様は告知なし",
+    "category": "kit",
+    "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
+    "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tanteijelly/status/2109933306947182650",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tanteijelly/status/2095473180953780601",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no25",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no25-5",
+    "name": "焼肉謎 -レバー編-",
+    "price": null,
+    "priceNote": "通販価格は謎のみ800円・アクキー付き1,500円(公式ショップ)。ナゾマでの価格・仕様は告知なし",
+    "category": "kit",
+    "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
+    "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tanteijelly/status/2109933306947182650",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tanteijelly/status/2095473180953780601",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no25",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p20",
+    "boothId": "no29",
+    "name": "今月の真相当てクイズ総集編2024-2026",
+    "price": 1890,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "真相当てクイズの過去問41問と書き下ろし17問を収録した総集編",
+    "description": "謎屋珈琲店が毎月店頭およびSNSで出題する「今月の真相当てクイズ」「LINE限定クイズ」「クリームソーダの謎」の過去問41問+書籍オリジナル問題17問を収録。さらに、2年間の伏線が回収される驚愕の「最終問題」もご用意。極上の鳥肌体験をどうぞ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no29/product/p20_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p20",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazocafe/status/2113100184477737421",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p21",
+    "boothId": "no29",
+    "name": "ミステリー小説『雨の中の犬たちへ』",
+    "price": 1980,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "謎屋珈琲店マスター作。飲食チェーンの異物混入事件を描く経営ミステリー小説",
+    "description": "峰月響介（謎屋珈琲店マスター）作の長編ミステリー小説第2作。\n「本作は、ある事件を中心に、一人の男の半生を綴った物語である」\nある日、飲食事業経営者の交流会に参加した峰月響介。そこで偶然出会い、意気投合したのは、全国に二百店舗以上の飲食チェーンを展開するグループの元代表であった。\nワイドショーやSNSを賑わせた「柳の下のネズミ事件」の当事者であった彼と話す中、\nかつて小説を世に出したことがある響介は、「あなたのお話を小説にしてもいいですか？」と申し出るのだが…。\nこれは故意か偶然か？　謎屋珈琲店店主・峰月響介が、大手居酒屋チェーンで発生した「異物混入事件」の真相を描く、経営ミステリーの傑作、誕生！",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no29/product/p21_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p21",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazoyacafe.jp/nazo/novel_2nd/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p22",
+    "boothId": "no29",
+    "name": "持ち帰り謎「絶海の孤島店からの挑戦」",
+    "price": 1480,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "「絶海の孤島店」で出題される20問と最終問題の持ち帰り謎",
+    "description": "謎屋珈琲店でフードを注文することで楽しめる「お客様への挑戦クイズ」全20問の番外編、「絶海の孤島店」で出題される20問と、すべてが解けた時に現れる「最終問題」をご堪能あれ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no29/product/p22_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p22",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no29-1",
+    "name": "今月の真相当てクイズ総集編（第1巻〜第3巻）",
+    "price": null,
+    "priceNote": "価格は告知に書かれていない",
+    "category": "booklet",
+    "oneLiner": "真相当てクイズの過去問を2年分ずつまとめた総集編の既刊3冊",
+    "description": "過去作の第１巻〜第３巻も販売予定です。全て問題被りはなく、どの巻から初めていただいても大丈夫です！",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVM9alybYAE0DTz?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazocafe/status/2113100184477737421",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no29",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p23",
+    "boothId": "no31",
+    "name": "水彩を貫く",
+    "price": 3500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "絵本のように1枚ずつめくり、部屋に残る痕跡から記憶の謎を解く",
+    "description": "朝起きて顔を拭った。\n今日も晴天だった。\n私は窓が1つの、小さな部屋で暮らしている。\n\n私は、ここに独りでゐる。\n\n真四角の部屋には、\n時計、レコード、メトロノーム。\n\nそれらは規則正しく動いて、私を退屈な日常へといざなう。\n\n──私はまだ、この部屋に閉じ込めたものを\n思い出せないでいる。\n\n------------\n\n「水」をテーマにした、遠い国のお話。\n\n正方形の箱の中で、\n絵本のように1枚ずつめくりながら\n物語を読み進めていきます。\n\n部屋に残された日々の痕跡から謎を解き明かし、\n過去の記憶と向き合う作品です。\n\n------------\n\n所要時間：60分~\n推奨人数：1~2人\n難易度：★★☆ (物語を読むのが好きな方向け)\n\n推奨年齢：18歳以上\n※本作には心理的に繊細な描写が含まれます。(残虐表現, R-18要素はありません)※一部鋭利なアイテムがございますので、お取り扱いには十分ご注意ください。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★★☆（2/3）→ 2/3×5=3.3 → 3"
+    },
+    "playMinutes": 60,
+    "players": "1~2人",
+    "isNew": true,
+    "limited": "事前予約フォームあり（受付11/7 18:00まで）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no31/product/p23_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p23",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2112136160076341392",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2113228299031982539",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "水彩を貫く",
+        "sources": [
+          {
+            "url": "https://x.com/MayAlcedoatthis/status/2112136160076341392",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/MayAlcedoatthis/status/2113228299031982539",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "p24",
+    "boothId": "no31",
+    "name": "五月のカワセミ",
+    "price": 4500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "宮沢賢治『やまなし』が題材。絵本と手がかりで月を巡る謎を解く",
+    "description": "11月のある朝。\n\n上着を羽織りカーテンを開けると、\nどこからか鳥のさえずりが聞こえた。\n\n振り返ると机の上には、\nずっとそこにあったかのように\n見慣れない絵本が置かれていた。\n\n------\n\n宮沢賢治｢やまなし｣を題材とした\n静かに物語を味わう作品。\n\n本キットには絵本と謎の手がかりが詰まっています。\n\nカワセミが見た、月を巡る謎を解き明かし\nどうかあなたの手でエンディングを迎えてください。\n\n------\n\n所要時間：60分~\n推奨人数：1~2人\n難易度：★★★ (物語も謎も楽しみたい方に)",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★★★（3/3）→ 3/3×5=5.0 → 5"
+    },
+    "playMinutes": 60,
+    "players": "1~2人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no31/product/p24_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p24",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2026259609305133517",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "p25",
+    "boothId": "no31",
+    "name": "孤独に唄う",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "眠れない夜に1人で開ける15分ほどの謎。18歳以上向け",
+    "description": "眠るのが怖い、\n日々が息苦しく感じる、\nそんなひとりぼっちの夜のために。\n\n苦しい夜、必ず１人で開封してください。\n\n\n*ご案内*\n本作のプレイには事前の準備が必要です。\n購入後、予め内容をご確認ください。\n\n-----\n\n所要時間：15分~\nプレイ人数：1人\nプレイ条件：夜、家の中で行うこと\n難易度：★☆☆ (絶望した夜に)\n\n推奨年齢：18歳以上\n※物語のテーマ上、繊細な描写が多く含まれております。作品の世界観をより深く理解し 安心してお楽しみいただくため、本作では成人済の方のプレイを推奨しております。\n※本作に残虐表現（R-18要素）は含まれません。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★☆☆（1/3）→ 1/3×5=1.7 → 2"
+    },
+    "playMinutes": 15,
+    "players": "1人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no31/product/p25_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p25",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2026259609305133517",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no32-1",
+    "name": "四枚謎本",
+    "price": 3000,
+    "priceNote": "先行特別価格（通常3,500円）",
+    "category": "booklet",
+    "oneLiner": "珠玉の四枚謎を全25問収録した問題集。こひつじレーベル第1弾",
+    "description": "珠玉の四枚謎を全25問収録した、新感覚のナゾトキ問題集が #シープリズム から登場。#こひつじレーベル の幕開けを飾る、初心者から上級者まで楽しめる一冊になっています。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "『初心者から上級者まで楽しめる』と告知されているため標準の3とした"
+    },
+    "playMinutes": 300,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケットでの先行発売（特別価格）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/sheeprhythm/status/2112514185947168971",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/sheeprhythm/status/2112514195103383657",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "四枚謎本",
+        "sources": [
+          {
+            "url": "https://x.com/sheeprhythm/status/2112514185947168971",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/sheeprhythm/status/2112514195103383657",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "tag": "こひつじレーベル",
+        "sources": [
+          {
+            "url": "https://x.com/sheeprhythm/status/2112514185947168971",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no32",
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no32-2",
+    "name": "羊皮紙 vol.2『ARTS』",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "一枚の紙に仕掛けが詰まった羊皮紙シリーズ第二弾",
+    "description": "羊皮紙シリーズ待望の第二弾！一枚の紙から繰り広げられるのはいくつもの「ARTS」。ARTが生み出す芸術を目撃せよ。「ARTS」とは何なのか、数々の仕掛けを乗り越えた先にその答えがわかるはずです。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 30,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/sheeprhythm/status/2113239058583625963",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/sheeprhythm/status/2113239067123163332",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "羊皮紙謎",
+        "sources": [
+          {
+            "url": "https://x.com/sheeprhythm/status/2113239058583625963",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/sheeprhythm/status/2113239067123163332",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no32",
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no32-3",
+    "name": "交 −KOH−",
+    "price": 2000,
+    "priceNote": "先行特別価格（通常2,200円）",
+    "category": "kit",
+    "oneLiner": "紙片だけが入った上級者向けの持ち帰り謎。指示文なし",
+    "description": "箱を開けると、そこには積み重なった紙片のみ。答えへの道筋は一切記されていません。ひらめきを頼りに紐解き、たった一つの正解に辿り着け。",
+    "difficulty": {
+      "level": 5,
+      "source": "estimated",
+      "basis": "『上級者向けの新作持ち帰り謎』と告知され、指示文も手順もなく紙片だけで解く形式のため"
+    },
+    "playMinutes": 45,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケットでの先行発売（特別価格）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/sheeprhythm/status/2113963790551404551",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/sheeprhythm/status/2113963798969328039",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "交ナゾ",
+        "sources": [
+          {
+            "url": "https://x.com/sheeprhythm/status/2113963790551404551",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/sheeprhythm/status/2113963798969328039",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no32",
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no35-1",
+    "name": "水神に捧げる謎",
+    "price": 1650,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "2人用ミステリーテリングゲームのスピンオフ謎解きゲーム",
+    "description": "2人用ミステリーテリングゲーム「故郷が沈むまでに」をモチーフとした謎解きゲームです。山奥の村に住むあなた達は、江戸時代に作られた謎を解き明かしていくことに…（本編のネタバレ要素はありません）",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★★★★☆（4/5）をそのまま"
+    },
+    "playMinutes": 50,
+    "players": "2人",
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/getget4343/status/2113964103886925996",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no35",
+    "hashtags": [],
+    "unconfirmed": [
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no35-2",
+    "name": "クリアファイル謎1",
+    "price": 660,
+    "priceNote": "クリアファイル謎2も各660円",
+    "category": "goods",
+    "oneLiner": "10年続くクリアファイル謎シリーズのリニューアル版",
+    "description": "10年にわたってご好評をいただいているクリアファイル謎シリーズがリニューアル！謎の内容は変わらず、どなたにも解きやすいよう調整を加えました。解き終えたクリアファイルは普段使いにも◎",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★★☆☆☆（2/5）をそのまま"
+    },
+    "playMinutes": 15,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no35",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no35-3",
+    "name": "クリアファイル謎2",
+    "price": 660,
+    "priceNote": "クリアファイル謎1も各660円",
+    "category": "goods",
+    "oneLiner": "10年続くクリアファイル謎シリーズのリニューアル版",
+    "description": "10年にわたってご好評をいただいているクリアファイル謎シリーズがリニューアル！謎の内容は変わらず、どなたにも解きやすいよう調整を加えました。解き終えたクリアファイルは普段使いにも◎",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★★☆☆☆（2/5）をそのまま"
+    },
+    "playMinutes": 15,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no35",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p28",
+    "boothId": "no36",
+    "name": "chromakey",
+    "price": 5200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "PCに専用の電子基板をつなぎ、AIの銀行セキュリティを突破する謎",
+    "description": "お手持ちのPCに専用の「電子基板」を接続して挑む、本格ハッキング体験型持ち帰り謎。\nAI [chromakey] と連携し、銀行の最新セキュリティを物理デバイスとひらめきで突破せよ。\n厳重に守られた地下金庫から、莫大な資産を奪い取れ！\nhttps://x.com/Nazo_Gram/status/2111064614268285403?s=20",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 120,
+    "players": null,
+    "isNew": true,
+    "limited": "限定100個（なくなり次第受注販売、送料300円別）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no36/product/p28_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p28",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/Nazo_Gram/status/2111064614268285403",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/Nazo_Gram/status/2111064725715099999",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "NGクロマキー",
+        "sources": [
+          {
+            "url": "https://x.com/Nazo_Gram/status/2111064614268285403",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/Nazo_Gram/status/2111064725715099999",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no37-1",
+    "name": "SQUARE ONE",
+    "price": null,
+    "priceNote": "告知に価格の記載なし",
+    "category": "online",
+    "oneLiner": "LINEで遊ぶ謎解き",
+    "description": "『SQUARE ONE』(LINE謎)",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/hard_nuts_/status/2114326119994339428",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no37",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no37-2",
+    "name": "秋めぐる君と一葉 追体験版",
+    "price": null,
+    "priceNote": "告知に価格の記載なし",
+    "category": "other",
+    "oneLiner": "『秋めぐる君と一葉』の追体験版（詳細は告知に無し）",
+    "description": "『秋めぐる君と一葉 追体験版』",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/hard_nuts_/status/2114326119994339428",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no37",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no37-3",
+    "name": "持ち帰り版 茜色の残り香",
+    "price": null,
+    "priceNote": "告知に価格の記載なし",
+    "category": "kit",
+    "oneLiner": "『茜色の残り香』の持ち帰り版",
+    "description": "『持ち帰り版 茜色の残り香』",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/hard_nuts_/status/2114326119994339428",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no37",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no37-4",
+    "name": "FLAG クリアファイル付き持ち帰り謎",
+    "price": null,
+    "priceNote": "告知に価格の記載なし",
+    "category": "kit",
+    "oneLiner": "クリアファイル付きの『FLAG』持ち帰り謎",
+    "description": "『FLAG クリアファイル付き持ち帰り謎』※過去に『FLAG』にご参加いただいた方限定の販売となります。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "過去に『FLAG』に参加した人限定の販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/hard_nuts_/status/2114326119994339428",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no37",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no38-1",
+    "name": "Project Mapping",
+    "price": 1500,
+    "priceNote": "オススメ3点セットあり（Project Mapping＋world＋ALGORITHMで3,500円）",
+    "category": "kit",
+    "oneLiner": "針が示す先を探る新作の持ち帰り謎（web使用）",
+    "description": "Project Mapping ― 針が示すは未知の先 ―。webを使用します。広いスペースで解くことを推奨します。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 90,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2109253334754627861",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no38",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no38-2",
+    "name": "Mystery of Postcard",
+    "price": 300,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "一通の葉書から始まる10分ほどの短い謎",
+    "description": "あなたに届いたのは、一通の葉書。そこから始まる物語は——",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 10,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no38",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no38-3",
+    "name": "ミックスアナグラム塔",
+    "price": 500,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "100階建ての塔を問題で登るLINE謎",
+    "description": "ここにそびえ立つは、100階建ての塔。君は、数々の問題を打ち倒し、頂上からの景色を眺めることが出来るか？（LINE謎）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no38",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no38-4",
+    "name": "ある54の謎",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ナゾに包まれたトランプを使う持ち帰り謎",
+    "description": "このトランプは、ナゾに包まれている―",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 120,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no38",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no38-5",
+    "name": "world",
+    "price": 1500,
+    "priceNote": "オススメ3点セットあり",
+    "category": "kit",
+    "oneLiner": "繋げて、流して、叶えて遊ぶ持ち帰り謎",
+    "description": "繋げて、流して、叶えて",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no38",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no38-6",
+    "name": "ALGORITHM",
+    "price": 1000,
+    "priceNote": "オススメ3点セットあり",
+    "category": "kit",
+    "oneLiner": "論理的に実行する、120〜240分かかる持ち帰り謎",
+    "description": "論理的に、実行しましょう。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 120,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no38",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no38-7",
+    "name": "オススメ3点セット（Project Mapping＋world＋ALGORITHM）",
+    "price": 3500,
+    "priceNote": "通常4,000円（3作の合計）",
+    "category": "other",
+    "oneLiner": "オススメ3作を通常4,000円から割引するセット",
+    "description": "ナゾトキマーケット限定！オススメ作品を厳選したお得な3点セット（通常4,000円）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no38",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no40-1",
+    "name": "怪封記",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "神社を巡って封印された怪異に迫る持ち帰り謎",
+    "description": "師匠と共に様々な神社を巡るあなた。今日は、怪異が封印されているという神社に訪れたが…",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★6/10 → 6/10×5=3.0 → 3"
+    },
+    "playMinutes": 45,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/return_zero_thk/status/2112884258742378648",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "リタゼロカイフウ",
+        "sources": [
+          {
+            "url": "https://x.com/return_zero_thk/status/2112884258742378648",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no40",
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no40-2",
+    "name": "あからさまです（ザトリオ return 0;編）",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "未知のルールを既知のセカイで解く、3団体コラボのキット",
+    "description": "未知のルールを、既知のセカイで。（『ザトリオ』―3団体のコラボで届ける、珠玉の謎解き。すべてをクリアし「最後の謎」に挑め）",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★8/10 → 8/10×5=4.0 → 4"
+    },
+    "playMinutes": 40,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/return_zero_thk/status/2113246496934203687",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/return_zero_thk/status/2113246759875141891",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ザトリオ謎",
+        "sources": [
+          {
+            "url": "https://x.com/return_zero_thk/status/2113246496934203687",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "tag": "ザトリオリタゼロ編",
+        "sources": [
+          {
+            "url": "https://x.com/return_zero_thk/status/2113246759875141891",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no40",
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p19",
+    "boothId": "no41",
+    "name": "Loops",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "K-dush2の持ち帰り謎「Loops」（説明は題名のみで詳細未確認）",
+    "description": "Loops",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no41/product/p19_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p19",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/K_dush2/status/1197688632842174464",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no42-1",
+    "name": "落ちてたもの",
+    "price": 1000,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "落ちていたものを実際に解き明かす■■■ゲーム（購入者限定の後日コンテンツ付き）",
+    "description": "ナゾトキマーケットに新作が間に合わなかったエニグロイド「そうだ！落ちてたものを売ろう！！」これはあなたが実際に解き明かす■■■ゲームです。後日購入者限定コンテンツ付き。注意・2027年3月31日までにクリアする必要があります・クリアのために追加でお金がかかることがあります",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ☆4/10 → 4/10×5=2.0 → 2"
+    },
+    "playMinutes": 30,
+    "players": null,
+    "isNew": true,
+    "limited": "後日購入者限定コンテンツ付き",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/ENIG_ROID/status/2113601337766387736",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/ENIG_ROID/status/2113601338122838345",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no42",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p09",
+    "boothId": "no43",
+    "name": "シュレディンガーの謎",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "スクラッチで観測した動物を使って謎を解く持ち帰り謎",
+    "description": "あなたの観測が、答えを決定する\n\n『シュレディンガーの猫』という思考実験をご存知でしょうか？\n量子の世界では、観測するまで複数の状態が重なり合う「重ね合わせ」という不思議な状態が存在します。物理学者であるシュレディンガーは、この考え方を猫にまで当てはめると、観測するまで「生きている」と「死んでいる」が重なった状態になるのではないか、と考えました。\n\n本作品では、謎の答えが重ね合わさっています。\n最初にスクラッチを削り、あなたが観測した動物を使って謎を解きます。\n目指すのは『物語の締めくくりに相応しい答え』です。\n幾度もの観測の果てに、求める答えを導くことはできるのでしょうか？\n\nhttps://tri-mobius.com/schrodinger/",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "所要時間60〜120分・1人用の標準的な持ち帰り謎で、HPにも難易度の表記がないため標準の3と推定"
+    },
+    "playMinutes": 60,
+    "players": "1人～",
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no43/product/p09_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p09",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://tri-mobius.com/schrodinger/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/Tri_Mobius/status/2110672044383678683",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "シュレ謎",
+        "sources": [
+          {
+            "url": "https://x.com/Tri_Mobius/status/2110672044383678683",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "p10",
+    "boothId": "no43",
+    "name": "Dr.Kのドボロー研究所",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "逃げ出したドボローを、盗まれた謎を解いて捕まえる持ち帰り謎",
+    "description": "この謎、何かが盗まれている\n\nここは、ドボロー研究所。\nあなたは、研究所から逃げ出したドボローたちを捕まえるため、博士に呼ばれてやってきた。\nドボローたちの居場所を突き止めるには、「ドボローキャッチャー」に表示された謎を解かなければならない。\nしかし、ドボローたちは何かを盗み、謎に細工を施している。\n\n全ての謎を解き、逃げ出したドボローたちを捕まえよう！\n\nhttps://tri-mobius.com/doborrow/",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "所要時間60〜120分・1人用の標準的な持ち帰り謎で、HPにも難易度の表記がないため標準の3と推定"
+    },
+    "playMinutes": 60,
+    "players": "1人～",
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no43/product/p10_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p10",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://tri-mobius.com/doborrow/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/Tri_Mobius/status/2110687136848461967",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ドボロー謎",
+        "sources": [
+          {
+            "url": "https://x.com/Tri_Mobius/status/2110687136848461967",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "p11",
+    "boothId": "no43",
+    "name": "ナゾめく街カド-軽井沢から生まれる最高の一皿-",
+    "price": 2000,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "軽井沢の街を歩いて謎を解き、晩餐会の一皿を作る周遊型謎解き",
+    "description": "これは、実際にあなたが軽井沢の街で体験する物語\n\nあなたは東京のとあるレストランで見習い料理人をしている。\nある日、師匠であるオーナーシェフから手紙が届いた。\n\nどうやら師匠が倒れてしまったらしく、\n代わりに軽井沢で開かれる晩餐会の料理を作ることになった。\n\n果たして、あなたは師匠の代わりに最高の一皿を作ることができるのだろうか？\n\nhttps://tri-mobius.com/karuizawa/",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "所要時間80〜160分の周遊型で、HPにも難易度の表記がないため標準の3と推定"
+    },
+    "playMinutes": 80,
+    "players": "1人～",
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no43/product/p11_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p11",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://tri-mobius.com/karuizawa/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no44-1",
+    "name": "とにかくバクダン解除するだけ",
+    "price": 6000,
+    "priceNote": "初回限定価格（告知画像より）",
+    "category": "kit",
+    "oneLiner": "時限爆弾の10本のケーブルを切り分けて解除する持ち帰り謎",
+    "description": "究極の謎解き体験。10本のケーブル。止まらないカウント。必要なものは解析力とひらめき力、そして勇気。このゲームは、ただ一度のミスも許されない。 内容物：時限爆弾1個、取扱説明書1冊、解除手順書1枚、ニッパー1本、電池1個。梱包外形 長さ260×幅190×深さ110mm（手提げ袋付き）。ゲームの特性上、途中で止めたりやり直すことはできません。 想定時間：70分〜150分（ノーマル／ハードモードで選択可。告知画像では100分以上）。対象年齢13歳以上。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★9/10（★★★★★★★★★☆）→ 9/10×5=4.5 → 5"
+    },
+    "playMinutes": 70,
+    "players": null,
+    "isNew": true,
+    "limited": "初回限定価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/kimagurebox/status/2110337697504170348",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kimagurebox/status/2113571651191554341",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/kimagurebox/status/2110298007153623074",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "とにバク",
+        "sources": [
+          {
+            "url": "https://x.com/kimagurebox/status/2110298007153623074",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/kimagurebox/status/2110337697504170348",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/kimagurebox/status/2113571651191554341",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no44",
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no45-1",
+    "name": "なにを食べたら思いつくんだ",
+    "price": null,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "食べ物でヒラメキを届ける、謎解きに行き詰まった人向けのスマホ謎解きゲーム",
+    "description": "謎解きに行き詰まった人たちに、食べ物でヒラメキを届けるスマホ謎解きゲーム（MICHI vol.4。特設サイトの説明文より）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/michi_place/status/2113933603034042791",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/michi_place/status/2113933606238482881",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no45",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no54-1",
+    "name": "World Hitchhiker",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "物語を読み進めながら謎を解いて結末へ進む、謎解きアドベンチャー",
+    "description": "世界の終わり。旅の始まり。 これはあなたが物語を読み進めながら謎を解いて物語の結末へ辿り着く謎解きアドベンチャーゲームです（告知画像の文言）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVUy0N4a8AEqapX?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2113873120004067794",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/calette_pj/status/2114123600454463883",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no54",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p26",
+    "boothId": "no56",
+    "name": "とんがり帽子のアトリエ　竜潜む魔法迷宮からの脱出",
+    "price": 3400,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "とんがり帽子のアトリエの迷宮から脱出する、スマホ併用の謎解きキット",
+    "description": "大人気のTVアニメ『とんがり帽子のアトリエ』から、初の体験型謎解きキットが登場！\nあなたの手で魔法を描き、\"あの迷宮\"から脱出しよう！\n特設サイトはこちら：https://tongari.terra-nova.co.jp/\n\n■ストーリー\nキーフリーの正式な弟子としてアトリエの一員となったココは、魔法使いの街・カルンを訪れる。\n魔材屋「星の剣（ほしのつるぎ）」での買い物中、ココは窓の外にかつて出会った謎の魔法使いの姿を見つける。\n思わず走り出したココと、それを追うアガット・テティア・リチェが迷い込んだのは、恐ろしい巨鱗竜（ドラゴン）が潜む謎の迷宮だった——。\n\n■プレイ形式\n・制限時間：なし\n・想定所要時間：120分程度\n・人数：1人用\n\n■必要なもの\n・インターネットに接続できるスマートフォンまたはタブレット\n・筆記用具\n\nⒸKS/K/WC",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "想定所要時間120分程度・1人用の一般向けアニメIPキットで、難易度の表記がないため標準の3と推定"
+    },
+    "playMinutes": 120,
+    "players": "1人",
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no56/product/p26_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p26",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://terra-nova.co.jp/news/tongari/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "p27",
+    "boothId": "no56",
+    "name": "猫宮探偵事務所の謎 〜行方知れずの春の空〜",
+    "price": 2400,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "猫の言葉が解ける、猫好き向けの謎解きブック（ヒント・答え付き）",
+    "description": "猫の言葉が「解ける」本！？\n猫好きによる、猫好きのための、猫の謎解きブック！\n――すべての謎を解き明かしたとき、あなたはきっと、もっと猫のことが好きになる。\n\n全ての謎にヒント・答えがついています。謎解きにあまり慣れていない方もぜひ挑戦してみてください。\n\nSTORY\n猫にまつわる事件専門の探偵事務所――猫宮探偵事務所。\nここでは、猫に関する困りごとならなんでも「不思議な道具」で解決してしまうという。\nそんな探偵事務所にある日迷い込んできた、\"猫探し\"の相談。\n猫たちの言葉の謎を解き明かし、失踪した飼い猫の行方を突き止めよう。\n\nプレイ時間目安：45分～120分（サクッと遊べるボリュームです）",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "全問にヒント・答え付きで「謎解きにあまり慣れていない方も」と案内され、45〜120分のサクッと遊べるボリュームのため"
+    },
+    "playMinutes": 45,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no56/product/p27_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p27",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no65-1",
+    "name": "謎解き問題集バラエティパック",
+    "price": null,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "100問以上を収録した、小謎集タイプの謎解き問題集",
+    "description": "今回はなんと【謎解き問題集バラエティパック】を発売\n100問以上が収録された小謎集をぜひ遊び尽くしてください。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/booth/",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no65",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p02",
+    "boothId": "no67",
+    "name": "かぎのかかったふうとうからの脱出3 変化",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "鍵のかかった封筒を謎で開ける、完全オフラインの謎解きキット第3弾",
+    "description": "鍵がかかっているふうとうをあけることを目指す完全オフライン謎解きキットの第3弾！\n今回のテーマは「変化」です。あなたは変化する謎を解いて三度鍵をあけることができるでしょうか…",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "シリーズ前作の目安時間が約60〜90分(第1作)・60分〜(第2作)と標準的な長さのため3と推定"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no67/product/p02_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p02",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://booth.pm/ja/items/3735029",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://booth.pm/ja/items/7622846",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/MysteryFromAki/status/2111412657441951977",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no67-1",
+    "name": "かぎのかかったふうとうからの脱出",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "鍵のかかった封筒を謎で開ける、完全オフラインの謎解きキット第1作",
+    "description": "鍵のかかった封筒を謎を解いて開けるキットシリーズの第1作(BOOTH通販で販売)。第3弾の告知への返信で「過去作ももちろん持っていきます」と告知。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "目安時間が約60〜90分と標準的な長さのため3と推定"
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/MysteryFromAki/status/2111438471676256711",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/MysteryFromAki/status/2111412657441951977",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://booth.pm/ja/items/3735029",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no67",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no69-1",
+    "name": "マダムリシェルと奇妙な美術作品",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "公演型の物語を家で解ける謎にリメイクした、美術作品を追う謎解き",
+    "description": "もともと公演型の物語を家で解ける謎にリメイク！\n美術作品を追い求めるボリュームもギミックも満点の謎解きです！！\n（公演型と同じ謎にさらに追加の謎もあります）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RiddleTimez/status/2113144438188896563",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ],
+    "hashtags": [
+      {
+        "tag": "マダムリシェル",
+        "sources": [
+          {
+            "url": "https://x.com/RiddleTimez/status/2113144438188896563",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no69"
+  },
+  {
+    "id": "no69-2",
+    "name": "Dr.リドルの診療所",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "会場で症状チェックシートに答えて処方箋(謎)を選ぶ、会場限定の謎",
+    "description": "会場で症状チェックシートに回答すると、あなたの症状に合わせた処方箋をご案内。処方箋は全部で3種類。どの症状と診断されても、3種類すべて購入可能。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RiddleTimez/status/2113586238712394173",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ],
+    "hashtags": [
+      {
+        "tag": "Drリドルの診療所",
+        "sources": [
+          {
+            "url": "https://x.com/RiddleTimez/status/2113586238712394173",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no69"
+  },
+  {
+    "id": "no69-3",
+    "name": "消えた７つの□□□の行方",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "小謎とギミックが盛りだくさんの、約60分の謎解き",
+    "description": "小謎もギミックも盛りだくさん！約60分たっぷり楽しめる、ボリューム満点の謎解きです。謎を解き進めた先で気付く「いつもそこにあるもの」の大切さとは……？",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RiddleTimez/status/2113948627777237098",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ],
+    "boothId": "no69",
+    "hashtags": []
+  },
+  {
+    "id": "no69-4",
+    "name": "Plot twist ～牢獄編～",
+    "price": null,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "冊子1冊だけで遊べる、どんでん返しの脱出謎(Plot twistシリーズ)",
+    "description": "謎を解き、この牢獄から脱出しろ！どんでん返しが待つ謎解きシリーズ「Plot twist」。スマホ不要、必要なのは冊子1冊のみ。※作品によってはイヤミス要素が含まれるものもあります。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RiddleTimez/status/2114311011574628826",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ],
+    "hashtags": [
+      {
+        "tag": "Plottwist",
+        "sources": [
+          {
+            "url": "https://x.com/RiddleTimez/status/2114311011574628826",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no69"
+  },
+  {
+    "id": "p03",
+    "boothId": "no72",
+    "name": "気怠げ終末レジスタンス",
+    "price": 2500,
+    "priceNote": "会場限定価格（通常2,800円）",
+    "category": "kit",
+    "oneLiner": "AIが世界を凍らせる終末で、二人が挑む重厚ストーリーの謎",
+    "description": "───────【あらすじ】───────\n雪に閉ざされた極地に佇む巨大施設。\nそして、その全てを統括するAI――《Heart》。\n\n温暖化の進む世界を救うために生まれたHeartは、\n世界を凍らせ、すべてをリセットすることを選んだ。\n\n終末が迫る中、交わるはずのなかった二人が出会う。\n世界を救うため、たった一人で抗う者。\nそして、終わりを前にしても、どこか飄々とした者。\n\n正反対の二人は、謎を解き、Heartの妨害を越え、\n巨大施設の核心へと迫っていく。\n\nこれは、滅びゆく世界に抗う、\nたった二人のレジスタンスの物語。\n───────────────────────\n\nヒント・解答も完備！\n必ず最後まで遊んで頂けます。\n\n難易度　　：★★★★☆ (結構難しい)\nストーリー：★★★★★ (とても重厚)\n所要時間　：2〜4時間\nサイズ　　：B5 (182mm × 257mm)\n謎制作　　：朔良 倫\n\n【必要なもの】\n・PC(推奨) or スマートフォン\n・筆記用具\n\n#プラマレレジスタンス\n\n(※通常販売価格は2,800円ですが、ナゾトキマーケット会場限定で2,500円で販売を致します。)",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★★★★☆（4/5）をそのまま"
+    },
+    "playMinutes": 120,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット会場限定価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no72/product/p03_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p03",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/primalade/status/2107080109182103572",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/primalade/status/2114280807426580656",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "プラマレレジスタンス",
+        "sources": [
+          {
+            "url": "https://x.com/primalade/status/2107080109182103572",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/primalade/status/2114280807426580656",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p04",
+    "boothId": "no72",
+    "name": "レッパンくんのだいぼうけん！",
+    "price": 3500,
+    "priceNote": "2027年以降は4,000円へ改定予定（公式説明文より）",
+    "category": "kit",
+    "oneLiner": "レッサーパンダと巡る5つの試練、100問の大ボリューム謎",
+    "description": "─────── 【あらすじ】 ───────\n主人公は、謎解きとリンゴが大好きで、\n元気いっぱいなレッサーパンダの「レッパンくん」！\n伝説のリンゴ「しゅちにくリンゴ」を食べるため、\n森の守護者たちが出題する、5つの試練に挑むぞ！\n───────────────────────\n\n謎やパズル、戦略バトルが計100問収録！\n冊子8冊分にも及ぶ大ボリュームで、\n森の動物達を巡る壮大なストーリーを描きます。\n\nヒント・解答も完備！\n必ず最後まで遊んで頂けます。\n\n難易度　　：★★★★★ (とても難しい)\nストーリー：★★★★★ (とても多い)\n所要時間　：4時間〜\nサイズ　　：B5 (182mm × 257mm)\n\n【必要なもの】\n・PC(推奨) or スマートフォン\n・筆記用具\n\n謎制作　：朔良 倫\nイラスト：オノコーゾー\n\n#プラマレだいぼうけん\n\n(※追加生産に伴い、2027年以降は価格を4,000円へ改定予定です。)",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★★★★★（5/5）をそのまま"
+    },
+    "playMinutes": 240,
+    "players": "1人〜",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no72/product/p04_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p04",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://cocoonwork.base.shop/items/125178414",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "p05",
+    "boothId": "no72",
+    "name": "拝啓、親愛なる神様へ",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "村の神様の秘密に迫る、LINEを使う重厚ストーリーの謎",
+    "description": "───────【作品概要】───────\nとある村を舞台に紡がれる、\nいくつもの謎と、神様、そして少年たちの物語。\n\n村に伝わる神様の秘密に迫るとき、\nこの物語に秘められた、全ての謎は解き明かされる。\n\n――“あなた”のヒラメキで、神様の謎を暴け。\n──────────────────────\n\nヒント・解答も完備！\n必ず最後まで遊んで頂けます。\n\n難易度　　：★★★★☆ (結構難しい)\nストーリー：★★★★★ (とても多い)\n所要時間　：2.5〜4時間\nサイズ　　：B5 (182mm × 257mm)\n謎制作　　：ひらまつ\n\n【必要なもの】\n・スマートフォン (LINEを使用します。)\n・筆記用具\n\n#プラマレ親愛",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★★★★☆（4/5）をそのまま"
+    },
+    "playMinutes": 150,
+    "players": "1人〜",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no72/product/p05_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p05",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://cocoonwork.base.shop/items/125178875",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no75-1",
+    "name": "とある組員の改過自新",
+    "price": 2000,
+    "priceNote": "先行販売限定価格。オンラインショップでの販売は後日開始予定（価格・日付未定）",
+    "category": "online",
+    "oneLiner": "組を抜けるため60分で1000万円を稼ぐ、ブラウザで遊ぶ賭場の謎",
+    "description": "（原文全文は取得できず、あらすじ要約と一部引用）上京して5年、流されるまま暴力団の組員になっていた「俺」が、食堂の看板娘サキちゃんに一目惚れし、彼女との生活のために組を抜けると決意する。組長の条件は今夜23時までに1000万円を用意すること。最後の望みは他組との合同賭場で、制限時間60分の中で賭場の謎を解いて稼ぎ出す。「組抜けを認めてやるよ」「賭場の謎を解き、1000万を稼ぎ出せ！」\nパッケージ版（ビジュアルポストカード付き）とダウンロード版で内容は同じ。PC・タブレット・スマートフォン（スマホは横画面）、Google Chrome / Safari最新版で遊ぶ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット2026で先行販売（先行販売限定価格）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://nazo.mikan-box.net/toaru/assets/images/main_pc.jpg",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://nazo.mikan-box.net/toaru/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazo.mikan-box.net/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2114190216173101070",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "とある組員謎",
+        "sources": [
+          {
+            "url": "https://x.com/nazo_mikanbox/status/2114190216173101070",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no75",
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no75-2",
+    "name": "黒猫と欠けた月",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "欠けた月を元に戻す、黒猫との不思議な物語のワンコイン謎",
+    "description": "ある夜、あなたは不思議な夢を見ていた。\n見たことのない町。静かな夜空。\nそして、淡い光を放つ大きな欠けた……月？\n……助けて\n小さな声に振り返ると、一匹の黒猫が立っていた。\n欠けた月を元に戻して欲しいんだ！\nこれは一匹の黒猫とあなたの不可思議な物語。\nキット内容: パッケージ用紙1枚、謎の用紙1枚。必要なもの: スマホ、鉛筆・消しゴム。謎制作: ぼう、デザイン・Web制作: みかん。",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "告知に『ワンコインで楽しめる、謎解き初心者にもオススメ』とあるため"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット2026で新発売（通販は後日開始予定）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://nazo.mikan-box.net/blackcat/assets/img/cover.webp",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://nazo.mikan-box.net/blackcat/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazo.mikan-box.net/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2113948634999853124",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "黒猫と欠けた月",
+        "sources": [
+          {
+            "url": "https://x.com/nazo_mikanbox/status/2113948634999853124",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no75",
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no75-3",
+    "name": "あわじーからの挑戦状",
+    "price": 500,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "あわじーが出題する、スマホで遊ぶ早押しクイズ×謎解き",
+    "description": "ワンコインで遊べるクイズ×謎解きバラエティ!!\nナゾのみかん箱のあわじーが制作した早押しクイズで、謎解き要素も含まれる。\nキット内容: パッケージ用紙1枚、封筒1部。必要なもの: スマホ（Webブラウザで遊ぶ）、音が聞ける環境。",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "ワンコインのクイズ×謎解きバラエティで、早押しクイズ中心のライトな内容と推定"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット2026で新発売（通販は後日開始予定）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://nazo.mikan-box.net/awaji/assets/img/cover.jpg",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://nazo.mikan-box.net/awaji/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazo.mikan-box.net/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2113963719885455649",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "あわじーからの挑戦状",
+        "sources": [
+          {
+            "url": "https://x.com/nazo_mikanbox/status/2113963719885455649",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no75",
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no75-4",
+    "name": "諸行無常 美しい謎と、よい問いを。",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Toy×ボーズの新作持ち帰り謎（詳細は告知なし）",
+    "description": "告知に説明文なし（商品名・価格・新作であることのみ確認）。『トイカケボーズの持ち帰り謎を買える機会はなかなか有りませんので、この機会に是非お求めください』とあり、Toy×ボーズの新作持ち帰り謎として11/7・8のナゾトキマーケット2026で販売。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HU1xd6TbMAAHtQm?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/toykakeboze/status/2111744095416918086",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2108174404970745959",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "諸行無常謎",
+        "sources": [
+          {
+            "url": "https://x.com/toykakeboze/status/2111744095416918086",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no75",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no77-1",
+    "name": "【Rains】雫 ー雨垂パズルを穿つー",
+    "price": 1200,
+    "priceNote": "謎解きカフェ繭玉のBASEショップの価格。同ショップに5点セット5,000円あり。会場での価格は未確認",
+    "category": "kit",
+    "oneLiner": "雫がモチーフの4種のパズルを解き、最後の答えを求める謎",
+    "description": "雫をモチーフにした4種類のパズルを解き、最後の答えを求めましょう。\n各パズルには取り組みやすい「盤面1」と難易度の高い「盤面2」がある。内容物: 解答用紙と遊び方が各1枚、パズル4種が各1枚。必要なもの: LINE（ヒント用）。推奨1〜2人、小学生以上推奨。",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "ショップ表記『初心者にもおすすめ』で、各パズルに易しい盤面1と難しい盤面2がある"
+    },
+    "playMinutes": 30,
+    "players": "推奨1〜2人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/74ad466e3fcf9438eee8270b2024b47e.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://cocoonwork.base.shop/items/127724370",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://cocoonwork.base.shop/items/127724059",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no77-2",
+    "name": "【Rains】需要にお応え！謎急便",
+    "price": 1200,
+    "priceNote": "謎解きカフェ繭玉のBASEショップの価格。同ショップに5点セット5,000円あり。会場での価格は未確認",
+    "category": "kit",
+    "oneLiner": "冊子とWebを使って、謎を応用し需要に応えるライトな謎",
+    "description": "謎を理解し、応用し、需要に応えよう！\n冊子とウェブサイトを見ながら解き進める。必要なもの: スマートフォン（インターネット接続）。推奨1〜2人、中学生以上推奨。作者: 〼田（夕立にかさなって）。",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "ショップ表記で、ヒントがあり初心者も遊びやすい(公演経験があるとより楽しめる)"
+    },
+    "playMinutes": 30,
+    "players": "推奨1〜2人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/21adfcc49222f7e6702c67706a45d996.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://cocoonwork.base.shop/items/127724605",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://cocoonwork.base.shop/items/127724059",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no77-3",
+    "name": "【Rains】霊感がある方を探しています。",
+    "price": 1200,
+    "priceNote": "謎解きカフェ繭玉のBASEショップの価格。同ショップに5点セット5,000円あり。会場での価格は未確認",
+    "category": "online",
+    "oneLiner": "マッチングアプリの噂の真相をWeb上で解き明かすWeb謎",
+    "description": "マッチングアプリ”ハッピーマッチ”に登録して、謎を解き明かし真相を解明するWEB謎形式の謎ゲームです。\n「知ってる？マッチングした人がいないマッチングアプリの噂」。初心者だと少し難しいかもしれませんが、ヒントがあるので最後までお楽しみいただけます。必要なもの: スマートフォンまたはPC（インターネット接続）。推奨1〜2人、中学生以上推奨。作者: のむさん（夕立にかさなって）。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "ショップ表記『初心者だと少し難しいかもしれません』で、ヒントあり・30〜90分"
+    },
+    "playMinutes": 30,
+    "players": "推奨1〜2人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/6bc2f2b843596fbb47366e74678754ea.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://cocoonwork.base.shop/items/127724693",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://cocoonwork.base.shop/items/127724059",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no77-4",
+    "name": "【Rains】白雪を纏って",
+    "price": 1200,
+    "priceNote": "謎解きカフェ繭玉のBASEショップの価格。同ショップに5点セット5,000円あり。会場での価格は未確認",
+    "category": "kit",
+    "oneLiner": "小さなカードの謎を解き進める、冬が舞台の謎",
+    "description": "小さなカードに綴られた謎が導く、ある冬の物語。\n手のひらサイズのカードとWEBサイトを使って解く。ストーリーと小謎の両方を楽しめ、自宅や喫茶店でも遊びやすいサイズ。謎解きが初めての方には少し難しめかもしれません。必要なもの: スマートフォンまたはPC（インターネット接続）、LINE（ヒント用）。推奨1〜2人、13歳以上推奨。作者: アオイ（夕立にかさなって）。",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "ショップ表記『謎解きが初めての方には少し難しめかもしれません』"
+    },
+    "playMinutes": 30,
+    "players": "推奨1〜2人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/02e8c12e075cf5c8e41d073ab363a73d.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://cocoonwork.base.shop/items/127724510",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://cocoonwork.base.shop/items/127724059",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no77-5",
+    "name": "【Rains】霧雨の部屋",
+    "price": 1200,
+    "priceNote": "謎解きカフェ繭玉のBASEショップの価格。同ショップに5点セット5,000円あり。会場での価格は未確認",
+    "category": "kit",
+    "oneLiner": "カードを重ねて進める、神様との対話のゲームブック型作品",
+    "description": "見知らぬ部屋に閉じ込められた青年は、神様との対話を通じて少しずつ自分を思い出していく。\nカードを重ねてくっつけながら話を進めるカード型ゲームブックで、一般的な謎解き作品とは異なる。必要なもの: LINE。ヒントページなし。推奨1人、中学生以上推奨。作者: まゆり（夕立にかさなって）。",
+    "difficulty": {
+      "level": 1,
+      "source": "estimated",
+      "basis": "ショップ表記『初心者にもおすすめ』で、一般的な謎解きとは異なるストーリー中心のゲームブック"
+    },
+    "playMinutes": 30,
+    "players": "推奨1人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/3a11aa55db548ffd3691411450e7b3ed.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://cocoonwork.base.shop/items/127724780",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://cocoonwork.base.shop/items/127724059",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no77-6",
+    "name": "シズカの放課後事件ファイル",
+    "price": 2500,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "架空の漫画単行本を読んで、行方不明の漫画家の真相を追う推理型謎",
+    "description": "とある漫画家が行方不明になった。手がかりは彼の描いた漫画のみ。架空の漫画単行本を読んで、真相を解き明かす推理型謎解きゲーム。（告知画像より）漫画やサイトから手がかりを集め、謎を解き、行方を特定しよう。謎解きARG。何人でも・60〜180分。ハッシュタグは #探偵シズカ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 60,
+    "players": "何人でも",
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVdjOCkawAAO36t?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/mayudamakobo/status/2114267659021979723",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "探偵シズカ",
+        "sources": [
+          {
+            "url": "https://x.com/mayudamakobo/status/2114267659021979723",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no77",
+    "unconfirmed": [
+      "difficulty",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no78-1",
+    "name": "オシリドル",
+    "price": 1000,
+    "priceNote": "ナゾトキマーケットでは特別割引価格（通常価格は告知になし）",
+    "category": "booklet",
+    "oneLiner": "おしりの小謎がたくさん載った、B5判の小謎問題集",
+    "description": "おしりの小謎の問題集。おしりの体操 オシリドル（oshiriddle）。おしりの小謎がい〜っぱい。B5サイズ・書籍タイプ。（告知画像・投稿より）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケットでの特別割引価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HUvtzEDaAAAWIH1?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/shareKOBE_/status/2111042321458589870",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "オシリドル",
+        "sources": [
+          {
+            "url": "https://x.com/shareKOBE_/status/2111042321458589870",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no78",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no78-2",
+    "name": "refine（リファイン）",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "箱入りの新作持ち帰り謎（詳細は未公開）",
+    "description": "告知に説明文なし（商品名・価格・キャッチコピー『答えを出すだけでは、終われない。』のみ確認）。ShareKOBE新作持ち帰り謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVFJHcIa0AAJJd4?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/shareKOBE_/status/2113571143323938829",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "シャレコウベリファイン",
+        "sources": [
+          {
+            "url": "https://x.com/shareKOBE_/status/2113571143323938829",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no78",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no79-1",
+    "name": "謎解きキット『積謎厳禁』",
+    "price": 2000,
+    "priceNote": "ナゾマ(ナゾトキマーケット)限定価格（通常2,200円）",
+    "category": "kit",
+    "oneLiner": "積み重なった問題用紙を解く、7つの積み謎のメタ解きキット",
+    "description": "新感覚の謎解きキット。問題用紙が「積み重なった状態」になっていて、メタ解きの魅力を味わえる。積み謎を7つ収録（No.001〜No.007）。各謎は独立しており、好きな順番で遊べる。1つ5〜15分程度が目安。（noteの情報ページより。一部要約） X告知: 問題用紙が積み重なった状態で謎を解く、個性豊かな7つの積み謎を詰め込んだ新感覚の積み謎バラエティパック。初心者から上級者まで楽しめる。限定価格2,000円、所要時間50〜90分。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 6/10 → 6/10×5=3.0 → 3"
+    },
+    "playMinutes": 50,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/326911984/rectangle_large_type_2_6a83703366ffded3c7acd34b3c12c7d2.png?width=1200",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://note.com/paisen_nazo/n/n59231bc59368",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://note.com/paisen_nazo/rss",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/amaka2don/status/2112885184370778294",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/amaka2don/status/2112885750937342193",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "積謎厳禁",
+        "sources": [
+          {
+            "url": "https://x.com/amaka2don/status/2112885184370778294",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/amaka2don/status/2112885750937342193",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no79",
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no80-1",
+    "name": "OST-01『戦々恐々』",
+    "price": 2000,
+    "priceNote": "M3先行販売価格は1,500円、一般販売価格2,000円",
+    "category": "goods",
+    "oneLiner": "九十九萬屋のオリジナル楽曲16曲入りCD-R（おまけ謎付き）",
+    "description": "九十九萬屋のオリジナルサウンドトラック第一弾。2024年1月までに制作した楽曲全16曲を収録。形式はCD-R（おまけ謎付き）。（告知より）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "2026秋M3での先行販売後、残部をナゾトキマーケット2026で頒布。売り切れ次第この形式での販売を終了",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2112861469318779275",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2113275431365529939",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "九十九戦々恐々",
+        "sources": [
+          {
+            "url": "https://x.com/tsukumorozuya/status/2112861469318779275",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/tsukumorozuya/status/2113275431365529939",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/tsukumorozuya/status/2114249646860366002",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no80-2",
+    "name": "1st EP『■■■■■』（題名は伏せ字で告知）",
+    "price": 2000,
+    "priceNote": "M3先行販売価格は1,500円、一般販売価格2,000円",
+    "category": "goods",
+    "oneLiner": "ボーカル曲5曲入りの1st EP。CD-R・おまけ謎付き",
+    "description": "九十九萬屋 1st EP。『これは少し変わった君の話』。ボーカルトラック全5曲を収録。Vocal: 音楽的同位体 可不(KAFU)。形式はCD-R（おまけ謎付き）。（告知より）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "2026秋M3での先行販売後、残部をナゾトキマーケット2026で頒布。売り切れ次第この形式での販売を終了",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2112876560659444214",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2113276690851901795",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "九十九表題不明",
+        "sources": [
+          {
+            "url": "https://x.com/tsukumorozuya/status/2112876560659444214",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/tsukumorozuya/status/2113276690851901795",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/tsukumorozuya/status/2114249646860366002",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "p12",
+    "boothId": "no86",
+    "name": "ナゾトキアクキー",
+    "price": 1000,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "アクキーと身近な物で謎を作って遊ぶ。たぬき・ナイト・こけし・えがおの4種",
+    "description": "アクリルキーホルダーと日常生活にあるものを\n組み合わせて謎をつくりましょう！\n撮影した写真はSNSで共有しましょう♪\n\n・たぬきver\n・ナイトver\n・こけしver\n・えがおver\n\n全部で４種類！！\n\n価格：1,000円\n\n＃ナゾトキアクキー\n＃CrossXOne謎",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no86/product/p12_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p12",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
+        "retrievedAt": "2026-10-24"
+      },
+      {
+        "url": "https://x.com/crossxone2110/status/2111022569046573060",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/crossxone2110/status/2112718594790555652",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "ナゾトキアクキー",
+        "sources": [
+          {
+            "url": "https://x.com/crossxone2110/status/2111021144795119998",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/crossxone2110/status/2112718594790555652",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p13",
+    "boothId": "no86",
+    "name": "LAST ONE",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "LINEを併用して最後の答えを導く、45分の持ち帰り謎キット",
+    "description": "全ての謎を解き明かし、有終の美を飾れ！\n謎を解き進めて、最後の答えを導いてください。\n\nジャンル： 持ち帰り謎 / 謎解きゲームキット\n想定時間： 45分（目安）\n必要なもの： 筆記用具、スマートフォン\n※LINEを使用します\n\n価格：1,000円\n\n＃CrossXOneラストワン\n＃CrossXOne謎",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "難易度の表記はなく、想定時間が45分と短めなため2とした（根拠は弱い）"
+    },
+    "playMinutes": 45,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no86/product/p13_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p13",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
+        "retrievedAt": "2026-10-24"
+      },
+      {
+        "url": "https://x.com/crossxone2110/status/2111022569046573060",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/crossxone2110/status/2111021144795119998",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "CrossXOneラストワン",
+        "sources": [
+          {
+            "url": "https://x.com/crossxone2110/status/2111021144795119998",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p14",
+    "boothId": "no86",
+    "name": "小人は回る",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "小人の噂の館に残された謎を解く、LINE併用の持ち帰り謎",
+    "description": "その館で小人を見つけると幸せになれる。\nそんな噂を聞き館を訪れたが小人は見つからず、\n謎だけがそこにあった。\n\nジャンル： 持ち帰り謎 / 謎解きゲームキット\n想定時間： 45分（目安）\n必要なもの： 筆記用具、スマートフォン\n※LINEを使用します\n価格：1,000円\n\n＃小人は回る\n＃CrossXOne謎",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "難易度の表記はなく、想定時間が45分と短めなため2とした（根拠は弱い）"
+    },
+    "playMinutes": 45,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no86/product/p14_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p14",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
+        "retrievedAt": "2026-10-24"
+      },
+      {
+        "url": "https://x.com/crossxone2110/status/2111022569046573060",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/crossxone2110/status/2111021144795119998",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "小人は回る",
+        "sources": [
+          {
+            "url": "https://x.com/crossxone2110/status/2111021144795119998",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "name": "へんな夢のおひさまは眠りやすく月にふれ星もそろえて打ち合わせ夜をぬいだ過去と未来",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "カードの謎を解き明かして最後の答えを導く持ち帰り謎（60分）",
+    "description": "数多あるカードの謎を解き明かし、最後の答えを導いてください。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/crossxone2110/status/2111022569046573060",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "id": "no86-1",
+    "boothId": "no86",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "ヘビーローテーション",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "同じことを何度も繰り返す謎、という持ち帰り謎（60分）",
+    "description": "ヘビーローテーションとは短い期間に何度も同じことを繰り返すことである！",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 60,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/crossxone2110/status/2111022569046573060",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "id": "no86-2",
+    "boothId": "no86",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "匠の技",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "実在する競技の技が詰まった持ち帰り謎（45分）",
+    "description": "実在する様々な競技の技が詰め込まれている持ち帰り謎です。謎を解き明かし勝利を勝ち取ってください！！",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": 45,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/crossxone2110/status/2111022569046573060",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "id": "no86-3",
+    "boothId": "no86",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no87-1",
+    "name": "基板謎",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "NEPPAが販売する、基板を使った謎解き",
+    "description": "「基板謎」を販売します！",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/booth.tsv",
+        "retrievedAt": "2026-10-24"
+      }
+    ],
+    "boothId": "no87",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "ホロスコープと少しの秘密 〜マスターの仕掛けた淡い謎〜",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "北海道のバーで開催された謎解き公演を、持ち帰り謎にした新作",
+    "description": "北海道のとあるバーで開催された謎解き公演が、持ち帰り謎になって登場！\nあの日、バーで紡がれた謎を、今度はあなたの手で解き明かしてください",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVIKj9ubsAAnyc8?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/ChansFactory86/status/2112763201356169468",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "id": "no88-1",
+    "boothId": "no88",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "p01",
+    "boothId": "no94",
+    "name": "むしめがね",
+    "price": 500,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "スマホ専用で遊ぶ、全4問のライトな新作謎解き",
+    "description": "スマホ専用、全4問のライトな謎解きです。\n「せいかい」を導くため、渡されたものは……",
+    "difficulty": {
+      "level": 2,
+      "source": "estimated",
+      "basis": "公式説明に「全4問のライトな謎解き」とあるため2とした"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no94/product/p01_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p01",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
+        "retrievedAt": "2026-10-24"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2110687998014853190",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2113810027106734471",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2101614772815020049",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "むしめがね謎",
+        "sources": [
+          {
+            "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/fantasistaKKP/status/2110687998014853190",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/fantasistaKKP/status/2113810027106734471",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "name": "封入謎（正式タイトル未確認）",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "今回の新作3つのうちの1つ。封入形式の謎",
+    "description": "告知に説明文なし（商品名のみ確認）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2110687998014853190",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "id": "no94-1",
+    "hashtags": [
+      {
+        "tag": "封入謎",
+        "sources": [
+          {
+            "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/fantasistaKKP/status/2110687998014853190",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no94",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "TAKEFREE謎（正式タイトル未確認）",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "今回の新作3つのうちの1つ。TAKEFREE形式の謎",
+    "description": "告知に説明文なし（商品名のみ確認）",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2110687998014853190",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "id": "no94-2",
+    "hashtags": [
+      {
+        "tag": "TAKEFREE謎",
+        "sources": [
+          {
+            "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
+            "retrievedAt": "2026-10-26"
+          },
+          {
+            "url": "https://x.com/fantasistaKKP/status/2110687998014853190",
+            "retrievedAt": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "boothId": "no94",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no97-1",
+    "name": "レイトン教授と秘密の招待状 in 東京ドームシティ 謎解きキット",
+    "price": 2800,
+    "priceNote": "イベント公式サイトのキット価格(税込)。ナゾトキマーケット会場での販売価格は未確認",
+    "category": "kit",
+    "oneLiner": "東京ドームシティを巡って遊ぶ、4コース入りの周遊型謎解きキット",
+    "description": "当ブースでは、東京ドームシティですぐに遊べる周遊型謎解きを販売いたします。\nQuizKnockからレイトン教授に届いた1通の招待状。そこから始まる物語とは……？\n招待状を手に、謎だらけの冒険を始めよう！",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "公式表記なし。所要は3〜4時間以上と長めだが、主な対象は10歳以上で人数も自由な4コース制のため標準とした"
+    },
+    "playMinutes": 180,
+    "players": "人数制限なし（複数人は人数分のキットが必要）",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/booth.tsv",
+        "retrievedAt": "2026-10-24"
+      },
+      {
+        "url": "https://himitsu-shotaijo.quizknock.com/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://himitsu-shotaijo.quizknock.com/about/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://prtimes.jp/main/html/rd/p/000000396.000012901.html",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/quizknock_tdc/status/2112061180717986212",
+        "retrievedAt": "2026-10-25"
+      }
+    ],
+    "boothId": "no97",
+    "hashtags": [],
+    "unconfirmed": [
+      "imageUrl",
+      "payment"
+    ]
+  }
+]

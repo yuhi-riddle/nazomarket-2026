@@ -1,0 +1,1406 @@
+[
+  {
+    "boothId": "no02",
+    "name": "深海の城 タイタン（キット版）",
+    "price": 3000,
+    "reason": "2026-10-17発売の通販新作。ナゾトキマーケットで売るとは書かれていない",
+    "sources": [
+      {
+        "url": "https://shop.tumbleweed.jp/items/154795582",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no02",
+    "name": "Tumbleweed 10th Anniversary『Q』（制作：NazoLock×タンブルウィード）",
+    "price": 3000,
+    "reason": "2026-08-07発売の通販商品。ナゾトキマーケットで売るとは書かれていない",
+    "sources": [
+      {
+        "url": "https://shop.tumbleweed.jp/items/147425079",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no03",
+    "name": "謎のマティーニ（LIQUOR GAMERS CLUB×RIDDLER）",
+    "price": 2400,
+    "reason": "2026-07-18から通販・店舗で発売の既存作。ナゾトキマーケットで売るとは書かれていない(難易度3/5・60〜90分と記載)",
+    "sources": [
+      {
+        "url": "https://www.inside-games.jp/release/prtimes/20260718/297226.html",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no03",
+    "name": "謎のカシスオレンジ（LIQUOR GAMERS CLUB×RIDDLER）",
+    "price": 2400,
+    "reason": "2026-07-18から通販・店舗で発売の既存作。ナゾトキマーケットで売るとは書かれていない(難易度1/5・60〜90分と記載)",
+    "sources": [
+      {
+        "url": "https://www.inside-games.jp/release/prtimes/20260718/297226.html",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no04",
+    "name": "TOKIQIL_164（鈴木貴雄×STOF トリプルコラボ ニット）",
+    "price": 16500,
+    "reason": "特設サイトでの謎解き購入権(予約〜10/14)の商品。ナゾトキマーケットで売るとは書かれていない",
+    "sources": [
+      {
+        "url": "https://www.fashionsnap.com/article/2026-10-09/suzuki-takao-tokiqil-stof/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no04",
+    "name": "ナゾトキマーケット2026 新作アパレル(クリエイター5組参加)",
+    "price": null,
+    "reason": "10/25の投稿でブースA5に新作クリエイター5組(シュレディンガーズ・コール/あまつパイセン/物理/きまぐれパズル/まっきー)と告知。商品名・価格・今回の販売品との対応は書かれていない",
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2114295906749014419",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no05",
+    "name": "QUBE",
+    "price": 2800,
+    "reason": "2025年のナゾトキマーケット出品(会場価格2,800円・通常3,000円)。今回持ってくるとは書かれていない",
+    "sources": [
+      {
+        "url": "https://www.yodaka.info/news/1455",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no05",
+    "name": "ジョバンニ（リドルとパズルでめぐる銀河鉄道の夜）",
+    "price": 3800,
+    "reason": "2025年のナゾトキマーケット出品(会場価格3,800円・通常4,000円)。今回持ってくるとは書かれていない",
+    "sources": [
+      {
+        "url": "https://www.yodaka.info/news/1455",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no06",
+    "name": "謎ファイル 千速＆重悟ver",
+    "price": 1430,
+    "reason": "2026年4月発売の既存作。今回持ってくるとは書かれていない",
+    "sources": [
+      {
+        "url": "https://newscast.jp/smart/news/2959496",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no06",
+    "name": "謎ファイル コナン＆世良ver",
+    "price": 1430,
+    "reason": "2026年4月発売の既存作。今回持ってくるとは書かれていない",
+    "sources": [
+      {
+        "url": "https://newscast.jp/smart/news/2959496",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no10",
+    "name": "KARIUDO vol.2 MEDUSA -メデューサ-",
+    "price": 3800,
+    "reason": "2025年のナゾトキマーケットで完売した前作(2025-11-21から通販)。今回持ってくるとは書かれていない",
+    "sources": [
+      {
+        "url": "https://takaraport.jp/shop/g/gkariudo002/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no15",
+    "name": "お持ち帰り謎解き タイヨウ＆ツキ",
+    "price": 1980,
+    "reason": "HPが公式ショップの商品として紹介する持ち帰り謎解きシリーズ第1弾。今回のナゾマで売るとは書いていない。公式ショップの価格は2種セット1,980円(単品1,100円)",
+    "sources": [
+      {
+        "url": "https://kagenazo.com/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://kagenazo-official.stores.jp/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no15",
+    "name": "謎旅ガイドブック",
+    "price": 770,
+    "reason": "2025年のナゾマでの出品(Ce11・土日)。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://newscast.jp/news/8114043",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no16",
+    "name": "最初からクライマックス謎解き-comic-",
+    "price": 3200,
+    "reason": "2026年10月発売の新作(通常3,200円・送料込、ゲームマーケット2026秋の会場価格2,800円)。リリースにナゾマでの販売の記載なし",
+    "sources": [
+      {
+        "url": "https://www.atpress.ne.jp/news/6566703",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazoxnazo.com",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no16",
+    "name": "最初からクライマックス謎解き",
+    "price": 2900,
+    "reason": "2025年のナゾマでの出品(Cc1・土日)。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.atpress.ne.jp/news/1001937",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no18",
+    "name": "シアター系謎解き シネマ・ニューウェーブへようこそ",
+    "price": 1540,
+    "reason": "2026年9月17日発売の新作。ナゾマの告知に作品名の記載なし(通販・全国小売店でも販売)",
+    "sources": [
+      {
+        "url": "https://www.clagla.jp/blog/2026/09/260917/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.clagla.jp/blog/2026/10/261009/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no18",
+    "name": "モイワショーギクラブ 真冬のドライブ",
+    "price": 2750,
+    "reason": "2026年11月19日発売(11月13日に公式LINE会員先行)。ナゾマで売るとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.clagla.jp/blog/2026/10/261023/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no18",
+    "name": "解くまで飲めないナゾトキブリューイング",
+    "price": 1500,
+    "reason": "2025年のナゾマでの出品(B5・土日)。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.atpress.ne.jp/news/1001937",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no20",
+    "name": "KORON - コロン -",
+    "price": 1500,
+    "reason": "2025年のナゾマでの出品(Cd4・土日)。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.atpress.ne.jp/news/1001937",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no21",
+    "name": "絆 -ツナグ- 2つの時と場所を絆ぐあなただけの物語。",
+    "price": 2500,
+    "reason": "2025年のナゾマでの出品(Cd6・土日)。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.atpress.ne.jp/news/1001937",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no22",
+    "name": "Tumbleweed 10th Anniversary『Q』(制作：NazoLock×タンブルウィード)",
+    "price": 3000,
+    "reason": "2026年8月7日発売のタンブルウィードとの共作キット(難易度7/10・90〜180分)。ナゾマで売るとは書いていない",
+    "sources": [
+      {
+        "url": "https://shop.tumbleweed.jp/items/147425079",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no22",
+    "name": "FUJI",
+    "price": 3000,
+    "reason": "NazoLockの持ち帰り謎。ゲームマーケットのブース(GameKnack x NazoLock x QurioS)に掲載された作品で、ナゾマで売るとは書いていない",
+    "sources": [
+      {
+        "url": "https://gamemarket.jp/booth/6539",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no25",
+    "name": "焼肉謎 タン編(焼肉キーホルダー付き)",
+    "price": 1500,
+    "reason": "2025年のナゾマでの出品(Ce6・土日)。今回も持ってくるとは書いていない(通販でも販売)",
+    "sources": [
+      {
+        "url": "https://www.atpress.ne.jp/news/1001937",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/shop/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no25",
+    "name": "【持ち帰り謎】スイートミステリーホリデー",
+    "price": 2000,
+    "reason": "通販ショップに掲載の持ち帰り謎。今回のナゾマで売るとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.tanteijelly.com/shop/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no26",
+    "name": "コジコト(KANJI×YOU×CRAZYLEMON)",
+    "price": 1980,
+    "reason": "2025年のナゾマでの出品(Ce10・土日)。ナゾマ価格は1,800円。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.atpress.ne.jp/news/1001937",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no27",
+    "name": "ゲームブック『吹雪に呪われた探偵学校からの招待状』",
+    "price": null,
+    "reason": "検索結果の要約にある新作ゲームブック(本編は2026年8月以降発売予定とのこと)。BOOTHが403で原典を確認できず、ナゾマで売るかも未確認",
+    "sources": [
+      {
+        "url": "https://x.com/kitsutsukido",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no27",
+    "name": "謎解きクリアファイル 深海遊園地からの招待状",
+    "price": 1800,
+    "reason": "2025年のナゾマでの出品(Cd7・土のみ)。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://newscast.jp/news/9567486",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no28",
+    "name": "長編謎解きミステリー 季節シリーズ",
+    "price": 3900,
+    "reason": "2025年のナゾマでの出品(Cd1・土日、3,900円〜のセット価格)。公式ブース概要にも季節シリーズとあるが、今回の商品の記載はない",
+    "sources": [
+      {
+        "url": "https://newscast.jp/news/9567486",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://nazocafe.com/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no28",
+    "name": "花火 3作品セット(第一章・第二章・最終章)",
+    "price": 4700,
+    "reason": "公式ブース概要に「花火」を筆頭とした季節シリーズとあるが、今回持ってくる商品とは書いていない。価格は通販サイトの3作品セット価格",
+    "sources": [
+      {
+        "url": "https://nazocafe.com/hanabipr/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no30",
+    "name": "OXA -オクサ-（新作持ち帰り謎）",
+    "price": null,
+    "reason": "2026-10-22のX告知に『ナゾトキマーケットでは販売いたしません』と明記(駒場祭とBOOTHで販売)。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2113223844383072479",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2113224659709894686",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no33",
+    "name": "100円謎解き",
+    "price": 100,
+    "reason": "2025年のナゾトキマーケットで初売りされた品(常設店舗とイベント会場限定、LINEを使う10分〜の謎)。ブース概要も前回の商品として触れており、今回持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://nazoad.com/event/100yen/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/booth/booth.html?no=no33",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no33",
+    "name": "【謎解きゲームキット】！？だらけのナゾ",
+    "price": 1650,
+    "reason": "2026年6月発売の通販・店頭販売の持ち帰り謎(60〜90分程度、12歳以上)。ナゾトキマーケットでの販売は書いていない",
+    "sources": [
+      {
+        "url": "https://nazoad.com/event/bikkuri_hatena/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no33",
+    "name": "【持ち帰り謎】ORBIT",
+    "price": 3960,
+    "reason": "2025年12月の通販・店頭販売の持ち帰り謎(210分〜、12歳以上)。ナゾトキマーケットでの販売は書いていない",
+    "sources": [
+      {
+        "url": "https://nazoad.com/event/orbit/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no33",
+    "name": "新作持ち帰り謎解き『LIGHT』",
+    "price": 2000,
+    "reason": "ゲームマーケット2026秋(10/17-18)で先行・特別価格・個数限定で販売した新作(60〜120分、難易度★7/10)。ナゾトキマーケットで売るとは書いていない",
+    "sources": [
+      {
+        "url": "https://x.com/nazotoki_adv/status/2110687139079807373",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazotoki_adv/status/2111643801689428107",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no34",
+    "name": "謎解きキット『錬金術入門』",
+    "price": null,
+    "reason": "公式ブース概要に制作物として名前が出る。Xでは2025年のナゾトキマーケットで販売した記録と、2026-03にAmazon販売へ一本化・2026-07に店頭販売の告知があるのみで、今回持ってくるとも価格も書いていない",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/booth/booth.html?no=no34",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/cinematrickshop",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no35",
+    "name": "ミステリーテリングゲーム『夕陽が落ちるまでに』",
+    "price": 2200,
+    "reason": "ゲームマーケット2026秋(10/17・18)向けに告知された新作(2人用・約60分)。ナゾトキマーケットに持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://jokerproject.jp/gamemarket2026ajp/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no42",
+    "name": "エニグロからの挑戦状（第一弾〜第七弾）・エニグロからの大挑戦状 免許皆伝編",
+    "price": null,
+    "reason": "HPに載る通販(XEOXY・タカラッシュのオンラインショップ)の既存作。価格の記載はなく、今回持ってくるとも書いていない",
+    "sources": [
+      {
+        "url": "http://enig-roid.com/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no42",
+    "name": "RIDDLE BUILDING",
+    "price": null,
+    "reason": "HPに載る通販(XEOXY・繭玉工房のオンラインショップ)の既存作。価格の記載はなく、今回持ってくるとも書いていない",
+    "sources": [
+      {
+        "url": "http://enig-roid.com/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no43",
+    "name": "テセウスの謎",
+    "price": 2000,
+    "reason": "HPに2026-09-15掲載の持ち帰り謎（60〜120分・1人～、同じ物語の謎解きを元の状態・半分入れ替え・全部入れ替えの3周する）。takaraport.jpで通販もあり、今回の会場で売るとは書いていない",
+    "sources": [
+      {
+        "url": "https://tri-mobius.com/theseus/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no44",
+    "name": "インカに眠る幻の秘宝",
+    "price": 1500,
+    "reason": "宝探しSHOP（楽天）の通販掲載。今回持ってくるとは書いていない。スマホ・PC等が必要、所要時間120〜270分の表示あり（文字化けで一部判読不能）",
+    "sources": [
+      {
+        "url": "https://item.rakuten.co.jp/takarushshop/kb-inca/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no44",
+    "name": "十二支謎噺",
+    "price": 1000,
+    "reason": "宝探しSHOP（楽天）の通販掲載。十二支がテーマの自宅向け謎解き。今回持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://item.rakuten.co.jp/takarushshop/c/0000000040/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no44",
+    "name": "透明な金魚",
+    "price": 1000,
+    "reason": "宝探しSHOP（楽天）の通販掲載。小説型の謎解きとされる。今回持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://item.rakuten.co.jp/takarushshop/c/0000000040/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no45",
+    "name": "CIRCLE",
+    "price": null,
+    "reason": "2024-10-05にBOOTHで発売されたスマホのヒラメキゲーム（黒い円を白い円に重ねる、各ステージにギミックあり、全問ヒント付き）。2024年の作品で、今回持ってくるとは書いていない。検索結果の要約のみ確認、価格は未確認",
+    "sources": [
+      {
+        "url": "https://gamebiz.jp/news/393734",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no48",
+    "name": "花束探偵とハンカチーフ刑事の事件簿 〜花言葉はときどき嘘をつく〜",
+    "price": null,
+    "reason": "HPに載っている2人用協力ミステリー。公式ブース概要は『花束探偵』シリーズに触れるだけで、今回持ってくる商品とは書いていない。価格不明",
+    "sources": [
+      {
+        "url": "https://www.akiyama-create.com",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no48",
+    "name": "花束探偵とハンカチーフ刑事の事件簿〜彼岸花が枯れる前に〜",
+    "price": null,
+    "reason": "2026-09-17から東京ミステリーサーカス「らんぷ堂」で発売の新作。今回のナゾトキマーケットで売るとは書いていない。価格不明",
+    "sources": [
+      {
+        "url": "https://x.com/naotaro841/status/2099457597703434730",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no49",
+    "name": "謎解きゲーム code:box #4 探偵助手と、とおまわりのメッセージ編",
+    "price": 3200,
+    "reason": "公式ブース概要の「code:boxシリーズ」にあたる最新作とみられるが、今回どの巻を持ってくるかは書いていない。イベント価格3,200円、通販（BOOTH）は4,000円（送料込）。専用Webサイトを使うためスマホ必要",
+    "sources": [
+      {
+        "url": "https://sukuranburu.net/riddle/codebox4",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no49",
+    "name": "ぐずりありどるメモリーズ",
+    "price": 1200,
+    "reason": "謎解きドリル（300問＋ラス謎、B5・58ページ）。書籍版1,200円（DL版800円）。コミケ・ゲムマなどの頒布実績はあるが、今回持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://sukuranburu.net/gzrar_memories/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no49",
+    "name": "謎を解かないとゲームにならないトランプ（謎解きトランプ）",
+    "price": 2000,
+    "reason": "2022年秋のゲームマーケットで頒布開始した既存作。今回持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://sukuranburu.net/nazotora/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no53",
+    "name": "善良なる悪しき者",
+    "price": 2000,
+    "reason": "2025年のナゾトキマーケットで先行発売された作品（2025-11-02のXの告知）。今回持ってくるとは書いていない。2025-12-05からAmazonで販売",
+    "sources": [
+      {
+        "url": "https://news.denfaminicogamer.jp/news/2512042j",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://movierock30.wixsite.com/asobiwotukuru/storygame",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/movierock301/status/1984942018603462706",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no54",
+    "name": "新世界ALKAからの脱出",
+    "price": null,
+    "reason": "2022年に頒布した作品で、2026-07-10からワンダーラボ（新潟）で委託販売中（60〜120分、オンライン形式）。今回持ってくるとは書いていない。価格不明",
+    "sources": [
+      {
+        "url": "https://calette.net/event/alka",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://calette.net/news/wonderlab_fm9wr",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no54",
+    "name": "壊れた童話からの脱出",
+    "price": null,
+    "reason": "2026-07-10からワンダーラボ（新潟）で委託販売中（オンライン形式）。今回持ってくるとは書いていない。価格・所要時間不明",
+    "sources": [
+      {
+        "url": "https://calette.net/event/fairytale",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://calette.net/news/wonderlab_fm9wr",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "ALLAXY MISSION",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★4・90〜180分・情報探索型・一部LINE)。『学祭等のイベントで一般販売』とあるが、今回持参するとは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "Land Xcape",
+    "price": null,
+    "reason": "2023年度の学祭で出した既存作(HP表記 ★3・30〜90分・LINE使用)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "赤い糸を結んで",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★3・90分〜・Web)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "八つ目の大罪",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★2・60分〜・LINE)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "CLOWN",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★2・60分〜・LINE)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "－キカ－",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★5・60分〜・図形のみの8問)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "Ouroboros",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★5・60分〜)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "BLACK & WHITE",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★4・60分〜・LINE)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "謎解きができるだけでモテちゃった件",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★3・20分〜・LINE)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no59",
+    "name": "終わらないアンケートからの脱出",
+    "price": null,
+    "reason": "HPの既存作(HP表記 ★3・15分〜・Web)。今回持参とは書いていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokixcape/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%B0%E3%83%83%E3%82%BA",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no60",
+    "name": "転売注意",
+    "price": 2500,
+    "reason": "2023年10月に販売開始した持ち帰り謎(BOOTH)。今回持参するとは書いていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/en/items/5185204",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no60",
+    "name": "『TOP SPOT』完全攻略ガイド",
+    "price": 1000,
+    "reason": "BOOTH の関連商品欄に掲載。内容・発売時期は未確認で、今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/en/items/5185204",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no64",
+    "name": "嫌がらせのようなクロスワード vol.2",
+    "price": null,
+    "reason": "謎解きショップ『スイッチ』の旧販売ページ(現在は移転・404)の検索結果抜粋のみ確認。巨大クロスワード第2弾、難易度★4相当、120分〜。価格は未確認で、今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://cafeswitch.thebase.in/items/25772881",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no66",
+    "name": "Little Christmas Presents",
+    "price": 500,
+    "reason": "2025年11月(前回)のナゾトキマーケットの新作お品書き。クリスマスがテーマの『ワンコイン謎シリーズ』。今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://www.mystery-jack.com/archives/5496",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no66",
+    "name": "シラナイAI：ミーナ",
+    "price": 2000,
+    "reason": "2025年7月発売の持ち帰り謎(120分程度・1人〜何人でも)。前回のお品書きにも掲載。今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://www.mystery-jack.com/archives/5453",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.mystery-jack.com/archives/5496",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no66",
+    "name": "チェーンギフト",
+    "price": 2000,
+    "reason": "既存の持ち帰り謎(BOOTH、検索結果の抜粋では在庫なし表示あり)。前回のお品書きに掲載。今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://www.mystery-jack.com/archives/5496",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://booth.pm/ja/items/5938996",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no66",
+    "name": "秘められた迷宮と49の謎",
+    "price": null,
+    "reason": "既存の持ち帰り謎。前回のお品書きに掲載。価格は未確認で、今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://www.mystery-jack.com/archives/5496",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no66",
+    "name": "時空爆弾のパラドックス",
+    "price": null,
+    "reason": "既存の持ち帰り謎。前回のお品書きに掲載。価格は未確認で、今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://www.mystery-jack.com/archives/5496",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no66",
+    "name": "パズBINGO＆ナゾBINGO",
+    "price": null,
+    "reason": "前回(2025年11月)のお品書きに掲載(パズル×ビンゴ、謎解き×ビンゴ。セット購入で追加の遊びあり)。価格の記載なし、今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://www.mystery-jack.com/archives/5496",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no67",
+    "name": "かぎのかかったふうとうからの脱出２",
+    "price": 2000,
+    "reason": "シリーズ第2作(BOOTH通販、約60分〜)。今回持参するとは書いていない。10/17のXで「過去作も持っていきます」とあるが、持参する作品名は第1作のハッシュタグのみ",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/7622846",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/MysteryFromAki/status/2111438471676256711",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no67",
+    "name": "STOP謎",
+    "price": 600,
+    "reason": "BOOTHの新作短編キット(4問・約15分〜、お一人様3個まで)。今回持参するとは書いていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/7621396",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no67",
+    "name": "ふれないダイス",
+    "price": 700,
+    "reason": "STOP謎と並ぶSTOPマークのサイコロ(BOOTH関連商品欄の価格のみ確認)。今回持参するとは書いていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/7621396",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no67",
+    "name": "闇に包まれた世界からの脱出",
+    "price": 2000,
+    "reason": "BOOTHの既存の謎解きキット(関連商品欄の価格のみ確認)。今回持参するとは書いていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/3735029",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no69",
+    "name": "第二弾 名古屋 伏見謎解き街巡り「その失踪は、喫茶七番から。」",
+    "price": 2200,
+    "reason": "BASE の通販・店頭販売中の周遊謎(街歩き3〜4時間/おうち1〜2時間、LINE使用)。公式概要の『ほとんど新作』とは別で、今回持参とは書いていない",
+    "sources": [
+      {
+        "url": "https://riddletimez.base.shop/items/142181075",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no71",
+    "name": "心技体",
+    "price": 4000,
+    "reason": "ナゾトキ番長のHPに『ナゾトキマーケットに向けてCrossXOne・ShareKOBEと共同制作』とあるが、ShareKOBEのサイトデータでは2025-11-08公開の昨年の商品。今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/ShareKOBEinc/Homepage/main/js/goods-data.js",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no71",
+    "name": "ザコモン酒場",
+    "price": 2500,
+    "reason": "HPの持ち帰り謎ページに掲載。販売場所はナゾトキ番長のイベント会場と謎解きカフェなぞねこ(名古屋)で、ナゾトキマーケットでの販売は書かれていない",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no71",
+    "name": "（品目未発表）持ち帰り謎の出展",
+    "price": null,
+    "reason": "HPのスケジュールに『持ち帰り謎出展 11/7、8 東京・水道橋』とあるが、品目・価格・新作かどうかが書かれていない",
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/nazotokibancho/%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no73",
+    "name": "メモリアルゲームズ【パズル80%】（封筒版）",
+    "price": 2000,
+    "reason": "2026-08のC108新作の封筒版で、BOOTHは自宅発送受付中(送料別210円)。難易度★9/10・約6時間。ナゾトキマーケットでの頒布は書かれていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/8744363",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no74",
+    "name": "（題名未発表）新作持ち帰り謎",
+    "price": null,
+    "reason": "公式ブース概要に『今年もナゾトキマーケットで新作持ち帰り謎を発売いたします』とあるが、題名・価格・内容が見つからない",
+    "sources": [
+      {
+        "url": "https://nazolab2013.wixsite.com/nazolab",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no74",
+    "name": "十六夜絵図（イザヨイエズ）",
+    "price": 1200,
+    "reason": "2025年11月のナゾトキマーケットで特別価格1,200円で発売(Cc7・日曜のみ)。その後ゲムマ等で委託販売。去年の商品で、今回も持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://x.com/NaZO_LAB/status/1980952315491385587",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no75",
+    "name": "最後の答えはハッピーエンド",
+    "price": 1000,
+    "reason": "2025年のナゾトキマーケットでナゾのみかん箱&Toy×ボーズの共同商品として販売された昨年の商品。今回の出品とは書かれていない",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no75",
+    "name": "ARGガイド VOL.3（エレメンツ工房の同人誌）",
+    "price": null,
+    "reason": "エレメンツのnoteに記事タイトルがあるだけで、内容・価格・今回の頒布予定は確認できない。公式概要の『研究同人誌』に当たる可能性",
+    "sources": [
+      {
+        "url": "https://note.com/elejun/m/meabb6757606b",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no75",
+    "name": "体験型エンタメガイド VOL.1（エレメンツ工房の同人誌）",
+    "price": null,
+    "reason": "エレメンツのnoteに記事タイトルがあるだけで、内容・価格・今回の頒布予定は確認できない",
+    "sources": [
+      {
+        "url": "https://note.com/elejun/m/meabb6757606b",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no77",
+    "name": "（題名未発表）完全新作の持ち帰り謎",
+    "price": null,
+    "reason": "公式ブース概要に『完全新作までたくさんの謎をご用意』とあるが、題名・価格が見つからない。X(繭玉工房)の10/25告知で新作『シズカの放課後事件ファイル』が出たが、告知は『完全新作』とは書いていないため同一かは未確認",
+    "sources": [
+      {
+        "url": "https://cocoonwork.base.shop/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/mayudamakobo/status/2114267659021979723",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no78",
+    "name": "（題名未発表）クスっと笑える持ち帰り謎",
+    "price": null,
+    "reason": "公式ブース概要に『今年も関西らしく、クスっと笑える持ち帰り謎もご用意』とあるが、題名・価格が見つからない。X(ShareKOBE)で新作『オシリドル』『refine』が発表されたが、どれが『クスっと笑える』作品に当たるかは書かれていない",
+    "sources": [
+      {
+        "url": "https://homepage-zeta-coral.vercel.app/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/shareKOBE_/status/2111042321458589870",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no78",
+    "name": "DAUSLE?!（土産謎第1弾・神戸銘菓ゴーフルがモチーフ）",
+    "price": null,
+    "reason": "ShareKOBEのサイトのグッズデータで2025-11-08(昨年のナゾトキマーケット)公開の商品。今回の出品とは書かれていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/ShareKOBEinc/Homepage/main/js/goods-data.js",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no78",
+    "name": "からあげ謎",
+    "price": null,
+    "reason": "ShareKOBEのサイトのグッズデータで2025-11-08(昨年のナゾトキマーケット)公開の商品。今回の出品とは書かれていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/ShareKOBEinc/Homepage/main/js/goods-data.js",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no78",
+    "name": "心技体",
+    "price": 4000,
+    "reason": "関西ゆかりの制作団体(ナゾトキ番長・CrossXOne・ShareKOBE)の共同制作キット。2025-11-08公開の昨年の商品で、今回の出品とは書かれていない。価格4,000円はナゾトキ番長のHPの記載",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/ShareKOBEinc/Homepage/main/js/goods-data.js",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no78",
+    "name": "名は体を表す",
+    "price": null,
+    "reason": "ShareKOBEのサイトのグッズデータで2025-11-08(昨年のナゾトキマーケット)公開の商品。今回の出品とは書かれていない。価格の記載なし",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/ShareKOBEinc/Homepage/main/js/goods-data.js",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no79",
+    "name": "（題名未発表）新作持ち帰り謎 2作目・3作目",
+    "price": null,
+    "reason": "noteの『ナゾトキマーケット情報』で新作を最大3つ持っていく予告があるが、積謎厳禁以外の題名・価格は無料部分に出ていない(2作目は『カジュアルでお手軽』と紹介)",
+    "sources": [
+      {
+        "url": "https://note.com/paisen_nazo/n/n09cd7b641720",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://note.com/paisen_nazo/n/n2bb13cb75a37",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no79",
+    "name": "パイセンナゾボン",
+    "price": 1800,
+    "reason": "書籍。2025年のナゾトキマーケットでXEOXYブースで販売されていた(本人の2025年のnoteより)。今回の出品とは書かれていない",
+    "sources": [
+      {
+        "url": "https://note.com/paisen_nazo/n/n5ca8a0374d94",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no80",
+    "name": "（題名未発表）新作の謎解き",
+    "price": null,
+    "reason": "公式ブース概要に『新作の謎解き・過去ゲームイベントで頒布した旧作・その他いくつかの商品をお持ちします』とあるが、題名・価格が見つからない。Xでも10/25時点でナゾトキマーケット向けの新作謎の題名・価格は告知なし",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2114249646860366002",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no80",
+    "name": "【謎解き】ツクモロのまたとない不運な一日",
+    "price": 600,
+    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2026春の新作、難易度4/10・10〜30分",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/8356955",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no80",
+    "name": "【グッズ】九十九金運開運御守",
+    "price": 1100,
+    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。おまけ謎付きのアクリルキーホルダー(約50×70mm)",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/8357054",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no80",
+    "name": "【暗号】解解 -kaidoku- vol.001『境』",
+    "price": 600,
+    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2025秋に先行販売",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/7898841",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no80",
+    "name": "【謎解き】形 -katachi-",
+    "price": 1000,
+    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2025秋の新作、難易度3/10・30〜90分",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/7898835",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no80",
+    "name": "【謎解き】adapt",
+    "price": 1200,
+    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no80",
+    "name": "【謎解き】99g -ツクモグラム-",
+    "price": 1000,
+    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no81",
+    "name": "トニナルコトバ",
+    "price": 2500,
+    "reason": "2025年のナゾトキマーケット(Cc4・土日)の商品。『瞬発力と語彙力でコトバをひらめけ！』。今回の出品とは書かれていない",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no82",
+    "name": "花びらは太陽に透けて",
+    "price": 500,
+    "reason": "BOOTHのダウンロード商品(ブラウザ謎、PC向け、18歳以上・1〜3時間)。通販のみで、ナゾトキマーケットでの販売は書かれていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/2820556",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no83",
+    "name": "喫茶カルピディームと客人Aの解明",
+    "price": 2000,
+    "reason": "BOOTHの持ち帰り謎(Vtuber明智キュウタさんとのコラボ、想定90〜120分、ポストカード付き)。ナゾトキマーケットでの販売は書かれていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/7753603",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no88",
+    "name": "気分屋の謎と少しも動かせない作品",
+    "price": null,
+    "reason": "2025年に「人気持ち帰り謎」として告知された商品。今回持ってくるとは書いていない。価格も不明",
+    "sources": [
+      {
+        "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no88",
+    "name": "2人の写真と少しの思い出",
+    "price": null,
+    "reason": "2025年に「人気持ち帰り謎」として告知された商品。今回持ってくるとは書いていない。価格も不明",
+    "sources": [
+      {
+        "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no92",
+    "name": "Answersheet（4CE Dimension ＆ TRIQLET）",
+    "price": 1500,
+    "reason": "2025年の出品（SCRAP公式記事の商品紹介、税込1,500円）。今回持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no92",
+    "name": "AXIDENTZ（4CE Dimension）",
+    "price": null,
+    "reason": "2025年に頒布予定と告知された商品（第三者 note の X まとめ）。今回持ってくるとは書いていない。価格不明",
+    "sources": [
+      {
+        "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no92",
+    "name": "デリートノイズ（TRIQLET No.123）",
+    "price": null,
+    "reason": "2025年に告知された商品（ブロックでノイズを消して謎を解く、難易度★8/10、60分）。今回持ってくるとは書いていない。価格不明",
+    "sources": [
+      {
+        "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no93",
+    "name": "問題ございません。",
+    "price": 1000,
+    "reason": "2025年の出品（SCRAP公式記事、税込1,000円。封筒にはヒントしか入っていない）。今回持ってくるとは書いていない",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
+        "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "boothId": "no94",
+    "name": "Hollow",
+    "price": 500,
+    "reason": "BOOTHのダウンロード商品（スマホ縦画面で遊ぶWeb謎、初心者向け、30分〜1時間）。通販のみで、ナゾトキマーケットで売るとは書いていない",
+    "sources": [
+      {
+        "url": "https://booth.pm/ja/items/2651429",
+        "retrievedAt": "2026-10-25"
+      }
+    ]
+  }
+]

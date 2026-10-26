@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.vite/
+*.log
+.DS_Store
+Thumbs.db
+
+# 作業用（ダウンロード・使い捨てスクリプト・仮想環境）。中身は work/README.md
+work/*
+!work/README.md
+.vitest/
+
+# 公式データの原本（再配布しない。手元の差分取得にだけ使う）
+data/raw/

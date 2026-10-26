@@ -1,0 +1,25 @@
+{
+  "name": "nazomarket-2026",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "ナゾトキマーケット2026 の買い物計画ツール（非公式・個人用）",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "fetch-official": "node scripts/fetch-official.ts",
+    "build-data": "node scripts/build-data.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}
