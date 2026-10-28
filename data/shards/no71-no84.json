@@ -147,7 +147,10 @@
             "source": "official",
             "basis": "団体表記 ★★★★☆（4/5）をそのまま"
           },
-          "playMinutes": 120,
+          "playMinutes": {
+            "min": 120,
+            "max": 240
+          },
           "players": null,
           "limited": "ナゾトキマーケット会場限定価格",
           "isNew": true,
@@ -191,7 +194,10 @@
             "source": "official",
             "basis": "団体表記 ★★★★★（5/5）をそのまま"
           },
-          "playMinutes": 240,
+          "playMinutes": {
+            "min": 240,
+            "max": null
+          },
           "players": "1人〜",
           "limited": null,
           "isNew": false,
@@ -216,7 +222,10 @@
             "source": "official",
             "basis": "団体表記 ★★★★☆（4/5）をそのまま"
           },
-          "playMinutes": 150,
+          "playMinutes": {
+            "min": 150,
+            "max": 240
+          },
           "players": "1人〜",
           "limited": null,
           "isNew": false,
@@ -923,7 +932,10 @@
             "source": "estimated",
             "basis": "ショップ表記『初心者だと少し難しいかもしれません』で、ヒントあり・30〜90分"
           },
-          "playMinutes": 30,
+          "playMinutes": {
+            "min": 30,
+            "max": 90
+          },
           "players": "推奨1〜2人",
           "isNew": false,
           "limited": null,
@@ -941,6 +953,10 @@
             {
               "url": "https://cocoonwork.base.shop/items/127724059",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://cocoonwork.base.shop/categories/7016591",
+              "retrievedAt": "2026-10-28"
             }
           ]
         },
@@ -1025,7 +1041,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": 180
+          },
           "players": "何人でも",
           "isNew": null,
           "limited": null,
@@ -1388,7 +1407,10 @@
             "source": "official",
             "basis": "団体表記 6/10 → 6/10×5=3.0 → 3"
           },
-          "playMinutes": 50,
+          "playMinutes": {
+            "min": 50,
+            "max": 90
+          },
           "players": null,
           "isNew": true,
           "limited": "ナゾトキマーケット限定価格",

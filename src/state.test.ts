@@ -54,7 +54,6 @@ describe("parseState", () => {
       priceMax: 3000,
       difficulties: [1, "unknown"],
       categories: ["kit"],
-      areas: ["Ca"],
       onlyGoingDay: true,
     });
   });

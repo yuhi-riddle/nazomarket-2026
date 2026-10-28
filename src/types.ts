@@ -5,6 +5,7 @@ export type Source = { url: string; retrievedAt: string /* YYYY-MM-DD */ };
 export type Hashtag = { tag: string; sources: Source[] };
 export type CheckedSource = "official" | "site" | "x" | "search";
 export type Category = "kit" | "booklet" | "online" | "goods" | "other";
+export type PlayMinutes = { min: number; max: number | null };
 
 export type Booth = {
   id: string;                  // booth.tsv の管理用NO（例 "no02"）
@@ -33,7 +34,7 @@ export type Product = {
     source: "official" | "estimated" | "unknown";
     basis: string | null;      // 換算ルールや推定の根拠を1文で
   };
-  playMinutes: number | null;
+  playMinutes: PlayMinutes | null;
   players: string | null;
   isNew: boolean | null;
   limited: string | null;      // 「数量限定」「会場限定」など
@@ -71,9 +72,9 @@ export type VenueLayout = {
 // ---- 収集の途中データ（data/shards/*.json）。build-data がまとめて products.json にする ----
 
 // 公式商品（id が "p" で始まる）は、公式 TSV に無い・上書きしたい項目だけを持つ
-export type ShardOfficialPatch = Partial<Omit<Product, "id" | "boothId" | "unconfirmed" | "hashtags">> & { id: string; hashtags?: Hashtag[] };
+export type ShardOfficialPatch = Partial<Omit<Product, "id" | "boothId" | "unconfirmed" | "hashtags" | "playMinutes">> & { id: string; hashtags?: Hashtag[]; playMinutes?: number | PlayMinutes | null };
 // 公式以外の商品は全項目を持つ（boothId は親の ShardBooth から、unconfirmed は build-data が付ける）
-export type ShardProduct = Omit<Product, "boothId" | "unconfirmed" | "hashtags"> & { hashtags?: Hashtag[] };
+export type ShardProduct = Omit<Product, "boothId" | "unconfirmed" | "hashtags" | "playMinutes"> & { hashtags?: Hashtag[]; playMinutes: number | PlayMinutes | null };
 
 // 今回の出品と言い切れない候補（去年の出品・通販のみ等）。products には入れない
 export type Candidate = {

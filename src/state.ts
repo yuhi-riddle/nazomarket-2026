@@ -5,7 +5,7 @@ import { defaultPrefs, type Prefs } from "./logic/insights.ts";
 import { FEATURE_TAGS } from "./logic/tags.ts";
 
 export const STORAGE_KEY = "nazomarket2026:v1";
-export type TabId = "catalog" | "cart" | "map" | "insights";
+export type TabId = "catalog" | "cart" | "map";
 export type AppFilters = Omit<Filters, "day"> & { onlyGoingDay: boolean };
 export type AppState = {
   version: 1;
@@ -35,9 +35,9 @@ export const defaultState: AppState = {
   prefs: { ...defaultPrefs, categories: [...defaultPrefs.categories] },
 };
 
-const tabs: TabId[] = ["catalog", "cart", "map", "insights"];
+const tabs: TabId[] = ["catalog", "cart", "map"];
 const categoryValues: Category[] = ["kit", "booklet", "online", "goods", "other"];
-const sorts: SortKey[] = ["booth", "priceAsc", "priceDesc", "difficultyAsc", "difficultyDesc"];
+const sorts: SortKey[] = ["recommended", "booth", "organization", "priceAsc", "priceDesc", "difficultyAsc", "difficultyDesc"];
 const isRecord = (value: unknown): value is Record<string, unknown> =>
   typeof value === "object" && value !== null && !Array.isArray(value);
 const isNonNegativeNumber = (value: unknown): value is number =>
@@ -81,7 +81,6 @@ function parseFilters(value: unknown): AppFilters {
   if (Array.isArray(value.categories)) {
     result.categories = [...new Set(value.categories.filter((item): item is Category => categoryValues.includes(item as Category)))];
   }
-  if (Array.isArray(value.areas)) result.areas = [...new Set(value.areas.filter((item): item is string => typeof item === "string"))];
   const knownTags = new Set<string>(FEATURE_TAGS);
   if (Array.isArray(value.tags)) {
     result.tags = [...new Set(value.tags.filter((item): item is string => typeof item === "string" && knownTags.has(item)))];
@@ -132,12 +131,12 @@ export function parseState(raw: string | null, knownProductIds: Set<string>): Ap
       : { ...defaultState.route };
     return {
       version: 1,
-      tab: parsed.tab === "today" ? "cart" : tabs.includes(parsed.tab as TabId) ? parsed.tab as TabId : defaultState.tab,
+      tab: parsed.tab === "today" ? "cart" : parsed.tab === "insights" ? "catalog" : tabs.includes(parsed.tab as TabId) ? parsed.tab as TabId : defaultState.tab,
       day: parsed.day === "sat" || parsed.day === "sun" ? parsed.day : defaultState.day,
       budget: isNullableAmount(parsed.budget) ? parsed.budget : defaultState.budget,
       items: parseItems(parsed.items, knownProductIds),
       filters: parseFilters(parsed.filters),
-      sort: sorts.includes(parsed.sort as SortKey) ? parsed.sort as SortKey : defaultState.sort,
+      sort: parsed.tab === "insights" ? "recommended" : sorts.includes(parsed.sort as SortKey) ? parsed.sort as SortKey : defaultState.sort,
       nazocolle,
       today,
       route,

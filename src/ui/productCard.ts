@@ -12,17 +12,19 @@ export type ProductCardActions = {
 
 export type ProductCardHandle = {
   element: HTMLElement;
-  update: (item: CartItem | undefined) => void;
+  update: (item: CartItem | undefined, reasons?: string[], selectedTags?: string[]) => void;
 };
 
 export function productCard(view: ProductView, item: CartItem | undefined, actions: ProductCardActions): ProductCardHandle {
   const product = view.product;
   const card = el("article", "product-card");
   card.dataset.productId = product.id;
+  card.dataset.organization = view.booth.name;
 
   const stub = el("div", "ticket-stub");
   if (!view.booth.boothCode) stub.classList.add("is-undecided");
-  stub.append(el("span", "ticket-stub-label", "ブース"));
+  stub.append(el("strong", "ticket-organization", view.booth.name));
+  stub.append(el("span", "ticket-booth", view.booth.boothCode ?? "未定"));
   card.append(stub);
 
   const media = el("div", "product-media");
@@ -53,11 +55,6 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   nameHeading.append(name);
   body.append(nameHeading);
 
-  const boothCode = view.booth.boothCode ?? "番号未定";
-  const boothLabel = el("p", "product-booth", boothCode + " " + view.booth.name);
-  boothLabel.textContent = view.booth.boothCode ?? "未定";
-  stub.append(boothLabel);
-
   const price = product.price === null ? "価格未確認" : product.price.toLocaleString("ja-JP") + "円";
   const priceElement = el("p", "product-price");
   if (product.price === null) {
@@ -83,6 +80,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   body.append(difficulty, priceElement, oneLiner);
 
   const tags = el("div", "product-tags");
+  const tagButtons = new Map<string, HTMLButtonElement>();
   for (const tag of view.featureTags) {
     const tagText = el("span", "", tag);
     const hash = el("span", "", "#");
@@ -93,6 +91,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
       tagButton.dataset.featureTag = tag;
       tagButton.setAttribute("aria-pressed", String(actions.selectedTags?.includes(tag) ?? false));
       tagButton.addEventListener("click", () => actions.onFeatureTag?.(tag, product.id));
+      tagButtons.set(tag, tagButton);
       tags.append(tagButton);
     } else {
       const tagLabel = el("span", "tag");
@@ -101,6 +100,9 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     }
   }
   body.append(tags);
+  const reasons = el("div", "product-reasons");
+  reasons.hidden = true;
+  body.append(reasons);
 
   const actionsArea = el("div", "product-actions");
   const listToggle = button("", "list-toggle");
@@ -124,7 +126,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   actionsArea.append(quantity);
   card.append(body, actionsArea);
 
-  const update = (nextItem: CartItem | undefined) => {
+  const update = (nextItem: CartItem | undefined, nextReasons?: string[], selectedTags?: string[]) => {
     currentItem = nextItem;
     listToggle.setAttribute("aria-pressed", String(Boolean(nextItem)));
     listToggle.textContent = nextItem ? "リストに入っています" : "リストに入れる";
@@ -132,6 +134,13 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     quantityText.textContent = nextItem ? String(nextItem.qty) : "1";
     minus.disabled = nextItem?.qty === 1;
     plus.disabled = nextItem?.qty === 99;
+    if (nextReasons !== undefined) {
+      reasons.replaceChildren(...nextReasons.map((reason) => el("span", "tag", reason)));
+      reasons.hidden = nextReasons.length === 0;
+    }
+    if (selectedTags !== undefined) {
+      for (const [tag, tagButton] of tagButtons) tagButton.setAttribute("aria-pressed", String(selectedTags.includes(tag)));
+    }
   };
 
   update(item);

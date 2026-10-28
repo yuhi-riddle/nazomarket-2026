@@ -126,19 +126,21 @@ describe("extractDifficulty", () => {
 
 describe("extractPlayMinutes", () => {
   it.each([
-    ["所要時間　：2〜4時間", 120],
-    ["所要時間　：2.5〜4時間", 150],
-    ["所要時間　：4時間〜", 240],
-    ["プレイ時間：210分〜", 210],
-    ["想定時間： 45分（目安）", 45],
-    ["所要時間：60分~ ", 60],
-    ["プレイ時間目安：45分～120分（サクッと遊べるボリュームです）", 45],
-    ["・想定所要時間：120分程度", 120],
-    ["所要時間：1時間30分", 90],
-    ["所要時間：1.5時間", 90],
-    ["所要時間：約1時間半", 90],
-  ])("%s → %i 分（範囲は下限）", (text, minutes) => {
-    expect(extractPlayMinutes(text)).toBe(minutes);
+    ["所要時間　：2〜4時間", { min: 120, max: 240 }],
+    ["所要時間　：2.5〜4時間", { min: 150, max: 240 }],
+    ["所要時間　：4時間〜", { min: 240, max: null }],
+    ["プレイ時間：210分〜", { min: 210, max: null }],
+    ["想定時間： 45分（目安）", { min: 45, max: 45 }],
+    ["所要時間：60分~ ", { min: 60, max: null }],
+    ["プレイ時間目安：45分～120分（サクッと遊べるボリュームです）", { min: 45, max: 120 }],
+    ["・想定所要時間：120分程度", { min: 120, max: 120 }],
+    ["所要時間：1時間30分", { min: 90, max: 90 }],
+    ["所要時間：1.5時間", { min: 90, max: 90 }],
+    ["所要時間：約1時間半", { min: 90, max: 90 }],
+    ["所要時間：30〜60分", { min: 30, max: 60 }],
+    ["所要時間：1時間〜1時間半", { min: 60, max: 90 }],
+  ])("%s → 最短・最長（〜で終わるなら最長は null）", (text, range) => {
+    expect(extractPlayMinutes(text)).toEqual(range);
   });
   it("時間の表記が無ければ null", () => {
     expect(extractPlayMinutes("制限時間：なし")).toBeNull();
@@ -197,7 +199,7 @@ describe("computeUnconfirmed", () => {
         priceNote: null,
         limited: null,
         difficulty: { level: null, source: "unknown", basis: null },
-        playMinutes: 60,
+        playMinutes: { min: 60, max: 60 },
         players: null,
         isNew: true,
         imageUrl: null,
@@ -296,7 +298,7 @@ describe("buildProducts", () => {
     });
     expect(p19.sources).toEqual([{ url: `${BASE}product/product.html?pno=p19`, retrievedAt: DATE }]);
     expect(p03.difficulty).toEqual({ level: 4, source: "official", basis: "公式表記 ★★★★☆（4/5）をそのまま採用" });
-    expect(p03.playMinutes).toBe(120);
+    expect(p03.playMinutes).toEqual({ min: 120, max: 240 });
   });
   it("収集結果の追記で上書きし、出典は重複なしで足す", () => {
     expect(p03.category).toBe("booklet");
@@ -335,9 +337,22 @@ describe("buildProducts", () => {
     }];
     const p = buildProducts({ officialProducts, officialBooths, shards: withNulls, retrievedAt: DATE }).find((x) => x.id === "p03")!;
     expect(p.difficulty.level).toBe(4);
-    expect(p.playMinutes).toBe(120);
+    expect(p.playMinutes).toEqual({ min: 120, max: 240 });
     expect(p.isNew).toBe(true);
     expect(p.players).toBe("1〜2人");
+  });
+  it("収集データの所要時間は、数字1つ（ちょうど）でも 最短・最長 でも書ける", () => {
+    const shardsWithTimes = [{
+      ...shards[0],
+      booths: [{
+        ...shards[0].booths[0],
+        officialPatches: [{ id: "p03", playMinutes: 90 }],
+        products: [{ ...shards[0].booths[0].products[0], playMinutes: { min: 30, max: null } }],
+      }],
+    }] as unknown as ShardFile[];
+    const built = buildProducts({ officialProducts, officialBooths, shards: shardsWithTimes, retrievedAt: DATE });
+    expect(built.find((x) => x.id === "p03")!.playMinutes).toEqual({ min: 90, max: 90 });
+    expect(built.find((x) => x.id === shards[0].booths[0].products[0].id)!.playMinutes).toEqual({ min: 30, max: null });
   });
   it("公式以外の商品が、同じ団体の公式商品と同じ名前なら例外（後から公式に載った二重登録を止める）", () => {
     const dup: ShardFile[] = [{

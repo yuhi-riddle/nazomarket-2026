@@ -773,7 +773,10 @@
             "source": "estimated",
             "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間90分〜から推定"
           },
-          "playMinutes": 90,
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
           "players": "1人〜",
           "isNew": true,
           "limited": null,
@@ -818,7 +821,10 @@
             "source": "estimated",
             "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間120分〜から推定"
           },
-          "playMinutes": 120,
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
           "players": "1人〜",
           "isNew": true,
           "limited": null,
@@ -863,7 +869,10 @@
             "source": "estimated",
             "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間90分〜から推定"
           },
-          "playMinutes": 90,
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
           "players": "1人〜",
           "isNew": true,
           "limited": null,
@@ -908,7 +917,7 @@
             "source": "estimated",
             "basis": "3キットの所要時間(90〜120分〜)と「中学生以上対象」から推定"
           },
-          "playMinutes": 90,
+          "playMinutes": null,
           "players": "1人〜",
           "isNew": true,
           "limited": "ナゾマ限定価格",
@@ -2162,7 +2171,10 @@
             "source": "official",
             "basis": "団体表記『総合難易度：5/5』をそのまま"
           },
-          "playMinutes": 210,
+          "playMinutes": {
+            "min": 210,
+            "max": null
+          },
           "players": null,
           "limited": "先行販売",
           "sources": [
@@ -2181,7 +2193,10 @@
             "source": "official",
             "basis": "団体表記『総合難易度：3/5』をそのまま"
           },
-          "playMinutes": 90,
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
           "players": null,
           "limited": "先行販売",
           "sources": [
@@ -2200,7 +2215,10 @@
             "source": "official",
             "basis": "団体表記『総合難易度：3/5』をそのまま"
           },
-          "playMinutes": 120,
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
           "players": null,
           "limited": null
         }

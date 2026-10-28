@@ -161,21 +161,23 @@ export function extractDifficulty(text: string): ExtractedDifficulty | null {
   return null;
 }
 
-export function extractPlayMinutes(text: string): number | null {
+export function extractPlayMinutes(text: string): Product["playMinutes"] {
   for (const originalLine of text.split(/\r?\n/u)) {
     const line = originalLine.normalize("NFKC");
     if (line.includes("制限時間") || !/(所要時間|プレイ時間|想定時間)/u.test(line)) continue;
-    const match = line.match(/(\d+(?:\.\d+)?)\s*(時間|分)?(?:\s*(?:(\d+(?:\.\d+)?)\s*分|(半)))?(?:\s*[〜～~-]\s*\d+(?:\.\d+)?\s*(時間|分)?)?/u);
+    const match = line.match(/(\d+(?:\.\d+)?)\s*(時間|分)?(?:\s*(?:(\d+(?:\.\d+)?)\s*分|(半)))?(?:\s*([〜～~-])\s*(?:(\d+(?:\.\d+)?)\s*(時間|分)?(?:\s*(?:(\d+(?:\.\d+)?)\s*分|(半)))?)?)?/u);
     if (!match) continue;
-    const value = Number(match[1]);
-    if (!Number.isFinite(value)) continue;
-    const unit = match[2] ?? match[5];
-    const minutes = unit === "時間"
-      ? value * 60 + (match[3] ? Number(match[3]) : match[4] === "半" ? 30 : 0)
-      : value;
-    return Math.round(minutes);
+    const toMinutes = (value: string, unit: string | undefined, extra: string | undefined, half: string | undefined): number =>
+      Math.round(unit === "時間" ? Number(value) * 60 + (extra ? Number(extra) : half ? 30 : 0) : Number(value));
+    const min = toMinutes(match[1], match[2] ?? match[7], match[3], match[4]);
+    const max = match[5] ? (match[6] ? toMinutes(match[6], match[7] ?? match[2], match[8], match[9]) : null) : min;
+    return { min, max };
   }
   return null;
+}
+
+function normalizePlayMinutes(value: number | Product["playMinutes"]): Product["playMinutes"] {
+  return typeof value === "number" ? { min: value, max: value } : value;
 }
 
 export function extractPlayers(text: string): string | null {
@@ -311,6 +313,7 @@ export function buildProducts(input: {
         const product: Product = {
           ...shardProduct,
           boothId: shardBooth.boothId,
+          playMinutes: normalizePlayMinutes(shardProduct.playMinutes),
           hashtags: normalizeHashtags(shardProduct.hashtags),
           unconfirmed: [],
         };
@@ -330,7 +333,7 @@ export function buildProducts(input: {
         price: preserveKnownValue(product.price, patch.price),
         priceNote: preserveKnownValue(product.priceNote, patch.priceNote),
         difficulty: mergeDifficulty(product.difficulty, patch.difficulty),
-        playMinutes: preserveKnownValue(product.playMinutes, patch.playMinutes),
+        playMinutes: preserveKnownValue(product.playMinutes, patch.playMinutes === undefined ? undefined : normalizePlayMinutes(patch.playMinutes)),
         players: preserveKnownValue(product.players, patch.players),
         isNew: preserveKnownValue(product.isNew, patch.isNew),
         limited: preserveKnownValue(product.limited, patch.limited),

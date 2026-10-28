@@ -4,7 +4,9 @@ import {
   toggleItem,
   type CartItem,
 } from "../logic/cart.ts";
-import { buildRouteStops, planRoute, type RouteStop } from "../logic/route.ts";
+import { buildRouteStops } from "../logic/route.ts";
+import { unboughtItemsByBooth } from "../logic/mapBooths.ts";
+import { getWalkGrid, planWalkingRoute, type WalkingRoute, type WalkingRouteStop } from "../logic/walkingRoute.ts";
 import type { ProductView } from "../logic/catalog.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import type { AppState } from "../state.ts";
@@ -38,34 +40,26 @@ for (const { code } of venueLayout.booths) {
   }
   boothByCodeForDay.set(code, dayBooths);
 }
-type RouteBucket = { stop: RouteStop; items: CartItem[]; booth: ProductView["booth"] | undefined };
+type RouteBucket = { stop: WalkingRouteStop; items: CartItem[]; booth: ProductView["booth"] | undefined };
 type MapProduct = { view: ProductView; card: ProductCardHandle };
+type MapRoutePlan = { route: WalkingRoute; buckets: RouteBucket[]; unplaced: CartItem[]; notSold: CartItem[] };
+
+const emptyWalkingRoute: WalkingRoute = { stops: [], legs: [], unreachable: [] };
 
 function boothForDay(code: string, day: AppState["day"]): ProductView["booth"] | undefined {
   return boothByCodeForDay.get(code)?.[day];
 }
 
 function boothPaints(state: AppState): Map<string, BoothPaint> {
-  const notSoldThatDay = state.items.length === 0
-    ? new Set<string>()
-    : new Set(buildRouteStops(state.items, catalog, venueLayout, state.day).notSoldThatDay);
-  const itemsByCode = new Map<string, CartItem[]>();
-  for (const item of state.items) {
-    const view = viewsById.get(item.productId);
-    const code = view?.booth.boothCode;
-    if (!code || notSoldThatDay.has(item.productId)) continue;
-    const items = itemsByCode.get(code) ?? [];
-    items.push(item);
-    itemsByCode.set(code, items);
-  }
+  const itemsByCode = unboughtItemsByBooth(state.items, catalog, venueLayout, state.day);
 
   const paints = new Map<string, BoothPaint>();
   for (const booth of venueLayout.booths) {
     const items = itemsByCode.get(booth.code) ?? [];
     const vendor = boothForDay(booth.code, state.day)?.name ?? booth.labels[state.day] ?? "出展なし";
     const status = items.length
-      ? " リスト" + items.length + "件"
-      : " リスト0件";
+      ? " 未購入" + items.length + "件"
+      : " 未購入0件";
     paints.set(booth.code, {
       color: items.length ? "must" : undefined,
       title: booth.labels[state.day] === null ? "出展なし" : vendor,
@@ -75,13 +69,10 @@ function boothPaints(state: AppState): Map<string, BoothPaint> {
   return paints;
 }
 
-function routePlan(state: AppState): { stops: RouteStop[]; buckets: RouteBucket[]; unplaced: CartItem[]; notSold: CartItem[] } {
-  if (state.items.length === 0) return { stops: [], buckets: [], unplaced: [], notSold: [] };
-  const result = buildRouteStops(state.items, catalog, venueLayout, state.day, { onlyUnbought: true });
-  const stops = planRoute(result.stops, venueLayout.entrance, { frontLoadSpecial: state.route.frontLoadSpecial });
-  const unplacedBooths = new Set(result.unplaced);
+function routePlan(state: AppState, result: ReturnType<typeof buildRouteStops>, route: WalkingRoute): MapRoutePlan {
+  const unplacedBooths = new Set([...result.unplaced, ...route.unreachable]);
   const notSoldIds = new Set(result.notSoldThatDay);
-  const stopByBooth = new Map(stops.map((stop): [string, RouteStop] => [stop.boothId, stop]));
+  const stopByBooth = new Map(route.stops.map((stop): [string, WalkingRouteStop] => [stop.boothId, stop]));
   const itemsByBooth = new Map<string, CartItem[]>();
   const unplaced: CartItem[] = [];
   const notSold: CartItem[] = [];
@@ -104,7 +95,7 @@ function routePlan(state: AppState): { stops: RouteStop[]; buckets: RouteBucket[
     itemsByBooth.set(view.booth.id, items);
   }
 
-  const buckets = stops.map((stop) => {
+  const buckets = route.stops.map((stop) => {
     const first = itemsByBooth.get(stop.boothId)?.[0];
     return {
       stop,
@@ -112,7 +103,7 @@ function routePlan(state: AppState): { stops: RouteStop[]; buckets: RouteBucket[
       booth: first ? viewsById.get(first.productId)?.booth : undefined,
     };
   });
-  return { stops, buckets, unplaced, notSold };
+  return { route, buckets, unplaced, notSold };
 }
 
 function organizationLinks(booth: ProductView["booth"] | undefined): HTMLElement | undefined {
@@ -152,6 +143,10 @@ export function mapView(store: AppStore): MapView {
   zoomControls.append(zoomOut, zoomFit, zoomIn);
   toolbar.append(zoomControls);
 
+  const boothPicker = el("label", "map-booth-picker");
+  const boothSelect = el("select", "map-booth-select");
+  boothPicker.append(el("span", "", "番号・出展者からブースを選ぶ"), boothSelect);
+
   const mapFrame = el("div", "map-frame");
   mapFrame.tabIndex = 0;
   mapFrame.setAttribute("role", "region");
@@ -173,17 +168,22 @@ export function mapView(store: AppStore): MapView {
         return;
       }
       selectedCode = booth.code;
+      boothSelect.value = booth.code;
       syncPanel(store.getState());
     },
   });
+  boothSelect.addEventListener("change", () => {
+    selectedCode = boothSelect.value || null;
+    syncPanel(store.getState());
+  });
   mapFrame.append(map);
-  mapColumn.append(toolbar, mapFrame);
+  mapColumn.append(boothPicker, toolbar, mapFrame);
 
   const legend = el("div", "map-legend");
   legend.setAttribute("role", "group");
   legend.setAttribute("aria-label", "地図の凡例");
   const listedEntry = el("span", "map-legend-entry");
-  listedEntry.append(el("span", "map-legend-swatch list"), el("span", "", "リストにある"));
+  listedEntry.append(el("span", "map-legend-swatch list"), el("span", "", "リストに未購入の商品がある"));
   legend.append(listedEntry);
   const noShowEntry = el("span", "map-legend-entry");
   noShowEntry.append(el("span", "map-legend-swatch map-no-show-swatch"), el("span", "", "出展なし"));
@@ -322,12 +322,25 @@ export function mapView(store: AppStore): MapView {
   let routeViewKey = "";
   let previousPaintDay: Day | undefined;
   let previousPaintItems: CartItem[] | undefined;
-  let previousRouteDay: Day | undefined;
-  let previousRouteItems: CartItem[] | undefined;
-  let previousFrontLoadSpecial: boolean | undefined;
+  let previousRouteKey = "";
   let previousShowRoute: boolean | undefined;
-  let currentPlan: ReturnType<typeof routePlan> | undefined;
+  let pickerDay: Day | undefined;
+  let currentRoute = emptyWalkingRoute;
   const sync = (state: AppState) => {
+    if (pickerDay !== state.day) {
+      const placeholder = el("option", "", "ブースを選択");
+      placeholder.value = "";
+      boothSelect.replaceChildren(placeholder, ...venueLayout.booths.map((booth) => {
+        const name = booth.labels[state.day] === null
+          ? "出展なし"
+          : boothForDay(booth.code, state.day)?.name ?? booth.labels[state.day];
+        const option = el("option", "", booth.code + " " + name);
+        option.value = booth.code;
+        return option;
+      }));
+      boothSelect.value = selectedCode ?? "";
+      pickerDay = state.day;
+    }
     const update: VenueMapUpdate = {};
     const paintsChanged = previousPaintDay !== state.day || previousPaintItems !== state.items;
     if (paintsChanged) {
@@ -337,23 +350,29 @@ export function mapView(store: AppStore): MapView {
       previousPaintDay = state.day;
       previousPaintItems = state.items;
     }
-    const routePlanChanged = previousRouteDay !== state.day
-      || previousRouteItems !== state.items
-      || previousFrontLoadSpecial !== state.route.frontLoadSpecial;
+    const routeInput = buildRouteStops(state.items, catalog, venueLayout, state.day, { onlyUnbought: true });
+    const nextRouteKey = JSON.stringify([
+      state.day,
+      state.route.frontLoadSpecial,
+      routeInput.stops.map(({ boothId, code, special }) => [boothId, code, special]),
+    ]);
+    const routePlanChanged = previousRouteKey !== nextRouteKey;
     const routeVisibilityChanged = previousShowRoute !== state.route.show;
     const routeChanged = routePlanChanged || routeVisibilityChanged;
-    if (routePlanChanged) currentPlan = routePlan(state);
+    if (routePlanChanged) {
+      currentRoute = routeInput.stops.length
+        ? planWalkingRoute(getWalkGrid(venueLayout), routeInput.stops, {
+          frontLoadSpecial: state.route.frontLoadSpecial,
+        })
+        : emptyWalkingRoute;
+      previousRouteKey = nextRouteKey;
+    }
+    const plan = routePlan(state, routeInput, currentRoute);
     if (routeChanged) {
-      const plan = currentPlan ?? routePlan(state);
-      currentPlan = plan;
-      update.order = state.route.show ? plan.stops : [];
-      previousRouteDay = state.day;
-      previousRouteItems = state.items;
-      previousFrontLoadSpecial = state.route.frontLoadSpecial;
+      update.route = state.route.show ? plan.route : emptyWalkingRoute;
       previousShowRoute = state.route.show;
     }
     if (paintsChanged || routeChanged) map.update(update);
-    const plan = currentPlan ?? routePlan(state);
     showRouteInput.checked = state.route.show;
     specialInput.checked = state.route.frontLoadSpecial;
     routeSummary.hidden = !state.route.show;
@@ -367,13 +386,16 @@ export function mapView(store: AppStore): MapView {
       routeViewKey = nextRouteViewKey;
       routeEmpty.hidden = plan.buckets.length > 0;
       routeList.hidden = plan.buckets.length === 0;
-      routeList.replaceChildren(...plan.buckets.map(({ stop, items, booth }) => {
+      routeList.replaceChildren(...plan.buckets.map(({ stop, items, booth }, index) => {
         const name = booth?.name ?? stop.code;
-        return el(
-          "li",
-          "map-route-item",
-          stop.code + " " + name + " " + items.length + "件",
+        const entry = el("li", "map-route-item");
+        entry.append(
+          el("span", "map-route-number", (index + 1) + "."),
+          el("strong", "map-route-organization", name),
+          el("small", "map-route-booth", stop.code),
+          el("span", "map-route-count", items.length + "件"),
         );
+        return entry;
       }));
 
       const notices: HTMLElement[] = [];

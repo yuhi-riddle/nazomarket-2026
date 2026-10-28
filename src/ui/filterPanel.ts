@@ -1,6 +1,7 @@
 import type { Category } from "../types.ts";
 import type { DifficultyKey } from "../logic/catalog.ts";
 import type { AppFilters } from "../state.ts";
+import type { Prefs } from "../logic/insights.ts";
 import { FEATURE_TAGS } from "../logic/tags.ts";
 import { button, el, labeledControl } from "./dom.ts";
 
@@ -22,8 +23,120 @@ const difficultyOptions: Array<[DifficultyKey, string]> = [
 
 type FilterControls = {
   element: HTMLElement;
-  sync: (filters: AppFilters) => void;
+  sync: (filters: AppFilters, prefs: Prefs, listBudget: number | null) => void;
 };
+
+type PreferenceChange = Partial<Omit<Prefs, "day">>;
+let preferenceGroupSequence = 0;
+
+function preferenceControls(onChange: (change: PreferenceChange) => void): {
+  element: HTMLElement;
+  sync: (prefs: Prefs, listBudget: number | null) => void;
+} {
+  const root = el("section", "catalog-prefs");
+  root.append(el("h3", "catalog-prefs-title", "好みで探す"));
+
+  const budgetField = el("fieldset", "catalog-prefs-budget");
+  budgetField.append(el("legend", "field-label", "予算"));
+  const radioName = "catalog-budget-source-" + (++preferenceGroupSequence);
+  const useListLabel = el("label", "check-option");
+  const useList = el("input");
+  useList.type = "radio";
+  useList.name = radioName;
+  useList.value = "list";
+  useList.addEventListener("change", () => {
+    if (useList.checked) onChange({ budgetFromCart: true });
+  });
+  useListLabel.append(useList, el("span", "", "リストの予算を使う"));
+  const useCustomLabel = el("label", "check-option");
+  const useCustom = el("input");
+  useCustom.type = "radio";
+  useCustom.name = radioName;
+  useCustom.value = "custom";
+  useCustom.addEventListener("change", () => {
+    if (useCustom.checked) onChange({ budgetFromCart: false });
+  });
+  useCustomLabel.append(useCustom, el("span", "", "自分で入れる"));
+  const remaining = el("p", "catalog-prefs-budget-remaining");
+  const budgetInput = el("input", "text-input");
+  budgetInput.type = "number";
+  budgetInput.min = "0";
+  budgetInput.step = "100";
+  budgetInput.inputMode = "numeric";
+  budgetInput.setAttribute("aria-label", "予算（円）");
+  budgetInput.addEventListener("change", () => {
+    const value = budgetInput.value.trim();
+    const amount = value === "" ? null : Number(value);
+    if (amount !== null && (!Number.isFinite(amount) || amount < 0)) return;
+    onChange({ budget: amount, budgetFromCart: false });
+  });
+  budgetField.append(useListLabel, remaining, useCustomLabel, labeledControl("金額", budgetInput));
+
+  const difficultyField = el("fieldset", "catalog-prefs-difficulty");
+  difficultyField.append(el("legend", "field-label", "難易度"));
+  const minDifficulty = el("select", "text-input");
+  const maxDifficulty = el("select", "text-input");
+  for (const select of [minDifficulty, maxDifficulty]) {
+    const unspecified = el("option", "", "指定なし");
+    unspecified.value = "";
+    select.append(unspecified);
+    for (let level = 1; level <= 5; level += 1) select.append(el("option", "", String(level)));
+  }
+  minDifficulty.setAttribute("aria-label", "難易度の下限");
+  maxDifficulty.setAttribute("aria-label", "難易度の上限");
+  const difficultyValue = (value: string): Prefs["difficultyMin"] =>
+    value === "" ? null : Math.min(5, Math.max(1, Number(value))) as 1 | 2 | 3 | 4 | 5;
+  const changeDifficulty = () => {
+    let difficultyMin = difficultyValue(minDifficulty.value);
+    let difficultyMax = difficultyValue(maxDifficulty.value);
+    if (difficultyMin !== null && difficultyMax !== null && difficultyMin > difficultyMax) {
+      [difficultyMin, difficultyMax] = [difficultyMax, difficultyMin];
+    }
+    onChange({ difficultyMin, difficultyMax });
+  };
+  minDifficulty.addEventListener("change", changeDifficulty);
+  maxDifficulty.addEventListener("change", changeDifficulty);
+  const difficultyControls = el("div", "catalog-prefs-difficulty-controls");
+  difficultyControls.append(
+    labeledControl("下限", minDifficulty),
+    el("span", "catalog-prefs-range-separator", "〜"),
+    labeledControl("上限", maxDifficulty),
+  );
+  difficultyField.append(difficultyControls);
+
+  let currentCategories: Category[] = [];
+  const categories = checkGroup("好きなカテゴリ", categoryOptions,
+    () => currentCategories, (values) => onChange({ categories: values }));
+
+  const playStyle = el("select", "text-input");
+  for (const [value, label] of [["any", "指定なし"], ["onsite", "その場で遊べる"], ["takeHome", "持ち帰って遊べる"]] as const) {
+    const option = el("option", "", label);
+    option.value = value;
+    playStyle.append(option);
+  }
+  playStyle.setAttribute("aria-label", "遊び方");
+  playStyle.addEventListener("change", () => onChange({ playStyle: playStyle.value as Prefs["playStyle"] }));
+  const playStyleField = labeledControl("遊び方", playStyle);
+  root.append(budgetField, difficultyField, categories.element, playStyleField);
+
+  return {
+    element: root,
+    sync(prefs, listBudget) {
+      useList.checked = prefs.budgetFromCart;
+      useCustom.checked = !prefs.budgetFromCart;
+      remaining.textContent = "リストの残り予算 " + (listBudget === null ? "未設定" : listBudget.toLocaleString("ja-JP") + "円");
+      remaining.hidden = !prefs.budgetFromCart;
+      budgetInput.disabled = prefs.budgetFromCart;
+      const amount = prefs.budgetFromCart ? listBudget : prefs.budget;
+      if (document.activeElement !== budgetInput) budgetInput.value = amount === null ? "" : String(amount);
+      if (document.activeElement !== minDifficulty) minDifficulty.value = prefs.difficultyMin === null ? "" : String(prefs.difficultyMin);
+      if (document.activeElement !== maxDifficulty) maxDifficulty.value = prefs.difficultyMax === null ? "" : String(prefs.difficultyMax);
+      currentCategories = prefs.categories;
+      categories.sync();
+      playStyle.value = prefs.playStyle;
+    },
+  };
+}
 
 function checkGroup<T extends string | number>(
   legendText: string,
@@ -76,13 +189,15 @@ function checkboxRow(labelText: string, onChange: (value: boolean) => void): {
 
 function filterControls(options: {
   includeSearch: boolean;
-  areas: Array<{ id: string; label: string }>;
   onChange: (change: Partial<AppFilters>) => void;
   onClear: () => void;
+  onPrefsChange: (change: PreferenceChange) => void;
 }): FilterControls {
   const root = el("div", "filter-controls");
   let searchTimer: number | undefined;
-  let filters: AppFilters = { q: "", priceMin: null, priceMax: null, difficulties: [], categories: [], areas: [], tags: [], newOnly: false, onlyGoingDay: false };
+  let filters: AppFilters = { q: "", priceMin: null, priceMax: null, difficulties: [], categories: [], tags: [], newOnly: false, onlyGoingDay: false };
+  const preferences = preferenceControls(options.onPrefsChange);
+  root.append(preferences.element);
 
   let search: HTMLInputElement | undefined;
   if (options.includeSearch) {
@@ -134,16 +249,10 @@ function filterControls(options: {
 
   const difficulty = checkGroup("難易度", difficultyOptions, () => filters.difficulties, (values) => options.onChange({ difficulties: values }));
   const categories = checkGroup("カテゴリ", categoryOptions, () => filters.categories, (values) => options.onChange({ categories: values }));
-  const areas = checkGroup(
-    "エリア",
-    options.areas.map((area): [string, string] => [area.id, area.label]),
-    () => filters.areas,
-    (values) => options.onChange({ areas: values }),
-  );
   const tags = checkGroup("タグ", FEATURE_TAGS.map((tag): [string, string] => [tag, tag]), () => filters.tags,
     (values) => options.onChange({ tags: values }), true);
   tags.element.classList.add("filter-tag-group");
-  root.append(difficulty.element, categories.element, areas.element, tags.element);
+  root.append(difficulty.element, categories.element, tags.element);
 
   const onlyGoingDay = checkboxRow("行く日に売るものだけ", (value) => options.onChange({ onlyGoingDay: value }));
   root.append(onlyGoingDay.element);
@@ -153,14 +262,14 @@ function filterControls(options: {
 
   return {
     element: root,
-    sync(next) {
+    sync(next, prefs, listBudget) {
       filters = next;
+      preferences.sync(prefs, listBudget);
       if (search && document.activeElement !== search) search.value = next.q;
       if (document.activeElement !== minInput) minInput.value = next.priceMin === null ? "" : String(next.priceMin);
       if (document.activeElement !== maxInput) maxInput.value = next.priceMax === null ? "" : String(next.priceMax);
       difficulty.sync();
       categories.sync();
-      areas.sync();
       tags.sync();
       onlyGoingDay.sync(next.onlyGoingDay);
     },
@@ -171,13 +280,13 @@ export type FilterPanel = {
   element: HTMLElement;
   dialog: HTMLDialogElement;
   openButton: HTMLButtonElement;
-  sync: (filters: AppFilters, activeCount: number, shown: number, total: number) => void;
+  sync: (filters: AppFilters, activeCount: number, shown: number, total: number, prefs: Prefs, listBudget: number | null) => void;
 };
 
 export function filterPanel(options: {
-  areas: Array<{ id: string; label: string }>;
   onChange: (change: Partial<AppFilters>) => void;
   onClear: () => void;
+  onPrefsChange: (change: PreferenceChange) => void;
 }): FilterPanel {
   const aside = el("aside", "filter-panel");
   aside.append(el("h2", "section-title", "絞り込み"));
@@ -206,9 +315,9 @@ export function filterPanel(options: {
     element: aside,
     dialog,
     openButton: mobileOpen,
-    sync(filters, activeCount, shown, total) {
-      desktopControls.sync(filters);
-      mobileControls.sync(filters);
+    sync(filters, activeCount, shown, total, prefs, listBudget) {
+      desktopControls.sync(filters, prefs, listBudget);
+      mobileControls.sync(filters, prefs, listBudget);
       mobileOpen.textContent = "絞り込み（" + activeCount + "）";
       heading.textContent = "絞り込み";
       apply.textContent = shown + "件を表示";

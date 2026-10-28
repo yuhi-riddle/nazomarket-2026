@@ -646,7 +646,10 @@
             "source": "estimated",
             "basis": "目安時間が約60〜90分と標準的な長さのため3と推定"
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": 90
+          },
           "players": null,
           "isNew": false,
           "limited": null,

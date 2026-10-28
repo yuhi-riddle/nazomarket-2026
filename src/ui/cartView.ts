@@ -10,7 +10,8 @@ import {
   type CartItem,
 } from "../logic/cart.ts";
 import type { ProductView } from "../logic/catalog.ts";
-import { buildRouteStops, planRoute, type RouteStop } from "../logic/route.ts";
+import { buildRouteStops } from "../logic/route.ts";
+import { getWalkGrid, planWalkingRoute } from "../logic/walkingRoute.ts";
 import type { AppState } from "../state.ts";
 import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
@@ -21,7 +22,7 @@ const boothById = new Map(catalog.map((view): [string, ProductView["booth"]] => 
 
 type CartRow = { element: HTMLElement; update: (item: CartItem, hideBought: boolean) => void };
 type CartSection = { element: HTMLElement; heading: HTMLElement; rows: HTMLElement; idsKey: string; title: string };
-type RouteBucket = { key: string; title: string; ids: string[] };
+type RouteBucket = { key: string; title: string; ids: string[]; organization?: string; boothCode?: string };
 
 export type CartView = { element: HTMLElement; sync: (state: AppState) => void };
 
@@ -112,12 +113,15 @@ function routeBuckets(state: AppState): RouteBucket[] {
     state.day,
     { onlyUnbought: true },
   );
-  const ordered = planRoute(stops, venueLayout.entrance, { frontLoadSpecial: state.route.frontLoadSpecial });
+  const walkingRoute = stops.length
+    ? planWalkingRoute(getWalkGrid(venueLayout), stops, { frontLoadSpecial: state.route.frontLoadSpecial })
+    : { stops: [], legs: [], unreachable: [] };
+  const ordered = walkingRoute.stops;
   const placedByBooth = new Map<string, string[]>();
   for (const stop of ordered) placedByBooth.set(stop.boothId, []);
   const unplacedIds = new Set<string>();
   const notSoldIds = new Set(notSoldThatDay);
-  const unplacedBooths = new Set(unplaced);
+  const unplacedBooths = new Set([...unplaced, ...walkingRoute.unreachable]);
   const boughtIds: string[] = [];
 
   for (const item of state.items) {
@@ -133,11 +137,17 @@ function routeBuckets(state: AppState): RouteBucket[] {
   }
 
   const buckets: RouteBucket[] = [];
-  ordered.forEach((stop: RouteStop, index) => {
+  ordered.forEach((stop, index) => {
     const ids = placedByBooth.get(stop.boothId) ?? [];
     const booth = boothById.get(stop.boothId);
     if (!booth || !ids.length) return;
-    buckets.push({ key: "booth:" + stop.boothId, title: (index + 1) + ". " + stop.code + " " + booth.name, ids });
+    buckets.push({
+      key: "booth:" + stop.boothId,
+      title: (index + 1) + ". " + booth.name + " " + stop.code,
+      organization: booth.name,
+      boothCode: stop.code,
+      ids,
+    });
   });
   if (boughtIds.length) buckets.push({ key: "bought", title: "買ったもの", ids: boughtIds });
   if (unplacedIds.size) {
@@ -416,11 +426,12 @@ export function cartView(store: AppStore): CartView {
         const section = getSection(bucket.key);
         if (section.title !== bucket.title) {
           section.title = bucket.title;
-          const match = bucket.title.match(/^(\d+\.\s+)(\S+)(.*)$/);
-          if (match) {
-            const boothCode = el("span", "today-route-booth", match[2]);
+          const prefix = bucket.title.match(/^(\d+\.)/)?.[1];
+          if (prefix && bucket.organization && bucket.boothCode) {
+            const organization = el("strong", "today-route-organization", bucket.organization);
+            const boothCode = el("small", "today-route-booth", bucket.boothCode);
             boothCode.setAttribute("aria-hidden", "true");
-            section.heading.replaceChildren(document.createTextNode(match[1]), boothCode, document.createTextNode(match[3]));
+            section.heading.replaceChildren(document.createTextNode(prefix + " "), organization, boothCode);
             section.heading.setAttribute("aria-label", bucket.title);
           } else {
             section.heading.removeAttribute("aria-label");

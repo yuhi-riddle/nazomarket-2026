@@ -16,6 +16,9 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
   const marker = el("span", "meter-budget-marker");
   bar.append(total, marker);
   const copy = el("span", "meter-copy");
+  copy.append(el("span", "meter-total-label", "合計"));
+  const totalValue = el("strong", "meter-total-value");
+  copy.append(totalValue);
   const summary = el("span", "meter-summary");
   meter.append(budgetLabel, bar, copy, summary);
   let previousItems: CartItem[] | undefined;
@@ -36,7 +39,7 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
       const format = (amount: number) => amount.toLocaleString("ja-JP") + "円";
       const unknownText = totals.unknownPrice ? "価格不明 " + totals.unknownPrice + "件" : "";
       budgetLabel.textContent = budget === null ? "" : "予算 " + format(budget);
-      copy.textContent = "合計 " + format(totals.amount);
+      totalValue.textContent = format(totals.amount);
       const over = budget !== null && totals.amount > budget;
       const remainingText = budget === null
         ? ""
@@ -45,7 +48,7 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
           : "残り " + format(budget - totals.amount);
       summary.textContent = [remainingText, unknownText].filter(Boolean).join(" ・ ");
       summary.classList.toggle("is-over", over);
-      meter.setAttribute("aria-label", ["予算メーター", budgetLabel.textContent, copy.textContent, summary.textContent, "リストを開く"]
+      meter.setAttribute("aria-label", ["予算メーター", budgetLabel.textContent, "合計 " + totalValue.textContent, summary.textContent, "リストを開く"]
         .filter(Boolean).join("。"));
     },
   };

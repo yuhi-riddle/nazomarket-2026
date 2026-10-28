@@ -10,10 +10,7 @@ export type RouteStop = {
 };
 
 export type BuildRouteOptions = { onlyUnbought?: boolean };
-export type PlanRouteOptions = { frontLoadSpecial: boolean };
 export type BuildRouteResult = { stops: RouteStop[]; unplaced: string[]; notSoldThatDay: string[] };
-
-const naturalCodeOrder = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
 
 export function buildRouteStops(
   items: CartItem[],
@@ -72,39 +69,4 @@ export function buildRouteStops(
     });
 
   return { stops, unplaced: [...unplaced], notSoldThatDay };
-}
-
-function distanceSquared(a: Point, b: Point): number {
-  const x = a.x - b.x;
-  const y = a.y - b.y;
-  return x * x + y * y;
-}
-
-function nearestNeighbor(stops: RouteStop[], start: Point): RouteStop[] {
-  const remaining = [...stops];
-  const ordered: RouteStop[] = [];
-  let current = start;
-  while (remaining.length) {
-    let nearestIndex = 0;
-    for (let index = 1; index < remaining.length; index += 1) {
-      const candidateDistance = distanceSquared(current, remaining[index].point);
-      const nearestDistance = distanceSquared(current, remaining[nearestIndex].point);
-      if (candidateDistance < nearestDistance || (candidateDistance === nearestDistance
-        && naturalCodeOrder.compare(remaining[index].code, remaining[nearestIndex].code) < 0)) {
-        nearestIndex = index;
-      }
-    }
-    const [next] = remaining.splice(nearestIndex, 1);
-    ordered.push(next);
-    current = next.point;
-  }
-  return ordered;
-}
-
-export function planRoute(stops: RouteStop[], entrance: Point, options: PlanRouteOptions): RouteStop[] {
-  if (!options.frontLoadSpecial) return nearestNeighbor(stops, entrance);
-  const special = nearestNeighbor(stops.filter((stop) => stop.special), entrance);
-  const remaining = stops.filter((stop) => !stop.special);
-  const lastPoint = special.at(-1)?.point ?? entrance;
-  return [...special, ...nearestNeighbor(remaining, lastPoint)];
 }

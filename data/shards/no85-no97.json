@@ -1132,7 +1132,10 @@
             "source": "estimated",
             "basis": "公式表記なし。所要は3〜4時間以上と長めだが、主な対象は10歳以上で人数も自由な4コース制のため標準とした"
           },
-          "playMinutes": 180,
+          "playMinutes": {
+            "min": 180,
+            "max": null
+          },
           "players": "人数制限なし（複数人は人数分のキットが必要）",
           "isNew": false,
           "limited": null,

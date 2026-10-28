@@ -1,5 +1,5 @@
-import type { RouteStop } from "../logic/route.ts";
-import type { Day, LayoutBooth, VenueLayout } from "../types.ts";
+import type { WalkingRoute, WalkingRouteStop } from "../logic/walkingRoute.ts";
+import type { Day, LayoutBooth, Point, VenueLayout } from "../types.ts";
 
 const svgNamespace = "http://www.w3.org/2000/svg";
 let mapInstance = 0;
@@ -15,7 +15,7 @@ export type BoothPaint = {
 export type VenueMapUpdate = {
   day?: Day;
   paintBooth?: (booth: LayoutBooth) => BoothPaint | undefined;
-  order?: RouteStop[];
+  route?: WalkingRoute;
 };
 
 export type VenueMapOptions = Omit<VenueMapUpdate, "day"> & {
@@ -82,7 +82,7 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
   const { layout } = options;
   let day = options.day;
   let paintBooth = options.paintBooth;
-  let order = options.order ?? [];
+  let route: WalkingRoute = options.route ?? { stops: [], legs: [], unreachable: [] };
   const onBoothPress = options.onBoothPress;
   const instanceId = ++mapInstance;
   const patternId = "venue-map-no-show-" + instanceId;
@@ -223,7 +223,7 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
   let renderedDay: Day | undefined = day;
   let renderedRouteKey = "";
 
-  const drawMarker = (stop: RouteStop, index: number) => {
+  const drawMarker = (stop: WalkingRouteStop, index: number) => {
     const booth = boothByCode.get(stop.code);
     if (!booth) return;
     const marker = svgElement("g");
@@ -242,20 +242,40 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
     routeLayer.append(marker);
   };
 
+  const drawVisitConnector = (stop: WalkingRouteStop) => {
+    const booth = boothByCode.get(stop.code);
+    if (!booth) return;
+    const edgePoint: Point = {
+      x: Math.max(booth.x, Math.min(stop.visitPoint.x, booth.x + booth.w)),
+      y: Math.max(booth.y, Math.min(stop.visitPoint.y, booth.y + booth.h)),
+    };
+    const line = svgElement("line");
+    line.setAttribute("x1", String(stop.visitPoint.x));
+    line.setAttribute("y1", String(stop.visitPoint.y));
+    line.setAttribute("x2", String(edgePoint.x));
+    line.setAttribute("y2", String(edgePoint.y));
+    line.setAttribute("class", "venue-map-visit-connector");
+    routeLayer.append(line);
+  };
+
   const drawRoute = () => {
-    const routeKey = JSON.stringify(order.map((stop) => [stop.code, stop.point.x, stop.point.y]));
+    const routeKey = JSON.stringify([
+      route.stops.map((stop) => [stop.code, stop.visitPoint.x, stop.visitPoint.y]),
+      route.legs,
+    ]);
     if (routeKey === renderedRouteKey) return;
     renderedRouteKey = routeKey;
     routeLayer.replaceChildren();
-    if (!order.length) return;
-    const points = [layout.entrance, ...order.map((stop) => stop.point), layout.exit]
-      .map((point) => point.x + "," + point.y)
-      .join(" ");
-    const path = svgElement("polyline");
-    path.setAttribute("points", points);
-    path.setAttribute("class", "venue-map-route");
-    routeLayer.append(path);
-    order.forEach(drawMarker);
+    if (!route.stops.length) return;
+    for (const leg of route.legs) {
+      if (leg.length < 2) continue;
+      const path = svgElement("polyline");
+      path.setAttribute("points", leg.map((point) => point.x + "," + point.y).join(" "));
+      path.setAttribute("class", "venue-map-route");
+      routeLayer.append(path);
+    }
+    route.stops.forEach(drawVisitConnector);
+    route.stops.forEach(drawMarker);
   };
 
   const refreshBooths = () => {
@@ -313,8 +333,8 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       paintBooth = next.paintBooth;
       boothsChanged = true;
     }
-    if (next.order !== undefined) {
-      order = next.order;
+    if (next.route !== undefined) {
+      route = next.route;
       routeChanged = true;
     }
     if (boothsChanged) refreshBooths();
@@ -323,6 +343,6 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
 
   setScale("fit");
   if (paintBooth) refreshBooths();
-  if (order.length) drawRoute();
+  if (route.stops.length) drawRoute();
   return Object.assign(svg, { update, setScale });
 }

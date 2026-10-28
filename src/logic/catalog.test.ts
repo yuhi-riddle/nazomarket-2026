@@ -45,11 +45,10 @@ describe("filterCatalog", () => {
   it("難易度は複数選べて、unknown は難易度不明を指す", () => {
     expect(ids(filterCatalog(catalog, { ...emptyFilters, difficulties: [2, "unknown"] }))).toEqual(["p02", "no02-1"]);
   });
-  it("カテゴリ・行く日・新作のみ・エリア", () => {
+  it("カテゴリ・行く日・新作のみ（エリアの絞り込みは廃止）", () => {
     expect(ids(filterCatalog(catalog, { ...emptyFilters, categories: ["goods", "online"] }))).toEqual(["p02", "no02-1"]);
     expect(ids(filterCatalog(catalog, { ...emptyFilters, day: "sun" }))).not.toContain("no05-1");
     expect(ids(filterCatalog(catalog, { ...emptyFilters, newOnly: true }))).toEqual(["p01"]);
-    expect(ids(filterCatalog(catalog, { ...emptyFilters, areas: ["A"] }))).toEqual(["p02", "no02-1"]);
   });
   it("有効な条件の数を数える（キーワード・価格帯はそれぞれ1つ）", () => {
     expect(countActiveFilters(emptyFilters)).toBe(0);
