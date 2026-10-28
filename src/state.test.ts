@@ -18,7 +18,7 @@ describe("parseState", () => {
       budget: 15000,
       items: [{ productId: "p01", qty: 2, bought: true }],
       sort: "priceAsc" as const,
-      filters: { ...defaultState.filters, q: "封筒", categories: ["kit" as const], difficulties: [3 as const, "unknown" as const], onlyGoingDay: true },
+      filters: { ...defaultState.filters, q: "封筒", categories: ["kit" as const], difficulties: [3 as const, "unknown" as const], day: "sun" as const },
     };
     expect(parseState(serializeState(state), known)).toEqual(state);
   });
@@ -54,7 +54,7 @@ describe("parseState", () => {
       priceMax: 3000,
       difficulties: [1, "unknown"],
       categories: ["kit"],
-      onlyGoingDay: true,
+      day: "sat",
     });
   });
   it("古い保存の優先度は読み捨て、優先度が無い項目も読む。当日タブはリストタブとして開く", () => {
@@ -69,5 +69,18 @@ describe("parseState", () => {
   });
   it("保存キーは版付き", () => {
     expect(STORAGE_KEY).toBe("nazomarket2026:v1");
+  });
+  it("以前の行く日フィルターを選択済みの日に引き継ぎ、リストと予算も残す", () => {
+    const saved = JSON.stringify({ version: 1, day: "sun", budget: 8000,
+      items: [{ productId: "p01", qty: 2, bought: true }], filters: { onlyGoingDay: true } });
+    const state = parseState(saved, known);
+    expect(state.filters.day).toBe("sun");
+    expect(state.budget).toBe(8000);
+    expect(state.items).toEqual([{ productId: "p01", qty: 2, bought: true }]);
+  });
+  it("以前の曜日タグを日付フィルターに引き継ぎ、見えないタグは残さない", () => {
+    const state = parseState(JSON.stringify({ version: 1, filters: { tags: ["土曜だけ", "新作"] } }), known);
+    expect(state.filters.day).toBe("sat");
+    expect(state.filters.tags).toEqual(["新作"]);
   });
 });

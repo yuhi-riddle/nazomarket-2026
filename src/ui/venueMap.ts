@@ -1,5 +1,4 @@
-import type { WalkingRoute, WalkingRouteStop } from "../logic/walkingRoute.ts";
-import type { Day, LayoutBooth, Point, VenueLayout } from "../types.ts";
+import type { Day, LayoutBooth, VenueLayout } from "../types.ts";
 
 const svgNamespace = "http://www.w3.org/2000/svg";
 let mapInstance = 0;
@@ -15,7 +14,6 @@ export type BoothPaint = {
 export type VenueMapUpdate = {
   day?: Day;
   paintBooth?: (booth: LayoutBooth) => BoothPaint | undefined;
-  route?: WalkingRoute;
 };
 
 export type VenueMapOptions = Omit<VenueMapUpdate, "day"> & {
@@ -45,44 +43,50 @@ function dayName(day: Day): string {
   return day === "sat" ? "土曜 11/7" : "日曜 11/8";
 }
 
-function shortName(name: string): string {
-  const characters = Array.from(name);
-  return characters.length > 7 ? characters.slice(0, 7).join("") + "…" : name;
-}
-
 function paintLabel(label: SVGTextElement, booth: LayoutBooth, day: Day): void {
   label.replaceChildren();
-  label.setAttribute("x", String(booth.x + booth.w / 2));
+  const centerX = String(booth.x + booth.w / 2);
+  label.setAttribute("x", centerX);
   label.setAttribute("text-anchor", "middle");
   label.setAttribute("dominant-baseline", "middle");
+  label.setAttribute("class", "venue-map-booth-label");
   const name = booth.labels[day];
+  const capacity = Math.floor((booth.w - 6) / 12);
 
-  if (booth.w < 45 || name === null) {
+  if (name === null || capacity < 2 || booth.h < 25) {
     label.setAttribute("y", String(booth.y + booth.h / 2));
     label.setAttribute("class", "venue-map-booth-code");
+    label.style.fontSize = "9px";
     label.textContent = booth.code;
     return;
   }
 
-  label.setAttribute("class", "venue-map-booth-label");
-  const code = svgElement("tspan");
-  code.setAttribute("x", String(booth.x + booth.w / 2));
-  code.setAttribute("y", String(booth.y + booth.h / 2 - 5));
-  code.setAttribute("class", "venue-map-booth-code");
-  code.textContent = booth.code;
+  const characters = Array.from(name);
   const vendor = svgElement("tspan");
-  vendor.setAttribute("x", String(booth.x + booth.w / 2));
-  vendor.setAttribute("y", String(booth.y + booth.h / 2 + 10));
+  vendor.setAttribute("x", centerX);
+  vendor.setAttribute("y", String(booth.y + booth.h / 2 - (booth.w >= 45 ? 5 : 0)));
   vendor.setAttribute("class", "venue-map-vendor");
-  vendor.textContent = shortName(name);
-  label.append(code, vendor);
+  vendor.style.fontSize = "12px";
+  vendor.style.fontWeight = "700";
+  vendor.style.fill = "var(--ink)";
+  vendor.textContent = characters.length > capacity ? characters.slice(0, capacity - 1).join("") + "…" : name;
+  label.append(vendor);
+  if (booth.w >= 45 && booth.h >= 30) {
+    const code = svgElement("tspan");
+    code.setAttribute("x", centerX);
+    code.setAttribute("y", String(booth.y + booth.h / 2 + 9));
+    code.setAttribute("class", "venue-map-booth-code");
+    code.style.fontSize = "9px";
+    code.style.fontWeight = "400";
+    code.textContent = booth.code;
+    label.append(code);
+  }
 }
 
 export function venueMap(options: VenueMapOptions): VenueMapElement {
   const { layout } = options;
   let day = options.day;
   let paintBooth = options.paintBooth;
-  let route: WalkingRoute = options.route ?? { stops: [], legs: [], unreachable: [] };
   const onBoothPress = options.onBoothPress;
   const instanceId = ++mapInstance;
   const patternId = "venue-map-no-show-" + instanceId;
@@ -213,70 +217,8 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
   drawWaypoint(layout.exit.x, layout.exit.y, "出口", layout.exit.x + 12);
   svg.append(waypoints);
 
-  const routeLayer = svgElement("g");
-  routeLayer.setAttribute("class", "venue-map-route-layer");
-  routeLayer.setAttribute("aria-hidden", "true");
-  svg.append(routeLayer);
-
-  const boothByCode = new Map(layout.booths.map((booth): [string, LayoutBooth] => [booth.code, booth]));
   const paintKeys = new Map<string, string>();
   let renderedDay: Day | undefined = day;
-  let renderedRouteKey = "";
-
-  const drawMarker = (stop: WalkingRouteStop, index: number) => {
-    const booth = boothByCode.get(stop.code);
-    if (!booth) return;
-    const marker = svgElement("g");
-    marker.setAttribute("class", "venue-map-route-marker");
-    const circle = svgElement("circle");
-    circle.setAttribute("cx", String(booth.x + booth.w - 13));
-    circle.setAttribute("cy", String(booth.y + 13));
-    circle.setAttribute("r", "11");
-    const number = svgElement("text");
-    number.setAttribute("x", String(booth.x + booth.w - 13));
-    number.setAttribute("y", String(booth.y + 13));
-    number.setAttribute("text-anchor", "middle");
-    number.setAttribute("dominant-baseline", "middle");
-    number.textContent = String(index + 1);
-    marker.append(circle, number);
-    routeLayer.append(marker);
-  };
-
-  const drawVisitConnector = (stop: WalkingRouteStop) => {
-    const booth = boothByCode.get(stop.code);
-    if (!booth) return;
-    const edgePoint: Point = {
-      x: Math.max(booth.x, Math.min(stop.visitPoint.x, booth.x + booth.w)),
-      y: Math.max(booth.y, Math.min(stop.visitPoint.y, booth.y + booth.h)),
-    };
-    const line = svgElement("line");
-    line.setAttribute("x1", String(stop.visitPoint.x));
-    line.setAttribute("y1", String(stop.visitPoint.y));
-    line.setAttribute("x2", String(edgePoint.x));
-    line.setAttribute("y2", String(edgePoint.y));
-    line.setAttribute("class", "venue-map-visit-connector");
-    routeLayer.append(line);
-  };
-
-  const drawRoute = () => {
-    const routeKey = JSON.stringify([
-      route.stops.map((stop) => [stop.code, stop.visitPoint.x, stop.visitPoint.y]),
-      route.legs,
-    ]);
-    if (routeKey === renderedRouteKey) return;
-    renderedRouteKey = routeKey;
-    routeLayer.replaceChildren();
-    if (!route.stops.length) return;
-    for (const leg of route.legs) {
-      if (leg.length < 2) continue;
-      const path = svgElement("polyline");
-      path.setAttribute("points", leg.map((point) => point.x + "," + point.y).join(" "));
-      path.setAttribute("class", "venue-map-route");
-      routeLayer.append(path);
-    }
-    route.stops.forEach(drawVisitConnector);
-    route.stops.forEach(drawMarker);
-  };
 
   const refreshBooths = () => {
     const dayChanged = renderedDay !== day;
@@ -316,7 +258,6 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
         nodes.group.setAttribute("aria-label", name);
       }
     }
-    drawRoute();
   };
 
   const setScale = (scale: VenueMapScale) => {
@@ -324,7 +265,6 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
   };
   const update = (next: VenueMapUpdate) => {
     let boothsChanged = false;
-    let routeChanged = false;
     if (next.day !== undefined && next.day !== day) {
       day = next.day;
       boothsChanged = true;
@@ -333,16 +273,10 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       paintBooth = next.paintBooth;
       boothsChanged = true;
     }
-    if (next.route !== undefined) {
-      route = next.route;
-      routeChanged = true;
-    }
     if (boothsChanged) refreshBooths();
-    else if (routeChanged) drawRoute();
   };
 
   setScale("fit");
-  if (paintBooth) refreshBooths();
-  if (route.stops.length) drawRoute();
+  refreshBooths();
   return Object.assign(svg, { update, setScale });
 }

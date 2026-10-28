@@ -175,18 +175,6 @@ function checkGroup<T extends string | number>(
   };
 }
 
-function checkboxRow(labelText: string, onChange: (value: boolean) => void): {
-  element: HTMLLabelElement;
-  sync: (value: boolean) => void;
-} {
-  const label = el("label", "check-option check-row");
-  const input = el("input");
-  input.type = "checkbox";
-  input.addEventListener("change", () => onChange(input.checked));
-  label.append(input, el("span", "", labelText));
-  return { element: label, sync: (value) => { input.checked = value; } };
-}
-
 function filterControls(options: {
   includeSearch: boolean;
   onChange: (change: Partial<AppFilters>) => void;
@@ -195,7 +183,7 @@ function filterControls(options: {
 }): FilterControls {
   const root = el("div", "filter-controls");
   let searchTimer: number | undefined;
-  let filters: AppFilters = { q: "", priceMin: null, priceMax: null, difficulties: [], categories: [], tags: [], newOnly: false, onlyGoingDay: false };
+  let filters: AppFilters = { q: "", priceMin: null, priceMax: null, difficulties: [], categories: [], tags: [], newOnly: false, day: null };
   const preferences = preferenceControls(options.onPrefsChange);
   root.append(preferences.element);
 
@@ -254,8 +242,15 @@ function filterControls(options: {
   tags.element.classList.add("filter-tag-group");
   root.append(difficulty.element, categories.element, tags.element);
 
-  const onlyGoingDay = checkboxRow("行く日に売るものだけ", (value) => options.onChange({ onlyGoingDay: value }));
-  root.append(onlyGoingDay.element);
+  const daySelect = el("select", "text-input");
+  daySelect.setAttribute("aria-label", "出展日");
+  for (const [value, text] of [["", "すべて"], ["sat", "土曜に出展"], ["sun", "日曜に出展"]]) {
+    const option = el("option", "", text);
+    option.value = value;
+    daySelect.append(option);
+  }
+  daySelect.addEventListener("change", () => options.onChange({ day: daySelect.value === "sat" || daySelect.value === "sun" ? daySelect.value : null }));
+  root.append(labeledControl("出展日", daySelect));
   const clear = button("条件をクリア", "button button-secondary clear-filters");
   clear.addEventListener("click", options.onClear);
   root.append(clear);
@@ -271,7 +266,7 @@ function filterControls(options: {
       difficulty.sync();
       categories.sync();
       tags.sync();
-      onlyGoingDay.sync(next.onlyGoingDay);
+      daySelect.value = next.day ?? "";
     },
   };
 }

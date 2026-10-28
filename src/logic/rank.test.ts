@@ -79,3 +79,52 @@ describe("sortCatalog（団体順）", () => {
     expect(sameBooth).toEqual(["p03", "p06"]);
   });
 });
+
+
+describe("リストから推定するおすすめ", () => {
+  const sample = buildCatalog([
+    product({ id: "saved1", boothId: "no01", category: "kit", difficulty: { level: 4, source: "official", basis: null } }),
+    product({ id: "saved2", boothId: "no02", category: "kit", difficulty: { level: 2, source: "estimated", basis: null } }),
+    product({ id: "same", boothId: "no03", category: "kit", difficulty: { level: 3, source: "official", basis: null } }),
+    product({ id: "near", boothId: "no04", category: "online", difficulty: { level: 4, source: "estimated", basis: null } }),
+    product({ id: "far", boothId: "no05", category: "online", difficulty: { level: 5, source: "official", basis: null } }),
+    product({ id: "unknown", boothId: "no01", category: "online", difficulty: { level: 3, source: "unknown", basis: null } }),
+  ], booths, layout);
+  const saved = [item("saved1", 5), { ...item("saved2"), bought: true }];
+  const scored = (result: ReturnType<typeof rankForCatalog>, id: string) => result.matched.find((entry) => entry.view.product.id === id);
+
+  it("購入済みも含めて商品ごとに推定し、同じカテゴリと平均に近い難易度に理由付きで加点する", () => {
+    const result = rankForCatalog(sample, defaultPrefs, saved, null);
+    expect(scored(result, "same")).toMatchObject({ score: 2, reasons: ["リストと同じカテゴリ", "リストの難易度に近い"] });
+    expect(scored(result, "near")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
+    expect(ids(result.others)).toContain("far");
+    expect(ids(result.others)).toContain("unknown");
+  });
+
+  it("明示したカテゴリと難易度はリスト推定より優先する", () => {
+    const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"], difficultyMin: 5, difficultyMax: 5 }, saved, null);
+    expect(scored(result, "far")).toMatchObject({ score: 5, reasons: ["好みの難易度", "好みのカテゴリ"] });
+    expect(ids(result.others)).toContain("same");
+    expect(scored(result, "near")?.reasons ?? []).not.toContain("リストの難易度に近い");
+  });
+
+  it("片方だけ手動指定したとき、もう片方はリストから推定する", () => {
+    const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"] }, saved, null);
+    expect(scored(result, "same")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
+    expect(scored(result, "near")).toMatchObject({ score: 3, reasons: ["好みのカテゴリ", "リストの難易度に近い"] });
+  });
+
+  it("カテゴリが同数なら決めつけず、難易度不明と見つからない商品は推定に使わない", () => {
+    const result = rankForCatalog(sample, defaultPrefs, [item("saved1"), item("unknown"), item("missing")], null);
+    expect(scored(result, "same")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
+    expect(ids(result.others)).toContain("unknown");
+    const unknownOnly = rankForCatalog(sample, defaultPrefs, [item("unknown"), item("missing")], null);
+    expect(scored(unknownOnly, "near")?.reasons ?? []).not.toContain("リストの難易度に近い");
+  });
+
+  it("リストの推定で予算超過や販売日外の商品を復活させない", () => {
+    const result = rankForCatalog(sample, { ...defaultPrefs, day: "sun" }, saved, 2500);
+    expect([...matchedIds(result), ...ids(result.others)]).not.toContain("same");
+    expect([...matchedIds(result), ...ids(result.others)]).not.toContain("far");
+  });
+});

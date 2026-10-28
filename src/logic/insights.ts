@@ -188,6 +188,21 @@ export function rankForCatalog(
 ): { matched: Scored[]; others: ProductView[] } {
   const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
   const quantityById = new Map(items.map((item): [string, number] => [item.productId, item.qty]));
+  const categoryCounts = new Map<Category, number>();
+  const difficulties: number[] = [];
+  for (const productId of quantityById.keys()) {
+    const product = viewById.get(productId)?.product;
+    if (!product) continue;
+    categoryCounts.set(product.category, (categoryCounts.get(product.category) ?? 0) + 1);
+    if (product.difficulty.level !== null && product.difficulty.source !== "unknown") {
+      difficulties.push(product.difficulty.level);
+    }
+  }
+  const categoryRanking = [...categoryCounts.entries()].sort((a, b) => b[1] - a[1]);
+  const preferredCategory = categoryRanking.length > 0 && categoryRanking[0][1] > (categoryRanking[1]?.[1] ?? 0)
+    ? categoryRanking[0][0] : null;
+  const averageDifficulty = difficulties.length > 0
+    ? difficulties.reduce((sum, level) => sum + level, 0) / difficulties.length : null;
   const listAmountById = new Map<string, number>();
   let listTotal = 0;
   for (const item of items) {
@@ -210,6 +225,17 @@ export function rankForCatalog(
       : view.product.price * (quantityById.get(productId) ?? 1);
     const scored = scoreProduct(view, prefs, budgetLeftForThis, amountForThis, inList);
     if (!scored) continue;
+    if (prefs.categories.length === 0 && preferredCategory !== null && view.product.category === preferredCategory) {
+      scored.score += 1;
+      scored.reasons.push("リストと同じカテゴリ");
+    }
+    const difficulty = view.product.difficulty;
+    if (prefs.difficultyMin === null && prefs.difficultyMax === null && averageDifficulty !== null
+      && difficulty.level !== null && difficulty.source !== "unknown"
+      && Math.abs(difficulty.level - averageDifficulty) <= 1) {
+      scored.score += 1;
+      scored.reasons.push("リストの難易度に近い");
+    }
     if (scored.score > 0) matched.push(scored);
     else others.push(view);
   }
@@ -251,6 +277,8 @@ export const SCORE_RULES: { label: string; points: string }[] = [
   { label: "好みの難易度（推定）", points: "+2" },
   { label: "難易度が好みの範囲外", points: "−2" },
   { label: "好みのカテゴリ", points: "+2" },
+  { label: "リストで最多のカテゴリ（手動指定なし・同数は対象外）", points: "+1" },
+  { label: "リストの難易度の平均から±1以内（手動指定なし）", points: "+1" },
   { label: "好みの遊び方に合う", points: "+2" },
   { label: "好みの遊び方と合わない", points: "−1" },
   { label: "新作", points: "+1" },

@@ -44,11 +44,13 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
       const remainingText = budget === null
         ? ""
         : over
-          ? format(totals.amount - budget) + "超過"
+          ? "OVER +" + format(totals.amount - budget)
           : "残り " + format(budget - totals.amount);
       summary.textContent = [remainingText, unknownText].filter(Boolean).join(" ・ ");
       summary.classList.toggle("is-over", over);
-      meter.setAttribute("aria-label", ["予算メーター", budgetLabel.textContent, "合計 " + totalValue.textContent, summary.textContent, "リストを開く"]
+      const accessibleSummary = over ? "予算を" + format(totals.amount - (budget ?? 0)) + "超えています" : remainingText;
+      const accessibleUnknown = totals.unknownPrice ? unknownText + "は合計に含まれません" : "";
+      meter.setAttribute("aria-label", ["予算メーター", budgetLabel.textContent, "合計 " + totalValue.textContent, accessibleSummary, accessibleUnknown, "リストを開く"]
         .filter(Boolean).join("。"));
     },
   };

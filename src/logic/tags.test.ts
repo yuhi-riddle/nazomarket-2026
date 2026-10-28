@@ -17,12 +17,11 @@ describe("featureTags", () => {
       price: 1000,
       days: ["sat"],
     });
-    expect(featureTags(p)).toEqual(["新作", "限定", "持ち帰り", "1人で遊べる", "千円以下", "土曜だけ"]);
+    expect(featureTags(p)).toEqual(["新作", "限定", "持ち帰り", "1人で遊べる", "千円以下"]);
   });
-  it("その場で遊べるもの・日曜だけ・値が無いものは付けない", () => {
+  it("その場で遊べるものを表示し、曜日はタグにしない", () => {
     expect(featureTags(product({ id: "a", boothId: "no01", category: "online", playMinutes: { min: 20, max: 20 }, price: 1500, days: ["sun"] }))).toEqual([
       "その場で遊べる",
-      "日曜だけ",
     ]);
     expect(featureTags(product({ id: "b", boothId: "no01", category: "goods", playMinutes: null, price: null, players: null }))).toEqual([]);
   });
@@ -32,7 +31,7 @@ describe("featureTags", () => {
     expect(featureTags(product({ id: "d", boothId: "no01", category: "goods", playMinutes: null, players: "2〜4人" }))).not.toContain("1人で遊べる");
   });
   it("FEATURE_TAGS は画面に並べる順の一覧", () => {
-    expect(FEATURE_TAGS).toEqual(["新作", "限定", "持ち帰り", "その場で遊べる", "1人で遊べる", "千円以下", "土曜だけ", "日曜だけ"]);
+    expect(FEATURE_TAGS).toEqual(["新作", "限定", "持ち帰り", "その場で遊べる", "1人で遊べる", "千円以下"]);
   });
 });
 
