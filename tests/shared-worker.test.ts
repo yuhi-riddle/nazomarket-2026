@@ -241,6 +241,73 @@ describe("shared room authentication and storage", () => {
 });
 
 describe("shared room creation", () => {
+  it("accepts a present but empty request body stream", async () => {
+    let initialized = false;
+    const rooms: WorkerEnv["ROOMS"] = {
+      idFromName: (name) => name as unknown as ReturnType<WorkerEnv["ROOMS"]["idFromName"]>,
+      get: () => ({
+        fetch: async () => {
+          initialized = true;
+          return new Response(null, { status: 201 });
+        },
+      }),
+    };
+    const request = new Request("https://api.example/api/rooms", {
+      method: "POST",
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "192.0.2.11" },
+      body: "",
+    });
+
+    expect(request.body).not.toBeNull();
+    const response = await worker.fetch(request, workerEnv(rooms).env);
+    expect(response.status).toBe(201);
+    expect(initialized).toBe(true);
+  });
+
+  it("rejects non-empty request bodies without creating a room", async () => {
+    let initialized = false;
+    const rooms: WorkerEnv["ROOMS"] = {
+      idFromName: (name) => name as unknown as ReturnType<WorkerEnv["ROOMS"]["idFromName"]>,
+      get: () => ({
+        fetch: async () => {
+          initialized = true;
+          return new Response(null, { status: 201 });
+        },
+      }),
+    };
+    const response = await worker.fetch(new Request("https://api.example/api/rooms", {
+      method: "POST",
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "192.0.2.11" },
+      body: "unexpected",
+    }), workerEnv(rooms).env);
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: "request_body_not_allowed" });
+    expect(initialized).toBe(false);
+  });
+
+  it("rejects oversized request bodies at the small body limit", async () => {
+    let initialized = false;
+    const rooms: WorkerEnv["ROOMS"] = {
+      idFromName: (name) => name as unknown as ReturnType<WorkerEnv["ROOMS"]["idFromName"]>,
+      get: () => ({
+        fetch: async () => {
+          initialized = true;
+          return new Response(null, { status: 201 });
+        },
+      }),
+    };
+    const response = await worker.fetch(new Request("https://api.example/api/rooms", {
+      method: "POST",
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "192.0.2.11" },
+      body: "x".repeat(8 * 1024 + 1),
+    }), workerEnv(rooms).env);
+
+    expect(response.status).toBe(413);
+    expect(await response.json()).toEqual({ error: "body_too_large" });
+    expect(initialized).toBe(false);
+  });
+
   it("returns a random room key and sends only its SHA-256 verifier to storage", async () => {
     let initializationRequest: Request | undefined;
     const rooms: WorkerEnv["ROOMS"] = {

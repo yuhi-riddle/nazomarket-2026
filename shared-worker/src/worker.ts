@@ -71,7 +71,7 @@ class RoomNotFound extends Error {}
 
 const ROOM_ID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const ROOM_KEY_PATTERN = /^[0-9a-f]{64}$/;
-const MAX_OPERATION_BODY_BYTES = 8 * 1024;
+const MAX_REQUEST_BODY_BYTES = 8 * 1024;
 const CREATE_RATE_LIMIT_PERIOD_SECONDS = 60;
 const ROOM_RATE_LIMIT_PERIOD_SECONDS = 60;
 
@@ -201,6 +201,28 @@ async function readJsonLimited(request: Request, maxBytes: number): Promise<unkn
   } catch {
     throw new RequestFailure(400, "invalid_json");
   }
+}
+
+async function validateEmptyRequestBody(request: Request): Promise<Response | null> {
+  if (request.body === null) return null;
+
+  const reader = request.body.getReader();
+  let length = 0;
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      length += value.byteLength;
+      if (length > MAX_REQUEST_BODY_BYTES) {
+        await reader.cancel().catch(() => undefined);
+        return jsonResponse({ error: "body_too_large" }, 413);
+      }
+    }
+  } finally {
+    reader.releaseLock();
+  }
+
+  return length === 0 ? null : jsonResponse({ error: "request_body_not_allowed" }, 400);
 }
 
 function operationContentTypeIsJson(request: Request): boolean {
@@ -343,7 +365,7 @@ export class SharedRoom {
 
     let envelope: OperationEnvelope;
     try {
-      envelope = parseOperationEnvelope(await readJsonLimited(request, MAX_OPERATION_BODY_BYTES));
+      envelope = parseOperationEnvelope(await readJsonLimited(request, MAX_REQUEST_BODY_BYTES));
     } catch (error) {
       if (error instanceof RequestFailure) return jsonResponse({ error: error.code }, error.status);
       if (error instanceof SharedListError) return domainErrorResponse(error);
@@ -398,7 +420,8 @@ export class SharedRoom {
 }
 
 async function createRoom(env: WorkerEnv, request: Request): Promise<Response> {
-  if (request.body !== null) return jsonResponse({ error: "request_body_not_allowed" }, 400);
+  const bodyError = await validateEmptyRequestBody(request);
+  if (bodyError) return bodyError;
 
   const roomId = crypto.randomUUID();
   const roomKey = randomRoomKey();
