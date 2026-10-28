@@ -169,6 +169,7 @@ export function catalogView(store: AppStore): CatalogView {
     if (existing) return existing;
     const handle = productCard(view, undefined, {
       onDetail: (selected) => details.open(selected),
+      canChangeList: () => !store.isSharedWriteBlocked(),
       onFeatureTag(tag, productId) {
         store.update((current) => {
           const tags = current.filters.tags.includes(tag)

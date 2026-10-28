@@ -1,5 +1,6 @@
 import type { TabId, AppState } from "../state.ts";
 import type { CartItem } from "../logic/cart.ts";
+import { captureSharedRoomLink, readSharedRoomCredentials, type SharedRoomCredentials } from "../shared/index.ts";
 import { createStore } from "../store.ts";
 import { dataGeneratedAt } from "../data.ts";
 import { budgetMeter } from "./budgetMeter.ts";
@@ -7,6 +8,7 @@ import { catalogView } from "./catalogView.ts";
 import { cartView } from "./cartView.ts";
 import { mapView } from "./mapView.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
+import type { SharedListViewOptions } from "./sharedListView.ts";
 
 const tabNames: Record<TabId, string> = {
   catalog: "一覧",
@@ -20,6 +22,51 @@ const hashNames: Record<TabId, string> = {
   map: "map",
 };
 
+function configuredSharedApiUrl(): string | null {
+  const configured = import.meta.env.VITE_SHARED_LIST_API_URL?.trim();
+  if (!configured) return null;
+  try {
+    const url = new URL(configured);
+    const localHost = url.hostname === "localhost" || url.hostname === "127.0.0.1" || url.hostname === "[::1]";
+    if ((url.protocol !== "https:" && !(url.protocol === "http:" && localHost))
+      || url.username !== "" || url.password !== "" || url.pathname !== "/" || url.search !== "" || url.hash !== "") {
+      return null;
+    }
+    return url.origin;
+  } catch {
+    return null;
+  }
+}
+
+function captureInitialSharedRoom(): {
+  credentials: SharedRoomCredentials | null;
+  error: string | null;
+  needsPaste: boolean;
+} {
+  const url = new URL(window.location.href);
+  const roomId = url.searchParams.get("room");
+  if (!roomId) return { credentials: null, error: null, needsPaste: false };
+
+  try {
+    const storage = window.sessionStorage;
+    const fragment = url.hash.slice(1);
+    const tabFragments = new Set(["catalog", "list", "map", "insights", "today"]);
+    let credentials: SharedRoomCredentials | null;
+    if (fragment && !tabFragments.has(fragment)) {
+      credentials = captureSharedRoomLink(url, storage, (cleanUrl) => window.history.replaceState(null, "", cleanUrl));
+    } else {
+      credentials = readSharedRoomCredentials(roomId, storage);
+    }
+    return { credentials, error: null, needsPaste: credentials === null };
+  } catch {
+    return {
+      credentials: null,
+      error: "共有リンクの鍵をこのタブに保存できませんでした。共有リンクをもう一度貼り付けてください。",
+      needsPaste: true,
+    };
+  }
+}
+
 function tabFromHash(): TabId | null {
   const hash = window.location.hash.replace(/^#/, "");
   if (hash === "catalog" || hash === "list") return hash === "list" ? "cart" : "catalog";
@@ -30,7 +77,12 @@ function tabFromHash(): TabId | null {
 }
 
 export function app(root: HTMLElement): void {
+  const sharedApiUrl = configuredSharedApiUrl();
+  const initialRoom = captureInitialSharedRoom();
   const store = createStore();
+  if ((initialRoom.credentials || initialRoom.needsPaste) && store.getState().tab !== "cart") {
+    store.update((state) => ({ ...state, tab: "cart" }));
+  }
   const header = el("header", "app-header");
   const headerMain = el("div", "header-main");
   const brand = el("div", "brand");
@@ -99,6 +151,7 @@ export function app(root: HTMLElement): void {
     element: HTMLElement;
     sync: (state: AppState) => void;
     updateItems?: (items: CartItem[], state: AppState) => void;
+    setActive?: (active: boolean) => void;
   };
   const pages = new Map<TabId, LazyPage>();
   for (const tab of tabOrder) {
@@ -117,7 +170,12 @@ export function app(root: HTMLElement): void {
     const page = tab === "catalog"
       ? catalogView(store)
       : tab === "cart"
-        ? cartView(store)
+        ? cartView(store, sharedApiUrl ? {
+          apiUrl: sharedApiUrl,
+          initialCredentials: initialRoom.credentials,
+          initialError: initialRoom.error,
+          roomLinkNeedsPaste: initialRoom.needsPaste,
+        } satisfies SharedListViewOptions : undefined)
         : mapView(store);
     pages.set(tab, page);
     panels.get(tab)?.append(page.element);
@@ -186,6 +244,7 @@ export function app(root: HTMLElement): void {
     syncHeader(state);
     const tabChanged = renderedTab !== state.tab;
     const page = pageFor(state.tab);
+    for (const [tab, lazyPage] of pages) lazyPage.setActive?.(tab === state.tab);
     if (!previous || tabChanged) {
       page.sync(state);
     } else if (state.tab === "catalog") {
@@ -197,6 +256,8 @@ export function app(root: HTMLElement): void {
         page.sync(state);
       } else if (state.items !== previous.items || state.budget !== previous.budget) {
         page.updateItems?.(state.items, state);
+      } else {
+        page.sync(state);
       }
     } else {
       page.sync(state);

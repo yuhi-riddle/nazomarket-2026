@@ -7,6 +7,7 @@ export type ProductCardActions = {
   onDetail: (view: ProductView) => void;
   onToggle: (productId: string) => void;
   onQty: (productId: string, qty: number) => void;
+  canChangeList?: () => boolean;
   onFeatureTag?: (tag: string, productId: string) => void;
   selectedTags?: string[];
 };
@@ -154,8 +155,11 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   actionsArea.append(quantity);
   card.append(body, actionsArea);
 
-  const update = (nextItem: CartItem | undefined, nextReasons?: string[], selectedTags?: string[]) => {
+  const update = (nextItem: CartItem | undefined, nextReasons?: string[], selectedTags?: string[], canChangeList = actions.canChangeList?.() ?? true) => {
     currentItem = nextItem;
+    listToggle.disabled = !canChangeList;
+    minus.disabled = !canChangeList || nextItem?.qty === 1;
+    plus.disabled = !canChangeList || nextItem?.qty === 99;
     listToggle.setAttribute("aria-pressed", String(Boolean(nextItem)));
     listToggleMark.textContent = nextItem ? "✓" : "+";
     listToggleText.textContent = nextItem ? "リストに追加済み" : "リストに入れる";
@@ -163,8 +167,6 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     listToggleHint.hidden = !nextItem;
     quantity.hidden = !nextItem;
     quantityText.textContent = nextItem ? String(nextItem.qty) : "1";
-    minus.disabled = nextItem?.qty === 1;
-    plus.disabled = nextItem?.qty === 99;
     if (nextReasons !== undefined) {
       reasons.replaceChildren(...nextReasons.map((reason) => el("span", "tag", reason)));
       reasons.hidden = nextReasons.length === 0;

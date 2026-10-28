@@ -10,6 +10,8 @@ Thumbs.db
 work/*
 !work/README.md
 .vitest/
+shared-worker/.wrangler/
+shared-worker/work/
 
 # 公式データの原本（再配布しない。手元の差分取得にだけ使う）
 data/raw/
