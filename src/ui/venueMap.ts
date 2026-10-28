@@ -26,6 +26,7 @@ export type VenueMapScale = 1 | 2 | 3 | "fit";
 export type VenueMapElement = SVGSVGElement & {
   update: (next: VenueMapUpdate) => void;
   setScale: (scale: VenueMapScale) => void;
+  setSelectedBooth: (code: string | null) => void;
 };
 
 type BoothNodes = {
@@ -33,6 +34,7 @@ type BoothNodes = {
   rect: SVGRectElement;
   label: SVGTextElement;
   title?: SVGTitleElement;
+  ariaLabel: string;
 };
 
 function svgElement<K extends keyof SVGElementTagNameMap>(tag: K): SVGElementTagNameMap[K] {
@@ -88,6 +90,7 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
   let day = options.day;
   let paintBooth = options.paintBooth;
   const onBoothPress = options.onBoothPress;
+  let selectedCode: string | null = null;
   const instanceId = ++mapInstance;
   const patternId = "venue-map-no-show-" + instanceId;
 
@@ -163,6 +166,7 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
     const group = svgElement("g");
     group.setAttribute("class", "venue-map-booth");
     group.setAttribute("data-booth-code", booth.code);
+    group.setAttribute("data-area", booth.area);
     const rect = svgElement("rect");
     rect.setAttribute("x", String(booth.x));
     rect.setAttribute("y", String(booth.y));
@@ -186,7 +190,7 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       group.append(title);
     }
     group.append(rect, label);
-    boothNodes.set(booth.code, { group, rect, label, title });
+    boothNodes.set(booth.code, { group, rect, label, title, ariaLabel: "" });
     svg.append(group);
   }
 
@@ -233,6 +237,11 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       const paint = paintBooth?.(booth);
       const vendorName = booth.labels[day] ?? "出展なし";
       const paintKey = JSON.stringify(paint ?? null);
+      if (onBoothPress) {
+        nodes.ariaLabel = paint?.ariaLabel ?? (booth.code + " " + vendorName);
+        nodes.group.setAttribute("aria-label", nodes.ariaLabel
+          + (booth.code === selectedCode ? " 選択中" : ""));
+      }
       if (!dayChanged && paintKeys.get(booth.code) === paintKey) continue;
       paintKeys.set(booth.code, paintKey);
       if (dayChanged) paintLabel(nodes.label, booth, day);
@@ -242,9 +251,9 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       const color = paint?.color;
       nodes.rect.style.setProperty(
         "--venue-map-fill",
-        noShow ? "url(#" + patternId + ")" : color ? "var(--" + color + (isListed ? "-soft)" : ")") : "var(--surface)",
+        noShow ? "url(#" + patternId + ")" : color ? "var(--" + color + (isListed ? "-soft)" : ")") : "var(--venue-map-area-fill, var(--surface))",
       );
-      nodes.rect.style.setProperty("--venue-map-stroke", color ? "var(--" + color + ")" : "var(--line)");
+      nodes.rect.style.setProperty("--venue-map-stroke", color ? "var(--" + color + ")" : "var(--venue-map-area-stroke, var(--line))");
       nodes.rect.style.setProperty("--venue-map-stroke-width", color ? (isListed ? "3" : "2") : "1");
       if (paint?.intensity !== undefined && !noShow) {
         const intensity = Math.max(0, Math.min(1, paint.intensity));
@@ -253,15 +262,21 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
         nodes.rect.style.removeProperty("--venue-map-fill-opacity");
       }
 
-      if (onBoothPress) {
-        const name = paint?.ariaLabel ?? (booth.code + " " + vendorName);
-        nodes.group.setAttribute("aria-label", name);
-      }
     }
   };
 
   const setScale = (scale: VenueMapScale) => {
     svg.style.width = scale === "fit" || scale === 1 ? "100%" : scale * 100 + "%";
+  };
+  const setSelectedBooth = (code: string | null) => {
+    selectedCode = code;
+    for (const [boothCode, nodes] of boothNodes) {
+      const selected = boothCode === code;
+      nodes.group.toggleAttribute("data-selected", selected);
+      if (onBoothPress) {
+        nodes.group.setAttribute("aria-label", nodes.ariaLabel + (selected ? " 選択中" : ""));
+      }
+    }
   };
   const update = (next: VenueMapUpdate) => {
     let boothsChanged = false;
@@ -278,5 +293,5 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
 
   setScale("fit");
   refreshBooths();
-  return Object.assign(svg, { update, setScale });
+  return Object.assign(svg, { update, setScale, setSelectedBooth });
 }

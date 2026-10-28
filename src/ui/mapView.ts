@@ -1,3 +1,4 @@
+import "./mapEnhancements.css";
 import { booths, catalog, venueLayout } from "../data.ts";
 import {
   setQty,
@@ -138,12 +139,14 @@ export function mapView(store: AppStore): MapView {
         return;
       }
       selectedCode = booth.code;
+      map.setSelectedBooth(booth.code);
       boothSelect.value = booth.code;
       syncPanel(store.getState());
     },
   });
   boothSelect.addEventListener("change", () => {
     selectedCode = boothSelect.value || null;
+    map.setSelectedBooth(selectedCode);
     syncPanel(store.getState());
   });
   mapFrame.append(map);
@@ -214,7 +217,23 @@ export function mapView(store: AppStore): MapView {
       const isNoShow = layoutBooth?.labels[state.day] === null;
       const booth = boothForDay(selectedCode, state.day);
       const title = isNoShow ? "出展なし" : booth?.name ?? layoutBooth?.labels[state.day] ?? "出展なし";
-      panel.append(el("h3", "map-panel-title", selectedCode + " " + title));
+      const organizationHeading = el("div", "map-organization-heading");
+      const organizationCopy = el("div", "map-organization-copy");
+      organizationCopy.append(
+        el("span", "map-panel-booth-code", selectedCode),
+        el("h3", "map-panel-title", title),
+      );
+      organizationHeading.append(organizationCopy);
+      if (!isNoShow && booth?.logoUrl.trim()) {
+        const logo = el("img", "map-organization-logo");
+        logo.src = booth.logoUrl;
+        logo.alt = title + "のロゴ";
+        logo.loading = "lazy";
+        logo.decoding = "async";
+        logo.addEventListener("error", () => logo.remove(), { once: true });
+        organizationHeading.append(logo);
+      }
+      panel.append(organizationHeading);
 
       const allViews = viewsByCode.get(selectedCode) ?? [];
       const dayViews = isNoShow
@@ -307,7 +326,7 @@ export function mapView(store: AppStore): MapView {
         entry.count += 1;
         remaining.set(view.booth.id, entry);
       }
-      remainingHeading.textContent = "まだ買うものがある団体（" + (state.day === "sat" ? "土曜" : "日曜") + "）";
+      remainingHeading.textContent = "買い物予定の団体（" + (state.day === "sat" ? "土曜" : "日曜") + "）";
       remainingList.replaceChildren();
       for (const { booth, count } of remaining.values()) {
         const text = booth.name + " " + (booth.boothCode ?? "場所未定") + " 未購入" + count + "件";
@@ -319,6 +338,7 @@ export function mapView(store: AppStore): MapView {
         const selectBooth = button(text, "map-remaining-button");
         selectBooth.addEventListener("click", () => {
           selectedCode = code;
+          map.setSelectedBooth(code);
           boothSelect.value = code;
           syncPanel(store.getState());
           panel.scrollIntoView({ block: "start" });

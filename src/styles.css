@@ -1049,6 +1049,22 @@ a {
   text-align: left;
 }
 
+.budget-meter::before,
+.budget-meter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--key);
+  border-radius: 50%;
+  background: var(--bg);
+  transform: translateY(-50%);
+}
+
+.budget-meter::before { left: 12px; }
+.budget-meter::after { right: 12px; }
+
 .meter-bar {
   position: relative;
   width: 100%;
@@ -2750,19 +2766,72 @@ noscript {
 }
 
 .list-toggle {
+  width: 100%;
   min-height: 44px;
   padding: var(--space-2) var(--space-3);
   border: 1.5px solid var(--ink);
   border-radius: 6px;
   background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
   font-size: var(--font-13);
   font-weight: 700;
 }
 
 .list-toggle[aria-pressed="true"] {
-  border-color: var(--must);
-  background: var(--must);
-  color: #ffffff;
+  border-color: var(--key);
+  background: var(--band);
+  color: var(--on-band);
+}
+
+.list-toggle-mark {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--surface-2);
+  color: var(--ink);
+  display: inline-grid;
+  place-items: center;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.list-toggle[aria-pressed="true"] .list-toggle-mark {
+  background: var(--key);
+  color: var(--on-key);
+}
+
+.list-toggle-label {
+  min-width: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 5px;
+}
+
+.list-toggle-hint {
+  color: var(--ink-muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.list-toggle[aria-pressed="true"] .list-toggle-hint {
+  color: var(--on-band-muted);
+}
+
+.list-toggle:hover {
+  border-color: var(--key);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .list-toggle,
+  .meter-must {
+    transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, width 180ms ease;
+  }
 }
 
 .quantity-control {
@@ -2858,6 +2927,7 @@ noscript {
   min-height: var(--budget-meter-height);
   padding: var(--space-2) max(var(--space-5), calc((100vw - 1552px) / 2));
   border: 0;
+  border-top: 2px solid var(--key);
   background: var(--band);
   color: var(--on-band);
   display: grid;
@@ -2875,12 +2945,23 @@ noscript {
   font-variant-numeric: tabular-nums;
 }
 
+.meter-budget {
+  padding-right: var(--space-3);
+  border-right: 1px dashed color-mix(in srgb, var(--on-band-muted) 55%, transparent);
+  color: var(--on-band-muted);
+}
+
 .meter-bar {
   height: 6px;
   overflow: visible;
   border: 0;
   border-radius: 4px;
   background: #38415f;
+}
+
+.meter-must {
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d6a91d, var(--key));
 }
 
 .meter-budget-marker {
@@ -2892,13 +2973,63 @@ noscript {
 .meter-summary {
   grid-column: auto;
   min-width: 0;
-  color: var(--on-band-muted);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-1);
+}
+
+.meter-status {
+  min-height: 28px;
+  padding: 2px 9px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-size: var(--font-12);
+  line-height: 1.2;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
-.meter-summary.is-over {
-  color: #ff9b99;
+.meter-remaining {
+  color: var(--key);
+  background: color-mix(in srgb, var(--key) 10%, var(--band));
+}
+
+.meter-remaining.is-over {
+  color: #ffc0ae;
+  background: color-mix(in srgb, #b94a3c 20%, var(--band));
+}
+
+.meter-unknown {
+  color: var(--on-band-muted);
+  background: color-mix(in srgb, var(--on-band-muted) 7%, var(--band));
+}
+
+.meter-status-mark {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.meter-total-label {
+  color: var(--on-band-muted);
+}
+
+.meter-total-value {
+  color: var(--key);
+  font-size: clamp(24px, 2.2vw, 30px);
+  letter-spacing: -0.035em;
 }
 
 .app-header :focus-visible,
@@ -2908,10 +3039,6 @@ noscript {
 }
 
 @media (prefers-color-scheme: dark) {
-  .list-toggle[aria-pressed="true"] {
-    color: #11141d;
-  }
-
   .venue-map-route {
     stroke: var(--key);
   }
@@ -3026,7 +3153,7 @@ noscript {
 @media (max-width: 767px) {
   :root {
     --header-height: 56px;
-    --budget-meter-height: 38px;
+    --budget-meter-height: 68px;
     --mobile-tabs-height: calc(52px + env(safe-area-inset-bottom));
     --measured-meter-height: var(--budget-meter-height);
     --measured-tabs-height: var(--mobile-tabs-height);
@@ -3601,16 +3728,17 @@ noscript {
 }
 
 .meter-total-value {
-  color: var(--on-band);
-  font-size: 20px;
+  color: var(--key);
+  font-size: clamp(24px, 2.2vw, 30px);
   line-height: 1;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.035em;
 }
 
 @media (max-width: 767px) {
   :root {
-    --budget-meter-height: 58px;
+    --budget-meter-height: 68px;
   }
 
   .tab-list {
@@ -3649,13 +3777,13 @@ noscript {
   }
 
   .budget-meter {
-    height: var(--budget-meter-height);
+    height: auto;
     min-height: var(--budget-meter-height);
-    padding: var(--space-1) var(--space-3);
-    grid-template-columns: max-content minmax(0, 1fr) auto;
-    grid-template-rows: minmax(0, 1fr) 6px;
+    padding: 6px var(--space-3);
+    grid-template-columns: max-content minmax(0, 1fr);
+    grid-template-rows: auto 6px;
     align-items: center;
-    gap: 2px var(--space-2);
+    gap: var(--space-1) var(--space-2);
   }
 
   .meter-budget {
@@ -3671,12 +3799,9 @@ noscript {
 
   .meter-summary {
     min-width: 0;
-    grid-column: 2 / -1;
+    grid-column: 2;
     grid-row: 1;
-    overflow: hidden;
     text-align: right;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .meter-bar {
@@ -3727,6 +3852,11 @@ noscript {
   font-size: var(--font-12);
   font-weight: 700;
   text-decoration: none;
+}
+
+.product-booth-link {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .product-reasons { grid-row: 6; }
@@ -3930,8 +4060,8 @@ noscript {
     height: auto;
     min-height: var(--budget-meter-height);
     padding: 6px var(--space-3);
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
-    grid-template-rows: 6px auto;
+    grid-template-columns: max-content minmax(0, 1fr);
+    grid-template-rows: auto 6px;
     align-items: center;
     gap: var(--space-1) var(--space-2);
   }
@@ -3945,7 +4075,7 @@ noscript {
   }
 
   .meter-total-value {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .meter-summary {

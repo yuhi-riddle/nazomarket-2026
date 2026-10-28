@@ -106,7 +106,7 @@ export function catalogView(store: AppStore): CatalogView {
   toolbar.append(mobileSearch, filters.openButton, count, sortField, groupActions);
 
   const resultRegion = el("div", "catalog-results");
-  const recommendationHint = el("p", "recommendation-hint", "リストに入れた商品のカテゴリ・難易度と、設定した好みや残り予算を参考に並べます。");
+  const recommendationHint = el("p", "recommendation-hint", "リストの商品や設定した好み、残り予算を参考に、おすすめを最大10件表示します。すべての商品は並び順を変えると見られます。");
   recommendationHint.hidden = true;
   const grid = el("div", "product-grid");
   const empty = el("div", "empty-state");
@@ -196,12 +196,12 @@ export function catalogView(store: AppStore): CatalogView {
     return handle;
   };
 
-  const showEmpty = (visible: boolean) => {
+  const showEmpty = (visible: boolean, recommended: boolean) => {
     if (!visible) {
       empty.remove();
       return;
     }
-    empty.replaceChildren(el("p", "", "条件に合う商品はありません"));
+    empty.replaceChildren(el("p", "", recommended ? "条件に合うおすすめはありません。並び順を変えると、ほかの商品も見られます。" : "条件に合う商品はありません"));
     const clear = button("絞り込みをクリア", "button button-secondary");
     clear.addEventListener("click", () => {
       store.update((state) => ({ ...state, filters: { ...emptyFilters } }));
@@ -215,7 +215,6 @@ export function catalogView(store: AppStore): CatalogView {
     const filtered = filterCatalog(catalog, filtersWithDay);
     let ordered: ProductView[];
     let reasonsById = new Map<string, string[]>();
-    let otherStart = -1;
     if (state.sort === "recommended") {
       const visibleIds = new Set(filtered.map((view) => view.product.id));
       const budget = state.prefs.budgetFromCart ? state.budget : state.prefs.budget;
@@ -229,11 +228,9 @@ export function catalogView(store: AppStore): CatalogView {
         rankedBudget = budget;
         rankedCartKey = cartKey;
       }
-      const matched = (rankedCatalog?.matched ?? []).filter((item) => visibleIds.has(item.view.product.id));
-      const others = (rankedCatalog?.others ?? []).filter((view) => visibleIds.has(view.product.id));
+      const matched = (rankedCatalog?.matched ?? []).filter((item) => visibleIds.has(item.view.product.id)).slice(0, 10);
       for (const item of matched) reasonsById.set(item.view.product.id, item.reasons);
-      ordered = [...matched.map((item) => item.view), ...others];
-      otherStart = matched.length;
+      ordered = matched.map((item) => item.view);
     } else {
       ordered = sortCatalog(filtered, state.sort);
     }
@@ -249,7 +246,7 @@ export function catalogView(store: AppStore): CatalogView {
     lastItemById = itemById;
     const filtersOrSortChanged = lastFilters !== state.filters || lastSort !== state.sort || lastDay !== state.day;
 
-    showEmpty(ordered.length === 0);
+    showEmpty(ordered.length === 0, state.sort === "recommended");
     grid.replaceChildren();
     if (state.sort === "booth" || state.sort === "organization") {
       const byBooth = new Map<string, ProductView[]>();
@@ -274,7 +271,6 @@ export function catalogView(store: AppStore): CatalogView {
       }
     } else {
       for (let index = 0; index < ordered.length; index += 1) {
-        if (index === otherStart) grid.append(el("h3", "catalog-other-heading", "ほかの商品"));
         const view = ordered[index];
         const handle = getHandle(view, state);
         handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? [], state.filters.tags);
