@@ -129,6 +129,7 @@ export function mapView(store: AppStore): MapView {
   let panelKey = "";
   let productsInPanel: MapProduct[] = [];
   let renderedPanelItems: CartItem[] | undefined;
+  let renderedPanelWriteBlocked: boolean | undefined;
   const details = productDialog("map");
   const map = venueMap({
     layout: venueLayout,
@@ -253,6 +254,7 @@ export function mapView(store: AppStore): MapView {
         for (const view of dayViews) {
           const card = productCard(view, itemById.get(view.product.id), {
             onDetail: (selected) => details.open(selected),
+            canChangeList: () => !store.isSharedWriteBlocked(),
             onToggle(productId) {
               store.update((current) => ({ ...current, items: toggleItem(current.items, productId) }));
               productsInPanel.find(({ view: panelView }) => panelView.product.id === productId)
@@ -276,13 +278,15 @@ export function mapView(store: AppStore): MapView {
       const links = organizationLinks(booth);
       if (links) panel.append(links);
       panelKey = key;
+      renderedPanelWriteBlocked = store.isSharedWriteBlocked();
       return;
     }
 
-    if (renderedPanelItems === state.items) return;
+    if (renderedPanelItems === state.items && renderedPanelWriteBlocked === store.isSharedWriteBlocked()) return;
     const itemById = new Map(state.items.map((item): [string, CartItem] => [item.productId, item]));
     for (const { view, card } of productsInPanel) card.update(itemById.get(view.product.id));
     renderedPanelItems = state.items;
+    renderedPanelWriteBlocked = store.isSharedWriteBlocked();
   }
 
   let previousPaintDay: Day | undefined;

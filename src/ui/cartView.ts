@@ -13,14 +13,15 @@ import type { AppState } from "../state.ts";
 import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
 import { productDialog } from "./productDialog.ts";
+import { sharedListView, type SharedListViewOptions } from "./sharedListView.ts";
 
 const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
 
-type CartRow = { element: HTMLElement; update: (item: CartItem, hideBought: boolean) => void };
+type CartRow = { element: HTMLElement; update: (item: CartItem, hideBought: boolean, canEdit: boolean) => void };
 type CartSection = { element: HTMLElement; heading: HTMLElement; rows: HTMLElement; idsKey: string; title: string };
 type CartBucket = { key: string; title: string; ids: string[]; organization: string; boothCode: string };
 
-export type CartView = { element: HTMLElement; sync: (state: AppState) => void };
+export type CartView = { element: HTMLElement; sync: (state: AppState) => void; setActive?: (active: boolean) => void };
 
 function sameCartItem(a: CartItem | undefined, b: CartItem | undefined): boolean {
   return a === b || (a !== undefined && b !== undefined
@@ -34,6 +35,7 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
   row.dataset.productId = view.product.id;
   let currentItem = item;
   let currentHideBought: boolean | undefined;
+  let currentCanEdit: boolean | undefined;
 
   const boughtLabel = el("label", "today-item-check");
   const checkbox = el("input");
@@ -77,10 +79,12 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
   controls.append(quantity, remove);
   row.append(boughtLabel, description, status, controls);
 
-  const update = (next: CartItem, hideBought: boolean) => {
-    if (sameCartItem(currentItem, next) && currentHideBought === hideBought) return;
+  const update = (next: CartItem, hideBought: boolean, canEdit: boolean) => {
+    if (sameCartItem(currentItem, next) && currentHideBought === hideBought && currentCanEdit === canEdit) return;
     currentItem = next;
     currentHideBought = hideBought;
+    currentCanEdit = canEdit;
+    checkbox.disabled = !canEdit;
     checkbox.checked = next.bought;
     const unitPrice = view.product.price === null
       ? "価格未確認"
@@ -90,14 +94,15 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
       : " = " + (view.product.price * next.qty).toLocaleString("ja-JP") + "円";
     amount.textContent = unitPrice + " × " + next.qty + subtotal;
     quantityValue.textContent = String(next.qty);
-    minus.disabled = next.qty <= 1;
-    plus.disabled = next.qty >= 99;
+    minus.disabled = !canEdit || next.qty <= 1;
+    plus.disabled = !canEdit || next.qty >= 99;
+    remove.disabled = !canEdit;
     row.classList.toggle("is-bought", next.bought);
     row.hidden = hideBought && next.bought;
     status.textContent = next.bought ? "✓ 買った" : "";
   };
 
-  update(item, false);
+  update(item, false, !store.isSharedWriteBlocked());
   return { element: row, update };
 }
 
@@ -118,9 +123,10 @@ function cartBuckets(items: CartItem[]): CartBucket[] {
   return [...buckets.values()];
 }
 
-export function cartView(store: AppStore): CartView {
+export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions): CartView {
   const page = el("section", "cart-page");
   const heading = el("h2", "section-title", "リスト");
+  const shared = sharedOptions ? sharedListView(store, sharedOptions) : null;
 
   const summary = el("section", "today-summary cart-summary");
   summary.setAttribute("aria-label", "リストの合計と使った金額");
@@ -196,6 +202,7 @@ export function cartView(store: AppStore): CartView {
   const details = productDialog("cart");
   page.append(
     heading,
+    ...(shared ? [shared.element] : []),
     summary,
     unknownPrice,
     unknownBought,
@@ -217,16 +224,21 @@ export function cartView(store: AppStore): CartView {
   let previousItemById = new Map<string, CartItem>();
   let previousBudget: number | null | undefined;
   let previousHideBought: boolean | undefined;
+  let previousSharedWriteBlocked: boolean | undefined;
   let previousRouteKey = "";
   let previousSectionKeys: string[] = [];
   const format = (amount: number) => amount.toLocaleString("ja-JP") + "円";
 
-  budgetInput.addEventListener("input", () => {
+  const commitBudget = () => {
     const value = budgetInput.value;
     const budget = value === "" ? null : Number(value);
     if (budget !== null && (!Number.isFinite(budget) || budget < 0)) return;
     if (store.getState().budget !== budget) store.update((state) => ({ ...state, budget }));
+  };
+  budgetInput.addEventListener("input", () => {
+    if (!store.isShared()) commitBudget();
   });
+  budgetInput.addEventListener("change", commitBudget);
   copyButton.addEventListener("click", async () => {
     const text = exportCartText(store.getState().items, catalog);
     fallbackText.value = text;
@@ -306,8 +318,9 @@ export function cartView(store: AppStore): CartView {
         row = cartRow(view, item, store, (selected) => details.open(selected));
         rows.set(item.productId, row);
       }
-      if (!sameCartItem(previousItemById.get(item.productId), item) || previousHideBought !== state.today.hideBought) {
-        row.update(item, state.today.hideBought);
+      if (!sameCartItem(previousItemById.get(item.productId), item)
+        || previousHideBought !== state.today.hideBought || previousSharedWriteBlocked !== store.isSharedWriteBlocked()) {
+        row.update(item, state.today.hideBought, !store.isSharedWriteBlocked());
       }
     }
 
@@ -371,6 +384,10 @@ export function cartView(store: AppStore): CartView {
       hideBoughtInput.checked = state.today.hideBought;
       previousHideBought = state.today.hideBought;
     }
+    previousSharedWriteBlocked = store.isSharedWriteBlocked();
+    budgetInput.disabled = store.isSharedWriteBlocked();
+    clearButton.disabled = store.isSharedWriteBlocked();
+    confirmClear.disabled = store.isSharedWriteBlocked();
     if (previousItems !== state.items) {
       previousItems = state.items;
       previousItemById = itemById;
@@ -381,5 +398,5 @@ export function cartView(store: AppStore): CartView {
     }
   };
 
-  return { element: page, sync };
+  return { element: page, sync, ...(shared ? { setActive: shared.setActive } : {}) };
 }
