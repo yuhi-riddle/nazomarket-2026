@@ -39,6 +39,16 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
       heading.textContent = product.name;
       details.replaceChildren();
       details.append(el("p", "dialog-booth", (view.booth.boothCode ?? "番号未定") + " " + view.booth.name));
+      const boothLinks = el("div", "dialog-booth-links");
+      for (const [label, urls] of [["X", view.booth.links.x], ["団体サイト", view.booth.links.site]] as const) {
+        for (const [index, url] of urls.entries()) {
+          const link = safeExternalLink(url, label, "dialog-booth-link");
+          if (!link) continue;
+          link.setAttribute("aria-label", view.booth.name + "の" + label + (urls.length > 1 ? " " + (index + 1) : "") + "（新しいタブで開く）");
+          boothLinks.append(link);
+        }
+      }
+      if (boothLinks.childElementCount) details.append(boothLinks);
       details.append(el("p", "dialog-price", product.price === null ? "価格未確認" : product.price.toLocaleString("ja-JP") + "円"));
       if (product.priceNote) details.append(el("p", "dialog-note", product.priceNote));
       const description = el("p", "dialog-description", product.description);
@@ -68,13 +78,8 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
         const link = safeExternalLink(source.url, "商品情報 " + (index + 1));
         if (link) links.append(link);
       }
-      const boothLinks = [
-        ...view.booth.links.site.map((url) => ["団体サイト", url] as const),
-        ...view.booth.links.x.map((url) => ["X", url] as const),
-        ...view.booth.links.instagram.map((url) => ["Instagram", url] as const),
-      ];
-      for (const [label, url] of boothLinks) {
-        const link = safeExternalLink(url, label);
+      for (const url of view.booth.links.instagram) {
+        const link = safeExternalLink(url, "Instagram");
         if (link) links.append(link);
       }
       if (links.childElementCount > 1) details.append(links);

@@ -97,7 +97,7 @@ export function filterCatalog(catalog: ProductView[], filters: Filters): Product
     if (filters.categories.length && !filters.categories.includes(product.category)) return false;
     if (filters.tags.length && !filters.tags.every((tag) => view.featureTags.includes(tag))) return false;
     if (filters.newOnly && product.isNew !== true) return false;
-    if (filters.day && !product.days.includes(filters.day)) return false;
+    if (filters.day && (!product.days.includes(filters.day) || !view.booth.days.includes(filters.day))) return false;
     return true;
   });
 }

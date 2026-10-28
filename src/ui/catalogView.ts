@@ -49,7 +49,7 @@ export function catalogView(store: AppStore): CatalogView {
       store.update((state) => ({ ...state, filters: { ...state.filters, ...change } }));
     },
     onClear() {
-      store.update((state) => ({ ...state, filters: { ...emptyFilters, onlyGoingDay: false } }));
+      store.update((state) => ({ ...state, filters: { ...emptyFilters } }));
     },
     onPrefsChange(change) {
       store.update((state) => {
@@ -106,10 +106,12 @@ export function catalogView(store: AppStore): CatalogView {
   toolbar.append(mobileSearch, filters.openButton, count, sortField, groupActions);
 
   const resultRegion = el("div", "catalog-results");
+  const recommendationHint = el("p", "recommendation-hint", "リストに入れた商品のカテゴリ・難易度と、設定した好みや残り予算を参考に並べます。");
+  recommendationHint.hidden = true;
   const grid = el("div", "product-grid");
   const empty = el("div", "empty-state");
   resultRegion.append(grid);
-  main.append(toolbar, resultRegion);
+  main.append(toolbar, recommendationHint, resultRegion);
   page.append(filters.element, main, filters.dialog);
   const details = productDialog("catalog");
   page.append(details.element);
@@ -122,7 +124,7 @@ export function catalogView(store: AppStore): CatalogView {
   let lastDay: AppState["day"] | undefined;
   let lastShown = 0;
   let rankedPrefs: AppState["prefs"] | undefined;
-  let rankedDay: AppState["day"] | undefined;
+  let rankedDay: AppState["filters"]["day"] | undefined;
   let rankedBudget: number | null | undefined;
   let rankedCartKey = "";
   let rankedCatalog: ReturnType<typeof rankForCatalog> | undefined;
@@ -202,17 +204,14 @@ export function catalogView(store: AppStore): CatalogView {
     empty.replaceChildren(el("p", "", "条件に合う商品はありません"));
     const clear = button("絞り込みをクリア", "button button-secondary");
     clear.addEventListener("click", () => {
-      store.update((state) => ({ ...state, filters: { ...emptyFilters, onlyGoingDay: false } }));
+      store.update((state) => ({ ...state, filters: { ...emptyFilters } }));
     });
     empty.append(clear);
     resultRegion.append(empty);
   };
 
   const renderList = (state: AppState) => {
-    const filtersWithDay = {
-      ...state.filters,
-      day: state.filters.onlyGoingDay ? state.day : null,
-    };
+    const filtersWithDay = state.filters;
     const filtered = filterCatalog(catalog, filtersWithDay);
     let ordered: ProductView[];
     let reasonsById = new Map<string, string[]>();
@@ -223,10 +222,10 @@ export function catalogView(store: AppStore): CatalogView {
       const cartKey = JSON.stringify(state.items
         .map((item) => [item.productId, item.qty] as const)
         .sort(([a], [b]) => a.localeCompare(b)));
-      if (rankedPrefs !== state.prefs || rankedDay !== state.day || rankedBudget !== budget || rankedCartKey !== cartKey) {
-        rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.day }, state.items, budget);
+      if (rankedPrefs !== state.prefs || rankedDay !== state.filters.day || rankedBudget !== budget || rankedCartKey !== cartKey) {
+        rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.filters.day }, state.items, budget);
         rankedPrefs = state.prefs;
-        rankedDay = state.day;
+        rankedDay = state.filters.day;
         rankedBudget = budget;
         rankedCartKey = cartKey;
       }
@@ -240,6 +239,7 @@ export function catalogView(store: AppStore): CatalogView {
     }
 
     count.textContent = ordered.length + "件 / " + catalog.length + "件";
+    recommendationHint.hidden = state.sort !== "recommended";
     sortSelect.value = state.sort;
     groupActions.hidden = state.sort !== "booth" && state.sort !== "organization";
     if (document.activeElement !== mobileSearch) mobileSearch.value = state.filters.q;
@@ -296,10 +296,7 @@ export function catalogView(store: AppStore): CatalogView {
         if (!sameCartItem(lastItemById.get(id), nextItem)) handle.update(nextItem);
       }
       lastItemById = itemById;
-      syncFilterControls(state, {
-        ...state.filters,
-        day: state.filters.onlyGoingDay ? state.day : null,
-      }, lastShown);
+      syncFilterControls(state, state.filters, lastShown);
     },
   };
 }

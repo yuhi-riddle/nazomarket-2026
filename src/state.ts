@@ -6,7 +6,7 @@ import { FEATURE_TAGS } from "./logic/tags.ts";
 
 export const STORAGE_KEY = "nazomarket2026:v1";
 export type TabId = "catalog" | "cart" | "map";
-export type AppFilters = Omit<Filters, "day"> & { onlyGoingDay: boolean };
+export type AppFilters = Filters;
 export type AppState = {
   version: 1;
   tab: TabId;
@@ -27,7 +27,7 @@ export const defaultState: AppState = {
   day: "sat",
   budget: null,
   items: [],
-  filters: { ...emptyFilters, onlyGoingDay: false },
+  filters: { ...emptyFilters },
   sort: "booth",
   nazocolle: { pointsPerDraw: null },
   today: { hideBought: false },
@@ -68,7 +68,7 @@ function parsePrefs(value: unknown): Prefs {
   return { budget, budgetFromCart, difficultyMin, difficultyMax, categories, playStyle, day: null };
 }
 
-function parseFilters(value: unknown): AppFilters {
+function parseFilters(value: unknown, oldDay: Day): AppFilters {
   if (!isRecord(value)) return { ...defaultState.filters };
   const result: AppFilters = { ...defaultState.filters };
   if (typeof value.q === "string") result.q = value.q;
@@ -89,7 +89,11 @@ function parseFilters(value: unknown): AppFilters {
   }
   if (value.newOnly === true && !result.tags.includes("新作")) result.tags = [...result.tags, "新作"];
   result.newOnly = false;
-  if (typeof value.onlyGoingDay === "boolean") result.onlyGoingDay = value.onlyGoingDay;
+  if (value.day === "sat" || value.day === "sun" || value.day === null) result.day = value.day;
+  else if (value.onlyGoingDay === true) result.day = oldDay;
+  else if (Array.isArray(value.tags) && value.tags.includes("土曜だけ") !== value.tags.includes("日曜だけ")) {
+    result.day = value.tags.includes("土曜だけ") ? "sat" : "sun";
+  }
   return result;
 }
 
@@ -135,7 +139,7 @@ export function parseState(raw: string | null, knownProductIds: Set<string>): Ap
       day: parsed.day === "sat" || parsed.day === "sun" ? parsed.day : defaultState.day,
       budget: isNullableAmount(parsed.budget) ? parsed.budget : defaultState.budget,
       items: parseItems(parsed.items, knownProductIds),
-      filters: parseFilters(parsed.filters),
+      filters: parseFilters(parsed.filters, parsed.day === "sun" ? "sun" : "sat"),
       sort: parsed.tab === "insights" ? "recommended" : sorts.includes(parsed.sort as SortKey) ? parsed.sort as SortKey : defaultState.sort,
       nazocolle,
       today,

@@ -8,8 +8,6 @@ export const FEATURE_TAGS = [
   "その場で遊べる",
   "1人で遊べる",
   "千円以下",
-  "土曜だけ",
-  "日曜だけ",
 ] as const;
 
 export function featureTags(product: Product): string[] {
@@ -24,10 +22,6 @@ export function featureTags(product: Product): string[] {
   const minimumPlayers = product.players?.match(/^\s*(\d+)\s*(?:人|[〜～~\-－–—])/u)?.[1];
   if (minimumPlayers !== undefined && Number(minimumPlayers) === 1) tags.push("1人で遊べる");
   if (product.price !== null && product.price <= 1_000) tags.push("千円以下");
-  if (product.days.length === 1) {
-    if (product.days[0] === "sat") tags.push("土曜だけ");
-    if (product.days[0] === "sun") tags.push("日曜だけ");
-  }
   return tags;
 }
 

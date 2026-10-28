@@ -4,9 +4,7 @@ import {
   toggleItem,
   type CartItem,
 } from "../logic/cart.ts";
-import { buildRouteStops } from "../logic/route.ts";
 import { unboughtItemsByBooth } from "../logic/mapBooths.ts";
-import { getWalkGrid, planWalkingRoute, type WalkingRoute, type WalkingRouteStop } from "../logic/walkingRoute.ts";
 import type { ProductView } from "../logic/catalog.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import type { AppState } from "../state.ts";
@@ -18,8 +16,8 @@ import { productDialog } from "./productDialog.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
 import { venueMap, type BoothPaint, type VenueMapScale, type VenueMapUpdate } from "./venueMap.ts";
 
-const viewsById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
 const viewsByCode = new Map<string, ProductView[]>();
+const viewsById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
 for (const view of catalog) {
   const code = view.booth.boothCode;
   if (!code) continue;
@@ -40,11 +38,7 @@ for (const { code } of venueLayout.booths) {
   }
   boothByCodeForDay.set(code, dayBooths);
 }
-type RouteBucket = { stop: WalkingRouteStop; items: CartItem[]; booth: ProductView["booth"] | undefined };
 type MapProduct = { view: ProductView; card: ProductCardHandle };
-type MapRoutePlan = { route: WalkingRoute; buckets: RouteBucket[]; unplaced: CartItem[]; notSold: CartItem[] };
-
-const emptyWalkingRoute: WalkingRoute = { stops: [], legs: [], unreachable: [] };
 
 function boothForDay(code: string, day: AppState["day"]): ProductView["booth"] | undefined {
   return boothByCodeForDay.get(code)?.[day];
@@ -69,43 +63,6 @@ function boothPaints(state: AppState): Map<string, BoothPaint> {
   return paints;
 }
 
-function routePlan(state: AppState, result: ReturnType<typeof buildRouteStops>, route: WalkingRoute): MapRoutePlan {
-  const unplacedBooths = new Set([...result.unplaced, ...route.unreachable]);
-  const notSoldIds = new Set(result.notSoldThatDay);
-  const stopByBooth = new Map(route.stops.map((stop): [string, WalkingRouteStop] => [stop.boothId, stop]));
-  const itemsByBooth = new Map<string, CartItem[]>();
-  const unplaced: CartItem[] = [];
-  const notSold: CartItem[] = [];
-
-  for (const item of state.items) {
-    if (item.bought) continue;
-    if (notSoldIds.has(item.productId)) {
-      notSold.push(item);
-      continue;
-    }
-    const view = viewsById.get(item.productId);
-    if (!view) continue;
-    if (unplacedBooths.has(view.booth.id)) {
-      unplaced.push(item);
-      continue;
-    }
-    if (!stopByBooth.has(view.booth.id)) continue;
-    const items = itemsByBooth.get(view.booth.id) ?? [];
-    items.push(item);
-    itemsByBooth.set(view.booth.id, items);
-  }
-
-  const buckets = route.stops.map((stop) => {
-    const first = itemsByBooth.get(stop.boothId)?.[0];
-    return {
-      stop,
-      items: itemsByBooth.get(stop.boothId) ?? [],
-      booth: first ? viewsById.get(first.productId)?.booth : undefined,
-    };
-  });
-  return { route, buckets, unplaced, notSold };
-}
-
 function organizationLinks(booth: ProductView["booth"] | undefined): HTMLElement | undefined {
   if (!booth) return undefined;
   const links = el("div", "map-organization-links");
@@ -125,7 +82,20 @@ export type MapView = { element: HTMLElement; sync: (state: AppState) => void };
 
 export function mapView(store: AppStore): MapView {
   const page = el("section", "map-page");
-  page.append(el("h2", "section-title", "会場マップと回る順番"));
+  page.append(el("h2", "section-title", "会場マップ"));
+
+  const dayGroup = el("div", "day-picker");
+  dayGroup.setAttribute("role", "group");
+  dayGroup.setAttribute("aria-label", "地図の表示日");
+  const dayButtons = new Map<Day, HTMLButtonElement>();
+  for (const [day, label] of [["sat", "土 11/7"], ["sun", "日 11/8"]] as const) {
+    const dayButton = button(label, "day-button");
+    dayButton.setAttribute("aria-pressed", "false");
+    dayButton.addEventListener("click", () => store.update((state) => ({ ...state, day })));
+    dayButtons.set(day, dayButton);
+    dayGroup.append(dayButton);
+  }
+  page.append(dayGroup);
 
   const workspace = el("div", "map-workspace");
   const mapColumn = el("section", "map-column");
@@ -177,7 +147,7 @@ export function mapView(store: AppStore): MapView {
     syncPanel(store.getState());
   });
   mapFrame.append(map);
-  mapColumn.append(boothPicker, toolbar, mapFrame);
+  mapColumn.append(boothPicker, toolbar, mapFrame, el("p", "map-scroll-help", "拡大した地図は左右に動かせます。"));
 
   const legend = el("div", "map-legend");
   legend.setAttribute("role", "group");
@@ -188,39 +158,16 @@ export function mapView(store: AppStore): MapView {
   const noShowEntry = el("span", "map-legend-entry");
   noShowEntry.append(el("span", "map-legend-swatch map-no-show-swatch"), el("span", "", "出展なし"));
   legend.append(noShowEntry);
-  const routeEntry = el("span", "map-legend-entry");
-  routeEntry.append(el("span", "map-route-swatch"), el("span", "", "回る順番"));
-  legend.append(routeEntry);
   mapColumn.append(legend);
+  const remainingSection = el("section", "map-remaining");
+  const remainingHeading = el("h3", "map-remaining-heading");
+  const remainingList = el("div", "map-remaining-list");
+  const remainingNote = el("p", "map-remaining-note");
+  remainingSection.append(remainingHeading, remainingList, remainingNote);
+  mapColumn.append(remainingSection);
   workspace.append(mapColumn, panel);
 
-  const routeSection = el("section", "map-route-section");
-  routeSection.append(el("h3", "map-section-title", "回る順番"));
-  const routeOptions = el("div", "map-route-options");
-  const showRouteLabel = el("label", "check-option");
-  const showRouteInput = el("input");
-  showRouteInput.type = "checkbox";
-  showRouteInput.addEventListener("change", () => {
-    store.update((state) => ({ ...state, route: { ...state.route, show: showRouteInput.checked } }));
-  });
-  showRouteLabel.append(showRouteInput, el("span", "", "回る順番を表示"));
-  const specialLabel = el("label", "check-option");
-  const specialInput = el("input");
-  specialInput.type = "checkbox";
-  specialInput.addEventListener("change", () => {
-    store.update((state) => ({ ...state, route: { ...state.route, frontLoadSpecial: specialInput.checked } }));
-  });
-  specialLabel.append(specialInput, el("span", "", "新作・限定のあるブースを先に回る"));
-  routeOptions.append(showRouteLabel, specialLabel);
-
-  const routeSummary = el("div", "map-route-summary");
-  const routeEmpty = el("p", "map-route-empty", "回るブースはありません。リストに未購入の商品を入れると順番を表示します。");
-  const routeList = el("ol", "map-route-list");
-  routeList.setAttribute("aria-label", "回る順番");
-  const routeNotices = el("div", "map-route-notices");
-  routeSummary.append(routeEmpty, routeList, routeNotices);
-  routeSection.append(routeOptions, routeSummary);
-  page.append(workspace, routeSection, details.element);
+  page.append(workspace, details.element);
 
   let scale: VenueMapScale = typeof window.matchMedia === "function" && window.matchMedia("(max-width: 767px)").matches ? 2 : 1;
   map.setScale(scale);
@@ -319,14 +266,11 @@ export function mapView(store: AppStore): MapView {
     renderedPanelItems = state.items;
   }
 
-  let routeViewKey = "";
   let previousPaintDay: Day | undefined;
   let previousPaintItems: CartItem[] | undefined;
-  let previousRouteKey = "";
-  let previousShowRoute: boolean | undefined;
   let pickerDay: Day | undefined;
-  let currentRoute = emptyWalkingRoute;
   const sync = (state: AppState) => {
+    for (const [day, dayButton] of dayButtons) dayButton.setAttribute("aria-pressed", String(day === state.day));
     if (pickerDay !== state.day) {
       const placeholder = el("option", "", "ブースを選択");
       placeholder.value = "";
@@ -349,80 +293,42 @@ export function mapView(store: AppStore): MapView {
       update.paintBooth = (booth) => paints.get(booth.code);
       previousPaintDay = state.day;
       previousPaintItems = state.items;
-    }
-    const routeInput = buildRouteStops(state.items, catalog, venueLayout, state.day, { onlyUnbought: true });
-    const nextRouteKey = JSON.stringify([
-      state.day,
-      state.route.frontLoadSpecial,
-      routeInput.stops.map(({ boothId, code, special }) => [boothId, code, special]),
-    ]);
-    const routePlanChanged = previousRouteKey !== nextRouteKey;
-    const routeVisibilityChanged = previousShowRoute !== state.route.show;
-    const routeChanged = routePlanChanged || routeVisibilityChanged;
-    if (routePlanChanged) {
-      currentRoute = routeInput.stops.length
-        ? planWalkingRoute(getWalkGrid(venueLayout), routeInput.stops, {
-          frontLoadSpecial: state.route.frontLoadSpecial,
-        })
-        : emptyWalkingRoute;
-      previousRouteKey = nextRouteKey;
-    }
-    const plan = routePlan(state, routeInput, currentRoute);
-    if (routeChanged) {
-      update.route = state.route.show ? plan.route : emptyWalkingRoute;
-      previousShowRoute = state.route.show;
-    }
-    if (paintsChanged || routeChanged) map.update(update);
-    showRouteInput.checked = state.route.show;
-    specialInput.checked = state.route.frontLoadSpecial;
-    routeSummary.hidden = !state.route.show;
-    const nextRouteViewKey = JSON.stringify([
-      state.route.show,
-      plan.buckets.map(({ stop, items, booth }) => [stop.code, booth?.name, items.length]),
-      plan.unplaced.map((item) => item.productId),
-      plan.notSold.map((item) => item.productId),
-    ]);
-    if (nextRouteViewKey !== routeViewKey) {
-      routeViewKey = nextRouteViewKey;
-      routeEmpty.hidden = plan.buckets.length > 0;
-      routeList.hidden = plan.buckets.length === 0;
-      routeList.replaceChildren(...plan.buckets.map(({ stop, items, booth }, index) => {
-        const name = booth?.name ?? stop.code;
-        const entry = el("li", "map-route-item");
-        entry.append(
-          el("span", "map-route-number", (index + 1) + "."),
-          el("strong", "map-route-organization", name),
-          el("small", "map-route-booth", stop.code),
-          el("span", "map-route-count", items.length + "件"),
-        );
-        return entry;
-      }));
-
-      const notices: HTMLElement[] = [];
-      if (plan.unplaced.length) {
-        const section = el("section", "map-route-notice");
-        section.append(el("h4", "", "場所が未定"));
-        const list = el("ul");
-        for (const item of plan.unplaced) {
-          const view = viewsById.get(item.productId);
-          if (view) list.append(el("li", "", view.product.name + " — " + view.booth.name));
+      const remaining = new Map<string, { booth: ProductView["booth"]; count: number }>();
+      let otherDay = 0;
+      for (const item of state.items) {
+        if (item.bought) continue;
+        const view = viewsById.get(item.productId);
+        if (!view) continue;
+        if (!view.product.days.includes(state.day) || !view.booth.days.includes(state.day)) {
+          otherDay += 1;
+          continue;
         }
-        section.append(list);
-        notices.push(section);
+        const entry = remaining.get(view.booth.id) ?? { booth: view.booth, count: 0 };
+        entry.count += 1;
+        remaining.set(view.booth.id, entry);
       }
-      if (plan.notSold.length) {
-        const section = el("section", "map-route-notice");
-        section.append(el("h4", "", "この日は売っていません"));
-        const list = el("ul");
-        for (const item of plan.notSold) {
-          const view = viewsById.get(item.productId);
-          if (view) list.append(el("li", "", view.product.name + " — " + view.booth.name));
+      remainingHeading.textContent = "まだ買うものがある団体（" + (state.day === "sat" ? "土曜" : "日曜") + "）";
+      remainingList.replaceChildren();
+      for (const { booth, count } of remaining.values()) {
+        const text = booth.name + " " + (booth.boothCode ?? "場所未定") + " 未購入" + count + "件";
+        if (!booth.boothCode) {
+          remainingList.append(el("p", "map-remaining-unplaced", text));
+          continue;
         }
-        section.append(list);
-        notices.push(section);
+        const code = booth.boothCode;
+        const selectBooth = button(text, "map-remaining-button");
+        selectBooth.addEventListener("click", () => {
+          selectedCode = code;
+          boothSelect.value = code;
+          syncPanel(store.getState());
+          panel.scrollIntoView({ block: "start" });
+        });
+        remainingList.append(selectBooth);
       }
-      routeNotices.replaceChildren(...notices);
+      if (remaining.size === 0) remainingList.append(el("p", "map-remaining-empty", "この日の未購入商品はありません。"));
+      remainingNote.textContent = otherDay ? "別の日に出展する未購入商品が" + otherDay + "件あります。" : "";
     }
+    if (paintsChanged) map.update(update);
     syncPanel(state);
   };
 

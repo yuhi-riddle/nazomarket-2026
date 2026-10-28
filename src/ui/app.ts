@@ -48,20 +48,7 @@ export function app(root: HTMLElement): void {
   brandCopy.append(title, eventMeta, unofficial);
   brand.replaceChildren(brandMark, brandCopy);
 
-  const dayGroup = el("div", "day-picker");
-  dayGroup.setAttribute("role", "group");
-  dayGroup.setAttribute("aria-label", "行く日");
-  const dayButtons = new Map<"sat" | "sun", HTMLButtonElement>();
-  for (const [day, labelText] of [["sat", "土 11/7"], ["sun", "日 11/8"]] as const) {
-    const dayButton = button(labelText, "day-button");
-    dayButton.setAttribute("aria-pressed", "false");
-    dayButton.addEventListener("click", () => {
-      store.update((state) => ({ ...state, day }));
-    });
-    dayButtons.set(day, dayButton);
-    dayGroup.append(dayButton);
-  }
-  headerMain.append(brand, dayGroup);
+  headerMain.append(brand);
 
   const tablist = el("nav", "tab-list");
   tablist.setAttribute("role", "tablist");
@@ -140,8 +127,9 @@ export function app(root: HTMLElement): void {
   const meter = budgetMeter(() => store.update((state) => ({ ...state, tab: "cart" })));
   const footer = el("footer", "app-footer");
   const footerText = el("p", "", "非公式の個人用ツールです。出典の最新取得日：" + (dataGeneratedAt || "不明") + "（取得日は商品ごとに異なります）。正確な情報は公式サイト・各団体の告知で確認してください。");
+  const rights = el("p", "image-rights", "掲載画像の権利は各権利者に帰属します。画像は各提供元のURLを参照しています。");
   const officialLink = safeExternalLink("https://www.scrapmagazine.com/s/nazomarket/", "ナゾトキマーケット公式サイト");
-  footer.append(footerText);
+  footer.append(footerText, rights);
   if (officialLink) footer.append(officialLink);
 
   root.replaceChildren(header, main, meter.element, footer);
@@ -169,10 +157,6 @@ export function app(root: HTMLElement): void {
     }
   };
   const syncHeader = (state: AppState) => {
-    for (const [day, dayButton] of dayButtons) {
-      const selected = state.day === day;
-      dayButton.setAttribute("aria-pressed", String(selected));
-    }
     for (const tab of tabOrder) {
       const selected = state.tab === tab;
       const tabButton = tabButtons.get(tab);

@@ -1,6 +1,6 @@
 import { CATEGORY_NAMES, type ProductView } from "../logic/catalog.ts";
 import type { CartItem } from "../logic/cart.ts";
-import { button, el } from "./dom.ts";
+import { button, el, safeExternalLink } from "./dom.ts";
 
 export type ProductCardActions = {
   onDetail: (view: ProductView) => void;
@@ -78,6 +78,17 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     if (product.difficulty.source === "estimated") difficulty.append(el("span", "tag tag-small", "推定"));
   }
   body.append(difficulty, priceElement, oneLiner);
+
+  const boothLinks = el("div", "product-booth-links");
+  for (const [label, urls] of [["X", view.booth.links.x], ["団体サイト", view.booth.links.site]] as const) {
+    for (const [index, url] of urls.entries()) {
+      const link = safeExternalLink(url, label, "product-booth-link");
+      if (!link) continue;
+      link.setAttribute("aria-label", view.booth.name + "の" + label + (urls.length > 1 ? " " + (index + 1) : "") + "（新しいタブで開く）");
+      boothLinks.append(link);
+    }
+  }
+  if (boothLinks.childElementCount) body.append(boothLinks);
 
   const tags = el("div", "product-tags");
   const tagButtons = new Map<string, HTMLButtonElement>();

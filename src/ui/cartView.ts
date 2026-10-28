@@ -1,28 +1,24 @@
-import { catalog, venueLayout } from "../data.ts";
+import { catalog } from "../data.ts";
 import {
   cartTotals,
   daySummary,
   exportCartText,
-  nazocolleProgress,
   removeItem,
   setQty,
   toggleBought,
   type CartItem,
 } from "../logic/cart.ts";
-import type { ProductView } from "../logic/catalog.ts";
-import { buildRouteStops } from "../logic/route.ts";
-import { getWalkGrid, planWalkingRoute } from "../logic/walkingRoute.ts";
+import { sortCatalog, type ProductView } from "../logic/catalog.ts";
 import type { AppState } from "../state.ts";
 import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
 import { productDialog } from "./productDialog.ts";
 
 const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
-const boothById = new Map(catalog.map((view): [string, ProductView["booth"]] => [view.booth.id, view.booth]));
 
 type CartRow = { element: HTMLElement; update: (item: CartItem, hideBought: boolean) => void };
 type CartSection = { element: HTMLElement; heading: HTMLElement; rows: HTMLElement; idsKey: string; title: string };
-type RouteBucket = { key: string; title: string; ids: string[]; organization?: string; boothCode?: string };
+type CartBucket = { key: string; title: string; ids: string[]; organization: string; boothCode: string };
 
 export type CartView = { element: HTMLElement; sync: (state: AppState) => void };
 
@@ -105,66 +101,21 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
   return { element: row, update };
 }
 
-function routeBuckets(state: AppState): RouteBucket[] {
-  const { stops, unplaced, notSoldThatDay } = buildRouteStops(
-    state.items,
-    catalog,
-    venueLayout,
-    state.day,
-    { onlyUnbought: true },
-  );
-  const walkingRoute = stops.length
-    ? planWalkingRoute(getWalkGrid(venueLayout), stops, { frontLoadSpecial: state.route.frontLoadSpecial })
-    : { stops: [], legs: [], unreachable: [] };
-  const ordered = walkingRoute.stops;
-  const placedByBooth = new Map<string, string[]>();
-  for (const stop of ordered) placedByBooth.set(stop.boothId, []);
-  const unplacedIds = new Set<string>();
-  const notSoldIds = new Set(notSoldThatDay);
-  const unplacedBooths = new Set([...unplaced, ...walkingRoute.unreachable]);
-  const boughtIds: string[] = [];
-
-  for (const item of state.items) {
-    const view = viewById.get(item.productId);
-    if (!view || notSoldIds.has(item.productId)) continue;
-    if (unplacedBooths.has(view.booth.id)) {
-      unplacedIds.add(item.productId);
-      continue;
+function cartBuckets(items: CartItem[]): CartBucket[] {
+  const selected = new Set(items.map((item) => item.productId));
+  const buckets = new Map<string, CartBucket>();
+  for (const view of sortCatalog(catalog, "booth")) {
+    if (!selected.has(view.product.id)) continue;
+    const key = "booth:" + view.booth.id;
+    let bucket = buckets.get(key);
+    if (!bucket) {
+      const boothCode = view.booth.boothCode ?? "番号未定";
+      bucket = { key, title: view.booth.name + " " + boothCode, organization: view.booth.name, boothCode, ids: [] };
+      buckets.set(key, bucket);
     }
-    const bucket = placedByBooth.get(view.booth.id);
-    if (bucket) bucket.push(item.productId);
-    else if (item.bought) boughtIds.push(item.productId);
+    bucket.ids.push(view.product.id);
   }
-
-  const buckets: RouteBucket[] = [];
-  ordered.forEach((stop, index) => {
-    const ids = placedByBooth.get(stop.boothId) ?? [];
-    const booth = boothById.get(stop.boothId);
-    if (!booth || !ids.length) return;
-    buckets.push({
-      key: "booth:" + stop.boothId,
-      title: (index + 1) + ". " + booth.name + " " + stop.code,
-      organization: booth.name,
-      boothCode: stop.code,
-      ids,
-    });
-  });
-  if (boughtIds.length) buckets.push({ key: "bought", title: "買ったもの", ids: boughtIds });
-  if (unplacedIds.size) {
-    buckets.push({
-      key: "unplaced",
-      title: "場所が未定",
-      ids: state.items.filter((item) => unplacedIds.has(item.productId)).map((item) => item.productId),
-    });
-  }
-  if (notSoldIds.size) {
-    buckets.push({
-      key: "not-sold",
-      title: "この日は売っていません",
-      ids: state.items.filter((item) => notSoldIds.has(item.productId)).map((item) => item.productId),
-    });
-  }
-  return buckets;
+  return [...buckets.values()];
 }
 
 export function cartView(store: AppStore): CartView {
@@ -180,7 +131,7 @@ export function cartView(store: AppStore): CartView {
     ["total", "合計", "0円"],
     ["spent", "使った金額", "0円"],
     ["remaining", "残り予算", "—"],
-    ["points", "購入点数", "0点"],
+    ["points", "GET（購入点数）", "0 / 0点"],
   ]) {
     const tile = el("div", "today-summary-tile");
     const value = el("strong", "today-summary-value", initial);
@@ -209,7 +160,7 @@ export function cartView(store: AppStore): CartView {
   const allBought = el("p", "today-all-bought");
   allBought.setAttribute("role", "status");
 
-  const routeTitle = el("h3", "today-route-title", "回る順番");
+  const routeTitle = el("h3", "today-route-title", "ブース別リスト");
   const groupsRoot = el("div", "today-route-groups cart-groups");
   const hideBoughtLabel = el("label", "check-option today-hide-bought");
   const hideBoughtInput = el("input");
@@ -224,26 +175,6 @@ export function cartView(store: AppStore): CartView {
   const goCatalog = button("一覧を見る", "button button-primary");
   goCatalog.addEventListener("click", () => store.update((state) => ({ ...state, tab: "catalog" })));
   empty.append(goCatalog);
-
-  const nazocolle = el("section", "today-nazocolle cart-nazocolle");
-  nazocolle.append(el("h3", "cart-section-title", "ナゾコレ"));
-  const nazocolleIntro = el("p", "today-nazocolle-intro");
-  const pointsLabel = el("label", "today-points-field");
-  const pointsInput = el("input", "text-input today-points-input");
-  pointsInput.type = "number";
-  pointsInput.min = "1";
-  pointsInput.max = "20";
-  pointsInput.step = "1";
-  pointsInput.inputMode = "numeric";
-  pointsInput.setAttribute("aria-label", "何点で1回？ 1から20の整数。空欄で未設定");
-  pointsInput.setAttribute("aria-describedby", "today-points-error");
-  pointsLabel.append(el("span", "field-label", "何点で1回？"), pointsInput);
-  const nazocolleResult = el("p", "today-nazocolle-result");
-  nazocolleResult.setAttribute("aria-live", "polite");
-  const pointsError = el("p", "today-points-error");
-  pointsError.id = "today-points-error";
-  pointsError.setAttribute("role", "status");
-  nazocolle.append(nazocolleIntro, pointsLabel, nazocolleResult, pointsError);
 
   const actions = el("div", "cart-actions");
   const copyButton = button("テキストでコピー", "button button-secondary");
@@ -273,7 +204,6 @@ export function cartView(store: AppStore): CartView {
     allBought,
     hideBoughtLabel,
     empty,
-    nazocolle,
     actions,
     copyStatus,
     fallbackText,
@@ -286,7 +216,6 @@ export function cartView(store: AppStore): CartView {
   let previousItems: CartItem[] | undefined;
   let previousItemById = new Map<string, CartItem>();
   let previousBudget: number | null | undefined;
-  let previousPointsPerDraw: number | null | undefined;
   let previousHideBought: boolean | undefined;
   let previousRouteKey = "";
   let previousSectionKeys: string[] = [];
@@ -298,29 +227,6 @@ export function cartView(store: AppStore): CartView {
     if (budget !== null && (!Number.isFinite(budget) || budget < 0)) return;
     if (store.getState().budget !== budget) store.update((state) => ({ ...state, budget }));
   });
-  pointsInput.addEventListener("input", () => {
-    const value = pointsInput.value;
-    if (value === "") {
-      pointsError.textContent = "";
-      pointsInput.setAttribute("aria-invalid", "false");
-      if (store.getState().nazocolle.pointsPerDraw !== null) {
-        store.update((state) => ({ ...state, nazocolle: { pointsPerDraw: null } }));
-      }
-      return;
-    }
-    const pointsPerDraw = Number(value);
-    if (!Number.isInteger(pointsPerDraw) || pointsPerDraw < 1 || pointsPerDraw > 20) {
-      pointsError.textContent = "1〜20の整数を入力してください";
-      pointsInput.setAttribute("aria-invalid", "true");
-      return;
-    }
-    pointsError.textContent = "";
-    pointsInput.setAttribute("aria-invalid", "false");
-    if (store.getState().nazocolle.pointsPerDraw !== pointsPerDraw) {
-      store.update((state) => ({ ...state, nazocolle: { pointsPerDraw } }));
-    }
-  });
-
   copyButton.addEventListener("click", async () => {
     const text = exportCartText(store.getState().items, catalog);
     fallbackText.value = text;
@@ -365,23 +271,15 @@ export function cartView(store: AppStore): CartView {
     remaining.value.textContent = spent.remaining === null
       ? "—"
       : spent.remaining < 0
-        ? format(-spent.remaining) + "超過"
+        ? "OVER +" + format(-spent.remaining)
         : format(spent.remaining);
-    summaryValues.get("points")!.value.textContent = spent.boughtQty + "点";
+    summaryValues.get("points")!.value.textContent = spent.boughtQty + " / " + totals.qty + "点";
     unknownPrice.textContent = totals.unknownPrice
       ? "価格不明 " + totals.unknownPrice + "件（合計に含まれていません）"
       : "";
     unknownBought.textContent = spent.unknownPriceBought
       ? "買った商品のうち価格不明 " + spent.unknownPriceBought + "件は、使った金額に含まれていません"
       : "";
-    nazocolleIntro.textContent = "購入" + spent.boughtQty + "点。福引は購入数に応じて最大5回";
-    const pointsPerDraw = state.nazocolle.pointsPerDraw;
-    const progress = nazocolleProgress(spent.boughtQty, { pointsPerDraw, maxDraws: 5 });
-    nazocolleResult.textContent = pointsPerDraw === null
-      ? "点数を入力すると福引の回数を表示します"
-      : progress.maxed
-        ? "福引は最大の5回分です"
-        : "福引" + progress.draws + "回分・あと" + progress.nextIn + "点で次の1回";
     allBought.textContent = state.items.length > 0 && spent.leftToBuy === 0
       ? "リストの商品はすべて買いました"
       : "";
@@ -413,30 +311,18 @@ export function cartView(store: AppStore): CartView {
       }
     }
 
-    const routeKey = JSON.stringify([
-      state.day,
-      state.route.frontLoadSpecial,
-      state.items.map((item) => [item.productId, item.bought]),
-    ]);
+    const routeKey = JSON.stringify(state.items.map((item) => item.productId));
     if (routeKey !== previousRouteKey) {
-      const buckets = routeBuckets(state);
+      const buckets = cartBuckets(state.items);
       const nextKeys = buckets.map((bucket) => bucket.key);
       const activeKeys = new Set(nextKeys);
       const orderedSections = buckets.map((bucket) => {
         const section = getSection(bucket.key);
         if (section.title !== bucket.title) {
           section.title = bucket.title;
-          const prefix = bucket.title.match(/^(\d+\.)/)?.[1];
-          if (prefix && bucket.organization && bucket.boothCode) {
-            const organization = el("strong", "today-route-organization", bucket.organization);
-            const boothCode = el("small", "today-route-booth", bucket.boothCode);
-            boothCode.setAttribute("aria-hidden", "true");
-            section.heading.replaceChildren(document.createTextNode(prefix + " "), organization, boothCode);
-            section.heading.setAttribute("aria-label", bucket.title);
-          } else {
-            section.heading.removeAttribute("aria-label");
-            section.heading.textContent = bucket.title;
-          }
+          const organization = el("strong", "today-route-organization", bucket.organization);
+          const boothCode = el("small", "today-route-booth", bucket.boothCode);
+          section.heading.replaceChildren(organization, document.createTextNode(" "), boothCode);
         }
         const idsKey = JSON.stringify(bucket.ids);
         if (section.idsKey !== idsKey) {
@@ -475,19 +361,11 @@ export function cartView(store: AppStore): CartView {
       previousRouteKey = routeKey;
     }
 
-    const shouldUpdateTotals = previousItems !== state.items
-      || previousBudget !== state.budget
-      || previousPointsPerDraw !== state.nazocolle.pointsPerDraw;
+    const shouldUpdateTotals = previousItems !== state.items || previousBudget !== state.budget;
     if (shouldUpdateTotals) updateTotals(state);
     if (previousBudget !== state.budget) {
       if (document.activeElement !== budgetInput) budgetInput.value = state.budget === null ? "" : String(state.budget);
       previousBudget = state.budget;
-    }
-    if (previousPointsPerDraw !== state.nazocolle.pointsPerDraw) {
-      if (document.activeElement !== pointsInput) {
-        pointsInput.value = state.nazocolle.pointsPerDraw === null ? "" : String(state.nazocolle.pointsPerDraw);
-      }
-      previousPointsPerDraw = state.nazocolle.pointsPerDraw;
     }
     if (previousHideBought !== state.today.hideBought) {
       hideBoughtInput.checked = state.today.hideBought;
