@@ -20,7 +20,7 @@ describe("featureTags", () => {
     expect(featureTags(p)).toEqual(["新作", "限定", "持ち帰り", "1人で遊べる", "千円以下", "土曜だけ"]);
   });
   it("その場で遊べるもの・日曜だけ・値が無いものは付けない", () => {
-    expect(featureTags(product({ id: "a", boothId: "no01", category: "online", playMinutes: 20, price: 1500, days: ["sun"] }))).toEqual([
+    expect(featureTags(product({ id: "a", boothId: "no01", category: "online", playMinutes: { min: 20, max: 20 }, price: 1500, days: ["sun"] }))).toEqual([
       "その場で遊べる",
       "日曜だけ",
     ]);
@@ -39,7 +39,7 @@ describe("featureTags", () => {
 describe("特徴タグで絞り込む", () => {
   const products = [
     product({ id: "p01", boothId: "no01", isNew: true, category: "kit" }),
-    product({ id: "p02", boothId: "no01", isNew: true, category: "online", playMinutes: 10 }),
+    product({ id: "p02", boothId: "no01", isNew: true, category: "online", playMinutes: { min: 10, max: 10 } }),
     product({ id: "p03", boothId: "no01", isNew: null, category: "kit" }),
   ];
   const catalog = buildCatalog(products, [booth({ id: "no01", boothCode: "A1" })], layout);

@@ -6,28 +6,25 @@ import { budgetMeter } from "./budgetMeter.ts";
 import { catalogView } from "./catalogView.ts";
 import { cartView } from "./cartView.ts";
 import { mapView } from "./mapView.ts";
-import { insightsView } from "./insightsView.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 
 const tabNames: Record<TabId, string> = {
   catalog: "一覧",
   cart: "リスト",
   map: "マップ",
-  insights: "おすすめ",
 };
-const tabOrder: TabId[] = ["catalog", "cart", "map", "insights"];
+const tabOrder: TabId[] = ["catalog", "cart", "map"];
 const hashNames: Record<TabId, string> = {
   catalog: "catalog",
   cart: "list",
   map: "map",
-  insights: "insights",
 };
 
 function tabFromHash(): TabId | null {
   const hash = window.location.hash.replace(/^#/, "");
   if (hash === "catalog" || hash === "list") return hash === "list" ? "cart" : "catalog";
   if (hash === "map") return "map";
-  if (hash === "insights") return "insights";
+  if (hash === "insights") return "catalog";
   if (hash === "today") return "cart";
   return null;
 }
@@ -83,11 +80,6 @@ export function app(root: HTMLElement): void {
         el("span", "tab-label-text", tabNames[tab]),
         el("span", "tab-count", String(store.getState().items.length)),
       );
-    } else if (tab === "insights") {
-      label.append(
-        el("span", "tab-label-full", tabNames[tab]),
-        el("span", "tab-label-short", "おすすめ"),
-      );
     } else {
       label.textContent = tabNames[tab];
     }
@@ -119,7 +111,7 @@ export function app(root: HTMLElement): void {
   type LazyPage = {
     element: HTMLElement;
     sync: (state: AppState) => void;
-    updateItems?: (items: CartItem[]) => void;
+    updateItems?: (items: CartItem[], state: AppState) => void;
   };
   const pages = new Map<TabId, LazyPage>();
   for (const tab of tabOrder) {
@@ -139,9 +131,7 @@ export function app(root: HTMLElement): void {
       ? catalogView(store)
       : tab === "cart"
         ? cartView(store)
-        : tab === "map"
-          ? mapView(store)
-          : insightsView(store);
+        : mapView(store);
     pages.set(tab, page);
     panels.get(tab)?.append(page.element);
     return page;
@@ -149,7 +139,7 @@ export function app(root: HTMLElement): void {
 
   const meter = budgetMeter(() => store.update((state) => ({ ...state, tab: "cart" })));
   const footer = el("footer", "app-footer");
-  const footerText = el("p", "", "非公式の個人用ツールです。商品情報は" + (dataGeneratedAt || "日付不明") + "時点のもの（データ生成日）。正確な情報は公式サイト・各団体の告知で確認してください。");
+  const footerText = el("p", "", "非公式の個人用ツールです。出典の最新取得日：" + (dataGeneratedAt || "不明") + "（取得日は商品ごとに異なります）。正確な情報は公式サイト・各団体の告知で確認してください。");
   const officialLink = safeExternalLink("https://www.scrapmagazine.com/s/nazomarket/", "ナゾトキマーケット公式サイト");
   footer.append(footerText);
   if (officialLink) footer.append(officialLink);
@@ -203,6 +193,11 @@ export function app(root: HTMLElement): void {
     meter.update(state.items, state.budget, true);
   };
   let renderedTab: TabId | undefined;
+  const sameCartPlan = (a: CartItem[], b: CartItem[]): boolean => {
+    if (a.length !== b.length) return false;
+    const previous = new Map(a.map((item): [string, number] => [item.productId, item.qty]));
+    return b.every((item) => previous.get(item.productId) === item.qty);
+  };
   const render = (state: AppState, previous?: AppState) => {
     syncHeader(state);
     const tabChanged = renderedTab !== state.tab;
@@ -210,10 +205,14 @@ export function app(root: HTMLElement): void {
     if (!previous || tabChanged) {
       page.sync(state);
     } else if (state.tab === "catalog") {
-      if (state.filters !== previous.filters || state.sort !== previous.sort || state.day !== previous.day) {
+      const listPlanChanged = !sameCartPlan(state.items, previous.items);
+      const preferenceBudgetChanged = state.prefs.budgetFromCart
+        && (state.budget !== previous.budget || listPlanChanged);
+      if (state.filters !== previous.filters || state.sort !== previous.sort || state.day !== previous.day
+        || state.prefs !== previous.prefs || (state.sort === "recommended" && (listPlanChanged || preferenceBudgetChanged))) {
         page.sync(state);
-      } else if (state.items !== previous.items) {
-        page.updateItems?.(state.items);
+      } else if (state.items !== previous.items || state.budget !== previous.budget) {
+        page.updateItems?.(state.items, state);
       }
     } else {
       page.sync(state);
@@ -225,11 +224,15 @@ export function app(root: HTMLElement): void {
 
   window.addEventListener("hashchange", () => {
     const tab = tabFromHash();
-    if (tab && tab !== store.getState().tab) store.update((state) => ({ ...state, tab }));
+    const oldInsightsHash = window.location.hash.replace(/^#/, "") === "insights";
+    if (tab && (tab !== store.getState().tab || (oldInsightsHash && store.getState().sort !== "recommended"))) {
+      store.update((state) => ({ ...state, tab, ...(oldInsightsHash ? { sort: "recommended" as const } : {}) }));
+    }
   });
   const fromHash = tabFromHash();
-  if (fromHash && fromHash !== store.getState().tab) {
-    store.update((state) => ({ ...state, tab: fromHash }));
+  const oldInsightsHash = window.location.hash.replace(/^#/, "") === "insights";
+  if (fromHash && (fromHash !== store.getState().tab || (oldInsightsHash && store.getState().sort !== "recommended"))) {
+    store.update((state) => ({ ...state, tab: fromHash, ...(oldInsightsHash ? { sort: "recommended" as const } : {}) }));
   } else {
     setHash(store.getState().tab);
   }

@@ -16,9 +16,9 @@ import { booths, layout, product } from "./test-helpers.ts";
 
 const products = [
   product({ id: "p01", boothId: "no01", price: 800, category: "goods", difficulty: { level: null, source: "unknown", basis: null }, isNew: true }),
-  product({ id: "p02", boothId: "no02", price: 1000, category: "online", playMinutes: 20, difficulty: { level: 2, source: "estimated", basis: "b" } }),
-  product({ id: "p03", boothId: "no03", price: 2999, category: "kit", playMinutes: 120, difficulty: { level: 4, source: "official", basis: "b" }, isNew: false, limited: "数量限定" }),
-  product({ id: "p04", boothId: "no04", price: 5200, category: "booklet", playMinutes: 240, difficulty: { level: 5, source: "official", basis: "b" } }),
+  product({ id: "p02", boothId: "no02", price: 1000, category: "online", playMinutes: { min: 20, max: 20 }, difficulty: { level: 2, source: "estimated", basis: "b" } }),
+  product({ id: "p03", boothId: "no03", price: 2999, category: "kit", playMinutes: { min: 120, max: 120 }, difficulty: { level: 4, source: "official", basis: "b" }, isNew: false, limited: "数量限定" }),
+  product({ id: "p04", boothId: "no04", price: 5200, category: "booklet", playMinutes: { min: 240, max: 240 }, difficulty: { level: 5, source: "official", basis: "b" } }),
   product({ id: "p05", boothId: "no05", price: null, category: "kit", playMinutes: null, difficulty: { level: 3, source: "estimated", basis: "b" }, days: ["sat"] }),
 ];
 const catalog = buildCatalog(products, booths, layout);
@@ -71,8 +71,8 @@ describe("playStyleOf", () => {
     expect(playStyleOf(view("p01").product)).toBe("unknown");
   });
   it("所要時間が短いだけでは「その場」と決めない（家で遊ぶ短い謎もある）", () => {
-    expect(playStyleOf({ ...view("p03").product, playMinutes: 15 })).toBe("takeHome");
-    expect(playStyleOf({ ...view("p01").product, playMinutes: 15 })).toBe("unknown");
+    expect(playStyleOf({ ...view("p03").product, playMinutes: { min: 15, max: 15 } })).toBe("takeHome");
+    expect(playStyleOf({ ...view("p01").product, playMinutes: { min: 15, max: 15 } })).toBe("unknown");
   });
 });
 

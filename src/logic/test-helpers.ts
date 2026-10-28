@@ -10,7 +10,7 @@ export function product(over: Partial<Product> & { id: string; boothId: string }
     oneLiner: "一言",
     description: "説明",
     difficulty: { level: 3, source: "official", basis: "テスト" },
-    playMinutes: 60,
+    playMinutes: { min: 60, max: 60 },
     players: null,
     isNew: null,
     limited: null,

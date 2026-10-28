@@ -2,7 +2,7 @@ import type { Booth, Category, Day, Product, VenueLayout } from "../types.ts";
 import { featureTags } from "./tags.ts";
 
 export type DifficultyKey = 1 | 2 | 3 | 4 | 5 | "unknown";
-export type SortKey = "booth" | "priceAsc" | "priceDesc" | "difficultyAsc" | "difficultyDesc";
+export type SortKey = "recommended" | "booth" | "organization" | "priceAsc" | "priceDesc" | "difficultyAsc" | "difficultyDesc";
 
 export const CATEGORY_NAMES: Record<Category, string> = {
   kit: "持ち帰り謎キット",
@@ -28,7 +28,6 @@ export type Filters = {
   priceMax: number | null;
   difficulties: DifficultyKey[];
   categories: Category[];
-  areas: string[];
   tags: string[];
   newOnly: boolean;
   day: Day | null;
@@ -40,7 +39,6 @@ export const emptyFilters: Filters = {
   priceMax: null,
   difficulties: [],
   categories: [],
-  areas: [],
   tags: [],
   newOnly: false,
   day: null,
@@ -97,7 +95,6 @@ export function filterCatalog(catalog: ProductView[], filters: Filters): Product
       if (!filters.difficulties.includes(difficulty)) return false;
     }
     if (filters.categories.length && !filters.categories.includes(product.category)) return false;
-    if (filters.areas.length && (view.area === null || !filters.areas.includes(view.area))) return false;
     if (filters.tags.length && !filters.tags.every((tag) => view.featureTags.includes(tag))) return false;
     if (filters.newOnly && product.isNew !== true) return false;
     if (filters.day && !product.days.includes(filters.day)) return false;
@@ -117,6 +114,11 @@ function compareBooth(a: ProductView, b: ProductView): number {
 export function sortCatalog(catalog: ProductView[], sort: SortKey): ProductView[] {
   const result = [...catalog];
   if (sort === "booth") return result.sort(compareBooth);
+  if (sort === "organization") {
+    const collator = new Intl.Collator("ja");
+    return result.sort((a, b) => collator.compare(a.booth.name, b.booth.name) || compareBooth(a, b));
+  }
+  if (sort === "recommended") return result.sort(compareBooth);
 
   if (sort === "priceAsc" || sort === "priceDesc") {
     const direction = sort === "priceAsc" ? 1 : -1;
@@ -144,7 +146,6 @@ export function countActiveFilters(filters: Filters): number {
     + Number(filters.priceMin !== null || filters.priceMax !== null)
     + Number(filters.difficulties.length > 0)
     + Number(filters.categories.length > 0)
-    + Number(filters.areas.length > 0)
     + filters.tags.length
     + Number(filters.newOnly)
     + Number(filters.day !== null);

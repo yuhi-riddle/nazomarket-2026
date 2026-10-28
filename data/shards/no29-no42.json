@@ -272,7 +272,10 @@
             "source": "official",
             "basis": "団体表記 ★★☆（2/3）→ 2/3×5=3.3 → 3"
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
           "players": "1~2人",
           "isNew": true,
           "limited": "事前予約フォームあり（受付11/7 18:00まで）",
@@ -315,7 +318,10 @@
             "source": "official",
             "basis": "団体表記 ★★★（3/3）→ 3/3×5=5.0 → 5"
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
           "players": "1~2人",
           "isNew": false,
           "limited": null,
@@ -339,7 +345,10 @@
             "source": "official",
             "basis": "団体表記 ★☆☆（1/3）→ 1/3×5=1.7 → 2"
           },
-          "playMinutes": 15,
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
           "players": "1人",
           "isNew": false,
           "limited": null,
@@ -1452,7 +1461,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": 120,
+          "playMinutes": {
+            "min": 120,
+            "max": 240
+          },
           "players": null,
           "isNew": null,
           "limited": null,

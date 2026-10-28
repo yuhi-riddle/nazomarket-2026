@@ -52,6 +52,17 @@ describe("products.json", () => {
       }
     }
   });
+  it("所要時間は0以上の分数で、上限は下限以上または未確認", () => {
+    for (const p of products) {
+      if (p.playMinutes === null) continue;
+      expect(Number.isInteger(p.playMinutes.min), p.id).toBe(true);
+      expect(p.playMinutes.min, p.id).toBeGreaterThanOrEqual(0);
+      if (p.playMinutes.max !== null) {
+        expect(Number.isInteger(p.playMinutes.max), p.id).toBe(true);
+        expect(p.playMinutes.max, p.id).toBeGreaterThanOrEqual(p.playMinutes.min);
+      }
+    }
+  });
   it("出典が1件以上あり、URL と取得日の形が正しい", () => {
     for (const p of products) {
       expect(p.sources.length, p.id).toBeGreaterThan(0);

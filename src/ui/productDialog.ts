@@ -1,5 +1,6 @@
 import type { ProductView } from "../logic/catalog.ts";
 import { CATEGORY_NAMES } from "../logic/catalog.ts";
+import { formatPlayMinutes } from "../logic/playTime.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
@@ -45,7 +46,7 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
       const facts = el("dl", "dialog-facts");
       const factRows: Array<[string, string]> = [
         ["カテゴリ", CATEGORY_NAMES[product.category]],
-        ["所要時間", product.playMinutes === null ? "未確認" : product.playMinutes + "分"],
+        ["所要時間", formatPlayMinutes(product.playMinutes)],
         ["人数", product.players ?? "未確認"],
         ["支払い", product.payment?.join("・") ?? "未確認"],
         ["難易度", product.difficulty.level === null ? "不明" : product.difficulty.level + " / 5" + (product.difficulty.source === "estimated" ? "（推定）" : "")],

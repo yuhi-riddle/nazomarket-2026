@@ -1,5 +1,6 @@
 import type { Category, Day, Product } from "../types.ts";
 import type { ProductView } from "./catalog.ts";
+import type { CartItem } from "./cart.ts";
 
 export type Prefs = {
   budget: number | null;
@@ -106,17 +107,25 @@ function difficultyBounds(prefs: Prefs): { min: number; max: number } {
   return { min: Math.min(lower, upper), max: Math.max(lower, upper) };
 }
 
-export function scoreProduct(view: ProductView, prefs: Prefs): Scored | null {
+export function scoreProduct(
+  view: ProductView,
+  prefs: Prefs,
+  budgetLeftForThis: number | null = prefs.budget,
+  amountForThis: number | null = view.product.price,
+  alreadyInList = false,
+): Scored | null {
   const product = view.product;
   if (prefs.day !== null && (!product.days.includes(prefs.day) || !view.booth.days.includes(prefs.day))) return null;
 
   let score = 0;
   const reasons: string[] = [];
 
-  if (prefs.budget !== null && product.price !== null) {
-    if (product.price > prefs.budget) return null;
-    score += 2;
-    reasons.push("予算内");
+  if (budgetLeftForThis !== null && amountForThis !== null) {
+    if (amountForThis > budgetLeftForThis && !alreadyInList) return null;
+    if (amountForThis <= budgetLeftForThis) {
+      score += 2;
+      reasons.push("予算内");
+    }
   }
 
   if (prefs.difficultyMin !== null || prefs.difficultyMax !== null) {
@@ -169,6 +178,48 @@ function compareBooth(a: ProductView, b: ProductView): number {
   if (a.boothNumber !== null && b.boothNumber === null) return -1;
   const boothNumber = (a.boothNumber ?? 0) - (b.boothNumber ?? 0);
   return boothNumber || a.product.id.localeCompare(b.product.id, "en");
+}
+
+export function rankForCatalog(
+  catalog: ProductView[],
+  prefs: Prefs,
+  items: CartItem[],
+  budget: number | null,
+): { matched: Scored[]; others: ProductView[] } {
+  const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
+  const quantityById = new Map(items.map((item): [string, number] => [item.productId, item.qty]));
+  const listAmountById = new Map<string, number>();
+  let listTotal = 0;
+  for (const item of items) {
+    const price = viewById.get(item.productId)?.product.price;
+    if (price === null || price === undefined) continue;
+    const amount = price * item.qty;
+    listAmountById.set(item.productId, amount);
+    listTotal += amount;
+  }
+
+  const matched: Scored[] = [];
+  const others: ProductView[] = [];
+  for (const view of catalog) {
+    const productId = view.product.id;
+    const inList = quantityById.has(productId);
+    const otherItemsTotal = listTotal - (listAmountById.get(productId) ?? 0);
+    const budgetLeftForThis = budget === null ? null : budget - otherItemsTotal;
+    const amountForThis = view.product.price === null
+      ? null
+      : view.product.price * (quantityById.get(productId) ?? 1);
+    const scored = scoreProduct(view, prefs, budgetLeftForThis, amountForThis, inList);
+    if (!scored) continue;
+    if (scored.score > 0) matched.push(scored);
+    else others.push(view);
+  }
+
+  matched.sort((a, b) => b.score - a.score
+    || (a.view.product.price === null ? (b.view.product.price === null ? 0 : 1)
+      : b.view.product.price === null ? -1 : a.view.product.price - b.view.product.price)
+    || compareBooth(a.view, b.view));
+  others.sort(compareBooth);
+  return { matched, others };
 }
 
 export function recommend(catalog: ProductView[], prefs: Prefs, excludeIds: Set<string>, limit: number): Scored[] {

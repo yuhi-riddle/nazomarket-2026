@@ -60,7 +60,10 @@
             "source": "estimated",
             "basis": "所要時間60〜120分・1人用の標準的な持ち帰り謎で、HPにも難易度の表記がないため標準の3と推定"
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": 120
+          },
           "players": "1人～",
           "limited": null,
           "sources": [
@@ -71,6 +74,10 @@
             {
               "url": "https://x.com/Tri_Mobius/status/2110672044383678683",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://tri-mobius.com/goods/",
+              "retrievedAt": "2026-10-28"
             }
           ],
           "isNew": true,
@@ -95,7 +102,10 @@
             "source": "estimated",
             "basis": "所要時間60〜120分・1人用の標準的な持ち帰り謎で、HPにも難易度の表記がないため標準の3と推定"
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": 120
+          },
           "players": "1人～",
           "limited": null,
           "sources": [
@@ -106,6 +116,10 @@
             {
               "url": "https://x.com/Tri_Mobius/status/2110687136848461967",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://tri-mobius.com/goods/",
+              "retrievedAt": "2026-10-28"
             }
           ],
           "isNew": true,
@@ -130,13 +144,20 @@
             "source": "estimated",
             "basis": "所要時間80〜160分の周遊型で、HPにも難易度の表記がないため標準の3と推定"
           },
-          "playMinutes": 80,
+          "playMinutes": {
+            "min": 80,
+            "max": 160
+          },
           "players": "1人～",
           "limited": null,
           "sources": [
             {
               "url": "https://tri-mobius.com/karuizawa/",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://tri-mobius.com/goods/",
+              "retrievedAt": "2026-10-28"
             }
           ]
         }
@@ -221,7 +242,10 @@
             "source": "official",
             "basis": "団体表記 ★9/10（★★★★★★★★★☆）→ 9/10×5=4.5 → 5"
           },
-          "playMinutes": 70,
+          "playMinutes": {
+            "min": 70,
+            "max": 150
+          },
           "players": null,
           "isNew": true,
           "limited": "初回限定価格",
@@ -945,7 +969,10 @@
             "source": "estimated",
             "basis": "全問にヒント・答え付きで「謎解きにあまり慣れていない方も」と案内され、45〜120分のサクッと遊べるボリュームのため"
           },
-          "playMinutes": 45,
+          "playMinutes": {
+            "min": 45,
+            "max": 120
+          },
           "players": null,
           "limited": null,
           "sources": []
