@@ -4,6 +4,7 @@ import { formatPlayMinutes } from "../logic/playTime.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
+import { boothSiteLabel } from "./boothLinkLabel.ts";
 
 const unconfirmedNames: Record<string, string> = {
   price: "価格",
@@ -42,9 +43,10 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
       const boothLinks = el("div", "dialog-booth-links");
       for (const [label, urls] of [["X", view.booth.links.x], ["団体サイト", view.booth.links.site]] as const) {
         for (const [index, url] of urls.entries()) {
-          const link = safeExternalLink(url, label, "dialog-booth-link");
+          const displayLabel = label === "団体サイト" ? boothSiteLabel(url) : label + (urls.length > 1 ? " " + (index + 1) : "");
+          const link = safeExternalLink(url, displayLabel, "dialog-booth-link");
           if (!link) continue;
-          link.setAttribute("aria-label", view.booth.name + "の" + label + (urls.length > 1 ? " " + (index + 1) : "") + "（新しいタブで開く）");
+          link.setAttribute("aria-label", view.booth.name + "の" + displayLabel + "（新しいタブで開く）");
           boothLinks.append(link);
         }
       }

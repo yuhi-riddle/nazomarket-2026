@@ -1,5 +1,6 @@
 import { CATEGORY_NAMES, type ProductView } from "../logic/catalog.ts";
 import type { CartItem } from "../logic/cart.ts";
+import { boothSiteLabel } from "./boothLinkLabel.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 
 export type ProductCardActions = {
@@ -80,13 +81,22 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   body.append(difficulty, priceElement, oneLiner);
 
   const boothLinks = el("div", "product-booth-links");
-  for (const [label, urls] of [["X", view.booth.links.x], ["団体サイト", view.booth.links.site]] as const) {
-    for (const [index, url] of urls.entries()) {
-      const link = safeExternalLink(url, label, "product-booth-link");
-      if (!link) continue;
-      link.setAttribute("aria-label", view.booth.name + "の" + label + (urls.length > 1 ? " " + (index + 1) : "") + "（新しいタブで開く）");
-      boothLinks.append(link);
-    }
+  for (const [index, url] of view.booth.links.x.entries()) {
+    const link = safeExternalLink(url, "X", "product-booth-link");
+    if (!link) continue;
+    link.setAttribute("aria-label", view.booth.name + "のX" + (view.booth.links.x.length > 1 ? " " + (index + 1) : "") + "（新しいタブで開く）");
+    boothLinks.append(link);
+  }
+  const siteLabels = view.booth.links.site.map(boothSiteLabel);
+  const siteLabelCounts = new Map<string, number>();
+  for (const label of siteLabels) siteLabelCounts.set(label, (siteLabelCounts.get(label) ?? 0) + 1);
+  for (const [index, url] of view.booth.links.site.entries()) {
+    const baseLabel = siteLabels[index];
+    const label = (siteLabelCounts.get(baseLabel) ?? 0) > 1 ? baseLabel + " " + (index + 1) : baseLabel;
+    const link = safeExternalLink(url, label, "product-booth-link");
+    if (!link) continue;
+    link.setAttribute("aria-label", view.booth.name + "の" + label + "（新しいタブで開く）");
+    boothLinks.append(link);
   }
   if (boothLinks.childElementCount) body.append(boothLinks);
 
@@ -117,6 +127,13 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
 
   const actionsArea = el("div", "product-actions");
   const listToggle = button("", "list-toggle");
+  const listToggleMark = el("span", "list-toggle-mark", "+");
+  listToggleMark.setAttribute("aria-hidden", "true");
+  const listToggleLabel = el("span", "list-toggle-label");
+  const listToggleText = el("span", "list-toggle-text");
+  const listToggleHint = el("span", "list-toggle-hint");
+  listToggleLabel.append(listToggleText, listToggleHint);
+  listToggle.append(listToggleMark, listToggleLabel);
   listToggle.addEventListener("click", () => actions.onToggle(product.id));
   actionsArea.append(listToggle);
   const quantity = el("div", "quantity-control");
@@ -140,7 +157,10 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const update = (nextItem: CartItem | undefined, nextReasons?: string[], selectedTags?: string[]) => {
     currentItem = nextItem;
     listToggle.setAttribute("aria-pressed", String(Boolean(nextItem)));
-    listToggle.textContent = nextItem ? "リストに入っています" : "リストに入れる";
+    listToggleMark.textContent = nextItem ? "✓" : "+";
+    listToggleText.textContent = nextItem ? "リストに追加済み" : "リストに入れる";
+    listToggleHint.textContent = "タップで外す";
+    listToggleHint.hidden = !nextItem;
     quantity.hidden = !nextItem;
     quantityText.textContent = nextItem ? String(nextItem.qty) : "1";
     minus.disabled = nextItem?.qty === 1;

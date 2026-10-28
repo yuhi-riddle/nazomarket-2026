@@ -34,10 +34,10 @@ function preferenceControls(onChange: (change: PreferenceChange) => void): {
   sync: (prefs: Prefs, listBudget: number | null) => void;
 } {
   const root = el("section", "catalog-prefs");
-  root.append(el("h3", "catalog-prefs-title", "好みで探す"));
+  root.append(el("h3", "catalog-prefs-title", "おすすめの条件"));
 
   const budgetField = el("fieldset", "catalog-prefs-budget");
-  budgetField.append(el("legend", "field-label", "予算"));
+  budgetField.append(el("legend", "field-label", "おすすめの予算"));
   const radioName = "catalog-budget-source-" + (++preferenceGroupSequence);
   const useListLabel = el("label", "check-option");
   const useList = el("input");
@@ -47,7 +47,7 @@ function preferenceControls(onChange: (change: PreferenceChange) => void): {
   useList.addEventListener("change", () => {
     if (useList.checked) onChange({ budgetFromCart: true });
   });
-  useListLabel.append(useList, el("span", "", "リストの予算を使う"));
+  useListLabel.append(useList, el("span", "", "買い物リストの予算を使う"));
   const useCustomLabel = el("label", "check-option");
   const useCustom = el("input");
   useCustom.type = "radio";
@@ -56,7 +56,7 @@ function preferenceControls(onChange: (change: PreferenceChange) => void): {
   useCustom.addEventListener("change", () => {
     if (useCustom.checked) onChange({ budgetFromCart: false });
   });
-  useCustomLabel.append(useCustom, el("span", "", "自分で入れる"));
+  useCustomLabel.append(useCustom, el("span", "", "別の予算を設定する"));
   const remaining = el("p", "catalog-prefs-budget-remaining");
   const budgetInput = el("input", "text-input");
   budgetInput.type = "number";
@@ -70,7 +70,7 @@ function preferenceControls(onChange: (change: PreferenceChange) => void): {
     if (amount !== null && (!Number.isFinite(amount) || amount < 0)) return;
     onChange({ budget: amount, budgetFromCart: false });
   });
-  budgetField.append(useListLabel, remaining, useCustomLabel, labeledControl("金額", budgetInput));
+  budgetField.append(useListLabel, remaining, useCustomLabel, labeledControl("予算の合計額", budgetInput));
 
   const difficultyField = el("fieldset", "catalog-prefs-difficulty");
   difficultyField.append(el("legend", "field-label", "難易度"));
