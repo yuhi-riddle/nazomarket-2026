@@ -27,6 +27,7 @@ type GridState = {
   walkable: Uint8Array;
   obstacleDistanceSquared: Float32Array;
   costMultipliers: Uint8Array;
+  neighbors: Int32Array;
   entranceIndex: number;
   exitIndex: number;
   trees: Map<number, SearchTree>;
@@ -236,33 +237,35 @@ function ensureSearch(state: GridState, start: number): SearchTree {
 
   const siftUp = (initial: number): void => {
     let index = initial;
+    const node = nodes[index];
     while (index > 0) {
       const parent = (index - 1) >> 1;
-      if (distances[nodes[parent]] <= distances[nodes[index]]) break;
+      if (distances[nodes[parent]] <= distances[node]) break;
       const parentNode = nodes[parent];
-      nodes[parent] = nodes[index];
       nodes[index] = parentNode;
-      positions[nodes[parent]] = parent;
-      positions[nodes[index]] = index;
+      positions[parentNode] = index;
       index = parent;
     }
+    nodes[index] = node;
+    positions[node] = index;
   };
 
   const siftDown = (initial: number): void => {
     let index = initial;
+    const node = nodes[index];
     while (true) {
       const left = index * 2 + 1;
       if (left >= heapSize) break;
       const right = left + 1;
       const smaller = right < heapSize && distances[nodes[right]] < distances[nodes[left]] ? right : left;
-      if (distances[nodes[index]] <= distances[nodes[smaller]]) break;
-      const currentNode = nodes[index];
-      nodes[index] = nodes[smaller];
-      nodes[smaller] = currentNode;
-      positions[nodes[index]] = index;
-      positions[nodes[smaller]] = smaller;
+      if (distances[node] <= distances[nodes[smaller]]) break;
+      const smallerNode = nodes[smaller];
+      nodes[index] = smallerNode;
+      positions[smallerNode] = index;
       index = smaller;
     }
+    nodes[index] = node;
+    positions[node] = index;
   };
 
   while (heapSize > 0) {
@@ -276,26 +279,14 @@ function ensureSearch(state: GridState, start: number): SearchTree {
       siftDown(0);
     }
 
-    const column = current % state.columns;
-    const row = Math.floor(current / state.columns);
+    const neighborOffset = current * moveColumns.length;
     for (let moveIndex = 0; moveIndex < moveColumns.length; moveIndex += 1) {
-      const dx = moveColumns[moveIndex];
-      const dy = moveRows[moveIndex];
-      const cost = moveCosts[moveIndex];
-      const nextColumn = column + dx;
-      const nextRow = row + dy;
-      if (nextColumn < 0 || nextColumn >= state.columns || nextRow < 0 || nextRow >= state.rows) continue;
-      const next = nextRow * state.columns + nextColumn;
-      if (!state.walkable[next]) continue;
-      if (dx !== 0 && dy !== 0) {
-        const horizontal = row * state.columns + nextColumn;
-        const vertical = nextRow * state.columns + column;
-        if (!state.walkable[horizontal] || !state.walkable[vertical]) continue;
-      }
+      const next = state.neighbors[neighborOffset + moveIndex];
+      if (next < 0 || positions[next] === -2) continue;
 
       const edgeMultiplier = (state.costMultipliers[current] + state.costMultipliers[next]) / 2;
-      const candidate = distances[current] + cost * edgeMultiplier;
-      if (candidate >= distances[next] || positions[next] === -2) continue;
+      const candidate = distances[current] + moveCosts[moveIndex] * edgeMultiplier;
+      if (candidate >= distances[next]) continue;
       distances[next] = candidate;
       parents[next] = current;
       if (positions[next] === -1) {
@@ -327,6 +318,7 @@ function makeGrid(layout: VenueLayout): GridState {
     walkable: new Uint8Array(count),
     obstacleDistanceSquared: new Float32Array(count),
     costMultipliers: new Uint8Array(count).fill(1),
+    neighbors: new Int32Array(count * moveColumns.length).fill(-1),
     entranceIndex: -1,
     exitIndex: -1,
     trees: new Map(),
@@ -365,6 +357,25 @@ function makeGrid(layout: VenueLayout): GridState {
   }
 
   calculateObstacleDistances(state);
+
+  for (let row = 0; row < rows; row += 1) {
+    for (let column = 0; column < columns; column += 1) {
+      const current = row * columns + column;
+      if (!state.walkable[current]) continue;
+      for (let moveIndex = 0; moveIndex < moveColumns.length; moveIndex += 1) {
+        const dx = moveColumns[moveIndex];
+        const dy = moveRows[moveIndex];
+        const nextColumn = column + dx;
+        const nextRow = row + dy;
+        if (nextColumn < 0 || nextColumn >= columns || nextRow < 0 || nextRow >= rows) continue;
+        const next = nextRow * columns + nextColumn;
+        if (!state.walkable[next]) continue;
+        if (dx !== 0 && dy !== 0
+          && (!state.walkable[row * columns + nextColumn] || !state.walkable[nextRow * columns + column])) continue;
+        state.neighbors[current * moveColumns.length + moveIndex] = next;
+      }
+    }
+  }
 
   state.entranceIndex = nearestWalkableIndex(state, layout.entrance);
   state.exitIndex = nearestWalkableIndex(state, layout.exit);
