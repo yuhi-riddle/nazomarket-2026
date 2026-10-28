@@ -31,8 +31,15 @@ interface DurableObjectStub {
   fetch(request: Request): Promise<Response>;
 }
 
+interface RateLimitBinding {
+  limit(options: { key: string }): Promise<{ success: boolean }>;
+}
+
 export interface WorkerEnv {
   ALLOWED_ORIGINS: string;
+  ROOM_CREATE_RATE_LIMIT: RateLimitBinding;
+  ROOM_READ_RATE_LIMIT: RateLimitBinding;
+  ROOM_OPERATION_RATE_LIMIT: RateLimitBinding;
   ROOMS: {
     idFromName(name: string): DurableObjectId;
     get(id: DurableObjectId): DurableObjectStub;
@@ -65,6 +72,41 @@ class RoomNotFound extends Error {}
 const ROOM_ID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const ROOM_KEY_PATTERN = /^[0-9a-f]{64}$/;
 const MAX_OPERATION_BODY_BYTES = 8 * 1024;
+const CREATE_RATE_LIMIT_PERIOD_SECONDS = 60;
+const ROOM_RATE_LIMIT_PERIOD_SECONDS = 60;
+
+const IPV4_SEGMENT_PATTERN = "(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)";
+const IPV4_PATTERN = new RegExp(`^${IPV4_SEGMENT_PATTERN}(?:\\.${IPV4_SEGMENT_PATTERN}){3}$`);
+
+function isIpAddress(value: string): boolean {
+  if (IPV4_PATTERN.test(value)) return true;
+  if (!value.includes(":") || value.includes("%")) return false;
+
+  const sections = value.split("::");
+  if (sections.length > 2) return false;
+  const compressed = sections.length === 2;
+  const groups = sections.flatMap((section) => section ? section.split(":") : []);
+  let groupCount = 0;
+
+  for (let index = 0; index < groups.length; index += 1) {
+    const group = groups[index];
+    if (group.includes(".")) {
+      if (index !== groups.length - 1 || !IPV4_PATTERN.test(group)) return false;
+      groupCount += 2;
+    } else if (/^[0-9a-f]{1,4}$/i.test(group)) {
+      groupCount += 1;
+    } else {
+      return false;
+    }
+  }
+
+  return compressed ? groupCount < 8 : groupCount === 8;
+}
+
+function clientIpFromRequest(request: Request): string | null {
+  const ip = request.headers.get("CF-Connecting-IP");
+  return ip && isIpAddress(ip) ? ip : null;
+}
 
 function roomKeyFromRequest(request: Request): string | null {
   const match = /^Bearer ([0-9a-f]{64})$/.exec(request.headers.get("Authorization") ?? "");
@@ -395,6 +437,26 @@ async function handleRequest(request: Request, env: WorkerEnv): Promise<Response
   const expectedMethod = methodFor(route);
   if (request.method !== expectedMethod) {
     return withHeaders(jsonResponse({ error: "method_not_allowed" }, 405, { Allow: expectedMethod }), corsHeaders);
+  }
+
+  const clientIp = clientIpFromRequest(request);
+  if (!clientIp) {
+    return withHeaders(jsonResponse({ error: "client_ip_unavailable" }, 503), corsHeaders);
+  }
+
+  const rateLimit = route.kind === "create" ? env.ROOM_CREATE_RATE_LIMIT
+    : route.kind === "state" ? env.ROOM_READ_RATE_LIMIT
+      : env.ROOM_OPERATION_RATE_LIMIT;
+  try {
+    const { success } = await rateLimit.limit({ key: clientIp });
+    if (!success) {
+      const retryAfter = route.kind === "create"
+        ? CREATE_RATE_LIMIT_PERIOD_SECONDS
+        : ROOM_RATE_LIMIT_PERIOD_SECONDS;
+      return withHeaders(jsonResponse({ error: "rate_limited" }, 429, { "Retry-After": String(retryAfter) }), corsHeaders);
+    }
+  } catch {
+    return withHeaders(jsonResponse({ error: "rate_limit_unavailable" }, 503), corsHeaders);
   }
 
   if (route.kind !== "create" && !roomKeyFromRequest(request)) {

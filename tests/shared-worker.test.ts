@@ -4,6 +4,39 @@ import { describe, expect, it } from "vitest";
 import worker, { SharedRoom, type WorkerEnv } from "../shared-worker/src/worker.ts";
 import { applyOperation, createInitialState } from "../shared-worker/src/domain.ts";
 
+function mockRateLimiter(decide: (key: string) => boolean | Promise<boolean> = () => true) {
+  const keys: string[] = [];
+  return {
+    keys,
+    binding: {
+      limit: async ({ key }: { key: string }) => {
+        keys.push(key);
+        return { success: await decide(key) };
+      },
+    },
+  };
+}
+
+function workerEnv(
+  rooms: WorkerEnv["ROOMS"] = {} as WorkerEnv["ROOMS"],
+  createLimiter = mockRateLimiter(),
+  readLimiter = mockRateLimiter(),
+  operationLimiter = mockRateLimiter(),
+) {
+  return {
+    env: {
+      ALLOWED_ORIGINS: "https://shopping.example",
+      ROOMS: rooms,
+      ROOM_CREATE_RATE_LIMIT: createLimiter.binding,
+      ROOM_READ_RATE_LIMIT: readLimiter.binding,
+      ROOM_OPERATION_RATE_LIMIT: operationLimiter.binding,
+    } as unknown as WorkerEnv,
+    createLimiter,
+    readLimiter,
+    operationLimiter,
+  };
+}
+
 class TestSqlStorage {
   readonly database = new DatabaseSync(":memory:");
   readonly writes: string[] = [];
@@ -95,10 +128,7 @@ describe("shared shopping list operations", () => {
 });
 
 describe("shared worker CORS boundary", () => {
-  const env = {
-    ALLOWED_ORIGINS: "https://shopping.example",
-    ROOMS: {} as WorkerEnv["ROOMS"],
-  } satisfies WorkerEnv;
+  const { env } = workerEnv();
 
   it("answers allowed preflight with the exact origin and required headers", async () => {
     const response = await worker.fetch(new Request("https://api.example/api/rooms", {
@@ -148,8 +178,8 @@ describe("shared room authentication and storage", () => {
     };
     const response = await worker.fetch(new Request("https://api.example/api/rooms/123e4567-e89b-42d3-a456-426614174000", {
       method: "GET",
-      headers: { Origin: "https://shopping.example" },
-    }), { ALLOWED_ORIGINS: "https://shopping.example", ROOMS: rooms });
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "192.0.2.10" },
+    }), workerEnv(rooms).env);
 
     expect(response.status).toBe(401);
     expect(await response.json()).toEqual({ error: "unauthorized" });
@@ -224,8 +254,8 @@ describe("shared room creation", () => {
     };
     const response = await worker.fetch(new Request("https://api.example/api/rooms", {
       method: "POST",
-      headers: { Origin: "https://shopping.example" },
-    }), { ALLOWED_ORIGINS: "https://shopping.example", ROOMS: rooms });
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "192.0.2.11" },
+    }), workerEnv(rooms).env);
     const body = await response.json() as { roomId: string; roomKey: string; state: { revision: number } };
 
     expect(response.status).toBe(201);
@@ -238,5 +268,123 @@ describe("shared room creation", () => {
     expect(await initializationRequest!.json()).toEqual({
       keyHash: createHash("sha256").update(body.roomKey).digest("hex"),
     });
+  });
+});
+
+describe("shared worker rate limits", () => {
+  it("returns a CORS-enabled 429 with Retry-After when room creation exceeds its limit", async () => {
+    const createLimiter = mockRateLimiter(() => false);
+    const { env } = workerEnv(undefined, createLimiter);
+    const response = await worker.fetch(new Request("https://api.example/api/rooms", {
+      method: "POST",
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "198.51.100.10" },
+    }), env);
+
+    expect(response.status).toBe(429);
+    expect(response.headers.get("Retry-After")).toBe("60");
+    expect(response.headers.get("Access-Control-Allow-Origin")).toBe("https://shopping.example");
+    expect(createLimiter.keys).toEqual(["198.51.100.10"]);
+  });
+
+  it("keys room access by CF-Connecting-IP and ignores forwarded IP headers", async () => {
+    const readLimiter = mockRateLimiter();
+    const { env } = workerEnv({
+      idFromName: () => { throw new Error("unauthorized requests should not resolve a room"); },
+      get: () => { throw new Error("unauthorized requests should not request a room stub"); },
+    }, undefined, readLimiter);
+    for (const ip of ["198.51.100.20", "198.51.100.21"]) {
+      const response = await worker.fetch(new Request("https://api.example/api/rooms/123e4567-e89b-42d3-a456-426614174000", {
+        method: "GET",
+        headers: {
+          Origin: "https://shopping.example",
+          "CF-Connecting-IP": ip,
+          "X-Forwarded-For": "203.0.113.99",
+          "X-Real-IP": "203.0.113.99",
+        },
+      }), env);
+      expect(response.status).toBe(401);
+    }
+
+    expect(readLimiter.keys).toEqual(["198.51.100.20", "198.51.100.21"]);
+  });
+
+  it("fails closed when CF-Connecting-IP is missing or invalid", async () => {
+    const createLimiter = mockRateLimiter();
+    const rooms: WorkerEnv["ROOMS"] = {
+      idFromName: () => { throw new Error("room creation must not start without a client IP"); },
+      get: () => { throw new Error("room creation must not start without a client IP"); },
+    };
+    const { env } = workerEnv(rooms, createLimiter);
+    for (const cfIp of [undefined, "203.0.113.999"]) {
+      const headers = new Headers({
+        Origin: "https://shopping.example",
+        "X-Forwarded-For": "203.0.113.99",
+        "X-Real-IP": "203.0.113.99",
+      });
+      if (cfIp) headers.set("CF-Connecting-IP", cfIp);
+      const response = await worker.fetch(new Request("https://api.example/api/rooms", {
+        method: "POST",
+        headers,
+      }), env);
+
+      expect(response.status).toBe(503);
+      expect(await response.json()).toEqual({ error: "client_ip_unavailable" });
+    }
+    expect(createLimiter.keys).toEqual([]);
+  });
+
+  it("fails closed when the rate-limit binding throws", async () => {
+    const createLimiter = mockRateLimiter(() => { throw new Error("binding unavailable"); });
+    const rooms: WorkerEnv["ROOMS"] = {
+      idFromName: () => { throw new Error("room creation must not start after limiter failure"); },
+      get: () => { throw new Error("room creation must not start after limiter failure"); },
+    };
+    const { env } = workerEnv(rooms, createLimiter);
+    const response = await worker.fetch(new Request("https://api.example/api/rooms", {
+      method: "POST",
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "198.51.100.30" },
+    }), env);
+
+    expect(response.status).toBe(503);
+    expect(createLimiter.keys).toEqual(["198.51.100.30"]);
+  });
+
+  it.each([
+    ["GET", ""],
+    ["POST", "/operations"],
+  ])("limits unknown room IDs before resolving a stub (%s %s)", async (method, suffix) => {
+    const readLimiter = mockRateLimiter(() => method === "GET" ? false : true);
+    const operationLimiter = mockRateLimiter(() => method === "POST" ? false : true);
+    const rooms: WorkerEnv["ROOMS"] = {
+      idFromName: () => { throw new Error("rate-limited room requests must not resolve an ID"); },
+      get: () => { throw new Error("rate-limited room requests must not request a stub"); },
+    };
+    const { env } = workerEnv(rooms, undefined, readLimiter, operationLimiter);
+    const response = await worker.fetch(new Request(`https://api.example/api/rooms/123e4567-e89b-42d3-a456-426614174000${suffix}`, {
+      method,
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "198.51.100.40" },
+    }), env);
+
+    expect(response.status).toBe(429);
+    expect(response.headers.get("Retry-After")).toBe("60");
+    expect(readLimiter.keys).toEqual(method === "GET" ? ["198.51.100.40"] : []);
+    expect(operationLimiter.keys).toEqual(method === "POST" ? ["198.51.100.40"] : []);
+  });
+
+  it("fails closed when a room rate-limit binding throws", async () => {
+    const readLimiter = mockRateLimiter(() => { throw new Error("binding unavailable"); });
+    const rooms: WorkerEnv["ROOMS"] = {
+      idFromName: () => { throw new Error("room lookup must not start after limiter failure"); },
+      get: () => { throw new Error("room lookup must not start after limiter failure"); },
+    };
+    const { env } = workerEnv(rooms, undefined, readLimiter);
+    const response = await worker.fetch(new Request("https://api.example/api/rooms/123e4567-e89b-42d3-a456-426614174000", {
+      method: "GET",
+      headers: { Origin: "https://shopping.example", "CF-Connecting-IP": "198.51.100.50" },
+    }), env);
+
+    expect(response.status).toBe(503);
+    expect(await response.json()).toEqual({ error: "rate_limit_unavailable" });
+    expect(readLimiter.keys).toEqual(["198.51.100.50"]);
   });
 });
