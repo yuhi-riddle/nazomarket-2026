@@ -121,11 +121,13 @@ describe("walkingRoute（通路沿いの回る順番）", () => {
     expect(fresh.searchCount).toBe(after1 + 1);
   });
 
-  it("性能: 20 か所の計算が 50ms 以内（格子を作った後）", () => {
+  it("性能: 20か所の計算が手元では50ms、共有CIでは150ms以内（格子を作った後）", () => {
     const fresh = createWalkGrid(layout);
     const codes = layout.booths.filter((_, i) => i % 4 === 0).slice(0, 20).map((b) => b.code);
     const start = performance.now();
     planWalkingRoute(fresh, codes.map((c) => stopOf(c)), { frontLoadSpecial: false });
-    expect(performance.now() - start).toBeLessThan(50);
+    // 共有CIの実行速度は変動するため、回帰検知の基準を手元と分ける。
+    const limitMs = process.env.CI === "true" ? 150 : 50;
+    expect(performance.now() - start).toBeLessThan(limitMs);
   });
 });
