@@ -5,13 +5,7 @@ import { xTagsOf } from "../logic/tags.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
 import { boothLinkLabel, type BoothLinkKind } from "./boothLinkLabel.ts";
-
-const unconfirmedNames: Record<string, string> = {
-  price: "価格",
-  playMinutes: "所要時間",
-  players: "人数",
-  payment: "支払い",
-};
+import { unconfirmedText } from "./unconfirmedText.ts";
 
 export type ProductDialog = { element: HTMLDialogElement; open: (view: ProductView) => void };
 
@@ -97,9 +91,8 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
       details.append(facts);
       const hashtags = xHashtagLinks(xTagsOf(product, view.booth), "dialog-x-hashtags");
       if (hashtags) details.append(hashtags);
-      if (product.unconfirmed.length) {
-        details.append(el("p", "unconfirmed", "未確認: " + product.unconfirmed.map((key) => unconfirmedNames[key] ?? key).join("・")));
-      }
+      const unconfirmed = unconfirmedText(product.unconfirmed);
+      if (unconfirmed) details.append(el("p", "unconfirmed", unconfirmed));
 
       const sources = el("section", "dialog-links");
       sources.append(el("h3", "", "出典"));
