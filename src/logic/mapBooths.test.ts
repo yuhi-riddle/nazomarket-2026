@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildCatalog } from "./catalog.ts";
-import { unboughtItemsByBooth } from "./mapBooths.ts";
+import { listedItemsForBooth, unboughtItemsByBooth } from "./mapBooths.ts";
 import { booth, booths, layout, product } from "./test-helpers.ts";
 
 describe("unboughtItemsByBooth", () => {
@@ -22,6 +22,11 @@ describe("unboughtItemsByBooth", () => {
     ? { ...entry, labels: { ...entry.labels, sat: null } }
     : entry) };
   const item = (productId: string, bought = false) => ({ productId, qty: 1, bought });
+
+  it("選択ブースの商品からリストに入っているものだけを返す", () => {
+    const boothViews = catalog.filter((view) => view.booth.id === "no01");
+    expect(listedItemsForBooth(boothViews, [item("b"), item("sat")])).toEqual([item("b")]);
+  });
 
   it("未購入が残る間は色付けし、全て購入すると消え、チェックを外すと戻る", () => {
     expect(unboughtItemsByBooth([item("a", true), item("b")], catalog, map, "sat").get("A1")).toEqual([item("b")]);

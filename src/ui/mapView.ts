@@ -2,16 +2,18 @@ import "./mapEnhancements.css";
 import { booths, catalog, venueLayout } from "../data.ts";
 import {
   setQty,
+  toggleBought,
   toggleItem,
   type CartItem,
 } from "../logic/cart.ts";
-import { unboughtItemsByBooth } from "../logic/mapBooths.ts";
+import { listedItemsForBooth, unboughtItemsByBooth } from "../logic/mapBooths.ts";
 import type { ProductView } from "../logic/catalog.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import type { AppState } from "../state.ts";
 import type { Day } from "../types.ts";
 import type { AppStore } from "../store.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
+import { mapSelectionSummary } from "./mapSelectionSummary.ts";
 import { productCard, type ProductCardHandle } from "./productCard.ts";
 import { productDialog } from "./productDialog.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
@@ -126,6 +128,19 @@ export function mapView(store: AppStore): MapView {
   mapScrollHelp.id = "map-scroll-help";
   const panel = el("aside", "map-product-panel");
   panel.setAttribute("aria-label", "選択したブースの商品");
+  panel.tabIndex = -1;
+
+  const selectionSummary = el("div", "map-selection-summary");
+  selectionSummary.hidden = true;
+  const selectionSummaryText = el("p", "map-selection-summary-text");
+  selectionSummaryText.setAttribute("aria-live", "polite");
+  const seeProductsButton = button("商品を見る", "button button-secondary map-selection-summary-action");
+  seeProductsButton.addEventListener("click", () => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    panel.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+    panel.focus({ preventScroll: true });
+  });
+  selectionSummary.append(selectionSummaryText, seeProductsButton);
 
   let selectedCode: string | null = null;
   let panelKey = "";
@@ -164,7 +179,7 @@ export function mapView(store: AppStore): MapView {
     syncPanel(store.getState());
   });
   mapFrame.append(map);
-  mapColumn.append(toolbar, mapFrame, mapScrollHelp, boothPicker);
+  mapColumn.append(toolbar, mapFrame, selectionSummary, mapScrollHelp, boothPicker);
 
   const legend = el("div", "map-legend");
   legend.setAttribute("role", "group");
@@ -209,7 +224,35 @@ export function mapView(store: AppStore): MapView {
   zoomFit.addEventListener("click", () => setScale(1));
   updateZoomButtons();
 
+  function syncSelectionSummary(state: AppState): void {
+    if (selectedCode === null) {
+      selectionSummary.hidden = true;
+      selectionSummaryText.textContent = "";
+      return;
+    }
+
+    const layoutBooth = venueLayout.booths.find((booth) => booth.code === selectedCode);
+    const isNoShow = layoutBooth?.labels[state.day] === null;
+    const allViews = viewsByCode.get(selectedCode) ?? [];
+    const dayViews = isNoShow
+      ? []
+      : allViews.filter((view) => view.product.days.includes(state.day) && view.booth.days.includes(state.day));
+    const booth = boothForDay(selectedCode, state.day);
+    const organizationName = isNoShow
+      ? "出展なし"
+      : booth?.name ?? layoutBooth?.labels[state.day] ?? "出展なし";
+    const summary = mapSelectionSummary(
+      selectedCode,
+      organizationName,
+      listedItemsForBooth(dayViews, state.items),
+    );
+
+    selectionSummary.hidden = false;
+    if (selectionSummaryText.textContent !== summary) selectionSummaryText.textContent = summary;
+  }
+
   function syncPanel(state: AppState): void {
+    syncSelectionSummary(state);
     if (selectedCode === null) {
       if (panelKey === "empty") return;
       panel.replaceChildren(
@@ -263,7 +306,8 @@ export function mapView(store: AppStore): MapView {
 
       if (dayViews.length) {
         const productList = el("div", "map-product-list");
-        const itemById = new Map(state.items.map((item): [string, CartItem] => [item.productId, item]));
+        const itemById = new Map(listedItemsForBooth(dayViews, state.items)
+          .map((item): [string, CartItem] => [item.productId, item]));
         for (const view of dayViews) {
           const card = productCard(view, itemById.get(view.product.id), {
             onDetail: (selected) => details.open(selected),
@@ -272,6 +316,11 @@ export function mapView(store: AppStore): MapView {
               store.update((current) => ({ ...current, items: toggleItem(current.items, productId) }));
               productsInPanel.find(({ view: panelView }) => panelView.product.id === productId)
                 ?.card.element.querySelector<HTMLButtonElement>(".list-toggle")?.focus();
+            },
+            onToggleBought(productId) {
+              store.update((current) => ({ ...current, items: toggleBought(current.items, productId) }));
+              productsInPanel.find(({ view: panelView }) => panelView.product.id === productId)
+                ?.card.element.querySelector<HTMLInputElement>(".map-bought-check input")?.focus();
             },
             onQty(productId, qty) {
               store.update((current) => ({ ...current, items: setQty(current.items, productId, qty) }));

@@ -45,6 +45,21 @@ function dayName(day: Day): string {
   return day === "sat" ? "土曜 11/7" : "日曜 11/8";
 }
 
+export function venueMapLabelText(
+  name: string | null,
+  boothCode: string,
+  capacity: number,
+): { text: string; isCode: boolean } {
+  if (name === null || capacity < 2) return { text: boothCode, isCode: true };
+
+  const characters = Array.from(name);
+  if (characters.length <= capacity) return { text: name, isCode: false };
+
+  const visibleCount = capacity - 1;
+  if (visibleCount < 2) return { text: boothCode, isCode: true };
+  return { text: characters.slice(0, visibleCount).join("") + "…", isCode: false };
+}
+
 function paintLabel(label: SVGTextElement, booth: LayoutBooth, day: Day): void {
   label.replaceChildren();
   const centerX = String(booth.x + booth.w / 2);
@@ -54,16 +69,16 @@ function paintLabel(label: SVGTextElement, booth: LayoutBooth, day: Day): void {
   label.setAttribute("class", "venue-map-booth-label");
   const name = booth.labels[day];
   const capacity = Math.floor((booth.w - 6) / 12);
+  const labelText = venueMapLabelText(name, booth.code, capacity);
 
-  if (name === null || capacity < 2 || booth.h < 25) {
+  if (labelText.isCode || booth.h < 25) {
     label.setAttribute("y", String(booth.y + booth.h / 2));
     label.setAttribute("class", "venue-map-booth-code");
     label.style.fontSize = "9px";
-    label.textContent = booth.code;
+    label.textContent = labelText.isCode ? labelText.text : booth.code;
     return;
   }
 
-  const characters = Array.from(name);
   const vendor = svgElement("tspan");
   vendor.setAttribute("x", centerX);
   vendor.setAttribute("y", String(booth.y + booth.h / 2 - (booth.w >= 45 ? 5 : 0)));
@@ -71,7 +86,7 @@ function paintLabel(label: SVGTextElement, booth: LayoutBooth, day: Day): void {
   vendor.style.fontSize = "12px";
   vendor.style.fontWeight = "700";
   vendor.style.fill = "var(--ink)";
-  vendor.textContent = characters.length > capacity ? characters.slice(0, capacity - 1).join("") + "…" : name;
+  vendor.textContent = labelText.text;
   label.append(vendor);
   if (booth.w >= 45 && booth.h >= 30) {
     const code = svgElement("tspan");

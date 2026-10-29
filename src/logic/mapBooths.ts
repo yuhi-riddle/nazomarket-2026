@@ -3,6 +3,14 @@ import type { CartItem } from "./cart.ts";
 import type { ProductView } from "./catalog.ts";
 import { buildRouteStops } from "./route.ts";
 
+export function listedItemsForBooth(views: ProductView[], items: CartItem[]): CartItem[] {
+  const itemById = new Map(items.map((item) => [item.productId, item]));
+  return views.flatMap((view) => {
+    const item = itemById.get(view.product.id);
+    return item ? [item] : [];
+  });
+}
+
 export function unboughtItemsByBooth(
   items: CartItem[], catalog: ProductView[], layout: VenueLayout, day: Day,
 ): Map<string, CartItem[]> {

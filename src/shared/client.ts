@@ -204,7 +204,7 @@ async function responseFailure(response: Response): Promise<ClientFailure> {
   return new ClientFailure(code, failureMessage(code, response.status), {
     status: response.status,
     currentRevision,
-    retryable: response.status >= 500,
+    retryable: response.status === 429 || response.status >= 500,
   });
 }
 
@@ -701,9 +701,45 @@ export class SharedListClient {
         if (normalizedRaw !== raw) this.#storage.setItem(this.#storageKey, normalizedRaw);
       }
       this.#publish();
+      await this.#recoverInactiveOutboxes();
     } catch {
       this.#setLoadFailure(new ClientFailure("storage_unavailable", failureMessage("storage_unavailable")));
     }
+  }
+
+  async #recoverInactiveOutboxes(): Promise<void> {
+    if (!this.#storage || !this.#tabLockManager || !this.#tabId) return;
+    const storage = this.#storage as StorageLike & {
+      readonly length?: number;
+      key?: (index: number) => string | null;
+    };
+    if (typeof storage.length !== "number" || typeof storage.key !== "function") return;
+
+    const roomPrefix = QUEUE_KEY_PREFIX + this.#roomId + ":";
+    const sourceKeys = Array.from({ length: storage.length }, (_, index) => storage.key!(index))
+      .filter((key): key is string => key !== null && key.startsWith(roomPrefix) && key !== this.#storageKey);
+
+    for (const key of sourceKeys) {
+      const sourceTabId = key.slice(roomPrefix.length);
+      if (!/^[a-z0-9-]{16,64}$/iu.test(sourceTabId)) continue;
+      await this.#tabLockManager.request(TAB_LOCK_PREFIX + sourceTabId, { ifAvailable: true }, async (lock) => {
+        if (!lock) return;
+        const raw = storage.getItem(key);
+        if (raw === null) return;
+        const sourceQueue = this.#parseQueue(raw);
+        if (sourceQueue === null) return;
+
+        const currentIds = new Set(this.#queue.map((entry) => entry.id));
+        const recovered = sourceQueue.filter((entry) => !currentIds.has(entry.id));
+        if (recovered.length > 0) {
+          const nextQueue = [...this.#queue, ...recovered];
+          storage.setItem(this.#storageKey, JSON.stringify(nextQueue));
+          this.#queue = nextQueue;
+        }
+        storage.removeItem(key);
+      });
+    }
+    this.#publish();
   }
 
   #parseQueue(raw: string): QueueEntry[] | null {

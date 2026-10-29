@@ -55,8 +55,8 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
       const remainingText = budget === null
         ? "予算未設定"
         : over
-          ? "OVER +" + format(totals.amount - budget)
-          : "残り " + format(budget - totals.amount);
+          ? "予定後 OVER +" + format(totals.amount - budget)
+          : "予定後の残り " + format(budget - totals.amount);
       statusValue.textContent = remainingText;
       statusMark.textContent = budget === null ? "−" : over ? "!" : "✓";
       status.classList.toggle("is-over", over);
@@ -65,8 +65,8 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
       const accessibleSummary = budget === null
         ? "予算は未設定です"
         : over
-          ? "予算を" + format(totals.amount - budget) + "超えています"
-          : "予算の残り" + format(budget - totals.amount);
+          ? "予定を含めると予算を" + format(totals.amount - budget) + "超えています"
+          : "予定を含めた予算の残り" + format(budget - totals.amount);
       const accessibleUnknown = totals.unknownPrice ? unknownText + "は合計に含まれません" : "";
       meter.setAttribute("aria-label", ["予算メーター", budgetLabel.textContent, "合計 " + totalValue.textContent, accessibleSummary, accessibleUnknown, "リストを開く"]
         .filter(Boolean).join("。"));

@@ -11,6 +11,7 @@ export type AppStore = {
   applySharedList: (items: AppState["items"], budget: number | null) => void;
   leaveSharedList: () => void;
   isShared: () => boolean;
+  hasPersonalSaveFailure: () => boolean;
   setSharedWriteBlocked: (blocked: boolean) => void;
   isSharedWriteBlocked: () => boolean;
   setSharedChangeHandler: (handler: ((previous: AppState, next: AppState) => void) | null) => void;
@@ -22,11 +23,13 @@ export function createStore(storage?: StoreStorage): AppStore {
   const knownIds = new Set(products.map((product) => product.id));
   let state = defaultState;
   let persistence: StoreStorage | undefined;
+  let personalSaveFailed = false;
   try {
     persistence = storage ?? globalThis.localStorage;
     state = parseState(persistence.getItem(STORAGE_KEY), knownIds);
   } catch {
     state = defaultState;
+    personalSaveFailed = true;
   }
   let personalState = state;
   let sharedMode = false;
@@ -36,9 +39,11 @@ export function createStore(storage?: StoreStorage): AppStore {
 
   const savePersonalState = (next: AppState) => {
     try {
-      persistence?.setItem(STORAGE_KEY, serializeState(next));
+      if (!persistence) throw new Error("Personal storage is unavailable.");
+      persistence.setItem(STORAGE_KEY, serializeState(next));
+      personalSaveFailed = false;
     } catch {
-      // 保存できない環境でも画面はそのまま使える
+      personalSaveFailed = true;
     }
   };
   const notify = (next: AppState, previous: AppState) => {
@@ -97,6 +102,7 @@ export function createStore(storage?: StoreStorage): AppStore {
       notify(state, previous);
     },
     isShared: () => sharedMode,
+    hasPersonalSaveFailure: () => personalSaveFailed,
     setSharedWriteBlocked(blocked) {
       if (sharedWriteBlocked === blocked) return;
       sharedWriteBlocked = blocked;

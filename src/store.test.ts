@@ -19,6 +19,18 @@ class MemoryStorage {
 }
 
 describe("shared list store mode", () => {
+  it("exposes when saving the personal list to localStorage fails", () => {
+    const storage = {
+      getItem: () => null,
+      setItem: () => { throw new Error("storage is full"); },
+    };
+    const store = createStore(storage);
+
+    store.update((state) => ({ ...state, budget: 3_000 }));
+
+    expect(store.hasPersonalSaveFailure()).toBe(true);
+  });
+
   it("keeps personal items and budget while shared edits are active", () => {
     const storage = new MemoryStorage();
     storage.setItem(STORAGE_KEY, JSON.stringify({

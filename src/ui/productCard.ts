@@ -4,9 +4,13 @@ import { formatPlayMinutes } from "../logic/playTime.ts";
 import "./catalogPolish.css";
 import { button, el } from "./dom.ts";
 
+// 一覧とマップに同じ商品のカードが並ぶため、説明文のIDは通し番号で一意にする
+let quantityHintCount = 0;
+
 export type ProductCardActions = {
   onDetail: (view: ProductView) => void;
   onToggle: (productId: string) => void;
+  onToggleBought?: (productId: string) => void;
   onQty: (productId: string, qty: number) => void;
   canChangeList?: () => boolean;
 };
@@ -98,6 +102,16 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   body.append(reasons);
 
   const actionsArea = el("div", "product-actions");
+  let boughtCheckbox: HTMLInputElement | null = null;
+  if (actions.onToggleBought) {
+    const boughtLabel = el("label", "today-item-check map-bought-check");
+    boughtCheckbox = el("input");
+    boughtCheckbox.type = "checkbox";
+    boughtCheckbox.setAttribute("aria-label", product.name + "を買えたにする");
+    boughtCheckbox.addEventListener("change", () => actions.onToggleBought?.(product.id));
+    boughtLabel.append(boughtCheckbox, el("span", "", "買えた"));
+    actionsArea.append(boughtLabel);
+  }
   const listToggle = button("", "list-toggle");
   const listToggleMark = el("span", "list-toggle-mark", "+");
   listToggleMark.setAttribute("aria-hidden", "true");
@@ -114,23 +128,28 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   minus.setAttribute("aria-label", product.name + "の数量を減らす");
   const quantityText = el("span", "quantity-value", "1");
   quantityText.setAttribute("aria-live", "polite");
+  const quantityHint = el("span", "quantity-hint", "購入チェックを外すと変更できます");
+  quantityHint.hidden = true;
+  quantityHint.id = "quantity-hint-" + (quantityHintCount += 1);
+  minus.setAttribute("aria-describedby", quantityHint.id);
   const plus = button("+", "quantity-button");
   plus.setAttribute("aria-label", product.name + "の数量を増やす");
+  plus.setAttribute("aria-describedby", quantityHint.id);
   minus.addEventListener("click", () => {
     if (currentItem) actions.onQty(product.id, currentItem.qty - 1);
   });
   plus.addEventListener("click", () => {
     if (currentItem) actions.onQty(product.id, currentItem.qty + 1);
   });
-  quantity.append(minus, quantityText, plus);
+  quantity.append(minus, quantityText, plus, quantityHint);
   actionsArea.append(quantity);
   card.append(body, actionsArea);
 
   const update = (nextItem: CartItem | undefined, nextReasons?: string[], canChangeList = actions.canChangeList?.() ?? true) => {
     currentItem = nextItem;
     listToggle.disabled = !canChangeList;
-    minus.disabled = !canChangeList || nextItem?.qty === 1;
-    plus.disabled = !canChangeList || nextItem?.qty === 99;
+    minus.disabled = !canChangeList || nextItem?.bought === true || nextItem?.qty === 1;
+    plus.disabled = !canChangeList || nextItem?.bought === true || nextItem?.qty === 99;
     listToggle.setAttribute("aria-pressed", String(Boolean(nextItem)));
     listToggleMark.textContent = nextItem ? "✓" : "+";
     listToggleText.textContent = nextItem ? "リストに追加済み" : "リストに入れる";
@@ -138,6 +157,13 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     listToggleHint.hidden = !nextItem;
     quantity.hidden = !nextItem;
     quantityText.textContent = nextItem ? String(nextItem.qty) : "1";
+    quantityHint.hidden = nextItem?.bought !== true;
+    if (boughtCheckbox) {
+      boughtCheckbox.checked = nextItem?.bought === true;
+      boughtCheckbox.disabled = !canChangeList;
+      const boughtLabel = boughtCheckbox.closest("label");
+      if (boughtLabel) boughtLabel.hidden = !nextItem;
+    }
     if (nextReasons !== undefined) {
       reasons.replaceChildren(...nextReasons.map((reason) => el("span", "tag", reason)));
       reasons.hidden = nextReasons.length === 0;
