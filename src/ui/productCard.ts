@@ -4,6 +4,9 @@ import { formatPlayMinutes } from "../logic/playTime.ts";
 import "./catalogPolish.css";
 import { button, el } from "./dom.ts";
 
+// 一覧とマップに同じ商品のカードが並ぶため、説明文のIDは通し番号で一意にする
+let quantityHintCount = 0;
+
 export type ProductCardActions = {
   onDetail: (view: ProductView) => void;
   onToggle: (productId: string) => void;
@@ -127,10 +130,11 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   quantityText.setAttribute("aria-live", "polite");
   const quantityHint = el("span", "quantity-hint", "購入チェックを外すと変更できます");
   quantityHint.hidden = true;
-  quantityHint.id = "quantity-hint-" + product.id;
-  quantity.setAttribute("aria-describedby", quantityHint.id);
+  quantityHint.id = "quantity-hint-" + (quantityHintCount += 1);
+  minus.setAttribute("aria-describedby", quantityHint.id);
   const plus = button("+", "quantity-button");
   plus.setAttribute("aria-label", product.name + "の数量を増やす");
+  plus.setAttribute("aria-describedby", quantityHint.id);
   minus.addEventListener("click", () => {
     if (currentItem) actions.onQty(product.id, currentItem.qty - 1);
   });

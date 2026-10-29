@@ -13,6 +13,7 @@ import type { AppState } from "../state.ts";
 import type { Day } from "../types.ts";
 import type { AppStore } from "../store.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
+import { mapSelectionSummary } from "./mapSelectionSummary.ts";
 import { productCard, type ProductCardHandle } from "./productCard.ts";
 import { productDialog } from "./productDialog.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
@@ -127,6 +128,19 @@ export function mapView(store: AppStore): MapView {
   mapScrollHelp.id = "map-scroll-help";
   const panel = el("aside", "map-product-panel");
   panel.setAttribute("aria-label", "選択したブースの商品");
+  panel.tabIndex = -1;
+
+  const selectionSummary = el("div", "map-selection-summary");
+  selectionSummary.hidden = true;
+  const selectionSummaryText = el("p", "map-selection-summary-text");
+  selectionSummaryText.setAttribute("aria-live", "polite");
+  const seeProductsButton = button("商品を見る", "button button-secondary map-selection-summary-action");
+  seeProductsButton.addEventListener("click", () => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    panel.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+    panel.focus({ preventScroll: true });
+  });
+  selectionSummary.append(selectionSummaryText, seeProductsButton);
 
   let selectedCode: string | null = null;
   let panelKey = "";
@@ -165,7 +179,7 @@ export function mapView(store: AppStore): MapView {
     syncPanel(store.getState());
   });
   mapFrame.append(map);
-  mapColumn.append(toolbar, mapFrame, mapScrollHelp, boothPicker);
+  mapColumn.append(toolbar, mapFrame, selectionSummary, mapScrollHelp, boothPicker);
 
   const legend = el("div", "map-legend");
   legend.setAttribute("role", "group");
@@ -210,7 +224,35 @@ export function mapView(store: AppStore): MapView {
   zoomFit.addEventListener("click", () => setScale(1));
   updateZoomButtons();
 
+  function syncSelectionSummary(state: AppState): void {
+    if (selectedCode === null) {
+      selectionSummary.hidden = true;
+      selectionSummaryText.textContent = "";
+      return;
+    }
+
+    const layoutBooth = venueLayout.booths.find((booth) => booth.code === selectedCode);
+    const isNoShow = layoutBooth?.labels[state.day] === null;
+    const allViews = viewsByCode.get(selectedCode) ?? [];
+    const dayViews = isNoShow
+      ? []
+      : allViews.filter((view) => view.product.days.includes(state.day) && view.booth.days.includes(state.day));
+    const booth = boothForDay(selectedCode, state.day);
+    const organizationName = isNoShow
+      ? "出展なし"
+      : booth?.name ?? layoutBooth?.labels[state.day] ?? "出展なし";
+    const summary = mapSelectionSummary(
+      selectedCode,
+      organizationName,
+      listedItemsForBooth(dayViews, state.items),
+    );
+
+    selectionSummary.hidden = false;
+    if (selectionSummaryText.textContent !== summary) selectionSummaryText.textContent = summary;
+  }
+
   function syncPanel(state: AppState): void {
+    syncSelectionSummary(state);
     if (selectedCode === null) {
       if (panelKey === "empty") return;
       panel.replaceChildren(

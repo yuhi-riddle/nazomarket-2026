@@ -64,6 +64,9 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
   plus.setAttribute("aria-label", view.product.name + "の数量を増やす");
   const quantityHint = el("span", "quantity-hint cart-quantity-hint", "購入チェックを外すと変更できます");
   quantityHint.hidden = true;
+  quantityHint.id = "cart-quantity-hint-" + view.product.id;
+  minus.setAttribute("aria-describedby", quantityHint.id);
+  plus.setAttribute("aria-describedby", quantityHint.id);
   minus.addEventListener("click", () => store.update((state) => ({
     ...state,
     items: setQty(state.items, view.product.id, currentItem.qty - 1),
