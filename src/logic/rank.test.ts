@@ -21,7 +21,7 @@ describe("rankForCatalog（一覧のおすすめ順）", () => {
   it("点数 1 以上は点数順で matched、それ以外は others にブース順。点数は返すが理由も付く", () => {
     const r = rankForCatalog(catalog, { ...defaultPrefs, categories: ["kit"] }, [], null);
     expect(matchedIds(r).slice(0, 2)).toEqual(["p03", "p06"]);
-    expect(r.matched[0].reasons).toContain("好みのカテゴリ");
+    expect(r.matched[0].reasons).toContain("指定したカテゴリ");
     expect(ids(r.others)).toEqual(ids(r.others).slice().sort((a, b) => ids(catalog).indexOf(a) - ids(catalog).indexOf(b)));
     expect([...matchedIds(r), ...ids(r.others)].sort()).toEqual(["p01", "p02", "p03", "p04", "p05", "p06"]);
   });
@@ -103,7 +103,7 @@ describe("リストから推定するおすすめ", () => {
 
   it("明示したカテゴリと難易度はリスト推定より優先する", () => {
     const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"], difficultyMin: 5, difficultyMax: 5 }, saved, null);
-    expect(scored(result, "far")).toMatchObject({ score: 5, reasons: ["好みの難易度", "好みのカテゴリ"] });
+    expect(scored(result, "far")).toMatchObject({ score: 5, reasons: ["指定した難易度", "指定したカテゴリ"] });
     expect(ids(result.others)).toContain("same");
     expect(scored(result, "near")?.reasons ?? []).not.toContain("リストの難易度に近い");
   });
@@ -111,7 +111,7 @@ describe("リストから推定するおすすめ", () => {
   it("片方だけ手動指定したとき、もう片方はリストから推定する", () => {
     const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"] }, saved, null);
     expect(scored(result, "same")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
-    expect(scored(result, "near")).toMatchObject({ score: 3, reasons: ["好みのカテゴリ", "リストの難易度に近い"] });
+    expect(scored(result, "near")).toMatchObject({ score: 3, reasons: ["指定したカテゴリ", "リストの難易度に近い"] });
   });
 
   it("カテゴリが同数なら決めつけず、難易度不明と見つからない商品は推定に使わない", () => {

@@ -1,0 +1,117 @@
+/* ブース順のグループ見出しが団体名と番号を示すため、商品カード内では重ねない。 */
+.catalog-main .catalog-group-products .product-card {
+  grid-template-columns: 150px minmax(0, 1fr) 260px;
+  grid-template-rows: minmax(176px, auto);
+}
+
+.catalog-main .catalog-group-products .product-card > .ticket-stub {
+  display: none;
+}
+
+.catalog-main .catalog-group-products .product-card > .product-media {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.catalog-main .catalog-group-products .product-card > .product-card-body {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.catalog-main .catalog-group-products .product-card > .product-actions {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.catalog-main .catalog-group-products .product-organization {
+  display: none;
+}
+
+.product-duration {
+  padding-left: var(--space-2);
+  border-left: 1px solid var(--line);
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.dialog-booth-links,
+.dialog-links {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--line);
+}
+
+.dialog-booth-links-title,
+.dialog-links h3 {
+  margin: 0;
+  font-size: var(--font-15);
+}
+
+.dialog-link-group {
+  min-width: 0;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.dialog-link-group-title {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: var(--font-12);
+}
+
+.dialog-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-2);
+}
+
+.dialog-booth-link {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1199px) {
+  .catalog-main .catalog-group-products .product-card {
+    grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-rows: minmax(176px, auto) auto;
+  }
+
+  .catalog-main .catalog-group-products .product-card > .product-media {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .catalog-main .catalog-group-products .product-card > .product-card-body {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .catalog-main .catalog-group-products .product-card > .product-actions {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog-main .catalog-group-products .product-card {
+    grid-template-columns: 84px minmax(0, 1fr);
+    grid-template-rows: minmax(152px, auto) auto;
+  }
+
+  .catalog-main .catalog-group-products .product-card > .product-media {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .catalog-main .catalog-group-products .product-card > .product-card-body {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .catalog-main .catalog-group-products .product-card > .product-actions {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}

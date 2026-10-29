@@ -5,6 +5,13 @@
   box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 8%, transparent);
 }
 
+.map-page .map-scroll-help {
+  display: block;
+  margin: var(--space-2) 0;
+  color: var(--ink-muted);
+  font-size: var(--font-12);
+}
+
 .map-page .venue-map-background {
   fill: color-mix(in srgb, var(--key) 4%, var(--surface-2));
 }
@@ -114,11 +121,6 @@
   border-radius: var(--radius-control);
   background: var(--surface);
   object-fit: contain;
-}
-
-.map-remaining {
-  border-inline-start: 3px solid var(--key);
-  background: color-mix(in srgb, var(--key) 3%, var(--surface));
 }
 
 @media (prefers-reduced-motion: reduce) {

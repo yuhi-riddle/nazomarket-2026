@@ -4,7 +4,7 @@ import { formatPlayMinutes } from "../logic/playTime.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
-import { boothSiteLabel } from "./boothLinkLabel.ts";
+import { boothLinkLabel, type BoothLinkKind } from "./boothLinkLabel.ts";
 
 const unconfirmedNames: Record<string, string> = {
   price: "価格",
@@ -16,6 +16,38 @@ const unconfirmedNames: Record<string, string> = {
 export type ProductDialog = { element: HTMLDialogElement; open: (view: ProductView) => void };
 
 let dialogInstance = 0;
+
+function appendLinkGroup(parent: HTMLElement, title: string, urls: string[], kind: BoothLinkKind, organizationName: string): void {
+  const seenUrls = new Set<string>();
+  const seenLabels = new Set<string>();
+  const group = el("div", "dialog-link-group");
+  group.append(el("h4", "dialog-link-group-title", title));
+  const list = el("div", "dialog-link-list");
+
+  for (const url of urls) {
+    let key: string;
+    try {
+      key = new URL(url).href;
+    } catch {
+      continue;
+    }
+    if (seenUrls.has(key)) continue;
+    seenUrls.add(key);
+
+    const label = boothLinkLabel(url, kind);
+    if (seenLabels.has(label)) continue;
+    seenLabels.add(label);
+    const link = safeExternalLink(url, label, "dialog-booth-link");
+    if (!link) continue;
+    link.setAttribute("aria-label", organizationName + "の" + title + ": " + label + "（新しいタブで開く）");
+    list.append(link);
+  }
+
+  if (list.childElementCount) {
+    group.append(list);
+    parent.append(group);
+  }
+}
 
 export function productDialog(instance = "dialog-" + (++dialogInstance)): ProductDialog {
   const dialog = el("dialog", "product-dialog");
@@ -41,16 +73,11 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
       details.replaceChildren();
       details.append(el("p", "dialog-booth", (view.booth.boothCode ?? "番号未定") + " " + view.booth.name));
       const boothLinks = el("div", "dialog-booth-links");
-      for (const [label, urls] of [["X", view.booth.links.x], ["団体サイト", view.booth.links.site]] as const) {
-        for (const [index, url] of urls.entries()) {
-          const displayLabel = label === "団体サイト" ? boothSiteLabel(url) : label + (urls.length > 1 ? " " + (index + 1) : "");
-          const link = safeExternalLink(url, displayLabel, "dialog-booth-link");
-          if (!link) continue;
-          link.setAttribute("aria-label", view.booth.name + "の" + displayLabel + "（新しいタブで開く）");
-          boothLinks.append(link);
-        }
-      }
-      if (boothLinks.childElementCount) details.append(boothLinks);
+      boothLinks.append(el("h3", "dialog-booth-links-title", "団体リンク"));
+      appendLinkGroup(boothLinks, "X", view.booth.links.x, "x", view.booth.name);
+      appendLinkGroup(boothLinks, "Webサイト", view.booth.links.site, "site", view.booth.name);
+      appendLinkGroup(boothLinks, "Instagram", view.booth.links.instagram, "instagram", view.booth.name);
+      if (boothLinks.childElementCount > 1) details.append(boothLinks);
       details.append(el("p", "dialog-price", product.price === null ? "価格未確認" : product.price.toLocaleString("ja-JP") + "円"));
       if (product.priceNote) details.append(el("p", "dialog-note", product.priceNote));
       const description = el("p", "dialog-description", product.description);
@@ -74,17 +101,16 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
         details.append(el("p", "unconfirmed", "未確認: " + product.unconfirmed.map((key) => unconfirmedNames[key] ?? key).join("・")));
       }
 
-      const links = el("section", "dialog-links");
-      links.append(el("h3", "", "出典・団体のリンク"));
-      for (const [index, source] of product.sources.entries()) {
-        const link = safeExternalLink(source.url, "商品情報 " + (index + 1));
-        if (link) links.append(link);
-      }
-      for (const url of view.booth.links.instagram) {
-        const link = safeExternalLink(url, "Instagram");
-        if (link) links.append(link);
-      }
-      if (links.childElementCount > 1) details.append(links);
+      const sources = el("section", "dialog-links");
+      sources.append(el("h3", "", "出典"));
+      appendLinkGroup(
+        sources,
+        "商品・団体情報",
+        [...product.sources, ...view.booth.sources].map((source) => source.url),
+        "source",
+        view.booth.name,
+      );
+      if (sources.childElementCount > 1) details.append(sources);
       if (!dialog.open) dialog.showModal();
     },
   };

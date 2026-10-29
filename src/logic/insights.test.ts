@@ -83,13 +83,13 @@ describe("scoreProduct", () => {
     expect(scoreProduct(view("p03"), prefs)).toEqual({
       view: view("p03"),
       score: 2 + 3 + 2 + 2 + 1,
-      reasons: ["予算内", "好みの難易度", "好みのカテゴリ", "持ち帰って遊べる", "限定あり"],
+      reasons: ["予算内", "指定した難易度", "指定したカテゴリ", "持ち帰って遊べる", "限定あり"],
     });
   });
   it("推定の難易度は1点低く、合わない難易度・遊び方は減点", () => {
     const p05 = scoreProduct(view("p05"), prefs)!;
     expect(p05.score).toBe(2 + 2 + 2);
-    expect(p05.reasons).toEqual(["好みの難易度（推定）", "好みのカテゴリ", "持ち帰って遊べる"]);
+    expect(p05.reasons).toEqual(["指定した難易度（推定）", "指定したカテゴリ", "持ち帰って遊べる"]);
     const p02 = scoreProduct(view("p02"), prefs)!;
     expect(p02.score).toBe(2 - 2 - 1);
   });

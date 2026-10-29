@@ -1,20 +1,19 @@
 import { CATEGORY_NAMES, type ProductView } from "../logic/catalog.ts";
 import type { CartItem } from "../logic/cart.ts";
-import { boothSiteLabel } from "./boothLinkLabel.ts";
-import { button, el, safeExternalLink } from "./dom.ts";
+import { formatPlayMinutes } from "../logic/playTime.ts";
+import "./catalogPolish.css";
+import { button, el } from "./dom.ts";
 
 export type ProductCardActions = {
   onDetail: (view: ProductView) => void;
   onToggle: (productId: string) => void;
   onQty: (productId: string, qty: number) => void;
   canChangeList?: () => boolean;
-  onFeatureTag?: (tag: string, productId: string) => void;
-  selectedTags?: string[];
 };
 
 export type ProductCardHandle = {
   element: HTMLElement;
-  update: (item: CartItem | undefined, reasons?: string[], selectedTags?: string[]) => void;
+  update: (item: CartItem | undefined, reasons?: string[]) => void;
 };
 
 export function productCard(view: ProductView, item: CartItem | undefined, actions: ProductCardActions): ProductCardHandle {
@@ -80,46 +79,18 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     if (product.difficulty.source === "estimated") difficulty.append(el("span", "tag tag-small", "推定"));
   }
   body.append(difficulty, priceElement, oneLiner);
-
-  const boothLinks = el("div", "product-booth-links");
-  for (const [index, url] of view.booth.links.x.entries()) {
-    const link = safeExternalLink(url, "X", "product-booth-link");
-    if (!link) continue;
-    link.setAttribute("aria-label", view.booth.name + "のX" + (view.booth.links.x.length > 1 ? " " + (index + 1) : "") + "（新しいタブで開く）");
-    boothLinks.append(link);
+  if (product.playMinutes !== null) {
+    difficulty.append(el("span", "product-duration", "所要時間 " + formatPlayMinutes(product.playMinutes)));
   }
-  const siteLabels = view.booth.links.site.map(boothSiteLabel);
-  const siteLabelCounts = new Map<string, number>();
-  for (const label of siteLabels) siteLabelCounts.set(label, (siteLabelCounts.get(label) ?? 0) + 1);
-  for (const [index, url] of view.booth.links.site.entries()) {
-    const baseLabel = siteLabels[index];
-    const label = (siteLabelCounts.get(baseLabel) ?? 0) > 1 ? baseLabel + " " + (index + 1) : baseLabel;
-    const link = safeExternalLink(url, label, "product-booth-link");
-    if (!link) continue;
-    link.setAttribute("aria-label", view.booth.name + "の" + label + "（新しいタブで開く）");
-    boothLinks.append(link);
-  }
-  if (boothLinks.childElementCount) body.append(boothLinks);
 
   const tags = el("div", "product-tags");
-  const tagButtons = new Map<string, HTMLButtonElement>();
   for (const tag of view.featureTags) {
     const tagText = el("span", "", tag);
     const hash = el("span", "", "#");
     hash.setAttribute("aria-hidden", "true");
-    if (actions.onFeatureTag) {
-      const tagButton = button("", "tag tag-button");
-      tagButton.append(hash, tagText);
-      tagButton.dataset.featureTag = tag;
-      tagButton.setAttribute("aria-pressed", String(actions.selectedTags?.includes(tag) ?? false));
-      tagButton.addEventListener("click", () => actions.onFeatureTag?.(tag, product.id));
-      tagButtons.set(tag, tagButton);
-      tags.append(tagButton);
-    } else {
-      const tagLabel = el("span", "tag");
-      tagLabel.append(hash, tagText);
-      tags.append(tagLabel);
-    }
+    const tagLabel = el("span", "tag");
+    tagLabel.append(hash, tagText);
+    tags.append(tagLabel);
   }
   body.append(tags);
   const reasons = el("div", "product-reasons");
@@ -155,7 +126,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   actionsArea.append(quantity);
   card.append(body, actionsArea);
 
-  const update = (nextItem: CartItem | undefined, nextReasons?: string[], selectedTags?: string[], canChangeList = actions.canChangeList?.() ?? true) => {
+  const update = (nextItem: CartItem | undefined, nextReasons?: string[], canChangeList = actions.canChangeList?.() ?? true) => {
     currentItem = nextItem;
     listToggle.disabled = !canChangeList;
     minus.disabled = !canChangeList || nextItem?.qty === 1;
@@ -170,9 +141,6 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     if (nextReasons !== undefined) {
       reasons.replaceChildren(...nextReasons.map((reason) => el("span", "tag", reason)));
       reasons.hidden = nextReasons.length === 0;
-    }
-    if (selectedTags !== undefined) {
-      for (const [tag, tagButton] of tagButtons) tagButton.setAttribute("aria-pressed", String(selectedTags.includes(tag)));
     }
   };
 

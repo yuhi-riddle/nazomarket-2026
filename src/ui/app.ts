@@ -93,7 +93,7 @@ export function app(root: HTMLElement): void {
   brandMark.setAttribute("aria-hidden", "true");
   const brandCopy = el("div", "brand-copy");
   title.replaceChildren(
-    el("span", "brand-title-mobile", "買い物メモ"),
+    el("span", "brand-title-mobile", "ナゾマ買い物メモ"),
     el("span", "brand-title-desktop", "ナゾトキマーケット 買い物メモ"),
   );
   const eventMeta = el("span", "brand-event-meta", "11/7 土・11/8 日 東京ドームシティ プリズムホール ／ 非公式");

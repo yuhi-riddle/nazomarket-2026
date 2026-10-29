@@ -136,17 +136,17 @@ export function scoreProduct(
         score -= 2;
       } else if (difficulty.source === "estimated") {
         score += 2;
-        reasons.push("好みの難易度（推定）");
+        reasons.push("指定した難易度（推定）");
       } else {
         score += 3;
-        reasons.push("好みの難易度");
+        reasons.push("指定した難易度");
       }
     }
   }
 
   if (prefs.categories.length > 0 && prefs.categories.includes(product.category)) {
     score += 2;
-    reasons.push("好みのカテゴリ");
+    reasons.push("指定したカテゴリ");
   }
 
   if (prefs.playStyle !== "any") {

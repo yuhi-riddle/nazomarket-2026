@@ -18,7 +18,6 @@ import { xHashtagLinks } from "./xHashtagLinks.ts";
 import { venueMap, type BoothPaint, type VenueMapScale, type VenueMapUpdate } from "./venueMap.ts";
 
 const viewsByCode = new Map<string, ProductView[]>();
-const viewsById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
 for (const view of catalog) {
   const code = view.booth.boothCode;
   if (!code) continue;
@@ -121,7 +120,10 @@ export function mapView(store: AppStore): MapView {
   const mapFrame = el("div", "map-frame");
   mapFrame.tabIndex = 0;
   mapFrame.setAttribute("role", "region");
-  mapFrame.setAttribute("aria-label", "会場マップ。拡大時は枠の中をスクロールできます");
+  mapFrame.setAttribute("aria-label", "会場マップ");
+  mapFrame.setAttribute("aria-describedby", "map-scroll-help");
+  const mapScrollHelp = el("p", "map-scroll-help", "「＋」で拡大、スワイプ（スマホ）／スクロール（PC）で移動。「全体」で戻せます。下の欄から番号・出展者でも選べます。");
+  mapScrollHelp.id = "map-scroll-help";
   const panel = el("aside", "map-product-panel");
   panel.setAttribute("aria-label", "選択したブースの商品");
 
@@ -148,10 +150,21 @@ export function mapView(store: AppStore): MapView {
   boothSelect.addEventListener("change", () => {
     selectedCode = boothSelect.value || null;
     map.setSelectedBooth(selectedCode);
+    if (selectedCode) {
+      const boothNode = map.querySelector<SVGGElement>('[data-booth-code="' + selectedCode + '"]');
+      if (boothNode) {
+        const boothBounds = boothNode.getBoundingClientRect();
+        const frameBounds = mapFrame.getBoundingClientRect();
+        mapFrame.scrollLeft += boothBounds.left + boothBounds.width / 2
+          - frameBounds.left - mapFrame.clientLeft - mapFrame.clientWidth / 2;
+        mapFrame.scrollTop += boothBounds.top + boothBounds.height / 2
+          - frameBounds.top - mapFrame.clientTop - mapFrame.clientHeight / 2;
+      }
+    }
     syncPanel(store.getState());
   });
   mapFrame.append(map);
-  mapColumn.append(boothPicker, toolbar, mapFrame, el("p", "map-scroll-help", "拡大した地図は左右に動かせます。"));
+  mapColumn.append(toolbar, mapFrame, mapScrollHelp, boothPicker);
 
   const legend = el("div", "map-legend");
   legend.setAttribute("role", "group");
@@ -163,12 +176,6 @@ export function mapView(store: AppStore): MapView {
   noShowEntry.append(el("span", "map-legend-swatch map-no-show-swatch"), el("span", "", "出展なし"));
   legend.append(noShowEntry);
   mapColumn.append(legend);
-  const remainingSection = el("section", "map-remaining");
-  const remainingHeading = el("h3", "map-remaining-heading");
-  const remainingList = el("div", "map-remaining-list");
-  const remainingNote = el("p", "map-remaining-note");
-  remainingSection.append(remainingHeading, remainingList, remainingNote);
-  mapColumn.append(remainingSection);
   workspace.append(mapColumn, panel);
 
   page.append(workspace, details.element);
@@ -181,9 +188,15 @@ export function mapView(store: AppStore): MapView {
     zoomFit.disabled = scale === 1;
   };
   const setScale = (next: VenueMapScale) => {
+    const centerX = (mapFrame.scrollLeft + mapFrame.clientWidth / 2) / mapFrame.scrollWidth;
+    const centerY = (mapFrame.scrollTop + mapFrame.clientHeight / 2) / mapFrame.scrollHeight;
     scale = next;
     map.setScale(next);
     updateZoomButtons();
+    requestAnimationFrame(() => {
+      mapFrame.scrollLeft = centerX * mapFrame.scrollWidth - mapFrame.clientWidth / 2;
+      mapFrame.scrollTop = centerY * mapFrame.scrollHeight - mapFrame.clientHeight / 2;
+    });
   };
   zoomOut.addEventListener("click", () => {
     if (scale === "fit") setScale(1);
@@ -316,41 +329,6 @@ export function mapView(store: AppStore): MapView {
       update.paintBooth = (booth) => paints.get(booth.code);
       previousPaintDay = state.day;
       previousPaintItems = state.items;
-      const remaining = new Map<string, { booth: ProductView["booth"]; count: number }>();
-      let otherDay = 0;
-      for (const item of state.items) {
-        if (item.bought) continue;
-        const view = viewsById.get(item.productId);
-        if (!view) continue;
-        if (!view.product.days.includes(state.day) || !view.booth.days.includes(state.day)) {
-          otherDay += 1;
-          continue;
-        }
-        const entry = remaining.get(view.booth.id) ?? { booth: view.booth, count: 0 };
-        entry.count += 1;
-        remaining.set(view.booth.id, entry);
-      }
-      remainingHeading.textContent = "買い物予定の団体（" + (state.day === "sat" ? "土曜" : "日曜") + "）";
-      remainingList.replaceChildren();
-      for (const { booth, count } of remaining.values()) {
-        const text = booth.name + " " + (booth.boothCode ?? "場所未定") + " 未購入" + count + "件";
-        if (!booth.boothCode) {
-          remainingList.append(el("p", "map-remaining-unplaced", text));
-          continue;
-        }
-        const code = booth.boothCode;
-        const selectBooth = button(text, "map-remaining-button");
-        selectBooth.addEventListener("click", () => {
-          selectedCode = code;
-          map.setSelectedBooth(code);
-          boothSelect.value = code;
-          syncPanel(store.getState());
-          panel.scrollIntoView({ block: "start" });
-        });
-        remainingList.append(selectBooth);
-      }
-      if (remaining.size === 0) remainingList.append(el("p", "map-remaining-empty", "この日の未購入商品はありません。"));
-      remainingNote.textContent = otherDay ? "別の日に出展する未購入商品が" + otherDay + "件あります。" : "";
     }
     if (paintsChanged) map.update(update);
     syncPanel(state);

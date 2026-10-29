@@ -12,8 +12,8 @@ import type { AppStore } from "../store.ts";
 
 const sortOptions: Array<[SortKey, string]> = [
   ["recommended", "おすすめ順"],
-  ["booth", "ブース順"],
-  ["organization", "団体順"],
+  ["booth", "配置順（ブース番号）"],
+  ["organization", "団体名順（五十音）"],
   ["priceAsc", "価格の安い順"],
   ["priceDesc", "価格の高い順"],
   ["difficultyAsc", "難易度の低い順"],
@@ -106,7 +106,7 @@ export function catalogView(store: AppStore): CatalogView {
   toolbar.append(mobileSearch, filters.openButton, count, sortField, groupActions);
 
   const resultRegion = el("div", "catalog-results");
-  const recommendationHint = el("p", "recommendation-hint", "リストの商品や設定した好み、残り予算を参考に、おすすめを最大10件表示します。すべての商品は並び順を変えると見られます。");
+  const recommendationHint = el("p", "recommendation-hint", "リストに入れた商品や、指定がある場合はおすすめの条件・残り予算を参考に、最大10件表示します。すべての商品は並び順を変えると見られます。");
   recommendationHint.hidden = true;
   const grid = el("div", "product-grid");
   const empty = el("div", "empty-state");
@@ -164,27 +164,12 @@ export function catalogView(store: AppStore): CatalogView {
     return group;
   };
 
-  const getHandle = (view: ProductView, state: AppState): ProductCardHandle => {
+  const getHandle = (view: ProductView): ProductCardHandle => {
     const existing = handles.get(view.product.id);
     if (existing) return existing;
     const handle = productCard(view, undefined, {
       onDetail: (selected) => details.open(selected),
       canChangeList: () => !store.isSharedWriteBlocked(),
-      onFeatureTag(tag, productId) {
-        store.update((current) => {
-          const tags = current.filters.tags.includes(tag)
-            ? current.filters.tags.filter((selected) => selected !== tag)
-            : [...current.filters.tags, tag];
-          return { ...current, filters: { ...current.filters, tags } };
-        });
-        const buttons = handles.get(productId)?.element.querySelectorAll<HTMLButtonElement>(".tag-button");
-        const focusTarget = buttons
-          ? Array.from(buttons).find((tagButton) => tagButton.dataset.featureTag === tag)
-          : undefined;
-        if (focusTarget) focusTarget.focus();
-        else count.focus();
-      },
-      selectedTags: state.filters.tags,
       onToggle(productId) {
         store.update((current) => ({ ...current, items: toggleItem(current.items, productId) }));
         handles.get(productId)?.element.querySelector<HTMLButtonElement>(".list-toggle")?.focus();
@@ -264,8 +249,8 @@ export function catalogView(store: AppStore): CatalogView {
         if (filtersOrSortChanged) group.element.open = true;
         group.products.replaceChildren();
         for (const view of views) {
-          const handle = getHandle(view, state);
-          handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? [], state.filters.tags);
+          const handle = getHandle(view);
+          handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? []);
           group.products.append(handle.element);
         }
         grid.append(group.element);
@@ -273,8 +258,8 @@ export function catalogView(store: AppStore): CatalogView {
     } else {
       for (let index = 0; index < ordered.length; index += 1) {
         const view = ordered[index];
-        const handle = getHandle(view, state);
-        handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? [], state.filters.tags);
+        const handle = getHandle(view);
+        handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? []);
         grid.append(handle.element);
       }
     }
