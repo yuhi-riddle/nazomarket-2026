@@ -7,6 +7,7 @@ import { budgetMeter } from "./budgetMeter.ts";
 import { catalogView } from "./catalogView.ts";
 import { cartView } from "./cartView.ts";
 import { mapView } from "./mapView.ts";
+import { appStartupPlan } from "./appStartup.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import type { SharedListViewOptions } from "./sharedListView.ts";
 
@@ -80,8 +81,14 @@ export function app(root: HTMLElement): void {
   const sharedApiUrl = configuredSharedApiUrl();
   const initialRoom = captureInitialSharedRoom();
   const store = createStore();
-  if ((initialRoom.credentials || initialRoom.needsPaste) && store.getState().tab !== "cart") {
-    store.update((state) => ({ ...state, tab: "cart" }));
+  const startupPlan = appStartupPlan(
+    store.getState().tab,
+    initialRoom.credentials !== null,
+    initialRoom.needsPaste,
+    sharedApiUrl !== null,
+  );
+  if (startupPlan.initialTab !== store.getState().tab) {
+    store.update((state) => ({ ...state, tab: startupPlan.initialTab }));
   }
   const header = el("header", "app-header");
   const headerMain = el("div", "header-main");
@@ -100,7 +107,24 @@ export function app(root: HTMLElement): void {
   brandCopy.append(title, eventMeta, unofficial);
   brand.replaceChildren(brandMark, brandCopy);
 
-  headerMain.append(brand);
+  const sharedSyncIndicator = button("", "button button-secondary shared-sync-indicator");
+  sharedSyncIndicator.hidden = true;
+  sharedSyncIndicator.setAttribute("aria-live", "polite");
+  sharedSyncIndicator.setAttribute("aria-atomic", "true");
+  sharedSyncIndicator.addEventListener("click", () => store.update((state) => ({ ...state, tab: "cart" })));
+  let sharedSyncLabel = "";
+  const updateSharedSyncIndicator = (label: string | null) => {
+    if (label === null) {
+      sharedSyncIndicator.hidden = true;
+      return;
+    }
+    if (sharedSyncLabel !== label) {
+      sharedSyncLabel = label;
+      sharedSyncIndicator.textContent = label;
+    }
+    sharedSyncIndicator.hidden = false;
+  };
+  headerMain.append(brand, sharedSyncIndicator);
 
   const tablist = el("nav", "tab-list");
   tablist.setAttribute("role", "tablist");
@@ -145,6 +169,13 @@ export function app(root: HTMLElement): void {
   }
   header.append(headerMain, tablist);
 
+  const storageWarning = el("p", "personal-storage-warning", "この端末に保存できていません。再読み込みすると消えるので、リストをテキストでコピーしてください");
+  storageWarning.setAttribute("role", "status");
+  storageWarning.setAttribute("aria-live", "polite");
+  storageWarning.setAttribute("aria-atomic", "true");
+  storageWarning.hidden = true;
+  header.append(storageWarning);
+
   const main = el("main", "app-main");
   const panels = new Map<TabId, HTMLElement>();
   type LazyPage = {
@@ -175,6 +206,7 @@ export function app(root: HTMLElement): void {
           initialCredentials: initialRoom.credentials,
           initialError: initialRoom.error,
           roomLinkNeedsPaste: initialRoom.needsPaste,
+          onSyncStatusChange: updateSharedSyncIndicator,
         } satisfies SharedListViewOptions : undefined)
         : mapView(store);
     pages.set(tab, page);
@@ -215,6 +247,7 @@ export function app(root: HTMLElement): void {
     }
   };
   const syncHeader = (state: AppState) => {
+    storageWarning.hidden = !store.hasPersonalSaveFailure();
     for (const tab of tabOrder) {
       const selected = state.tab === tab;
       const tabButton = tabButtons.get(tab);
@@ -281,6 +314,7 @@ export function app(root: HTMLElement): void {
   } else {
     setHash(store.getState().tab);
   }
+  if (startupPlan.preconnectSharedList) pageFor("cart");
   store.subscribe(render);
   render(store.getState());
 }

@@ -2,10 +2,11 @@ import "./mapEnhancements.css";
 import { booths, catalog, venueLayout } from "../data.ts";
 import {
   setQty,
+  toggleBought,
   toggleItem,
   type CartItem,
 } from "../logic/cart.ts";
-import { unboughtItemsByBooth } from "../logic/mapBooths.ts";
+import { listedItemsForBooth, unboughtItemsByBooth } from "../logic/mapBooths.ts";
 import type { ProductView } from "../logic/catalog.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import type { AppState } from "../state.ts";
@@ -263,7 +264,8 @@ export function mapView(store: AppStore): MapView {
 
       if (dayViews.length) {
         const productList = el("div", "map-product-list");
-        const itemById = new Map(state.items.map((item): [string, CartItem] => [item.productId, item]));
+        const itemById = new Map(listedItemsForBooth(dayViews, state.items)
+          .map((item): [string, CartItem] => [item.productId, item]));
         for (const view of dayViews) {
           const card = productCard(view, itemById.get(view.product.id), {
             onDetail: (selected) => details.open(selected),
@@ -272,6 +274,11 @@ export function mapView(store: AppStore): MapView {
               store.update((current) => ({ ...current, items: toggleItem(current.items, productId) }));
               productsInPanel.find(({ view: panelView }) => panelView.product.id === productId)
                 ?.card.element.querySelector<HTMLButtonElement>(".list-toggle")?.focus();
+            },
+            onToggleBought(productId) {
+              store.update((current) => ({ ...current, items: toggleBought(current.items, productId) }));
+              productsInPanel.find(({ view: panelView }) => panelView.product.id === productId)
+                ?.card.element.querySelector<HTMLInputElement>(".map-bought-check input")?.focus();
             },
             onQty(productId, qty) {
               store.update((current) => ({ ...current, items: setQty(current.items, productId, qty) }));

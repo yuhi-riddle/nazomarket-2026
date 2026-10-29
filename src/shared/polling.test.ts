@@ -34,4 +34,28 @@ describe("shared polling lifecycle", () => {
     expect(starts).toBe(2);
     expect(stops).toBe(1);
   });
+
+  it("stops while the document is hidden and restarts immediately when it becomes visible", () => {
+    let starts = 0;
+    let stops = 0;
+    let visibilityState = "visible";
+    const visibilityListeners = new Set<() => void>();
+    const setPolling = createSharedPollingController(() => {
+      starts += 1;
+      return () => { stops += 1; };
+    }, {
+      getVisibilityState: () => visibilityState,
+      subscribe: (listener) => { visibilityListeners.add(listener); },
+    });
+
+    setPolling(true);
+    visibilityState = "hidden";
+    for (const listener of visibilityListeners) listener();
+    for (const listener of visibilityListeners) listener();
+    visibilityState = "visible";
+    for (const listener of visibilityListeners) listener();
+
+    expect(starts).toBe(2);
+    expect(stops).toBe(1);
+  });
 });

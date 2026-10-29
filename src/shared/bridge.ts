@@ -8,6 +8,9 @@ export type SharedCartProjection = {
   itemIds: Map<string, string>;
 };
 
+export const SHARED_WRITE_LIMIT_PER_MINUTE = 120;
+export const SHARED_WRITE_WINDOW_MS = 60_000;
+
 function applyOperation(
   items: SharedListItem[],
   budget: number | null,
@@ -120,4 +123,21 @@ export function sharedOperationsForCartChange(
 
   if (previous.budget !== next.budget) operations.push({ type: "set-budget", budgetYen: next.budget });
   return operations;
+}
+
+export function sharedOperationsForPersonalCart(items: CartItem[], budget: number | null): SharedOperation[] {
+  return sharedOperationsForCartChange(
+    { items: [], budget: null },
+    { items, budget },
+    new Map(),
+  );
+}
+
+export function sharedCopyBatch(
+  operations: SharedOperation[],
+  offset: number,
+  limit = SHARED_WRITE_LIMIT_PER_MINUTE,
+): SharedOperation[] {
+  const start = Math.max(0, Math.floor(offset));
+  return operations.slice(start, start + Math.max(0, Math.floor(limit)));
 }

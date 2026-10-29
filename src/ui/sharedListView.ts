@@ -6,8 +6,16 @@ import {
   createSharedRoom,
   createSharedRoomRouteUrl,
   createSharedRoomUrl,
+  sharedSyncIndicatorLabel,
 } from "../shared/index.ts";
-import { projectSharedCart, sharedOperationsForCartChange } from "../shared/bridge.ts";
+import {
+  SHARED_WRITE_LIMIT_PER_MINUTE,
+  SHARED_WRITE_WINDOW_MS,
+  projectSharedCart,
+  sharedCopyBatch,
+  sharedOperationsForCartChange,
+  sharedOperationsForPersonalCart,
+} from "../shared/bridge.ts";
 import { createSharedPollingController } from "../shared/polling.ts";
 import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
@@ -17,6 +25,7 @@ export type SharedListViewOptions = {
   initialCredentials: SharedRoomCredentials | null;
   initialError: string | null;
   roomLinkNeedsPaste: boolean;
+  onSyncStatusChange?: (label: string | null) => void;
 };
 
 export type SharedListView = {
@@ -78,8 +87,9 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   error.setAttribute("role", "alert");
   const controls = el("div", "shared-list-controls");
   const createButton = button("共同リストを作成", "button button-primary shared-create");
+  const createCopyButton = button("今のリストをコピーして共同リストを作成", "button button-secondary shared-create-copy");
   const joinToggle = button("共有リンクから参加", "button button-secondary shared-join-toggle");
-  controls.append(createButton, joinToggle);
+  controls.append(createButton, createCopyButton, joinToggle);
 
   const joinForm = el("form", "shared-join-form");
   joinForm.hidden = true;
@@ -114,6 +124,13 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   copyFallback.setAttribute("aria-label", "コピーする共同リストの共有リンク");
   const copyStatus = el("p", "shared-copy-status");
   copyStatus.setAttribute("aria-live", "polite");
+  const copyProgress = el("p", "shared-copy-status");
+  copyProgress.setAttribute("role", "status");
+  copyProgress.setAttribute("aria-live", "polite");
+  const continueCopyButton = button("残りをコピー", "button button-secondary shared-copy-continue");
+  continueCopyButton.hidden = true;
+  const createdRoomGuide = el("p", "shared-copy-status", "別の端末でも開くには、共有リンクをその端末に送ってください。リンクを知っている人は編集できます。");
+  createdRoomGuide.hidden = true;
 
   const pendingPanel = el("div", "shared-pending-panel");
   pendingPanel.hidden = true;
@@ -137,7 +154,21 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   const cancelAction = button("キャンセル", "button button-secondary");
   confirmPanel.append(confirmText, confirmAction, cancelAction);
 
-  element.append(heading, status, error, controls, joinForm, activeControls, copyFallback, copyStatus, pendingPanel, confirmPanel);
+  element.append(
+    heading,
+    status,
+    error,
+    controls,
+    joinForm,
+    activeControls,
+    copyFallback,
+    copyStatus,
+    copyProgress,
+    continueCopyButton,
+    createdRoomGuide,
+    pendingPanel,
+    confirmPanel,
+  );
 
   let client: SharedListClient | null = null;
   let unsubscribe: (() => void) | null = null;
@@ -150,29 +181,95 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   let unsupportedState = false;
   let enqueueing = 0;
   let unsavedChanges: string[] = [];
+  let copyPlan: SharedOperation[] | null = null;
+  let copyCursor = 0;
+  let copyStarted = false;
+  let copyFinishedMessage = "";
+  let isCopying = false;
+  let copyWriteTimes: number[] = [];
+  let copyWindowTimer: ReturnType<typeof setTimeout> | null = null;
   let confirmKind: "leave" | "resolve-rebase" | "resolve-discard" | "resolve-first-discard" | "mark-applied" | "discard-pending" | "discard-unsaved" | null = null;
 
-  const setPolling = createSharedPollingController(() => client!.startPolling(5_000));
+  const setPolling = createSharedPollingController(() => client!.startPolling(5_000), {
+    getVisibilityState: () => document.visibilityState,
+    subscribe: (listener) => { document.addEventListener("visibilitychange", listener); },
+  });
   const pendingCount = () => snapshot.pendingOperations.length;
   const updatePolling = () => {
     setPolling(client !== null && wantsSharedList);
   };
 
+  const finishCopyIfSynced = () => {
+    if (isCopying || copyPlan === null || copyCursor < copyPlan.length || pendingCount() > 0 || snapshot.status !== "idle") return;
+    copyFinishedMessage = copyPlan.length + "件の操作を共同リストにコピーしました。";
+    copyPlan = null;
+  };
+
+  const updateCopyProgress = () => {
+    copyProgress.hidden = !copyStarted;
+    continueCopyButton.hidden = !wantsSharedList || copyPlan === null || copyCursor >= copyPlan.length;
+    const now = Date.now();
+    copyWriteTimes = copyWriteTimes.filter((time) => now - time < SHARED_WRITE_WINDOW_MS);
+    const allowedAt = copyWriteTimes.length >= SHARED_WRITE_LIMIT_PER_MINUTE
+      ? copyWriteTimes[0]! + SHARED_WRITE_WINDOW_MS
+      : now;
+    continueCopyButton.disabled = isBusy || isCopying || !client || pendingCount() > 0
+      || snapshot.status !== "idle"
+      || (copyWriteTimes.length >= SHARED_WRITE_LIMIT_PER_MINUTE && now < allowedAt);
+
+    if (copyStarted) {
+      let progressText = copyFinishedMessage;
+      if (copyPlan !== null) {
+        const completed = Math.max(0, copyCursor - pendingCount());
+        if (pendingCount() > 0) {
+          progressText = completed + " / " + copyPlan.length + " 件の操作を反映しました。未送信操作 " + pendingCount()
+            + " 件をリスト画面で再試行し、同期後に残りをコピーしてください。";
+        } else if (snapshot.status === "conflict" || snapshot.status === "error") {
+          progressText = completed + " / " + copyPlan.length + " 件の操作を反映しました。共有リストのエラーを解決してから続けてください。";
+        } else if (copyCursor < copyPlan.length && copyWriteTimes.length >= SHARED_WRITE_LIMIT_PER_MINUTE && now < allowedAt) {
+          const seconds = Math.ceil((allowedAt - now) / 1_000);
+          progressText = completed + " / " + copyPlan.length + " 件の操作を反映しました。毎分120回の上限に達しました。"
+            + seconds + "秒待ってから残りをコピーしてください。";
+        } else if (copyCursor < copyPlan.length) {
+          progressText = completed + " / " + copyPlan.length + " 件の操作を反映しました。続けて残りをコピーできます。";
+        } else {
+          progressText = completed + " / " + copyPlan.length + " 件の操作を反映しました。未送信操作の同期を待っています。";
+        }
+      }
+      if (copyProgress.textContent !== progressText) copyProgress.textContent = progressText;
+    }
+
+    if (copyWindowTimer !== null) {
+      clearTimeout(copyWindowTimer);
+      copyWindowTimer = null;
+    }
+    if (copyPlan !== null && copyCursor < copyPlan.length && copyWriteTimes.length >= SHARED_WRITE_LIMIT_PER_MINUTE && now < allowedAt) {
+      copyWindowTimer = setTimeout(() => {
+        copyWindowTimer = null;
+        updateCopyProgress();
+      }, allowedAt - now);
+    }
+  };
+
   const render = () => {
     const isInSharedList = wantsSharedList && store.isShared();
+    options.onSyncStatusChange?.(sharedSyncIndicatorLabel(snapshot, client !== null && wantsSharedList, store.isSharedWriteBlocked()));
     createButton.hidden = isInSharedList || options.initialCredentials !== null;
+    createCopyButton.hidden = isInSharedList || options.initialCredentials !== null
+      || (store.getState().items.length === 0 && store.getState().budget === null);
     joinToggle.hidden = isInSharedList || options.initialCredentials !== null;
     joinForm.hidden = isInSharedList || options.initialCredentials !== null || !joinForm.dataset.open;
     activeControls.hidden = !client;
     copyLinkButton.disabled = !credentials;
-    syncButton.disabled = !client || isBusy;
+    syncButton.disabled = !client || isBusy || isCopying;
     retryButton.hidden = snapshot.status !== "offline" || pendingCount() === 0;
-    retryButton.disabled = isBusy;
+    retryButton.disabled = isBusy || isCopying;
     leaveButton.hidden = !isInSharedList;
-    leaveButton.disabled = isBusy;
+    leaveButton.disabled = isBusy || isCopying;
     resumeButton.hidden = !client || isInSharedList;
-    resumeButton.disabled = isBusy;
+    resumeButton.disabled = isBusy || isCopying;
     createButton.disabled = isBusy || !canSwitchRoom();
+    createCopyButton.disabled = isBusy || !canSwitchRoom();
     joinToggle.disabled = isBusy || !canSwitchRoom();
     joinSubmit.disabled = isBusy || !canSwitchRoom();
 
@@ -194,6 +291,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
       status.textContent = "接続が切れています。保留中の操作はこの端末に保存しています。";
     } else if (snapshot.status === "error") {
       status.textContent = snapshot.error?.message ?? "共有リストを編集できません。";
+    } else if (copyPlan !== null && snapshot.status === "idle") {
+      status.textContent = isCopying ? "個人リストを共同リストへコピーしています…" : "個人リストのコピーが途中です。進捗と再試行の案内を確認してください。";
     } else if (snapshot.status === "syncing") {
       status.textContent = "共有リストを同期しています…";
     } else {
@@ -231,6 +330,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     markAppliedButton.disabled = isBusy;
     retryFirstButton.disabled = isBusy;
     discardFirstButton.disabled = isBusy;
+    updateCopyProgress();
 
     if (confirmKind) {
       confirmPanel.hidden = false;
@@ -238,6 +338,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
         const leaveNotices = [
           pendingCount() > 0 ? "未送信の操作 " + pendingCount() + " 件は端末に保存したままです。" : "",
           enqueueing > 0 ? "送信中の操作 " + enqueueing + " 件は端末に保存済みです。" : "",
+          copyPlan !== null ? "個人リストのコピーは " + Math.max(0, copyCursor - pendingCount()) + " / " + copyPlan.length + " 件の操作で中断します。" : "",
           unsavedChanges.length > 0 ? "端末に保存できなかった変更 " + unsavedChanges.length + " 件は共有先に届いていません。個人リストへ戻ると共有画面から見えなくなります。" : "",
         ].filter(Boolean).join(" ");
         confirmText.textContent = leaveNotices + " 個人リストへ戻りますか？";
@@ -265,11 +366,12 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   };
 
   function canSwitchRoom(): boolean {
-    return pendingCount() === 0 && unsavedChanges.length === 0 && enqueueing === 0;
+    return copyPlan === null && pendingCount() === 0 && unsavedChanges.length === 0 && enqueueing === 0;
   }
 
   const applySnapshot = (next: SharedSyncSnapshot) => {
     snapshot = next;
+    finishCopyIfSynced();
     if (wantsSharedList && enqueueing === 0 && unsavedChanges.length === 0 && next.state) {
       const pending = next.status === "conflict" || next.status === "error" ? [] : next.pendingOperations;
       const projection = projectSharedCart(next.state, pending);
@@ -283,7 +385,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
         itemIds = projection.itemIds;
         if (store.isShared()) store.applySharedList(projection.items, projection.budget);
         else store.enterSharedList(projection.items, projection.budget);
-        store.setSharedWriteBlocked(next.status === "conflict" || next.status === "error");
+        store.setSharedWriteBlocked(next.status === "conflict" || next.status === "error" || copyPlan !== null);
       }
     } else if (wantsSharedList && store.isShared() && next.status === "error") {
       store.setSharedWriteBlocked(true);
@@ -388,8 +490,55 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     window.history.replaceState(null, "", route);
   };
 
-  const createRoom = async () => {
+  const runCopyBatch = async (duringRoomCreation = false): Promise<void> => {
+    if (!copyPlan || !client || isCopying || (isBusy && !duringRoomCreation)) return;
+    const now = Date.now();
+    copyWriteTimes = copyWriteTimes.filter((time) => now - time < SHARED_WRITE_WINDOW_MS);
+    if (copyWriteTimes.length >= SHARED_WRITE_LIMIT_PER_MINUTE) {
+      render();
+      return;
+    }
+
+    isCopying = true;
+    store.setSharedWriteBlocked(true);
+    render();
+    const batch = sharedCopyBatch(
+      copyPlan,
+      copyCursor,
+      SHARED_WRITE_LIMIT_PER_MINUTE - copyWriteTimes.length,
+    );
+    for (const operation of batch) {
+      try {
+        await client.enqueue(operation);
+      } catch (cause) {
+        localError = cause instanceof Error ? cause.message : "共同リストへのコピーに失敗しました。";
+        break;
+      }
+      copyCursor += 1;
+      copyWriteTimes.push(Date.now());
+      snapshot = client.getSnapshot();
+      if (snapshot.status !== "idle" || pendingCount() > 0) break;
+    }
+    isCopying = false;
+    snapshot = client.getSnapshot();
+    finishCopyIfSynced();
+    store.setSharedWriteBlocked(snapshot.status === "conflict" || snapshot.status === "error" || copyPlan !== null);
+    render();
+  };
+
+  const createRoom = async (copyCurrentList = false) => {
     if (!canSwitchRoom()) return;
+    let copyOperations: SharedOperation[] | null = null;
+    if (copyCurrentList) {
+      try {
+        const personalState = store.getState();
+        copyOperations = sharedOperationsForPersonalCart(personalState.items, personalState.budget);
+      } catch (cause) {
+        localError = cause instanceof Error ? cause.message : "個人リストの操作を作成できませんでした。";
+        render();
+        return;
+      }
+    }
     isBusy = true;
     localError = null;
     render();
@@ -402,6 +551,27 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
       }
       updateCurrentRoomRoute(nextCredentials.roomId);
       connect(nextCredentials, room.state);
+      createdRoomGuide.hidden = false;
+      copyStatus.textContent = "";
+      copyFallback.hidden = true;
+      copyStarted = copyCurrentList;
+      copyFinishedMessage = "";
+      copyProgress.textContent = "";
+      copyPlan = copyOperations;
+      copyCursor = 0;
+      copyWriteTimes = [];
+      if (copyCurrentList && copyOperations?.length === 0) {
+        copyPlan = null;
+        copyFinishedMessage = "コピーする操作はありません。";
+      } else if (copyCurrentList) {
+        if (client) {
+          await runCopyBatch(true);
+        } else {
+          const operationCount = copyOperations?.length ?? 0;
+          copyPlan = null;
+          copyFinishedMessage = "0 / " + operationCount + " 件の操作をコピーしました。共有リストへ接続できないため、接続を確認して再試行してください。";
+        }
+      }
     } catch (cause) {
       localError = cause instanceof Error ? cause.message : "共有ルームを作成できませんでした。";
     } finally {
@@ -561,6 +731,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   };
 
   createButton.addEventListener("click", () => { void createRoom(); });
+  createCopyButton.addEventListener("click", () => { void createRoom(true); });
+  continueCopyButton.addEventListener("click", () => { void runCopyBatch(); });
   joinToggle.addEventListener("click", () => {
     joinForm.dataset.open = joinForm.dataset.open ? "" : "true";
     joinForm.hidden = !joinForm.dataset.open;
@@ -581,7 +753,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   });
   retryButton.addEventListener("click", () => { void retryPending(); });
   leaveButton.addEventListener("click", () => {
-    if (pendingCount() || unsavedChanges.length || enqueueing) showConfirmation("leave");
+    if (pendingCount() || unsavedChanges.length || enqueueing || copyPlan !== null) showConfirmation("leave");
     else leaveShared();
   });
   resumeButton.addEventListener("click", () => {

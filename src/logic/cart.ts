@@ -14,8 +14,13 @@ export function toggleItem(items: CartItem[], productId: string): CartItem[] {
 }
 
 export function setQty(items: CartItem[], productId: string, qty: number): CartItem[] {
+  if (items.some((item) => item.productId === productId && item.bought)) return items;
   const safeQty = Number.isFinite(qty) ? Math.min(99, Math.max(1, Math.floor(qty))) : 1;
   return items.map((item) => item.productId === productId ? { ...item, qty: safeQty } : item);
+}
+
+export function shouldHideCartGroup(items: readonly CartItem[], hideBought: boolean): boolean {
+  return hideBought && items.length > 0 && items.every((item) => item.bought);
 }
 
 export function removeItem(items: CartItem[], productId: string): CartItem[] {

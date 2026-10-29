@@ -5,6 +5,7 @@ import {
   exportCartText,
   removeItem,
   setQty,
+  shouldHideCartGroup,
   toggleBought,
   type CartItem,
 } from "../logic/cart.ts";
@@ -18,7 +19,7 @@ import { sharedListView, type SharedListViewOptions } from "./sharedListView.ts"
 const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
 
 type CartRow = { element: HTMLElement; update: (item: CartItem, hideBought: boolean, canEdit: boolean) => void };
-type CartSection = { element: HTMLElement; heading: HTMLElement; rows: HTMLElement; idsKey: string; title: string };
+type CartSection = { element: HTMLElement; heading: HTMLElement; rows: HTMLElement; idsKey: string; ids: string[]; title: string };
 type CartBucket = { key: string; title: string; ids: string[]; organization: string; boothCode: string };
 
 export type CartView = { element: HTMLElement; sync: (state: AppState) => void; setActive?: (active: boolean) => void };
@@ -61,6 +62,8 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
   const quantityValue = el("span", "quantity-value");
   const plus = button("+", "quantity-button");
   plus.setAttribute("aria-label", view.product.name + "の数量を増やす");
+  const quantityHint = el("span", "quantity-hint cart-quantity-hint", "購入チェックを外すと変更できます");
+  quantityHint.hidden = true;
   minus.addEventListener("click", () => store.update((state) => ({
     ...state,
     items: setQty(state.items, view.product.id, currentItem.qty - 1),
@@ -69,7 +72,7 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
     ...state,
     items: setQty(state.items, view.product.id, currentItem.qty + 1),
   })));
-  quantity.append(minus, quantityValue, plus);
+  quantity.append(minus, quantityValue, plus, quantityHint);
 
   const remove = button("外す", "button button-secondary cart-remove");
   remove.addEventListener("click", () => store.update((state) => ({
@@ -94,8 +97,9 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
       : " = " + (view.product.price * next.qty).toLocaleString("ja-JP") + "円";
     amount.textContent = unitPrice + " × " + next.qty + subtotal;
     quantityValue.textContent = String(next.qty);
-    minus.disabled = !canEdit || next.qty <= 1;
-    plus.disabled = !canEdit || next.qty >= 99;
+    minus.disabled = !canEdit || next.bought || next.qty <= 1;
+    plus.disabled = !canEdit || next.bought || next.qty >= 99;
+    quantityHint.hidden = !next.bought;
     remove.disabled = !canEdit;
     row.classList.toggle("is-bought", next.bought);
     row.hidden = hideBought && next.bought;
@@ -136,7 +140,7 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
   for (const [key, label, initial] of [
     ["total", "合計", "0円"],
     ["spent", "使った金額", "0円"],
-    ["remaining", "残り予算", "—"],
+    ["remaining", "使える残り", "—"],
     ["points", "GET（購入点数）", "0 / 0点"],
   ]) {
     const tile = el("div", "today-summary-tile");
@@ -206,10 +210,10 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
     summary,
     unknownPrice,
     unknownBought,
+    hideBoughtLabel,
     routeTitle,
     groupsRoot,
     allBought,
-    hideBoughtLabel,
     empty,
     actions,
     copyStatus,
@@ -268,7 +272,7 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
     const groupHeading = el("h4", "today-route-heading");
     const groupRows = el("div", "today-route-rows cart-group-rows");
     section.append(groupHeading, groupRows);
-    const created = { element: section, heading: groupHeading, rows: groupRows, idsKey: "", title: "" };
+    const created = { element: section, heading: groupHeading, rows: groupRows, idsKey: "", ids: [], title: "" };
     sections.set(key, created);
     return created;
   };
@@ -340,6 +344,7 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
         const idsKey = JSON.stringify(bucket.ids);
         if (section.idsKey !== idsKey) {
           section.idsKey = idsKey;
+          section.ids = bucket.ids;
           let cursor: ChildNode | null = section.rows.firstChild;
           for (const id of bucket.ids) {
             const row = rows.get(id)?.element;
@@ -360,6 +365,7 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
         section.element.remove();
         section.rows.replaceChildren();
         section.idsKey = "";
+        section.ids = [];
         section.title = "";
       }
       if (nextKeys.length !== previousSectionKeys.length
@@ -372,6 +378,16 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
         previousSectionKeys = nextKeys;
       }
       previousRouteKey = routeKey;
+    }
+
+    if (previousItems !== state.items || previousHideBought !== state.today.hideBought) {
+      for (const section of sections.values()) {
+        const sectionItems = section.ids.flatMap((id) => {
+          const item = itemById.get(id);
+          return item ? [item] : [];
+        });
+        section.element.hidden = shouldHideCartGroup(sectionItems, state.today.hideBought);
+      }
     }
 
     const shouldUpdateTotals = previousItems !== state.items || previousBudget !== state.budget;

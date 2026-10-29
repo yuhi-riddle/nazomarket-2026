@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 import type { SharedListState, SharedOperation } from "../../shared-worker/src/domain.ts";
-import { projectSharedCart, sharedOperationsForCartChange } from "./bridge.ts";
+import {
+  projectSharedCart,
+  sharedCopyBatch,
+  sharedOperationsForCartChange,
+  sharedOperationsForPersonalCart,
+} from "./bridge.ts";
 
 const initial: SharedListState = {
   revision: 3,
@@ -60,6 +65,27 @@ describe("shared cart bridge", () => {
       { type: "add", item: { id: "p18", productId: "p18", name: expect.any(String), priceYen: expect.any(Number), quantity: 2 } },
       { type: "set-purchased", itemId: "p18", purchased: true },
     ]);
+  });
+
+  it("turns a personal cart into ordered shared operations, including bought state and budget", () => {
+    expect(sharedOperationsForPersonalCart([
+      { productId: "p18", qty: 2, bought: true },
+      { productId: "p02", qty: 3, bought: false },
+    ], 7_500)).toEqual([
+      { type: "add", item: { id: "p18", productId: "p18", name: expect.any(String), priceYen: expect.any(Number), quantity: 2 } },
+      { type: "set-purchased", itemId: "p18", purchased: true },
+      { type: "add", item: { id: "p02", productId: "p02", name: expect.any(String), priceYen: expect.any(Number), quantity: 3 } },
+      { type: "set-budget", budgetYen: 7_500 },
+    ]);
+  });
+
+  it("limits one shared-copy batch to 120 writes", () => {
+    const operations: SharedOperation[] = Array.from({ length: 125 }, (_, index) => ({
+      type: "set-budget",
+      budgetYen: index,
+    }));
+    expect(sharedCopyBatch(operations, 0)).toHaveLength(120);
+    expect(sharedCopyBatch(operations, 120)).toHaveLength(5);
   });
 
   it("uses the shared server item id when removing a catalog product", () => {

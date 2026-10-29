@@ -7,6 +7,7 @@ import {
   exportCartText,
   nazocolleProgress,
   removeItem,
+  shouldHideCartGroup,
   toggleItem,
   setQty,
   toggleBought,
@@ -37,9 +38,18 @@ describe("リストの操作", () => {
     expect(toggleItem(one, "a")).toEqual([]);
   });
   it("数量は1〜99に収める", () => {
-    expect(setQty(items, "a", 0)[0].qty).toBe(1);
-    expect(setQty(items, "a", 120)[0].qty).toBe(99);
-    expect(setQty(items, "a", 4.7)[0].qty).toBe(4);
+    expect(setQty(items, "b", 0)[1].qty).toBe(1);
+    expect(setQty(items, "b", 120)[1].qty).toBe(99);
+    expect(setQty(items, "b", 4.7)[1].qty).toBe(4);
+  });
+  it("購入済みの商品は数量を変更しない", () => {
+    expect(setQty(items, "a", 5)).toBe(items);
+    expect(setQty(items, "a", 5)[0]?.qty).toBe(2);
+  });
+  it("購入済みの商品だけでできたブースは、買ったものを隠すときだけ隠す", () => {
+    expect(shouldHideCartGroup([items[0]!, items[2]!], true)).toBe(true);
+    expect(shouldHideCartGroup([items[0]!, items[1]!], true)).toBe(false);
+    expect(shouldHideCartGroup([items[0]!, items[2]!], false)).toBe(false);
   });
   it("削除・買った印の切り替え", () => {
     expect(removeItem(items, "b").map((i) => i.productId)).toEqual(["a", "c", "d"]);

@@ -5,6 +5,14 @@ import type { SharedListState, SharedOperation } from "../../shared-worker/src/d
 class MemoryStorage {
   readonly values = new Map<string, string>();
 
+  get length(): number {
+    return this.values.size;
+  }
+
+  key(index: number): string | null {
+    return [...this.values.keys()][index] ?? null;
+  }
+
   getItem(key: string): string | null {
     return this.values.get(key) ?? null;
   }
@@ -248,6 +256,48 @@ describe("shared operation outbox", () => {
     });
     await reloadedSecondTab.sync();
     expect(reloadedSecondTab.getSnapshot().pendingOperations).toEqual([secondOperation]);
+  });
+
+  it("takes over a closed tab's queued operations while holding its tab lock", async () => {
+    const storage = new MemoryStorage();
+    const closedTabId = "closed-tab-id-1234";
+    const closedQueueKey = `nazomarket2026:shared:v2:outbox:${roomId}:${closedTabId}`;
+    storage.values.set(closedQueueKey, JSON.stringify([{
+      id: "11111111-1111-4111-8111-111111111111",
+      operation: addItem,
+      baseRevision: 0,
+    }]));
+    const tabStorage = new MemoryStorage();
+    tabStorage.values.set("nazomarket2026:shared:v2:tab-id", "new-tab-id-12345678");
+    let serverState = initialState;
+    const sent: SharedOperation[] = [];
+    const client = new SharedListClient({
+      apiUrl: "https://shared.example",
+      roomId,
+      roomKey,
+      storage,
+      tabStorage,
+      tabLockManager,
+      fetcher: async (input, init) => {
+        if (!new URL(String(input)).pathname.endsWith("/operations")) return jsonResponse(serverState);
+        const envelope = JSON.parse(String(init?.body)) as { operation: SharedOperation };
+        sent.push(envelope.operation);
+        serverState = {
+          revision: serverState.revision + 1,
+          budgetYen: serverState.budgetYen,
+          items: [{ ...addItem.item, purchased: false }],
+        };
+        return jsonResponse(serverState);
+      },
+    });
+
+    await client.sync();
+
+    expect(sent).toEqual([addItem]);
+    expect(client.getSnapshot()).toMatchObject({ status: "idle", pendingOperations: [] });
+    expect(storage.values.has(closedQueueKey)).toBe(false);
+    expect(storage.values.size).toBe(0);
+    await client.dispose();
   });
 
   it("detects a duplicated sessionStorage identity and forks without taking the source outbox", async () => {
