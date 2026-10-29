@@ -1,7 +1,11 @@
 export { SharedListClient, createSharedRoom } from "./client.ts";
 export type { SharedListClientOptions, SharedRoomResult } from "./client.ts";
 export { captureSharedRoomLink, createSharedRoomRouteUrl, createSharedRoomUrl, readSharedRoomCredentials } from "./roomLink.ts";
-export { sharedSyncIndicatorLabel } from "./syncStatus.ts";
+export {
+  sharedSyncIndicatorLabel,
+  shouldBlockSharedWritesDuringInitialConnection,
+  shouldShowSharedRetryButton,
+} from "./syncStatus.ts";
 export type {
   SharedClientError,
   SharedListItem,

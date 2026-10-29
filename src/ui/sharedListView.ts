@@ -6,6 +6,8 @@ import {
   createSharedRoom,
   createSharedRoomRouteUrl,
   createSharedRoomUrl,
+  shouldBlockSharedWritesDuringInitialConnection,
+  shouldShowSharedRetryButton,
   sharedSyncIndicatorLabel,
 } from "../shared/index.ts";
 import {
@@ -176,6 +178,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   let credentials = options.initialCredentials;
   let itemIds = new Map<string, string>();
   let wantsSharedList = false;
+  let initialConnectionPending = false;
   let isBusy = false;
   let localError = options.initialError;
   let unsupportedState = false;
@@ -253,7 +256,13 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
 
   const render = () => {
     const isInSharedList = wantsSharedList && store.isShared();
-    options.onSyncStatusChange?.(sharedSyncIndicatorLabel(snapshot, client !== null && wantsSharedList, store.isSharedWriteBlocked()));
+    const isConnecting = shouldBlockSharedWritesDuringInitialConnection(snapshot, initialConnectionPending);
+    options.onSyncStatusChange?.(sharedSyncIndicatorLabel(
+      snapshot,
+      client !== null && wantsSharedList,
+      store.isSharedWriteBlocked(),
+      isConnecting,
+    ));
     createButton.hidden = isInSharedList || options.initialCredentials !== null;
     createCopyButton.hidden = isInSharedList || options.initialCredentials !== null
       || (store.getState().items.length === 0 && store.getState().budget === null);
@@ -262,7 +271,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     activeControls.hidden = !client;
     copyLinkButton.disabled = !credentials;
     syncButton.disabled = !client || isBusy || isCopying;
-    retryButton.hidden = snapshot.status !== "offline" || pendingCount() === 0;
+    retryButton.hidden = !shouldShowSharedRetryButton(snapshot);
+    retryButton.textContent = pendingCount() > 0 ? "未送信の操作を再試行" : "同期を再試行";
     retryButton.disabled = isBusy || isCopying;
     leaveButton.hidden = !isInSharedList;
     leaveButton.disabled = isBusy || isCopying;
@@ -372,6 +382,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   const applySnapshot = (next: SharedSyncSnapshot) => {
     snapshot = next;
     finishCopyIfSynced();
+    const initialConnectionBlocked = shouldBlockSharedWritesDuringInitialConnection(next, initialConnectionPending);
+    if (initialConnectionPending && !initialConnectionBlocked) initialConnectionPending = false;
     if (wantsSharedList && enqueueing === 0 && unsavedChanges.length === 0 && next.state) {
       const pending = next.status === "conflict" || next.status === "error" ? [] : next.pendingOperations;
       const projection = projectSharedCart(next.state, pending);
@@ -387,8 +399,12 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
         else store.enterSharedList(projection.items, projection.budget);
         store.setSharedWriteBlocked(next.status === "conflict" || next.status === "error" || copyPlan !== null);
       }
+    } else if (initialConnectionBlocked) {
+      store.setSharedWriteBlocked(true);
     } else if (wantsSharedList && store.isShared() && next.status === "error") {
       store.setSharedWriteBlocked(true);
+    } else if (!store.isShared()) {
+      store.setSharedWriteBlocked(false);
     }
     updatePolling();
     render();
@@ -408,6 +424,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     itemIds = new Map();
     credentials = nextCredentials;
     wantsSharedList = true;
+    initialConnectionPending = initialState === undefined;
+    store.setSharedWriteBlocked(initialConnectionPending);
     unsupportedState = false;
     localError = null;
     unsavedChanges = [];
@@ -432,6 +450,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
       render();
     } catch {
       wantsSharedList = false;
+      initialConnectionPending = false;
       store.setSharedChangeHandler(null);
       store.setSharedWriteBlocked(false);
       store.leaveSharedList();

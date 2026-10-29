@@ -204,7 +204,7 @@ async function responseFailure(response: Response): Promise<ClientFailure> {
   return new ClientFailure(code, failureMessage(code, response.status), {
     status: response.status,
     currentRevision,
-    retryable: response.status >= 500,
+    retryable: response.status === 429 || response.status >= 500,
   });
 }
 

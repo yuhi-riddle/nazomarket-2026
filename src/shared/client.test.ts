@@ -84,6 +84,35 @@ describe("shared room API", () => {
     expect(room).toEqual({ roomId, roomKey, state: createdState });
   });
 
+  it("retries a failed state read with no pending operations after clearing a blocked failure", async () => {
+    let stateReads = 0;
+    const client = new SharedListClient({
+      apiUrl: "https://shared.example",
+      roomId,
+      roomKey,
+      storage: new MemoryStorage(),
+      tabStorage: new MemoryStorage(),
+      tabLockManager,
+      fetcher: async () => {
+        stateReads += 1;
+        if (stateReads === 1) return jsonResponse({ error: "unauthorized" }, 401);
+        if (stateReads === 2) return jsonResponse({ error: "rate_limited" }, 429);
+        return jsonResponse(initialState);
+      },
+    });
+
+    await client.sync();
+    expect(client.getSnapshot()).toMatchObject({ status: "error", pendingOperations: [] });
+
+    await client.sync();
+    expect(client.getSnapshot()).toMatchObject({ status: "offline", pendingOperations: [], error: { status: 429 } });
+
+    await client.retryPending();
+
+    expect(stateReads).toBe(3);
+    expect(client.getSnapshot()).toMatchObject({ status: "idle", state: initialState, pendingOperations: [], error: null });
+  });
+
   it("does not send an operation when it cannot save the outbox first", async () => {
     let requestCount = 0;
     const storage = {
