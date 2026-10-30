@@ -10,7 +10,7 @@ import { button, el } from "./dom.ts";
 import { filterPanel } from "./filterPanel.ts";
 import { productCard, type ProductCardHandle } from "./productCard.ts";
 import { productDialog } from "./productDialog.ts";
-import type { AppStore } from "../store.ts";
+import type { AppStore, SharedStoreState } from "../store.ts";
 
 const sortOptions: Array<[SortKey, string]> = [
   ["recommended", "おすすめ順"],
@@ -40,7 +40,7 @@ type CatalogGroup = {
 
 export type CatalogView = {
   element: HTMLElement;
-  sync: (state: AppState) => void;
+  sync: (state: AppState, shared?: SharedStoreState | null) => void;
   updateItems: (items: CartItem[], state: AppState) => void;
 };
 
@@ -198,14 +198,23 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     resultRegion.append(empty);
   };
 
-  const renderList = (state: AppState) => {
+  const renderList = (state: AppState, shared: SharedStoreState | null = null) => {
     const filtersWithDay = state.filters;
     const filtered = filterCatalog(catalog, filtersWithDay);
     let ordered: ProductView[];
     let reasonsById = new Map<string, string[]>();
     let hasRecommendation = true;
     if (state.sort === "recommended") {
-      const budget = state.budget;
+      const sharedMode = store.isShared();
+      const me = sharedMode && shared !== null && shared.meId !== null
+        ? shared.members.find((member) => member.id === shared.meId)
+        : undefined;
+      const budget = sharedMode ? me?.budgetYen ?? null : state.budget;
+      const budgetItems = sharedMode
+        ? me
+          ? state.items.filter((item) => shared?.ownerByProductId.get(item.productId) === me.id)
+          : []
+        : state.items;
       hasRecommendation = hasRecommendationBasis(state.items, state.prefs, budget);
       if (!hasRecommendation) {
         ordered = [];
@@ -214,12 +223,16 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
         const cartKey = JSON.stringify(state.items
           .map((item) => [item.productId, item.qty] as const)
           .sort(([a], [b]) => a.localeCompare(b)));
-        if (rankedPrefs !== state.prefs || rankedDay !== state.filters.day || rankedBudget !== budget || rankedCartKey !== cartKey) {
-          rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.filters.day }, state.items, budget);
+        const budgetCartKey = JSON.stringify(budgetItems
+          .map((item) => [item.productId, item.qty] as const)
+          .sort(([a], [b]) => a.localeCompare(b)));
+        const rankedItemsKey = JSON.stringify([cartKey, budgetCartKey]);
+        if (rankedPrefs !== state.prefs || rankedDay !== state.filters.day || rankedBudget !== budget || rankedCartKey !== rankedItemsKey) {
+          rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.filters.day }, state.items, budgetItems, budget);
           rankedPrefs = state.prefs;
           rankedDay = state.filters.day;
           rankedBudget = budget;
-          rankedCartKey = cartKey;
+          rankedCartKey = rankedItemsKey;
         }
         const matched = (rankedCatalog?.matched ?? []).filter((item) => visibleIds.has(item.view.product.id)).slice(0, 10);
         for (const item of matched) reasonsById.set(item.view.product.id, item.reasons);

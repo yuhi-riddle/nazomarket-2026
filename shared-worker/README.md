@@ -45,9 +45,11 @@ Workerは鍵そのものをSQLiteに保存せず、SHA-256検証値だけを保�
 ```json
 {
   "revision": 4,
-  "budgetYen": 5000,
+  "members": [
+    { "id": "member-1", "name": "あき", "budgetYen": 5000 }
+  ],
   "items": [
-    { "id": "item-1", "productId": "catalog-id", "name": "商品名", "priceYen": 1200, "quantity": 2, "purchased": false }
+    { "id": "item-1", "productId": "catalog-id", "name": "商品名", "priceYen": 1200, "quantity": 2, "purchased": false, "ownerId": "member-1" }
   ]
 }
 ```
@@ -55,14 +57,18 @@ Workerは鍵そのものをSQLiteに保存せず、SHA-256検証値だけを保�
 操作要求は `{ "baseRevision": 4, "operation": { ... } }` です。対応する操作:
 
 ```json
-{ "type": "add", "item": { "id": "item-1", "productId": "catalog-id", "name": "商品名", "priceYen": 1200, "quantity": 1 } }
+{ "type": "add", "item": { "id": "item-1", "productId": "catalog-id", "name": "商品名", "priceYen": 1200, "quantity": 1, "ownerId": "member-1" } }
 { "type": "remove", "itemId": "item-1" }
 { "type": "set-quantity", "itemId": "item-1", "quantity": 2 }
 { "type": "set-purchased", "itemId": "item-1", "purchased": true }
-{ "type": "set-budget", "budgetYen": 5000 }
+{ "type": "add-member", "member": { "id": "member-1", "name": "あき" } }
+{ "type": "rename-member", "memberId": "member-1", "name": "あきら" }
+{ "type": "remove-member", "memberId": "member-1" }
+{ "type": "set-member-budget", "memberId": "member-1", "budgetYen": 5000 }
+{ "type": "set-owner", "itemId": "item-1", "ownerId": "member-1" }
 ```
 
-`productId`、価格、予算は `null` を指定できます。数量は1〜999、金額は0〜1,000,000,000円、商品名は空でない100文字以内、IDは英数字・`_`・`-` の1〜64文字です。1ルームの上限は500商品、操作本文は8 KiBです。余分なフィールドや上限外の値は拒否します。
+`productId`、価格、予算、担当（`ownerId`）は `null` を指定できます。担当が `null` のアイテムは未定です。数量は1〜999、金額は0〜1,000,000,000円、商品名は空でない100文字以内、メンバー名は前後の空白を除いて1〜20文字（制御文字なし、大文字小文字を区別せず重複不可）、IDは英数字・`_`・`-` の1〜64文字です。1ルームの上限は500商品・20人、操作本文は8 KiBです。メンバーを外すと、そのメンバーが担当のアイテムは未定に戻ります。存在しないメンバーやアイテムを指す操作は `404` です。余分なフィールドや上限外の値は拒否します。
 
 各成功操作でリビジョンが1増えます。古い `baseRevision` は `409 { "error": "revision_conflict", "currentRevision": n }` になります。クライアントは最新状態をGETし、操作を再適用するか利用者に選んでもらってください。スナップショット全体を上書きするAPIはありません。複数タブからの操作は1件ずつ送り、競合時に古い状態をそのまま再送しないでください。
 

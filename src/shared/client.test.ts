@@ -44,10 +44,10 @@ const tabLockManager = new MemoryTabLockManager() as unknown as LockManager;
 
 const roomId = "123e4567-e89b-42d3-a456-426614174000";
 const roomKey = "a".repeat(64);
-const initialState: SharedListState = { revision: 0, budgetYen: null, items: [] };
+const initialState: SharedListState = { revision: 0, members: [], items: [] };
 const addItem: SharedOperation = {
   type: "add",
-  item: { id: "item-1", productId: "product-1", name: "謎のキット", priceYen: 1200, quantity: 1 },
+  item: { id: "item-1", productId: "product-1", name: "謎のキット", priceYen: 1200, quantity: 1, ownerId: null },
 };
 
 function jsonResponse(value: unknown, status = 200): Response {
@@ -69,7 +69,7 @@ describe("shared room API", () => {
   it("creates a room without sending credentials or a request body", async () => {
     let requestUrl = "";
     let requestInit: RequestInit | undefined;
-    const createdState: SharedListState = { revision: 0, budgetYen: null, items: [] };
+    const createdState: SharedListState = { revision: 0, members: [], items: [] };
 
     const room = await createSharedRoom("https://shared.example", async (input, init) => {
       requestUrl = String(input);
@@ -172,7 +172,7 @@ describe("shared operation outbox", () => {
     }
   });
 
-  it("keeps an operation through a disconnect and sends it after a reload", async () => {
+  it("通信断後も新しいv3キーに保存し、再読み込み後に送信する", async () => {
     const storage = new MemoryStorage();
     const tabStorage = new MemoryStorage();
     let state = initialState;
@@ -190,7 +190,7 @@ describe("shared operation outbox", () => {
         if (postCount === 1) throw new TypeError("network disconnected");
         state = {
           revision: 1,
-          budgetYen: null,
+          members: [],
           items: [{ ...addItem.item, purchased: false }],
         };
         return jsonResponse(state);
@@ -215,6 +215,8 @@ describe("shared operation outbox", () => {
     expect(latestRequestUrl).not.toContain(roomKey);
     expect(latestAuthorization).toBe(`Bearer ${roomKey}`);
     expect([...storage.values.values()]).toHaveLength(1);
+    expect([...storage.values.keys()].some((key) => key.startsWith(`nazomarket2026:shared:v3:outbox:${roomId}:`))).toBe(true);
+    expect([...storage.values.keys()].some((key) => key.startsWith(`nazomarket2026:shared:v2:outbox:${roomId}:`))).toBe(false);
 
     await disconnected.dispose();
     const reloaded = new SharedListClient({
@@ -250,7 +252,7 @@ describe("shared operation outbox", () => {
       if (envelope.operation.type === "add") {
         serverState = {
           revision: serverState.revision + 1,
-          budgetYen: serverState.budgetYen,
+          members: serverState.members,
           items: [...serverState.items, { ...envelope.operation.item, purchased: false }],
         };
       }
@@ -290,7 +292,7 @@ describe("shared operation outbox", () => {
   it("takes over a closed tab's queued operations while holding its tab lock", async () => {
     const storage = new MemoryStorage();
     const closedTabId = "closed-tab-id-1234";
-    const closedQueueKey = `nazomarket2026:shared:v2:outbox:${roomId}:${closedTabId}`;
+    const closedQueueKey = `nazomarket2026:shared:v3:outbox:${roomId}:${closedTabId}`;
     storage.values.set(closedQueueKey, JSON.stringify([{
       id: "11111111-1111-4111-8111-111111111111",
       operation: addItem,
@@ -313,7 +315,7 @@ describe("shared operation outbox", () => {
         sent.push(envelope.operation);
         serverState = {
           revision: serverState.revision + 1,
-          budgetYen: serverState.budgetYen,
+          members: serverState.members,
           items: [{ ...addItem.item, purchased: false }],
         };
         return jsonResponse(serverState);
@@ -363,11 +365,13 @@ describe("shared operation outbox", () => {
     expect(storage.values.size).toBe(2);
   });
 
-  it("migrates the previous room-wide outbox without dropping its operations", async () => {
+  it("旧版の送信待ちキューを復元せず、新しい保存先へ持ち越さない", async () => {
     const storage = new MemoryStorage();
     const tabStorage = new MemoryStorage();
-    const legacyKey = `nazomarket2026:shared:v1:outbox:${roomId}`;
-    storage.values.set(legacyKey, JSON.stringify([{ operation: addItem, baseRevision: 0 }]));
+    const legacyRoomKey = `nazomarket2026:shared:v1:outbox:${roomId}`;
+    const legacyTabKey = `nazomarket2026:shared:v2:outbox:${roomId}:old-tab-id-12345678`;
+    storage.values.set(legacyRoomKey, JSON.stringify([{ operation: addItem, baseRevision: 0 }]));
+    storage.values.set(legacyTabKey, JSON.stringify([{ operation: addItem, baseRevision: 0 }]));
 
     const client = new SharedListClient({
       apiUrl: "https://shared.example",
@@ -382,9 +386,10 @@ describe("shared operation outbox", () => {
     });
     await client.sync();
 
-    expect(client.getSnapshot().pendingOperations).toEqual([addItem]);
-    expect(storage.values.has(legacyKey)).toBe(false);
-    expect(storage.values.size).toBe(1);
+    expect(client.getSnapshot().pendingOperations).toEqual([]);
+    expect(storage.values.has(legacyRoomKey)).toBe(false);
+    expect(storage.values.has(legacyTabKey)).toBe(false);
+    expect([...storage.values.keys()].every((key) => !key.includes(":outbox:"))).toBe(true);
   });
 
   it("does not replay an operation when the server may have committed before disconnect", async () => {
@@ -398,7 +403,7 @@ describe("shared operation outbox", () => {
       if (postCount > 1) return jsonResponse({ error: "duplicate_item" }, 409);
       serverState = {
         revision: 1,
-        budgetYen: null,
+        members: [],
         items: [{ ...addItem.item, purchased: false }],
       };
       throw new TypeError("connection closed before the response arrived");
@@ -441,7 +446,7 @@ describe("shared operation outbox", () => {
       postRequest.signal = init?.signal as AbortSignal;
       serverState = {
         revision: 1,
-        budgetYen: null,
+        members: [],
         items: [{ ...addItem.item, purchased: false }],
       };
       return stalledJsonResponse();
@@ -563,7 +568,7 @@ describe("shared operation outbox", () => {
         if (envelope.operation.type === "add") {
           reloadedState = {
             revision: reloadedState.revision + 1,
-            budgetYen: reloadedState.budgetYen,
+            members: reloadedState.members,
             items: [...reloadedState.items, { ...envelope.operation.item, purchased: false }],
           };
         }
@@ -586,7 +591,7 @@ describe("shared operation outbox", () => {
     const storage = new MemoryStorage();
     const remoteState: SharedListState = {
       revision: 1,
-      budgetYen: 3000,
+      members: [{ id: "member-1", name: "あき", budgetYen: 3000 }],
       items: [{
         id: "remote-item",
         productId: "product-remote",
@@ -594,6 +599,7 @@ describe("shared operation outbox", () => {
         priceYen: 500,
         quantity: 1,
         purchased: false,
+        ownerId: null,
       }],
     };
     const appliedState: SharedListState = {

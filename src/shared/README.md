@@ -57,12 +57,17 @@ const unsubscribe = client.subscribe((snapshot) => {
 });
 const stopPolling = client.startPolling(5_000);
 
-await client.enqueue({ type: "set-budget", budgetYen: 5_000 });
+await client.enqueue({ type: "add-member", member: { id: "member-1", name: "Aki" } });
+await client.enqueue({ type: "set-member-budget", memberId: "member-1", budgetYen: 5_000 });
+await client.enqueue({
+  type: "add",
+  item: { id: "product-1", productId: "product-1", name: "Puzzle kit", priceYen: 1_200, quantity: 1, ownerId: "member-1" },
+});
 ```
 
-The client saves each operation, with its base revision and a local operation ID, to `localStorage` before waiting for sync. A later operation is persisted while an earlier request is still in flight, so a reload restores both. Sync and recovery requests remain serialized. Each tab gets a separate outbox, identified by a value in that tab's `sessionStorage`; a reload in the same tab restores its pending operations. The client also holds a Web Lock for the tab ID across its rooms. If a duplicated tab or `window.open` inherits the same session ID, the lock collision gives it a new ID and empty outbox, leaving the original tab's queue untouched. If Web Locks or either storage is unavailable, the client blocks sending and reports an error. A network failure leaves the operation in the outbox for the next poll or `sync()` call. A successful server response removes it. The outbox never contains the room key. Keep one client per room per tab and call `dispose()` when the client instance is no longer needed; also stop polling and unsubscribe UI listeners when the owning view is disposed. The previous room-wide outbox format is copied under a room-wide migration lock.
+The client saves each operation, with its base revision and a local operation ID, to `localStorage` before waiting for sync. A later operation is persisted while an earlier request is still in flight, so a reload restores both. Sync and recovery requests remain serialized. Each tab gets a separate version 3 outbox, identified by a value in that tab's `sessionStorage`; a reload in the same tab restores its pending operations. The client also holds a Web Lock for the tab ID across its rooms. If a duplicated tab or `window.open` inherits the same session ID, the lock collision gives it a new ID and empty outbox, leaving the original tab's queue untouched. If Web Locks or either storage is unavailable, the client blocks sending and reports an error. A network failure leaves the operation in the outbox for the next poll or `sync()` call. A successful server response removes it. The outbox never contains the room key. Keep one client per room per tab and call `dispose()` when the client instance is no longer needed; also stop polling and unsubscribe UI listeners when the owning view is disposed.
 
-Requests have a 15-second timeout, including response-body reading. Set `requestTimeoutMs` in the client options to use a different positive timeout. A timeout leaves the operation queued because the server may already have applied it.
+Requests have a 15-second timeout, including response-body reading. Set `requestTimeoutMs` in the client options to use a different positive timeout. A timeout leaves the operation queued because the server may already have applied it. Version 1 and 2 outboxes are discarded without being read or migrated; the current queue uses the version 3 key.
 
 The Worker has no operation ID or deduplication API. If a request may have reached the server but its response was lost, the next sync compares the saved base revision with the latest state. A changed revision stops automatic sending and reports `status: "conflict"`; no pending operation is silently replayed. After reviewing the latest state and `conflict.operations`, `resolveConflict("rebase")` retries the whole queue against the latest revision, while `resolveConflict("discard")` removes the whole queue.
 

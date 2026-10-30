@@ -179,14 +179,16 @@ function compareBooth(a: ProductView, b: ProductView): number {
 export function rankForCatalog(
   catalog: ProductView[],
   prefs: Prefs,
-  items: CartItem[],
+  preferenceItems: CartItem[],
+  budgetItems: CartItem[],
   budget: number | null,
 ): { matched: Scored[]; others: ProductView[] } {
   const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
-  const quantityById = new Map(items.map((item): [string, number] => [item.productId, item.qty]));
+  const preferenceQuantityById = new Map(preferenceItems.map((item): [string, number] => [item.productId, item.qty]));
+  const budgetQuantityById = new Map(budgetItems.map((item): [string, number] => [item.productId, item.qty]));
   const categoryCounts = new Map<Category, number>();
   const difficulties: number[] = [];
-  for (const productId of quantityById.keys()) {
+  for (const productId of preferenceQuantityById.keys()) {
     const product = viewById.get(productId)?.product;
     if (!product) continue;
     categoryCounts.set(product.category, (categoryCounts.get(product.category) ?? 0) + 1);
@@ -201,7 +203,7 @@ export function rankForCatalog(
     ? difficulties.reduce((sum, level) => sum + level, 0) / difficulties.length : null;
   const listAmountById = new Map<string, number>();
   let listTotal = 0;
-  for (const item of items) {
+  for (const item of budgetItems) {
     const price = viewById.get(item.productId)?.product.price;
     if (price === null || price === undefined) continue;
     const amount = price * item.qty;
@@ -213,13 +215,13 @@ export function rankForCatalog(
   const others: ProductView[] = [];
   for (const view of catalog) {
     const productId = view.product.id;
-    const inList = quantityById.has(productId);
+    const inBudgetList = budgetQuantityById.has(productId);
     const otherItemsTotal = listTotal - (listAmountById.get(productId) ?? 0);
     const budgetLeftForThis = budget === null ? null : budget - otherItemsTotal;
     const amountForThis = view.product.price === null
       ? null
-      : view.product.price * (quantityById.get(productId) ?? 1);
-    const scored = scoreProduct(view, prefs, budgetLeftForThis, amountForThis, inList);
+      : view.product.price * (budgetQuantityById.get(productId) ?? 1);
+    const scored = scoreProduct(view, prefs, budgetLeftForThis, amountForThis, inBudgetList);
     if (!scored) continue;
     if (prefs.categories.length === 0 && preferredCategory !== null && view.product.category === preferredCategory) {
       scored.score += 1;

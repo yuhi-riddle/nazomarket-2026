@@ -7,23 +7,23 @@ import {
 } from "./syncStatus.ts";
 
 const synced: SharedSyncSnapshot = {
-  state: { revision: 2, budgetYen: null, items: [] },
+  state: { revision: 2, members: [{ id: "member-1", name: "あき", budgetYen: null }], items: [] },
   status: "idle",
   pendingOperations: [],
   conflict: null,
   error: null,
 };
 
-describe("shared sync indicator", () => {
-  it("hides the indicator for a personal list", () => {
+describe("共有同期の表示", () => {
+  it("個人リストでは同期表示を出さない", () => {
     expect(sharedSyncIndicatorLabel(synced, false)).toBeNull();
   });
 
-  it("labels a completed sync", () => {
+  it("同期完了を表示する", () => {
     expect(sharedSyncIndicatorLabel(synced, true)).toBe("共同リスト：同期済み");
   });
 
-  it("labels the first connection while its state is loading", () => {
+  it("初回接続中は読み込み中と表示する", () => {
     expect(sharedSyncIndicatorLabel({
       ...synced,
       state: null,
@@ -31,7 +31,7 @@ describe("shared sync indicator", () => {
     }, true, true, true)).toBe("共同リスト：接続中");
   });
 
-  it("blocks writes only while the initial shared state is still loading", () => {
+  it("初回状態の読み込み中だけ書き込みを止める", () => {
     const loading: SharedSyncSnapshot = { ...synced, state: null, status: "syncing" };
     expect(shouldBlockSharedWritesDuringInitialConnection(loading, true)).toBe(true);
     expect(shouldBlockSharedWritesDuringInitialConnection({ ...loading, status: "offline" }, true)).toBe(false);
@@ -40,22 +40,22 @@ describe("shared sync indicator", () => {
     expect(shouldBlockSharedWritesDuringInitialConnection(loading, false)).toBe(false);
   });
 
-  it("shows a retry button for an offline sync with no queued operations", () => {
+  it("送信待ちがないオフライン状態では再試行を案内する", () => {
     expect(shouldShowSharedRetryButton({ ...synced, state: null, status: "offline" })).toBe(true);
     expect(shouldShowSharedRetryButton(synced)).toBe(false);
   });
 
-  it("shows the number of queued operations", () => {
+  it("送信待ちのメンバー予算操作数を表示する", () => {
     expect(sharedSyncIndicatorLabel({
       ...synced,
       pendingOperations: [
-        { type: "set-budget", budgetYen: 1_000 },
-        { type: "set-budget", budgetYen: 2_000 },
+        { type: "set-member-budget", memberId: "member-1", budgetYen: 1_000 },
+        { type: "set-member-budget", memberId: "member-1", budgetYen: 2_000 },
       ],
     }, true)).toBe("共同リスト：未送信2件");
   });
 
-  it("asks the user to review a conflict", () => {
+  it("競合時は内容の確認を案内する", () => {
     expect(sharedSyncIndicatorLabel({ ...synced, status: "conflict" }, true)).toBe("共同リスト：要確認");
   });
 });

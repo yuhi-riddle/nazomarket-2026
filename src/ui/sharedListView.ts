@@ -19,6 +19,7 @@ import {
   sharedOperationsForPersonalCart,
 } from "../shared/bridge.ts";
 import { createSharedPollingController } from "../shared/polling.ts";
+import { clearSharedMeIfRemoved, readSharedMe, writeSharedMe } from "../shared/me.ts";
 import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
 
@@ -33,6 +34,8 @@ export type SharedListViewOptions = {
 export type SharedListView = {
   element: HTMLElement;
   setActive: (active: boolean) => void;
+  enqueue: (operation: SharedOperation) => Promise<void>;
+  setOwner: (productId: string, ownerId: string | null) => Promise<void>;
 };
 
 const emptySnapshot: SharedSyncSnapshot = {
@@ -44,9 +47,23 @@ const emptySnapshot: SharedSyncSnapshot = {
 };
 
 function operationLabel(operation: SharedOperation, snapshot: SharedSyncSnapshot): string {
+  if (operation.type === "add-member") return "メンバー追加: " + operation.member.name;
+  if (operation.type === "rename-member") return "メンバー名変更: " + operation.name;
+  if (operation.type === "remove-member") {
+    return "メンバー削除: " + (snapshot.state?.members.find((member) => member.id === operation.memberId)?.name ?? operation.memberId);
+  }
+  if (operation.type === "set-member-budget") {
+    const name = snapshot.state?.members.find((member) => member.id === operation.memberId)?.name ?? operation.memberId;
+    return name + "の予算: " + (operation.budgetYen === null ? "未設定" : operation.budgetYen.toLocaleString("ja-JP") + "円");
+  }
   if (operation.type === "add") return "追加: " + operation.item.name + " × " + operation.item.quantity;
-  if (operation.type === "set-budget") {
-    return "予算: " + (operation.budgetYen === null ? "なし" : operation.budgetYen.toLocaleString("ja-JP") + "円");
+  if (operation.type === "set-owner") {
+    const item = snapshot.state?.items.find((entry) => entry.id === operation.itemId);
+    const product = products.find((entry) => entry.id === item?.productId);
+    const owner = operation.ownerId === null
+      ? "未定"
+      : snapshot.state?.members.find((member) => member.id === operation.ownerId)?.name ?? operation.ownerId;
+    return (product?.name ?? item?.name ?? "共有アイテム") + "の担当: " + owner;
   }
   const sharedItem = snapshot.state?.items.find((item) => item.id === operation.itemId);
   const product = products.find((item) => item.id === sharedItem?.productId || item.id === operation.itemId);
@@ -58,6 +75,19 @@ function operationLabel(operation: SharedOperation, snapshot: SharedSyncSnapshot
 
 function operationAlreadyApplied(operation: SharedOperation, state: SharedListState | null): boolean {
   if (!state) return false;
+  if (operation.type === "add-member") {
+    return state.members.some((member) => member.id === operation.member.id && member.name === operation.member.name);
+  }
+  if (operation.type === "rename-member") {
+    return state.members.find((member) => member.id === operation.memberId)?.name === operation.name;
+  }
+  if (operation.type === "remove-member") return !state.members.some((member) => member.id === operation.memberId);
+  if (operation.type === "set-member-budget") {
+    return state.members.find((member) => member.id === operation.memberId)?.budgetYen === operation.budgetYen;
+  }
+  if (operation.type === "set-owner") {
+    return state.items.find((item) => item.id === operation.itemId)?.ownerId === operation.ownerId;
+  }
   if (operation.type === "add") {
     const item = state.items.find((entry) => entry.id === operation.item.id);
     return item !== undefined
@@ -71,10 +101,7 @@ function operationAlreadyApplied(operation: SharedOperation, state: SharedListSt
   if (operation.type === "set-quantity") {
     return state.items.find((item) => item.id === operation.itemId)?.quantity === operation.quantity;
   }
-  if (operation.type === "set-purchased") {
-    return state.items.find((item) => item.id === operation.itemId)?.purchased === operation.purchased;
-  }
-  return state.budgetYen === operation.budgetYen;
+  return state.items.find((item) => item.id === operation.itemId)?.purchased === operation.purchased;
 }
 
 export function sharedListView(store: AppStore, options: SharedListViewOptions): SharedListView {
@@ -85,6 +112,50 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   const status = el("p", "shared-list-status");
   status.setAttribute("role", "status");
   status.setAttribute("aria-live", "polite");
+  const mePanel = el("section", "shared-me-panel");
+  const meTitle = el("h4", "shared-me-title", "あなたは？");
+  const meSelected = el("div", "shared-me-selected");
+  meSelected.setAttribute("role", "status");
+  const meSelectedName = el("span", "shared-me-name");
+  const changeMeButton = button("（変更）", "button button-secondary shared-me-change");
+  changeMeButton.setAttribute("aria-label", "自分を選び直す");
+  meSelected.append(meSelectedName, changeMeButton);
+  const meRenameForm = el("form", "shared-me-form shared-me-rename-form");
+  const meRenameLabel = el("label", "shared-me-name-field");
+  meRenameLabel.append(el("span", "field-label", "名前を変更"));
+  const meRenameInput = el("input", "text-input shared-me-name-input");
+  meRenameInput.type = "text";
+  meRenameInput.autocomplete = "name";
+  meRenameInput.setAttribute("aria-label", "変更後の名前");
+  const meRenameError = el("p", "shared-me-name-error");
+  meRenameError.id = "shared-me-rename-error";
+  meRenameError.setAttribute("role", "status");
+  meRenameError.setAttribute("aria-live", "polite");
+  meRenameInput.setAttribute("aria-describedby", meRenameError.id);
+  meRenameLabel.append(meRenameInput);
+  const meRenameButton = button("名前を変更する", "button button-secondary shared-me-rename", "submit");
+  meRenameForm.append(meRenameLabel, meRenameError, meRenameButton);
+  const meChooser = el("div", "shared-me-chooser");
+  const meChoices = el("div", "shared-me-choices");
+  const meChoiceButtons = new Map<string, HTMLButtonElement>();
+  let meChoiceSignature = "";
+  const meForm = el("form", "shared-me-form");
+  const meNameInput = el("input", "text-input shared-me-name-input");
+  meNameInput.type = "text";
+  meNameInput.autocomplete = "name";
+  meNameInput.setAttribute("aria-label", "自分の名前");
+  const meNameLabel = el("label", "shared-me-name-field");
+  meNameLabel.append(el("span", "field-label", "名前"), meNameInput);
+  const meNameError = el("p", "shared-me-name-error");
+  meNameError.id = "shared-me-register-error";
+  meNameError.setAttribute("role", "status");
+  meNameError.setAttribute("aria-live", "polite");
+  meNameInput.setAttribute("aria-describedby", meNameError.id);
+  const meRegisterButton = button("登録して自分にする", "button button-primary shared-me-register", "submit");
+  meForm.append(meNameLabel, meNameError, meRegisterButton);
+  const mePrivacyNote = el("p", "shared-me-note", "名前は共有リンクを知る全員に見えます。");
+  meChooser.append(meChoices, meForm, mePrivacyNote);
+  mePanel.append(meTitle, meSelected, meRenameForm, meChooser);
   const error = el("p", "shared-list-error");
   error.setAttribute("role", "alert");
   const controls = el("div", "shared-list-controls");
@@ -159,6 +230,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   element.append(
     heading,
     status,
+    mePanel,
     error,
     controls,
     joinForm,
@@ -177,6 +249,11 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   let snapshot = emptySnapshot;
   let credentials = options.initialCredentials;
   let itemIds = new Map<string, string>();
+  let meId: string | null = null;
+  let projectedMembers: SharedListState["members"] = [];
+  const sessionMeByRoom = new Map<string, string | null>();
+  let projectedRevision: number | null = null;
+  let projectedQueueKey: string | null = null;
   let wantsSharedList = false;
   let initialConnectionPending = false;
   let isBusy = false;
@@ -268,6 +345,54 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
       || (store.getState().items.length === 0 && store.getState().budget === null);
     joinToggle.hidden = isInSharedList || options.initialCredentials !== null;
     joinForm.hidden = isInSharedList || options.initialCredentials !== null || !joinForm.dataset.open;
+    mePanel.hidden = !isInSharedList;
+    const chooserHadFocus = meChooser.contains(document.activeElement);
+    const selectedMember = projectedMembers.find((member) => member.id === meId);
+    meSelected.hidden = selectedMember === undefined;
+    meRenameForm.hidden = selectedMember === undefined;
+    if (selectedMember && document.activeElement !== meRenameInput && meRenameInput.value !== selectedMember.name) {
+      meRenameInput.value = selectedMember.name;
+    }
+    meChooser.hidden = selectedMember !== undefined;
+    if (selectedMember) {
+      const selectedText = "自分: " + selectedMember.name;
+      if (meSelectedName.textContent !== selectedText) meSelectedName.textContent = selectedText;
+      if (chooserHadFocus) changeMeButton.focus();
+    } else {
+      const nextChoiceSignature = JSON.stringify(projectedMembers.map((member) => [member.id, member.name]));
+      if (meChoiceSignature !== nextChoiceSignature) {
+        const activeIds = new Set(projectedMembers.map((member) => member.id));
+        for (const [memberId, choice] of meChoiceButtons) {
+          if (activeIds.has(memberId)) continue;
+          choice.remove();
+          meChoiceButtons.delete(memberId);
+        }
+        let cursor: ChildNode | null = meChoices.firstChild;
+        for (const member of projectedMembers) {
+          let choice = meChoiceButtons.get(member.id);
+          if (!choice) {
+            choice = button(member.name, "button button-secondary shared-me-choice");
+            choice.addEventListener("click", () => selectMe(member.id));
+            meChoiceButtons.set(member.id, choice);
+          }
+          if (choice.textContent !== member.name) choice.textContent = member.name;
+          const label = "自分を" + member.name + "にする";
+          if (choice.getAttribute("aria-label") !== label) choice.setAttribute("aria-label", label);
+          if (choice !== cursor) meChoices.insertBefore(choice, cursor);
+          cursor = choice.nextSibling;
+        }
+        while (cursor) {
+          const next = cursor.nextSibling;
+          meChoices.removeChild(cursor);
+          cursor = next;
+        }
+        meChoiceSignature = nextChoiceSignature;
+      }
+    }
+    meNameInput.disabled = !client || store.isSharedWriteBlocked() || projectedMembers.length >= 20;
+    meRegisterButton.disabled = meNameInput.disabled;
+    meRenameInput.disabled = !client || store.isSharedWriteBlocked();
+    meRenameButton.disabled = meRenameInput.disabled;
     activeControls.hidden = !client;
     copyLinkButton.disabled = !credentials;
     syncButton.disabled = !client || isBusy || isCopying;
@@ -379,6 +504,34 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     return copyPlan === null && pendingCount() === 0 && unsavedChanges.length === 0 && enqueueing === 0;
   }
 
+  const projectState = (state: SharedListState, operations: SharedOperation[] = []) => {
+    const storage = (() => {
+      try {
+        return window.localStorage;
+      } catch {
+        return null;
+      }
+    })();
+    const roomId = credentials?.roomId;
+    const selectedMeId = roomId && sessionMeByRoom.has(roomId)
+      ? sessionMeByRoom.get(roomId) ?? null
+      : storage && roomId ? readSharedMe(storage, roomId) : null;
+    const projection = projectSharedCart(state, operations, selectedMeId);
+    if (roomId && projection) {
+      if (storage) clearSharedMeIfRemoved(storage, roomId, projection.members);
+      const sessionMeId = sessionMeByRoom.get(roomId);
+      if (sessionMeId && !projection.members.some((member) => member.id === sessionMeId)) {
+        sessionMeByRoom.set(roomId, null);
+      }
+    }
+    return projection;
+  };
+  const sharedStateForStore = (projection: NonNullable<ReturnType<typeof projectSharedCart>>) => ({
+    members: projection.members,
+    ownerByProductId: projection.ownerByProductId,
+    meId: projection.meId,
+  });
+
   const applySnapshot = (next: SharedSyncSnapshot) => {
     snapshot = next;
     finishCopyIfSynced();
@@ -386,25 +539,30 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     if (initialConnectionPending && !initialConnectionBlocked) initialConnectionPending = false;
     if (wantsSharedList && enqueueing === 0 && unsavedChanges.length === 0 && next.state) {
       const pending = next.status === "conflict" || next.status === "error" ? [] : next.pendingOperations;
-      const projection = projectSharedCart(next.state, pending);
-      if (!projection) {
-        unsupportedState = true;
-        wantsSharedList = false;
-        store.setSharedChangeHandler(null);
-        store.setSharedWriteBlocked(false);
-        store.leaveSharedList();
-      } else {
-        itemIds = projection.itemIds;
-        if (store.isShared()) store.applySharedList(projection.items, projection.budget);
-        else store.enterSharedList(projection.items, projection.budget);
-        store.setSharedWriteBlocked(next.status === "conflict" || next.status === "error" || copyPlan !== null);
+      const queueKey = JSON.stringify([next.pendingOperationIds ?? [], next.pendingOperations]) ?? "";
+      if (!store.isShared() || projectedRevision !== next.state.revision || projectedQueueKey !== queueKey) {
+        const projection = projectState(next.state, pending);
+        if (!projection) {
+          unsupportedState = true;
+          wantsSharedList = false;
+          store.setSharedChangeHandler(null);
+          store.leaveSharedList();
+        } else {
+          itemIds = projection.itemIds;
+          meId = projection.meId;
+          projectedMembers = projection.members;
+          const shared = sharedStateForStore(projection);
+          if (store.isShared()) store.applySharedList(projection.items, projection.budget, shared);
+          else store.enterSharedList(projection.items, projection.budget, shared);
+          projectedRevision = next.state.revision;
+          projectedQueueKey = queueKey;
+        }
       }
-    } else if (initialConnectionBlocked) {
-      store.setSharedWriteBlocked(true);
-    } else if (wantsSharedList && store.isShared() && next.status === "error") {
-      store.setSharedWriteBlocked(true);
-    } else if (!store.isShared()) {
-      store.setSharedWriteBlocked(false);
+    }
+    if (wantsSharedList && store.isShared()) {
+      store.setSharedWriteBlocked(initialConnectionBlocked || next.status === "conflict" || next.status === "error" || copyPlan !== null);
+    } else {
+      store.setSharedWriteBlocked(initialConnectionBlocked);
     }
     updatePolling();
     render();
@@ -422,6 +580,10 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     unsubscribe = null;
     snapshot = emptySnapshot;
     itemIds = new Map();
+    meId = null;
+    projectedMembers = [];
+    projectedRevision = null;
+    projectedQueueKey = null;
     credentials = nextCredentials;
     wantsSharedList = true;
     initialConnectionPending = initialState === undefined;
@@ -435,14 +597,18 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
       client = new SharedListClient({ apiUrl: options.apiUrl, ...nextCredentials });
       unsubscribe = client.subscribe(applySnapshot);
       if (initialState) {
-        const projection = projectSharedCart(initialState);
+        const projection = projectState(initialState);
         if (!projection) {
           unsupportedState = true;
           wantsSharedList = false;
           localError = "この共有リストには現在のカタログで表示できないアイテムがあります。";
         } else {
           itemIds = projection.itemIds;
-          store.enterSharedList(projection.items, projection.budget);
+          meId = projection.meId;
+          projectedMembers = projection.members;
+          store.enterSharedList(projection.items, projection.budget, sharedStateForStore(projection));
+          projectedRevision = initialState.revision;
+          projectedQueueKey = JSON.stringify([[], []]) ?? "";
           store.setSharedWriteBlocked(client.getSnapshot().status === "error");
         }
       }
@@ -465,9 +631,10 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     let operations: SharedOperation[];
     try {
       operations = sharedOperationsForCartChange(
-        { items: previous.items, budget: previous.budget },
-        { items: next.items, budget: next.budget },
+        { items: previous.items },
+        { items: next.items },
         itemIds,
+        meId,
       );
     } catch (cause) {
       localError = cause instanceof Error ? cause.message : "共有操作を作成できませんでした。";
@@ -495,6 +662,96 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     }
     render();
   };
+
+  const enqueueOperation = async (operation: SharedOperation): Promise<void> => {
+    const activeClient = client;
+    if (!activeClient || store.isSharedWriteBlocked()) return;
+    localError = null;
+    try {
+      await activeClient.enqueue(operation);
+    } catch (cause) {
+      localError = cause instanceof Error ? cause.message : "共有操作を送信待ちにできませんでした。";
+      store.setSharedWriteBlocked(true);
+      render();
+    }
+  };
+
+  const selectMe = (memberId: string): void => {
+    const roomId = credentials?.roomId;
+    if (!roomId || !projectedMembers.some((member) => member.id === memberId)) return;
+    sessionMeByRoom.set(roomId, memberId);
+    try {
+      writeSharedMe(window.localStorage, roomId, memberId);
+    } catch {
+      // Keep the choice in memory for this room when local storage is unavailable.
+    }
+    projectedRevision = null;
+    projectedQueueKey = null;
+    if (client) applySnapshot(client.getSnapshot());
+    changeMeButton.focus();
+  };
+
+  const clearMe = (): void => {
+    const roomId = credentials?.roomId;
+    if (!roomId) return;
+    sessionMeByRoom.set(roomId, null);
+    try {
+      clearSharedMeIfRemoved(window.localStorage, roomId, []);
+    } catch {
+      // The next projection still treats an unavailable stored identity as unselected.
+    }
+    projectedRevision = null;
+    projectedQueueKey = null;
+    if (client) applySnapshot(client.getSnapshot());
+    meNameInput.focus();
+  };
+
+  const validateMemberName = (name: string, currentMemberId: string | null = null): string | null => {
+    if (!name) return "名前を入力してください。";
+    if ([...name].length > 20) return "名前は20文字以内で入力してください。";
+    if (/\p{Cc}/u.test(name)) return "名前に制御文字は使えません。";
+    const normalizedName = name.trim().toLowerCase();
+    if (projectedMembers.some((member) => member.id !== currentMemberId
+      && member.name.trim().toLowerCase() === normalizedName)) {
+      return "この名前はすでに使われています。";
+    }
+    return null;
+  };
+
+  const registerMe = (event: SubmitEvent): void => {
+    event.preventDefault();
+    const name = meNameInput.value.trim();
+    meNameError.textContent = validateMemberName(name) ?? "";
+    if (meNameError.textContent) return;
+    const roomId = credentials?.roomId;
+    if (!roomId || !client || store.isSharedWriteBlocked() || projectedMembers.length >= 20) return;
+    const memberId = globalThis.crypto?.randomUUID?.()
+      ?? `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}-${Math.random().toString(36).slice(2)}`;
+    sessionMeByRoom.set(roomId, memberId);
+    try {
+      writeSharedMe(window.localStorage, roomId, memberId);
+    } catch {
+      // The identity can still be selected for this session.
+    }
+    meNameInput.value = "";
+    void enqueueOperation({ type: "add-member", member: { id: memberId, name } });
+  };
+
+  const renameMe = (event: SubmitEvent): void => {
+    event.preventDefault();
+    const member = projectedMembers.find((entry) => entry.id === meId);
+    if (!member) return;
+    const name = meRenameInput.value.trim();
+    meRenameError.textContent = validateMemberName(name, member.id) ?? "";
+    if (meRenameError.textContent) return;
+    void enqueueOperation({ type: "rename-member", memberId: member.id, name });
+  };
+
+  meNameInput.addEventListener("input", () => { meNameError.textContent = ""; });
+  meRenameInput.addEventListener("input", () => { meRenameError.textContent = ""; });
+  meForm.addEventListener("submit", registerMe);
+  meRenameForm.addEventListener("submit", renameMe);
+  changeMeButton.addEventListener("click", clearMe);
 
   const saveLinkCredentials = (shareUrl: string): boolean => {
     try {
@@ -551,7 +808,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     if (copyCurrentList) {
       try {
         const personalState = store.getState();
-        copyOperations = sharedOperationsForPersonalCart(personalState.items, personalState.budget);
+        copyOperations = sharedOperationsForPersonalCart(personalState.items, null);
       } catch (cause) {
         localError = cause instanceof Error ? cause.message : "個人リストの操作を作成できませんでした。";
         render();
@@ -737,6 +994,10 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     store.setSharedChangeHandler(null);
     store.setSharedWriteBlocked(false);
     store.leaveSharedList();
+    meId = null;
+    projectedMembers = [];
+    projectedRevision = null;
+    projectedQueueKey = null;
     updatePolling();
     render();
   };
@@ -745,6 +1006,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     unsavedChanges = [];
     localError = null;
     confirmKind = null;
+    projectedRevision = null;
+    projectedQueueKey = null;
     store.setSharedWriteBlocked(false);
     applySnapshot(client?.getSnapshot() ?? snapshot);
   };
@@ -813,6 +1076,16 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
 
   return {
     element,
+    enqueue: enqueueOperation,
+    setOwner(productId, ownerId) {
+      const itemId = itemIds.get(productId);
+      if (!itemId) {
+        localError = "担当を変更するアイテムIDを読み取れません。";
+        render();
+        return Promise.resolve();
+      }
+      return enqueueOperation({ type: "set-owner", itemId, ownerId });
+    },
     setActive() {
       updatePolling();
     },

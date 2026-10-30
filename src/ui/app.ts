@@ -1,7 +1,7 @@
 import type { TabId, AppState } from "../state.ts";
 import type { CartItem } from "../logic/cart.ts";
 import { captureSharedRoomLink, readSharedRoomCredentials, type SharedRoomCredentials } from "../shared/index.ts";
-import { createStore } from "../store.ts";
+import { createStore, type SharedStoreState } from "../store.ts";
 import { dataGeneratedAt } from "../data.ts";
 import { budgetMeter } from "./budgetMeter.ts";
 import { catalogView } from "./catalogView.ts";
@@ -181,7 +181,7 @@ export function app(root: HTMLElement): void {
   const panels = new Map<TabId, HTMLElement>();
   type LazyPage = {
     element: HTMLElement;
-    sync: (state: AppState) => void;
+    sync: (state: AppState, shared?: SharedStoreState | null) => void;
     updateItems?: (items: CartItem[], state: AppState) => void;
     setActive?: (active: boolean) => void;
     selectBooth?: (code: string) => void;
@@ -253,7 +253,7 @@ export function app(root: HTMLElement): void {
       window.history.replaceState(null, "", window.location.pathname + window.location.search + nextHash);
     }
   };
-  const syncHeader = (state: AppState) => {
+  const syncHeader = (state: AppState, shared: SharedStoreState | null = null) => {
     storageWarning.hidden = !store.hasPersonalSaveFailure();
     for (const tab of tabOrder) {
       const selected = state.tab === tab;
@@ -272,36 +272,58 @@ export function app(root: HTMLElement): void {
       const panel = panels.get(tab);
       if (panel) panel.hidden = !selected;
     }
-    meter.update(state.items, state.budget, true);
+    meter.update(state.items, state.budget, true, shared);
   };
   let renderedTab: TabId | undefined;
+  let previousSharedRecommendation: {
+    meId: string | null;
+    budget: number | null;
+    items: CartItem[];
+  } | undefined;
   const sameCartPlan = (a: CartItem[], b: CartItem[]): boolean => {
     if (a.length !== b.length) return false;
     const previous = new Map(a.map((item): [string, number] => [item.productId, item.qty]));
     return b.every((item) => previous.get(item.productId) === item.qty);
   };
-  const render = (state: AppState, previous?: AppState) => {
-    syncHeader(state);
+  const render = (state: AppState, previous?: AppState, shared: SharedStoreState | null = null) => {
+    syncHeader(state, shared);
+    const sharedMeId = shared?.meId ?? null;
+    const selectedSharedMember = sharedMeId === null
+      ? undefined
+      : shared?.members.find((member) => member.id === sharedMeId);
+    const sharedBudget = selectedSharedMember?.budgetYen ?? null;
+    const sharedAssignedItems = sharedMeId === null || !shared
+      ? []
+      : state.items.filter((item) => shared.ownerByProductId.get(item.productId) === sharedMeId);
+    const sharedRecommendationChanged = previousSharedRecommendation === undefined
+      || previousSharedRecommendation.meId !== sharedMeId
+      || previousSharedRecommendation.budget !== sharedBudget
+      || !sameCartPlan(previousSharedRecommendation.items, sharedAssignedItems);
+    previousSharedRecommendation = {
+      meId: sharedMeId,
+      budget: sharedBudget,
+      items: sharedAssignedItems,
+    };
     const tabChanged = renderedTab !== state.tab;
     const page = pageFor(state.tab);
     for (const [tab, lazyPage] of pages) {
       if (tab !== state.tab) lazyPage.setActive?.(false);
     }
     if (!previous || tabChanged) {
-      page.sync(state);
+      page.sync(state, shared);
     } else if (state.tab === "catalog") {
       const listPlanChanged = !sameCartPlan(state.items, previous.items);
       const preferenceBudgetChanged = state.budget !== previous.budget || listPlanChanged;
       if (state.filters !== previous.filters || state.sort !== previous.sort || state.day !== previous.day
-        || state.prefs !== previous.prefs || (state.sort === "recommended" && preferenceBudgetChanged)) {
-        page.sync(state);
+        || state.prefs !== previous.prefs || (state.sort === "recommended" && (preferenceBudgetChanged || sharedRecommendationChanged))) {
+        page.sync(state, shared);
       } else if (state.items !== previous.items || state.budget !== previous.budget) {
         page.updateItems?.(state.items, state);
       } else {
-        page.sync(state);
+        page.sync(state, shared);
       }
     } else {
-      page.sync(state);
+      page.sync(state, shared);
     }
     page.setActive?.(true);
     renderedTab = state.tab;
@@ -324,6 +346,6 @@ export function app(root: HTMLElement): void {
     setHash(store.getState().tab);
   }
   if (startupPlan.preconnectSharedList) pageFor("cart");
-  store.subscribe(render);
+  store.subscribe((state, previous, shared) => render(state, previous, shared));
   render(store.getState());
 }
