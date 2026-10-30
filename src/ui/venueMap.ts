@@ -35,8 +35,8 @@ type BoothNodes = {
   group: SVGGElement;
   rect: SVGRectElement;
   label: SVGTextElement;
-  badge: SVGGElement;
-  badgeText: SVGTextElement;
+  badge?: SVGGElement;
+  badgeText?: SVGTextElement;
   title?: SVGTitleElement;
   ariaLabel: string;
 };
@@ -196,23 +196,6 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
     rect.setAttribute("class", "venue-map-booth-rect");
     const label = svgElement("text");
     paintLabel(label, booth, day);
-    const badge = svgElement("g");
-    badge.setAttribute("class", "venue-map-list-badge");
-    badge.setAttribute("aria-hidden", "true");
-    badge.style.display = "none";
-    const badgeCircle = svgElement("circle");
-    const badgeX = booth.x + booth.w - 7;
-    const badgeY = booth.y + 7;
-    badgeCircle.setAttribute("cx", String(badgeX));
-    badgeCircle.setAttribute("cy", String(badgeY));
-    badgeCircle.setAttribute("r", "7");
-    const badgeText = svgElement("text");
-    badgeText.setAttribute("x", String(badgeX));
-    badgeText.setAttribute("y", String(badgeY));
-    badgeText.setAttribute("text-anchor", "middle");
-    badgeText.setAttribute("dominant-baseline", "middle");
-    badgeText.setAttribute("class", "venue-map-list-badge-text");
-    badge.append(badgeCircle, badgeText);
     let title: SVGTitleElement | undefined;
     if (onBoothPress) {
       group.setAttribute("role", "button");
@@ -227,8 +210,8 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       title = svgElement("title");
       group.append(title);
     }
-    group.append(rect, label, badge);
-    boothNodes.set(booth.code, { group, rect, label, badge, badgeText, title, ariaLabel: "" });
+    group.append(rect, label);
+    boothNodes.set(booth.code, { group, rect, label, title, ariaLabel: "" });
     svg.append(group);
   }
 
@@ -262,26 +245,20 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
   const paintKeys = new Map<string, string>();
   let renderedDay: Day | undefined = day;
   let currentScale: VenueMapScale = "fit";
+  let svgWidth = 0;
   let badgeScaleKey = "";
 
   const updateBadgeScale = () => {
-    const bounds = svg.getBoundingClientRect();
-    const unitsPerPixel = bounds.width > 0 ? currentViewBox.w / bounds.width : 1;
-    const badgeScale = unitsPerPixel;
+    if (svgWidth <= 0) return;
+    const badgeScale = currentViewBox.w / svgWidth;
     const showCounts = currentScale === 2 || currentScale === 3
       || currentViewBox.x !== fullViewBox.x || currentViewBox.y !== fullViewBox.y
       || currentViewBox.w !== fullViewBox.w || currentViewBox.h !== fullViewBox.h;
     const key = badgeScale.toFixed(4) + ":" + showCounts;
     if (badgeScaleKey === key) return;
     badgeScaleKey = key;
-    for (const nodes of boothNodes.values()) {
-      const text = nodes.badgeText;
-      const x = text.getAttribute("x") ?? "0";
-      const y = text.getAttribute("y") ?? "0";
-      nodes.badge.setAttribute("transform", "translate(" + x + " " + y + ") scale("
-        + badgeScale + ") translate(" + -Number(x) + " " + -Number(y) + ")");
-      text.style.display = showCounts ? "inline" : "none";
-    }
+    svg.style.setProperty("--venue-map-badge-scale", String(badgeScale));
+    svg.classList.toggle("venue-map-counts-visible", showCounts);
   };
 
   const setViewBox = (viewBox: VenueLayout["viewBox"]) => {
@@ -320,8 +297,8 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       nodes.rect.style.setProperty(
         "--venue-map-fill",
         noShow ? "url(#" + patternId + ")"
-          : status === "todo" ? "var(--must-soft)"
-            : status === "clear" ? "var(--get-soft)"
+          : status === "todo" ? "var(--map-todo-fill)"
+            : status === "clear" ? "var(--map-clear-fill)"
               : "var(--venue-map-area-fill, var(--surface))",
       );
       nodes.rect.style.setProperty(
@@ -331,9 +308,30 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
             : "var(--venue-map-area-stroke, var(--line))",
       );
       nodes.rect.style.setProperty("--venue-map-stroke-width", status ? "2.5" : "1");
-      nodes.badge.style.display = status === "todo" ? "" : "none";
+      if (status === "todo" && !nodes.badge) {
+        const badge = svgElement("g");
+        badge.setAttribute("class", "venue-map-list-badge");
+        badge.setAttribute("aria-hidden", "true");
+        const badgeCircle = svgElement("circle");
+        const badgeX = booth.x + booth.w - 7;
+        const badgeY = booth.y + 7;
+        badgeCircle.setAttribute("cx", String(badgeX));
+        badgeCircle.setAttribute("cy", String(badgeY));
+        badgeCircle.setAttribute("r", "7");
+        const badgeText = svgElement("text");
+        badgeText.setAttribute("x", String(badgeX));
+        badgeText.setAttribute("y", String(badgeY));
+        badgeText.setAttribute("text-anchor", "middle");
+        badgeText.setAttribute("dominant-baseline", "middle");
+        badgeText.setAttribute("class", "venue-map-list-badge-text");
+        badge.append(badgeCircle, badgeText);
+        nodes.group.append(badge);
+        nodes.badge = badge;
+        nodes.badgeText = badgeText;
+      }
+      if (nodes.badge) nodes.badge.style.display = status === "todo" ? "" : "none";
       const count = status === "todo" ? String(paint?.unboughtQty ?? 0) : "";
-      if (nodes.badgeText.textContent !== count) nodes.badgeText.textContent = count;
+      if (nodes.badgeText && nodes.badgeText.textContent !== count) nodes.badgeText.textContent = count;
     }
   };
 
@@ -388,6 +386,7 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
 
     let width = maxX - minX;
     let height = maxY - minY;
+    width = Math.max(width, fullViewBox.w * 0.45);
     if (aspectRatio > 0) {
       if (width / height < aspectRatio) width = height * aspectRatio;
       else height = width / aspectRatio;
@@ -424,7 +423,9 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
     }
     return false;
   };
-  const resizeObserver = new ResizeObserver(() => {
+  const resizeObserver = new ResizeObserver((entries) => {
+    const entry = entries[0];
+    if (entry) svgWidth = entry.contentRect.width;
     badgeScaleKey = "";
     updateBadgeScale();
   });

@@ -426,9 +426,7 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
     const state = store.getState();
     const statuses = boothListStatus(state.items, catalog, venueLayout, state.day);
     if (statuses.size) {
-      const aspectRatio = mapFrame.clientHeight > 0
-        ? mapFrame.clientWidth / mapFrame.clientHeight
-        : venueLayout.viewBox.w / venueLayout.viewBox.h;
+      const aspectRatio = venueLayout.viewBox.w / venueLayout.viewBox.h;
       isFullVenue = !map.fitToBooths([...statuses.keys()], aspectRatio);
     } else {
       map.resetViewBox();
@@ -436,8 +434,6 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
     }
     scale = 1;
     map.setScale(scale);
-    mapFrame.scrollLeft = 0;
-    mapFrame.scrollTop = 0;
     updateZoomButtons();
   };
 

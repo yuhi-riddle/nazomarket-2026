@@ -284,7 +284,9 @@ export function app(root: HTMLElement): void {
     syncHeader(state);
     const tabChanged = renderedTab !== state.tab;
     const page = pageFor(state.tab);
-    for (const [tab, lazyPage] of pages) lazyPage.setActive?.(tab === state.tab);
+    for (const [tab, lazyPage] of pages) {
+      if (tab !== state.tab) lazyPage.setActive?.(false);
+    }
     if (!previous || tabChanged) {
       page.sync(state);
     } else if (state.tab === "catalog") {
@@ -302,6 +304,7 @@ export function app(root: HTMLElement): void {
     } else {
       page.sync(state);
     }
+    page.setActive?.(true);
     renderedTab = state.tab;
     if (!previous || state.tab !== previous.tab) setHash(state.tab);
     if (previous && tabChanged) window.scrollTo({ top: 0, behavior: "instant" });

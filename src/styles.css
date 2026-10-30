@@ -10,6 +10,11 @@
   --on-band: var(--ink);
   --on-band-muted: var(--ink-muted);
   --key: #f2c230;
+  --area-blue: #6b8cff;
+  --area-pink: #f472b6;
+  --area-terracotta: #c08457;
+  --map-todo-fill: color-mix(in srgb, var(--key) 34%, var(--surface));
+  --map-clear-fill: color-mix(in srgb, var(--get) 28%, var(--surface));
   --key-shadow: #a8831a;
   --on-key: #12162a;
   --cyan: #4fd1e8;
