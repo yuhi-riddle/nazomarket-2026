@@ -37,7 +37,6 @@ function cartRow(
   item: CartItem,
   store: AppStore,
   openDetails: (view: ProductView) => void,
-  onMapBooth?: (boothCode: string) => void,
 ): CartRow {
   const row = el("article", "today-item cart-row");
   row.dataset.productId = view.product.id;
@@ -63,14 +62,6 @@ function cartRow(
   getBadge.hidden = true;
   const amount = el("span", "today-item-amount cart-price");
   description.append(name, getBadge, amount);
-  const boothCode = view.booth.boothCode;
-  if (boothCode && onMapBooth && venueLayout.booths.some((booth) => booth.code === boothCode)) {
-    const mapButton = button("地図で場所を見る", "button button-secondary cart-map-link");
-    mapButton.setAttribute("aria-label", "地図で場所を見る（" + boothCode + " " + view.booth.name + "）");
-    mapButton.addEventListener("click", () => onMapBooth(boothCode));
-    description.append(mapButton);
-  }
-
   const status = el("span", "today-item-status");
   const controls = el("div", "today-item-controls cart-row-controls");
   const quantity = el("div", "quantity-control cart-quantity");
@@ -344,7 +335,7 @@ export function cartView(
       if (!view) continue;
       let row = rows.get(item.productId);
       if (!row) {
-        row = cartRow(view, item, store, (selected) => details.open(selected), onMapBooth);
+        row = cartRow(view, item, store, (selected) => details.open(selected));
         rows.set(item.productId, row);
       }
       if (!sameCartItem(previousItemById.get(item.productId), item)
@@ -364,7 +355,15 @@ export function cartView(
           section.title = bucket.title;
           const organization = el("strong", "today-route-organization", bucket.organization);
           const boothCode = el("small", "today-route-booth", bucket.boothCode);
-          section.heading.replaceChildren(organization, document.createTextNode(" "), boothCode);
+          const headingChildren: Node[] = [organization, document.createTextNode(" "), boothCode];
+          const placedBooth = venueLayout.booths.find((booth) => booth.code === bucket.boothCode);
+          if (placedBooth && onMapBooth) {
+            const mapButton = button("地図で見る", "button button-secondary cart-map-link");
+            mapButton.setAttribute("aria-label", "地図で見る（" + bucket.boothCode + " " + bucket.organization + "の場所）");
+            mapButton.addEventListener("click", () => onMapBooth(placedBooth.code));
+            headingChildren.push(mapButton);
+          }
+          section.heading.replaceChildren(...headingChildren);
         }
         const idsKey = JSON.stringify(bucket.ids);
         if (section.idsKey !== idsKey) {
