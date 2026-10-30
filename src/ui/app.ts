@@ -3,7 +3,7 @@ import type { CartItem } from "../logic/cart.ts";
 import { captureSharedRoomLink, readSharedRoomCredentials, type SharedRoomCredentials } from "../shared/index.ts";
 import { createStore, type SharedStoreState } from "../store.ts";
 import { campaigns, dataGeneratedAt } from "../data.ts";
-import { countDueSoon } from "../logic/campaigns.ts";
+import { countActive, countDueSoon } from "../logic/campaigns.ts";
 import { budgetMeter } from "./budgetMeter.ts";
 import { catalogView } from "./catalogView.ts";
 import { cartView } from "./cartView.ts";
@@ -119,13 +119,18 @@ export function app(root: HTMLElement): void {
     el("span", "campaign-button-label-short", "特典"),
     campaignButtonCount,
   );
+  // ボタンの数字は一覧に出る件数と揃える。締切が近いものは一覧の中で示す
   const updateCampaignButton = () => {
-    const dueSoon = countDueSoon(campaigns, new Date());
-    campaignButtonCount.hidden = dueSoon < 1;
-    campaignButtonCount.textContent = dueSoon > 0 ? String(dueSoon) : "";
-    campaignButton.setAttribute("aria-label", dueSoon > 0
-      ? `特典・キャンペーン情報（締切7日以内 ${dueSoon}件）`
-      : "特典・キャンペーン情報");
+    const now = new Date();
+    const active = countActive(campaigns, now);
+    const dueSoon = countDueSoon(campaigns, now);
+    campaignButtonCount.hidden = active < 1;
+    campaignButtonCount.textContent = active > 0 ? String(active) : "";
+    campaignButton.setAttribute("aria-label", active < 1
+      ? "特典・キャンペーン情報"
+      : dueSoon > 0
+        ? `特典・キャンペーン情報（${active}件、うち締切7日以内 ${dueSoon}件）`
+        : `特典・キャンペーン情報（${active}件）`);
   };
   updateCampaignButton();
   sharedSyncIndicator.hidden = true;

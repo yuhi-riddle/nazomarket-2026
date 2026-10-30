@@ -31,6 +31,12 @@ export function listActiveCampaigns(campaigns: Campaign[], now: Date): { withDea
   return { withDeadline: dated.map(({ campaign }) => campaign), noDeadline };
 }
 
+export function countActive(campaigns: Campaign[], now: Date): number {
+  let count = 0;
+  for (const campaign of campaigns) if (isCampaignActive(campaign.endsAt, now)) count++;
+  return count;
+}
+
 export function countDueSoon(campaigns: Campaign[], now: Date, days = 7): number {
   const limit = days * DAY_MS;
   let count = 0;
