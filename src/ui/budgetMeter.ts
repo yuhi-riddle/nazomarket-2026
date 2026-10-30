@@ -21,6 +21,7 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
   bar.append(total, marker);
 
   const summary = el("span", "meter-summary");
+  const listType = el("span", "meter-list-type", "個人");
   const copy = el("span", "meter-copy");
   const totalLabel = el("span", "meter-total-label", "合計");
   copy.append(totalLabel);
@@ -37,7 +38,7 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
   budget.append(budgetLabel);
   const budgetValue = el("strong", "meter-budget-value");
   budget.append(budgetValue);
-  summary.append(copy, separator, budget);
+  summary.append(listType, copy, separator, budget);
   meter.append(summary, bar);
 
   let previousItems: CartItem[] | undefined;
@@ -48,6 +49,7 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
     element: meter,
     update(items, budgetAmount, visible, shared = null) {
       meter.hidden = !visible;
+      listType.textContent = shared === null ? "個人" : "共同";
       const sharedKey = shared === null ? null : JSON.stringify([
         shared.meId,
         shared.members.map((member) => [member.id, member.budgetYen]),
@@ -88,6 +90,7 @@ export function budgetMeter(onOpenCart: () => void): BudgetMeter {
       bar.hidden = sharedWithoutMe;
 
       meter.setAttribute("aria-label", [
+        listType.textContent + "リスト",
         sharedWithoutMe ? "全体の合計" : "予算メーター",
         ...(!sharedWithoutMe ? [budgetLabel.textContent + " " + (effectiveBudget === null ? "未設定" : format(effectiveBudget))] : []),
         totalLabel.textContent + " " + totalValue.textContent,

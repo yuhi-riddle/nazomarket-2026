@@ -38,9 +38,9 @@ describe("filterCatalog", () => {
     expect(ids(filterCatalog(catalog, { ...emptyFilters, q: "パズル" }))).toEqual(["no07-1"]);
     expect(ids(filterCatalog(catalog, { ...emptyFilters, q: "謎 土曜" }))).toEqual(["no05-1"]);
   });
-  it("価格帯を指定すると価格不明は外れる", () => {
-    expect(ids(filterCatalog(catalog, { ...emptyFilters, priceMin: 1000, priceMax: 2000 }))).toEqual(["p01", "no07-1"]);
-    expect(ids(filterCatalog(catalog, { ...emptyFilters, priceMax: 600 }))).toEqual(["p02"]);
+  it("価格帯を指定しても価格不明は外さない（一覧で価格不明の枠に出す）", () => {
+    expect(ids(filterCatalog(catalog, { ...emptyFilters, priceMin: 1000, priceMax: 2000 })).sort()).toEqual(["no02-1", "no07-1", "p01"]);
+    expect(ids(filterCatalog(catalog, { ...emptyFilters, priceMax: 600 })).sort()).toEqual(["no02-1", "p02"]);
   });
   it("難易度は複数選べて、unknown は難易度不明を指す", () => {
     expect(ids(filterCatalog(catalog, { ...emptyFilters, difficulties: [2, "unknown"] }))).toEqual(["p02", "no02-1"]);

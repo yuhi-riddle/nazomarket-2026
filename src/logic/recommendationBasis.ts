@@ -6,6 +6,5 @@ export function hasRecommendationBasis(items: CartItem[], prefs: Prefs, budget: 
     || budget !== null
     || prefs.difficultyMin !== null
     || prefs.difficultyMax !== null
-    || prefs.categories.length > 0
-    || prefs.playStyle !== "any";
+    || prefs.categories.length > 0;
 }

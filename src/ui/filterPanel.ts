@@ -71,16 +71,7 @@ function preferenceControls(onChange: (change: PreferenceChange) => void): {
   const categories = checkGroup("好きなカテゴリ", categoryOptions,
     () => currentCategories, (values) => onChange({ categories: values }));
 
-  const playStyle = el("select", "text-input");
-  for (const [value, label] of [["any", "指定なし"], ["onsite", "その場で遊べる"], ["takeHome", "持ち帰って遊べる"]] as const) {
-    const option = el("option", "", label);
-    option.value = value;
-    playStyle.append(option);
-  }
-  playStyle.setAttribute("aria-label", "遊び方");
-  playStyle.addEventListener("change", () => onChange({ playStyle: playStyle.value as Prefs["playStyle"] }));
-  const playStyleField = labeledControl("遊び方", playStyle);
-  root.append(difficultyField, categories.element, playStyleField);
+  root.append(difficultyField, categories.element);
 
   return {
     element: root,
@@ -89,7 +80,6 @@ function preferenceControls(onChange: (change: PreferenceChange) => void): {
       if (document.activeElement !== maxDifficulty) maxDifficulty.value = prefs.difficultyMax === null ? "" : String(prefs.difficultyMax);
       currentCategories = prefs.categories;
       categories.sync();
-      playStyle.value = prefs.playStyle;
     },
   };
 }
