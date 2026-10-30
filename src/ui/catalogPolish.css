@@ -1,42 +1,4 @@
 /* ブース順のグループ見出しが団体名と番号を示すため、商品カード内では重ねない。 */
-.product-media.product-media-with-credit {
-  min-height: 0;
-  height: auto;
-  aspect-ratio: auto;
-  overflow: visible;
-  align-self: start;
-}
-
-.product-media-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background: var(--surface-2);
-}
-
-.product-image-credit {
-  display: block;
-  margin-top: var(--space-1);
-  min-width: 0;
-  max-width: 100%;
-  overflow: hidden;
-  color: var(--ink-muted);
-  font-size: var(--font-12);
-  line-height: 1.25;
-  overflow-wrap: anywhere;
-}
-
-.product-image-credit:hover {
-  color: var(--key);
-}
-
-.product-image-credit:focus-visible {
-  outline: 2px solid var(--key);
-  outline-offset: -2px;
-  border-radius: var(--radius-chip);
-}
-
 .catalog-main .catalog-group-products .product-card {
   grid-template-columns: 150px minmax(0, 1fr) 260px;
   grid-template-rows: minmax(176px, auto);
