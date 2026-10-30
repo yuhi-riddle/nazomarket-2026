@@ -197,3 +197,11 @@
   font-size: var(--font-15);
   line-height: 1.85;
 }
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-card .product-actions {
+  cursor: auto;
+}
