@@ -1,13 +1,14 @@
 // 生成済みデータ（data/*.json）の検証。npm run build-data のあとに通ること
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import type { Booth, Day, Product, VenueLayout } from "../src/types.ts";
+import type { Booth, Campaign, Day, Product, VenueLayout } from "../src/types.ts";
 
 const read = <T>(path: string): T => JSON.parse(readFileSync(new URL(`../data/${path}`, import.meta.url), "utf8")) as T;
 
 const booths = read<Booth[]>("booths.json");
 const products = read<Product[]>("products.json");
 const layout = read<VenueLayout>("venue-layout.json");
+const campaigns = read<Campaign[]>("campaigns.json");
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 describe("booths.json", () => {
@@ -116,6 +117,35 @@ describe("products.json", () => {
         p.payment === null && "payment",
       ].filter(Boolean);
       expect(p.unconfirmed, p.id).toEqual(expected);
+    }
+  });
+});
+
+describe("campaigns.json", () => {
+  const boothIds = new Set(booths.map((b) => b.id));
+  const productIds = new Set(products.map((p) => p.id));
+
+  it("id が重複せず、団体・商品の参照先がある", () => {
+    expect(new Set(campaigns.map((c) => c.id)).size).toBe(campaigns.length);
+    for (const c of campaigns) {
+      if (c.boothId !== null) expect(boothIds.has(c.boothId), c.id).toBe(true);
+      for (const id of c.productIds) expect(productIds.has(id), `${c.id} ${id}`).toBe(true);
+    }
+  });
+  it("種類・締切・日の値が決まった形で、出典がある", () => {
+    for (const c of campaigns) {
+      expect(["bonus", "giveaway", "discount", "other"], c.id).toContain(c.kind);
+      if (c.endsAt !== null) expect(c.endsAt, c.id).toMatch(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?$/);
+      for (const d of c.days) expect(["sat", "sun"], c.id).toContain(d);
+      expect(c.sources.length, c.id).toBeGreaterThan(0);
+      for (const s of c.sources) expect(s.retrievedAt, c.id).toMatch(DATE_RE);
+    }
+  });
+  it("一言は30字以内で、空でない", () => {
+    for (const c of campaigns) {
+      expect(c.title.trim(), c.id).not.toBe("");
+      expect([...c.title].length, c.id).toBeLessThanOrEqual(30);
+      expect(c.detail.trim(), c.id).not.toBe("");
     }
   });
 });
