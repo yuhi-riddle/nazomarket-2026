@@ -114,7 +114,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   } else {
     const stars = el("span", "difficulty-stars", "★".repeat(product.difficulty.level) + "☆".repeat(5 - product.difficulty.level));
     stars.setAttribute("aria-hidden", "true");
-    difficulty.append(stars, el("span", "sr-only", "難易度 " + product.difficulty.level + " / 5"));
+    difficulty.append(el("span", "difficulty-label", "難易度"), stars, el("span", "sr-only", "難易度 " + product.difficulty.level + " / 5"));
     if (product.difficulty.source === "estimated") difficulty.append(el("span", "tag tag-small", "推定"));
   }
   body.append(difficulty, priceElement, oneLiner);

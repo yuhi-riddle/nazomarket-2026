@@ -17,6 +17,16 @@ describe("parseState（おすすめの予算はリストの予算だけ）", () 
   });
 });
 
+describe("parseState（遊び方の条件はなくした）", () => {
+  it("おすすめの条件に遊び方の項目は持たない", () => {
+    expect(defaultState.prefs).not.toHaveProperty("playStyle");
+  });
+  it("古い保存に遊び方があっても読み捨てる", () => {
+    const prefs = parseState(JSON.stringify({ ...defaultState, prefs: { ...defaultPrefs, playStyle: "takeHome" } }), known).prefs;
+    expect(prefs).toEqual(defaultPrefs);
+  });
+});
+
 describe("parseState（おすすめの好み）", () => {
   it("初期値は指定なし", () => {
     expect(defaultState.prefs).toEqual(defaultPrefs);
@@ -24,7 +34,7 @@ describe("parseState（おすすめの好み）", () => {
   it("正しい値は書いて読むと同じ", () => {
     const state = {
       ...defaultState,
-      prefs: { ...defaultPrefs, difficultyMin: 2 as const, difficultyMax: 4 as const, categories: ["kit" as const, "booklet" as const], playStyle: "takeHome" as const },
+      prefs: { ...defaultPrefs, difficultyMin: 2 as const, difficultyMax: 4 as const, categories: ["kit" as const, "booklet" as const] },
     };
     expect(parseState(serializeState(state), known)).toEqual(state);
   });

@@ -60,10 +60,7 @@ function parsePrefs(value: unknown): Prefs {
   const categories = Array.isArray(value.categories)
     ? [...new Set(value.categories.filter((item): item is Category => categoryValues.includes(item as Category)))]
     : [...defaultPrefs.categories];
-  const playStyle = value.playStyle === "onsite" || value.playStyle === "takeHome" || value.playStyle === "any"
-    ? value.playStyle
-    : defaultPrefs.playStyle;
-  return { difficultyMin, difficultyMax, categories, playStyle, day: null };
+  return { difficultyMin, difficultyMax, categories, day: null };
 }
 
 function parseFilters(value: unknown, oldDay: Day): AppFilters {
@@ -154,7 +151,6 @@ export function serializeState(state: AppState): string {
     difficultyMin: state.prefs.difficultyMin,
     difficultyMax: state.prefs.difficultyMax,
     categories: state.prefs.categories,
-    playStyle: state.prefs.playStyle,
   };
   return JSON.stringify({ ...state, prefs });
 }

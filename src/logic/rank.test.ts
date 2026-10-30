@@ -35,27 +35,22 @@ describe("rankForCatalog（一覧のおすすめ順）", () => {
     expect(r.matched.find((s) => s.view.product.id === "p03")!.reasons).toContain("予算内");
   });
 
-  it("リストに入れた商品は、自分の分で残り予算が減っても消えない", () => {
-    // 予算 5,000。p03（3,000円）をリストに入れると残り 2,000 になるが、p03 自身は表示し続ける
-    const r = rankForCatalog(catalog, defaultPrefs, [item("p03")], [item("p03")], 5000);
-    expect([...matchedIds(r), ...ids(r.others)]).toContain("p03");
-    expect(r.matched.find((s) => s.view.product.id === "p03")?.reasons ?? []).toContain("予算内");
+  it("リストに入れた商品は、おすすめにもその他にも出さない", () => {
+    const r = rankForCatalog(catalog, defaultPrefs, [item("p03"), item("p06", 2)], [item("p03"), item("p06", 2)], 50000);
+    const all = [...matchedIds(r), ...ids(r.others)];
+    expect(all).not.toContain("p03");
+    expect(all).not.toContain("p06");
   });
 
-  it("ほかの商品だけで予算を超えているときは、リストに無い商品はすべて予算超え（価格不明は除く）", () => {
+  it("リストの商品は予算に含めて表示から外し、価格不明は予算で除かない", () => {
     const r = rankForCatalog(catalog, defaultPrefs, [item("p04")], [item("p04")], 5000);
     const all = [...matchedIds(r), ...ids(r.others)];
-    expect(all.filter((id) => id !== "p04" && id !== "p05")).toEqual([]);
-    expect(all).toContain("p04");
-    expect(all).toContain("p05");
+    expect(all).toEqual(["p05"]);
   });
 
-  it("数量 2 以上は 価格×数量 で判定する。リストに入っていても予算を超えれば「予算内」は付かない", () => {
+  it("数量 2 以上も価格×数量で予算計算し、リストの商品は表示から外す", () => {
     const r = rankForCatalog(catalog, defaultPrefs, [item("p06", 3)], [item("p06", 3)], 5000);
-    const p06 = [...r.matched.map((s) => ({ id: s.view.product.id, reasons: s.reasons })), ...r.others.map((v) => ({ id: v.product.id, reasons: [] as string[] }))]
-      .find((x) => x.id === "p06");
-    expect(p06).toBeDefined();
-    expect(p06!.reasons).not.toContain("予算内");
+    expect([...matchedIds(r), ...ids(r.others)]).toEqual(["p05"]);
   });
 
   it("価格不明は予算で除かず、予算の点も付けない", () => {
@@ -117,7 +112,7 @@ describe("リストから推定するおすすめ", () => {
   it("カテゴリが同数なら決めつけず、難易度不明と見つからない商品は推定に使わない", () => {
     const result = rankForCatalog(sample, defaultPrefs, [item("saved1"), item("unknown"), item("missing")], [item("saved1"), item("unknown"), item("missing")], null);
     expect(scored(result, "same")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
-    expect(ids(result.others)).toContain("unknown");
+    expect(ids(result.others)).not.toContain("unknown");
     const unknownOnly = rankForCatalog(sample, defaultPrefs, [item("unknown"), item("missing")], [item("unknown"), item("missing")], null);
     expect(scored(unknownOnly, "near")?.reasons ?? []).not.toContain("リストの難易度に近い");
   });

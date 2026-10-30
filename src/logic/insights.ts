@@ -6,7 +6,6 @@ export type Prefs = {
   difficultyMin: 1 | 2 | 3 | 4 | 5 | null;
   difficultyMax: 1 | 2 | 3 | 4 | 5 | null;
   categories: Category[];
-  playStyle: "onsite" | "takeHome" | "any";
   day: Day | null;
 };
 
@@ -20,7 +19,6 @@ export const defaultPrefs: Prefs = {
   difficultyMin: null,
   difficultyMax: null,
   categories: [],
-  playStyle: "any",
   day: null,
 };
 
@@ -145,16 +143,6 @@ export function scoreProduct(
     reasons.push("指定したカテゴリ");
   }
 
-  if (prefs.playStyle !== "any") {
-    const style = playStyleOf(product);
-    if (style === prefs.playStyle) {
-      score += 2;
-      reasons.push(style === "onsite" ? "その場で遊べる" : "持ち帰って遊べる");
-    } else if (style !== "unknown") {
-      score -= 1;
-    }
-  }
-
   if (product.isNew === true) {
     score += 1;
     reasons.push("新作");
@@ -213,8 +201,10 @@ export function rankForCatalog(
 
   const matched: Scored[] = [];
   const others: ProductView[] = [];
+  const listedIds = new Set([...preferenceItems, ...budgetItems].map((item) => item.productId));
   for (const view of catalog) {
     const productId = view.product.id;
+    if (listedIds.has(productId)) continue;
     const inBudgetList = budgetQuantityById.has(productId);
     const otherItemsTotal = listTotal - (listAmountById.get(productId) ?? 0);
     const budgetLeftForThis = budget === null ? null : budget - otherItemsTotal;
@@ -283,11 +273,9 @@ export const SCORE_RULES: { label: string; points: string }[] = [
   { label: "好みのカテゴリ", points: "+2" },
   { label: "リストで最多のカテゴリ（手動指定なし・同数は対象外）", points: "+1" },
   { label: "リストの難易度の平均から±1以内（手動指定なし）", points: "+1" },
-  { label: "好みの遊び方に合う", points: "+2" },
-  { label: "好みの遊び方と合わない", points: "−1" },
   { label: "新作", points: "+1" },
   { label: "限定あり", points: "+1" },
-  { label: "条件未指定・価格／難易度／遊び方が不明", points: "0" },
+  { label: "条件未指定・価格／難易度が不明", points: "0" },
   { label: "予算超過・行く日に販売なし・リスト登録済み", points: "除外" },
   { label: "合計0点以下", points: "表示しない" },
 ];

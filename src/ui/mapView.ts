@@ -16,6 +16,7 @@ import { button, el, safeExternalLink } from "./dom.ts";
 import { mapSelectionSummary } from "./mapSelectionSummary.ts";
 import { productCard, type ProductCardHandle } from "./productCard.ts";
 import { productDialog } from "./productDialog.ts";
+import { boothLinkLabel } from "./boothLinkLabel.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
 import { venueMap, type BoothPaint, type VenueMapScale, type VenueMapUpdate } from "./venueMap.ts";
 
@@ -74,9 +75,9 @@ function organizationLinks(booth: ProductView["booth"] | undefined): HTMLElement
   if (!booth) return undefined;
   const links = el("div", "map-organization-links");
   const entries = [
-    ...booth.links.site.map((url) => ["団体サイト", url] as const),
-    ...booth.links.x.map((url) => ["X", url] as const),
-    ...booth.links.instagram.map((url) => ["Instagram", url] as const),
+    ...booth.links.site.map((url) => ["Webサイト " + boothLinkLabel(url, "site"), url] as const),
+    ...booth.links.x.map((url) => ["X " + boothLinkLabel(url, "x"), url] as const),
+    ...booth.links.instagram.map((url) => ["Instagram " + boothLinkLabel(url, "instagram"), url] as const),
   ];
   for (const [label, url] of entries) {
     const link = safeExternalLink(url, label);

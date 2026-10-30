@@ -207,18 +207,18 @@ export function cartView(
   onMapBooth?: (boothCode: string) => void,
 ): CartView {
   const page = el("section", "cart-page");
-  const heading = el("h2", "section-title", "リスト");
+  const heading = el("h2", "section-title", store.isShared() ? "共同リスト" : "個人リスト");
   const shared = sharedOptions ? sharedListView(store, sharedOptions) : null;
 
   const summary = el("section", "today-summary cart-summary");
-  summary.setAttribute("aria-label", "リストの合計と買った金額");
+  summary.setAttribute("aria-label", "リストの合計と購入金額");
   summary.setAttribute("aria-live", "polite");
   summary.setAttribute("aria-atomic", "true");
   const summaryValues = new Map<string, { tile: HTMLElement; value: HTMLElement }>();
   for (const [key, label, initial] of [
     ["total", "合計", "0円"],
-    ["spent", "買った金額", "0円"],
-    ["remaining", "予算の残り", "未設定"],
+    ["spent", "購入金額", "0円"],
+    ["remaining", "予算残高", "未設定"],
     ["points", "GETした数", "0 / 0"],
   ]) {
     const tile = el("div", "today-summary-tile");
@@ -278,7 +278,7 @@ export function cartView(
   hideBoughtInput.addEventListener("change", () => {
     store.update((state) => ({ ...state, today: { ...state.today, hideBought: hideBoughtInput.checked } }));
   });
-  hideBoughtLabel.append(hideBoughtInput, el("span", "", "買ったものを隠す"));
+  hideBoughtLabel.append(hideBoughtInput, el("span", "", "購入済みを非表示"));
 
   const empty = el("div", "empty-state today-empty cart-empty");
   empty.append(el("p", "", "まだ何も入っていません。一覧で「リストに入れる」を押すと、ここに表示されます。"));
@@ -483,6 +483,7 @@ export function cartView(
       if (document.activeElement !== row.budget && row.budget.value !== budgetValue) row.budget.value = budgetValue;
       const over = member.over > 0;
       row.remainingTile.classList.toggle("is-over-budget", over);
+      row.remaining.classList.toggle("overage-badge", over);
       const remainingText = member.budget === null
         ? "未設定"
         : over
@@ -579,7 +580,7 @@ export function cartView(
       ? "価格不明 " + totals.unknownPrice + "件（合計に含まれていません）"
       : "";
     unknownBought.textContent = spent.unknownPriceBought
-      ? "買ったアイテムのうち価格不明 " + spent.unknownPriceBought + "件は、買った金額に含まれていません"
+      ? "買ったアイテムのうち価格不明 " + spent.unknownPriceBought + "件は、購入金額に含まれていません"
       : "";
     allBought.textContent = state.items.length > 0 && spent.leftToBuy === 0
       ? "リストのアイテムはすべて買いました"
@@ -593,6 +594,7 @@ export function cartView(
   };
 
   const sync = (state: AppState, sharedState: SharedStoreState | null = null) => {
+    heading.textContent = store.isShared() ? "共同リスト" : "個人リスト";
     const activeShared = store.isShared() ? sharedState : null;
     const itemById = new Map(state.items.map((item): [string, CartItem] => [item.productId, item]));
     for (const [id, row] of rows) {

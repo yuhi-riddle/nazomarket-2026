@@ -88,8 +88,8 @@ export function filterCatalog(catalog: ProductView[], filters: Filters): Product
       ].join(" "));
       if (!terms.every((term) => haystack.includes(term))) return false;
     }
-    if (filters.priceMin !== null && (product.price === null || product.price < filters.priceMin)) return false;
-    if (filters.priceMax !== null && (product.price === null || product.price > filters.priceMax)) return false;
+    if (filters.priceMin !== null && product.price !== null && product.price < filters.priceMin) return false;
+    if (filters.priceMax !== null && product.price !== null && product.price > filters.priceMax) return false;
     if (filters.difficulties.length) {
       const difficulty: DifficultyKey = product.difficulty.level ?? "unknown";
       if (!filters.difficulties.includes(difficulty)) return false;

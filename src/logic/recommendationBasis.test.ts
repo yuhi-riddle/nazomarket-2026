@@ -13,11 +13,10 @@ describe("hasRecommendationBasis", () => {
     expect(hasRecommendationBasis([item], defaultPrefs, null)).toBe(true);
   });
 
-  it("予算・難易度・カテゴリ・遊び方のどれかが指定されていれば手がかりになる", () => {
+  it("予算・難易度・カテゴリのどれかが指定されていれば手がかりになる", () => {
     expect(hasRecommendationBasis([], defaultPrefs, 3000)).toBe(true);
     expect(hasRecommendationBasis([], { ...defaultPrefs, difficultyMin: 2 }, null)).toBe(true);
     expect(hasRecommendationBasis([], { ...defaultPrefs, difficultyMax: 4 }, null)).toBe(true);
     expect(hasRecommendationBasis([], { ...defaultPrefs, categories: ["kit"] }, null)).toBe(true);
-    expect(hasRecommendationBasis([], { ...defaultPrefs, playStyle: "onsite" }, null)).toBe(true);
   });
 });
