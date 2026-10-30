@@ -49,7 +49,7 @@ describe("listActiveCampaigns", () => {
     campaign("past", "2026-10-29"),
     campaign("soon-date", "2026-11-01"),
     campaign("open-2", null),
-    campaign("soon-time", "2026-11-01T23:59"),
+    campaign("soon-time", "2026-11-01T20:00"),
   ];
 
   it("締切を過ぎたものを外し、締切ありは近い順、締切なしはデータの順に分ける", () => {
@@ -71,8 +71,9 @@ describe("countDueSoon", () => {
     const campaigns = [
       campaign("open", null),
       campaign("past", "2026-10-30T11:00"),
-      campaign("in-7days", "2026-11-06T12:00"),
-      campaign("over-7days", "2026-11-06T12:01"),
+      // 時刻つきの締切はその分の終わりまで有効なので、11:59 締切は 12:00 に終わる＝ちょうど7日後
+      campaign("in-7days", "2026-11-06T11:59"),
+      campaign("over-7days", "2026-11-06T12:00"),
       campaign("tomorrow", "2026-10-31"),
     ];
     expect(countDueSoon(campaigns, now)).toBe(2);

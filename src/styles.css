@@ -1103,7 +1103,8 @@ a {
 }
 
 .filter-dialog::backdrop,
-.product-dialog::backdrop {
+.product-dialog::backdrop,
+.campaign-dialog::backdrop {
   background: rgb(10 14 20 / 56%);
 }
 
