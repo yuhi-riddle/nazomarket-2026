@@ -1,4 +1,4 @@
-import { catalog } from "../data.ts";
+import { catalog, venueLayout } from "../data.ts";
 import {
   cartTotals,
   daySummary,
@@ -15,6 +15,7 @@ import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
 import { productDialog } from "./productDialog.ts";
 import { sharedListView, type SharedListViewOptions } from "./sharedListView.ts";
+import { celebrateGet } from "./gameFx.ts";
 
 const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
 
@@ -31,7 +32,13 @@ function sameCartItem(a: CartItem | undefined, b: CartItem | undefined): boolean
     && a.bought === b.bought);
 }
 
-function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails: (view: ProductView) => void): CartRow {
+function cartRow(
+  view: ProductView,
+  item: CartItem,
+  store: AppStore,
+  openDetails: (view: ProductView) => void,
+  onMapBooth?: (boothCode: string) => void,
+): CartRow {
   const row = el("article", "today-item cart-row");
   row.dataset.productId = view.product.id;
   let currentItem = item;
@@ -43,6 +50,7 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
   checkbox.type = "checkbox";
   checkbox.setAttribute("aria-label", view.product.name + "を買えたにする");
   checkbox.addEventListener("change", () => {
+    if (checkbox.checked) celebrateGet(view.product.name);
     store.update((state) => ({ ...state, items: toggleBought(state.items, view.product.id) }));
     checkbox.focus();
   });
@@ -51,8 +59,17 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
   const description = el("div", "today-item-description cart-row-main");
   const name = button(view.product.name, "cart-product-name today-item-name");
   name.addEventListener("click", () => openDetails(view));
+  const getBadge = el("span", "cart-get-badge", "GET!");
+  getBadge.hidden = true;
   const amount = el("span", "today-item-amount cart-price");
-  description.append(name, amount);
+  description.append(name, getBadge, amount);
+  const boothCode = view.booth.boothCode;
+  if (boothCode && onMapBooth && venueLayout.booths.some((booth) => booth.code === boothCode)) {
+    const mapButton = button("地図で場所を見る", "button button-secondary cart-map-link");
+    mapButton.setAttribute("aria-label", "地図で場所を見る（" + boothCode + " " + view.booth.name + "）");
+    mapButton.addEventListener("click", () => onMapBooth(boothCode));
+    description.append(mapButton);
+  }
 
   const status = el("span", "today-item-status");
   const controls = el("div", "today-item-controls cart-row-controls");
@@ -106,7 +123,8 @@ function cartRow(view: ProductView, item: CartItem, store: AppStore, openDetails
     remove.disabled = !canEdit;
     row.classList.toggle("is-bought", next.bought);
     row.hidden = hideBought && next.bought;
-    status.textContent = next.bought ? "✓ 買った" : "";
+    getBadge.hidden = !next.bought;
+    status.textContent = "";
   };
 
   update(item, false, !store.isSharedWriteBlocked());
@@ -130,7 +148,11 @@ function cartBuckets(items: CartItem[]): CartBucket[] {
   return [...buckets.values()];
 }
 
-export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions): CartView {
+export function cartView(
+  store: AppStore,
+  sharedOptions?: SharedListViewOptions,
+  onMapBooth?: (boothCode: string) => void,
+): CartView {
   const page = el("section", "cart-page");
   const heading = el("h2", "section-title", "リスト");
   const shared = sharedOptions ? sharedListView(store, sharedOptions) : null;
@@ -144,7 +166,7 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
     ["total", "合計", "0円"],
     ["spent", "使った金額", "0円"],
     ["remaining", "使える残り", "—"],
-    ["points", "GET（購入点数）", "0 / 0点"],
+    ["points", "GETした数", "0 / 0"],
   ]) {
     const tile = el("div", "today-summary-tile");
     const value = el("strong", "today-summary-value", initial);
@@ -201,12 +223,12 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
 
   const clearConfirm = el("div", "cart-clear-confirm");
   clearConfirm.hidden = true;
-  clearConfirm.append(el("p", "", "リストの商品をすべて外しますか？"));
+  clearConfirm.append(el("p", "", "リストのアイテムをすべて外しますか？"));
   const confirmClear = button("全部外す", "button button-danger");
   const cancelClear = button("キャンセル", "button button-secondary");
   clearConfirm.append(confirmClear, cancelClear);
 
-  const details = productDialog("cart");
+  const details = productDialog("cart", onMapBooth);
   page.append(
     heading,
     ...(shared ? [shared.element] : []),
@@ -292,15 +314,15 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
       : spent.remaining < 0
         ? "OVER +" + format(-spent.remaining)
         : format(spent.remaining);
-    summaryValues.get("points")!.value.textContent = spent.boughtQty + " / " + totals.qty + "点";
+    summaryValues.get("points")!.value.textContent = spent.boughtQty + " / " + totals.qty;
     unknownPrice.textContent = totals.unknownPrice
       ? "価格不明 " + totals.unknownPrice + "件（合計に含まれていません）"
       : "";
     unknownBought.textContent = spent.unknownPriceBought
-      ? "買った商品のうち価格不明 " + spent.unknownPriceBought + "件は、使った金額に含まれていません"
+      ? "買ったアイテムのうち価格不明 " + spent.unknownPriceBought + "件は、使った金額に含まれていません"
       : "";
     allBought.textContent = state.items.length > 0 && spent.leftToBuy === 0
-      ? "リストの商品はすべて買いました"
+      ? "リストのアイテムはすべて買いました"
       : "";
     allBought.hidden = !allBought.textContent;
     empty.hidden = state.items.length > 0;
@@ -322,7 +344,7 @@ export function cartView(store: AppStore, sharedOptions?: SharedListViewOptions)
       if (!view) continue;
       let row = rows.get(item.productId);
       if (!row) {
-        row = cartRow(view, item, store, (selected) => details.open(selected));
+        row = cartRow(view, item, store, (selected) => details.open(selected), onMapBooth);
         rows.set(item.productId, row);
       }
       if (!sameCartItem(previousItemById.get(item.productId), item)

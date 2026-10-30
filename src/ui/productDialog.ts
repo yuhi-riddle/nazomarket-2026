@@ -1,6 +1,7 @@
 import type { ProductView } from "../logic/catalog.ts";
 import { CATEGORY_NAMES } from "../logic/catalog.ts";
 import { formatPlayMinutes } from "../logic/playTime.ts";
+import { venueLayout } from "../data.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
@@ -43,7 +44,10 @@ function appendLinkGroup(parent: HTMLElement, title: string, urls: string[], kin
   }
 }
 
-export function productDialog(instance = "dialog-" + (++dialogInstance)): ProductDialog {
+export function productDialog(
+  instance = "dialog-" + (++dialogInstance),
+  onMapBooth?: (boothCode: string) => void,
+): ProductDialog {
   const dialog = el("dialog", "product-dialog");
   dialog.setAttribute("aria-labelledby", "product-dialog-title-" + instance);
   const content = el("div", "dialog-content");
@@ -65,7 +69,19 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
       const product = view.product;
       heading.textContent = product.name;
       details.replaceChildren();
-      details.append(el("p", "dialog-booth", (view.booth.boothCode ?? "番号未定") + " " + view.booth.name));
+      const boothCode = view.booth.boothCode;
+      const boothLocation = el("div", "dialog-booth-location");
+      boothLocation.append(el("p", "dialog-booth", (boothCode ?? "番号未定") + " " + view.booth.name));
+      if (boothCode && onMapBooth && venueLayout.booths.some((booth) => booth.code === boothCode)) {
+        const mapButton = button("地図で場所を見る", "button button-secondary dialog-map-link");
+        mapButton.setAttribute("aria-label", "地図で場所を見る（" + boothCode + " " + view.booth.name + "）");
+        mapButton.addEventListener("click", () => {
+          dialog.close();
+          onMapBooth(boothCode);
+        });
+        boothLocation.append(mapButton);
+      }
+      details.append(boothLocation);
       const boothLinks = el("div", "dialog-booth-links");
       boothLinks.append(el("h3", "dialog-booth-links-title", "団体リンク"));
       appendLinkGroup(boothLinks, "X", view.booth.links.x, "x", view.booth.name);
@@ -98,7 +114,7 @@ export function productDialog(instance = "dialog-" + (++dialogInstance)): Produc
       sources.append(el("h3", "", "出典"));
       appendLinkGroup(
         sources,
-        "商品・団体情報",
+        "アイテム・団体情報",
         [...product.sources, ...view.booth.sources].map((source) => source.url),
         "source",
         view.booth.name,

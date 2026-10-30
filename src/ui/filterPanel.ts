@@ -191,7 +191,7 @@ function filterControls(options: {
   if (options.includeSearch) {
     search = el("input", "text-input");
     search.type = "search";
-    search.placeholder = "商品名・団体名で検索";
+  search.placeholder = "アイテム名・団体名で検索";
     search.autocomplete = "off";
     search.addEventListener("input", () => {
       if (searchTimer !== undefined) window.clearTimeout(searchTimer);
@@ -316,7 +316,7 @@ export function filterPanel(options: {
       mobileOpen.textContent = "絞り込み（" + activeCount + "）";
       heading.textContent = "絞り込み";
       apply.textContent = shown + "件を表示";
-      aside.setAttribute("aria-label", "商品を絞り込む");
+  aside.setAttribute("aria-label", "アイテムを絞り込む");
       aside.dataset.total = String(total);
     },
   };

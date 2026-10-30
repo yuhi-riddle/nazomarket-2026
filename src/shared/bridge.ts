@@ -73,7 +73,7 @@ export function projectSharedCart(
 
 function itemIdForProduct(productId: string): string {
   if (!/^[A-Za-z0-9_-]{1,64}$/u.test(productId)) {
-    throw new Error("この商品IDは共有リストで扱えません。");
+    throw new Error("このアイテムIDは共有リストで扱えません。");
   }
   return productId;
 }
@@ -90,7 +90,7 @@ export function sharedOperationsForCartChange(
   for (const item of previous.items) {
     if (nextByProduct.has(item.productId)) continue;
     const itemId = itemIds.get(item.productId);
-    if (!itemId) throw new Error("共有商品の識別子を読み取れません。");
+    if (!itemId) throw new Error("共有アイテムの識別子を読み取れません。");
     operations.push({ type: "remove", itemId });
   }
 
@@ -99,7 +99,7 @@ export function sharedOperationsForCartChange(
     if (!previousItem) {
       const product = productById.get(item.productId);
       if (!product || [...product.name].length > 100 || (product.price !== null && product.price > 1_000_000_000)) {
-        throw new Error("この商品情報は共有リストで扱えません。");
+        throw new Error("このアイテム情報は共有リストで扱えません。");
       }
       operations.push({
         type: "add",
@@ -116,7 +116,7 @@ export function sharedOperationsForCartChange(
     }
 
     const itemId = itemIds.get(item.productId);
-    if (!itemId) throw new Error("共有商品の識別子を読み取れません。");
+    if (!itemId) throw new Error("共有アイテムの識別子を読み取れません。");
     if (previousItem.qty !== item.qty) operations.push({ type: "set-quantity", itemId, quantity: item.qty });
     if (previousItem.bought !== item.bought) operations.push({ type: "set-purchased", itemId, purchased: item.bought });
   }

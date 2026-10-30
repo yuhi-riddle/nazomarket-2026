@@ -42,7 +42,7 @@ export type CatalogView = {
   updateItems: (items: CartItem[], state: AppState) => void;
 };
 
-export function catalogView(store: AppStore): CatalogView {
+export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) => void): CatalogView {
   const page = el("section", "catalog-page");
   const filters = filterPanel({
     onChange(change) {
@@ -67,7 +67,7 @@ export function catalogView(store: AppStore): CatalogView {
   const mobileSearch = el("input", "text-input mobile-search");
   mobileSearch.type = "search";
   mobileSearch.setAttribute("aria-label", "キーワード");
-  mobileSearch.placeholder = "商品名・団体名で検索";
+  mobileSearch.placeholder = "アイテム名・団体名で検索";
   mobileSearch.autocomplete = "off";
   let searchTimer: number | undefined;
   mobileSearch.addEventListener("input", () => {
@@ -106,14 +106,14 @@ export function catalogView(store: AppStore): CatalogView {
   toolbar.append(mobileSearch, filters.openButton, count, sortField, groupActions);
 
   const resultRegion = el("div", "catalog-results");
-  const recommendationHint = el("p", "recommendation-hint", "リストに入れた商品や、指定がある場合はおすすめの条件・残り予算を参考に、最大10件表示します。すべての商品は並び順を変えると見られます。");
+  const recommendationHint = el("p", "recommendation-hint", "リストに入れたアイテムや、指定がある場合はおすすめの条件・残り予算を参考に、最大10件表示します。すべてのアイテムは並び順を変えると見られます。");
   recommendationHint.hidden = true;
   const grid = el("div", "product-grid");
   const empty = el("div", "empty-state");
   resultRegion.append(grid);
   main.append(toolbar, recommendationHint, resultRegion);
   page.append(filters.element, main, filters.dialog);
-  const details = productDialog("catalog");
+  const details = productDialog("catalog", onMapBooth);
   page.append(details.element);
 
   const handles = new Map<string, ProductCardHandle>();
@@ -187,7 +187,7 @@ export function catalogView(store: AppStore): CatalogView {
       empty.remove();
       return;
     }
-    empty.replaceChildren(el("p", "", recommended ? "条件に合うおすすめはありません。並び順を変えると、ほかの商品も見られます。" : "条件に合う商品はありません"));
+    empty.replaceChildren(el("p", "", recommended ? "条件に合うおすすめはありません。並び順を変えると、ほかのアイテムも見られます。" : "条件に合うアイテムはありません"));
     const clear = button("絞り込みをクリア", "button button-secondary");
     clear.addEventListener("click", () => {
       store.update((state) => ({ ...state, filters: { ...emptyFilters } }));
