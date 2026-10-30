@@ -10,20 +10,39 @@ import {
   type CartItem,
 } from "../logic/cart.ts";
 import { sortCatalog, type ProductView } from "../logic/catalog.ts";
+import { summarizeMembers, type MemberSummaryRow } from "../logic/memberSummary.ts";
 import type { AppState } from "../state.ts";
-import type { AppStore } from "../store.ts";
+import type { AppStore, SharedStoreState } from "../store.ts";
 import { button, el } from "./dom.ts";
 import { productDialog } from "./productDialog.ts";
-import { sharedListView, type SharedListViewOptions } from "./sharedListView.ts";
+import { sharedListView, type SharedListView, type SharedListViewOptions } from "./sharedListView.ts";
 import { celebrateGet } from "./gameFx.ts";
 
 const viewById = new Map(catalog.map((view): [string, ProductView] => [view.product.id, view]));
 
-type CartRow = { element: HTMLElement; update: (item: CartItem, hideBought: boolean, canEdit: boolean) => void };
+type CartRow = {
+  element: HTMLElement;
+  update: (item: CartItem, hideBought: boolean, canEdit: boolean, shared: SharedStoreState | null) => void;
+};
+type MemberTableRow = {
+  element: HTMLTableRowElement;
+  name: HTMLElement;
+  total: HTMLElement;
+  budget: HTMLInputElement;
+  remainingTile: HTMLElement;
+  remaining: HTMLElement;
+  rename: HTMLButtonElement;
+  remove: HTMLButtonElement;
+  current: MemberSummaryRow | null;
+};
 type CartSection = { element: HTMLElement; heading: HTMLElement; rows: HTMLElement; idsKey: string; ids: string[]; title: string };
 type CartBucket = { key: string; title: string; ids: string[]; organization: string; boothCode: string };
 
-export type CartView = { element: HTMLElement; sync: (state: AppState) => void; setActive?: (active: boolean) => void };
+export type CartView = {
+  element: HTMLElement;
+  sync: (state: AppState, shared?: SharedStoreState | null) => void;
+  setActive?: (active: boolean) => void;
+};
 
 function sameCartItem(a: CartItem | undefined, b: CartItem | undefined): boolean {
   return a === b || (a !== undefined && b !== undefined
@@ -36,6 +55,7 @@ function cartRow(
   view: ProductView,
   item: CartItem,
   store: AppStore,
+  sharedActions: SharedListView | null,
   openDetails: (view: ProductView) => void,
 ): CartRow {
   const row = el("article", "today-item cart-row");
@@ -64,6 +84,37 @@ function cartRow(
   description.append(name, getBadge, amount);
   const status = el("span", "today-item-status");
   const controls = el("div", "today-item-controls cart-row-controls");
+  const ownerSelect = el("select", "text-input shared-owner-select");
+  ownerSelect.setAttribute("aria-label", view.product.name + "の担当");
+  ownerSelect.hidden = true;
+  let currentShared: SharedStoreState | null = null;
+  let ownerOptionsKey = "";
+  const syncOwnerSelect = () => {
+    if (!sharedActions) return;
+    const sharedState = currentShared;
+    ownerSelect.hidden = sharedState === null;
+    ownerSelect.disabled = sharedState === null || store.isSharedWriteBlocked();
+    if (!sharedState) return;
+    const nextOptionsKey = JSON.stringify(sharedState.members.map((member) => [member.id, member.name]));
+    if (ownerOptionsKey !== nextOptionsKey && document.activeElement !== ownerSelect) {
+      const undecided = el("option", "", "未定");
+      undecided.value = "";
+      ownerSelect.replaceChildren(undecided, ...sharedState.members.map((member) => {
+        const option = el("option", "", member.name);
+        option.value = member.id;
+        return option;
+      }));
+      ownerOptionsKey = nextOptionsKey;
+    }
+    const ownerId = sharedState.ownerByProductId.get(view.product.id) ?? null;
+    if (document.activeElement !== ownerSelect && ownerSelect.value !== (ownerId ?? "")) {
+      ownerSelect.value = ownerId ?? "";
+    }
+  };
+  ownerSelect.addEventListener("change", () => {
+    if (sharedActions) void sharedActions.setOwner(view.product.id, ownerSelect.value || null);
+  });
+  ownerSelect.addEventListener("blur", syncOwnerSelect);
   const quantity = el("div", "quantity-control cart-quantity");
   const minus = button("−", "quantity-button");
   minus.setAttribute("aria-label", view.product.name + "の数量を減らす");
@@ -90,14 +141,25 @@ function cartRow(
     ...state,
     items: removeItem(state.items, view.product.id),
   })));
-  controls.append(quantity, remove);
+  controls.append(ownerSelect, quantity, remove);
   row.append(boughtLabel, description, status, controls);
 
-  const update = (next: CartItem, hideBought: boolean, canEdit: boolean) => {
-    if (sameCartItem(currentItem, next) && currentHideBought === hideBought && currentCanEdit === canEdit) return;
+  const update = (next: CartItem, hideBought: boolean, canEdit: boolean, sharedState: SharedStoreState | null) => {
+    const previousOwner = currentShared?.ownerByProductId.get(view.product.id) ?? null;
+    const nextOwner = sharedState?.ownerByProductId.get(view.product.id) ?? null;
+    const previousMembersKey = currentShared
+      ? JSON.stringify(currentShared.members.map((member) => [member.id, member.name]))
+      : "";
+    const nextMembersKey = sharedState
+      ? JSON.stringify(sharedState.members.map((member) => [member.id, member.name]))
+      : "";
+    if (sameCartItem(currentItem, next) && currentHideBought === hideBought && currentCanEdit === canEdit
+      && previousOwner === nextOwner && previousMembersKey === nextMembersKey && (currentShared !== null) === (sharedState !== null)) return;
     currentItem = next;
     currentHideBought = hideBought;
     currentCanEdit = canEdit;
+    currentShared = sharedState;
+    syncOwnerSelect();
     checkbox.disabled = !canEdit;
     checkbox.checked = next.bought;
     const unitPrice = view.product.price === null
@@ -118,7 +180,7 @@ function cartRow(
     status.textContent = "";
   };
 
-  update(item, false, !store.isSharedWriteBlocked());
+  update(item, false, !store.isSharedWriteBlocked(), null);
   return { element: row, update };
 }
 
@@ -181,6 +243,28 @@ export function cartView(
   budgetPanel.append(budgetLabel);
   summary.append(budgetPanel);
 
+  const memberOverview = el("section", "shared-member-overview");
+  memberOverview.hidden = true;
+  const memberTable = el("table", "shared-member-table");
+  const memberCaption = el("caption", "shared-member-caption", "メンバーごとの担当と予算");
+  const memberHead = el("thead");
+  const memberHeadRow = el("tr");
+  for (const label of ["名前", "担当の合計", "予算", "残り"]) {
+    const cell = el("th", "", label);
+    cell.scope = "col";
+    memberHeadRow.append(cell);
+  }
+  memberHead.append(memberHeadRow);
+  const memberBody = el("tbody");
+  memberTable.append(memberCaption, memberHead, memberBody);
+  const memberFooter = el("div", "shared-member-summary");
+  memberFooter.setAttribute("role", "status");
+  memberFooter.setAttribute("aria-live", "polite");
+  const unassignedSummary = el("p", "shared-member-unassigned");
+  const sharedTotalSummary = el("p", "shared-member-total");
+  memberFooter.append(unassignedSummary, sharedTotalSummary);
+  memberOverview.append(memberTable, memberFooter);
+
   const unknownPrice = el("p", "cart-unknown-price");
   const unknownBought = el("p", "today-unknown-price");
   const allBought = el("p", "today-all-bought");
@@ -224,6 +308,7 @@ export function cartView(
     heading,
     ...(shared ? [shared.element] : []),
     summary,
+    memberOverview,
     unknownPrice,
     unknownBought,
     hideBoughtLabel,
@@ -239,16 +324,194 @@ export function cartView(
   );
 
   const rows = new Map<string, CartRow>();
+  const memberRows = new Map<string, MemberTableRow>();
   const sections = new Map<string, CartSection>();
   let previousItems: CartItem[] | undefined;
-  let previousItemById = new Map<string, CartItem>();
   let previousBudget: number | null | undefined;
   let previousSharedMode: boolean | undefined;
   let previousHideBought: boolean | undefined;
-  let previousSharedWriteBlocked: boolean | undefined;
   let previousRouteKey = "";
   let previousSectionKeys: string[] = [];
+  let previousMemberTableKey: string | null = null;
+  let previousMemberOrder: string[] = [];
   const format = (amount: number) => amount.toLocaleString("ja-JP") + "円";
+
+  const createMemberRow = (memberId: string): MemberTableRow => {
+    const element = el("tr");
+    const nameCell = el("th");
+    nameCell.scope = "row";
+    const name = el("span", "shared-member-name");
+    const actions = el("div", "shared-member-actions");
+    const rename = button("名前変更", "button button-secondary shared-member-rename");
+    const remove = button("外す", "button button-secondary shared-member-remove");
+    actions.append(rename, remove);
+    nameCell.append(name, actions);
+
+    const totalCell = el("td");
+    const total = el("strong", "shared-member-total-value");
+    totalCell.append(total);
+
+    const budgetCell = el("td");
+    const budget = el("input", "text-input shared-member-budget");
+    budget.type = "number";
+    budget.min = "0";
+    budget.max = "1000000000";
+    budget.step = "500";
+    budget.inputMode = "numeric";
+    budget.addEventListener("change", () => {
+      const current = memberRows.get(memberId)?.current;
+      if (!current || !shared) return;
+      const value = budget.value;
+      const amount = value === "" ? null : Number(value);
+      if (amount !== null && (!Number.isSafeInteger(amount) || amount < 0 || amount > 1_000_000_000)) {
+        budget.setCustomValidity("0〜1,000,000,000円の整数を入力してください。");
+        budget.reportValidity();
+        return;
+      }
+      budget.setCustomValidity("");
+      void shared.enqueue({ type: "set-member-budget", memberId, budgetYen: amount });
+    });
+    budgetCell.append(budget);
+
+    const remainingCell = el("td");
+    const remainingTile = el("div", "today-summary-tile shared-member-remaining");
+    const remaining = el("strong", "today-summary-value");
+    remainingTile.append(remaining);
+    remainingCell.append(remainingTile);
+
+    const row: MemberTableRow = {
+      element,
+      name,
+      total,
+      budget,
+      remainingTile,
+      remaining,
+      rename,
+      remove,
+      current: null,
+    };
+    budget.addEventListener("blur", () => {
+      const current = memberRows.get(memberId)?.current;
+      if (!current) return;
+      const value = current.budget === null ? "" : String(current.budget);
+      if (budget.value !== value) budget.value = value;
+    });
+    rename.addEventListener("click", () => {
+      if (!row.current || !shared) return;
+      const proposed = window.prompt("新しい名前を入力してください。", row.current.name);
+      if (proposed === null) return;
+      const nameValue = proposed.trim();
+      if ([...nameValue].length < 1 || [...nameValue].length > 20 || /\p{Cc}/u.test(nameValue)) {
+        window.alert("名前は1〜20文字で入力してください。");
+        return;
+      }
+      void shared.enqueue({ type: "rename-member", memberId, name: nameValue });
+    });
+    remove.addEventListener("click", () => {
+      if (!row.current || !shared) return;
+      if (!window.confirm(row.current.name + "さんをメンバーから外しますか？担当のアイテムは未定になります。")) return;
+      void shared.enqueue({ type: "remove-member", memberId });
+    });
+
+    element.append(nameCell, totalCell, budgetCell, remainingCell);
+    return row;
+  };
+
+  const updateMemberTable = (state: AppState, sharedState: SharedStoreState | null): void => {
+    const sharedMode = store.isShared();
+    summary.hidden = sharedMode;
+    memberOverview.hidden = !sharedMode;
+    if (!sharedMode) return;
+    const activeShared = sharedState ?? { members: [], ownerByProductId: new Map<string, string | null>(), meId: null };
+
+    const blocked = store.isSharedWriteBlocked();
+    const tableKey = JSON.stringify([
+      activeShared.meId,
+      activeShared.members.map((member) => [member.id, member.name, member.budgetYen]),
+      state.items.map((item) => [item.productId, item.qty, viewById.get(item.productId)?.product.price ?? null,
+        activeShared.ownerByProductId.get(item.productId) ?? null]),
+      blocked,
+    ]);
+    if (tableKey === previousMemberTableKey) return;
+    previousMemberTableKey = tableKey;
+
+    const summaryState = {
+      revision: 0,
+      members: activeShared.members,
+      items: state.items.map((item) => {
+        const product = viewById.get(item.productId)?.product;
+        return {
+          id: item.productId,
+          productId: item.productId,
+          name: product?.name ?? item.productId,
+          priceYen: product?.price ?? null,
+          quantity: item.qty,
+          purchased: item.bought,
+          ownerId: activeShared.ownerByProductId.get(item.productId) ?? null,
+        };
+      }),
+    };
+    const totals = summarizeMembers(summaryState, (productId) => viewById.get(productId)?.product.price ?? null);
+    const activeIds = new Set(totals.members.map((member) => member.memberId));
+    for (const [memberId, row] of memberRows) {
+      if (activeIds.has(memberId)) continue;
+      row.element.remove();
+      memberRows.delete(memberId);
+    }
+
+    for (const member of totals.members) {
+      let row = memberRows.get(member.memberId);
+      if (!row) {
+        row = createMemberRow(member.memberId);
+        memberRows.set(member.memberId, row);
+      }
+      row.current = member;
+      const nameText = member.name + (member.memberId === activeShared.meId ? "（自分）" : "");
+      if (row.name.textContent !== nameText) row.name.textContent = nameText;
+      const totalText = format(member.total);
+      if (row.total.textContent !== totalText) row.total.textContent = totalText;
+      const budgetLabel = member.name + "の予算（円）";
+      if (row.budget.getAttribute("aria-label") !== budgetLabel) row.budget.setAttribute("aria-label", budgetLabel);
+      row.budget.disabled = blocked;
+      const renameLabel = member.name + "の名前を変更";
+      if (row.rename.getAttribute("aria-label") !== renameLabel) row.rename.setAttribute("aria-label", renameLabel);
+      row.rename.disabled = blocked;
+      const removeLabel = member.name + "をメンバーから外す";
+      if (row.remove.getAttribute("aria-label") !== removeLabel) row.remove.setAttribute("aria-label", removeLabel);
+      row.remove.disabled = blocked;
+      const budgetValue = member.budget === null ? "" : String(member.budget);
+      if (document.activeElement !== row.budget && row.budget.value !== budgetValue) row.budget.value = budgetValue;
+      const over = member.over > 0;
+      row.remainingTile.classList.toggle("is-over-budget", over);
+      const remainingText = member.budget === null
+        ? "未設定"
+        : over
+          ? format(member.over) + "オーバー"
+          : format(member.remaining ?? 0);
+      if (row.remaining.textContent !== remainingText) row.remaining.textContent = remainingText;
+    }
+
+    const order = totals.members.map((member) => member.memberId);
+    if (order.length !== previousMemberOrder.length || order.some((id, index) => id !== previousMemberOrder[index])) {
+      let cursor: ChildNode | null = memberBody.firstChild;
+      for (const memberId of order) {
+        const row = memberRows.get(memberId)?.element;
+        if (!row) continue;
+        if (row !== cursor) memberBody.insertBefore(row, cursor);
+        cursor = row.nextSibling;
+      }
+      while (cursor) {
+        const next = cursor.nextSibling;
+        memberBody.removeChild(cursor);
+        cursor = next;
+      }
+      previousMemberOrder = order;
+    }
+    const unassignedText = "未定 " + totals.unassignedCount + "件・" + format(totals.unassignedTotal);
+    const totalText = "全体の合計 " + format(totals.total);
+    if (unassignedSummary.textContent !== unassignedText) unassignedSummary.textContent = unassignedText;
+    if (sharedTotalSummary.textContent !== totalText) sharedTotalSummary.textContent = totalText;
+  };
 
   const commitBudget = () => {
     if (store.isShared()) {
@@ -329,7 +592,8 @@ export function cartView(
     actions.hidden = state.items.length === 0;
   };
 
-  const sync = (state: AppState) => {
+  const sync = (state: AppState, sharedState: SharedStoreState | null = null) => {
+    const activeShared = store.isShared() ? sharedState : null;
     const itemById = new Map(state.items.map((item): [string, CartItem] => [item.productId, item]));
     for (const [id, row] of rows) {
       if (itemById.has(id)) continue;
@@ -341,13 +605,10 @@ export function cartView(
       if (!view) continue;
       let row = rows.get(item.productId);
       if (!row) {
-        row = cartRow(view, item, store, (selected) => details.open(selected));
+        row = cartRow(view, item, store, shared, (selected) => details.open(selected));
         rows.set(item.productId, row);
       }
-      if (!sameCartItem(previousItemById.get(item.productId), item)
-        || previousHideBought !== state.today.hideBought || previousSharedWriteBlocked !== store.isSharedWriteBlocked()) {
-        row.update(item, state.today.hideBought, !store.isSharedWriteBlocked());
-      }
+      row.update(item, state.today.hideBought, !store.isSharedWriteBlocked(), activeShared);
     }
 
     const routeKey = JSON.stringify(state.items.map((item) => item.productId));
@@ -434,15 +695,12 @@ export function cartView(
       hideBoughtInput.checked = state.today.hideBought;
       previousHideBought = state.today.hideBought;
     }
-    previousSharedWriteBlocked = store.isSharedWriteBlocked();
+    updateMemberTable(state, activeShared);
     budgetInput.readOnly = sharedMode;
-    budgetInput.disabled = previousSharedWriteBlocked;
+    budgetInput.disabled = store.isSharedWriteBlocked();
     clearButton.disabled = store.isSharedWriteBlocked();
     confirmClear.disabled = store.isSharedWriteBlocked();
-    if (previousItems !== state.items) {
-      previousItems = state.items;
-      previousItemById = itemById;
-    }
+    if (previousItems !== state.items) previousItems = state.items;
     if (shouldUpdateTotals) {
       copyStatus.textContent = "";
       fallbackText.hidden = true;
