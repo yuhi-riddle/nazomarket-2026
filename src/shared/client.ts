@@ -46,11 +46,11 @@ class ClientFailure extends Error {
   }
 }
 
-const QUEUE_KEY_PREFIX = "nazomarket2026:shared:v2:outbox:";
+const QUEUE_KEY_PREFIX = "nazomarket2026:shared:v3:outbox:";
 const LEGACY_QUEUE_KEY_PREFIX = "nazomarket2026:shared:v1:outbox:";
+const PREVIOUS_QUEUE_KEY_PREFIX = "nazomarket2026:shared:v2:outbox:";
 const TAB_ID_KEY = "nazomarket2026:shared:v2:tab-id";
 const TAB_LOCK_PREFIX = "nazomarket2026:shared:tab-owner:";
-const LEGACY_MIGRATION_LOCK_PREFIX = "nazomarket2026:shared:legacy-migration:";
 const DEFAULT_REQUEST_TIMEOUT_MS = 15_000;
 const ROOM_PATH = (roomId: string) => "/api/rooms/" + encodeURIComponent(roomId);
 
@@ -162,7 +162,11 @@ function normalizeApiUrl(value: string | URL): string {
 }
 
 function cloneState(state: SharedListState | null): SharedListState | null {
-  return state === null ? null : { ...state, items: state.items.map((item) => ({ ...item })) };
+  return state === null ? null : {
+    ...state,
+    members: state.members.map((member) => ({ ...member })),
+    items: state.items.map((item) => ({ ...item })),
+  };
 }
 
 function publicFailure(error: ClientFailure): SharedClientError {
@@ -622,7 +626,6 @@ export class SharedListClient {
       return false;
     }
 
-    const allowLegacyMigration = claim === "acquired";
     if (claim === "busy") {
       this.#releaseCurrentTabLockClaim();
       try {
@@ -647,7 +650,7 @@ export class SharedListClient {
       }
     }
 
-    await this.#loadOutbox(allowLegacyMigration);
+    await this.#loadOutbox();
     return this.#loadFailure === null;
   }
 
@@ -665,31 +668,11 @@ export class SharedListClient {
     this.#tabLockClaim = null;
   }
 
-  async #loadOutbox(allowLegacyMigration: boolean): Promise<void> {
+  async #loadOutbox(): Promise<void> {
     if (!this.#storage || !this.#tabLockManager) return;
     try {
-      let raw = this.#storage.getItem(this.#storageKey);
-      if (raw === null && allowLegacyMigration) {
-        const legacyKey = LEGACY_QUEUE_KEY_PREFIX + this.#roomId;
-        const migratedRaw = await this.#tabLockManager.request(
-          LEGACY_MIGRATION_LOCK_PREFIX + this.#roomId,
-          { ifAvailable: false },
-          async (lock) => {
-            if (!lock) return null;
-            const existing = this.#storage!.getItem(this.#storageKey);
-            if (existing !== null) return existing;
-            const legacyRaw = this.#storage!.getItem(legacyKey);
-            if (legacyRaw === null) return null;
-            const parsed = this.#parseQueue(legacyRaw);
-            if (parsed === null) return legacyRaw;
-            const serialized = JSON.stringify(parsed);
-            this.#storage!.setItem(this.#storageKey, serialized);
-            this.#storage!.removeItem(legacyKey);
-            return serialized;
-          },
-        );
-        raw = migratedRaw ?? this.#storage.getItem(this.#storageKey);
-      }
+      this.#discardOldOutboxes();
+      const raw = this.#storage.getItem(this.#storageKey);
       if (raw !== null) {
         const queue = this.#parseQueue(raw);
         if (queue === null) {
@@ -705,6 +688,23 @@ export class SharedListClient {
     } catch {
       this.#setLoadFailure(new ClientFailure("storage_unavailable", failureMessage("storage_unavailable")));
     }
+  }
+
+  #discardOldOutboxes(): void {
+    if (!this.#storage) return;
+    const legacyRoomKey = LEGACY_QUEUE_KEY_PREFIX + this.#roomId;
+    const legacyRoomPrefix = legacyRoomKey + ":";
+    const previousRoomPrefix = PREVIOUS_QUEUE_KEY_PREFIX + this.#roomId + ":";
+    const storage = this.#storage as StorageLike & {
+      readonly length?: number;
+      key?: (index: number) => string | null;
+    };
+    const oldKeys = typeof storage.length === "number" && typeof storage.key === "function"
+      ? Array.from({ length: storage.length }, (_, index) => storage.key!(index))
+        .filter((key): key is string => key !== null
+          && (key === legacyRoomKey || key.startsWith(legacyRoomPrefix) || key.startsWith(previousRoomPrefix)))
+      : [legacyRoomKey, this.#tabId ? previousRoomPrefix + this.#tabId : ""].filter(Boolean);
+    for (const key of oldKeys) this.#storage.removeItem(key);
   }
 
   async #recoverInactiveOutboxes(): Promise<void> {

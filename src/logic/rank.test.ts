@@ -19,7 +19,7 @@ const item = (productId: string, qty = 1): CartItem => ({ productId, qty, bought
 
 describe("rankForCatalog（一覧のおすすめ順）", () => {
   it("点数 1 以上は点数順で matched、それ以外は others にブース順。点数は返すが理由も付く", () => {
-    const r = rankForCatalog(catalog, { ...defaultPrefs, categories: ["kit"] }, [], null);
+    const r = rankForCatalog(catalog, { ...defaultPrefs, categories: ["kit"] }, [], [], null);
     expect(matchedIds(r).slice(0, 2)).toEqual(["p03", "p06"]);
     expect(r.matched[0].reasons).toContain("指定したカテゴリ");
     expect(ids(r.others)).toEqual(ids(r.others).slice().sort((a, b) => ids(catalog).indexOf(a) - ids(catalog).indexOf(b)));
@@ -28,7 +28,7 @@ describe("rankForCatalog（一覧のおすすめ順）", () => {
 
   it("予算: リストのほかの商品を引いた残りで判定し、予算超えはどちらにも入れない", () => {
     // 予算 5,000。リストに p02（1,000円）→ 残り 4,000。p04（5,200円）は超え、p03（3,000円）は入る
-    const r = rankForCatalog(catalog, defaultPrefs, [item("p02")], 5000);
+    const r = rankForCatalog(catalog, defaultPrefs, [item("p02")], [item("p02")], 5000);
     const all = [...matchedIds(r), ...ids(r.others)];
     expect(all).not.toContain("p04");
     expect(matchedIds(r)).toContain("p03");
@@ -37,13 +37,13 @@ describe("rankForCatalog（一覧のおすすめ順）", () => {
 
   it("リストに入れた商品は、自分の分で残り予算が減っても消えない", () => {
     // 予算 5,000。p03（3,000円）をリストに入れると残り 2,000 になるが、p03 自身は表示し続ける
-    const r = rankForCatalog(catalog, defaultPrefs, [item("p03")], 5000);
+    const r = rankForCatalog(catalog, defaultPrefs, [item("p03")], [item("p03")], 5000);
     expect([...matchedIds(r), ...ids(r.others)]).toContain("p03");
     expect(r.matched.find((s) => s.view.product.id === "p03")?.reasons ?? []).toContain("予算内");
   });
 
   it("ほかの商品だけで予算を超えているときは、リストに無い商品はすべて予算超え（価格不明は除く）", () => {
-    const r = rankForCatalog(catalog, defaultPrefs, [item("p04")], 5000);
+    const r = rankForCatalog(catalog, defaultPrefs, [item("p04")], [item("p04")], 5000);
     const all = [...matchedIds(r), ...ids(r.others)];
     expect(all.filter((id) => id !== "p04" && id !== "p05")).toEqual([]);
     expect(all).toContain("p04");
@@ -51,7 +51,7 @@ describe("rankForCatalog（一覧のおすすめ順）", () => {
   });
 
   it("数量 2 以上は 価格×数量 で判定する。リストに入っていても予算を超えれば「予算内」は付かない", () => {
-    const r = rankForCatalog(catalog, defaultPrefs, [item("p06", 3)], 5000);
+    const r = rankForCatalog(catalog, defaultPrefs, [item("p06", 3)], [item("p06", 3)], 5000);
     const p06 = [...r.matched.map((s) => ({ id: s.view.product.id, reasons: s.reasons })), ...r.others.map((v) => ({ id: v.product.id, reasons: [] as string[] }))]
       .find((x) => x.id === "p06");
     expect(p06).toBeDefined();
@@ -59,12 +59,12 @@ describe("rankForCatalog（一覧のおすすめ順）", () => {
   });
 
   it("価格不明は予算で除かず、予算の点も付けない", () => {
-    const r = rankForCatalog(catalog, defaultPrefs, [], 100);
+    const r = rankForCatalog(catalog, defaultPrefs, [], [], 100);
     expect([...matchedIds(r), ...ids(r.others)]).toContain("p05");
   });
 
   it("行く日に売っていない商品は除く", () => {
-    const r = rankForCatalog(catalog, { ...defaultPrefs, day: "sun" }, [], null);
+    const r = rankForCatalog(catalog, { ...defaultPrefs, day: "sun" }, [], [], null);
     expect([...matchedIds(r), ...ids(r.others)]).not.toContain("p05");
   });
 });
@@ -94,7 +94,7 @@ describe("リストから推定するおすすめ", () => {
   const scored = (result: ReturnType<typeof rankForCatalog>, id: string) => result.matched.find((entry) => entry.view.product.id === id);
 
   it("購入済みも含めて商品ごとに推定し、同じカテゴリと平均に近い難易度に理由付きで加点する", () => {
-    const result = rankForCatalog(sample, defaultPrefs, saved, null);
+    const result = rankForCatalog(sample, defaultPrefs, saved, saved, null);
     expect(scored(result, "same")).toMatchObject({ score: 2, reasons: ["リストと同じカテゴリ", "リストの難易度に近い"] });
     expect(scored(result, "near")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
     expect(ids(result.others)).toContain("far");
@@ -102,29 +102,46 @@ describe("リストから推定するおすすめ", () => {
   });
 
   it("明示したカテゴリと難易度はリスト推定より優先する", () => {
-    const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"], difficultyMin: 5, difficultyMax: 5 }, saved, null);
+    const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"], difficultyMin: 5, difficultyMax: 5 }, saved, saved, null);
     expect(scored(result, "far")).toMatchObject({ score: 5, reasons: ["指定した難易度", "指定したカテゴリ"] });
     expect(ids(result.others)).toContain("same");
     expect(scored(result, "near")?.reasons ?? []).not.toContain("リストの難易度に近い");
   });
 
   it("片方だけ手動指定したとき、もう片方はリストから推定する", () => {
-    const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"] }, saved, null);
+    const result = rankForCatalog(sample, { ...defaultPrefs, categories: ["online"] }, saved, saved, null);
     expect(scored(result, "same")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
     expect(scored(result, "near")).toMatchObject({ score: 3, reasons: ["指定したカテゴリ", "リストの難易度に近い"] });
   });
 
   it("カテゴリが同数なら決めつけず、難易度不明と見つからない商品は推定に使わない", () => {
-    const result = rankForCatalog(sample, defaultPrefs, [item("saved1"), item("unknown"), item("missing")], null);
+    const result = rankForCatalog(sample, defaultPrefs, [item("saved1"), item("unknown"), item("missing")], [item("saved1"), item("unknown"), item("missing")], null);
     expect(scored(result, "same")).toMatchObject({ score: 1, reasons: ["リストの難易度に近い"] });
     expect(ids(result.others)).toContain("unknown");
-    const unknownOnly = rankForCatalog(sample, defaultPrefs, [item("unknown"), item("missing")], null);
+    const unknownOnly = rankForCatalog(sample, defaultPrefs, [item("unknown"), item("missing")], [item("unknown"), item("missing")], null);
     expect(scored(unknownOnly, "near")?.reasons ?? []).not.toContain("リストの難易度に近い");
   });
 
   it("リストの推定で予算超過や販売日外の商品を復活させない", () => {
-    const result = rankForCatalog(sample, { ...defaultPrefs, day: "sun" }, saved, 2500);
+    const result = rankForCatalog(sample, { ...defaultPrefs, day: "sun" }, saved, saved, 2500);
     expect([...matchedIds(result), ...ids(result.others)]).not.toContain("same");
     expect([...matchedIds(result), ...ids(result.others)]).not.toContain("far");
+  });
+
+  it("共同リストの予算から自分の担当だけを一度引き、他メンバーの担当額は引かない", () => {
+    const sharedCatalog = buildCatalog([
+      product({ id: "my-item", boothId: "no01", price: 3000 }),
+      product({ id: "their-item", boothId: "no02", price: 5000 }),
+      product({ id: "within-budget", boothId: "no03", price: 7000 }),
+      product({ id: "over-budget", boothId: "no04", price: 7001 }),
+    ], booths, layout);
+    const tasteItems = [item("my-item"), item("their-item")];
+    const myAssignedItems = [item("my-item")];
+    const result = rankForCatalog(sharedCatalog, defaultPrefs, tasteItems, myAssignedItems, 10_000);
+    const allIds = [...matchedIds(result), ...ids(result.others)];
+
+    expect(allIds).toContain("within-budget");
+    expect(allIds).not.toContain("over-budget");
+    expect(result.matched.find((entry) => entry.view.product.id === "within-budget")?.reasons).toContain("予算内");
   });
 });

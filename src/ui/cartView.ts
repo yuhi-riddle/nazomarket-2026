@@ -243,6 +243,7 @@ export function cartView(
   let previousItems: CartItem[] | undefined;
   let previousItemById = new Map<string, CartItem>();
   let previousBudget: number | null | undefined;
+  let previousSharedMode: boolean | undefined;
   let previousHideBought: boolean | undefined;
   let previousSharedWriteBlocked: boolean | undefined;
   let previousRouteKey = "";
@@ -250,6 +251,11 @@ export function cartView(
   const format = (amount: number) => amount.toLocaleString("ja-JP") + "円";
 
   const commitBudget = () => {
+    if (store.isShared()) {
+      const budget = store.getState().budget;
+      budgetInput.value = budget === null ? "" : String(budget);
+      return;
+    }
     const value = budgetInput.value;
     const budget = value === "" ? null : Number(value);
     if (budget !== null && (!Number.isFinite(budget) || budget < 0)) return;
@@ -416,16 +422,21 @@ export function cartView(
 
     const shouldUpdateTotals = previousItems !== state.items || previousBudget !== state.budget;
     if (shouldUpdateTotals) updateTotals(state);
-    if (previousBudget !== state.budget) {
-      if (document.activeElement !== budgetInput) budgetInput.value = state.budget === null ? "" : String(state.budget);
+    const sharedMode = store.isShared();
+    if (previousBudget !== state.budget || previousSharedMode !== sharedMode) {
+      if (document.activeElement !== budgetInput || previousSharedMode !== sharedMode) {
+        budgetInput.value = state.budget === null ? "" : String(state.budget);
+      }
       previousBudget = state.budget;
+      previousSharedMode = sharedMode;
     }
     if (previousHideBought !== state.today.hideBought) {
       hideBoughtInput.checked = state.today.hideBought;
       previousHideBought = state.today.hideBought;
     }
     previousSharedWriteBlocked = store.isSharedWriteBlocked();
-    budgetInput.disabled = store.isSharedWriteBlocked();
+    budgetInput.readOnly = sharedMode;
+    budgetInput.disabled = previousSharedWriteBlocked;
     clearButton.disabled = store.isSharedWriteBlocked();
     confirmClear.disabled = store.isSharedWriteBlocked();
     if (previousItems !== state.items) {

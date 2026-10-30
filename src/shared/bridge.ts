@@ -1,74 +1,63 @@
+import { applyOperation, parseSharedState, type SharedMember } from "../../shared-worker/src/domain.ts";
 import { productById } from "../data.ts";
 import type { CartItem } from "../logic/cart.ts";
-import type { SharedListItem, SharedListState, SharedOperation } from "./types.ts";
+import type { SharedListState, SharedOperation } from "./types.ts";
 
 export type SharedCartProjection = {
   items: CartItem[];
   budget: number | null;
   itemIds: Map<string, string>;
+  members: SharedMember[];
+  ownerByProductId: Map<string, string | null>;
+  meId: string | null;
 };
 
 export const SHARED_WRITE_LIMIT_PER_MINUTE = 120;
 export const SHARED_WRITE_WINDOW_MS = 60_000;
 
-function applyOperation(
-  items: SharedListItem[],
-  budget: number | null,
-  operation: SharedOperation,
-): { items: SharedListItem[]; budget: number | null } | null {
-  switch (operation.type) {
-    case "add":
-      if (items.some((item) => item.id === operation.item.id)) return null;
-      return { items: [...items, { ...operation.item, purchased: false }], budget };
-    case "remove": {
-      const index = items.findIndex((item) => item.id === operation.itemId);
-      if (index < 0) return null;
-      return { items: items.filter((item) => item.id !== operation.itemId), budget };
-    }
-    case "set-quantity": {
-      if (!items.some((item) => item.id === operation.itemId)) return null;
-      return {
-        items: items.map((item) => item.id === operation.itemId ? { ...item, quantity: operation.quantity } : item),
-        budget,
-      };
-    }
-    case "set-purchased": {
-      if (!items.some((item) => item.id === operation.itemId)) return null;
-      return {
-        items: items.map((item) => item.id === operation.itemId ? { ...item, purchased: operation.purchased } : item),
-        budget,
-      };
-    }
-    case "set-budget":
-      return { items, budget: operation.budgetYen };
-  }
-}
-
 export function projectSharedCart(
   snapshot: SharedListState,
   operations: SharedOperation[] = [],
+  requestedMeId: string | null = null,
 ): SharedCartProjection | null {
-  let items = snapshot.items.map((item) => ({ ...item }));
-  let budget = snapshot.budgetYen;
-  for (const operation of operations) {
-    const next = applyOperation(items, budget, operation);
-    if (!next) return null;
-    items = next.items;
-    budget = next.budget;
+  let state: SharedListState;
+  try {
+    state = parseSharedState(snapshot);
+    for (const operation of operations) {
+      state = applyOperation(state, { baseRevision: state.revision, operation });
+    }
+  } catch {
+    return null;
   }
 
   const seenProducts = new Set<string>();
   const itemIds = new Map<string, string>();
+  const ownerByProductId = new Map<string, string | null>();
   const cartItems: CartItem[] = [];
-  for (const item of items) {
+  for (const item of state.items) {
     if (item.productId === null || !productById.has(item.productId) || item.quantity > 99 || seenProducts.has(item.productId)) {
       return null;
     }
     seenProducts.add(item.productId);
     itemIds.set(item.productId, item.id);
+    ownerByProductId.set(item.productId, item.ownerId);
     cartItems.push({ productId: item.productId, qty: item.quantity, bought: item.purchased });
   }
-  return { items: cartItems, budget, itemIds };
+
+  const meId = requestedMeId !== null && state.members.some((member) => member.id === requestedMeId)
+    ? requestedMeId
+    : null;
+  const projection: SharedCartProjection = {
+    items: cartItems,
+    budget: state.members.find((member) => member.id === meId)?.budgetYen ?? null,
+    itemIds,
+    members: state.members,
+    ownerByProductId,
+    meId,
+  };
+  // Keep the historical enumerable projection shape while exposing the selected member to the store.
+  Object.defineProperty(projection, "meId", { value: meId, enumerable: false });
+  return projection;
 }
 
 function itemIdForProduct(productId: string): string {
@@ -79,9 +68,10 @@ function itemIdForProduct(productId: string): string {
 }
 
 export function sharedOperationsForCartChange(
-  previous: { items: CartItem[]; budget: number | null },
-  next: { items: CartItem[]; budget: number | null },
+  previous: { items: CartItem[] },
+  next: { items: CartItem[] },
   itemIds: ReadonlyMap<string, string>,
+  meId: string | null = null,
 ): SharedOperation[] {
   const previousByProduct = new Map(previous.items.map((item) => [item.productId, item]));
   const nextByProduct = new Map(next.items.map((item) => [item.productId, item]));
@@ -109,6 +99,7 @@ export function sharedOperationsForCartChange(
           name: product.name,
           priceYen: product.price,
           quantity: item.qty,
+          ownerId: meId,
         },
       });
       if (item.bought) operations.push({ type: "set-purchased", itemId: itemIdForProduct(item.productId), purchased: true });
@@ -121,16 +112,11 @@ export function sharedOperationsForCartChange(
     if (previousItem.bought !== item.bought) operations.push({ type: "set-purchased", itemId, purchased: item.bought });
   }
 
-  if (previous.budget !== next.budget) operations.push({ type: "set-budget", budgetYen: next.budget });
   return operations;
 }
 
-export function sharedOperationsForPersonalCart(items: CartItem[], budget: number | null): SharedOperation[] {
-  return sharedOperationsForCartChange(
-    { items: [], budget: null },
-    { items, budget },
-    new Map(),
-  );
+export function sharedOperationsForPersonalCart(items: CartItem[], meId: string | null = null): SharedOperation[] {
+  return sharedOperationsForCartChange({ items: [] }, { items }, new Map(), meId);
 }
 
 export function sharedCopyBatch(

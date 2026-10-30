@@ -215,7 +215,7 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
           .map((item) => [item.productId, item.qty] as const)
           .sort(([a], [b]) => a.localeCompare(b)));
         if (rankedPrefs !== state.prefs || rankedDay !== state.filters.day || rankedBudget !== budget || rankedCartKey !== cartKey) {
-          rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.filters.day }, state.items, budget);
+          rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.filters.day }, state.items, state.items, budget);
           rankedPrefs = state.prefs;
           rankedDay = state.filters.day;
           rankedBudget = budget;

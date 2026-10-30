@@ -2,6 +2,7 @@ import {
   applyOperation,
   createInitialState,
   parseOperationEnvelope,
+  parseSharedState,
   SharedListError,
   type OperationEnvelope,
   type SharedListState,
@@ -53,7 +54,6 @@ interface RoomContext {
 interface RoomMeta {
   keyHash: string;
   revision: number;
-  budgetYen: number | null;
 }
 
 class RequestFailure extends Error {
@@ -166,9 +166,9 @@ function requestedHeadersAllowed(request: Request): boolean {
 
 function domainErrorResponse(error: SharedListError, currentRevision?: number): Response {
   const status = error.code === "invalid_input" ? 400
-    : error.code === "item_not_found" ? 404
-      : error.code === "revision_conflict" || error.code === "duplicate_item" ? 409
-        : error.code === "list_full" ? 422
+    : error.code === "item_not_found" || error.code === "member_not_found" ? 404
+      : error.code === "revision_conflict" || error.code === "duplicate_item" || error.code === "duplicate_member" ? 409
+        : error.code === "list_full" || error.code === "member_limit" ? 422
           : 409;
   return jsonResponse({ error: error.code, ...(currentRevision === undefined ? {} : { currentRevision }) }, status);
 }
@@ -278,8 +278,13 @@ export class SharedRoom {
         this.sql.exec(`CREATE TABLE IF NOT EXISTS room_meta (
           singleton INTEGER PRIMARY KEY CHECK (singleton = 1),
           key_hash TEXT NOT NULL,
-          revision INTEGER NOT NULL CHECK (revision >= 0),
-          budget_yen INTEGER CHECK (budget_yen IS NULL OR (budget_yen >= 0 AND budget_yen <= 1000000000))
+          revision INTEGER NOT NULL CHECK (revision >= 0)
+        )`);
+        this.sql.exec(`CREATE TABLE IF NOT EXISTS members (
+          id TEXT PRIMARY KEY,
+          name TEXT NOT NULL,
+          budget_yen INTEGER CHECK (budget_yen IS NULL OR (budget_yen >= 0 AND budget_yen <= 1000000000)),
+          position INTEGER NOT NULL
         )`);
         this.sql.exec(`CREATE TABLE IF NOT EXISTS items (
           id TEXT PRIMARY KEY,
@@ -287,12 +292,13 @@ export class SharedRoom {
           name TEXT NOT NULL,
           price_yen INTEGER CHECK (price_yen IS NULL OR (price_yen >= 0 AND price_yen <= 1000000000)),
           quantity INTEGER NOT NULL CHECK (quantity BETWEEN 1 AND 999),
-          purchased INTEGER NOT NULL CHECK (purchased IN (0, 1))
+          purchased INTEGER NOT NULL CHECK (purchased IN (0, 1)),
+          owner_id TEXT
         )`);
         createdTables = true;
       }
       if (this.readMetaFromTables()) return false;
-      this.sql.exec("INSERT INTO room_meta (singleton, key_hash, revision, budget_yen) VALUES (1, ?, 0, NULL)", keyHash);
+      this.sql.exec("INSERT INTO room_meta (singleton, key_hash, revision) VALUES (1, ?, 0)", keyHash);
       return true;
     });
     if (createdTables) this.initialized = true;
@@ -313,13 +319,12 @@ export class SharedRoom {
   }
 
   private readMetaFromTables(): RoomMeta | null {
-    const row = this.sql.exec("SELECT key_hash, revision, budget_yen FROM room_meta WHERE singleton = 1").toArray()[0];
+    const row = this.sql.exec("SELECT key_hash, revision FROM room_meta WHERE singleton = 1").toArray()[0];
     if (!row) return null;
     if (typeof row.key_hash !== "string" || typeof row.revision !== "number" || !Number.isSafeInteger(row.revision)) {
       throw new Error("stored room metadata is invalid");
     }
-    if (row.budget_yen !== null && typeof row.budget_yen !== "number") throw new Error("stored budget is invalid");
-    return { keyHash: row.key_hash, revision: row.revision, budgetYen: row.budget_yen as number | null };
+    return { keyHash: row.key_hash, revision: row.revision };
   }
 
   private hasRoomTables(): boolean {
@@ -333,16 +338,22 @@ export class SharedRoom {
   private readState(): SharedListState | null {
     const meta = this.readMeta();
     if (!meta) return null;
-    const items = this.sql.exec("SELECT id, product_id, name, price_yen, quantity, purchased FROM items ORDER BY rowid").toArray();
-    return {
+    const members = this.sql.exec("SELECT id, name, budget_yen FROM members ORDER BY position").toArray();
+    const items = this.sql.exec("SELECT id, product_id, name, price_yen, quantity, purchased, owner_id FROM items ORDER BY rowid").toArray();
+    const state = {
       revision: meta.revision,
-      budgetYen: meta.budgetYen,
+      members: members.map((row) => {
+        if (typeof row.id !== "string" || typeof row.name !== "string") throw new Error("stored member is invalid");
+        if (row.budget_yen !== null && typeof row.budget_yen !== "number") throw new Error("stored member budget is invalid");
+        return { id: row.id, name: row.name, budgetYen: row.budget_yen as number | null };
+      }),
       items: items.map((row) => {
         if (typeof row.id !== "string" || typeof row.name !== "string" || typeof row.quantity !== "number" || typeof row.purchased !== "number") {
           throw new Error("stored item is invalid");
         }
         if (row.product_id !== null && typeof row.product_id !== "string") throw new Error("stored product id is invalid");
         if (row.price_yen !== null && typeof row.price_yen !== "number") throw new Error("stored item price is invalid");
+        if (row.owner_id !== null && typeof row.owner_id !== "string") throw new Error("stored item owner is invalid");
         return {
           id: row.id,
           productId: row.product_id as string | null,
@@ -350,9 +361,15 @@ export class SharedRoom {
           priceYen: row.price_yen as number | null,
           quantity: row.quantity,
           purchased: row.purchased === 1,
+          ownerId: row.owner_id as string | null,
         };
       }),
     };
+    try {
+      return parseSharedState(state);
+    } catch {
+      throw new Error("stored shared list state is invalid");
+    }
   }
 
   private getState(): Response {
@@ -392,16 +409,45 @@ export class SharedRoom {
   }
 
   private persistOperation(operation: SharedOperation, state: SharedListState): void {
-    this.sql.exec("UPDATE room_meta SET revision = ?, budget_yen = ? WHERE singleton = 1", state.revision, state.budgetYen);
+    this.sql.exec("UPDATE room_meta SET revision = ? WHERE singleton = 1", state.revision);
     switch (operation.type) {
+      case "add-member": {
+        const positionRow = this.sql.exec("SELECT COALESCE(MAX(position), -1) + 1 AS position FROM members").toArray()[0];
+        const position = positionRow?.position;
+        if (typeof position !== "number") throw new Error("stored member position is invalid");
+        const member = state.members.find((entry) => entry.id === operation.member.id);
+        if (!member) throw new Error("added member is missing from next state");
+        this.sql.exec("INSERT INTO members (id, name, budget_yen, position) VALUES (?, ?, ?, ?)", member.id, member.name, member.budgetYen, position);
+        break;
+      }
+      case "rename-member": {
+        const member = state.members.find((entry) => entry.id === operation.memberId);
+        if (!member) throw new Error("renamed member is missing from next state");
+        this.sql.exec("UPDATE members SET name = ? WHERE id = ?", member.name, operation.memberId);
+        break;
+      }
+      case "remove-member":
+        this.sql.exec("UPDATE items SET owner_id = NULL WHERE owner_id = ?", operation.memberId);
+        this.sql.exec("DELETE FROM members WHERE id = ?", operation.memberId);
+        break;
+      case "set-member-budget": {
+        const member = state.members.find((entry) => entry.id === operation.memberId);
+        if (!member) throw new Error("updated member is missing from next state");
+        this.sql.exec("UPDATE members SET budget_yen = ? WHERE id = ?", member.budgetYen, operation.memberId);
+        break;
+      }
+      case "set-owner":
+        this.sql.exec("UPDATE items SET owner_id = ? WHERE id = ?", operation.ownerId, operation.itemId);
+        break;
       case "add":
         this.sql.exec(
-          "INSERT INTO items (id, product_id, name, price_yen, quantity, purchased) VALUES (?, ?, ?, ?, ?, 0)",
+          "INSERT INTO items (id, product_id, name, price_yen, quantity, purchased, owner_id) VALUES (?, ?, ?, ?, ?, 0, ?)",
           operation.item.id,
           operation.item.productId,
           operation.item.name,
           operation.item.priceYen,
           operation.item.quantity,
+          operation.item.ownerId,
         );
         break;
       case "remove":
@@ -412,8 +458,6 @@ export class SharedRoom {
         break;
       case "set-purchased":
         this.sql.exec("UPDATE items SET purchased = ? WHERE id = ?", operation.purchased ? 1 : 0, operation.itemId);
-        break;
-      case "set-budget":
         break;
     }
   }
