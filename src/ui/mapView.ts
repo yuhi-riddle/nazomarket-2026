@@ -171,7 +171,7 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
   let isFullVenue = true;
   let initialRangeSet = false;
 
-  function selectBooth(code: string | null, scroll: boolean): void {
+  function selectBooth(code: string | null, scroll: boolean, focus = false): void {
     if (code && !venueLayout.booths.some((booth) => booth.code === code)) return;
     selectedCode = code;
     map.setSelectedBooth(code);
@@ -191,6 +191,7 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
         - frameBounds.left - mapFrame.clientLeft - mapFrame.clientWidth / 2;
       mapFrame.scrollTop += boothBounds.top + boothBounds.height / 2
         - frameBounds.top - mapFrame.clientTop - mapFrame.clientHeight / 2;
+      if (focus) boothNode.focus({ preventScroll: true });
     });
   }
   boothSelect.addEventListener("change", () => selectBooth(boothSelect.value || null, true));
@@ -442,7 +443,7 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
     sync,
     setActive,
     selectBooth(code) {
-      selectBooth(code, true);
+      selectBooth(code, true, true);
     },
   };
 }
