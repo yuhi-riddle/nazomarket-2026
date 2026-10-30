@@ -65,7 +65,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://realdgame.jp/s/bombersbook/img/ogp.jpg?ver1",
     "payment": null,
     "sources": [
       {
@@ -84,7 +84,6 @@
     "boothId": "no01",
     "hashtags": [],
     "unconfirmed": [
-      "imageUrl",
       "payment"
     ]
   },
@@ -245,7 +244,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVhrXuyaoAAGl3o?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -260,7 +259,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -288,7 +286,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVTRM1bbgAAP5p_?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -327,7 +325,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -355,7 +352,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVTRSTYaoAAlF00?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -394,7 +391,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -422,7 +418,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://storage.googleapis.com/production-os-assets/assets/a51d1c1f-c1e3-4479-b37c-82671bae533a",
     "payment": null,
     "sources": [
       {
@@ -457,7 +453,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1863,7 +1858,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVOt5Ffa4AAQj47?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -1878,7 +1873,6 @@
       "difficulty",
       "playMinutes",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1903,7 +1897,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVyWjw5aYAAAgqu?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -1918,7 +1912,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2174,7 +2167,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.clagla.jp/blog/uploads/2026/10/news_image_mafuyu.jpg",
     "payment": null,
     "sources": [
       {
@@ -2194,7 +2187,6 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2502,7 +2494,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVptcsDbkAA1DtZ?format=jpg&name=small",
     "payment": [
       "現金",
       "PayPay",
@@ -2527,8 +2519,7 @@
     "boothId": "no20",
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -2784,7 +2775,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HUunaAtb0AAEM6F?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -2817,7 +2808,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3734,7 +3724,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVroG7vawAAto85?format=jpg&name=small",
     "payment": [
       "現金",
       "PayPay"
@@ -3753,8 +3743,7 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -3781,7 +3770,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVroXK4bgAApyBz?format=jpg&name=small",
     "payment": [
       "現金",
       "PayPay"
@@ -3804,8 +3793,7 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4033,7 +4021,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVEodCgbwAEeN-5?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -4077,8 +4065,7 @@
     ],
     "boothId": "no32",
     "unconfirmed": [
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4105,7 +4092,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVO7uOEawAAWwtu?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -4141,8 +4128,7 @@
     "boothId": "no32",
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4169,7 +4155,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVZO3I5awAId0FQ?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -4204,8 +4190,7 @@
     ],
     "boothId": "no32",
     "unconfirmed": [
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4232,7 +4217,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVorm8jboAEKgVi?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -4263,8 +4248,7 @@
     ],
     "boothId": "no32",
     "unconfirmed": [
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4291,7 +4275,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVy362sa4AAX-FP?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -4323,8 +4307,7 @@
     "boothId": "no32",
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4348,7 +4331,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVy36J4bEAI4m6V?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -4377,8 +4360,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4587,7 +4569,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVdDz0OacAAJ5bD?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -4603,7 +4585,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4628,7 +4609,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVdDz0JaMAAxpkL?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -4644,7 +4625,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4669,7 +4649,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVdDz0Vb0AAD4qZ?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -4685,7 +4665,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4710,7 +4689,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HULgalUaAAA9vpy?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -4730,7 +4709,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5053,7 +5031,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVJ5CIeboAAMqyi?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -5075,7 +5053,6 @@
     "boothId": "no40",
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5103,7 +5080,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVPCulna0AAk-Q1?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -5146,7 +5123,6 @@
     "boothId": "no40",
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5540,7 +5516,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HUlIfz-bYAA3pkX?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -5586,7 +5562,6 @@
     "boothId": "no44",
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6132,7 +6107,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV1_SpmaQAAsWxG?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6149,7 +6124,6 @@
     "unconfirmed": [
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6174,7 +6148,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVy_RXnaEAACm6r?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6188,7 +6162,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6272,7 +6245,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://booth.pximg.net/c/620x620/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/3735029/c8825f87-d12f-4faf-8ce7-e7e99f9f51f0_base_resized.jpg",
     "payment": [
       "現金のみ"
     ],
@@ -6297,8 +6270,7 @@
     "boothId": "no67",
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -6325,7 +6297,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://booth.pximg.net/c/620x620/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7622846/56a3db13-07a5-4aae-827b-946fb76c9792_base_resized.jpg",
     "payment": [
       "現金のみ"
     ],
@@ -6343,8 +6315,7 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -6493,7 +6464,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVNlnwHbkAAtN3G?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6507,7 +6478,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ],
     "hashtags": [
@@ -6544,7 +6514,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVTN4QmakAAoMMD?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6558,7 +6528,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ],
     "hashtags": [
@@ -6598,7 +6567,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVTTKSEa4AAT1-O?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6611,7 +6580,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ],
     "boothId": "no69",
@@ -6638,7 +6606,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVYt3XMagAEzlfM?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6652,7 +6620,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ],
     "hashtags": [
@@ -6689,7 +6656,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HViIQbSakAEvCOf?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6705,7 +6672,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6730,7 +6696,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HViIVOjakAIqwBG?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6746,7 +6712,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6771,7 +6736,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVtiQI1aoAAwiyz?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6787,7 +6752,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6812,7 +6776,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVx3owMbcAA8Pye?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6832,7 +6796,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6860,7 +6823,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVemUoLaYAA1VGI?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6872,7 +6835,6 @@
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6900,7 +6862,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVy9LMuaEAAL-ug?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6912,7 +6874,6 @@
     "hashtags": [],
     "unconfirmed": [
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6940,7 +6901,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVyQ8hOa4AASMpi?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6952,7 +6913,6 @@
     "hashtags": [],
     "unconfirmed": [
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6977,7 +6937,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVw9Tz9aIAAMY6Y?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -6992,7 +6952,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -8016,7 +7975,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVi9iy1aQAEoaYP?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -8029,7 +7988,6 @@
     "unconfirmed": [
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -8054,7 +8012,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVjbYo9a4AAo1YN?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -8068,7 +8026,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -8554,7 +8511,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVzb_xEa8AAGULx?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -8569,7 +8526,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -8794,7 +8750,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVyGWNCb0AAqxn-?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -8816,7 +8772,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -8978,7 +8933,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVjcUWnaEAAGC8f?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -9006,7 +8961,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -9069,7 +9023,7 @@
     "days": [
       "sat"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HU0ctWybUAA2Lmc?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -9093,7 +9047,6 @@
       "price",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -9120,7 +9073,7 @@
     "days": [
       "sat"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HU0ctmeaYAA9Sf1?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -9147,7 +9100,6 @@
     "unconfirmed": [
       "price",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -9359,7 +9311,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://himitsu-shotaijo.quizknock.com/wp-content/themes/quizknock_layton/images/favicon_ogp/ogp.jpg?v=2",
     "payment": null,
     "sources": [
       {
@@ -9386,7 +9338,6 @@
     "boothId": "no97",
     "hashtags": [],
     "unconfirmed": [
-      "imageUrl",
       "payment"
     ]
   }
