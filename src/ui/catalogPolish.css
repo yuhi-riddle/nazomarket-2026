@@ -188,3 +188,12 @@
     padding-inline: var(--space-2);
   }
 }
+
+.dialog-description {
+  margin: var(--space-4) 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-panel);
+  background: var(--surface-2);
+  font-size: var(--font-15);
+  line-height: 1.85;
+}
