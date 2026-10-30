@@ -279,7 +279,7 @@
     },
     "playMinutes": {
       "min": 100,
-      "max": 100
+      "max": null
     },
     "players": null,
     "isNew": true,
@@ -346,7 +346,7 @@
     },
     "playMinutes": {
       "min": 120,
-      "max": 120
+      "max": null
     },
     "players": null,
     "isNew": true,

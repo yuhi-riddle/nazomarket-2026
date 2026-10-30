@@ -44,6 +44,75 @@
     ]
   },
   {
+    "id": "no07-c1",
+    "boothId": "no07",
+    "productIds": [],
+    "kind": "other",
+    "title": "会場限定の豪華くじ引き",
+    "detail": "ナゾトキマーケット会場限定で豪華くじ引きを開催。参加条件と景品は告知ページに書かれていない",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://machihack.com/unknox-c9n2",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no07-c2",
+    "boothId": "no07",
+    "productIds": [
+      "no07-1",
+      "no07-2",
+      "no07-3"
+    ],
+    "kind": "discount",
+    "title": "RED・BLUEのセットが7,000円",
+    "detail": "UNKNOX:RED と UNKNOX:BLUE（各3,850円）のセットが、ナゾトキマーケット限定価格7,000円（セットの通常価格は7,400円）。別々に買うより700円安い",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://machihack.com/unknox-c9n2",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no08-c1",
+    "boothId": "no08",
+    "productIds": [
+      "no08-1",
+      "no08-2",
+      "no08-3",
+      "no08-4"
+    ],
+    "kind": "discount",
+    "title": "MIXStars 3種セットが7,000円",
+    "detail": "インスタント写真風カード（2,500円）・謎解きゲーム（3,300円）・履歴書（2,500円）の3種セットが、ナゾトキマーケット限定価格7,000円（セットの通常価格は7,700円）。別々に買うより1,300円安い",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://i-ku-kan.com/mixstars",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
     "id": "no11-c1",
     "boothId": "no11",
     "productIds": [],
@@ -274,6 +343,31 @@
     ]
   },
   {
+    "id": "no38-c1",
+    "boothId": "no38",
+    "productIds": [
+      "no38-1",
+      "no38-5",
+      "no38-6",
+      "no38-7"
+    ],
+    "kind": "discount",
+    "title": "オススメ3点セットが3,500円",
+    "detail": "Project Mapping（1,500円）・world（1,500円）・ALGORITHM（1,000円）のオススメ3点セットが3,500円。別々に買うより500円安い",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/algo6le/status/2113963733613687128",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
     "id": "no45-c1",
     "boothId": "no45",
     "productIds": [
@@ -288,6 +382,29 @@
     "sources": [
       {
         "url": "https://x.com/michi_place/status/2113933603034042791",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no67-c1",
+    "boothId": "no67",
+    "productIds": [
+      "no67-4",
+      "no67-5"
+    ],
+    "kind": "discount",
+    "title": "STOP謎とふれないダイスのセットが1,000円",
+    "detail": "STOP謎（600円）とふれないダイス（700円）のセットが1,000円。別々に買うより300円安い",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
         "retrievedAt": "2026-10-30"
       }
     ]
