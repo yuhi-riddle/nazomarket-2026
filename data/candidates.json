@@ -24,6 +24,42 @@
     ]
   },
   {
+    "boothId": "no02",
+    "name": "『10』(タンブルウィード10周年記念特別作品)",
+    "price": 4800,
+    "reason": "2026-11-07 00:00からオンラインショップで発売(COMING SOON表記)。ナゾトキマーケットでの販売は書かれていない(120〜360分・難易度7/10・スマホと筆記用具が必要)",
+    "sources": [
+      {
+        "url": "https://shop.tumbleweed.jp/items/132792221",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "boothId": "no02",
+    "name": "HIRAMEKI TRUMP BLACK",
+    "price": 3000,
+    "reason": "2026-11-07 00:00からオンラインショップで発売(iMYとの制作)。ナゾトキマーケットでの販売は書かれていない(150分〜・難易度9/10)",
+    "sources": [
+      {
+        "url": "https://shop.tumbleweed.jp/items/156794997",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "boothId": "no02",
+    "name": "HIRAMEKI TRUMP WHITE",
+    "price": 2800,
+    "reason": "2026-11-07 00:00からオンラインショップで発売(ねずみの巣との制作)。ナゾトキマーケットでの販売は書かれていない(120分〜・難易度7/10)",
+    "sources": [
+      {
+        "url": "https://shop.tumbleweed.jp/items/157516845",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
     "boothId": "no03",
     "name": "謎のマティーニ（LIQUOR GAMERS CLUB×RIDDLER）",
     "price": 2400,
@@ -63,11 +99,15 @@
     "boothId": "no04",
     "name": "ナゾトキマーケット2026 新作アパレル(クリエイター5組参加)",
     "price": null,
-    "reason": "10/25の投稿でブースA5に新作クリエイター5組(シュレディンガーズ・コール/あまつパイセン/物理/きまぐれパズル/まっきー)と告知。商品名・価格・今回の販売品との対応は書かれていない",
+    "reason": "10/25の投稿でブースA5に新作クリエイター5組(シュレディンガーズ・コール/あまつパイセン/物理/きまぐれパズル/まっきー)と告知。商品名・価格・今回の販売品との対応は書かれていない。10/26に参加クリエイターのうちシュレディンガーズ・コールの謎解きシャツがブースA5で売られると本人の投稿で確認でき、商品 no04-1 に移した。残り4組(あまつパイセン/物理/きまぐれパズル/まっきー)は商品名・内容が未確認",
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2114295906749014419",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/ACRChirimenjako/status/2114623328807948775",
+        "retrievedAt": "2026-10-30"
       }
     ]
   },
@@ -171,7 +211,7 @@
       },
       {
         "url": "https://nazoxnazo.com",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-30"
       }
     ]
   },
@@ -205,33 +245,9 @@
   },
   {
     "boothId": "no18",
-    "name": "モイワショーギクラブ 真冬のドライブ",
-    "price": 2750,
-    "reason": "2026年11月19日発売(11月13日に公式LINE会員先行)。ナゾマで売るとは書いていない",
-    "sources": [
-      {
-        "url": "https://www.clagla.jp/blog/2026/10/261023/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no18",
     "name": "解くまで飲めないナゾトキブリューイング",
     "price": 1500,
     "reason": "2025年のナゾマでの出品(B5・土日)。今回も持ってくるとは書いていない",
-    "sources": [
-      {
-        "url": "https://www.atpress.ne.jp/news/1001937",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no20",
-    "name": "KORON - コロン -",
-    "price": 1500,
-    "reason": "2025年のナゾマでの出品(Cd4・土日)。今回も持ってくるとは書いていない",
     "sources": [
       {
         "url": "https://www.atpress.ne.jp/news/1001937",
@@ -287,7 +303,7 @@
       },
       {
         "url": "https://www.tanteijelly.com/shop/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-30"
       }
     ]
   },
@@ -299,19 +315,7 @@
     "sources": [
       {
         "url": "https://www.tanteijelly.com/shop/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no26",
-    "name": "コジコト(KANJI×YOU×CRAZYLEMON)",
-    "price": 1980,
-    "reason": "2025年のナゾマでの出品(Ce10・土日)。ナゾマ価格は1,800円。今回も持ってくるとは書いていない",
-    "sources": [
-      {
-        "url": "https://www.atpress.ne.jp/news/1001937",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-30"
       }
     ]
   },
@@ -351,7 +355,7 @@
       },
       {
         "url": "https://nazocafe.com/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-30"
       }
     ]
   },
@@ -463,30 +467,6 @@
     "sources": [
       {
         "url": "https://jokerproject.jp/gamemarket2026ajp/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no42",
-    "name": "エニグロからの挑戦状（第一弾〜第七弾）・エニグロからの大挑戦状 免許皆伝編",
-    "price": null,
-    "reason": "HPに載る通販(XEOXY・タカラッシュのオンラインショップ)の既存作。価格の記載はなく、今回持ってくるとも書いていない",
-    "sources": [
-      {
-        "url": "http://enig-roid.com/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no42",
-    "name": "RIDDLE BUILDING",
-    "price": null,
-    "reason": "HPに載る通販(XEOXY・繭玉工房のオンラインショップ)の既存作。価格の記載はなく、今回持ってくるとも書いていない",
-    "sources": [
-      {
-        "url": "http://enig-roid.com/",
         "retrievedAt": "2026-10-25"
       }
     ]
@@ -809,13 +789,13 @@
   },
   {
     "boothId": "no64",
-    "name": "嫌がらせのようなクロスワード vol.2",
+    "name": "嫌クロワ Vol.6",
     "price": null,
-    "reason": "謎解きショップ『スイッチ』の旧販売ページ(現在は移転・404)の検索結果抜粋のみ確認。巨大クロスワード第2弾、難易度★4相当、120分〜。価格は未確認で、今回持参とは書いていない",
+    "reason": "10/27 の投稿で「新作はとりあえず今嫌クロワ6をデバッグしてもらってます」とあるが、会場に間に合うかは書いていない",
     "sources": [
       {
-        "url": "https://cafeswitch.thebase.in/items/25772881",
-        "retrievedAt": "2026-10-25"
+        "url": "https://x.com/imy_nazo/status/2115084952782205206",
+        "retrievedAt": "2026-10-30"
       }
     ]
   },
@@ -901,64 +881,12 @@
   },
   {
     "boothId": "no67",
-    "name": "かぎのかかったふうとうからの脱出２",
-    "price": 2000,
-    "reason": "シリーズ第2作(BOOTH通販、約60分〜)。今回持参するとは書いていない。10/17のXで「過去作も持っていきます」とあるが、持参する作品名は第1作のハッシュタグのみ",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/items/7622846",
-        "retrievedAt": "2026-10-25"
-      },
-      {
-        "url": "https://x.com/MysteryFromAki/status/2111438471676256711",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no67",
-    "name": "STOP謎",
-    "price": 600,
-    "reason": "BOOTHの新作短編キット(4問・約15分〜、お一人様3個まで)。今回持参するとは書いていない",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/items/7621396",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no67",
-    "name": "ふれないダイス",
-    "price": 700,
-    "reason": "STOP謎と並ぶSTOPマークのサイコロ(BOOTH関連商品欄の価格のみ確認)。今回持参するとは書いていない",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/items/7621396",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no67",
     "name": "闇に包まれた世界からの脱出",
     "price": 2000,
     "reason": "BOOTHの既存の謎解きキット(関連商品欄の価格のみ確認)。今回持参するとは書いていない",
     "sources": [
       {
         "url": "https://booth.pm/ja/items/3735029",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no69",
-    "name": "第二弾 名古屋 伏見謎解き街巡り「その失踪は、喫茶七番から。」",
-    "price": 2200,
-    "reason": "BASE の通販・店頭販売中の周遊謎(街歩き3〜4時間/おうち1〜2時間、LINE使用)。公式概要の『ほとんど新作』とは別で、今回持参とは書いていない",
-    "sources": [
-      {
-        "url": "https://riddletimez.base.shop/items/142181075",
         "retrievedAt": "2026-10-25"
       }
     ]
@@ -981,21 +909,9 @@
   },
   {
     "boothId": "no71",
-    "name": "ザコモン酒場",
-    "price": 2500,
-    "reason": "HPの持ち帰り謎ページに掲載。販売場所はナゾトキ番長のイベント会場と謎解きカフェなぞねこ(名古屋)で、ナゾトキマーケットでの販売は書かれていない",
-    "sources": [
-      {
-        "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no71",
     "name": "（品目未発表）持ち帰り謎の出展",
     "price": null,
-    "reason": "HPのスケジュールに『持ち帰り謎出展 11/7、8 東京・水道橋』とあるが、品目・価格・新作かどうかが書かれていない",
+    "reason": "HPのスケジュールに『持ち帰り謎出展 11/7、8 東京・水道橋』とあるが、品目・価格・新作かどうかが書かれていない (10/30 X 確認: 品目の告知は新作『酔いどれ勇者からの生還』のみで、公式 p30〜p32 に該当)",
     "sources": [
       {
         "url": "https://sites.google.com/view/nazotokibancho/%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB",
@@ -1057,18 +973,6 @@
   },
   {
     "boothId": "no75",
-    "name": "ARGガイド VOL.3（エレメンツ工房の同人誌）",
-    "price": null,
-    "reason": "エレメンツのnoteに記事タイトルがあるだけで、内容・価格・今回の頒布予定は確認できない。公式概要の『研究同人誌』に当たる可能性",
-    "sources": [
-      {
-        "url": "https://note.com/elejun/m/meabb6757606b",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no75",
     "name": "体験型エンタメガイド VOL.1（エレメンツ工房の同人誌）",
     "price": null,
     "reason": "エレメンツのnoteに記事タイトルがあるだけで、内容・価格・今回の頒布予定は確認できない",
@@ -1083,7 +987,7 @@
     "boothId": "no77",
     "name": "（題名未発表）完全新作の持ち帰り謎",
     "price": null,
-    "reason": "公式ブース概要に『完全新作までたくさんの謎をご用意』とあるが、題名・価格が見つからない。X(繭玉工房)の10/25告知で新作『シズカの放課後事件ファイル』が出たが、告知は『完全新作』とは書いていないため同一かは未確認",
+    "reason": "公式ブース概要に『完全新作までたくさんの謎をご用意』とあるが、題名・価格が見つからない。X(繭玉工房)の10/25告知で新作『シズカの放課後事件ファイル』が出たが、告知は『完全新作』とは書いていないため同一かは未確認 10/30 時点: シズカは特設サイトでゲームマーケット2026春の先行販売と書かれており、今秋の「完全新作」には当たらない可能性が高い。 (10/30 X 確認: 10/26 の告知で『これがさいごのプロポーズ』『箱娘ノ一枚謎』が出たが、どちらも『完全新作』とは書かれていない)",
     "sources": [
       {
         "url": "https://cocoonwork.base.shop/",
@@ -1165,9 +1069,9 @@
   },
   {
     "boothId": "no79",
-    "name": "（題名未発表）新作持ち帰り謎 2作目・3作目",
+    "name": "（題名未発表）新作持ち帰り謎 3作目",
     "price": null,
-    "reason": "noteの『ナゾトキマーケット情報』で新作を最大3つ持っていく予告があるが、積謎厳禁以外の題名・価格は無料部分に出ていない(2作目は『カジュアルでお手軽』と紹介)",
+    "reason": "noteの『ナゾトキマーケット情報』で新作を最大3つ持っていく予告があり、積謎厳禁・未来謎(10/26公開)の次の1作は題名・価格が無料部分に出ていない。 (10/30 X 確認: 10/26 に『持っていく新作は3つ。一番マニアックな最後の1つも今週告知予定』と投稿。公式に載った p57『謎解偏愛考察』が3作目に当たる可能性があるが、X では題名の告知なし)",
     "sources": [
       {
         "url": "https://note.com/paisen_nazo/n/n09cd7b641720",
@@ -1356,18 +1260,6 @@
     "name": "AXIDENTZ（4CE Dimension）",
     "price": null,
     "reason": "2025年に頒布予定と告知された商品（第三者 note の X まとめ）。今回持ってくるとは書いていない。価格不明",
-    "sources": [
-      {
-        "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no92",
-    "name": "デリートノイズ（TRIQLET No.123）",
-    "price": null,
-    "reason": "2025年に告知された商品（ブロックでノイズを消して謎を解く、難易度★8/10、60分）。今回持ってくるとは書いていない。価格不明",
     "sources": [
       {
         "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",

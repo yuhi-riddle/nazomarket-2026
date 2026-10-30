@@ -1,6 +1,6 @@
 {
   "range": "no01-no14",
-  "collectedAt": "2026-10-25",
+  "collectedAt": "2026-10-30",
   "booths": [
     {
       "boothId": "no01",
@@ -17,11 +17,11 @@
         },
         {
           "url": "https://www.scrapmagazine.com/s/nazomarket/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://www.scrapmagazine.com/news/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-1014/",
@@ -29,14 +29,18 @@
         },
         {
           "url": "https://realdgame.jp/s/ouchi-kimiasu/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://x.com/scrapmagazine",
           "retrievedAt": "2026-10-25"
+        },
+        {
+          "url": "https://realdgame.jp/s/bombersbook/",
+          "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のp18のみ。特設サイトに先行販売の詳細あり(11/7・8のSCRAPブースで各日数量限定、一般発売2026-12-08、予約は10/28 18:00〜SCRAP GOODS SHOP)。SCRAPのニュースやナゾトキマーケット特設ページに、ほかのブース販売商品の記載は見つからなかった(特設の商品一覧ページはJS描画で中身が取れず)。公式ブースの限定グッズ(謎付きTシャツ)は特典付きチケット扱いでブース販売ではない / X(@scrapmagazine)確認済み。2026年9月以降の投稿に今回のブース販売商品の告知なし(採用募集などのみ)。p18以外の追加なし",
+      "notes": "公式のp18のみ。特設サイトに先行販売の詳細あり(11/7・8のSCRAPブースで各日数量限定、一般発売2026-12-08、予約は10/28 18:00〜SCRAP GOODS SHOP)。SCRAPのニュースやナゾトキマーケット特設ページに、ほかのブース販売商品の記載は見つからなかった(特設の商品一覧ページはJS描画で中身が取れず)。公式ブースの限定グッズ(謎付きTシャツ)は特典付きチケット扱いでブース販売ではない / X(@scrapmagazine)確認済み。2026年9月以降の投稿に今回のブース販売商品の告知なし(採用募集などのみ)。p18以外の追加なし / 再収集(10/30 Web): p18の特設ページ(realdgame.jp/s/ouchi-kimiasu/)を再確認、価格3,800円・各日数量限定・約90分・推奨1人で変更なし。SCRAPニュースに10/29『爆弾魔が描いた絵本』(自宅用RDG)の販売決定告知が出たが、詳細ページは取れず今回の持参は未確認なので候補止まり / 再収集(10/30 X): 10/29 の特設ページ(realdgame.jp/s/bombersbook/)と SCRAP出版の投稿で『爆弾魔が描いた絵本』が11/7・8 のSCRAPブースで各日数量限定の先行販売(3,960円・約2〜3時間・1〜3人)と確認し、候補から no01-1 へ移した。@scrapmagazine 自身の10/24以降の投稿は採用募集のみ",
       "officialPatches": [
         {
           "id": "p18",
@@ -54,12 +58,54 @@
           "sources": [
             {
               "url": "https://realdgame.jp/s/ouchi-kimiasu/",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             }
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no01-1",
+          "name": "『爆弾魔が描いた絵本』（自宅で遊べるリアル脱出ゲーム）",
+          "price": 3960,
+          "priceNote": "一般発売(2026-12-08)も同価格。特設ページ表記",
+          "category": "kit",
+          "oneLiner": "絵本と捜査資料から、爆弾の在処を推理する自宅用RDG",
+          "description": "爆弾の手がかりは、すべて一冊の絵本の中に。絵本と捜査資料をもとに仕掛けられた爆弾を解除せよ！",
+          "difficulty": {
+            "level": 3,
+            "source": "estimated",
+            "basis": "特設ページに難易度表記はなく、約2〜3時間・1〜3人の自宅用RDGのため標準と推定"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": 180
+          },
+          "players": "1〜3人",
+          "isNew": true,
+          "limited": "先行販売・各日数量限定（一般発売は2026-12-08）",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://realdgame.jp/s/bombersbook/",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/realdgame/status/2115670085033697779",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/SCRAP_SHUPPAN/status/2115687325032440033",
+              "retrievedAt": "2026-10-30"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "extraLinks": {
         "x": [
@@ -86,7 +132,7 @@
       "sources": [
         {
           "url": "https://tumbleweed.jp/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://tumbleweed.jp/news/page/1/",
@@ -94,7 +140,7 @@
         },
         {
           "url": "https://shop.tumbleweed.jp/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://shop.tumbleweed.jp/items/154795582",
@@ -107,9 +153,21 @@
         {
           "url": "https://x.com/tumbleweedjp/status/2090642633672847708",
           "retrievedAt": "2026-10-25"
+        },
+        {
+          "url": "https://shop.tumbleweed.jp/items/132792221",
+          "retrievedAt": "2026-10-30"
+        },
+        {
+          "url": "https://shop.tumbleweed.jp/items/156794997",
+          "retrievedAt": "2026-10-30"
+        },
+        {
+          "url": "https://shop.tumbleweed.jp/items/157516845",
+          "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "HPのトップ・ニュース(〜2026-10-06)にナゾトキマーケットの告知なし。公式ブース概要にも商品名なし。オンラインショップの最新作は候補止まり。検索でも個別の出品情報は出ず。Xで告知があれば取れそう / X(@tumbleweedjp)確認済み。2026-08-21の出展告知は「新作をはじめとする大人気商品を多数販売予定」とだけで商品名・価格なし。9月以降の投稿(ゲムマ出展・クリスマス公演など)にも今回の商品名なし。候補は候補のまま",
+      "notes": "HPのトップ・ニュース(〜2026-10-06)にナゾトキマーケットの告知なし。公式ブース概要にも商品名なし。オンラインショップの最新作は候補止まり。検索でも個別の出品情報は出ず。Xで告知があれば取れそう / X(@tumbleweedjp)確認済み。2026-08-21の出展告知は「新作をはじめとする大人気商品を多数販売予定」とだけで商品名・価格なし。9月以降の投稿(ゲムマ出展・クリスマス公演など)にも今回の商品名なし。候補は候補のまま / 再収集(10/30 Web): 通販ショップに11/7(土)00:00発売の新作3点(『10』4,800円・HIRAMEKI TRUMP BLACK 3,000円・WHITE 2,800円)が出たが、販売先はオンラインショップのみの記載でナゾトキマーケットでの販売は書かれておらず候補止まり。HPニュースは10/06以降更新なし / 再収集(10/30 X): 10/24 以降の @tumbleweedjp の投稿(10/27 HIRAMEKI TRUMP BLACK/WHITE の情報解禁、10/29 10周年記念公演SPの告知など)にナゾトキマーケットでの販売の記載なし。候補のまま",
       "officialPatches": [],
       "products": [],
       "candidates": [
@@ -132,6 +190,39 @@
             {
               "url": "https://shop.tumbleweed.jp/items/147425079",
               "retrievedAt": "2026-10-25"
+            }
+          ]
+        },
+        {
+          "name": "『10』(タンブルウィード10周年記念特別作品)",
+          "price": 4800,
+          "reason": "2026-11-07 00:00からオンラインショップで発売(COMING SOON表記)。ナゾトキマーケットでの販売は書かれていない(120〜360分・難易度7/10・スマホと筆記用具が必要)",
+          "sources": [
+            {
+              "url": "https://shop.tumbleweed.jp/items/132792221",
+              "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "name": "HIRAMEKI TRUMP BLACK",
+          "price": 3000,
+          "reason": "2026-11-07 00:00からオンラインショップで発売(iMYとの制作)。ナゾトキマーケットでの販売は書かれていない(150分〜・難易度9/10)",
+          "sources": [
+            {
+              "url": "https://shop.tumbleweed.jp/items/156794997",
+              "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "name": "HIRAMEKI TRUMP WHITE",
+          "price": 2800,
+          "reason": "2026-11-07 00:00からオンラインショップで発売(ねずみの巣との制作)。ナゾトキマーケットでの販売は書かれていない(120分〜・難易度7/10)",
+          "sources": [
+            {
+              "url": "https://shop.tumbleweed.jp/items/157516845",
+              "retrievedAt": "2026-10-30"
             }
           ]
         }
@@ -166,14 +257,14 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式HPはXのみ(開いていない)。ブース概要に『RIDDLER史上最も力の入った新作謎解き』とあるが商品名は未確認。検索ではナゾトキマーケット向けの告知は出ず、直近の持ち帰り謎(謎解きカクテルシリーズ)は候補止まり。Xを見れば取れそう / X(@RIDDLER_nazo)確認済み。ブースA6。10/17に新作『リドラコレクション』解禁、収録作の紹介は10/24『CROSS BOX』(わち)・10/25『RIDDLE TRIAL!!!』(kk)など。価格は投稿に書かれておらず未確認",
+      "notes": "公式HPはXのみ(開いていない)。ブース概要に『RIDDLER史上最も力の入った新作謎解き』とあるが商品名は未確認。検索ではナゾトキマーケット向けの告知は出ず、直近の持ち帰り謎(謎解きカクテルシリーズ)は候補止まり。Xを見れば取れそう / X(@RIDDLER_nazo)確認済み。ブースA6。10/17に新作『リドラコレクション』解禁、収録作の紹介は10/24『CROSS BOX』(わち)・10/25『RIDDLE TRIAL!!!』(kk)など。価格は投稿に書かれておらず未確認 / 再収集(10/30 Web): 新しい告知なし。リドラコレクションの価格はWeb検索でも出ず、null のまま(Xなら取れる可能性) / 再収集(10/30 X): 10/29 までにリドラコレクション収録9作のうち6作(CROSS BOX / RIDDLE TRIAL!!! / N×N-grid Puzzle / 幻燈縁日 / 炉軸高校生徒会の論理パズル的日常 / スマホゲーム『朝焼けのクレスト』イベント特典限定謎)が紹介された。価格は公式投稿に無く、配信での発表を伝えるユーザー投稿の14,000円を暫定で採用(no03-1 の priceNote 参照) 再収集(10/30 確認): 価格14,000円は参加者の投稿のみが根拠のため price は null に戻し priceNote に残した。",
       "officialPatches": [],
       "products": [
         {
           "id": "no03-1",
           "name": "リドラコレクション",
           "price": null,
-          "priceNote": null,
+          "priceNote": "団体の告知では価格未確認。10/28〜29のリドラの配信で14,000円（限定価格）と発表されたと伝える参加者の投稿が6件あるが、配信は確認できていない",
           "category": "kit",
           "oneLiner": "9人のクリエイターが作った9つの別々の謎解きが入った箱入りの新作",
           "description": "9つの世界を、解き尽くせ。『リドラコレクション』 9人のクリエイターが贈る、全く異なる9つの謎解きが登場。",
@@ -208,6 +299,26 @@
             {
               "url": "https://x.com/RIDDLER_nazo/status/2114295913439248418",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2115745467900281103",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2115383073256935815",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/tetsubunhosii/status/2115928186408292530",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/DABEMI_ss/status/2115825837308272891",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/souryu42/status/2115815622819099124",
+              "retrievedAt": "2026-10-30"
             }
           ],
           "hashtags": [
@@ -309,7 +420,7 @@
       "sources": [
         {
           "url": "https://tokiqil.com/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://www.fashionsnap.com/article/2026-10-09/suzuki-takao-tokiqil-stof/",
@@ -328,9 +439,44 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」",
+      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no04-1",
+          "name": "シュレディンガーズ・コール 謎解きシャツ",
+          "price": null,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "Tシャツの謎を解いた人だけ買える、シュレコデザインのシャツ",
+          "description": "『シュレディンガーズ・コール』のTシャツの謎を解いた方だけが、シュレコデザインのシャツを購入できるそうです！（クリエイター側の投稿より）",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "謎を解いた人だけ購入可",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/ACRChirimenjako/status/2114623328807948775",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2114295906749014419",
+              "retrievedAt": "2026-10-30"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "TOKIQIL_164（鈴木貴雄×STOF トリプルコラボ ニット）",
@@ -346,11 +492,15 @@
         {
           "name": "ナゾトキマーケット2026 新作アパレル(クリエイター5組参加)",
           "price": null,
-          "reason": "10/25の投稿でブースA5に新作クリエイター5組(シュレディンガーズ・コール/あまつパイセン/物理/きまぐれパズル/まっきー)と告知。商品名・価格・今回の販売品との対応は書かれていない",
+          "reason": "10/25の投稿でブースA5に新作クリエイター5組(シュレディンガーズ・コール/あまつパイセン/物理/きまぐれパズル/まっきー)と告知。商品名・価格・今回の販売品との対応は書かれていない。10/26に参加クリエイターのうちシュレディンガーズ・コールの謎解きシャツがブースA5で売られると本人の投稿で確認でき、商品 no04-1 に移した。残り4組(あまつパイセン/物理/きまぐれパズル/まっきー)は商品名・内容が未確認",
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2114295906749014419",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/ACRChirimenjako/status/2114623328807948775",
+              "retrievedAt": "2026-10-30"
             }
           ]
         }
@@ -386,11 +536,11 @@
       "sources": [
         {
           "url": "https://www.yodaka.info",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://www.yodaka.info/news/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://www.yodaka.info/news/1455",
@@ -398,14 +548,14 @@
         },
         {
           "url": "https://yodakashop.com/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://x.com/yodaka_info/status/2090742938137690318",
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPのニュース(最新2026-03-16)に今回の出品告知なし。2025年のナゾトキマーケットでは新作2点を特別価格で販売していたので候補に回した(2026-03-16に価格改定の告知あり、現在価格は未確認)。/goods/は403で見られず。Xで取れそう / X(@yodaka_info)確認済み。2026-08-21の出展告知は「『さよなら』の物語を描いた『美しい謎解き』をテーマにした豪華で綺麗な作品」とだけで商品名・価格なし(8月の投稿のため候補扱いは変えず)。9月以降の投稿は別イベントの告知のみ。/goods/ は Chrome でも403",
+      "notes": "HPのニュース(最新2026-03-16)に今回の出品告知なし。2025年のナゾトキマーケットでは新作2点を特別価格で販売していたので候補に回した(2026-03-16に価格改定の告知あり、現在価格は未確認)。/goods/は403で見られず。Xで取れそう / X(@yodaka_info)確認済み。2026-08-21の出展告知は「『さよなら』の物語を描いた『美しい謎解き』をテーマにした豪華で綺麗な作品」とだけで商品名・価格なし(8月の投稿のため候補扱いは変えず)。9月以降の投稿は別イベントの告知のみ。/goods/ は Chrome でも403 / 再収集(10/30 Web): 新しい告知なし。ニュースは2026-03-16の価格改定が最新で、今回の出品告知なし / 再収集(10/30 X): 10/24 以降の @yodaka_info の投稿は10/28 の別イベント(ドラマチックダンジョン5)の告知のみで、ナゾトキマーケットの告知なし。候補のまま",
       "officialPatches": [],
       "products": [],
       "candidates": [
@@ -451,7 +601,7 @@
       "sources": [
         {
           "url": "https://yte-ec.com/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://newscast.jp/smart/news/2959496",
@@ -462,9 +612,40 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "booth.tsvにHPなし。検索で出た公式通販yte-ec.comはログイン画面のみ(商品なし)、yte.co.jpは名前解決できず。今回の出品商品名は見つからず。ブース概要の『ATOMO』は実物を配布するマガジンで販売品ではない。謎ファイル2種は2026年4月発売の既存作で候補止まり(価格は検索結果のプレスリリース記事より)。Xで取れそう / X(@AsobiFactory「YTE【公式】(旧あそびファクトリー)」)確認済み。2026年9月以降の投稿に今回のナゾトキマーケット向けの告知なし(2025年はB6ブースで過去の謎ファイルを販売と告知)",
+      "notes": "booth.tsvにHPなし。検索で出た公式通販yte-ec.comはログイン画面のみ(商品なし)、yte.co.jpは名前解決できず。今回の出品商品名は見つからず。ブース概要の『ATOMO』は実物を配布するマガジンで販売品ではない。謎ファイル2種は2026年4月発売の既存作で候補止まり(価格は検索結果のプレスリリース記事より)。Xで取れそう / X(@AsobiFactory「YTE【公式】(旧あそびファクトリー)」)確認済み。2026年9月以降の投稿に今回のナゾトキマーケット向けの告知なし(2025年はB6ブースで過去の謎ファイルを販売と告知) / 再収集(10/30 Web): 新しい告知なし。yte-ec.comはログイン画面のみで商品情報なし / 再収集(10/30 X): 10/26 の「ナゾトキマーケット2026 出展情報」投稿(画像あり)で、ブースA7・福キーボックス11,000円(税込)の数量限定販売、新作謎ファイル、割引率50%以上の旧作セールを告知。福キーボックスを no06-1 に追加。新作謎ファイルの商品名・価格は未告知。候補の謎ファイル2種は4月発売の既存作のままで、新作かは不明",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no06-1",
+          "name": "福キーボックス",
+          "price": 11000,
+          "priceNote": "税込。画像に「5,000円以上の謎解きを封入」と表記。封入内容は一部ランダムで、個別の商品名は未告知",
+          "category": "other",
+          "oneLiner": "数字入力式キーボックスにYTEの過去謎解き商品を封入した福袋",
+          "description": "謎解きユーザーなら誰でも見たことがある「数字入力式キーボックス」にYTEの過去謎解き商品を封入した「福キーボックス」を数量限定販売！",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": "数量限定（売り切り）",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/AsobiFactory/status/2114558085843058799",
+              "retrievedAt": "2026-10-30"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "謎ファイル 千速＆重悟ver",
@@ -501,7 +682,7 @@
       "sources": [
         {
           "url": "https://www.machihack.com/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://machihack.com/buy",
@@ -524,7 +705,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPは街歩き型イベント(2,500円〜)中心で、持ち帰りキットやナゾトキマーケットの記載なし。ブース概要に『本格派の謎解きキットをお披露目＆販売』とあるが商品名は未確認。Xで取れそう / X(@kyuzituhack)と商品ページ(machihack.com/unknox-c9n2)で確認。販売期間は2026-11-07・08のナゾトキマーケット会場内、会場限定の豪華くじ引きあり。必要なものは筆記用具とネット接続機器。色を使った謎あり。セットの所要時間はRED100分〜を採用",
+      "notes": "HPは街歩き型イベント(2,500円〜)中心で、持ち帰りキットやナゾトキマーケットの記載なし。ブース概要に『本格派の謎解きキットをお披露目＆販売』とあるが商品名は未確認。Xで取れそう / X(@kyuzituhack)と商品ページ(machihack.com/unknox-c9n2)で確認。販売期間は2026-11-07・08のナゾトキマーケット会場内、会場限定の豪華くじ引きあり。必要なものは筆記用具とネット接続機器。色を使った謎あり。セットの所要時間はRED100分〜を採用 / 再収集(10/30 Web): 新しい告知なし。商品ページ machihack.com/unknox-c9n2 は今回タイトルしか取れず再確認できなかった(価格は10/25のまま) / 再収集(10/30 X): 10/27(RED)・10/29(BLUE)の投稿でも「11/7・8 ナゾトキマーケット2026 にて販売」と再告知。価格・限定数の変更なし",
       "officialPatches": [],
       "products": [
         {
@@ -562,6 +743,10 @@
             {
               "url": "https://x.com/kyuzituhack/status/2113948620060029041",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/kyuzituhack/status/2115035780586283215",
+              "retrievedAt": "2026-10-30"
             }
           ],
           "hashtags": [
@@ -615,6 +800,10 @@
             {
               "url": "https://x.com/kyuzituhack/status/2113948620060029041",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/kyuzituhack/status/2115760563158745330",
+              "retrievedAt": "2026-10-30"
             }
           ],
           "hashtags": [
@@ -742,11 +931,11 @@
         },
         {
           "url": "https://www.machihack.com/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://www.enjoytokyo.jp/event/2081694/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://i-ku-kan.com/mixstars",
@@ -757,7 +946,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "booth.tsvのHPはXのみ。公式サイトi-ku-kan.comはMachihack!のサイトのリンクから判明したが、トップは Chrome で確認済み。ブース概要に『とある少女たちの物語』を販売とあるが商品名・価格は未確認。検索でも出ず。Xで取れそう / 公式サイト(i-ku-kan.com/mixstars)を Chrome で確認。ブースBb1で販売、3キット+セット。必要なものは筆記用具とLINEが使えるスマホ。遊ぶ場所はどこでも。X(@i_kukan)の10/19投稿で「一気に3キット発売」",
+      "notes": "booth.tsvのHPはXのみ。公式サイトi-ku-kan.comはMachihack!のサイトのリンクから判明したが、トップは Chrome で確認済み。ブース概要に『とある少女たちの物語』を販売とあるが商品名・価格は未確認。検索でも出ず。Xで取れそう / 公式サイト(i-ku-kan.com/mixstars)を Chrome で確認。ブースBb1で販売、3キット+セット。必要なものは筆記用具とLINEが使えるスマホ。遊ぶ場所はどこでも。X(@i_kukan)の10/19投稿で「一気に3キット発売」 / 再収集(10/30 Web): 新しい告知なし。i-ku-kan.comは今回タイトルしか取れず再確認できなかった(価格は10/25のまま) / 再収集(10/30 X): 10/26〜28 のオーディション密着映像(Episode 01〜03)の投稿で「MIXStars Project 11/7・8 発売決定」を再告知。価格・内容の新情報なし",
       "officialPatches": [],
       "products": [
         {
@@ -983,7 +1172,7 @@
       "sources": [
         {
           "url": "https://www.enjoytokyo.jp/event/2081694/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://the-nazo-store.com/",
@@ -994,7 +1183,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式HP(the-nazo-store.com)は Chrome で確認済み。検索でも今回の出品情報は出ず。Xで取れそう / X(@THE_NAZO_STORE)確認済み。2026-08-24に「人気の謎解き商品をたくさん持っていきます」との出展告知のみで商品名・価格なし。9月以降の投稿にも今回の商品告知なし。HPはChromeで開けたがニュースに今回の記載なし(新着は不思議な店シリーズ・ナゾトキ物語便など通販商品)",
+      "notes": "公式HP(the-nazo-store.com)は Chrome で確認済み。検索でも今回の出品情報は出ず。Xで取れそう / X(@THE_NAZO_STORE)確認済み。2026-08-24に「人気の謎解き商品をたくさん持っていきます」との出展告知のみで商品名・価格なし。9月以降の投稿にも今回の商品告知なし。HPはChromeで開けたがニュースに今回の記載なし(新着は不思議な店シリーズ・ナゾトキ物語便など通販商品) / 再収集(10/30 Web): 新しい告知なし。the-nazo-store.comは今回403で見られず。検索でも今回の品書きは出なかった / 再収集(10/30 X): 10/24 以降の @THE_NAZO_STORE の投稿に告知なし(10/29 の大阪メトロ謎の告知など別件のみ)。「ナゾトキマーケット」を含む投稿も9月以降見つからず。商品は0件のまま",
       "officialPatches": [],
       "products": [],
       "candidates": [],
@@ -1027,7 +1216,7 @@
         },
         {
           "url": "https://huntersvillage.jp/news/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://huntersvillage.jp/news/42392.html",
@@ -1035,11 +1224,11 @@
         },
         {
           "url": "https://takaraport.jp/shop/r/rKARIUDO/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://takaraport.jp/shop/r/rSHERLOCK/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://takaraport.jp/shop/g/gsherlock002/",
@@ -1062,7 +1251,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPのニュース(〜2026-10-17)とTAKARA PORT(新作一覧・KARIUDO・SHERLOCKの各シリーズ)にナゾトキマーケット告知なし。公式のp06(KRAKEN)・p07(THE ALPHABET)はTAKARA PORT未掲載で新作と思われる。p08は2026-07-31から通販中。KARIUDOはvol.2がタカラポートで★5(玄人向け)表記 / X(@real_takara)のお品書き(2026-10-25投稿の画像)で確認。ブースBb7。KARIUDO vol.3 -KRAKEN-(p06)・THE ALPHABET(p07)は先行販売、ほかにマトリョーシカ・TSUMUGI・MAGICAL BATH POWDER・走れよメロス・SECRET=SHERLOCK(p08)を掲載。ナゾトキマーケット限定の20%OFFワゴンセールあり、「このほかにも商品多数」。候補のKARIUDO vol.2は画像に載っておらず候補のまま",
+      "notes": "HPのニュース(〜2026-10-17)とTAKARA PORT(新作一覧・KARIUDO・SHERLOCKの各シリーズ)にナゾトキマーケット告知なし。公式のp06(KRAKEN)・p07(THE ALPHABET)はTAKARA PORT未掲載で新作と思われる。p08は2026-07-31から通販中。KARIUDOはvol.2がタカラポートで★5(玄人向け)表記 / X(@real_takara)のお品書き(2026-10-25投稿の画像)で確認。ブースBb7。KARIUDO vol.3 -KRAKEN-(p06)・THE ALPHABET(p07)は先行販売、ほかにマトリョーシカ・TSUMUGI・MAGICAL BATH POWDER・走れよメロス・SECRET=SHERLOCK(p08)を掲載。ナゾトキマーケット限定の20%OFFワゴンセールあり、「このほかにも商品多数」。候補のKARIUDO vol.2は画像に載っておらず候補のまま / 再収集(10/30 Web): 新しい告知なし。HPニュース(最新10/17)と TAKARA PORT には今回の告知・KRAKEN/THE ALPHABETの掲載なし。p08の価格2,600円は TAKARA PORT の表記と一致。お品書きの各価格に変更なし / 再収集(10/30 X): 10/25 のお品書き以降の新しい告知なし(@real_takara の10/24 以降の投稿は KRAKEN 告知と10/25 お品書きのみ)。価格の変更なし",
       "officialPatches": [
         {
           "id": "p06",
@@ -1079,7 +1268,7 @@
           "sources": [
             {
               "url": "https://takaraport.jp/shop/r/rKARIUDO/",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://takaraport.jp/shop/g/gkariudo002/",
@@ -1160,7 +1349,7 @@
             },
             {
               "url": "https://takaraport.jp/shop/r/rSHERLOCK/",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/real_takara/status/2114265713817133389",
@@ -1370,7 +1559,7 @@
         },
         {
           "url": "https://efex.official.ec/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://x.com/atobi_PR/status/2110577917424209971",
@@ -1389,7 +1578,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPは会社紹介のみでお知らせ・ナゾトキマーケットの記載なし。BASEの物販ページに既存の持ち帰り謎9点(1,000〜2,000円、例: ELEVATOR HOUSE 2,000円、HOLE 1,800円)があるが、発売日・今回持参の記載がなく候補にも入れなかった。アットビの公式サイトは見つからず。Xで取れそう / X(@efex_info・@atobi_PR)確認済み。アットビの新作『逆転！クレーム百貨店』を持参(10/15投稿。もう1作は今回は見送り)。エフェックス側の商品名は見つからず。両社の商品を各1点以上買うと限定コラボ謎解きBOOKをプレゼント(商品ではなく特典。一部200円以下の課金要素あり)。ブースBa2",
+      "notes": "HPは会社紹介のみでお知らせ・ナゾトキマーケットの記載なし。BASEの物販ページに既存の持ち帰り謎9点(1,000〜2,000円、例: ELEVATOR HOUSE 2,000円、HOLE 1,800円)があるが、発売日・今回持参の記載がなく候補にも入れなかった。アットビの公式サイトは見つからず。Xで取れそう / X(@efex_info・@atobi_PR)確認済み。アットビの新作『逆転！クレーム百貨店』を持参(10/15投稿。もう1作は今回は見送り)。エフェックス側の商品名は見つからず。両社の商品を各1点以上買うと限定コラボ謎解きBOOKをプレゼント(商品ではなく特典。一部200円以下の課金要素あり)。ブースBa2 / 再収集(10/30 Web): 新しい告知なし。BASEショップ(efex.official.ec)に『逆転！クレーム百貨店』の掲載なく、価格はnullのまま / 再収集(10/30 X): @atobi_PR・@efex_info の10/24 以降の投稿に『逆転！クレーム百貨店』の価格・新情報なし(最新はパッケージ制作中の10/21 投稿)。価格はnullのまま",
       "officialPatches": [],
       "products": [
         {
@@ -1496,7 +1685,7 @@
         },
         {
           "url": "https://www.xeoxy.com/news",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://www.xeoxy.com/news/20260517_1",
@@ -1508,7 +1697,7 @@
         },
         {
           "url": "https://www.xeoxy.com/news/20261025",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1519,36 +1708,39 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPのお知らせ(〜2026-09-11)にナゾトキマーケットの記載なし。通販のxeoxy.shopは Chrome で確認済み。2026-05-23発売の『謎が好きなら、作ってよ！』は出展告知で販売が確認できたので商品に移した。Xで取れそう / 出展告知(xeoxy.com/news/20261025)で販売ラインナップを確認。ブースBb2、全21商品(掲載は13点)、全30種予定のゼオガチャ、3,000円ごとに1回のHAPPY LOTTERYあり。最速先行販売は迷路の塔・COUNT・→［２］→。価格は xeoxy.shop の表記(新作3点は店舗・オンライン販売が11月中旬予定の先行販売品)",
-      "officialPatches": [],
-      "products": [
+      "notes": "HPのお知らせ(〜2026-09-11)にナゾトキマーケットの記載なし。通販のxeoxy.shopは Chrome で確認済み。2026-05-23発売の『謎が好きなら、作ってよ！』は出展告知で販売が確認できたので商品に移した。Xで取れそう / 出展告知(xeoxy.com/news/20261025)で販売ラインナップを確認。ブースBb2、全21商品(掲載は13点)、全30種予定のゼオガチャ、3,000円ごとに1回のHAPPY LOTTERYあり。最速先行販売は迷路の塔・COUNT・→［２］→。価格は xeoxy.shop の表記(新作3点は店舗・オンライン販売が11月中旬予定の先行販売品) / 再収集(10/30 Web): 新しい告知なし。出展告知(xeoxy.com/news/20261025)はお知らせ一覧の最新のまま。『ナゾノミー症候群 簡易検査キット』の価格は見つからず、xeoxy.shopは今回403で再確認できなかった 再収集(10/30 公式): 公式に追加された商品と重なるため no12-1→p53、no12-2→p52、no12-3→p51 に付け替えた。 / 再収集(10/30 X): 10/24 以降の @_XEOXY の新規告知なし(10/25 出展情報のみ)。p51〜p53 は xeoxy.shop の商品ページ(10/30 に Chrome で確認)で「ナゾトキマーケット2026 先行販売商品・店舗/オンライン販売は11月中旬予定」「→［２］→ 2,500円・COUNT 2,200円・迷路の塔 3,000円」と確認(公式一覧と同額)。難易度・所要時間・人数は p52/p53 とも告知なしで unknown/null のまま。ナゾノミー症候群 簡易検査キットは xeoxy.shop 一覧になく、X・xeoxy.com でも価格の記載なし(no12-13 は null のまま)",
+      "officialPatches": [
         {
-          "id": "no12-1",
-          "name": "迷路の塔",
-          "price": 3000,
-          "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+          "id": "p53",
+          "priceNote": "XEOXY ONLINE SHOPの表記価格と公式一覧は同額。会場価格は未確認",
           "category": "kit",
           "oneLiner": "迷路ばかりの謎が詰まった迷路謎の新作",
-          "description": "聳え立つ迷路の塔を攻略せよ 盛り沢山の迷路が楽しめる、迷路謎の極致 迷路の塔に隠された秘密を解き明かせ",
           "difficulty": {
             "level": null,
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "ナゾトキマーケット2026 最速先行販売",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
+          "hashtags": [
+            {
+              "tag": "迷路の塔",
+              "sources": [
+                {
+                  "url": "https://x.com/_XEOXY/status/2113963734427226548",
+                  "retrievedAt": "2026-10-26"
+                }
+              ]
+            }
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1563,45 +1755,40 @@
               "retrievedAt": "2026-10-25"
             }
           ],
-          "hashtags": [
-            {
-              "tag": "迷路の塔",
-              "sources": [
-                {
-                  "url": "https://x.com/_XEOXY/status/2113963734427226548",
-                  "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
+          "playMinutes": null,
+          "players": null
         },
         {
-          "id": "no12-2",
-          "name": "COUNT",
-          "price": 2200,
-          "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+          "id": "p52",
+          "priceNote": "XEOXY ONLINE SHOPの表記価格と公式一覧は同額。会場価格は未確認",
           "category": "kit",
           "oneLiner": "「いつまでも、謎が解きたいあなたへ」の新作持ち帰り謎",
-          "description": "~いつまでも、謎が解きたいあなたへ~",
           "difficulty": {
             "level": null,
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "ナゾトキマーケット2026 最速先行販売",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
+          "hashtags": [
+            {
+              "tag": "カウントナゾ",
+              "sources": [
+                {
+                  "url": "https://x.com/_XEOXY/status/2113956169182245219",
+                  "retrievedAt": "2026-10-26"
+                }
+              ]
+            }
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1616,45 +1803,40 @@
               "retrievedAt": "2026-10-25"
             }
           ],
-          "hashtags": [
-            {
-              "tag": "カウントナゾ",
-              "sources": [
-                {
-                  "url": "https://x.com/_XEOXY/status/2113956169182245219",
-                  "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
+          "playMinutes": null,
+          "players": null
         },
         {
-          "id": "no12-3",
-          "name": "→［２］→",
-          "price": 2500,
-          "priceNote": "XEOXY ONLINE SHOPの表記価格。会場価格は未確認",
+          "id": "p51",
+          "priceNote": "XEOXY ONLINE SHOPの表記価格と公式一覧は同額。会場価格は未確認",
           "category": "kit",
           "oneLiner": "『→□→』に新要素を足した、辿って解く矢印の謎",
-          "description": "辿って飛んで、辿って解こう 『→□→』から新要素が加わり、ボリューム・難易度ともにアップ！ 『→□→』とは内容が全く異なりますので、お好きな方から遊んでいただけます。 謎解きに慣れた方向けの作品ですが、ヒント機能が充実していますので、謎解きに慣れていなくても最後まで遊んでいただけます。",
           "difficulty": {
             "level": 3,
             "source": "estimated",
             "basis": "「慣れた方向け」だがヒント機能が充実との表記から推定"
           },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "ナゾトキマーケット2026 最速先行販売",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
+          "hashtags": [
+            {
+              "tag": "やじるしかくのなぞ2",
+              "sources": [
+                {
+                  "url": "https://x.com/_XEOXY/status/2113948626586042629",
+                  "retrievedAt": "2026-10-26"
+                }
+              ]
+            }
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1669,18 +1851,11 @@
               "retrievedAt": "2026-10-25"
             }
           ],
-          "hashtags": [
-            {
-              "tag": "やじるしかくのなぞ2",
-              "sources": [
-                {
-                  "url": "https://x.com/_XEOXY/status/2113948626586042629",
-                  "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
-        },
+          "playMinutes": null,
+          "players": null
+        }
+      ],
+      "products": [
         {
           "id": "no12-4",
           "name": "謎が好きなら、作ってよ！",
@@ -1707,7 +1882,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1745,7 +1920,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1783,7 +1958,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1821,7 +1996,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1859,7 +2034,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1897,7 +2072,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1935,7 +2110,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1973,7 +2148,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -2011,7 +2186,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -2049,7 +2224,7 @@
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-30"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -2137,11 +2312,11 @@
         },
         {
           "url": "https://flapzero.official.ec/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://nazotoki-zepets.com/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://x.com/flapzero/status/2113933530220875952",
@@ -2160,7 +2335,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式のp15〜p17はHP・BASEショップ(21点掲載)・ゼペッツのサイトのいずれにも載っておらず、公式の記載のみで補った。ほかの出品情報も見つからず / X(@flapzero)確認済み。ブースBa4。BEAUTIFUL(p15)・めくるめく謎(p16)は11/7〜8に先行販売と告知。10/7の投稿に「初のグッズ販売も」とあるが商品名は不明。p17は投稿に出ていない",
+      "notes": "公式のp15〜p17はHP・BASEショップ(21点掲載)・ゼペッツのサイトのいずれにも載っておらず、公式の記載のみで補った。ほかの出品情報も見つからず / X(@flapzero)確認済み。ブースBa4。BEAUTIFUL(p15)・めくるめく謎(p16)は11/7〜8に先行販売と告知。10/7の投稿に「初のグッズ販売も」とあるが商品名は不明。p17は投稿に出ていない / 再収集(10/30 Web): 新しい告知なし。BASEショップ・ゼペッツのサイトに p15〜p17 や新グッズの掲載なし / 再収集(10/30 X): 10/26 の投稿で p17(山陽電車 なぞときさんぽ旅 2023 リモート版)も11/7・8 のナゾトキマーケットで先行販売と確認(limited を更新)。10/26 に「ナゾトキマーケットでの販売情報は順次お知らせ」との返信あり、グッズの商品名・価格は未告知",
       "officialPatches": [
         {
           "id": "p15",
@@ -2220,7 +2395,13 @@
             "max": null
           },
           "players": null,
-          "limited": null
+          "limited": "先行販売",
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2114658301036110014",
+              "retrievedAt": "2026-10-30"
+            }
+          ]
         }
       ],
       "products": [],
@@ -2306,7 +2487,7 @@
       "sources": [
         {
           "url": "https://www.enjoytokyo.jp/event/2081694/",
-          "retrievedAt": "2026-10-25"
+          "retrievedAt": "2026-10-30"
         },
         {
           "url": "https://x.com/far_near_/status/2113223853254308136",
@@ -2321,7 +2502,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "booth.tsvにHPなし。検索でも公式サイト・持ち帰り謎の情報は見つからず(出展者一覧への掲載のみ確認)。ブース概要に『ナゾトキマーケットを起点に持ち帰り謎の展開を本格スタート』とあるが商品名は未確認。Xで取れそう / X(@far_near_)確認済み。10/22に『DOORS 1〜4』(デザイン一新)のナゾトキマーケット販売を告知(価格・形態は未確認。元の無料版は10/31で公開終了)。10/8告知の『役立たずのいる無人島からの脱出』参加者限定持ち帰り謎(1,500円)は公演参加者限定のため今回の商品に入れていない",
+      "notes": "booth.tsvにHPなし。検索でも公式サイト・持ち帰り謎の情報は見つからず(出展者一覧への掲載のみ確認)。ブース概要に『ナゾトキマーケットを起点に持ち帰り謎の展開を本格スタート』とあるが商品名は未確認。Xで取れそう / X(@far_near_)確認済み。10/22に『DOORS 1〜4』(デザイン一新)のナゾトキマーケット販売を告知(価格・形態は未確認。元の無料版は10/31で公開終了)。10/8告知の『役立たずのいる無人島からの脱出』参加者限定持ち帰り謎(1,500円)は公演参加者限定のため今回の商品に入れていない / 再収集(10/30 Web): 新しい告知なし。DOORS 1〜4の価格は検索でも出ず null のまま(Xなら取れる可能性) / 再収集(10/30 X): 10/29 の投稿で「ナゾマ新作タイトル当て『●●の●●の●●●』・ヴィランサイド初の持ち帰り謎・ブースBb3」と告知(タイトル・価格は未発表)。no14-2 として追加。DOORS 1〜4 の価格は10/22 の告知画像・farnear.jp とも記載なしでnullのまま",
       "officialPatches": [],
       "products": [
         {
@@ -2351,6 +2532,36 @@
             {
               "url": "https://x.com/far_near_/status/2113223853254308136",
               "retrievedAt": "2026-10-25"
+            }
+          ]
+        },
+        {
+          "id": "no14-2",
+          "name": "ヴィランサイド初の持ち帰り謎（タイトル未発表）",
+          "price": null,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ヴィランサイド初の持ち帰り謎。タイトルは当選企画中で未発表",
+          "description": "ナゾマ新作タイトル当て『●●の●●の●●●』 ヴィランサイド初の持ち帰り謎。正解者の中から抽選で3名様にプレゼント（〆切 11/2(月) 18:00）。ナゾトキマーケット2026 出展【Bb3】",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/far_near_/status/2115745460933599443",
+              "retrievedAt": "2026-10-30"
             }
           ]
         }
