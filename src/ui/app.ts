@@ -124,8 +124,8 @@ export function app(root: HTMLElement): void {
     campaignButtonCount.hidden = dueSoon < 1;
     campaignButtonCount.textContent = dueSoon > 0 ? String(dueSoon) : "";
     campaignButton.setAttribute("aria-label", dueSoon > 0
-      ? `キャンペーン情報（締切7日以内 ${dueSoon}件）`
-      : "キャンペーン情報");
+      ? `特典・キャンペーン情報（締切7日以内 ${dueSoon}件）`
+      : "特典・キャンペーン情報");
   };
   updateCampaignButton();
   sharedSyncIndicator.hidden = true;
@@ -213,6 +213,15 @@ export function app(root: HTMLElement): void {
   const campaignsDialog = campaignDialog(openMapAtBooth);
   campaignButton.addEventListener("click", campaignsDialog.open);
   campaignsDialog.element.addEventListener("close", updateCampaignButton);
+  // 締切が過ぎたり日付が変わったりしたら、バッジと開いている一覧を合わせる
+  const refreshCampaigns = () => {
+    updateCampaignButton();
+    campaignsDialog.refresh();
+  };
+  window.setInterval(refreshCampaigns, 60_000);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") refreshCampaigns();
+  });
   for (const tab of tabOrder) {
     const panel = el("section", "tab-panel");
     panel.id = "panel-" + tab;

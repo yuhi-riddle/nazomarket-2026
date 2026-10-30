@@ -13,7 +13,7 @@ const kindNames: Record<Campaign["kind"], string> = {
 
 const dayNames: Record<Day, string> = { sat: "土", sun: "日" };
 
-export type CampaignDialog = { element: HTMLDialogElement; open: () => void };
+export type CampaignDialog = { element: HTMLDialogElement; open: () => void; refresh: () => void };
 
 export function campaignDialog(openMapAtBooth: (code: string) => void): CampaignDialog {
   const dialog = el("dialog", "campaign-dialog");
@@ -84,28 +84,47 @@ export function campaignDialog(openMapAtBooth: (code: string) => void): Campaign
     return article;
   };
 
+  // 表示中の中身の目印。締切が過ぎる・日付が変わると変わる
+  let shownSignature = "";
+  const signatureOf = (active: ReturnType<typeof listActiveCampaigns>, now: Date) =>
+    active.withDeadline.map((campaign) => campaign.id + ":" + deadlineLabel(campaign.endsAt!, now).remaining)
+      .concat(active.noDeadline.map((campaign) => campaign.id)).join("|");
+
+  const render = (now: Date, active: ReturnType<typeof listActiveCampaigns>) => {
+    shownSignature = signatureOf(active, now);
+    list.replaceChildren();
+    if (!active.withDeadline.length && !active.noDeadline.length) {
+      list.append(el("p", "campaign-empty", "いま受け付けているキャンペーンはありません。"));
+      return;
+    }
+    const appendGroup = (title: string, items: Campaign[]) => {
+      if (!items.length) return;
+      const group = el("section", "campaign-group");
+      group.append(el("h3", "campaign-group-title", title));
+      const cards = el("div", "campaign-cards");
+      for (const campaign of items) cards.append(renderCampaign(campaign, now));
+      group.append(cards);
+      list.append(group);
+    };
+    appendGroup("締切あり（近い順）", active.withDeadline);
+    appendGroup("締切なし・会場で受けられるもの", active.noDeadline);
+  };
+
   return {
     element: dialog,
     open() {
       const now = new Date();
-      const active = listActiveCampaigns(campaigns, now);
-      list.replaceChildren();
-      if (!active.withDeadline.length && !active.noDeadline.length) {
-        list.append(el("p", "campaign-empty", "いま受け付けているキャンペーンはありません。"));
-      } else {
-        const appendGroup = (title: string, items: Campaign[]) => {
-          if (!items.length) return;
-          const group = el("section", "campaign-group");
-          group.append(el("h3", "campaign-group-title", title));
-          const cards = el("div", "campaign-cards");
-          for (const campaign of items) cards.append(renderCampaign(campaign, now));
-          group.append(cards);
-          list.append(group);
-        };
-        appendGroup("締切あり（近い順）", active.withDeadline);
-        appendGroup("締切なし・会場で受けられるもの", active.noDeadline);
-      }
+      render(now, listActiveCampaigns(campaigns, now));
       if (!dialog.open) dialog.showModal();
+    },
+    refresh() {
+      if (!dialog.open) return;
+      const now = new Date();
+      const active = listActiveCampaigns(campaigns, now);
+      if (signatureOf(active, now) === shownSignature) return;
+      const scrollTop = dialog.scrollTop;
+      render(now, active);
+      dialog.scrollTop = scrollTop;
     },
   };
 }
