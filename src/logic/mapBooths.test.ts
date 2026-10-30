@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildCatalog } from "./catalog.ts";
-import { listedItemsForBooth, unboughtItemsByBooth } from "./mapBooths.ts";
+import { boothListStatus, listedItemsForBooth, unboughtItemsByBooth } from "./mapBooths.ts";
 import { booth, booths, layout, product } from "./test-helpers.ts";
 
 describe("unboughtItemsByBooth", () => {
@@ -42,5 +42,23 @@ describe("unboughtItemsByBooth", () => {
     expect(saturday.get("Cc6")).toEqual([item("sat")]);
     expect([...sunday.keys()]).toEqual(["A2"]);
     expect(unboughtItemsByBooth([item("sat"), item("sun")], catalog, map, "sun").get("Cc6")).toEqual([item("sun")]);
+  });
+
+  describe("boothListStatus", () => {
+    it("未購入が残るブースは todo で、未購入の点数を数量込みで数える", () => {
+      const status = boothListStatus([{ productId: "a", qty: 2, bought: false }, item("b", true)], catalog, map, "sat");
+      expect(status.get("A1")).toEqual({ status: "todo", unboughtQty: 2 });
+    });
+
+    it("リストのアイテムを全部買えたブースは clear", () => {
+      const status = boothListStatus([item("a", true), item("b", true)], catalog, map, "sat");
+      expect(status.get("A1")).toEqual({ status: "clear", unboughtQty: 0 });
+    });
+
+    it("リストに無いブースと、その日に売っていないアイテムだけのブースは状態なし", () => {
+      const status = boothListStatus([item("a"), item("sun")], catalog, map, "sat");
+      expect([...status.keys()]).toEqual(["A1"]);
+      expect(boothListStatus([item("sat-only", true)], catalog, map, "sun").size).toBe(0);
+    });
   });
 });

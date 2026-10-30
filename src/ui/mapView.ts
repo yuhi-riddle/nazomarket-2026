@@ -6,7 +6,7 @@ import {
   toggleItem,
   type CartItem,
 } from "../logic/cart.ts";
-import { listedItemsForBooth, unboughtItemsByBooth } from "../logic/mapBooths.ts";
+import { boothListStatus, listedItemsForBooth } from "../logic/mapBooths.ts";
 import type { ProductView } from "../logic/catalog.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import type { AppState } from "../state.ts";
@@ -47,19 +47,24 @@ function boothForDay(code: string, day: AppState["day"]): ProductView["booth"] |
 }
 
 function boothPaints(state: AppState): Map<string, BoothPaint> {
-  const itemsByCode = unboughtItemsByBooth(state.items, catalog, venueLayout, state.day);
+  const statuses = boothListStatus(state.items, catalog, venueLayout, state.day);
 
   const paints = new Map<string, BoothPaint>();
   for (const booth of venueLayout.booths) {
-    const items = itemsByCode.get(booth.code) ?? [];
+    const status = statuses.get(booth.code);
     const vendor = boothForDay(booth.code, state.day)?.name ?? booth.labels[state.day] ?? "出展なし";
-    const status = items.length
-      ? " 未購入" + items.length + "件"
-      : " 未購入0件";
+    const stateLabel = status?.status === "todo"
+      ? "未購入" + status.unboughtQty + "点"
+      : status?.status === "clear"
+        ? "すべて購入済み"
+        : "";
     paints.set(booth.code, {
-      color: items.length ? "must" : undefined,
+      listStatus: status?.status,
+      unboughtQty: status?.unboughtQty,
       title: booth.labels[state.day] === null ? "出展なし" : vendor,
-      ariaLabel: booth.code + " " + (booth.labels[state.day] === null ? "出展なし" : vendor) + status,
+      ariaLabel: [booth.code, booth.labels[state.day] === null ? "出展なし" : vendor, stateLabel]
+        .filter(Boolean)
+        .join(" "),
     });
   }
   return paints;
@@ -80,9 +85,14 @@ function organizationLinks(booth: ProductView["booth"] | undefined): HTMLElement
   return links.childElementCount ? links : undefined;
 }
 
-export type MapView = { element: HTMLElement; sync: (state: AppState) => void };
+export type MapView = {
+  element: HTMLElement;
+  sync: (state: AppState) => void;
+  setActive: (active: boolean) => void;
+  selectBooth: (code: string) => void;
+};
 
-export function mapView(store: AppStore): MapView {
+export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => void): MapView {
   const page = el("section", "map-page");
   page.append(el("h2", "section-title", "会場マップ"));
 
@@ -127,14 +137,14 @@ export function mapView(store: AppStore): MapView {
   const mapScrollHelp = el("p", "map-scroll-help", "「＋」で拡大、スワイプ（スマホ）／スクロール（PC）で移動。「全体」で戻せます。下の欄から番号・出展者でも選べます。");
   mapScrollHelp.id = "map-scroll-help";
   const panel = el("aside", "map-product-panel");
-  panel.setAttribute("aria-label", "選択したブースの商品");
+  panel.setAttribute("aria-label", "選択したブースのアイテム");
   panel.tabIndex = -1;
 
   const selectionSummary = el("div", "map-selection-summary");
   selectionSummary.hidden = true;
   const selectionSummaryText = el("p", "map-selection-summary-text");
   selectionSummaryText.setAttribute("aria-live", "polite");
-  const seeProductsButton = button("商品を見る", "button button-secondary map-selection-summary-action");
+  const seeProductsButton = button("アイテムを見る", "button button-secondary map-selection-summary-action");
   seeProductsButton.addEventListener("click", () => {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     panel.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
@@ -145,39 +155,45 @@ export function mapView(store: AppStore): MapView {
   let selectedCode: string | null = null;
   let panelKey = "";
   let productsInPanel: MapProduct[] = [];
+  let panelProductList: HTMLElement | null = null;
+  let renderedPanelOrderKey = "";
   let renderedPanelItems: CartItem[] | undefined;
   let renderedPanelWriteBlocked: boolean | undefined;
-  const details = productDialog("map");
+  const details = productDialog("map", onMapBooth);
   const map = venueMap({
     layout: venueLayout,
     day: "sat",
     onBoothPress(booth) {
-      if (selectedCode === booth.code) {
-        syncPanel(store.getState());
-        return;
-      }
-      selectedCode = booth.code;
-      map.setSelectedBooth(booth.code);
-      boothSelect.value = booth.code;
-      syncPanel(store.getState());
+      selectBooth(booth.code, false);
     },
   });
-  boothSelect.addEventListener("change", () => {
-    selectedCode = boothSelect.value || null;
-    map.setSelectedBooth(selectedCode);
-    if (selectedCode) {
-      const boothNode = map.querySelector<SVGGElement>('[data-booth-code="' + selectedCode + '"]');
-      if (boothNode) {
-        const boothBounds = boothNode.getBoundingClientRect();
-        const frameBounds = mapFrame.getBoundingClientRect();
-        mapFrame.scrollLeft += boothBounds.left + boothBounds.width / 2
-          - frameBounds.left - mapFrame.clientLeft - mapFrame.clientWidth / 2;
-        mapFrame.scrollTop += boothBounds.top + boothBounds.height / 2
-          - frameBounds.top - mapFrame.clientTop - mapFrame.clientHeight / 2;
-      }
-    }
+  let scale: VenueMapScale = typeof window.matchMedia === "function" && window.matchMedia("(max-width: 767px)").matches ? 2 : 1;
+  let isFullVenue = true;
+  let initialRangeSet = false;
+
+  function selectBooth(code: string | null, scroll: boolean): void {
+    if (code && !venueLayout.booths.some((booth) => booth.code === code)) return;
+    selectedCode = code;
+    map.setSelectedBooth(code);
+    boothSelect.value = code ?? "";
     syncPanel(store.getState());
-  });
+    if (!code || !scroll) return;
+    requestAnimationFrame(() => {
+      if (map.ensureBoothVisible(code)) {
+        isFullVenue = true;
+        updateZoomButtons();
+      }
+      const boothNode = map.querySelector<SVGGElement>('[data-booth-code="' + code + '"]');
+      if (!boothNode) return;
+      const boothBounds = boothNode.getBoundingClientRect();
+      const frameBounds = mapFrame.getBoundingClientRect();
+      mapFrame.scrollLeft += boothBounds.left + boothBounds.width / 2
+        - frameBounds.left - mapFrame.clientLeft - mapFrame.clientWidth / 2;
+      mapFrame.scrollTop += boothBounds.top + boothBounds.height / 2
+        - frameBounds.top - mapFrame.clientTop - mapFrame.clientHeight / 2;
+    });
+  }
+  boothSelect.addEventListener("change", () => selectBooth(boothSelect.value || null, true));
   mapFrame.append(map);
   mapColumn.append(toolbar, mapFrame, selectionSummary, mapScrollHelp, boothPicker);
 
@@ -185,8 +201,11 @@ export function mapView(store: AppStore): MapView {
   legend.setAttribute("role", "group");
   legend.setAttribute("aria-label", "地図の凡例");
   const listedEntry = el("span", "map-legend-entry");
-  listedEntry.append(el("span", "map-legend-swatch list"), el("span", "", "リストに未購入の商品がある"));
+  listedEntry.append(el("span", "map-legend-swatch list"), el("span", "", "リストに未購入のアイテムがある"));
   legend.append(listedEntry);
+  const clearedEntry = el("span", "map-legend-entry");
+  clearedEntry.append(el("span", "map-legend-swatch clear"), el("span", "", "リストのアイテムは購入済み"));
+  legend.append(clearedEntry);
   const noShowEntry = el("span", "map-legend-entry");
   noShowEntry.append(el("span", "map-legend-swatch map-no-show-swatch"), el("span", "", "出展なし"));
   legend.append(noShowEntry);
@@ -195,12 +214,11 @@ export function mapView(store: AppStore): MapView {
 
   page.append(workspace, details.element);
 
-  let scale: VenueMapScale = typeof window.matchMedia === "function" && window.matchMedia("(max-width: 767px)").matches ? 2 : 1;
   map.setScale(scale);
   const updateZoomButtons = () => {
     zoomOut.disabled = scale === 1;
     zoomIn.disabled = scale === 3;
-    zoomFit.disabled = scale === 1;
+    zoomFit.disabled = scale === 1 && isFullVenue;
   };
   const setScale = (next: VenueMapScale) => {
     const centerX = (mapFrame.scrollLeft + mapFrame.clientWidth / 2) / mapFrame.scrollWidth;
@@ -221,7 +239,11 @@ export function mapView(store: AppStore): MapView {
     if (scale === "fit") setScale(2);
     else if (scale < 3) setScale((scale + 1) as VenueMapScale);
   });
-  zoomFit.addEventListener("click", () => setScale(1));
+  zoomFit.addEventListener("click", () => {
+    map.resetViewBox();
+    isFullVenue = true;
+    setScale(1);
+  });
   updateZoomButtons();
 
   function syncSelectionSummary(state: AppState): void {
@@ -257,9 +279,11 @@ export function mapView(store: AppStore): MapView {
       if (panelKey === "empty") return;
       panel.replaceChildren(
         el("h3", "map-panel-title", "ブースを選んでください"),
-        el("p", "map-panel-empty", "地図のブースを押すと、商品とリストの操作が表示されます。"),
+        el("p", "map-panel-empty", "地図のブースを押すと、アイテムとリストの操作が表示されます。"),
       );
       productsInPanel = [];
+      panelProductList = null;
+      renderedPanelOrderKey = "";
       renderedPanelItems = state.items;
       panelKey = "empty";
       return;
@@ -269,6 +293,8 @@ export function mapView(store: AppStore): MapView {
     if (panelKey !== key) {
       panel.replaceChildren();
       productsInPanel = [];
+      panelProductList = null;
+      renderedPanelOrderKey = "";
       renderedPanelItems = state.items;
       const layoutBooth = venueLayout.booths.find((booth) => booth.code === selectedCode);
       const isNoShow = layoutBooth?.labels[state.day] === null;
@@ -299,7 +325,7 @@ export function mapView(store: AppStore): MapView {
       if (isNoShow) {
         panel.append(el("p", "map-panel-empty", "この日は出展していません。"));
       } else if (!allViews.length) {
-        panel.append(el("p", "map-panel-empty", "このブースの商品はまだ分かっていません。"));
+        panel.append(el("p", "map-panel-empty", "このブースのアイテムはまだ分かっていません。"));
       } else if (!dayViews.length) {
         panel.append(el("p", "map-panel-empty", "この日は売っていません。"));
       }
@@ -308,7 +334,9 @@ export function mapView(store: AppStore): MapView {
         const productList = el("div", "map-product-list");
         const itemById = new Map(listedItemsForBooth(dayViews, state.items)
           .map((item): [string, CartItem] => [item.productId, item]));
-        for (const view of dayViews) {
+        const orderedViews = [...dayViews].sort((a, b) =>
+          Number(itemById.has(b.product.id)) - Number(itemById.has(a.product.id)));
+        for (const view of orderedViews) {
           const card = productCard(view, itemById.get(view.product.id), {
             onDetail: (selected) => details.open(selected),
             canChangeList: () => !store.isSharedWriteBlocked(),
@@ -330,6 +358,8 @@ export function mapView(store: AppStore): MapView {
           productList.append(card.element);
         }
         panel.append(productList);
+        panelProductList = productList;
+        renderedPanelOrderKey = orderedViews.map((view) => view.product.id).join("|");
       }
       const hashtags = new Set(booth?.hashtags?.map(({ tag }) => tag) ?? []);
       for (const view of dayViews) {
@@ -347,6 +377,13 @@ export function mapView(store: AppStore): MapView {
     if (renderedPanelItems === state.items && renderedPanelWriteBlocked === store.isSharedWriteBlocked()) return;
     const itemById = new Map(state.items.map((item): [string, CartItem] => [item.productId, item]));
     for (const { view, card } of productsInPanel) card.update(itemById.get(view.product.id));
+    const orderedProducts = [...productsInPanel].sort((a, b) =>
+      Number(itemById.has(b.view.product.id)) - Number(itemById.has(a.view.product.id)));
+    const orderKey = orderedProducts.map(({ view }) => view.product.id).join("|");
+    if (panelProductList && orderKey !== renderedPanelOrderKey) {
+      for (const { card } of orderedProducts) panelProductList.append(card.element);
+      renderedPanelOrderKey = orderKey;
+    }
     renderedPanelItems = state.items;
     renderedPanelWriteBlocked = store.isSharedWriteBlocked();
   }
@@ -383,5 +420,33 @@ export function mapView(store: AppStore): MapView {
     syncPanel(state);
   };
 
-  return { element: page, sync };
+  const setActive = (active: boolean) => {
+    if (!active || initialRangeSet) return;
+    initialRangeSet = true;
+    const state = store.getState();
+    const statuses = boothListStatus(state.items, catalog, venueLayout, state.day);
+    if (statuses.size) {
+      const aspectRatio = mapFrame.clientHeight > 0
+        ? mapFrame.clientWidth / mapFrame.clientHeight
+        : venueLayout.viewBox.w / venueLayout.viewBox.h;
+      isFullVenue = !map.fitToBooths([...statuses.keys()], aspectRatio);
+    } else {
+      map.resetViewBox();
+      isFullVenue = true;
+    }
+    scale = 1;
+    map.setScale(scale);
+    mapFrame.scrollLeft = 0;
+    mapFrame.scrollTop = 0;
+    updateZoomButtons();
+  };
+
+  return {
+    element: page,
+    sync,
+    setActive,
+    selectBooth(code) {
+      selectBooth(code, true);
+    },
+  };
 }

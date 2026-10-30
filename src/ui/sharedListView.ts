@@ -50,7 +50,7 @@ function operationLabel(operation: SharedOperation, snapshot: SharedSyncSnapshot
   }
   const sharedItem = snapshot.state?.items.find((item) => item.id === operation.itemId);
   const product = products.find((item) => item.id === sharedItem?.productId || item.id === operation.itemId);
-  const name = sharedItem?.name ?? product?.name ?? "共有商品";
+  const name = sharedItem?.name ?? product?.name ?? "共有アイテム";
   if (operation.type === "remove") return "削除: " + name;
   if (operation.type === "set-quantity") return "数量変更: " + name + " × " + operation.quantity;
   return (operation.purchased ? "購入済みに変更: " : "未購入に変更: ") + name;
@@ -284,7 +284,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     joinSubmit.disabled = isBusy || !canSwitchRoom();
 
     if (unsupportedState) {
-      status.textContent = "この共有リストには現在のカタログで表示できない商品があります。個人リストを表示しています。共有データは変更していません。";
+      status.textContent = "この共有リストには現在のカタログで表示できないアイテムがあります。個人リストを表示しています。共有データは変更していません。";
     } else if (!client) {
       status.textContent = options.roomLinkNeedsPaste
         ? "共有リンクの鍵がこのタブにありません。元の共有リンクを貼り付けてください。"
@@ -439,7 +439,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
         if (!projection) {
           unsupportedState = true;
           wantsSharedList = false;
-          localError = "この共有リストには現在のカタログで表示できない商品があります。";
+          localError = "この共有リストには現在のカタログで表示できないアイテムがあります。";
         } else {
           itemIds = projection.itemIds;
           store.enterSharedList(projection.items, projection.budget);

@@ -1,8 +1,10 @@
 import { CATEGORY_NAMES, type ProductView } from "../logic/catalog.ts";
 import type { CartItem } from "../logic/cart.ts";
+import { difficultyTier } from "../logic/difficultyTier.ts";
 import { formatPlayMinutes } from "../logic/playTime.ts";
 import "./catalogPolish.css";
 import { button, el } from "./dom.ts";
+import { celebrateGet, floatGain } from "./gameFx.ts";
 
 // 一覧とマップに同じ商品のカードが並ぶため、説明文のIDは通し番号で一意にする
 let quantityHintCount = 0;
@@ -25,6 +27,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const card = el("article", "product-card");
   card.dataset.productId = product.id;
   card.dataset.organization = view.booth.name;
+  card.dataset.difficulty = difficultyTier(product.difficulty.level);
 
   const stub = el("div", "ticket-stub");
   if (!view.booth.boothCode) stub.classList.add("is-undecided");
@@ -102,13 +105,17 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   body.append(reasons);
 
   const actionsArea = el("div", "product-actions");
+  let currentItem = item;
   let boughtCheckbox: HTMLInputElement | null = null;
   if (actions.onToggleBought) {
     const boughtLabel = el("label", "today-item-check map-bought-check");
     boughtCheckbox = el("input");
     boughtCheckbox.type = "checkbox";
     boughtCheckbox.setAttribute("aria-label", product.name + "を買えたにする");
-    boughtCheckbox.addEventListener("change", () => actions.onToggleBought?.(product.id));
+    boughtCheckbox.addEventListener("change", () => {
+      if (boughtCheckbox?.checked) celebrateGet(product.name);
+      actions.onToggleBought?.(product.id);
+    });
     boughtLabel.append(boughtCheckbox, el("span", "", "買えた"));
     actionsArea.append(boughtLabel);
   }
@@ -120,10 +127,12 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const listToggleHint = el("span", "list-toggle-hint");
   listToggleLabel.append(listToggleText, listToggleHint);
   listToggle.append(listToggleMark, listToggleLabel);
-  listToggle.addEventListener("click", () => actions.onToggle(product.id));
+  listToggle.addEventListener("click", () => {
+    if (!currentItem && product.price !== null) floatGain("+¥" + product.price.toLocaleString("ja-JP"));
+    actions.onToggle(product.id);
+  });
   actionsArea.append(listToggle);
   const quantity = el("div", "quantity-control");
-  let currentItem = item;
   const minus = button("−", "quantity-button");
   minus.setAttribute("aria-label", product.name + "の数量を減らす");
   const quantityText = el("span", "quantity-value", "1");

@@ -3,10 +3,9 @@ import type { Day, LayoutBooth, VenueLayout } from "../types.ts";
 const svgNamespace = "http://www.w3.org/2000/svg";
 let mapInstance = 0;
 
-export type BoothPaintColor = "must" | "chart-1" | "chart-2";
 export type BoothPaint = {
-  color?: BoothPaintColor;
-  intensity?: number;
+  listStatus?: "todo" | "clear";
+  unboughtQty?: number;
   title?: string;
   ariaLabel?: string;
 };
@@ -27,12 +26,17 @@ export type VenueMapElement = SVGSVGElement & {
   update: (next: VenueMapUpdate) => void;
   setScale: (scale: VenueMapScale) => void;
   setSelectedBooth: (code: string | null) => void;
+  fitToBooths: (codes: string[], aspectRatio: number) => boolean;
+  resetViewBox: () => void;
+  ensureBoothVisible: (code: string) => boolean;
 };
 
 type BoothNodes = {
   group: SVGGElement;
   rect: SVGRectElement;
   label: SVGTextElement;
+  badge: SVGGElement;
+  badgeText: SVGTextElement;
   title?: SVGTitleElement;
   ariaLabel: string;
 };
@@ -102,6 +106,8 @@ function paintLabel(label: SVGTextElement, booth: LayoutBooth, day: Day): void {
 
 export function venueMap(options: VenueMapOptions): VenueMapElement {
   const { layout } = options;
+  const fullViewBox = { ...layout.viewBox };
+  let currentViewBox = { ...fullViewBox };
   let day = options.day;
   let paintBooth = options.paintBooth;
   const onBoothPress = options.onBoothPress;
@@ -190,6 +196,23 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
     rect.setAttribute("class", "venue-map-booth-rect");
     const label = svgElement("text");
     paintLabel(label, booth, day);
+    const badge = svgElement("g");
+    badge.setAttribute("class", "venue-map-list-badge");
+    badge.setAttribute("aria-hidden", "true");
+    badge.style.display = "none";
+    const badgeCircle = svgElement("circle");
+    const badgeX = booth.x + booth.w - 7;
+    const badgeY = booth.y + 7;
+    badgeCircle.setAttribute("cx", String(badgeX));
+    badgeCircle.setAttribute("cy", String(badgeY));
+    badgeCircle.setAttribute("r", "7");
+    const badgeText = svgElement("text");
+    badgeText.setAttribute("x", String(badgeX));
+    badgeText.setAttribute("y", String(badgeY));
+    badgeText.setAttribute("text-anchor", "middle");
+    badgeText.setAttribute("dominant-baseline", "middle");
+    badgeText.setAttribute("class", "venue-map-list-badge-text");
+    badge.append(badgeCircle, badgeText);
     let title: SVGTitleElement | undefined;
     if (onBoothPress) {
       group.setAttribute("role", "button");
@@ -204,8 +227,8 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       title = svgElement("title");
       group.append(title);
     }
-    group.append(rect, label);
-    boothNodes.set(booth.code, { group, rect, label, title, ariaLabel: "" });
+    group.append(rect, label, badge);
+    boothNodes.set(booth.code, { group, rect, label, badge, badgeText, title, ariaLabel: "" });
     svg.append(group);
   }
 
@@ -238,6 +261,35 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
 
   const paintKeys = new Map<string, string>();
   let renderedDay: Day | undefined = day;
+  let currentScale: VenueMapScale = "fit";
+  let badgeScaleKey = "";
+
+  const updateBadgeScale = () => {
+    const bounds = svg.getBoundingClientRect();
+    const unitsPerPixel = bounds.width > 0 ? currentViewBox.w / bounds.width : 1;
+    const badgeScale = unitsPerPixel;
+    const showCounts = currentScale === 2 || currentScale === 3
+      || currentViewBox.x !== fullViewBox.x || currentViewBox.y !== fullViewBox.y
+      || currentViewBox.w !== fullViewBox.w || currentViewBox.h !== fullViewBox.h;
+    const key = badgeScale.toFixed(4) + ":" + showCounts;
+    if (badgeScaleKey === key) return;
+    badgeScaleKey = key;
+    for (const nodes of boothNodes.values()) {
+      const text = nodes.badgeText;
+      const x = text.getAttribute("x") ?? "0";
+      const y = text.getAttribute("y") ?? "0";
+      nodes.badge.setAttribute("transform", "translate(" + x + " " + y + ") scale("
+        + badgeScale + ") translate(" + -Number(x) + " " + -Number(y) + ")");
+      text.style.display = showCounts ? "inline" : "none";
+    }
+  };
+
+  const setViewBox = (viewBox: VenueLayout["viewBox"]) => {
+    currentViewBox = { ...viewBox };
+    svg.setAttribute("viewBox", [viewBox.x, viewBox.y, viewBox.w, viewBox.h].join(" "));
+    badgeScaleKey = "";
+    updateBadgeScale();
+  };
 
   const refreshBooths = () => {
     const dayChanged = renderedDay !== day;
@@ -259,29 +311,40 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
       }
       if (!dayChanged && paintKeys.get(booth.code) === paintKey) continue;
       paintKeys.set(booth.code, paintKey);
+      if (paint?.listStatus) nodes.group.setAttribute("data-list-status", paint.listStatus);
+      else nodes.group.removeAttribute("data-list-status");
       if (dayChanged) paintLabel(nodes.label, booth, day);
       if (nodes.title) nodes.title.textContent = paint?.title ?? vendorName;
 
-      const isListed = paint?.color === "must";
-      const color = paint?.color;
+      const status = paint?.listStatus;
       nodes.rect.style.setProperty(
         "--venue-map-fill",
-        noShow ? "url(#" + patternId + ")" : color ? "var(--" + color + (isListed ? "-soft)" : ")") : "var(--venue-map-area-fill, var(--surface))",
+        noShow ? "url(#" + patternId + ")"
+          : status === "todo" ? "var(--must-soft)"
+            : status === "clear" ? "var(--get-soft)"
+              : "var(--venue-map-area-fill, var(--surface))",
       );
-      nodes.rect.style.setProperty("--venue-map-stroke", color ? "var(--" + color + ")" : "var(--venue-map-area-stroke, var(--line))");
-      nodes.rect.style.setProperty("--venue-map-stroke-width", color ? (isListed ? "3" : "2") : "1");
-      if (paint?.intensity !== undefined && !noShow) {
-        const intensity = Math.max(0, Math.min(1, paint.intensity));
-        nodes.rect.style.setProperty("--venue-map-fill-opacity", String(intensity));
-      } else {
-        nodes.rect.style.removeProperty("--venue-map-fill-opacity");
-      }
-
+      nodes.rect.style.setProperty(
+        "--venue-map-stroke",
+        status === "todo" ? "var(--key)"
+          : status === "clear" ? "var(--get)"
+            : "var(--venue-map-area-stroke, var(--line))",
+      );
+      nodes.rect.style.setProperty("--venue-map-stroke-width", status ? "2.5" : "1");
+      nodes.badge.style.display = status === "todo" ? "" : "none";
+      const count = status === "todo" ? String(paint?.unboughtQty ?? 0) : "";
+      if (nodes.badgeText.textContent !== count) nodes.badgeText.textContent = count;
     }
   };
 
   const setScale = (scale: VenueMapScale) => {
+    const changed = scale !== currentScale;
+    currentScale = scale;
     svg.style.width = scale === "fit" || scale === 1 ? "100%" : scale * 100 + "%";
+    if (changed) {
+      badgeScaleKey = "";
+      updateBadgeScale();
+    }
   };
   const setSelectedBooth = (code: string | null) => {
     selectedCode = code;
@@ -308,5 +371,63 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
 
   setScale("fit");
   refreshBooths();
-  return Object.assign(svg, { update, setScale, setSelectedBooth });
+  const fitToBooths = (codes: string[], aspectRatio: number): boolean => {
+    const selected = new Set(codes);
+    const booths = layout.booths.filter((booth) => selected.has(booth.code));
+    if (!booths.length) return false;
+
+    let minX = Math.min(...booths.map((booth) => booth.x));
+    let minY = Math.min(...booths.map((booth) => booth.y));
+    let maxX = Math.max(...booths.map((booth) => booth.x + booth.w));
+    let maxY = Math.max(...booths.map((booth) => booth.y + booth.h));
+    const padding = Math.max(24, Math.max(maxX - minX, maxY - minY) * 0.08);
+    minX -= padding;
+    minY -= padding;
+    maxX += padding;
+    maxY += padding;
+
+    let width = maxX - minX;
+    let height = maxY - minY;
+    if (aspectRatio > 0) {
+      if (width / height < aspectRatio) width = height * aspectRatio;
+      else height = width / aspectRatio;
+    }
+    const centerX = (minX + maxX) / 2;
+    const centerY = (minY + maxY) / 2;
+    const viewBox = {
+      x: centerX - width / 2,
+      y: centerY - height / 2,
+      w: width,
+      h: height,
+    };
+    const right = fullViewBox.x + fullViewBox.w;
+    const bottom = fullViewBox.y + fullViewBox.h;
+    if (viewBox.w >= fullViewBox.w || viewBox.h >= fullViewBox.h) {
+      setViewBox(fullViewBox);
+      return false;
+    } else {
+      viewBox.x = Math.max(fullViewBox.x, Math.min(viewBox.x, right - viewBox.w));
+      viewBox.y = Math.max(fullViewBox.y, Math.min(viewBox.y, bottom - viewBox.h));
+      setViewBox(viewBox);
+      return true;
+    }
+  };
+  const ensureBoothVisible = (code: string): boolean => {
+    const booth = layout.booths.find((entry) => entry.code === code);
+    if (!booth) return false;
+    const isVisible = booth.x >= currentViewBox.x && booth.y >= currentViewBox.y
+      && booth.x + booth.w <= currentViewBox.x + currentViewBox.w
+      && booth.y + booth.h <= currentViewBox.y + currentViewBox.h;
+    if (!isVisible) {
+      setViewBox(fullViewBox);
+      return true;
+    }
+    return false;
+  };
+  const resizeObserver = new ResizeObserver(() => {
+    badgeScaleKey = "";
+    updateBadgeScale();
+  });
+  resizeObserver.observe(svg);
+  return Object.assign(svg, { update, setScale, setSelectedBooth, fitToBooths, resetViewBox: () => setViewBox(fullViewBox), ensureBoothVisible });
 }

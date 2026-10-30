@@ -9,6 +9,7 @@ import { cartView } from "./cartView.ts";
 import { mapView } from "./mapView.ts";
 import { appStartupPlan } from "./appStartup.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
+import { installGameFx } from "./gameFx.ts";
 import type { SharedListViewOptions } from "./sharedListView.ts";
 
 const tabNames: Record<TabId, string> = {
@@ -183,8 +184,13 @@ export function app(root: HTMLElement): void {
     sync: (state: AppState) => void;
     updateItems?: (items: CartItem[], state: AppState) => void;
     setActive?: (active: boolean) => void;
+    selectBooth?: (code: string) => void;
   };
   const pages = new Map<TabId, LazyPage>();
+  const openMapAtBooth = (code: string) => {
+    store.update((state) => ({ ...state, tab: "map" }));
+    pages.get("map")?.selectBooth?.(code);
+  };
   for (const tab of tabOrder) {
     const panel = el("section", "tab-panel");
     panel.id = "panel-" + tab;
@@ -199,7 +205,7 @@ export function app(root: HTMLElement): void {
     const existing = pages.get(tab);
     if (existing) return existing;
     const page = tab === "catalog"
-      ? catalogView(store)
+      ? catalogView(store, openMapAtBooth)
       : tab === "cart"
         ? cartView(store, sharedApiUrl ? {
           apiUrl: sharedApiUrl,
@@ -207,8 +213,8 @@ export function app(root: HTMLElement): void {
           initialError: initialRoom.error,
           roomLinkNeedsPaste: initialRoom.needsPaste,
           onSyncStatusChange: updateSharedSyncIndicator,
-        } satisfies SharedListViewOptions : undefined)
-        : mapView(store);
+        } satisfies SharedListViewOptions : undefined, openMapAtBooth)
+        : mapView(store, openMapAtBooth);
     pages.set(tab, page);
     panels.get(tab)?.append(page.element);
     return page;
@@ -216,13 +222,14 @@ export function app(root: HTMLElement): void {
 
   const meter = budgetMeter(() => store.update((state) => ({ ...state, tab: "cart" })));
   const footer = el("footer", "app-footer");
-  const footerText = el("p", "", "非公式の個人用ツールです。出典の最新取得日：" + (dataGeneratedAt || "不明") + "（取得日は商品ごとに異なります）。正確な情報は公式サイト・各団体の告知で確認してください。");
+  const footerText = el("p", "", "非公式の個人用ツールです。出典の最新取得日：" + (dataGeneratedAt || "不明") + "（取得日はアイテムごとに異なります）。正確な情報は公式サイト・各団体の告知で確認してください。");
   const rights = el("p", "image-rights", "掲載画像の権利は各権利者に帰属します。画像は各提供元のURLを参照しています。");
   const officialLink = safeExternalLink("https://www.scrapmagazine.com/s/nazomarket/", "ナゾトキマーケット公式サイト");
   footer.append(footerText, rights);
   if (officialLink) footer.append(officialLink);
 
   root.replaceChildren(header, main, meter.element, footer);
+  installGameFx();
 
   const rootStyle = document.documentElement.style;
   const overlayObserver = new ResizeObserver((entries) => {

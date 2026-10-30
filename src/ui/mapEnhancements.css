@@ -23,48 +23,67 @@
 }
 
 .map-page .venue-map-booth {
-  --venue-map-area-fill: color-mix(in srgb, #d1aa58 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #d1aa58 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--key) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--key) 48%, var(--line));
 }
 
 .map-page .venue-map-booth[data-area="Ba"] {
-  --venue-map-area-fill: color-mix(in srgb, #5a82a4 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #5a82a4 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--cyan) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--cyan) 48%, var(--line));
 }
 
 .map-page .venue-map-booth[data-area="Bb"] {
-  --venue-map-area-fill: color-mix(in srgb, #76976e 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #76976e 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--get) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--get) 48%, var(--line));
 }
 
 .map-page .venue-map-booth[data-area="Ca"] {
-  --venue-map-area-fill: color-mix(in srgb, #b57a61 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #b57a61 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--rank-4) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--rank-4) 48%, var(--line));
 }
 
 .map-page .venue-map-booth[data-area="Cb"] {
-  --venue-map-area-fill: color-mix(in srgb, #777eaa 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #777eaa 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--rank-1) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--rank-1) 48%, var(--line));
 }
 
 .map-page .venue-map-booth[data-area="Cc"] {
-  --venue-map-area-fill: color-mix(in srgb, #ad7186 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #ad7186 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--rank-3) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--rank-3) 48%, var(--line));
 }
 
 .map-page .venue-map-booth[data-area="Cd"] {
-  --venue-map-area-fill: color-mix(in srgb, #4e8580 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #4e8580 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--danger) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--danger) 48%, var(--line));
 }
 
 .map-page .venue-map-booth[data-area="Ce"] {
-  --venue-map-area-fill: color-mix(in srgb, #b58c42 13%, var(--surface));
-  --venue-map-area-stroke: color-mix(in srgb, #b58c42 48%, var(--line));
+  --venue-map-area-fill: color-mix(in srgb, var(--rank-5) 13%, var(--surface));
+  --venue-map-area-stroke: color-mix(in srgb, var(--rank-5) 48%, var(--line));
 }
 
 .map-page .venue-map-booth-rect {
   vector-effect: non-scaling-stroke;
   transition: fill 140ms ease, stroke 140ms ease, stroke-width 140ms ease;
+}
+
+.venue-map-list-badge {
+  pointer-events: none;
+}
+
+.venue-map-list-badge circle {
+  fill: var(--key);
+  stroke: var(--band);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.venue-map-list-badge-text {
+  fill: var(--on-key);
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  font-weight: 700;
+  pointer-events: none;
 }
 
 .map-page .venue-map-booth[data-selected] .venue-map-booth-rect {
