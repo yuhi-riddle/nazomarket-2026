@@ -19,6 +19,7 @@ export type VenueMapOptions = Omit<VenueMapUpdate, "day"> & {
   layout: VenueLayout;
   day: Day;
   onBoothPress?: (booth: LayoutBooth) => void;
+  onViewReset?: () => void;
 };
 
 export type VenueMapScale = 1 | 2 | 3 | "fit";
@@ -111,6 +112,7 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
   let day = options.day;
   let paintBooth = options.paintBooth;
   const onBoothPress = options.onBoothPress;
+  const onViewReset = options.onViewReset;
   let selectedCode: string | null = null;
   const instanceId = ++mapInstance;
   const patternId = "venue-map-no-show-" + instanceId;
@@ -423,6 +425,12 @@ export function venueMap(options: VenueMapOptions): VenueMapElement {
     }
     return false;
   };
+  svg.addEventListener("focusin", (event) => {
+    const target = event.target;
+    if (!(target instanceof SVGGElement) || !target.hasAttribute("data-booth-code")) return;
+    const code = target.getAttribute("data-booth-code");
+    if (code && ensureBoothVisible(code)) onViewReset?.();
+  });
   const resizeObserver = new ResizeObserver((entries) => {
     const entry = entries[0];
     if (entry) svgWidth = entry.contentRect.width;

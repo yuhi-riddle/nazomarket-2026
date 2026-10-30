@@ -163,6 +163,10 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
   const map = venueMap({
     layout: venueLayout,
     day: "sat",
+    onViewReset() {
+      isFullVenue = true;
+      updateZoomButtons();
+    },
     onBoothPress(booth) {
       selectBooth(booth.code, false);
     },
@@ -179,6 +183,10 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
     syncPanel(store.getState());
     if (!code || !scroll) return;
     requestAnimationFrame(() => {
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (focus) {
+        mapFrame.scrollIntoView({ block: "nearest", behavior: prefersReducedMotion ? "auto" : "smooth" });
+      }
       if (map.ensureBoothVisible(code)) {
         isFullVenue = true;
         updateZoomButtons();
@@ -382,7 +390,14 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
       Number(itemById.has(b.view.product.id)) - Number(itemById.has(a.view.product.id)));
     const orderKey = orderedProducts.map(({ view }) => view.product.id).join("|");
     if (panelProductList && orderKey !== renderedPanelOrderKey) {
+      const activeElement = document.activeElement;
+      const focusedPanelElement = activeElement instanceof HTMLElement && panel.contains(activeElement)
+        ? activeElement
+        : null;
       for (const { card } of orderedProducts) panelProductList.append(card.element);
+      if (focusedPanelElement && panel.contains(focusedPanelElement)) {
+        focusedPanelElement.focus({ preventScroll: true });
+      }
       renderedPanelOrderKey = orderKey;
     }
     renderedPanelItems = state.items;
