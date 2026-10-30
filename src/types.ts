@@ -53,7 +53,7 @@ export type CampaignKind = "bonus" | "giveaway" | "discount" | "other";  // 購�
 export type Campaign = {
   id: string;                  // "<boothId>-c<連番>"。主催の企画は "official-c<連番>"
   boothId: string | null;      // 主催の企画は null
-  productIds: string[];        // 対象の商品。団体全体が対象なら []
+  productIds: string[];        // 対象の商品。団体全体が対象なら []。セット割は中身の単品とセット商品（あれば）の両方を入れる
   kind: CampaignKind;
   title: string;               // 30字以内の一言
   detail: string;              // 条件・もらえるもの・参加方法
