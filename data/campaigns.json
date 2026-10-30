@@ -152,29 +152,6 @@
     ]
   },
   {
-    "id": "no16-c1",
-    "boothId": "no16",
-    "productIds": [
-      "no16-1"
-    ],
-    "kind": "discount",
-    "title": "新作『TETTUI』ナゾマ先行予約が300円引き",
-    "detail": "『禁忌体験TETTUI』のナゾマ先行予約は通常価格より300円引き。限定100個で、10/30(金)19:00から予定個数がなくなり次第終了。オンライン先行分のお届けはナゾマ後の予定。会場での受け取り方は投稿に記載なし",
-    "endsAt": null,
-    "days": [],
-    "limit": "限定100個",
-    "sources": [
-      {
-        "url": "https://x.com/nazo_rpg/status/2115715265476321691",
-        "retrievedAt": "2026-10-30"
-      },
-      {
-        "url": "https://x.com/nazo_rpg/status/2116122947941519378",
-        "retrievedAt": "2026-10-30"
-      }
-    ]
-  },
-  {
     "id": "no18-c1",
     "boothId": "no18",
     "productIds": [
@@ -255,30 +232,6 @@
     "sources": [
       {
         "url": "https://x.com/ratsnest_works/status/2116122959840448744",
-        "retrievedAt": "2026-10-30"
-      }
-    ]
-  },
-  {
-    "id": "no30-c1",
-    "boothId": "no30",
-    "productIds": [
-      "no30-1",
-      "no30-2",
-      "no30-3"
-    ],
-    "kind": "discount",
-    "title": "新作2作セットで300円引き（3,000円）",
-    "detail": "Ca6ブースで『Lost&Innovate』(1,800円)と『わがままおてがみ』(1,500円)を同時に買うと、通常3,300円が3,000円に。ナゾトキマーケット限定。支払いは現金/PayPay",
-    "endsAt": null,
-    "days": [
-      "sat",
-      "sun"
-    ],
-    "limit": null,
-    "sources": [
-      {
-        "url": "https://x.com/Another_Vision_/status/2115775666444714081",
         "retrievedAt": "2026-10-30"
       }
     ]
