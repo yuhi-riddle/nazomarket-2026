@@ -1,10 +1,11 @@
 import type { SortKey, ProductView, Filters } from "../logic/catalog.ts";
 import { countActiveFilters, emptyFilters, filterCatalog, sortCatalog } from "../logic/catalog.ts";
-import { cartTotals, setQty, toggleItem, type CartItem } from "../logic/cart.ts";
+import { splitUnknownDifficulty } from "../logic/difficultyGroups.ts";
+import { setQty, toggleItem, type CartItem } from "../logic/cart.ts";
 import { rankForCatalog } from "../logic/insights.ts";
 import { hasRecommendationBasis } from "../logic/recommendationBasis.ts";
 import type { AppState } from "../state.ts";
-import { catalog, productById } from "../data.ts";
+import { catalog } from "../data.ts";
 import { button, el } from "./dom.ts";
 import { filterPanel } from "./filterPanel.ts";
 import { productCard, type ProductCardHandle } from "./productCard.ts";
@@ -55,9 +56,6 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     onPrefsChange(change) {
       store.update((state) => {
         const prefs = { ...state.prefs, ...change, day: null };
-        if (change.budgetFromCart === false && state.prefs.budgetFromCart && state.prefs.budget === null) {
-          prefs.budget = state.budget;
-        }
         return { ...state, prefs, sort: "recommended" };
       });
     },
@@ -110,6 +108,13 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
   const recommendationHint = el("p", "recommendation-hint", "リストに入れたアイテムや、指定がある場合はおすすめの条件・残り予算を参考に、最大10件表示します。すべてのアイテムは並び順を変えると見られます。");
   recommendationHint.hidden = true;
   const grid = el("div", "product-grid");
+  const unknownDifficultySection = el("section", "catalog-unknown-difficulty");
+  const unknownDifficultyHeading = el("div", "catalog-unknown-difficulty-heading");
+  const unknownDifficultyTitle = el("h3", "catalog-unknown-difficulty-title", "難易度不明");
+  const unknownDifficultyCount = el("span", "catalog-group-count");
+  const unknownDifficultyGrid = el("div", "catalog-unknown-difficulty-products product-grid");
+  unknownDifficultyHeading.append(unknownDifficultyTitle, unknownDifficultyCount);
+  unknownDifficultySection.append(unknownDifficultyHeading, unknownDifficultyGrid);
   const empty = el("div", "empty-state");
   resultRegion.append(grid);
   main.append(toolbar, recommendationHint, resultRegion);
@@ -130,12 +135,6 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
   let rankedCartKey = "";
   let rankedCatalog: ReturnType<typeof rankForCatalog> | undefined;
 
-  const listBudget = (state: AppState): number | null => {
-    if (state.budget === null) return null;
-    const spent = cartTotals(state.items, (id) => productById.get(id)?.price ?? null).amount;
-    return state.budget - spent;
-  };
-
   const syncFilterControls = (state: AppState, filtersWithDay: Filters, shown: number) => {
     filters.sync(
       state.filters,
@@ -143,7 +142,6 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
       shown,
       catalog.length,
       state.prefs,
-      listBudget(state),
     );
   };
 
@@ -207,7 +205,7 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     let reasonsById = new Map<string, string[]>();
     let hasRecommendation = true;
     if (state.sort === "recommended") {
-      const budget = state.prefs.budgetFromCart ? state.budget : state.prefs.budget;
+      const budget = state.budget;
       hasRecommendation = hasRecommendationBasis(state.items, state.prefs, budget);
       if (!hasRecommendation) {
         ordered = [];
@@ -230,6 +228,9 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     } else {
       ordered = sortCatalog(filtered, state.sort);
     }
+    const difficultyGroups = state.sort === "difficultyAsc" || state.sort === "difficultyDesc"
+      ? splitUnknownDifficulty(ordered)
+      : { known: ordered, unknown: [] };
 
     count.textContent = !hasRecommendation ? "0件 / " + catalog.length + "件" : ordered.length + "件 / " + catalog.length + "件";
     recommendationHint.hidden = state.sort !== "recommended" || !hasRecommendation;
@@ -247,6 +248,8 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
       empty.replaceChildren(el("p", "", "リストにアイテムを入れるか、おすすめの条件（予算・難易度・カテゴリ・遊び方）を指定すると、おすすめが出ます。"));
     }
     grid.replaceChildren();
+    unknownDifficultyGrid.replaceChildren();
+    unknownDifficultySection.remove();
     if (state.sort === "booth" || state.sort === "organization") {
       const byBooth = new Map<string, ProductView[]>();
       for (const view of ordered) {
@@ -269,11 +272,19 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
         grid.append(group.element);
       }
     } else {
-      for (let index = 0; index < ordered.length; index += 1) {
-        const view = ordered[index];
+      for (const view of difficultyGroups.known) {
         const handle = getHandle(view);
         handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? []);
         grid.append(handle.element);
+      }
+      if (difficultyGroups.unknown.length > 0) {
+        unknownDifficultyCount.textContent = difficultyGroups.unknown.length + "件";
+        for (const view of difficultyGroups.unknown) {
+          const handle = getHandle(view);
+          handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? []);
+          unknownDifficultyGrid.append(handle.element);
+        }
+        resultRegion.append(unknownDifficultySection);
       }
     }
     lastFilters = state.filters;

@@ -3,8 +3,6 @@ import type { ProductView } from "./catalog.ts";
 import type { CartItem } from "./cart.ts";
 
 export type Prefs = {
-  budget: number | null;
-  budgetFromCart: boolean;
   difficultyMin: 1 | 2 | 3 | 4 | 5 | null;
   difficultyMax: 1 | 2 | 3 | 4 | 5 | null;
   categories: Category[];
@@ -19,8 +17,6 @@ export type Scored = {
 };
 
 export const defaultPrefs: Prefs = {
-  budget: null,
-  budgetFromCart: true,
   difficultyMin: null,
   difficultyMax: null,
   categories: [],
@@ -110,7 +106,7 @@ function difficultyBounds(prefs: Prefs): { min: number; max: number } {
 export function scoreProduct(
   view: ProductView,
   prefs: Prefs,
-  budgetLeftForThis: number | null = prefs.budget,
+  budgetLeftForThis: number | null = null,
   amountForThis: number | null = view.product.price,
   alreadyInList = false,
 ): Scored | null {
@@ -248,11 +244,17 @@ export function rankForCatalog(
   return { matched, others };
 }
 
-export function recommend(catalog: ProductView[], prefs: Prefs, excludeIds: Set<string>, limit: number): Scored[] {
+export function recommend(
+  catalog: ProductView[],
+  prefs: Prefs,
+  excludeIds: Set<string>,
+  limit: number,
+  budget: number | null = null,
+): Scored[] {
   return catalog
     .flatMap((view) => {
       if (excludeIds.has(view.product.id)) return [];
-      const scored = scoreProduct(view, prefs);
+      const scored = scoreProduct(view, prefs, budget);
       return scored && scored.score > 0 ? [scored] : [];
     })
     .sort((a, b) => b.score - a.score

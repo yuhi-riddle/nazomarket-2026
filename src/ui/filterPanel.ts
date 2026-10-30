@@ -23,54 +23,17 @@ const difficultyOptions: Array<[DifficultyKey, string]> = [
 
 type FilterControls = {
   element: HTMLElement;
-  sync: (filters: AppFilters, prefs: Prefs, listBudget: number | null) => void;
+  sync: (filters: AppFilters, prefs: Prefs) => void;
 };
 
 type PreferenceChange = Partial<Omit<Prefs, "day">>;
-let preferenceGroupSequence = 0;
 
 function preferenceControls(onChange: (change: PreferenceChange) => void): {
   element: HTMLElement;
-  sync: (prefs: Prefs, listBudget: number | null) => void;
+  sync: (prefs: Prefs) => void;
 } {
   const root = el("section", "catalog-prefs");
   root.append(el("h3", "catalog-prefs-title", "おすすめの条件"));
-
-  const budgetField = el("fieldset", "catalog-prefs-budget");
-  budgetField.append(el("legend", "field-label", "おすすめの予算"));
-  const radioName = "catalog-budget-source-" + (++preferenceGroupSequence);
-  const useListLabel = el("label", "check-option");
-  const useList = el("input");
-  useList.type = "radio";
-  useList.name = radioName;
-  useList.value = "list";
-  useList.addEventListener("change", () => {
-    if (useList.checked) onChange({ budgetFromCart: true });
-  });
-  useListLabel.append(useList, el("span", "", "買い物リストの予算を使う"));
-  const useCustomLabel = el("label", "check-option");
-  const useCustom = el("input");
-  useCustom.type = "radio";
-  useCustom.name = radioName;
-  useCustom.value = "custom";
-  useCustom.addEventListener("change", () => {
-    if (useCustom.checked) onChange({ budgetFromCart: false });
-  });
-  useCustomLabel.append(useCustom, el("span", "", "別の予算を設定する"));
-  const remaining = el("p", "catalog-prefs-budget-remaining");
-  const budgetInput = el("input", "text-input");
-  budgetInput.type = "number";
-  budgetInput.min = "0";
-  budgetInput.step = "100";
-  budgetInput.inputMode = "numeric";
-  budgetInput.setAttribute("aria-label", "予算（円）");
-  budgetInput.addEventListener("change", () => {
-    const value = budgetInput.value.trim();
-    const amount = value === "" ? null : Number(value);
-    if (amount !== null && (!Number.isFinite(amount) || amount < 0)) return;
-    onChange({ budget: amount, budgetFromCart: false });
-  });
-  budgetField.append(useListLabel, remaining, useCustomLabel, labeledControl("予算の合計額", budgetInput));
 
   const difficultyField = el("fieldset", "catalog-prefs-difficulty");
   difficultyField.append(el("legend", "field-label", "難易度"));
@@ -117,18 +80,11 @@ function preferenceControls(onChange: (change: PreferenceChange) => void): {
   playStyle.setAttribute("aria-label", "遊び方");
   playStyle.addEventListener("change", () => onChange({ playStyle: playStyle.value as Prefs["playStyle"] }));
   const playStyleField = labeledControl("遊び方", playStyle);
-  root.append(budgetField, difficultyField, categories.element, playStyleField);
+  root.append(difficultyField, categories.element, playStyleField);
 
   return {
     element: root,
-    sync(prefs, listBudget) {
-      useList.checked = prefs.budgetFromCart;
-      useCustom.checked = !prefs.budgetFromCart;
-      remaining.textContent = "リストの残り予算 " + (listBudget === null ? "未設定" : listBudget.toLocaleString("ja-JP") + "円");
-      remaining.hidden = !prefs.budgetFromCart;
-      budgetInput.disabled = prefs.budgetFromCart;
-      const amount = prefs.budgetFromCart ? listBudget : prefs.budget;
-      if (document.activeElement !== budgetInput) budgetInput.value = amount === null ? "" : String(amount);
+    sync(prefs) {
       if (document.activeElement !== minDifficulty) minDifficulty.value = prefs.difficultyMin === null ? "" : String(prefs.difficultyMin);
       if (document.activeElement !== maxDifficulty) maxDifficulty.value = prefs.difficultyMax === null ? "" : String(prefs.difficultyMax);
       currentCategories = prefs.categories;
@@ -257,9 +213,9 @@ function filterControls(options: {
 
   return {
     element: root,
-    sync(next, prefs, listBudget) {
+    sync(next, prefs) {
       filters = next;
-      preferences.sync(prefs, listBudget);
+      preferences.sync(prefs);
       if (search && document.activeElement !== search) search.value = next.q;
       if (document.activeElement !== minInput) minInput.value = next.priceMin === null ? "" : String(next.priceMin);
       if (document.activeElement !== maxInput) maxInput.value = next.priceMax === null ? "" : String(next.priceMax);
@@ -275,7 +231,7 @@ export type FilterPanel = {
   element: HTMLElement;
   dialog: HTMLDialogElement;
   openButton: HTMLButtonElement;
-  sync: (filters: AppFilters, activeCount: number, shown: number, total: number, prefs: Prefs, listBudget: number | null) => void;
+  sync: (filters: AppFilters, activeCount: number, shown: number, total: number, prefs: Prefs) => void;
 };
 
 export function filterPanel(options: {
@@ -310,9 +266,9 @@ export function filterPanel(options: {
     element: aside,
     dialog,
     openButton: mobileOpen,
-    sync(filters, activeCount, shown, total, prefs, listBudget) {
-      desktopControls.sync(filters, prefs, listBudget);
-      mobileControls.sync(filters, prefs, listBudget);
+    sync(filters, activeCount, shown, total, prefs) {
+      desktopControls.sync(filters, prefs);
+      mobileControls.sync(filters, prefs);
       mobileOpen.textContent = "絞り込み（" + activeCount + "）";
       heading.textContent = "絞り込み";
       apply.textContent = shown + "件を表示";

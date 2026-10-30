@@ -4,19 +4,16 @@ import { defaultState, parseState, serializeState } from "./state.ts";
 
 const known = new Set(["p01"]);
 
-describe("parseState（おすすめの予算の出どころ）", () => {
-  it("初期値はリストの残り予算を使う", () => {
-    expect(defaultState.prefs.budgetFromCart).toBe(true);
+describe("parseState（おすすめの予算はリストの予算だけ）", () => {
+  it("おすすめの条件に予算の項目は持たない", () => {
+    expect(defaultState.prefs).not.toHaveProperty("budget");
+    expect(defaultState.prefs).not.toHaveProperty("budgetFromCart");
   });
-  it("「指定なし」（残り予算を使わない）は書いて読んでも残る", () => {
-    const state = { ...defaultState, prefs: { ...defaultPrefs, budget: null, budgetFromCart: false } };
-    expect(parseState(serializeState(state), known).prefs).toEqual({ ...defaultPrefs, budget: null, budgetFromCart: false });
-  });
-  it("真偽値でなければ初期値。古い保存（項目なし）も初期値", () => {
-    const read = (v: unknown) => parseState(JSON.stringify({ ...defaultState, prefs: { ...defaultPrefs, budgetFromCart: v } }), known).prefs.budgetFromCart;
-    expect(read("no")).toBe(true);
-    const { budgetFromCart: _omit, ...old } = defaultPrefs as typeof defaultPrefs & { budgetFromCart?: boolean };
-    expect(parseState(JSON.stringify({ ...defaultState, prefs: old }), known).prefs.budgetFromCart).toBe(true);
+  it("古い保存に予算の項目があっても読み捨てる", () => {
+    const old = { ...defaultPrefs, budget: 4000, budgetFromCart: false };
+    const prefs = parseState(JSON.stringify({ ...defaultState, prefs: old }), known).prefs;
+    expect(prefs).toEqual(defaultPrefs);
+    expect(prefs).not.toHaveProperty("budget");
   });
 });
 
@@ -27,7 +24,7 @@ describe("parseState（おすすめの好み）", () => {
   it("正しい値は書いて読むと同じ", () => {
     const state = {
       ...defaultState,
-      prefs: { ...defaultPrefs, budget: 4000, difficultyMin: 2 as const, difficultyMax: 4 as const, categories: ["kit" as const, "booklet" as const], playStyle: "takeHome" as const },
+      prefs: { ...defaultPrefs, difficultyMin: 2 as const, difficultyMax: 4 as const, categories: ["kit" as const, "booklet" as const], playStyle: "takeHome" as const },
     };
     expect(parseState(serializeState(state), known)).toEqual(state);
   });
@@ -35,7 +32,7 @@ describe("parseState（おすすめの好み）", () => {
     const s = parseState(
       JSON.stringify({
         ...defaultState,
-        prefs: { budget: -1, difficultyMin: 7, difficultyMax: 3, categories: ["kit", "x"], playStyle: "somewhere", day: "sun" },
+        prefs: { difficultyMin: 7, difficultyMax: 3, categories: ["kit", "x"], playStyle: "somewhere", day: "sun" },
       }),
       known,
     );
