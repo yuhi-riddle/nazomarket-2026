@@ -30,6 +30,9 @@ jobs:
       - run: npm ci
       - run: npm test -- --maxWorkers=1
       - run: npm run typecheck
+      # X の画像は外部サイトからの表示を断られるため、公開するときだけ取得して dist に含める（git には入れない）
+      - if: github.event_name != 'pull_request'
+        run: node scripts/fetch-images.ts
       - run: npm run build
       - if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
