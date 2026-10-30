@@ -39,40 +39,21 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
 
   const media = el("div", "product-media");
   const fallback = el("span", "image-fallback", CATEGORY_NAMES[product.category]);
-  const imageData = productImage(product);
-  if (imageData) {
+  const imageSrc = productImage(product);
+  if (imageSrc) {
     const image = el("img", "product-image");
     image.alt = "";
     image.loading = "lazy";
     image.decoding = "async";
     image.width = 640;
     image.height = 480;
-    // 画像の列は狭いので、見た目はアカウント名だけにして、読み上げで出典の全文を伝える
-    const creditLink = imageData.credit ? el("a", "product-image-credit", `画像 @${imageData.credit.account}`) : null;
-    if (creditLink && imageData.credit) {
-      creditLink.href = imageData.credit.url;
-      creditLink.setAttribute("aria-label", `画像の出典: X @${imageData.credit.account} の投稿（新しいタブで開く）`);
-      creditLink.target = "_blank";
-      creditLink.rel = "noopener noreferrer";
-      creditLink.hidden = true;
-      image.addEventListener("load", () => { creditLink.hidden = false; }, { once: true });
-    }
     image.addEventListener("error", () => {
       image.hidden = true;
       fallback.hidden = false;
-      if (creditLink) creditLink.hidden = true;
     }, { once: true });
     fallback.hidden = true;
-    if (imageData.credit) {
-      const frame = el("div", "product-media-frame");
-      frame.append(image, fallback);
-      media.classList.add("product-media-with-credit");
-      media.append(frame);
-      if (creditLink) media.append(creditLink);
-    } else {
-      media.append(image, fallback);
-    }
-    image.src = imageData.src;
+    media.append(image, fallback);
+    image.src = imageSrc;
   } else {
     media.append(fallback);
   }

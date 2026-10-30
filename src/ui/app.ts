@@ -223,7 +223,7 @@ export function app(root: HTMLElement): void {
   const meter = budgetMeter(() => store.update((state) => ({ ...state, tab: "cart" })));
   const footer = el("footer", "app-footer");
   const footerText = el("p", "", "非公式の個人用ツールです。出典の最新取得日：" + (dataGeneratedAt || "不明") + "（取得日はアイテムごとに異なります）。正確な情報は公式サイト・各団体の告知で確認してください。");
-  const rights = el("p", "image-rights", "掲載画像の権利は各権利者に帰属します。画像は各提供元のURLを参照しています。");
+  const rights = el("p", "image-rights", "掲載画像の権利は各権利者に帰属します。出典は各商品の詳細に載せています。");
   const officialLink = safeExternalLink("https://www.scrapmagazine.com/s/nazomarket/", "ナゾトキマーケット公式サイト");
   footer.append(footerText, rights);
   if (officialLink) footer.append(officialLink);
