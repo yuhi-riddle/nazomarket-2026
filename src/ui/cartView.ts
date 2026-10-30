@@ -149,14 +149,14 @@ export function cartView(
   const shared = sharedOptions ? sharedListView(store, sharedOptions) : null;
 
   const summary = el("section", "today-summary cart-summary");
-  summary.setAttribute("aria-label", "リストの合計と使った金額");
+  summary.setAttribute("aria-label", "リストの合計と買った金額");
   summary.setAttribute("aria-live", "polite");
   summary.setAttribute("aria-atomic", "true");
   const summaryValues = new Map<string, { tile: HTMLElement; value: HTMLElement }>();
   for (const [key, label, initial] of [
     ["total", "合計", "0円"],
-    ["spent", "使った金額", "0円"],
-    ["remaining", "使える残り", "—"],
+    ["spent", "買った金額", "0円"],
+    ["remaining", "予算の残り", "未設定"],
     ["points", "GETした数", "0 / 0"],
   ]) {
     const tile = el("div", "today-summary-tile");
@@ -301,16 +301,16 @@ export function cartView(
     const remaining = summaryValues.get("remaining")!;
     remaining.tile.classList.toggle("is-over-budget", spent.remaining !== null && spent.remaining < 0);
     remaining.value.textContent = spent.remaining === null
-      ? "—"
+      ? "未設定"
       : spent.remaining < 0
-        ? "OVER +" + format(-spent.remaining)
+        ? format(-spent.remaining) + "オーバー"
         : format(spent.remaining);
     summaryValues.get("points")!.value.textContent = spent.boughtQty + " / " + totals.qty;
     unknownPrice.textContent = totals.unknownPrice
       ? "価格不明 " + totals.unknownPrice + "件（合計に含まれていません）"
       : "";
     unknownBought.textContent = spent.unknownPriceBought
-      ? "買ったアイテムのうち価格不明 " + spent.unknownPriceBought + "件は、使った金額に含まれていません"
+      ? "買ったアイテムのうち価格不明 " + spent.unknownPriceBought + "件は、買った金額に含まれていません"
       : "";
     allBought.textContent = state.items.length > 0 && spent.leftToBuy === 0
       ? "リストのアイテムはすべて買いました"

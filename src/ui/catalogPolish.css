@@ -73,6 +73,10 @@
 }
 
 .dialog-booth-location {
+  margin-top: var(--space-4);
+  padding: var(--space-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -90,7 +94,8 @@
 }
 
 .cart-map-link {
-  justify-self: start;
+  align-self: center;
+  margin-left: auto;
 }
 
 .cart-get-badge {
@@ -148,4 +153,8 @@
     grid-column: 1 / -1;
     grid-row: 2;
   }
+}
+
+.dialog-title {
+  min-height: 44px;
 }
