@@ -53,9 +53,10 @@ export function productDialog(
   const content = el("div", "dialog-content");
   const heading = el("h2", "dialog-title");
   heading.id = "product-dialog-title-" + instance;
-  const close = button("閉じる", "button button-secondary dialog-close");
+  const close = button("×", "button button-secondary dialog-close");
   close.addEventListener("click", () => dialog.close());
   content.append(close, heading);
+  close.setAttribute("aria-label", "閉じる");
   const details = el("div", "dialog-details");
   content.append(details);
   dialog.append(content);
@@ -87,7 +88,6 @@ export function productDialog(
       appendLinkGroup(boothLinks, "X", view.booth.links.x, "x", view.booth.name);
       appendLinkGroup(boothLinks, "Webサイト", view.booth.links.site, "site", view.booth.name);
       appendLinkGroup(boothLinks, "Instagram", view.booth.links.instagram, "instagram", view.booth.name);
-      if (boothLinks.childElementCount > 1) details.append(boothLinks);
       details.append(el("p", "dialog-price", product.price === null ? "価格未確認" : product.price.toLocaleString("ja-JP") + "円"));
       if (product.priceNote) details.append(el("p", "dialog-note", product.priceNote));
       const description = el("p", "dialog-description", product.description);
@@ -120,6 +120,7 @@ export function productDialog(
         view.booth.name,
       );
       if (sources.childElementCount > 1) details.append(sources);
+      if (boothLinks.childElementCount > 1) details.append(boothLinks);
       if (!dialog.open) dialog.showModal();
     },
   };

@@ -77,25 +77,25 @@ describe("playStyleOf", () => {
 });
 
 describe("scoreProduct", () => {
-  const prefs = { ...defaultPrefs, budget: 3000, difficultyMin: 3 as const, difficultyMax: 5 as const, categories: ["kit" as const], playStyle: "takeHome" as const };
+  const prefs = { ...defaultPrefs, difficultyMin: 3 as const, difficultyMax: 5 as const, categories: ["kit" as const], playStyle: "takeHome" as const };
 
   it("合う条件ごとに点を足し、理由を並べる", () => {
-    expect(scoreProduct(view("p03"), prefs)).toEqual({
+    expect(scoreProduct(view("p03"), prefs, 3000)).toEqual({
       view: view("p03"),
       score: 2 + 3 + 2 + 2 + 1,
       reasons: ["予算内", "指定した難易度", "指定したカテゴリ", "持ち帰って遊べる", "限定あり"],
     });
   });
   it("推定の難易度は1点低く、合わない難易度・遊び方は減点", () => {
-    const p05 = scoreProduct(view("p05"), prefs)!;
+    const p05 = scoreProduct(view("p05"), prefs, 3000)!;
     expect(p05.score).toBe(2 + 2 + 2);
     expect(p05.reasons).toEqual(["指定した難易度（推定）", "指定したカテゴリ", "持ち帰って遊べる"]);
-    const p02 = scoreProduct(view("p02"), prefs)!;
+    const p02 = scoreProduct(view("p02"), prefs, 3000)!;
     expect(p02.score).toBe(2 - 2 - 1);
   });
   it("予算を超えるもの・行く日に売っていないものは対象外（null）", () => {
-    expect(scoreProduct(view("p04"), prefs)).toBeNull();
-    expect(scoreProduct(view("p05"), { ...prefs, day: "sun" })).toBeNull();
+    expect(scoreProduct(view("p04"), prefs, 3000)).toBeNull();
+    expect(scoreProduct(view("p05"), { ...prefs, day: "sun" }, 3000)).toBeNull();
   });
   it("条件を何も入れなければ新作・限定だけが点になる", () => {
     expect(scoreProduct(view("p01"), defaultPrefs)).toEqual({ view: view("p01"), score: 1, reasons: ["新作"] });
@@ -103,11 +103,11 @@ describe("scoreProduct", () => {
 });
 
 describe("recommend", () => {
-  const prefs = { ...defaultPrefs, budget: 3000, difficultyMin: 3 as const, difficultyMax: 5 as const, categories: ["kit" as const], playStyle: "takeHome" as const };
+  const prefs = { ...defaultPrefs, difficultyMin: 3 as const, difficultyMax: 5 as const, categories: ["kit" as const], playStyle: "takeHome" as const };
 
   it("点の高い順に上限件数まで。0点以下とリストに入っている商品は除く", () => {
-    expect(recommend(catalog, prefs, new Set(), 3).map((s) => s.view.product.id)).toEqual(["p03", "p05", "p01"]);
-    expect(recommend(catalog, prefs, new Set(["p03"]), 10).map((s) => s.view.product.id)).toEqual(["p05", "p01"]);
+    expect(recommend(catalog, prefs, new Set(), 3, 3000).map((s) => s.view.product.id)).toEqual(["p03", "p05", "p01"]);
+    expect(recommend(catalog, prefs, new Set(["p03"]), 10, 3000).map((s) => s.view.product.id)).toEqual(["p05", "p01"]);
   });
   it("同点は価格の安い順（価格不明は後ろ）→ブース順", () => {
     expect(recommend(catalog, defaultPrefs, new Set(), 10).map((s) => s.view.product.id)).toEqual(["p01", "p03"]);
@@ -126,8 +126,8 @@ describe("recommend", () => {
 
 describe("areaMatchCounts", () => {
   it("点がしきい値以上の商品をエリアごとに数える（エリア無しは数えない）", () => {
-    const prefs = { ...defaultPrefs, budget: 3000, difficultyMin: 3 as const, difficultyMax: 5 as const, categories: ["kit" as const], playStyle: "takeHome" as const };
-    const scored = recommend(catalog, prefs, new Set(), 100);
+    const prefs = { ...defaultPrefs, difficultyMin: 3 as const, difficultyMax: 5 as const, categories: ["kit" as const], playStyle: "takeHome" as const };
+    const scored = recommend(catalog, prefs, new Set(), 100, 3000);
     expect(areaMatchCounts(scored, 4)).toEqual({ Ca: 1, Cc: 1 });
     expect(areaMatchCounts(scored, 3)).toEqual({ A: 1, Ca: 1, Cc: 1 });
   });

@@ -291,10 +291,9 @@ export function app(root: HTMLElement): void {
       page.sync(state);
     } else if (state.tab === "catalog") {
       const listPlanChanged = !sameCartPlan(state.items, previous.items);
-      const preferenceBudgetChanged = state.prefs.budgetFromCart
-        && (state.budget !== previous.budget || listPlanChanged);
+      const preferenceBudgetChanged = state.budget !== previous.budget || listPlanChanged;
       if (state.filters !== previous.filters || state.sort !== previous.sort || state.day !== previous.day
-        || state.prefs !== previous.prefs || (state.sort === "recommended" && (listPlanChanged || preferenceBudgetChanged))) {
+        || state.prefs !== previous.prefs || (state.sort === "recommended" && preferenceBudgetChanged)) {
         page.sync(state);
       } else if (state.items !== previous.items || state.budget !== previous.budget) {
         page.updateItems?.(state.items, state);

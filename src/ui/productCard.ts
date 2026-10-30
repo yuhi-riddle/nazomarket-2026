@@ -81,6 +81,13 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const body = el("div", "product-card-body");
   const name = button(product.name, "product-name");
   name.addEventListener("click", () => actions.onDetail(view));
+  // 枠のどこを押しても詳細を開く。ボタンなどの操作と、文字を選んだときは除く
+  card.addEventListener("click", (event) => {
+    const target = event.target as Element | null;
+    if (!target || target.closest("button, a, input, label, select, textarea")) return;
+    if (window.getSelection()?.toString()) return;
+    actions.onDetail(view);
+  });
   const nameHeading = el("h2", "product-name-heading");
   const organization = view.booth.name + (actions.showBoothLocation ? " ・ " + (view.booth.boothCode ?? "未定") : "");
   const organizationElement = el("span", "product-organization", organization);

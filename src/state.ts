@@ -52,8 +52,6 @@ const parseDifficulty = (value: unknown): Prefs["difficultyMin"] =>
 
 function parsePrefs(value: unknown): Prefs {
   if (!isRecord(value)) return { ...defaultPrefs, categories: [...defaultPrefs.categories] };
-  const budget = isNullableAmount(value.budget) ? value.budget : defaultPrefs.budget;
-  const budgetFromCart = typeof value.budgetFromCart === "boolean" ? value.budgetFromCart : defaultPrefs.budgetFromCart;
   let difficultyMin = parseDifficulty(value.difficultyMin);
   let difficultyMax = parseDifficulty(value.difficultyMax);
   if (difficultyMin !== null && difficultyMax !== null && difficultyMin > difficultyMax) {
@@ -65,7 +63,7 @@ function parsePrefs(value: unknown): Prefs {
   const playStyle = value.playStyle === "onsite" || value.playStyle === "takeHome" || value.playStyle === "any"
     ? value.playStyle
     : defaultPrefs.playStyle;
-  return { budget, budgetFromCart, difficultyMin, difficultyMax, categories, playStyle, day: null };
+  return { difficultyMin, difficultyMax, categories, playStyle, day: null };
 }
 
 function parseFilters(value: unknown, oldDay: Day): AppFilters {
@@ -153,8 +151,6 @@ export function parseState(raw: string | null, knownProductIds: Set<string>): Ap
 
 export function serializeState(state: AppState): string {
   const prefs = {
-    budget: state.prefs.budget,
-    budgetFromCart: state.prefs.budgetFromCart,
     difficultyMin: state.prefs.difficultyMin,
     difficultyMax: state.prefs.difficultyMax,
     categories: state.prefs.categories,
