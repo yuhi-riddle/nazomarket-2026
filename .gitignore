@@ -1,5 +1,6 @@
 node_modules/
 dist/
+public/remote-images/
 coverage/
 .vite/
 *.log
