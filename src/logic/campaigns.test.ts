@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Campaign } from "../types.ts";
-import { countDueSoon, deadlineLabel, isCampaignActive, listActiveCampaigns } from "./campaigns.ts";
+import { countActive, countDueSoon, deadlineLabel, isCampaignActive, listActiveCampaigns } from "./campaigns.ts";
 
 // 日本時間の日時を Date にする（例: jst("2026-11-01T23:59")）
 const jst = (local: string) => new Date(local + ":00+09:00");
@@ -61,6 +61,21 @@ describe("listActiveCampaigns", () => {
   it("0件なら両方とも空", () => {
     expect(listActiveCampaigns([], now)).toEqual({ withDeadline: [], noDeadline: [] });
     expect(listActiveCampaigns([campaign("past", "2026-10-29")], now)).toEqual({ withDeadline: [], noDeadline: [] });
+  });
+});
+
+describe("countActive", () => {
+  it("一覧に出るもの（締切なし＋締切前）を数え、一覧の件数と一致する", () => {
+    const now = jst("2026-10-30T12:00");
+    const campaigns = [
+      campaign("open", null),
+      campaign("past", "2026-10-29"),
+      campaign("soon", "2026-11-01"),
+      campaign("late", "2026-11-20T18:00"),
+    ];
+    const active = listActiveCampaigns(campaigns, now);
+    expect(countActive(campaigns, now)).toBe(3);
+    expect(countActive(campaigns, now)).toBe(active.withDeadline.length + active.noDeadline.length);
   });
 });
 
