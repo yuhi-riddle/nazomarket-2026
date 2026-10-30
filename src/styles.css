@@ -4411,12 +4411,12 @@ noscript {
   color: var(--ink-muted);
   border-right: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  transform: rotate(-90deg);
+  transform: rotate(-45deg);
   transition: transform 160ms ease;
 }
 
 .catalog-group[open] > summary .catalog-group-chevron {
-  transform: rotate(0deg);
+  transform: rotate(45deg);
 }
 
 .catalog-group-products {
