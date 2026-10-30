@@ -46,6 +46,23 @@ export type Product = {
   unconfirmed: string[];       // 取れなかった項目名
 };
 
+// ---- キャンペーン（data/campaigns.json）。ナゾトキマーケットに関係する団体・主催の企画を手で収集する ----
+
+export type CampaignKind = "bonus" | "giveaway" | "discount" | "other";  // 購入特典 / 抽選・プレゼント / セット割・割引 / その他の会場企画
+
+export type Campaign = {
+  id: string;                  // "<boothId>-c<連番>"。主催の企画は "official-c<連番>"
+  boothId: string | null;      // 主催の企画は null
+  productIds: string[];        // 対象の商品。団体全体が対象なら []
+  kind: CampaignKind;
+  title: string;               // 30字以内の一言
+  detail: string;              // 条件・もらえるもの・参加方法
+  endsAt: string | null;       // 締切（日本時間）"YYYY-MM-DD" か "YYYY-MM-DDTHH:mm"。日付だけならその日の終わりまで。会場の特典などで締切の日時がなければ null
+  days: Day[];                 // 会場で受けられる日。X の抽選など会場と関係ないものは []
+  limit: string | null;        // 「先着100名」「抽選3名」など
+  sources: Source[];           // 団体本人（または主催）の告知
+};
+
 // ---- 会場マップ（data/venue-layout.json）。座標は公式マップ画像のピクセル ----
 
 export type Point = { x: number; y: number };

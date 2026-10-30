@@ -1,0 +1,318 @@
+[
+  {
+    "id": "no01-c1",
+    "boothId": "no01",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "6,000円以上で謎付き「脱出祈願絵馬」",
+    "detail": "SCRAPブースで1会計6,000円以上（税込）買った人に、SCRAPPIESがデザインされた謎付きの「脱出祈願絵馬」をプレゼント。新作を含む取扱商品すべてが対象",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/realdgame/status/2116062672726929843",
+        "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no06-c1",
+    "boothId": "no06",
+    "productIds": [],
+    "kind": "discount",
+    "title": "旧作謎解き商品を50%以上オフでセール",
+    "detail": "YTE（A7ブース）で割引率50％以上の旧作商品セールを実施。ほかに「福キーボックス」の数量限定販売、新作謎ファイルあり",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/AsobiFactory/status/2114558085843058799",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no11-c1",
+    "boothId": "no11",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "両社の商品を1点ずつ買うとコラボ謎解きBOOK",
+    "detail": "エフェックスとアットビ（Ba2）の商品をそれぞれ1点以上買った人に、ここでしか手に入らない限定コラボ謎解きBOOKをプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/efex_info/status/2109939701239218542",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no14-c1",
+    "boothId": "no14",
+    "productIds": [
+      "no14-2"
+    ],
+    "kind": "giveaway",
+    "title": "新作タイトル当てで持ち帰り謎を3名に抽選",
+    "detail": "『●●の●●の●●●』のタイトルを予想。ヴィランサイド初の持ち帰り謎を、正解者の中から抽選で3名にプレゼント。参加はフォロー＆引用リポストで予想",
+    "endsAt": "2026-11-02T18:00",
+    "days": [],
+    "limit": "抽選3名",
+    "sources": [
+      {
+        "url": "https://x.com/far_near_/status/2115745460933599443",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no16-c1",
+    "boothId": "no16",
+    "productIds": [
+      "no16-1"
+    ],
+    "kind": "discount",
+    "title": "新作『TETTUI』ナゾマ先行予約が300円引き",
+    "detail": "『禁忌体験TETTUI』のナゾマ先行予約は通常価格より300円引き。限定100個で、10/30(金)19:00から予定個数がなくなり次第終了。オンライン先行分のお届けはナゾマ後の予定。会場での受け取り方は投稿に記載なし",
+    "endsAt": null,
+    "days": [],
+    "limit": "限定100個",
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2115715265476321691",
+        "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2116122947941519378",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no18-c1",
+    "boothId": "no18",
+    "productIds": [
+      "no18-1"
+    ],
+    "kind": "bonus",
+    "title": "購入特典の特製ポストカード謎",
+    "detail": "『モイワショーギクラブ 真冬のドライブ』（会場限定先行販売）の購入特典として、特製ポストカード謎『モイワショーギクラブの日本縦断双六』をプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/ClaGlaLtd/status/2115730861437919556",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no18-c2",
+    "boothId": "no18",
+    "productIds": [],
+    "kind": "discount",
+    "title": "謎解きゲーム3点購入で合計から500円引き",
+    "detail": "ナゾグラ by ClaGla（Bb5）で、謎解きゲーム全品が対象。3点まとめて買うと合計金額から500円を割引。出典はClaGla（クラグラ）本人のプレスリリース（PR TIMES）で、X投稿は特典のみ",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://prtimes.jp/main/html/rd/p/000000195.000052049.html",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no20-c1",
+    "boothId": "no20",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "4,000円以上で限定ナゾトキを全員プレゼント",
+    "detail": "Ba7ブースで4,000円以上お買い上げの全員に、ここでしか手に入らない限定ナゾトキ『バナナといったらネズミ？』をプレゼント。ナゾマ2026の2日間のみ配布",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/ratsnest_works/status/2115760570167386349",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no20-c2",
+    "boothId": "no20",
+    "productIds": [
+      "no20-1",
+      "no20-2"
+    ],
+    "kind": "giveaway",
+    "title": "新作キット型ナゾトキ2種を計6名に抽選",
+    "detail": "『RAGING OCEAN』『CRYSTAL SKY』を計6名にプレゼント。応募はねずみの巣の公式Xをフォローし、この投稿をリポスト。賞品はBa7ブースで受け取り",
+    "endsAt": "2026-11-04T23:59",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "計6名",
+    "sources": [
+      {
+        "url": "https://x.com/ratsnest_works/status/2116122959840448744",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no30-c1",
+    "boothId": "no30",
+    "productIds": [
+      "no30-1",
+      "no30-2",
+      "no30-3"
+    ],
+    "kind": "discount",
+    "title": "新作2作セットで300円引き（3,000円）",
+    "detail": "Ca6ブースで『Lost&Innovate』(1,800円)と『わがままおてがみ』(1,500円)を同時に買うと、通常3,300円が3,000円に。ナゾトキマーケット限定。支払いは現金/PayPay",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2115775666444714081",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no31-c1",
+    "boothId": "no31",
+    "productIds": [
+      "p23"
+    ],
+    "kind": "giveaway",
+    "title": "『水彩を貫く』を抽選で1名にプレゼント",
+    "detail": "本投稿をリポストし、アカウントをフォローした人の中から抽選で1名に『水彩を貫く』をプレゼント。当選連絡は11/3(火)",
+    "endsAt": "2026-11-01",
+    "days": [],
+    "limit": "抽選1名",
+    "sources": [
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2114279953751814359",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no32-c1",
+    "boothId": "no32",
+    "productIds": [],
+    "kind": "other",
+    "title": "新作のおためし謎入りチラシを無料配布",
+    "detail": "Sheep Rhythm（Cc21）ブースで、新作のおためし謎が載ったチラシを無料で頒布予定",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/sheeprhythm/status/2115775687575622063",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no32-c2",
+    "boothId": "no32",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "4,000円以上で限定LINEナゾをもれなく",
+    "detail": "ナゾトキマーケット当日に4,000円以上買った人全員に、限定LINEナゾ（ナゾマ2026限定 特典ナゾ）をプレゼント。支払いは現金のみ",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/sheeprhythm/status/2115775687575622063",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no45-c1",
+    "boothId": "no45",
+    "productIds": [
+      "no45-1"
+    ],
+    "kind": "giveaway",
+    "title": "新作『なにたべ』を抽選で3名にプレゼント",
+    "detail": "MICHIのXをフォローし、この投稿をリポストした人から抽選で3名に『なにを食べたら思いつくんだ』をプレゼント",
+    "endsAt": "2026-11-06T23:59",
+    "days": [],
+    "limit": "抽選3名",
+    "sources": [
+      {
+        "url": "https://x.com/michi_place/status/2113933603034042791",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "id": "no72-c1",
+    "boothId": "no72",
+    "productIds": [
+      "p03"
+    ],
+    "kind": "giveaway",
+    "title": "新作『気怠げ終末レジスタンス』を抽選で4名に",
+    "detail": "プライマレードのアカウントをフォローし、10/5の告知投稿をリポストした人の中から抽選で4名に無料プレゼント。当選者にはDMで連絡。※25日の投稿「キャンペーン対象ポストはこちら」から対象投稿へ",
+    "endsAt": "2026-11-01T23:59",
+    "days": [],
+    "limit": "抽選4名",
+    "sources": [
+      {
+        "url": "https://x.com/primalade/status/2107080109182103572",
+        "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/primalade/status/2114288613135696248",
+        "retrievedAt": "2026-10-30"
+      }
+    ]
+  }
+]

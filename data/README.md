@@ -14,6 +14,7 @@
 | `products.json` | 商品 | `npm run build-data` |
 | `candidates.json` | 今回の出品と言い切れない候補（去年の出品・通販のみ等）。ツールには出さない | `npm run build-data` |
 | `COVERAGE.md` | 収集のカバー率 | `npm run build-data` |
+| `campaigns.json` | ナゾトキマーケットに関係する団体・主催のキャンペーン（購入特典・抽選プレゼント・セット割など）。根拠は団体本人か主催の告知だけ。締切を過ぎたものも消さずに残し、表示する側で隠す | 収集作業で手で作成 |
 
 型の定義は `src/types.ts`。
 
