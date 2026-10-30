@@ -4229,6 +4229,235 @@ noscript {
   pointer-events: none;
 }
 
+/* Catalog list cards show booth details in their body, leaving the ticket column for the map panel. */
+.catalog-main .product-card > .ticket-stub {
+  display: none;
+}
+
+.catalog-main .product-name-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.catalog-main .product-name-heading > .product-organization {
+  color: var(--ink-muted);
+  font-size: var(--font-12);
+  line-height: 1.35;
+}
+
+.catalog-main .product-name-heading > .product-organization::after {
+  content: none;
+}
+
+.catalog-main .product-grid:not(.catalog-group-products) > .product-card {
+  grid-template-columns: 150px minmax(0, 1fr) 224px;
+}
+
+.catalog-main .product-grid:not(.catalog-group-products) > .product-card > .product-media {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.catalog-main .product-grid:not(.catalog-group-products) > .product-card > .product-card-body {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.catalog-main .product-grid:not(.catalog-group-products) > .product-card > .product-actions {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+@media (max-width: 1199px) {
+  .catalog-main .product-grid:not(.catalog-group-products) > .product-card {
+    grid-template-columns: 84px minmax(0, 1fr);
+    grid-template-rows: minmax(176px, auto) auto;
+  }
+
+  .catalog-main .product-grid:not(.catalog-group-products) > .product-card > .product-media {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .catalog-main .product-grid:not(.catalog-group-products) > .product-card > .product-card-body {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .catalog-main .product-grid:not(.catalog-group-products) > .product-card > .product-actions {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog-main .product-grid:not(.catalog-group-products) > .product-card {
+    grid-template-columns: 64px minmax(0, 1fr);
+    grid-template-rows: minmax(152px, auto) auto;
+  }
+}
+
+/* The meter keeps the total and budget together above the gauge. */
+.budget-meter::before,
+.budget-meter::after {
+  display: none;
+}
+
+.budget-meter {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 6px;
+  gap: var(--space-1) 0;
+}
+
+.meter-summary {
+  grid-column: 1;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0 var(--space-2);
+  color: var(--on-band);
+  white-space: nowrap;
+}
+
+.meter-copy,
+.meter-budget {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  padding: 0;
+  border: 0;
+  color: var(--on-band);
+  font-family: inherit;
+  font-size: var(--font-12);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.meter-budget {
+  display: inline-flex;
+}
+
+.meter-total-label,
+.meter-budget-label {
+  color: var(--on-band-muted);
+  font-family: inherit;
+  font-size: var(--font-12);
+  font-weight: 700;
+}
+
+.meter-total-value,
+.meter-budget-value {
+  color: var(--key);
+  font-family: inherit;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  letter-spacing: normal;
+  line-height: 1;
+}
+
+.meter-total-value {
+  font-size: 24px;
+}
+
+.meter-budget-value {
+  font-size: var(--font-15);
+}
+
+.meter-separator {
+  color: var(--on-band-muted);
+  font-size: var(--font-12);
+}
+
+.meter-overage {
+  color: var(--danger);
+  font-size: var(--font-12);
+  font-weight: 700;
+}
+
+.meter-total-value.is-over {
+  color: var(--danger);
+}
+
+.meter-bar {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.catalog-group {
+  margin-bottom: var(--space-4);
+  padding: 0 var(--space-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+}
+
+.catalog-group > summary {
+  align-items: center;
+  list-style: none;
+}
+
+.catalog-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.catalog-group-chevron {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  margin-left: var(--space-2);
+  color: var(--ink-muted);
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-90deg);
+  transition: transform 160ms ease;
+}
+
+.catalog-group[open] > summary .catalog-group-chevron {
+  transform: rotate(0deg);
+}
+
+.catalog-group-products {
+  padding-bottom: var(--space-3);
+}
+
+.today-route-heading {
+  flex-wrap: wrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .catalog-group-chevron {
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .budget-meter {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 6px;
+    gap: var(--space-1) 0;
+  }
+
+  .meter-budget {
+    display: inline-flex;
+  }
+
+  .meter-total-value {
+    font-size: 19px;
+  }
+
+  .meter-summary {
+    justify-content: flex-end;
+    gap: 0 var(--space-1);
+  }
+
+  .catalog-group {
+    padding-inline: var(--space-2);
+  }
+}
+
 .game-fx-overlay {
   position: fixed;
   z-index: 100;

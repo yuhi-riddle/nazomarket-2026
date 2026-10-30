@@ -2,6 +2,7 @@ import type { SortKey, ProductView, Filters } from "../logic/catalog.ts";
 import { countActiveFilters, emptyFilters, filterCatalog, sortCatalog } from "../logic/catalog.ts";
 import { cartTotals, setQty, toggleItem, type CartItem } from "../logic/cart.ts";
 import { rankForCatalog } from "../logic/insights.ts";
+import { hasRecommendationBasis } from "../logic/recommendationBasis.ts";
 import type { AppState } from "../state.ts";
 import { catalog, productById } from "../data.ts";
 import { button, el } from "./dom.ts";
@@ -156,7 +157,9 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     const organization = el("strong", "catalog-group-organization", view.booth.name);
     const boothCode = el("small", "catalog-group-booth", view.booth.boothCode ?? "未定");
     const count = el("span", "catalog-group-count");
-    summary.append(organization, boothCode, count);
+    const chevron = el("span", "catalog-group-chevron");
+    chevron.setAttribute("aria-hidden", "true");
+    summary.append(organization, boothCode, count, chevron);
     const products = el("div", "catalog-group-products product-grid");
     element.append(summary, products);
     const group = { element, summary, organization, boothCode, count, products };
@@ -168,6 +171,7 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     const existing = handles.get(view.product.id);
     if (existing) return existing;
     const handle = productCard(view, undefined, {
+      showBoothLocation: true,
       onDetail: (selected) => details.open(selected),
       canChangeList: () => !store.isSharedWriteBlocked(),
       onToggle(productId) {
@@ -201,28 +205,34 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     const filtered = filterCatalog(catalog, filtersWithDay);
     let ordered: ProductView[];
     let reasonsById = new Map<string, string[]>();
+    let hasRecommendation = true;
     if (state.sort === "recommended") {
-      const visibleIds = new Set(filtered.map((view) => view.product.id));
       const budget = state.prefs.budgetFromCart ? state.budget : state.prefs.budget;
-      const cartKey = JSON.stringify(state.items
-        .map((item) => [item.productId, item.qty] as const)
-        .sort(([a], [b]) => a.localeCompare(b)));
-      if (rankedPrefs !== state.prefs || rankedDay !== state.filters.day || rankedBudget !== budget || rankedCartKey !== cartKey) {
-        rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.filters.day }, state.items, budget);
-        rankedPrefs = state.prefs;
-        rankedDay = state.filters.day;
-        rankedBudget = budget;
-        rankedCartKey = cartKey;
+      hasRecommendation = hasRecommendationBasis(state.items, state.prefs, budget);
+      if (!hasRecommendation) {
+        ordered = [];
+      } else {
+        const visibleIds = new Set(filtered.map((view) => view.product.id));
+        const cartKey = JSON.stringify(state.items
+          .map((item) => [item.productId, item.qty] as const)
+          .sort(([a], [b]) => a.localeCompare(b)));
+        if (rankedPrefs !== state.prefs || rankedDay !== state.filters.day || rankedBudget !== budget || rankedCartKey !== cartKey) {
+          rankedCatalog = rankForCatalog(catalog, { ...state.prefs, day: state.filters.day }, state.items, budget);
+          rankedPrefs = state.prefs;
+          rankedDay = state.filters.day;
+          rankedBudget = budget;
+          rankedCartKey = cartKey;
+        }
+        const matched = (rankedCatalog?.matched ?? []).filter((item) => visibleIds.has(item.view.product.id)).slice(0, 10);
+        for (const item of matched) reasonsById.set(item.view.product.id, item.reasons);
+        ordered = matched.map((item) => item.view);
       }
-      const matched = (rankedCatalog?.matched ?? []).filter((item) => visibleIds.has(item.view.product.id)).slice(0, 10);
-      for (const item of matched) reasonsById.set(item.view.product.id, item.reasons);
-      ordered = matched.map((item) => item.view);
     } else {
       ordered = sortCatalog(filtered, state.sort);
     }
 
-    count.textContent = ordered.length + "件 / " + catalog.length + "件";
-    recommendationHint.hidden = state.sort !== "recommended";
+    count.textContent = !hasRecommendation ? "0件 / " + catalog.length + "件" : ordered.length + "件 / " + catalog.length + "件";
+    recommendationHint.hidden = state.sort !== "recommended" || !hasRecommendation;
     sortSelect.value = state.sort;
     groupActions.hidden = state.sort !== "booth" && state.sort !== "organization";
     if (document.activeElement !== mobileSearch) mobileSearch.value = state.filters.q;
@@ -233,6 +243,9 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     const filtersOrSortChanged = lastFilters !== state.filters || lastSort !== state.sort || lastDay !== state.day;
 
     showEmpty(ordered.length === 0, state.sort === "recommended");
+    if (state.sort === "recommended" && !hasRecommendation) {
+      empty.replaceChildren(el("p", "", "リストにアイテムを入れるか、おすすめの条件（予算・難易度・カテゴリ・遊び方）を指定すると、おすすめが出ます。"));
+    }
     grid.replaceChildren();
     if (state.sort === "booth" || state.sort === "organization") {
       const byBooth = new Map<string, ProductView[]>();

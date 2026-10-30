@@ -15,6 +15,7 @@ export type ProductCardActions = {
   onToggleBought?: (productId: string) => void;
   onQty: (productId: string, qty: number) => void;
   canChangeList?: () => boolean;
+  showBoothLocation?: boolean;
 };
 
 export type ProductCardHandle = {
@@ -60,6 +61,9 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const name = button(product.name, "product-name");
   name.addEventListener("click", () => actions.onDetail(view));
   const nameHeading = el("h2", "product-name-heading");
+  const organization = view.booth.name + (actions.showBoothLocation ? " ・ " + (view.booth.boothCode ?? "未定") : "");
+  const organizationElement = el("span", "product-organization", organization);
+  if (actions.showBoothLocation) nameHeading.append(organizationElement);
   nameHeading.append(name);
   body.append(nameHeading);
 
@@ -76,7 +80,7 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const oneLiner = el("p", "product-one-liner", product.oneLiner);
 
   const difficulty = el("div", "difficulty");
-  difficulty.append(el("span", "product-organization", view.booth.name));
+  if (!actions.showBoothLocation) difficulty.append(organizationElement);
   if (product.difficulty.level === null) {
     difficulty.append(el("span", "difficulty-unknown", "難易度不明"));
   } else {
