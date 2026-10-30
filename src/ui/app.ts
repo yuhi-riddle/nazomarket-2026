@@ -2,7 +2,8 @@ import type { TabId, AppState } from "../state.ts";
 import type { CartItem } from "../logic/cart.ts";
 import { captureSharedRoomLink, readSharedRoomCredentials, type SharedRoomCredentials } from "../shared/index.ts";
 import { createStore, type SharedStoreState } from "../store.ts";
-import { dataGeneratedAt } from "../data.ts";
+import { campaigns, dataGeneratedAt } from "../data.ts";
+import { countDueSoon } from "../logic/campaigns.ts";
 import { budgetMeter } from "./budgetMeter.ts";
 import { catalogView } from "./catalogView.ts";
 import { cartView } from "./cartView.ts";
@@ -10,6 +11,7 @@ import { mapView } from "./mapView.ts";
 import { appStartupPlan } from "./appStartup.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import { installGameFx } from "./gameFx.ts";
+import { campaignDialog } from "./campaignDialog.ts";
 import type { SharedListViewOptions } from "./sharedListView.ts";
 
 const tabNames: Record<TabId, string> = {
@@ -109,6 +111,23 @@ export function app(root: HTMLElement): void {
   brand.replaceChildren(brandMark, brandCopy);
 
   const sharedSyncIndicator = button("", "button button-secondary shared-sync-indicator");
+  const campaignButton = button("", "button button-secondary campaign-button");
+  const campaignButtonCount = el("span", "campaign-button-count");
+  campaignButtonCount.hidden = true;
+  campaignButton.append(
+    el("span", "campaign-button-label-long", "キャンペーン"),
+    el("span", "campaign-button-label-short", "特典"),
+    campaignButtonCount,
+  );
+  const updateCampaignButton = () => {
+    const dueSoon = countDueSoon(campaigns, new Date());
+    campaignButtonCount.hidden = dueSoon < 1;
+    campaignButtonCount.textContent = dueSoon > 0 ? String(dueSoon) : "";
+    campaignButton.setAttribute("aria-label", dueSoon > 0
+      ? `特典・キャンペーン情報（締切7日以内 ${dueSoon}件）`
+      : "特典・キャンペーン情報");
+  };
+  updateCampaignButton();
   sharedSyncIndicator.hidden = true;
   sharedSyncIndicator.setAttribute("aria-live", "polite");
   sharedSyncIndicator.setAttribute("aria-atomic", "true");
@@ -125,7 +144,7 @@ export function app(root: HTMLElement): void {
     }
     sharedSyncIndicator.hidden = false;
   };
-  headerMain.append(brand, sharedSyncIndicator);
+  headerMain.append(brand, campaignButton, sharedSyncIndicator);
 
   const tablist = el("nav", "tab-list");
   tablist.setAttribute("role", "tablist");
@@ -191,6 +210,18 @@ export function app(root: HTMLElement): void {
     store.update((state) => ({ ...state, tab: "map" }));
     pages.get("map")?.selectBooth?.(code);
   };
+  const campaignsDialog = campaignDialog(openMapAtBooth);
+  campaignButton.addEventListener("click", campaignsDialog.open);
+  campaignsDialog.element.addEventListener("close", updateCampaignButton);
+  // 締切が過ぎたり日付が変わったりしたら、バッジと開いている一覧を合わせる
+  const refreshCampaigns = () => {
+    updateCampaignButton();
+    campaignsDialog.refresh();
+  };
+  window.setInterval(refreshCampaigns, 60_000);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") refreshCampaigns();
+  });
   for (const tab of tabOrder) {
     const panel = el("section", "tab-panel");
     panel.id = "panel-" + tab;
@@ -228,7 +259,7 @@ export function app(root: HTMLElement): void {
   footer.append(footerText, rights);
   if (officialLink) footer.append(officialLink);
 
-  root.replaceChildren(header, main, meter.element, footer);
+  root.replaceChildren(header, main, meter.element, footer, campaignsDialog.element);
   installGameFx();
 
   const rootStyle = document.documentElement.style;
