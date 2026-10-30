@@ -23,11 +23,15 @@ export function projectSharedCart(
   let state: SharedListState;
   try {
     state = parseSharedState(snapshot);
-    for (const operation of operations) {
-      state = applyOperation(state, { baseRevision: state.revision, operation });
-    }
   } catch {
     return null;
+  }
+  for (const operation of operations) {
+    try {
+      state = applyOperation(state, { baseRevision: state.revision, operation });
+    } catch {
+      // Pending operations can conflict locally; the server reports them through the normal conflict flow.
+    }
   }
 
   const seenProducts = new Set<string>();

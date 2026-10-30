@@ -275,6 +275,11 @@ export function app(root: HTMLElement): void {
     meter.update(state.items, state.budget, true, shared);
   };
   let renderedTab: TabId | undefined;
+  let previousSharedRecommendation: {
+    meId: string | null;
+    budget: number | null;
+    items: CartItem[];
+  } | undefined;
   const sameCartPlan = (a: CartItem[], b: CartItem[]): boolean => {
     if (a.length !== b.length) return false;
     const previous = new Map(a.map((item): [string, number] => [item.productId, item.qty]));
@@ -282,6 +287,23 @@ export function app(root: HTMLElement): void {
   };
   const render = (state: AppState, previous?: AppState, shared: SharedStoreState | null = null) => {
     syncHeader(state, shared);
+    const sharedMeId = shared?.meId ?? null;
+    const selectedSharedMember = sharedMeId === null
+      ? undefined
+      : shared?.members.find((member) => member.id === sharedMeId);
+    const sharedBudget = selectedSharedMember?.budgetYen ?? null;
+    const sharedAssignedItems = sharedMeId === null || !shared
+      ? []
+      : state.items.filter((item) => shared.ownerByProductId.get(item.productId) === sharedMeId);
+    const sharedRecommendationChanged = previousSharedRecommendation === undefined
+      || previousSharedRecommendation.meId !== sharedMeId
+      || previousSharedRecommendation.budget !== sharedBudget
+      || !sameCartPlan(previousSharedRecommendation.items, sharedAssignedItems);
+    previousSharedRecommendation = {
+      meId: sharedMeId,
+      budget: sharedBudget,
+      items: sharedAssignedItems,
+    };
     const tabChanged = renderedTab !== state.tab;
     const page = pageFor(state.tab);
     for (const [tab, lazyPage] of pages) {
@@ -293,7 +315,7 @@ export function app(root: HTMLElement): void {
       const listPlanChanged = !sameCartPlan(state.items, previous.items);
       const preferenceBudgetChanged = state.budget !== previous.budget || listPlanChanged;
       if (state.filters !== previous.filters || state.sort !== previous.sort || state.day !== previous.day
-        || state.prefs !== previous.prefs || (state.sort === "recommended" && preferenceBudgetChanged)) {
+        || state.prefs !== previous.prefs || (state.sort === "recommended" && (preferenceBudgetChanged || sharedRecommendationChanged))) {
         page.sync(state, shared);
       } else if (state.items !== previous.items || state.budget !== previous.budget) {
         page.updateItems?.(state.items, state);

@@ -120,6 +120,21 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   const changeMeButton = button("（変更）", "button button-secondary shared-me-change");
   changeMeButton.setAttribute("aria-label", "自分を選び直す");
   meSelected.append(meSelectedName, changeMeButton);
+  const meRenameForm = el("form", "shared-me-form shared-me-rename-form");
+  const meRenameLabel = el("label", "shared-me-name-field");
+  meRenameLabel.append(el("span", "field-label", "名前を変更"));
+  const meRenameInput = el("input", "text-input shared-me-name-input");
+  meRenameInput.type = "text";
+  meRenameInput.autocomplete = "name";
+  meRenameInput.setAttribute("aria-label", "変更後の名前");
+  const meRenameError = el("p", "shared-me-name-error");
+  meRenameError.id = "shared-me-rename-error";
+  meRenameError.setAttribute("role", "status");
+  meRenameError.setAttribute("aria-live", "polite");
+  meRenameInput.setAttribute("aria-describedby", meRenameError.id);
+  meRenameLabel.append(meRenameInput);
+  const meRenameButton = button("名前を変更する", "button button-secondary shared-me-rename", "submit");
+  meRenameForm.append(meRenameLabel, meRenameError, meRenameButton);
   const meChooser = el("div", "shared-me-chooser");
   const meChoices = el("div", "shared-me-choices");
   const meChoiceButtons = new Map<string, HTMLButtonElement>();
@@ -127,16 +142,20 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   const meForm = el("form", "shared-me-form");
   const meNameInput = el("input", "text-input shared-me-name-input");
   meNameInput.type = "text";
-  meNameInput.required = true;
   meNameInput.autocomplete = "name";
   meNameInput.setAttribute("aria-label", "自分の名前");
   const meNameLabel = el("label", "shared-me-name-field");
   meNameLabel.append(el("span", "field-label", "名前"), meNameInput);
+  const meNameError = el("p", "shared-me-name-error");
+  meNameError.id = "shared-me-register-error";
+  meNameError.setAttribute("role", "status");
+  meNameError.setAttribute("aria-live", "polite");
+  meNameInput.setAttribute("aria-describedby", meNameError.id);
   const meRegisterButton = button("登録して自分にする", "button button-primary shared-me-register", "submit");
-  meForm.append(meNameLabel, meRegisterButton);
+  meForm.append(meNameLabel, meNameError, meRegisterButton);
   const mePrivacyNote = el("p", "shared-me-note", "名前は共有リンクを知る全員に見えます。");
   meChooser.append(meChoices, meForm, mePrivacyNote);
-  mePanel.append(meTitle, meSelected, meChooser);
+  mePanel.append(meTitle, meSelected, meRenameForm, meChooser);
   const error = el("p", "shared-list-error");
   error.setAttribute("role", "alert");
   const controls = el("div", "shared-list-controls");
@@ -234,7 +253,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   let projectedMembers: SharedListState["members"] = [];
   const sessionMeByRoom = new Map<string, string | null>();
   let projectedRevision: number | null = null;
-  let projectedQueueKey = "";
+  let projectedQueueKey: string | null = null;
   let wantsSharedList = false;
   let initialConnectionPending = false;
   let isBusy = false;
@@ -330,6 +349,10 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     const chooserHadFocus = meChooser.contains(document.activeElement);
     const selectedMember = projectedMembers.find((member) => member.id === meId);
     meSelected.hidden = selectedMember === undefined;
+    meRenameForm.hidden = selectedMember === undefined;
+    if (selectedMember && document.activeElement !== meRenameInput && meRenameInput.value !== selectedMember.name) {
+      meRenameInput.value = selectedMember.name;
+    }
     meChooser.hidden = selectedMember !== undefined;
     if (selectedMember) {
       const selectedText = "自分: " + selectedMember.name;
@@ -368,6 +391,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     }
     meNameInput.disabled = !client || store.isSharedWriteBlocked() || projectedMembers.length >= 20;
     meRegisterButton.disabled = meNameInput.disabled;
+    meRenameInput.disabled = !client || store.isSharedWriteBlocked();
+    meRenameButton.disabled = meRenameInput.disabled;
     activeControls.hidden = !client;
     copyLinkButton.disabled = !credentials;
     syncButton.disabled = !client || isBusy || isCopying;
@@ -515,7 +540,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     if (wantsSharedList && enqueueing === 0 && unsavedChanges.length === 0 && next.state) {
       const pending = next.status === "conflict" || next.status === "error" ? [] : next.pendingOperations;
       const queueKey = JSON.stringify([next.pendingOperationIds ?? [], next.pendingOperations]) ?? "";
-      if (projectedRevision !== next.state.revision || projectedQueueKey !== queueKey) {
+      if (!store.isShared() || projectedRevision !== next.state.revision || projectedQueueKey !== queueKey) {
         const projection = projectState(next.state, pending);
         if (!projection) {
           unsupportedState = true;
@@ -558,7 +583,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     meId = null;
     projectedMembers = [];
     projectedRevision = null;
-    projectedQueueKey = "";
+    projectedQueueKey = null;
     credentials = nextCredentials;
     wantsSharedList = true;
     initialConnectionPending = initialState === undefined;
@@ -661,7 +686,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
       // Keep the choice in memory for this room when local storage is unavailable.
     }
     projectedRevision = null;
-    projectedQueueKey = "";
+    projectedQueueKey = null;
     if (client) applySnapshot(client.getSnapshot());
     changeMeButton.focus();
   };
@@ -676,21 +701,28 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
       // The next projection still treats an unavailable stored identity as unselected.
     }
     projectedRevision = null;
-    projectedQueueKey = "";
+    projectedQueueKey = null;
     if (client) applySnapshot(client.getSnapshot());
     meNameInput.focus();
+  };
+
+  const validateMemberName = (name: string, currentMemberId: string | null = null): string | null => {
+    if (!name) return "名前を入力してください。";
+    if ([...name].length > 20) return "名前は20文字以内で入力してください。";
+    if (/\p{Cc}/u.test(name)) return "名前に制御文字は使えません。";
+    const normalizedName = name.trim().toLowerCase();
+    if (projectedMembers.some((member) => member.id !== currentMemberId
+      && member.name.trim().toLowerCase() === normalizedName)) {
+      return "この名前はすでに使われています。";
+    }
+    return null;
   };
 
   const registerMe = (event: SubmitEvent): void => {
     event.preventDefault();
     const name = meNameInput.value.trim();
-    const length = [...name].length;
-    if (length < 1 || length > 20 || /\p{Cc}/u.test(name)) {
-      meNameInput.setCustomValidity("名前は1〜20文字で入力してください。");
-      meNameInput.reportValidity();
-      return;
-    }
-    meNameInput.setCustomValidity("");
+    meNameError.textContent = validateMemberName(name) ?? "";
+    if (meNameError.textContent) return;
     const roomId = credentials?.roomId;
     if (!roomId || !client || store.isSharedWriteBlocked() || projectedMembers.length >= 20) return;
     const memberId = globalThis.crypto?.randomUUID?.()
@@ -705,8 +737,20 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     void enqueueOperation({ type: "add-member", member: { id: memberId, name } });
   };
 
-  meNameInput.addEventListener("input", () => meNameInput.setCustomValidity(""));
+  const renameMe = (event: SubmitEvent): void => {
+    event.preventDefault();
+    const member = projectedMembers.find((entry) => entry.id === meId);
+    if (!member) return;
+    const name = meRenameInput.value.trim();
+    meRenameError.textContent = validateMemberName(name, member.id) ?? "";
+    if (meRenameError.textContent) return;
+    void enqueueOperation({ type: "rename-member", memberId: member.id, name });
+  };
+
+  meNameInput.addEventListener("input", () => { meNameError.textContent = ""; });
+  meRenameInput.addEventListener("input", () => { meRenameError.textContent = ""; });
   meForm.addEventListener("submit", registerMe);
+  meRenameForm.addEventListener("submit", renameMe);
   changeMeButton.addEventListener("click", clearMe);
 
   const saveLinkCredentials = (shareUrl: string): boolean => {
@@ -952,6 +996,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     store.leaveSharedList();
     meId = null;
     projectedMembers = [];
+    projectedRevision = null;
+    projectedQueueKey = null;
     updatePolling();
     render();
   };
@@ -960,6 +1006,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     unsavedChanges = [];
     localError = null;
     confirmKind = null;
+    projectedRevision = null;
+    projectedQueueKey = null;
     store.setSharedWriteBlocked(false);
     applySnapshot(client?.getSnapshot() ?? snapshot);
   };

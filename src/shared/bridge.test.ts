@@ -17,6 +17,18 @@ const initial: SharedListState = {
 };
 
 describe("共有リストのbridge", () => {
+  it("手元で当てられない送信待ちの操作（名前の重複など）は飛ばし、共同リストの表示は保つ", () => {
+    const operations: SharedOperation[] = [
+      { type: "add-member", member: { id: "member-3", name: "あき" } },
+      { type: "set-quantity", itemId: "p18", quantity: 3 },
+    ];
+
+    const projection = projectSharedCart(initial, operations, "member-1");
+    expect(projection).not.toBeNull();
+    expect(projection?.items).toEqual([{ productId: "p18", qty: 3, bought: false }]);
+    expect(projection?.members.map((member) => member.id)).toEqual(["member-1", "member-2"]);
+  });
+
   it("送信待ちのメンバー操作も最新状態へ順に当て、担当対応表を返す", () => {
     const operations: SharedOperation[] = [
       { type: "set-quantity", itemId: "p18", quantity: 4 },
