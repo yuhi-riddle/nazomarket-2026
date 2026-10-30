@@ -268,18 +268,18 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
       ordered = sortCatalog(filtered, state.sort);
     }
     const difficultySort = state.sort === "difficultyAsc" || state.sort === "difficultyDesc";
-    const priceGrouping = !difficultySort && (
-      state.sort === "priceAsc"
+    const priceGrouping = state.sort === "priceAsc"
       || state.sort === "priceDesc"
       || filtersWithDay.priceMin !== null
-      || filtersWithDay.priceMax !== null
-    );
-    const productGroups = difficultySort
-      ? splitUnknownDifficulty(ordered)
-      : priceGrouping
-        ? splitUnknownPrice(ordered)
-        : { known: ordered, unknown: [] as ProductView[] };
-    const unknownGroup = difficultySort ? unknownDifficulty : priceGrouping ? unknownPrice : null;
+      || filtersWithDay.priceMax !== null;
+    // 価格不明を先に分け、残りを難易度で分ける。両方の枠が並ぶこともある
+    const byPrice = priceGrouping ? splitUnknownPrice(ordered) : { known: ordered, unknown: [] as ProductView[] };
+    const byDifficulty = difficultySort ? splitUnknownDifficulty(byPrice.known) : { known: byPrice.known, unknown: [] as ProductView[] };
+    const productGroups = { known: byDifficulty.known };
+    const unknownGroups = [
+      { group: unknownDifficulty, views: byDifficulty.unknown },
+      { group: unknownPrice, views: byPrice.unknown },
+    ];
 
     count.textContent = !hasRecommendation ? "0件 / " + catalog.length + "件" : ordered.length + "件 / " + catalog.length + "件";
     recommendationHint.hidden = state.sort !== "recommended" || !hasRecommendation;
@@ -329,14 +329,15 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
         grid.append(handle.element);
       }
     }
-    if (unknownGroup && productGroups.unknown.length > 0) {
-      unknownGroup.count.textContent = productGroups.unknown.length + "件";
-      for (const view of productGroups.unknown) {
+    for (const { group, views } of unknownGroups) {
+      if (views.length === 0) continue;
+      group.count.textContent = views.length + "件";
+      for (const view of views) {
         const handle = getHandle(view);
         handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? []);
-        unknownGroup.products.append(handle.element);
+        group.products.append(handle.element);
       }
-      resultRegion.append(unknownGroup.section);
+      resultRegion.append(group.section);
     }
     lastFilters = state.filters;
     lastSort = state.sort;
