@@ -1510,7 +1510,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のHP欄が空。QuizKnockのサイトにナゾトキマーケット2026の記載なし。NazoLock単独のX・HPは検索で特定できなかった。今年の新作2点は候補に回した。Xに告知がある可能性あり。 X確認(10/25): 公式 @NazoLock_baton(プロフィールに「QuizKnock発のナゾトキ制作チーム」)が10/22にナゾトキマーケット2026出展を告知。QurioStore公式(@QurioStore_QK)の10/16の投稿で新作「Sandwich」をナゾマ(Bb8)で販売と確認。価格は投稿に記載なし。FUJI・Tumbleweed『Q』は今回の告知が見つからず候補のまま。 再収集(10/30 Web): QuizKnock のイベント一覧にナゾマ・Sandwich の記載なし。価格は埋まらず。 再収集(10/30 X): 10/27 の投稿で新作持ち帰り謎『OBENTO』、10/29 の投稿で新作グッズ『ナゾ付きケシゴム』のナゾマ先行販売を確認して追加(どちらも価格は告知なし)。Sandwich の価格も NazoLock・QurioStore(@QurioStore_QK)の10/24以降の投稿に見つからず null のまま。FUJI・Tumbleweed『Q』の告知なしで候補のまま。 再収集(10/31 X): 10/30 の「商品ラインナップ決定」画像で価格を確認(Sandwich 2,800円・ケシゴム700円・OBENTO限定2,000円)し、FUJI(候補から移動)・NazoPizza・折り紙ナゾ付きアクリルキーホルダー・maze maze maze・クリアファイル-BINGO- の5点を追加。ショッパー100円は商品に入れていない。 画像(10/31 Web): no22-4 はゲームマーケットのブースページ、no22-5 は2025年ナゾマのプレスリリース画像(同じNazoPizza、当時の価格は2,500円)から。no22-6〜8 は HP・ショップ・検索で見つからず(商品ごとの画像は X のラインナップ画像のみで、1枚に並ぶお品書きのため入れていない)",
+      "notes": "公式のHP欄が空。QuizKnockのサイトにナゾトキマーケット2026の記載なし。NazoLock単独のX・HPは検索で特定できなかった。今年の新作2点は候補に回した。Xに告知がある可能性あり。 X確認(10/25): 公式 @NazoLock_baton(プロフィールに「QuizKnock発のナゾトキ制作チーム」)が10/22にナゾトキマーケット2026出展を告知。QurioStore公式(@QurioStore_QK)の10/16の投稿で新作「Sandwich」をナゾマ(Bb8)で販売と確認。価格は投稿に記載なし。FUJI・Tumbleweed『Q』は今回の告知が見つからず候補のまま。 再収集(10/30 Web): QuizKnock のイベント一覧にナゾマ・Sandwich の記載なし。価格は埋まらず。 再収集(10/30 X): 10/27 の投稿で新作持ち帰り謎『OBENTO』、10/29 の投稿で新作グッズ『ナゾ付きケシゴム』のナゾマ先行販売を確認して追加(どちらも価格は告知なし)。Sandwich の価格も NazoLock・QurioStore(@QurioStore_QK)の10/24以降の投稿に見つからず null のまま。FUJI・Tumbleweed『Q』の告知なしで候補のまま。 再収集(10/31 X): 10/30 の「商品ラインナップ決定」画像で価格を確認(Sandwich 2,800円・ケシゴム700円・OBENTO限定2,000円)し、FUJI(候補から移動)・NazoPizza・折り紙ナゾ付きアクリルキーホルダー・maze maze maze・クリアファイル-BINGO- の5点を追加。ショッパー100円は商品に入れていない。 画像(10/31 Web): no22-4 はゲームマーケットのブースページ、no22-5 は2025年ナゾマのプレスリリース画像(同じNazoPizza、当時の価格は2,500円)から。no22-6〜8 は HP・ショップ・検索で見つからず(商品ごとの画像は X のラインナップ画像のみで、1枚に並ぶお品書きのため入れていない) 画像(11/1 X): no22-6〜8 は NazoLock の過去の商品告知(商品ごとの画像)から",
       "officialPatches": [],
       "products": [
         {
@@ -1745,12 +1745,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/G3cdHS7XEAAvTo2?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/1979095039557996742",
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -1775,12 +1779,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HDGPR6maQAE2U_n?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2034963171341926801",
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -1805,12 +1813,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HCI5knKakAAiZnf?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2029889732583510489",
+              "retrievedAt": "2026-11-01"
             }
           ]
         }
@@ -2451,7 +2463,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のHP欄はXのみ(Xは開いていない)。検索で見つかった公演情報(LAST ORDER等)はホール型公演で、持ち帰り謎の今回の出品は見つからなかった。Xを見れば取れそう。 X確認(10/25): 公式TSVのHP欄にあるXアカウント @_Crazy_Lemon_ のタイムライン(最新は10/14)を確認。ナゾトキマーケット2026の告知・お品書きなし(公演・チケットの告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): X 以外の情報源は見つからず、新しい告知なし。 再収集(10/30 X): 10/27 の投稿(画像1枚)で『CMY』1,300円・『コジコト』1,800円・『流石にダメでした...』2,200円と「and more.」を確認。いずれも会場限定価格。ブース Cc12。支払いは現金・クレジットカード・PayPay。コジコトは候補から商品へ移した。CMY・流石にダメでしたはカテゴリ不明のため other とした。「and more」の中身は告知なし。 画像(10/31 Web): no26-1〜3 は HP・ショップ・検索で見つからず(X の告知画像のみ)",
+      "notes": "公式のHP欄はXのみ(Xは開いていない)。検索で見つかった公演情報(LAST ORDER等)はホール型公演で、持ち帰り謎の今回の出品は見つからなかった。Xを見れば取れそう。 X確認(10/25): 公式TSVのHP欄にあるXアカウント @_Crazy_Lemon_ のタイムライン(最新は10/14)を確認。ナゾトキマーケット2026の告知・お品書きなし(公演・チケットの告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): X 以外の情報源は見つからず、新しい告知なし。 再収集(10/30 X): 10/27 の投稿(画像1枚)で『CMY』1,300円・『コジコト』1,800円・『流石にダメでした...』2,200円と「and more.」を確認。いずれも会場限定価格。ブース Cc12。支払いは現金・クレジットカード・PayPay。コジコトは候補から商品へ移した。CMY・流石にダメでしたはカテゴリ不明のため other とした。「and more」の中身は告知なし。 画像(10/31 Web): no26-1〜3 は HP・ショップ・検索で見つからず(X の告知画像のみ) 画像(11/1 X): no26-1,no26-2 は CrazyLemon の過去の商品告知から / no26-3 は団体がリポストした制作者の投稿の商品写真から",
       "officialPatches": [],
       "products": [
         {
@@ -2475,7 +2487,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HKXfbH_XcAA9zEp?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -2485,6 +2497,10 @@
             {
               "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/_Crazy_Lemon_/status/2108768132282380409",
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -2509,7 +2525,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HPuVG77b0AA9HKo?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -2519,6 +2535,10 @@
             {
               "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/_Crazy_Lemon_/status/2088426806047293882",
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -2543,7 +2563,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HDdayu8bYAArnRJ?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -2553,6 +2573,10 @@
             {
               "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/driving1224/status/2033193593444487317",
+              "retrievedAt": "2026-11-01"
             }
           ]
         }

@@ -1016,12 +1016,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVyNwORaAAAUpTl?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2116455136000184505",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no10",
@@ -1030,7 +1034,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1055,12 +1058,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVyNyPraYAAJoeF?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2116455136000184505",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no10",
@@ -1069,7 +1076,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1136,7 +1142,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/card_img/2111449625093935104/Cfe-oRHU?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -1145,7 +1151,7 @@
       },
       {
         "url": "https://x.com/atobi_PR/status/2111449634367480085",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "hashtags": [
@@ -1165,7 +1171,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1567,7 +1572,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/2d175f8da6ed4d38fc5b.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1580,7 +1585,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/68e040309183255fd0239bdd",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1589,7 +1594,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1614,7 +1618,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/48f179f95fe2c2719d49.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1627,7 +1631,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/653982ac2d2599068ca2d3ba",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1637,7 +1641,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1662,7 +1665,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/a61025f174a9f71c28b1.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1675,7 +1678,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/62e6daa9ac366147ed5e0327",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1684,7 +1687,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1709,7 +1711,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/c8f1d9fa3408b737acab.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1722,7 +1724,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/5ee2dcfbd26fa5765d4da43c",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1732,7 +1734,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1757,7 +1758,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/16fe0125b03f059ee4a4.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1770,7 +1771,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/5ee2dd80b5a42579c8fc4a99",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1780,7 +1781,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1805,7 +1805,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/GdoMUljXQAA8fNm?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -1815,6 +1815,10 @@
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/1862814950298960215",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1825,7 +1829,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3519,12 +3522,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G3cdHS7XEAAvTo2?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/1979095039557996742",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no22",
@@ -3534,7 +3541,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3559,12 +3565,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HDGPR6maQAE2U_n?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2034963171341926801",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no22",
@@ -3574,7 +3584,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3599,12 +3608,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HCI5knKakAAiZnf?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2029889732583510489",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no22",
@@ -3614,7 +3627,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4148,7 +4160,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HKXfbH_XcAA9zEp?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -4158,6 +4170,10 @@
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/_Crazy_Lemon_/status/2108768132282380409",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no26",
@@ -4166,8 +4182,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -4191,7 +4206,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HPuVG77b0AA9HKo?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -4201,6 +4216,10 @@
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/_Crazy_Lemon_/status/2088426806047293882",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no26",
@@ -4209,8 +4228,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -4234,7 +4252,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HDdayu8bYAArnRJ?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -4244,6 +4262,10 @@
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/driving1224/status/2033193593444487317",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no26",
@@ -4252,8 +4274,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -4667,7 +4688,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVrogu2agAAIXA3?format=jpg&name=small",
     "payment": [
       "現金",
       "PayPay"
@@ -4675,7 +4696,7 @@
     "sources": [
       {
         "url": "https://x.com/Another_Vision_/status/2115775666444714081",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no30",
@@ -4683,8 +4704,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5586,7 +5606,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HUWSjvKasAAuAaY?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -5596,6 +5616,10 @@
       {
         "url": "https://x.com/algo6le/status/2109253334754627861",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2109253149198598485",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5603,7 +5627,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5631,12 +5654,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HRcF--8bcAEi-D5?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2096176515658416447",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5645,7 +5672,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5673,12 +5699,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HRcGDY0a0AAdMnA?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2096177770833617000",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5687,7 +5717,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5715,12 +5744,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB-5mSAaMAAzaeH?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2026994276966789500",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5729,7 +5762,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5757,12 +5789,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB-5mSYbQAAlOdz?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2026994276966789500",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5771,7 +5807,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5799,12 +5834,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB-5mSBa0AAJPZ7?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2026994276966789500",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5813,7 +5852,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6176,7 +6214,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/FhlDbFFaUAA_ok4?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -6184,6 +6222,10 @@
       {
         "url": "https://x.com/K_dush2/status/2116485431772721605",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/K_dush2/status/1592378167259725824",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no41",
@@ -6191,8 +6233,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -7198,19 +7239,18 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVftchFacAAoNhD?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2116455138214703576",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7471,12 +7511,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV30X4ObwAAKs2A?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/MysteryJ_nazo/status/2116116095400804578",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no66",
@@ -7485,7 +7525,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7510,12 +7549,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV9EnOEaIAAtpma?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/MysteryJ_nazo/status/2116485800908972382",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no66",
@@ -7525,7 +7564,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7828,12 +7866,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVEScPJbIAA9Py7?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/waranazo/status/2112489981797429517",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no68",
@@ -7842,7 +7880,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7867,12 +7904,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVJkNgTakAAxKsp?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/waranazo/status/2112861365446779093",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no68",
@@ -7881,7 +7918,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -8023,12 +8059,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HU_2UyEbAAEDWsQ?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/waranazo/status/2112177592036167945",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no68",
@@ -8037,7 +8073,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -9325,7 +9360,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV8leImakAAfusf?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -9334,7 +9369,7 @@
       },
       {
         "url": "https://x.com/toykakeboze/status/2116451559777411404",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no75",
@@ -9343,7 +9378,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -10338,7 +10372,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVI1_GyboAApkI5?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -10348,6 +10382,10 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2113275431365529939",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2112861468970594761",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "hashtags": [
@@ -10374,7 +10412,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -10399,7 +10436,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVI3lGQbUAAHuXq?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -10409,6 +10446,10 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2113276690851901795",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2112876560223232055",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "hashtags": [
@@ -10435,7 +10476,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
