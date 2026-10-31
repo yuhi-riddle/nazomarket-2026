@@ -974,12 +974,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://takaraport.jp/img/goods/L/matoryoshika_2dcb37aaec2e4f5389b4e59ef6915dfe.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/g/gmatoryoshika/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no10",
@@ -988,7 +992,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1013,12 +1016,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVyNwORaAAAUpTl?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2116455136000184505",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no10",
@@ -1027,7 +1034,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1052,12 +1058,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVyNyPraYAAJoeF?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/real_takara/status/2116455136000184505",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no10",
@@ -1066,7 +1076,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1091,12 +1100,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://takaraport.jp/img/goods/L/nazotokibunko03_f91249968f884fc695abc23d50acf40d.png",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/g/gnazotokibunko03/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no10",
@@ -1105,7 +1118,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1130,7 +1142,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/card_img/2111449625093935104/Cfe-oRHU?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -1139,7 +1151,7 @@
       },
       {
         "url": "https://x.com/atobi_PR/status/2111449634367480085",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "hashtags": [
@@ -1159,7 +1171,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1424,12 +1435,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_12fba824e4724dc59ab7404617dc7051~mv2.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.xeoxy.com/news/20261025",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1445,7 +1456,6 @@
     "unconfirmed": [
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1470,12 +1480,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_6db0c11f22e841e1bc07db47d7c2105e~mv2.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.xeoxy.com/news/20261025",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1492,7 +1502,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1517,12 +1526,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_b0647faa92284f5f931ae6d0a32dd006~mv2.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.xeoxy.com/news/20261025",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1539,7 +1548,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1564,7 +1572,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/2d175f8da6ed4d38fc5b.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1577,7 +1585,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/68e040309183255fd0239bdd",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1586,7 +1594,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1611,7 +1618,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/48f179f95fe2c2719d49.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1624,7 +1631,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/653982ac2d2599068ca2d3ba",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1634,7 +1641,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1659,7 +1665,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/a61025f174a9f71c28b1.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1672,7 +1678,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/62e6daa9ac366147ed5e0327",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1681,7 +1687,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1706,7 +1711,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/c8f1d9fa3408b737acab.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1719,7 +1724,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/5ee2dcfbd26fa5765d4da43c",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1729,7 +1734,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1754,7 +1758,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/16fe0125b03f059ee4a4.jpg/fit=scale-down,w=1200",
     "payment": null,
     "sources": [
       {
@@ -1767,7 +1771,7 @@
       },
       {
         "url": "https://xeoxy.shop/items/5ee2dd80b5a42579c8fc4a99",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1777,7 +1781,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1802,7 +1805,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/GdoMUljXQAA8fNm?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -1812,6 +1815,10 @@
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/_XEOXY/status/1862814950298960215",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no12",
@@ -1822,7 +1829,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2374,11 +2380,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2018/10/p82.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project82/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2387,7 +2397,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2415,11 +2424,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2019/10/ml2_banner_1280x1000.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project90/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2428,7 +2441,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2456,11 +2468,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2021/09/8b865d4dab818549c58bf5f4be35de22.png",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project105/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2469,7 +2485,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2497,11 +2512,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/03/3a1e123bebe07d42e19e11374d65fa1f.jpeg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project124/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2510,7 +2529,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2538,11 +2556,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/02/yurimoriblog.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project122/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2551,7 +2573,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2579,11 +2600,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2025/12/book_main_strong_3bg.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project132/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2592,7 +2617,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2714,19 +2738,22 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.groupsne.co.jp/products/bg/bloodyantique/img/t_17_top.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.groupsne.co.jp/news/etc2026_event3.html",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://www.groupsne.co.jp/products/bg/bloodyantique/t_17.html",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no19",
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3410,12 +3437,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://img.gamemarket.jp/thumb_20260508_134253_FUJI@4x.png",
     "payment": null,
     "sources": [
       {
         "url": "https://gamemarket.jp/booth/6539",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -3428,7 +3455,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3453,11 +3479,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/bA6DclSDTwAEXp2BNqb7.png?w=600&h=600&a=1",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://www.atpress.ne.jp/news/1781874",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -3468,7 +3498,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3493,12 +3522,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G3cdHS7XEAAvTo2?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/1979095039557996742",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no22",
@@ -3508,7 +3541,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3533,12 +3565,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HDGPR6maQAE2U_n?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2034963171341926801",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no22",
@@ -3548,7 +3584,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3573,12 +3608,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HCI5knKakAAiZnf?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2029889732583510489",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no22",
@@ -3588,7 +3627,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3613,12 +3651,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/kD4ps5wVhm3QMuvHPD9A.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.zaikei.co.jp/releases/3652687/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://news.cube-soft.jp/article/4104883",
@@ -3636,7 +3674,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3661,12 +3698,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/XOUtsEJQrS2OaNJt8gGw.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.zaikei.co.jp/releases/3652687/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://news.cube-soft.jp/article/4104883",
@@ -3684,7 +3721,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3709,12 +3745,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/liROHgB7VEqq0KROCLMR.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.zaikei.co.jp/releases/3652687/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://news.cube-soft.jp/article/4104883",
@@ -3732,7 +3768,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3885,7 +3920,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-3.png",
     "payment": null,
     "sources": [
       {
@@ -3895,6 +3930,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-tan/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -3905,7 +3944,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3930,7 +3968,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1%E8%A1%A8%E7%B4%99%E3%82%A2%E3%82%AF%E3%82%AD%E3%83%BC%E4%BB%98%E3%81%8D.png",
     "payment": null,
     "sources": [
       {
@@ -3940,6 +3978,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-karubi/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -3950,7 +3992,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3975,7 +4016,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-1.png",
     "payment": null,
     "sources": [
       {
@@ -3985,6 +4026,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-rosu/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -3995,7 +4040,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4020,7 +4064,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_.png",
     "payment": null,
     "sources": [
       {
@@ -4030,6 +4074,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-horumon/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -4040,7 +4088,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4065,7 +4112,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-2.png",
     "payment": null,
     "sources": [
       {
@@ -4075,6 +4122,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-reba/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -4085,7 +4136,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4110,7 +4160,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HKXfbH_XcAA9zEp?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -4120,6 +4170,10 @@
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/_Crazy_Lemon_/status/2108768132282380409",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no26",
@@ -4128,8 +4182,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -4153,7 +4206,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HPuVG77b0AA9HKo?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -4163,6 +4216,10 @@
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/_Crazy_Lemon_/status/2088426806047293882",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no26",
@@ -4171,8 +4228,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -4196,7 +4252,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HDdayu8bYAArnRJ?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -4206,6 +4262,10 @@
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/driving1224/status/2033193593444487317",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no26",
@@ -4214,8 +4274,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -4490,11 +4549,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.atpress.ne.jp/attachments/BqrfkEZY9qpVdt2SUbWa.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/nazocafe/status/2116124948188336261",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://www.atpress.ne.jp/news/9567486",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -4505,7 +4568,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4626,7 +4688,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVrogu2agAAIXA3?format=jpg&name=small",
     "payment": [
       "現金",
       "PayPay"
@@ -4634,7 +4696,7 @@
     "sources": [
       {
         "url": "https://x.com/Another_Vision_/status/2115775666444714081",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no30",
@@ -4642,8 +4704,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5545,7 +5606,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HUWSjvKasAAuAaY?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -5555,6 +5616,10 @@
       {
         "url": "https://x.com/algo6le/status/2109253334754627861",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2109253149198598485",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5562,7 +5627,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5590,12 +5654,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HRcF--8bcAEi-D5?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2096176515658416447",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5604,7 +5672,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5632,12 +5699,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HRcGDY0a0AAdMnA?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2096177770833617000",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5646,7 +5717,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5674,12 +5744,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB-5mSAaMAAzaeH?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2026994276966789500",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5688,7 +5762,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5716,12 +5789,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB-5mSYbQAAlOdz?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2026994276966789500",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5730,7 +5807,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5758,12 +5834,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB-5mSBa0AAJPZ7?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2026994276966789500",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no38",
@@ -5772,7 +5852,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -6135,7 +6214,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/FhlDbFFaUAA_ok4?format=jpg&name=small",
     "payment": [
       "現金のみ"
     ],
@@ -6143,6 +6222,10 @@
       {
         "url": "https://x.com/K_dush2/status/2116485431772721605",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/K_dush2/status/1592378167259725824",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no41",
@@ -6150,8 +6233,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -7157,19 +7239,18 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVftchFacAAoNhD?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2116455138214703576",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7430,12 +7511,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV30X4ObwAAKs2A?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/MysteryJ_nazo/status/2116116095400804578",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no66",
@@ -7444,7 +7525,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7469,12 +7549,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV9EnOEaIAAtpma?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/MysteryJ_nazo/status/2116485800908972382",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no66",
@@ -7484,7 +7564,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7787,12 +7866,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVEScPJbIAA9Py7?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/waranazo/status/2112489981797429517",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no68",
@@ -7801,7 +7880,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7826,12 +7904,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVJkNgTakAAxKsp?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/waranazo/status/2112861365446779093",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no68",
@@ -7840,7 +7918,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7982,12 +8059,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HU_2UyEbAAEDWsQ?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/waranazo/status/2112177592036167945",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no68",
@@ -7996,7 +8073,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -9284,7 +9360,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV8leImakAAfusf?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -9293,7 +9369,7 @@
       },
       {
         "url": "https://x.com/toykakeboze/status/2116451559777411404",
-        "retrievedAt": "2026-10-31"
+        "retrievedAt": "2026-11-01"
       }
     ],
     "boothId": "no75",
@@ -9302,7 +9378,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -10297,7 +10372,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVI1_GyboAApkI5?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -10307,6 +10382,10 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2113275431365529939",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2112861468970594761",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "hashtags": [
@@ -10333,7 +10412,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -10358,7 +10436,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HVI3lGQbUAAHuXq?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -10368,6 +10446,10 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2113276690851901795",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2112876560223232055",
+        "retrievedAt": "2026-11-01"
       }
     ],
     "hashtags": [
@@ -10394,7 +10476,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },

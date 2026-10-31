@@ -474,6 +474,13 @@ describe("computeCoverage / formatCoverageMarkdown", () => {
     expect(md).toContain("no10");
     expect(md).toContain("タカラッシュ！");
   });
+  it("画像のない商品を数え、Markdown に一覧で出す", () => {
+    expect(cov.productsWithoutImage.map((p) => p.id)).toEqual(["no72-1"]);
+    const md = formatCoverageMarkdown(cov, { generatedAt: "2026-10-26", officialRetrievedAt: DATE });
+    expect(md).toContain("画像あり: 2/3（67%）");
+    expect(md).toContain("## 画像のない商品");
+    expect(md).toContain("- no72-1 新作キット");
+  });
   it("生成日（この表を作った日）と公式データの取得日を分けて書く", () => {
     const md = formatCoverageMarkdown(cov, { generatedAt: "2026-10-26", officialRetrievedAt: DATE });
     expect(md).toContain("生成日: 2026-10-26");

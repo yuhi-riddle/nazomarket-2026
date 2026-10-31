@@ -447,7 +447,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認 再収集(10/31 X): 10/31 の投稿で新作3点(簡単なパズル3,500円・Q.●▲★■拡張セット3,500円・Öoo×TOKIQIL コラボアパレル)を確認して products に追加。アパレルの価格は未発表。新作アパレルは5組の予定で、ほかの組の商品は未発表。",
+      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認 再収集(10/31 X): 10/31 の投稿で新作3点(簡単なパズル3,500円・Q.●▲★■拡張セット3,500円・Öoo×TOKIQIL コラボアパレル)を確認して products に追加。アパレルの価格は未発表。新作アパレルは5組の予定で、ほかの組の商品は未発表。 / 画像(10/31 Web): no04-1 は tokiqil.com(ブランド紹介のみ)・shop.tokiqil.com(429)・検索で見つからず 画像(11/1 X): no04-1 は X(トキキル・公演アカウント)でも商品単体の画像が見つからず(見つかったのは店頭ポスター画像のみ)",
       "officialPatches": [],
       "products": [
         {
@@ -819,7 +819,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": { "min": 100, "max": null },
+          "playMinutes": {
+            "min": 100,
+            "max": null
+          },
           "players": null,
           "isNew": true,
           "limited": null,
@@ -876,7 +879,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": { "min": 120, "max": null },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
           "players": null,
           "isNew": true,
           "limited": null,
@@ -1349,7 +1355,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPのニュース(〜2026-10-17)とTAKARA PORT(新作一覧・KARIUDO・SHERLOCKの各シリーズ)にナゾトキマーケット告知なし。公式のp06(KRAKEN)・p07(THE ALPHABET)はTAKARA PORT未掲載で新作と思われる。p08は2026-07-31から通販中。KARIUDOはvol.2がタカラポートで★5(玄人向け)表記 / X(@real_takara)のお品書き(2026-10-25投稿の画像)で確認。ブースBb7。KARIUDO vol.3 -KRAKEN-(p06)・THE ALPHABET(p07)は先行販売、ほかにマトリョーシカ・TSUMUGI・MAGICAL BATH POWDER・走れよメロス・SECRET=SHERLOCK(p08)を掲載。ナゾトキマーケット限定の20%OFFワゴンセールあり、「このほかにも商品多数」。候補のKARIUDO vol.2は画像に載っておらず候補のまま / 再収集(10/30 Web): 新しい告知なし。HPニュース(最新10/17)と TAKARA PORT には今回の告知・KRAKEN/THE ALPHABETの掲載なし。p08の価格2,600円は TAKARA PORT の表記と一致。お品書きの各価格に変更なし / 再収集(10/30 X): 10/25 のお品書き以降の新しい告知なし(@real_takara の10/24 以降の投稿は KRAKEN 告知と10/25 お品書きのみ)。価格の変更なし",
+      "notes": "HPのニュース(〜2026-10-17)とTAKARA PORT(新作一覧・KARIUDO・SHERLOCKの各シリーズ)にナゾトキマーケット告知なし。公式のp06(KRAKEN)・p07(THE ALPHABET)はTAKARA PORT未掲載で新作と思われる。p08は2026-07-31から通販中。KARIUDOはvol.2がタカラポートで★5(玄人向け)表記 / X(@real_takara)のお品書き(2026-10-25投稿の画像)で確認。ブースBb7。KARIUDO vol.3 -KRAKEN-(p06)・THE ALPHABET(p07)は先行販売、ほかにマトリョーシカ・TSUMUGI・MAGICAL BATH POWDER・走れよメロス・SECRET=SHERLOCK(p08)を掲載。ナゾトキマーケット限定の20%OFFワゴンセールあり、「このほかにも商品多数」。候補のKARIUDO vol.2は画像に載っておらず候補のまま / 再収集(10/30 Web): 新しい告知なし。HPニュース(最新10/17)と TAKARA PORT には今回の告知・KRAKEN/THE ALPHABETの掲載なし。p08の価格2,600円は TAKARA PORT の表記と一致。お品書きの各価格に変更なし / 再収集(10/30 X): 10/25 のお品書き以降の新しい告知なし(@real_takara の10/24 以降の投稿は KRAKEN 告知と10/25 お品書きのみ)。価格の変更なし / 画像(10/31 Web): no10-1,no10-4 は TAKARA PORT の商品ページから / no10-2,no10-3 は TAKARA PORT・HP・検索で見つからず(HPの告知は一覧画像のみ) 画像(11/1 X): no10-2,no10-3 は 11/1 の「魔法商品」告知(商品ごとの画像)から",
       "officialPatches": [
         {
           "id": "p06",
@@ -1478,12 +1484,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://takaraport.jp/img/goods/L/matoryoshika_2dcb37aaec2e4f5389b4e59ef6915dfe.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/real_takara/status/2114265713817133389",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://takaraport.jp/shop/g/gmatoryoshika/",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
@@ -1508,12 +1518,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HVyNwORaAAAUpTl?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/real_takara/status/2114265713817133389",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/real_takara/status/2116455136000184505",
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -1538,12 +1552,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HVyNyPraYAAJoeF?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/real_takara/status/2114265713817133389",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/real_takara/status/2116455136000184505",
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -1568,12 +1586,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://takaraport.jp/img/goods/L/nazotokibunko03_f91249968f884fc695abc23d50acf40d.png",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/real_takara/status/2114265713817133389",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://takaraport.jp/shop/g/gnazotokibunko03/",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }
@@ -1676,7 +1698,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPは会社紹介のみでお知らせ・ナゾトキマーケットの記載なし。BASEの物販ページに既存の持ち帰り謎9点(1,000〜2,000円、例: ELEVATOR HOUSE 2,000円、HOLE 1,800円)があるが、発売日・今回持参の記載がなく候補にも入れなかった。アットビの公式サイトは見つからず。Xで取れそう / X(@efex_info・@atobi_PR)確認済み。アットビの新作『逆転！クレーム百貨店』を持参(10/15投稿。もう1作は今回は見送り)。エフェックス側の商品名は見つからず。両社の商品を各1点以上買うと限定コラボ謎解きBOOKをプレゼント(商品ではなく特典。一部200円以下の課金要素あり)。ブースBa2 / 再収集(10/30 Web): 新しい告知なし。BASEショップ(efex.official.ec)に『逆転！クレーム百貨店』の掲載なく、価格はnullのまま / 再収集(10/30 X): @atobi_PR・@efex_info の10/24 以降の投稿に『逆転！クレーム百貨店』の価格・新情報なし(最新はパッケージ制作中の10/21 投稿)。価格はnullのまま",
+      "notes": "HPは会社紹介のみでお知らせ・ナゾトキマーケットの記載なし。BASEの物販ページに既存の持ち帰り謎9点(1,000〜2,000円、例: ELEVATOR HOUSE 2,000円、HOLE 1,800円)があるが、発売日・今回持参の記載がなく候補にも入れなかった。アットビの公式サイトは見つからず。Xで取れそう / X(@efex_info・@atobi_PR)確認済み。アットビの新作『逆転！クレーム百貨店』を持参(10/15投稿。もう1作は今回は見送り)。エフェックス側の商品名は見つからず。両社の商品を各1点以上買うと限定コラボ謎解きBOOKをプレゼント(商品ではなく特典。一部200円以下の課金要素あり)。ブースBa2 / 再収集(10/30 Web): 新しい告知なし。BASEショップ(efex.official.ec)に『逆転！クレーム百貨店』の掲載なく、価格はnullのまま / 再収集(10/30 X): @atobi_PR・@efex_info の10/24 以降の投稿に『逆転！クレーム百貨店』の価格・新情報なし(最新はパッケージ制作中の10/21 投稿)。価格はnullのまま / 画像(10/31 Web): no11-1 は efex.official.ec(BASE)・検索で見つからず 画像(11/1 X): no11-1 は 10/17 の投票投稿のメインビジュアル案(card_img。10/21 の投稿で採用された『前者』の案)から",
       "officialPatches": [],
       "products": [
         {
@@ -1700,7 +1722,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/card_img/2111449625093935104/Cfe-oRHU?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -1709,7 +1731,7 @@
             },
             {
               "url": "https://x.com/atobi_PR/status/2111449634367480085",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-11-01"
             }
           ],
           "hashtags": [
@@ -1806,7 +1828,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPのお知らせ(〜2026-09-11)にナゾトキマーケットの記載なし。通販のxeoxy.shopは Chrome で確認済み。2026-05-23発売の『謎が好きなら、作ってよ！』は出展告知で販売が確認できたので商品に移した。Xで取れそう / 出展告知(xeoxy.com/news/20261025)で販売ラインナップを確認。ブースBb2、全21商品(掲載は13点)、全30種予定のゼオガチャ、3,000円ごとに1回のHAPPY LOTTERYあり。最速先行販売は迷路の塔・COUNT・→［２］→。価格は xeoxy.shop の表記(新作3点は店舗・オンライン販売が11月中旬予定の先行販売品) / 再収集(10/30 Web): 新しい告知なし。出展告知(xeoxy.com/news/20261025)はお知らせ一覧の最新のまま。『ナゾノミー症候群 簡易検査キット』の価格は見つからず、xeoxy.shopは今回403で再確認できなかった 再収集(10/30 公式): 公式に追加された商品と重なるため no12-1→p53、no12-2→p52、no12-3→p51 に付け替えた。 / 再収集(10/30 X): 10/24 以降の @_XEOXY の新規告知なし(10/25 出展情報のみ)。p51〜p53 は xeoxy.shop の商品ページ(10/30 に Chrome で確認)で「ナゾトキマーケット2026 先行販売商品・店舗/オンライン販売は11月中旬予定」「→［２］→ 2,500円・COUNT 2,200円・迷路の塔 3,000円」と確認(公式一覧と同額)。難易度・所要時間・人数は p52/p53 とも告知なしで unknown/null のまま。ナゾノミー症候群 簡易検査キットは xeoxy.shop 一覧になく、X・xeoxy.com でも価格の記載なし(no12-13 は null のまま)",
+      "notes": "HPのお知らせ(〜2026-09-11)にナゾトキマーケットの記載なし。通販のxeoxy.shopは Chrome で確認済み。2026-05-23発売の『謎が好きなら、作ってよ！』は出展告知で販売が確認できたので商品に移した。Xで取れそう / 出展告知(xeoxy.com/news/20261025)で販売ラインナップを確認。ブースBb2、全21商品(掲載は13点)、全30種予定のゼオガチャ、3,000円ごとに1回のHAPPY LOTTERYあり。最速先行販売は迷路の塔・COUNT・→［２］→。価格は xeoxy.shop の表記(新作3点は店舗・オンライン販売が11月中旬予定の先行販売品) / 再収集(10/30 Web): 新しい告知なし。出展告知(xeoxy.com/news/20261025)はお知らせ一覧の最新のまま。『ナゾノミー症候群 簡易検査キット』の価格は見つからず、xeoxy.shopは今回403で再確認できなかった 再収集(10/30 公式): 公式に追加された商品と重なるため no12-1→p53、no12-2→p52、no12-3→p51 に付け替えた。 / 再収集(10/30 X): 10/24 以降の @_XEOXY の新規告知なし(10/25 出展情報のみ)。p51〜p53 は xeoxy.shop の商品ページ(10/30 に Chrome で確認)で「ナゾトキマーケット2026 先行販売商品・店舗/オンライン販売は11月中旬予定」「→［２］→ 2,500円・COUNT 2,200円・迷路の塔 3,000円」と確認(公式一覧と同額)。難易度・所要時間・人数は p52/p53 とも告知なしで unknown/null のまま。ナゾノミー症候群 簡易検査キットは xeoxy.shop 一覧になく、X・xeoxy.com でも価格の記載なし(no12-13 は null のまま) / 画像(10/31 Web): no12-5,no12-6,no12-7 は xeoxy.com トップの GOODS 欄から / no12-8〜13 は xeoxy.shop が403で見られず、xeoxy.com にも掲載なし 画像(11/1 X): no12-8〜12 は xeoxy.shop(Web パスでは403だったが Chrome で表示できた)の商品ページの画像から no12-13 は2024年の発売告知の商品画像から。",
       "officialPatches": [
         {
           "id": "p53",
@@ -2013,12 +2035,12 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://static.wixstatic.com/media/6c22bb_12fba824e4724dc59ab7404617dc7051~mv2.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-30"
+              "retrievedAt": "2026-10-31"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -2051,12 +2073,12 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://static.wixstatic.com/media/6c22bb_6db0c11f22e841e1bc07db47d7c2105e~mv2.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-30"
+              "retrievedAt": "2026-10-31"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -2089,12 +2111,12 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://static.wixstatic.com/media/6c22bb_b0647faa92284f5f931ae6d0a32dd006~mv2.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
-              "retrievedAt": "2026-10-30"
+              "retrievedAt": "2026-10-31"
             },
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -2127,7 +2149,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/2d175f8da6ed4d38fc5b.jpg/fit=scale-down,w=1200",
           "payment": null,
           "sources": [
             {
@@ -2140,7 +2162,7 @@
             },
             {
               "url": "https://xeoxy.shop/items/68e040309183255fd0239bdd",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -2165,7 +2187,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/48f179f95fe2c2719d49.jpg/fit=scale-down,w=1200",
           "payment": null,
           "sources": [
             {
@@ -2178,7 +2200,7 @@
             },
             {
               "url": "https://xeoxy.shop/items/653982ac2d2599068ca2d3ba",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -2203,7 +2225,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/a61025f174a9f71c28b1.jpg/fit=scale-down,w=1200",
           "payment": null,
           "sources": [
             {
@@ -2216,7 +2238,7 @@
             },
             {
               "url": "https://xeoxy.shop/items/62e6daa9ac366147ed5e0327",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -2241,7 +2263,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/c8f1d9fa3408b737acab.jpg/fit=scale-down,w=1200",
           "payment": null,
           "sources": [
             {
@@ -2254,7 +2276,7 @@
             },
             {
               "url": "https://xeoxy.shop/items/5ee2dcfbd26fa5765d4da43c",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -2279,7 +2301,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/16fe0125b03f059ee4a4.jpg/fit=scale-down,w=1200",
           "payment": null,
           "sources": [
             {
@@ -2292,7 +2314,7 @@
             },
             {
               "url": "https://xeoxy.shop/items/5ee2dd80b5a42579c8fc4a99",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -2317,7 +2339,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/GdoMUljXQAA8fNm?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -2327,6 +2349,10 @@
             {
               "url": "https://x.com/_XEOXY/status/2114326114047053912",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/1862814950298960215",
+              "retrievedAt": "2026-11-01"
             }
           ]
         }
