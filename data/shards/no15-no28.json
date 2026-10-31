@@ -281,7 +281,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式ブログ(10/21・10/23。投稿の年は画面に出ないが2026年11月発売と書かれているため2026年と判断)で先行販売の新作3点を告知。価格は3点とも記載なし。3作セットもあり(価格不明)。取り置き予約はフォーム(短縮URL)経由で、フォームは開いていない。ブースはBb9。幻境堂の画像は前年のものの可能性があるため使わなかった。 X確認(10/25): @NAZOGUMI の10/23の投稿で先行販売の新作3点(ユリイカの森vol.2・マレーシア・スプリット・幻境堂新作)と3作セット、取り置き予約、ブースBb9を確認。価格は投稿にも記載なし。 再収集(10/30 Web): 公式ブログ3記事を再確認したが、価格・3作セット価格・所要時間の記載はまだない。新しい告知なし。 再収集(10/30 公式): 公式に追加された商品と重なるため no17-1→p35、no17-2→p34、no17-3→p33 に付け替えた。 再収集(10/30 X): 10/24以降の @NAZOGUMI の投稿は10/28(メルマガ用の募集)のみで、ナゾマの新しい告知なし。価格は公式(10/30取得)に3点とも載ったので、officialPatches の priceNote の「価格は告知に記載なし」を直した。 再収集(10/31 X): 10/30 の「商品一覧公開」画像で全9作の価格・プレイ時間を確認。公式の新作3点(p33〜p35)の priceNote を会場限定価格に直し、公式にない6作(ミステリーレターvol.1〜3・2人の公開捜査・ユリイカvol.1・通りめ)を products に追加(各プレイ時間は画像の表記「〜時間+α」の下限〜上限)。ショッパー等の非売品は入れていない。",
+      "notes": "公式ブログ(10/21・10/23。投稿の年は画面に出ないが2026年11月発売と書かれているため2026年と判断)で先行販売の新作3点を告知。価格は3点とも記載なし。3作セットもあり(価格不明)。取り置き予約はフォーム(短縮URL)経由で、フォームは開いていない。ブースはBb9。幻境堂の画像は前年のものの可能性があるため使わなかった。 X確認(10/25): @NAZOGUMI の10/23の投稿で先行販売の新作3点(ユリイカの森vol.2・マレーシア・スプリット・幻境堂新作)と3作セット、取り置き予約、ブースBb9を確認。価格は投稿にも記載なし。 再収集(10/30 Web): 公式ブログ3記事を再確認したが、価格・3作セット価格・所要時間の記載はまだない。新しい告知なし。 再収集(10/30 公式): 公式に追加された商品と重なるため no17-1→p35、no17-2→p34、no17-3→p33 に付け替えた。 再収集(10/30 X): 10/24以降の @NAZOGUMI の投稿は10/28(メルマガ用の募集)のみで、ナゾマの新しい告知なし。価格は公式(10/30取得)に3点とも載ったので、officialPatches の priceNote の「価格は告知に記載なし」を直した。 再収集(10/31 X): 10/30 の「商品一覧公開」画像で全9作の価格・プレイ時間を確認。公式の新作3点(p33〜p35)の priceNote を会場限定価格に直し、公式にない6作(ミステリーレターvol.1〜3・2人の公開捜査・ユリイカvol.1・通りめ)を products に追加(各プレイ時間は画像の表記「〜時間+α」の下限〜上限)。ショッパー等の非売品は入れていない。 画像(10/31 Web): no17-4〜9 は HP(nazotoki-project.com)の各作品ページのキービジュアルから",
       "officialPatches": [
         {
           "id": "p35",
@@ -410,11 +410,15 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2018/10/p82.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://nazotoki-project.com/event/project82/",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -443,11 +447,15 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2019/10/ml2_banner_1280x1000.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://nazotoki-project.com/event/project90/",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -476,11 +484,15 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2021/09/8b865d4dab818549c58bf5f4be35de22.png",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://nazotoki-project.com/event/project105/",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -509,11 +521,15 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/03/3a1e123bebe07d42e19e11374d65fa1f.jpeg",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://nazotoki-project.com/event/project124/",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -542,11 +558,15 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/02/yurimoriblog.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://nazotoki-project.com/event/project122/",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -575,11 +595,15 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2025/12/book_main_strong_3bg.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://nazotoki-project.com/event/project132/",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -764,7 +788,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式サイトのピックアップ欄に「ナゾトキマーケット先行作品」として1点掲載。イベント出展情報のまとめ(2026-09-10)には出品作・ブース番号の記載なし。商品ページ自体に先行販売の記載はない(トップの表示のみが根拠)。 X確認(10/25): @GroupSNE の10/18の投稿で『ナゾトキマーケット2026』への出展を確認。商品名・価格・お品書きの告知は見つからず(@SNE_BG も同様)。 再収集(10/30 Web): グループSNE の出展ページ(ブースBa3)で新作『そして誰もいなくなる？』(11/06発売)を確認して商品に追加。「ナゾトキ作品を数多く販売」とあるが個別の作品名・価格は書かれていない。 再収集(10/30 X): 10/27 の @GroupSNE の投稿でBa3での出展と「先行・新作を含めてナゾトキ作品も販売」を確認したが、作品名・価格の追加なし。",
+      "notes": "公式サイトのピックアップ欄に「ナゾトキマーケット先行作品」として1点掲載。イベント出展情報のまとめ(2026-09-10)には出品作・ブース番号の記載なし。商品ページ自体に先行販売の記載はない(トップの表示のみが根拠)。 X確認(10/25): @GroupSNE の10/18の投稿で『ナゾトキマーケット2026』への出展を確認。商品名・価格・お品書きの告知は見つからず(@SNE_BG も同様)。 再収集(10/30 Web): グループSNE の出展ページ(ブースBa3)で新作『そして誰もいなくなる？』(11/06発売)を確認して商品に追加。「ナゾトキ作品を数多く販売」とあるが個別の作品名・価格は書かれていない。 再収集(10/30 X): 10/27 の @GroupSNE の投稿でBa3での出展と「先行・新作を含めてナゾトキ作品も販売」を確認したが、作品名・価格の追加なし。 画像(10/31 Web): no19-2 は HP の商品ページ(t_17.html)の表紙画像から",
       "officialPatches": [],
       "products": [
         {
@@ -832,12 +856,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://www.groupsne.co.jp/products/bg/bloodyantique/img/t_17_top.png",
           "payment": null,
           "sources": [
             {
               "url": "https://www.groupsne.co.jp/news/etc2026_event3.html",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://www.groupsne.co.jp/products/bg/bloodyantique/t_17.html",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }
@@ -1482,7 +1510,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のHP欄が空。QuizKnockのサイトにナゾトキマーケット2026の記載なし。NazoLock単独のX・HPは検索で特定できなかった。今年の新作2点は候補に回した。Xに告知がある可能性あり。 X確認(10/25): 公式 @NazoLock_baton(プロフィールに「QuizKnock発のナゾトキ制作チーム」)が10/22にナゾトキマーケット2026出展を告知。QurioStore公式(@QurioStore_QK)の10/16の投稿で新作「Sandwich」をナゾマ(Bb8)で販売と確認。価格は投稿に記載なし。FUJI・Tumbleweed『Q』は今回の告知が見つからず候補のまま。 再収集(10/30 Web): QuizKnock のイベント一覧にナゾマ・Sandwich の記載なし。価格は埋まらず。 再収集(10/30 X): 10/27 の投稿で新作持ち帰り謎『OBENTO』、10/29 の投稿で新作グッズ『ナゾ付きケシゴム』のナゾマ先行販売を確認して追加(どちらも価格は告知なし)。Sandwich の価格も NazoLock・QurioStore(@QurioStore_QK)の10/24以降の投稿に見つからず null のまま。FUJI・Tumbleweed『Q』の告知なしで候補のまま。 再収集(10/31 X): 10/30 の「商品ラインナップ決定」画像で価格を確認(Sandwich 2,800円・ケシゴム700円・OBENTO限定2,000円)し、FUJI(候補から移動)・NazoPizza・折り紙ナゾ付きアクリルキーホルダー・maze maze maze・クリアファイル-BINGO- の5点を追加。ショッパー100円は商品に入れていない。",
+      "notes": "公式のHP欄が空。QuizKnockのサイトにナゾトキマーケット2026の記載なし。NazoLock単独のX・HPは検索で特定できなかった。今年の新作2点は候補に回した。Xに告知がある可能性あり。 X確認(10/25): 公式 @NazoLock_baton(プロフィールに「QuizKnock発のナゾトキ制作チーム」)が10/22にナゾトキマーケット2026出展を告知。QurioStore公式(@QurioStore_QK)の10/16の投稿で新作「Sandwich」をナゾマ(Bb8)で販売と確認。価格は投稿に記載なし。FUJI・Tumbleweed『Q』は今回の告知が見つからず候補のまま。 再収集(10/30 Web): QuizKnock のイベント一覧にナゾマ・Sandwich の記載なし。価格は埋まらず。 再収集(10/30 X): 10/27 の投稿で新作持ち帰り謎『OBENTO』、10/29 の投稿で新作グッズ『ナゾ付きケシゴム』のナゾマ先行販売を確認して追加(どちらも価格は告知なし)。Sandwich の価格も NazoLock・QurioStore(@QurioStore_QK)の10/24以降の投稿に見つからず null のまま。FUJI・Tumbleweed『Q』の告知なしで候補のまま。 再収集(10/31 X): 10/30 の「商品ラインナップ決定」画像で価格を確認(Sandwich 2,800円・ケシゴム700円・OBENTO限定2,000円)し、FUJI(候補から移動)・NazoPizza・折り紙ナゾ付きアクリルキーホルダー・maze maze maze・クリアファイル-BINGO- の5点を追加。ショッパー100円は商品に入れていない。 画像(10/31 Web): no22-4 はゲームマーケットのブースページ、no22-5 は2025年ナゾマのプレスリリース画像(同じNazoPizza、当時の価格は2,500円)から。no22-6〜8 は HP・ショップ・検索で見つからず(商品ごとの画像は X のラインナップ画像のみで、1枚に並ぶお品書きのため入れていない)",
       "officialPatches": [],
       "products": [
         {
@@ -1649,12 +1677,12 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://img.gamemarket.jp/thumb_20260508_134253_FUJI@4x.png",
           "payment": null,
           "sources": [
             {
               "url": "https://gamemarket.jp/booth/6539",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-31"
             },
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -1683,11 +1711,15 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://newscast.jp/attachments/bA6DclSDTwAEXp2BNqb7.png?w=600&h=600&a=1",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://www.atpress.ne.jp/news/1781874",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -1860,7 +1892,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式サイトには公式オリジナルグッズの商品名・価格がなく、SCRAPのプレスリリース(zaikei掲載)で3点を確認。各日の販売数・個数制限の記載なし。開催記念の謎付きTシャツは特典付きチケットの特典で単体販売なしのため入れていない。 X確認(10/25): 主催のSCRAP公式 @realdgame の10/7の投稿に「公式ブース限定グッズ情報も公開中」とあるが、グッズ名・価格は特設サイトの情報と同じで、追加の商品情報は見つからず。 再収集(10/30 Web): 特設サイトに追加のグッズ情報なし。商品は変更なし。 再収集(10/30 X): 10/28 の @realdgame の投稿は特設サイトの商品一覧(56種)の案内のみで、公式グッズ3点の追加情報・変更なし。",
+      "notes": "公式サイトには公式オリジナルグッズの商品名・価格がなく、SCRAPのプレスリリース(zaikei掲載)で3点を確認。各日の販売数・個数制限の記載なし。開催記念の謎付きTシャツは特典付きチケットの特典で単体販売なしのため入れていない。 X確認(10/25): 主催のSCRAP公式 @realdgame の10/7の投稿に「公式ブース限定グッズ情報も公開中」とあるが、グッズ名・価格は特設サイトの情報と同じで、追加の商品情報は見つからず。 再収集(10/30 Web): 特設サイトに追加のグッズ情報なし。商品は変更なし。 再収集(10/30 X): 10/28 の @realdgame の投稿は特設サイトの商品一覧(56種)の案内のみで、公式グッズ3点の追加情報・変更なし。 画像(10/31 Web): no23-1〜3 は SCRAP のプレスリリース(zaikei掲載)の商品画像から。ステッカーセットは正方形ステッカーの画像、トートバッグはナチュラルの画像(ネイビーもあり)",
       "officialPatches": [],
       "products": [
         {
@@ -1884,12 +1916,12 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://newscast.jp/attachments/kD4ps5wVhm3QMuvHPD9A.png",
           "payment": null,
           "sources": [
             {
               "url": "https://www.zaikei.co.jp/releases/3652687/",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-31"
             },
             {
               "url": "https://news.cube-soft.jp/article/4104883",
@@ -1922,12 +1954,12 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://newscast.jp/attachments/XOUtsEJQrS2OaNJt8gGw.png",
           "payment": null,
           "sources": [
             {
               "url": "https://www.zaikei.co.jp/releases/3652687/",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-31"
             },
             {
               "url": "https://news.cube-soft.jp/article/4104883",
@@ -1960,12 +1992,12 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://newscast.jp/attachments/liROHgB7VEqq0KROCLMR.png",
           "payment": null,
           "sources": [
             {
               "url": "https://www.zaikei.co.jp/releases/3652687/",
-              "retrievedAt": "2026-10-25"
+              "retrievedAt": "2026-10-31"
             },
             {
               "url": "https://news.cube-soft.jp/article/4104883",
@@ -2156,7 +2188,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "HPのお知らせ(2026-09-20のリニューアルのみ)とショップにナゾトキマーケット2026の記載なし。検索でも今回の出品は見つからなかった。Xに告知がある可能性あり。 X確認(10/25): @tanteijelly の10/13の投稿で「ナゾトキマーケット2026に参戦」「焼肉謎全種揃いました」と告知。焼肉謎シリーズは全5種(タン・カルビ・ロース・ホルモン・レバー)。ナゾマでの価格・仕様(謎のみ800円/アクキー付き1,500円のどちらか)は告知なしのため価格は null。 再収集(10/30 Web): HP とショップにナゾマの告知なし。焼肉謎5種の価格は埋まらず(通販価格のみ)。 再収集(10/30 X): @tanteijelly の10/24以降の投稿は怪談ナイト・空き家謎解きなどで、ナゾマの新しい告知なし(10/13 の告知のみ)。固定ポストは寄付の告知。焼肉謎の価格は埋まらず。",
+      "notes": "HPのお知らせ(2026-09-20のリニューアルのみ)とショップにナゾトキマーケット2026の記載なし。検索でも今回の出品は見つからなかった。Xに告知がある可能性あり。 X確認(10/25): @tanteijelly の10/13の投稿で「ナゾトキマーケット2026に参戦」「焼肉謎全種揃いました」と告知。焼肉謎シリーズは全5種(タン・カルビ・ロース・ホルモン・レバー)。ナゾマでの価格・仕様(謎のみ800円/アクキー付き1,500円のどちらか)は告知なしのため価格は null。 再収集(10/30 Web): HP とショップにナゾマの告知なし。焼肉謎5種の価格は埋まらず(通販価格のみ)。 再収集(10/30 X): @tanteijelly の10/24以降の投稿は怪談ナイト・空き家謎解きなどで、ナゾマの新しい告知なし(10/13 の告知のみ)。固定ポストは寄付の告知。焼肉謎の価格は埋まらず。 画像(10/31 Web): no25-1〜5 は HP ショップの各商品ページ(アクキー付きの版)の画像から。ナゾマでの販売が「謎のみ」か「アクキー付き」かは不明のまま",
       "officialPatches": [],
       "products": [
         {
@@ -2180,7 +2212,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-3.png",
           "payment": null,
           "sources": [
             {
@@ -2190,6 +2222,10 @@
             {
               "url": "https://x.com/tanteijelly/status/2095473180953780601",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.tanteijelly.com/product/yakinikunazo-tan/",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
@@ -2214,7 +2250,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1%E8%A1%A8%E7%B4%99%E3%82%A2%E3%82%AF%E3%82%AD%E3%83%BC%E4%BB%98%E3%81%8D.png",
           "payment": null,
           "sources": [
             {
@@ -2224,6 +2260,10 @@
             {
               "url": "https://x.com/tanteijelly/status/2095473180953780601",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.tanteijelly.com/product/yakinikunazo-karubi/",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
@@ -2248,7 +2288,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-1.png",
           "payment": null,
           "sources": [
             {
@@ -2258,6 +2298,10 @@
             {
               "url": "https://x.com/tanteijelly/status/2095473180953780601",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.tanteijelly.com/product/yakinikunazo-rosu/",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
@@ -2282,7 +2326,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_.png",
           "payment": null,
           "sources": [
             {
@@ -2292,6 +2336,10 @@
             {
               "url": "https://x.com/tanteijelly/status/2095473180953780601",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.tanteijelly.com/product/yakinikunazo-horumon/",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
@@ -2316,7 +2364,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-2.png",
           "payment": null,
           "sources": [
             {
@@ -2326,6 +2374,10 @@
             {
               "url": "https://x.com/tanteijelly/status/2095473180953780601",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.tanteijelly.com/product/yakinikunazo-reba/",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }
@@ -2399,7 +2451,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のHP欄はXのみ(Xは開いていない)。検索で見つかった公演情報(LAST ORDER等)はホール型公演で、持ち帰り謎の今回の出品は見つからなかった。Xを見れば取れそう。 X確認(10/25): 公式TSVのHP欄にあるXアカウント @_Crazy_Lemon_ のタイムライン(最新は10/14)を確認。ナゾトキマーケット2026の告知・お品書きなし(公演・チケットの告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): X 以外の情報源は見つからず、新しい告知なし。 再収集(10/30 X): 10/27 の投稿(画像1枚)で『CMY』1,300円・『コジコト』1,800円・『流石にダメでした...』2,200円と「and more.」を確認。いずれも会場限定価格。ブース Cc12。支払いは現金・クレジットカード・PayPay。コジコトは候補から商品へ移した。CMY・流石にダメでしたはカテゴリ不明のため other とした。「and more」の中身は告知なし。",
+      "notes": "公式のHP欄はXのみ(Xは開いていない)。検索で見つかった公演情報(LAST ORDER等)はホール型公演で、持ち帰り謎の今回の出品は見つからなかった。Xを見れば取れそう。 X確認(10/25): 公式TSVのHP欄にあるXアカウント @_Crazy_Lemon_ のタイムライン(最新は10/14)を確認。ナゾトキマーケット2026の告知・お品書きなし(公演・チケットの告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): X 以外の情報源は見つからず、新しい告知なし。 再収集(10/30 X): 10/27 の投稿(画像1枚)で『CMY』1,300円・『コジコト』1,800円・『流石にダメでした...』2,200円と「and more.」を確認。いずれも会場限定価格。ブース Cc12。支払いは現金・クレジットカード・PayPay。コジコトは候補から商品へ移した。CMY・流石にダメでしたはカテゴリ不明のため other とした。「and more」の中身は告知なし。 画像(10/31 Web): no26-1〜3 は HP・ショップ・検索で見つからず(X の告知画像のみ)",
       "officialPatches": [],
       "products": [
         {

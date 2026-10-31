@@ -974,12 +974,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://takaraport.jp/img/goods/L/matoryoshika_2dcb37aaec2e4f5389b4e59ef6915dfe.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/g/gmatoryoshika/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no10",
@@ -988,7 +992,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1091,12 +1094,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://takaraport.jp/img/goods/L/nazotokibunko03_f91249968f884fc695abc23d50acf40d.png",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://takaraport.jp/shop/g/gnazotokibunko03/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no10",
@@ -1105,7 +1112,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1424,12 +1430,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_12fba824e4724dc59ab7404617dc7051~mv2.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.xeoxy.com/news/20261025",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1445,7 +1451,6 @@
     "unconfirmed": [
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1470,12 +1475,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_6db0c11f22e841e1bc07db47d7c2105e~mv2.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.xeoxy.com/news/20261025",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1492,7 +1497,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1517,12 +1521,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_b0647faa92284f5f931ae6d0a32dd006~mv2.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.xeoxy.com/news/20261025",
-        "retrievedAt": "2026-10-30"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/_XEOXY/status/2114326114047053912",
@@ -1539,7 +1543,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2374,11 +2377,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2018/10/p82.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project82/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2387,7 +2394,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2415,11 +2421,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2019/10/ml2_banner_1280x1000.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project90/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2428,7 +2438,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2456,11 +2465,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2021/09/8b865d4dab818549c58bf5f4be35de22.png",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project105/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2469,7 +2482,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2497,11 +2509,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/03/3a1e123bebe07d42e19e11374d65fa1f.jpeg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project124/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2510,7 +2526,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2538,11 +2553,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/02/yurimoriblog.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project122/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2551,7 +2570,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2579,11 +2597,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2025/12/book_main_strong_3bg.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://nazotoki-project.com/event/project132/",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -2592,7 +2614,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -2714,19 +2735,22 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.groupsne.co.jp/products/bg/bloodyantique/img/t_17_top.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.groupsne.co.jp/news/etc2026_event3.html",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://www.groupsne.co.jp/products/bg/bloodyantique/t_17.html",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no19",
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3410,12 +3434,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://img.gamemarket.jp/thumb_20260508_134253_FUJI@4x.png",
     "payment": null,
     "sources": [
       {
         "url": "https://gamemarket.jp/booth/6539",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -3428,7 +3452,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3453,11 +3476,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/bA6DclSDTwAEXp2BNqb7.png?w=600&h=600&a=1",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://www.atpress.ne.jp/news/1781874",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -3468,7 +3495,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3613,12 +3639,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/kD4ps5wVhm3QMuvHPD9A.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.zaikei.co.jp/releases/3652687/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://news.cube-soft.jp/article/4104883",
@@ -3636,7 +3662,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3661,12 +3686,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/XOUtsEJQrS2OaNJt8gGw.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.zaikei.co.jp/releases/3652687/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://news.cube-soft.jp/article/4104883",
@@ -3684,7 +3709,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3709,12 +3733,12 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://newscast.jp/attachments/liROHgB7VEqq0KROCLMR.png",
     "payment": null,
     "sources": [
       {
         "url": "https://www.zaikei.co.jp/releases/3652687/",
-        "retrievedAt": "2026-10-25"
+        "retrievedAt": "2026-10-31"
       },
       {
         "url": "https://news.cube-soft.jp/article/4104883",
@@ -3732,7 +3756,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3885,7 +3908,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-3.png",
     "payment": null,
     "sources": [
       {
@@ -3895,6 +3918,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-tan/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -3905,7 +3932,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3930,7 +3956,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1%E8%A1%A8%E7%B4%99%E3%82%A2%E3%82%AF%E3%82%AD%E3%83%BC%E4%BB%98%E3%81%8D.png",
     "payment": null,
     "sources": [
       {
@@ -3940,6 +3966,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-karubi/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -3950,7 +3980,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -3975,7 +4004,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-1.png",
     "payment": null,
     "sources": [
       {
@@ -3985,6 +4014,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-rosu/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -3995,7 +4028,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4020,7 +4052,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_.png",
     "payment": null,
     "sources": [
       {
@@ -4030,6 +4062,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-horumon/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -4040,7 +4076,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4065,7 +4100,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.tanteijelly.com/wp-content/uploads/2026/07/00_1_-2.png",
     "payment": null,
     "sources": [
       {
@@ -4075,6 +4110,10 @@
       {
         "url": "https://x.com/tanteijelly/status/2095473180953780601",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://www.tanteijelly.com/product/yakinikunazo-reba/",
+        "retrievedAt": "2026-10-31"
       }
     ],
     "boothId": "no25",
@@ -4085,7 +4124,6 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4490,11 +4528,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://www.atpress.ne.jp/attachments/BqrfkEZY9qpVdt2SUbWa.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/nazocafe/status/2116124948188336261",
+        "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://www.atpress.ne.jp/news/9567486",
         "retrievedAt": "2026-10-31"
       }
     ],
@@ -4505,7 +4547,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
