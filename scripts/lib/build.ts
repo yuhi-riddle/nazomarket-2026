@@ -449,6 +449,7 @@ export type Coverage = {
   boothsWithoutProducts: Booth[];
   boothsOnlyOfficial: Booth[];
   boothsWithoutX: number;
+  productsWithoutImage: Product[];
 };
 
 function percent(numerator: number, denominator: number): number {
@@ -484,6 +485,7 @@ export function computeCoverage(booths: Booth[], products: Product[]): Coverage 
     boothsWithoutProducts: booths.filter((booth) => (productsByBooth.get(booth.id) ?? 0) === 0),
     boothsOnlyOfficial: booths.filter((booth) => booth.checkedSources.every((source) => source === "official")),
     boothsWithoutX: booths.filter((booth) => !booth.checkedSources.includes("x")).length,
+    productsWithoutImage: products.filter((product) => product.imageUrl === null),
   };
 }
 
@@ -496,6 +498,7 @@ export function formatCoverageMarkdown(
   coverage: Coverage,
   dates: { generatedAt: string; officialRetrievedAt: string },
 ): string {
+  const imageCount = coverage.productCount - coverage.productsWithoutImage.length;
   return [
     "# データ収集カバレッジ",
     "",
@@ -509,6 +512,7 @@ export function formatCoverageMarkdown(
     `難易度あり: ${coverage.difficultyCount}/${coverage.productCount}（${coverage.difficultyRate}%）`,
     `- 公式: ${coverage.withDifficulty.official}件`,
     `- 推定: ${coverage.withDifficulty.estimated}件`,
+    `画像あり: ${imageCount}/${coverage.productCount}（${percent(imageCount, coverage.productCount)}%）`,
     "",
     "## 商品が見つからなかった団体",
     "",
@@ -521,5 +525,11 @@ export function formatCoverageMarkdown(
     "## X の確認状況",
     "",
     `未確認の団体: ${coverage.boothsWithoutX}件`,
+    "",
+    "## 画像のない商品",
+    "",
+    coverage.productsWithoutImage.length === 0
+      ? "なし"
+      : coverage.productsWithoutImage.map((product) => `- ${product.id} ${product.name}`).join("\n"),
   ].join("\n");
 }
