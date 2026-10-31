@@ -384,5 +384,90 @@
         "retrievedAt": "2026-10-30"
       }
     ]
+  },
+  {
+    "id": "no77-c1",
+    "boothId": "no77",
+    "productIds": [
+      "no77-9"
+    ],
+    "kind": "giveaway",
+    "title": "新作『存在しない謎解き公演のパス』を無料プレゼント",
+    "detail": "夕立にかさなって(@FAreweLL_o_o)をフォローし、この投稿をリポストすると、新作持ち帰り謎『存在しない謎解き公演のパス』が当たる(当選人数は告知に書かれていない)",
+    "endsAt": "2026-11-04T23:59",
+    "days": [],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/FAreweLL_o_o/status/2116479290502185036",
+        "retrievedAt": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "no77-c2",
+    "boothId": "no77",
+    "productIds": [
+      "no77-1",
+      "no77-2",
+      "no77-3",
+      "no77-4",
+      "no77-5"
+    ],
+    "kind": "discount",
+    "title": "Rains 5作が好きな3点3,000円・5点4,500円",
+    "detail": "Rains(雨を含む漢字をテーマにした5つの短編謎解き)は単品1,200円。好きな3点で3,000円、5点まとめ買いで4,500円(5点の通常合計は6,000円)。夕立工房(Cd2)のお品書きより",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
+        "retrievedAt": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "no68-c1",
+    "boothId": "no68",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "YouTubeチャンネル登録で「グータン森山名刺謎」",
+    "detail": "グータン森山(Cb20)のブースで、YouTubeチャンネル登録をした人に「グータン森山名刺謎」をプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/waranazo/status/2116467968339304657",
+        "retrievedAt": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "no68-c2",
+    "boothId": "no68",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "5,000円以上で「ランダム街歩き謎解き冊子」",
+    "detail": "グータン森山(Cb20)のブースで5,000円以上買った人に「ランダム街歩き謎解き冊子」をプレゼント。ここでしか見られない森山の体験動画つき",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "1日200名限定",
+    "sources": [
+      {
+        "url": "https://x.com/waranazo/status/2116467968339304657",
+        "retrievedAt": "2026-10-31"
+      }
+    ]
   }
 ]

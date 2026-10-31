@@ -1,6 +1,6 @@
 {
   "range": "no01-no14",
-  "collectedAt": "2026-10-30",
+  "collectedAt": "2026-10-31",
   "booths": [
     {
       "boothId": "no01",
@@ -257,7 +257,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式HPはXのみ(開いていない)。ブース概要に『RIDDLER史上最も力の入った新作謎解き』とあるが商品名は未確認。検索ではナゾトキマーケット向けの告知は出ず、直近の持ち帰り謎(謎解きカクテルシリーズ)は候補止まり。Xを見れば取れそう / X(@RIDDLER_nazo)確認済み。ブースA6。10/17に新作『リドラコレクション』解禁、収録作の紹介は10/24『CROSS BOX』(わち)・10/25『RIDDLE TRIAL!!!』(kk)など。価格は投稿に書かれておらず未確認 / 再収集(10/30 Web): 新しい告知なし。リドラコレクションの価格はWeb検索でも出ず、null のまま(Xなら取れる可能性) / 再収集(10/30 X): 10/29 までにリドラコレクション収録9作のうち6作(CROSS BOX / RIDDLE TRIAL!!! / N×N-grid Puzzle / 幻燈縁日 / 炉軸高校生徒会の論理パズル的日常 / スマホゲーム『朝焼けのクレスト』イベント特典限定謎)が紹介された。価格は公式投稿に無く、配信での発表を伝えるユーザー投稿の14,000円を暫定で採用(no03-1 の priceNote 参照) 再収集(10/30 確認): 価格14,000円は参加者の投稿のみが根拠のため price は null に戻し priceNote に残した。",
+      "notes": "公式HPはXのみ(開いていない)。ブース概要に『RIDDLER史上最も力の入った新作謎解き』とあるが商品名は未確認。検索ではナゾトキマーケット向けの告知は出ず、直近の持ち帰り謎(謎解きカクテルシリーズ)は候補止まり。Xを見れば取れそう / X(@RIDDLER_nazo)確認済み。ブースA6。10/17に新作『リドラコレクション』解禁、収録作の紹介は10/24『CROSS BOX』(わち)・10/25『RIDDLE TRIAL!!!』(kk)など。価格は投稿に書かれておらず未確認 / 再収集(10/30 Web): 新しい告知なし。リドラコレクションの価格はWeb検索でも出ず、null のまま(Xなら取れる可能性) / 再収集(10/30 X): 10/29 までにリドラコレクション収録9作のうち6作(CROSS BOX / RIDDLE TRIAL!!! / N×N-grid Puzzle / 幻燈縁日 / 炉軸高校生徒会の論理パズル的日常 / スマホゲーム『朝焼けのクレスト』イベント特典限定謎)が紹介された。価格は公式投稿に無く、配信での発表を伝えるユーザー投稿の14,000円を暫定で採用(no03-1 の priceNote 参照) 再収集(10/30 確認): 価格14,000円は参加者の投稿のみが根拠のため price は null に戻し priceNote に残した。 再収集(10/31 X): 10/30・10/31 の公式投稿でリドラコレクション収録作の紹介⑦『Still Hope』・⑧『あなたは見知らぬ場所にいた。』(どちらも「#ナゾトキマーケット2026 最速先行販売」)を確認し、no03-1 の出典に追加。価格の告知はなく、price は null のまま。",
       "officialPatches": [],
       "products": [
         {
@@ -319,6 +319,14 @@
             {
               "url": "https://x.com/souryu42/status/2115815622819099124",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2116107844613177442",
+              "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2116470232684306858",
+              "retrievedAt": "2026-10-31"
             }
           ],
           "hashtags": [
@@ -439,7 +447,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認",
+      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認 再収集(10/31 X): 10/31 の投稿で新作3点(簡単なパズル3,500円・Q.●▲★■拡張セット3,500円・Öoo×TOKIQIL コラボアパレル)を確認して products に追加。アパレルの価格は未発表。新作アパレルは5組の予定で、ほかの組の商品は未発表。",
       "officialPatches": [],
       "products": [
         {
@@ -473,6 +481,96 @@
             {
               "url": "https://x.com/tokiqil/status/2114295906749014419",
               "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "id": "no04-2",
+          "name": "簡単なパズル",
+          "price": 3500,
+          "priceNote": "ナゾマ特別価格(通常4,000円)",
+          "category": "booklet",
+          "oneLiner": "こたえのない小説を読み、家族の手紙のパズルを解く",
+          "description": "こたえのない小説を用意しました。とある家族の手紙を読み、かんたんなパズルを解決してください。文：品田遊 パズル原作：あかず(Coelacanth『shallows』のリメイク) イラスト：さめほし。※解答図やヒントは、商品に含まれておりません。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "限定300個",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV83r8Ia8AAmSR_?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116471588724105539",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no04-3",
+          "name": "Q.●▲★■ 拡張セット(キキクイズ・ブーバパーティー)",
+          "price": 3500,
+          "priceNote": "各2,000円、セット割3,500円(ナゾマスペシャルプライス)",
+          "category": "other",
+          "oneLiner": "『Q.●▲★■』に遊びが広がる2つの新テーマの拡張セット",
+          "description": "『Q.●▲★■』拡張『ブーバパーティー』『キキクイズ』。限定40部販売。ゲームデザイン：スイタ氏。作問協力：品田遊(ダ・ヴィンチ・恐山)／クイズ法人カプリティオ／河村拓哉／山上大喜／こんにちパンクール／新井来歌夢／大久保八億／リンゴ農園／矢野了平。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "限定40部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV9IBFJbMAICC_E?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116489752547619044",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no04-4",
+          "name": "Öoo×TOKIQIL コラボアパレル",
+          "price": null,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "解かないと着られない洋服ブランドÖooとのコラボアパレル",
+          "description": "Öoo(@namatakahashi)×TOKIQIL コラボアパレル。限定50着。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "限定50着",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV8wdEragAEdjrf?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116464027580952871",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }
@@ -2335,7 +2433,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式のp15〜p17はHP・BASEショップ(21点掲載)・ゼペッツのサイトのいずれにも載っておらず、公式の記載のみで補った。ほかの出品情報も見つからず / X(@flapzero)確認済み。ブースBa4。BEAUTIFUL(p15)・めくるめく謎(p16)は11/7〜8に先行販売と告知。10/7の投稿に「初のグッズ販売も」とあるが商品名は不明。p17は投稿に出ていない / 再収集(10/30 Web): 新しい告知なし。BASEショップ・ゼペッツのサイトに p15〜p17 や新グッズの掲載なし / 再収集(10/30 X): 10/26 の投稿で p17(山陽電車 なぞときさんぽ旅 2023 リモート版)も11/7・8 のナゾトキマーケットで先行販売と確認(limited を更新)。10/26 に「ナゾトキマーケットでの販売情報は順次お知らせ」との返信あり、グッズの商品名・価格は未告知",
+      "notes": "公式のp15〜p17はHP・BASEショップ(21点掲載)・ゼペッツのサイトのいずれにも載っておらず、公式の記載のみで補った。ほかの出品情報も見つからず / X(@flapzero)確認済み。ブースBa4。BEAUTIFUL(p15)・めくるめく謎(p16)は11/7〜8に先行販売と告知。10/7の投稿に「初のグッズ販売も」とあるが商品名は不明。p17は投稿に出ていない / 再収集(10/30 Web): 新しい告知なし。BASEショップ・ゼペッツのサイトに p15〜p17 や新グッズの掲載なし / 再収集(10/30 X): 10/26 の投稿で p17(山陽電車 なぞときさんぽ旅 2023 リモート版)も11/7・8 のナゾトキマーケットで先行販売と確認(limited を更新)。10/26 に「ナゾトキマーケットでの販売情報は順次お知らせ」との返信あり、グッズの商品名・価格は未告知 再収集(10/31 X): 10/30・10/31 の投稿で新作『ことババ』『この謎が解けないのはボクのせい？ -ホラーハウス脱出編-』のナゾマ先行販売を確認して products に追加(どちらも価格は告知なし)。",
       "officialPatches": [
         {
           "id": "p15",
@@ -2404,7 +2502,68 @@
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no13-1",
+          "name": "この謎が解けないのはボクのせい？ -ホラーハウス脱出編-",
+          "price": null,
+          "priceNote": "価格は告知なし",
+          "category": "kit",
+          "oneLiner": "2人で遊べる謎解きゲーム第2弾(ホラーハウス脱出編)",
+          "description": "2人で遊べる謎解きゲーム第2弾が登場！謎の数は3倍以上！協力して謎を解こう！(11/7〜8のナゾトキマーケットで先行販売)",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": "2人",
+          "isNew": true,
+          "limited": "先行販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV4AfrUb0AAMSIA?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2116470250971492681",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no13-2",
+          "name": "ことババ",
+          "price": null,
+          "priceNote": "価格は告知なし",
+          "category": "other",
+          "oneLiner": "共通穴埋めクイズ×ババ抜きのボードゲーム",
+          "description": "共通穴埋めクイズ×ババ抜きのボドゲ「ことババ」！閃けば、手札が多くても一発逆転！？(Ba4ブースで先行販売)",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "先行販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV1vr5KbUAAFQPf?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2116107853735829540",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "hashtags": [
         {

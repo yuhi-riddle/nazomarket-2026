@@ -1,6 +1,6 @@
 {
   "range": "no29-no42",
-  "collectedAt": "2026-10-30",
+  "collectedAt": "2026-10-31",
   "booths": [
     {
       "boothId": "no29",
@@ -48,7 +48,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式3商品(p20-p22)のみ。HPにナゾトキマーケットの告知は無し。小説は2026-09-28発売で書店・Amazonでも買える(店内購入は引換券の持ち帰り謎が付かない)。公式ブース概要の『著書2冊』のうち第1作の題名・価格は不明(公式商品は第2作のみ)。『購入者特典のおまけ謎』はブース概要の記述で対象商品の範囲は未確認。X(謎屋珈琲店の公式X)を見れば追加情報が取れる可能性あり 【Xパス】@nazocafe の2026-10-22の告知で、新作『今月の真相当てクイズ総集編 2024-2026』(第4巻)と過去作の第1〜第3巻の販売予定、ブース番号Ca12を確認(価格は書かれていない)。小説・持ち帰り謎(p21・p22)について会場販売の言及は見つからず。9/16・9/29の持ち帰り謎は書店の小説購入特典で今回の出品ではない。 再収集(10/30 Web): BASE(nazoyacafe.thebase.in)で総集編の価格を確認し、no29-1(第1〜3巻)の価格を各1,680円で埋めた(第4巻1,890円は公式p20と一致)。10/4のHP告知「11/1の価格改定」はカフェメニュー中心で謎解き参加費は据え置き、BASEの書籍価格が11/1以降も同じかは未確認。小説・持ち帰り謎のナゾトキマーケットでの販売告知は見つからず 再収集(10/30 X): 10/24 以降に総集編・小説の価格や会場販売の新しい告知なし(10/22 の告知画像にも価格なし、10/24〜29 は他人の投稿のリポストのみ)。no29-1(第1〜3巻)の会場価格・小説の会場販売は引き続き未確認",
+      "notes": "公式3商品(p20-p22)のみ。HPにナゾトキマーケットの告知は無し。小説は2026-09-28発売で書店・Amazonでも買える(店内購入は引換券の持ち帰り謎が付かない)。公式ブース概要の『著書2冊』のうち第1作の題名・価格は不明(公式商品は第2作のみ)。『購入者特典のおまけ謎』はブース概要の記述で対象商品の範囲は未確認。X(謎屋珈琲店の公式X)を見れば追加情報が取れる可能性あり 【Xパス】@nazocafe の2026-10-22の告知で、新作『今月の真相当てクイズ総集編 2024-2026』(第4巻)と過去作の第1〜第3巻の販売予定、ブース番号Ca12を確認(価格は書かれていない)。小説・持ち帰り謎(p21・p22)について会場販売の言及は見つからず。9/16・9/29の持ち帰り謎は書店の小説購入特典で今回の出品ではない。 再収集(10/30 Web): BASE(nazoyacafe.thebase.in)で総集編の価格を確認し、no29-1(第1〜3巻)の価格を各1,680円で埋めた(第4巻1,890円は公式p20と一致)。10/4のHP告知「11/1の価格改定」はカフェメニュー中心で謎解き参加費は据え置き、BASEの書籍価格が11/1以降も同じかは未確認。小説・持ち帰り謎のナゾトキマーケットでの販売告知は見つからず 再収集(10/30 X): 10/24 以降に総集編・小説の価格や会場販売の新しい告知なし(10/22 の告知画像にも価格なし、10/24〜29 は他人の投稿のリポストのみ)。no29-1(第1〜3巻)の会場価格・小説の会場販売は引き続き未確認 再収集(10/31 X): 10/30 の投稿でナゾマ販売予定として『雨の中の犬たちへ』(公式p21)と『謎屋珈琲店 21番目の挑戦』(ミステリー小説・著者在席予定・Ca12)を確認。後者を products に追加(価格は告知なし)。",
       "officialPatches": [
         {
           "id": "p20",
@@ -95,6 +95,10 @@
             {
               "url": "https://nazoyacafe.jp/nazo/novel_2nd/",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/nazocafe/status/2116124948188336261",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
@@ -151,6 +155,36 @@
             {
               "url": "https://nazoyacafe.thebase.in/",
               "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "id": "no29-2",
+          "name": "謎屋珈琲店 21番目の挑戦",
+          "price": null,
+          "priceNote": "価格は告知なし",
+          "category": "booklet",
+          "oneLiner": "峰月響介のデビュー作となるヒューマンミステリー小説",
+          "description": "峰月響介デビュー作「謎屋珈琲店 21番目の挑戦」もあわせて出品いたします。「ミステリーカフェのオーナーが書くミステリー小説」を味わえる。当日は著者の在席も予定。(いずれもミステリー小説であり、謎解き本ではありません)",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazocafe/status/2116124948188336261",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }
@@ -2196,18 +2230,21 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式p19『Loops』(1,200円)のみ。公式の説明文は『Loops』の4文字だけで中身は不明。category は持ち帰り謎として kit にしたが仮置き(HP・Web検索とも『Loops』の記述なし)。X(@k_dush2)を見れば遊び方・所要時間などが取れる可能性あり 【Xパス】@K_dush2 の2026-10-24の投稿でブースCb5と『新作持ち帰り謎も販売予定！続報をお待ちください』を確認(商品名・価格は未発表)。『Loops』は2019年から公演会場で売られている既存の持ち帰り謎(投稿: 2019-11-22、2022〜2023)で、2026年の告知にLoopsの詳細は無し。 再収集(10/30 Web): 新しい告知なし(HPにナゾトキマーケット・新作・Loopsの記述なし。Loopsの中身は引き続き不明) 再収集(10/30 X): 10/24 以降に商品名・価格の新しい告知なし(10/24 のブースCb5・新作予定の告知が最新、続報なし)。『Loops』の内容は引き続き不明",
+      "notes": "公式p19『Loops』(1,200円)のみ。公式の説明文は『Loops』の4文字だけで中身は不明。category は持ち帰り謎として kit にしたが仮置き(HP・Web検索とも『Loops』の記述なし)。X(@k_dush2)を見れば遊び方・所要時間などが取れる可能性あり 【Xパス】@K_dush2 の2026-10-24の投稿でブースCb5と『新作持ち帰り謎も販売予定！続報をお待ちください』を確認(商品名・価格は未発表)。『Loops』は2019年から公演会場で売られている既存の持ち帰り謎(投稿: 2019-11-22、2022〜2023)で、2026年の告知にLoopsの詳細は無し。 再収集(10/30 Web): 新しい告知なし(HPにナゾトキマーケット・新作・Loopsの記述なし。Loopsの中身は引き続き不明) 再収集(10/30 X): 10/24 以降に商品名・価格の新しい告知なし(10/24 のブースCb5・新作予定の告知が最新、続報なし)。『Loops』の内容は引き続き不明 再収集(10/31 X): 10/31 のお品書き画像(2枚)で『勇者フリソの冒険』1,500円・『Re: 監獄』500円・『ボスの挑戦状』300円・『eight』2,300円を確認して products に追加し、『Loops』(p19)の所要時間(120分〜)と説明を補った。支払いは現金のみ。10/31 のお品書き投稿に「新作持ち帰り謎は明日20:00発表」とあり、新作の商品名・価格は未発表(固定ポスト・10/25 以降の投稿にも続報なし)。",
       "officialPatches": [
         {
           "id": "p19",
           "category": "kit",
-          "oneLiner": "K-dush2の持ち帰り謎「Loops」（説明は題名のみで詳細未確認）",
+          "oneLiner": "終わらないLoopsを体験したい方向けの持ち帰り謎",
           "difficulty": {
             "level": null,
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
           "players": null,
           "isNew": false,
           "limited": null,
@@ -2219,11 +2256,159 @@
             {
               "url": "https://x.com/K_dush2/status/1197688632842174464",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/K_dush2/status/2116485431772721605",
+              "retrievedAt": "2026-10-31"
+            }
+          ],
+          "payment": [
+            "現金のみ"
+          ]
+        }
+      ],
+      "products": [
+        {
+          "id": "no41-1",
+          "name": "勇者フリソの冒険",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "可愛い勇者が主役の学生謎解きサークル対抗戦の持ち帰り謎",
+          "description": "学生謎解きサークル対抗戦が現在開催中です！可愛い勇者のビジュアルにも注目です！",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/K_dush2/status/2116485431772721605",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no41-2",
+          "name": "Re: 監獄",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "再び監獄に収容される持ち帰り謎",
+          "description": "再び監獄に収容される！？ ※2025年度三田祭で販売した持ち帰り謎です",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/K_dush2/status/2116485431772721605",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no41-3",
+          "name": "ボスの挑戦状",
+          "price": 300,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ボスから届いた秘密の挑戦状の持ち帰り謎",
+          "description": "ボスから届いた秘密の挑戦状…その内容とは… ※2024年度三田祭で販売した持ち帰り謎です",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 45,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/K_dush2/status/2116485431772721605",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no41-4",
+          "name": "eight",
+          "price": 2300,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "スタイリッシュな8をテーマにした持ち帰り謎",
+          "description": "スタイリッシュな8をお楽しみいただけます。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 35,
+            "max": 70
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/K_dush2/status/2116485431772721605",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }
       ],
-      "products": [],
       "candidates": [],
       "hashtags": [
         {

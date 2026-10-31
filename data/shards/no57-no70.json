@@ -1,6 +1,6 @@
 {
   "range": "no57-no70",
-  "collectedAt": "2026-10-30",
+  "collectedAt": "2026-10-31",
   "booths": [
     {
       "boothId": "no57",
@@ -157,9 +157,43 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "HP の『持ち帰り謎・グッズ』ページに既存作10件。いずれもナゾトキマーケット2026への言及・価格の記載なしのため、全て候補止まり(今回の出品は X で確認が必要)。スケジュールページは学祭向けに持ち帰り謎を作ると書くのみ。X確認(10/25): @_X_c_a_p_e_ は8/21に「新作の持ち帰り謎も制作中」と投稿のみ。作品名・価格の告知なし。候補は今回持参と確認できず 再収集(10/30 Web): HP トップとナビに新作・ナゾトキマーケット2026・価格の記載なし。候補は変わらず 再収集(10/30 X): 10/24 以降の投稿は京都工芸繊維大学の松ヶ崎祭向け公演『おとぎは小さな一歩から』の告知のみ。ナゾトキマーケット向けの新しい告知なし",
+      "notes": "HP の『持ち帰り謎・グッズ』ページに既存作10件。いずれもナゾトキマーケット2026への言及・価格の記載なしのため、全て候補止まり(今回の出品は X で確認が必要)。スケジュールページは学祭向けに持ち帰り謎を作ると書くのみ。X確認(10/25): @_X_c_a_p_e_ は8/21に「新作の持ち帰り謎も制作中」と投稿のみ。作品名・価格の告知なし。候補は今回持参と確認できず 再収集(10/30 Web): HP トップとナビに新作・ナゾトキマーケット2026・価格の記載なし。候補は変わらず 再収集(10/30 X): 10/24 以降の投稿は京都工芸繊維大学の松ヶ崎祭向け公演『おとぎは小さな一歩から』の告知のみ。ナゾトキマーケット向けの新しい告知なし 再収集(10/31 X): 10/31 の「新作情報①」で『ちびっこおばけのおかしなおつかい』(難易度★3・1,500円・90分〜)を確認して products に追加。「新作情報①」とあり、続報がある可能性。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no59-1",
+          "name": "ちびっこおばけのおかしなおつかい",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "お菓子と謎の小さな冒険をする持ち帰り謎",
+          "description": "お菓子と謎の小さな冒険へいざ、出発！",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★★★☆☆（3/5）をそのまま"
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2116455138214703576",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "ALLAXY MISSION",
@@ -307,9 +341,40 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のブース概要は『ご自宅で楽しむ持ち帰り謎を用意』とあるだけで商品名なし。note は数年前の記事が中心で今回の告知なし。旧HP(c-lock-row.github.io)は404。BOOTH ショップのトップは確認できず(商品ページのみ閲覧)。今回の品は X で確認が必要。X確認(10/25): @C_lock_row の9〜10月の投稿は工大祭(10/10-11)の告知のみ。ナゾトキマーケット向けは8/21の出展告知だけで商品の告知なし 再収集(10/30 Web): note に新作告知なし(最新は『ニブンノイチ』解説)。BOOTH の転売注意は2,500円のまま、新作の掲載なし。新しい告知なし 再収集(10/30 X): 10/24 以降の投稿なし。新しい告知なし",
+      "notes": "公式のブース概要は『ご自宅で楽しむ持ち帰り謎を用意』とあるだけで商品名なし。note は数年前の記事が中心で今回の告知なし。旧HP(c-lock-row.github.io)は404。BOOTH ショップのトップは確認できず(商品ページのみ閲覧)。今回の品は X で確認が必要。X確認(10/25): @C_lock_row の9〜10月の投稿は工大祭(10/10-11)の告知のみ。ナゾトキマーケット向けは8/21の出展告知だけで商品の告知なし 再収集(10/30 Web): note に新作告知なし(最新は『ニブンノイチ』解説)。BOOTH の転売注意は2,500円のまま、新作の掲載なし。新しい告知なし 再収集(10/30 X): 10/24 以降の投稿なし。新しい告知なし 再収集(10/31 X): 10/31 19:00 の投稿で新作持ち帰り謎『なくしもの』(レーベルホワイト)を確認して products に追加。価格は告知なし。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no60-1",
+          "name": "なくしもの",
+          "price": null,
+          "priceNote": "価格は告知なし(詳細はリプライで告知予定)",
+          "category": "kit",
+          "oneLiner": "記憶を失った●●●と1枚の写真をめぐる、初心者向けの持ち帰り謎",
+          "description": "「ここは…どこ？自分は…だれ？そして、この写真は…？」記憶を失った●●●と残された1枚の写真をめぐる、謎解きと心温まる物語。本作はレーベルホワイトであり、初心者の方でも安心して遊んでいただけます。",
+          "difficulty": {
+            "level": 1,
+            "source": "estimated",
+            "basis": "団体が「レーベルホワイト」で初心者向けと告知"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV787Roa8AAFbzg?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/C_lock_row/status/2116470241039655110",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "転売注意",
@@ -671,7 +736,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "HP のお知らせに2026年のナゾトキマーケット告知はまだ無い。見つかった『お品書き』(archives/5496)は2025年11月の前回分なので全て候補止まり。BOOTH ショップのトップは403で見られず(価格は HP 記事と検索結果の抜粋による)。今回の品は X・HP の続報で確認が必要。X確認(10/25): @MysteryJ_nazo の最新の関連投稿は8/21「ちょっと怖い謎・お酒テーマの大人向け謎・腰を据えて遊べる謎などを用意予定」のみ。作品名・価格の告知なし。候補は今回持参と確認できず 再収集(10/30 Web): HP のお知らせ最新は8/19の『なぞ呑み』で、2026年のお品書きは未掲載。候補は変わらず 再収集(10/30 X): 10/29 の告知で新作『ニタクタワー』(500円・ワンコイン謎シリーズ・先行販売)を確認して products に追加。ほかの旧作候補はお品書き未投稿のため候補のまま",
+      "notes": "HP のお知らせに2026年のナゾトキマーケット告知はまだ無い。見つかった『お品書き』(archives/5496)は2025年11月の前回分なので全て候補止まり。BOOTH ショップのトップは403で見られず(価格は HP 記事と検索結果の抜粋による)。今回の品は X・HP の続報で確認が必要。X確認(10/25): @MysteryJ_nazo の最新の関連投稿は8/21「ちょっと怖い謎・お酒テーマの大人向け謎・腰を据えて遊べる謎などを用意予定」のみ。作品名・価格の告知なし。候補は今回持参と確認できず 再収集(10/30 Web): HP のお知らせ最新は8/19の『なぞ呑み』で、2026年のお品書きは未掲載。候補は変わらず 再収集(10/30 X): 10/29 の告知で新作『ニタクタワー』(500円・ワンコイン謎シリーズ・先行販売)を確認して products に追加。ほかの旧作候補はお品書き未投稿のため候補のまま 再収集(10/31 X): 10/30 の投稿で『エニグマの予言』(1部500円・10部3,000円)、10/31 の投稿で新作持ち帰り謎②『カスクド怪盗団からの挑戦状』(ナゾマ先行販売)を確認して products に追加(後者の価格は告知なし)。",
       "officialPatches": [],
       "products": [
         {
@@ -701,6 +766,66 @@
             {
               "url": "https://x.com/MysteryJ_nazo/status/2115776237499228510",
               "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "id": "no66-2",
+          "name": "エニグマジックシリーズVol.1『エニグマの予言』",
+          "price": 500,
+          "priceNote": "1部500円、10部3,000円",
+          "category": "goods",
+          "oneLiner": "謎解き×マジックの、予言が書かれた紙のグッズ",
+          "description": "謎解き×マジック。マジシャン林王子とタッグを組んだ、全く新しいグッズ。その紙には、謎解きという名の予言が書かれている。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2116116095400804578",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no66-3",
+          "name": "カスクド怪盗団からの挑戦状 ―最高の銘酒を守り抜け！―",
+          "price": null,
+          "priceNote": "価格は告知なし",
+          "category": "kit",
+          "oneLiner": "ハッカーとなって暗号を解き、富豪の銘酒を守る持ち帰り謎",
+          "description": "「今宵、最高の銘酒を救いに参上する。」義賊・カスクド怪盗団から届いた予告状。ハッカーとなって暗号を解き明かし、富豪の銘酒を守り抜け！(ナゾマ先行販売・新作持ち帰り謎②)",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "先行販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2116485800908972382",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }
@@ -1096,7 +1221,8 @@
       ],
       "extraLinks": {
         "x": [
-          "https://x.com/shimpop023"
+          "https://x.com/shimpop023",
+          "https://x.com/waranazo"
         ]
       },
       "sources": [
@@ -1105,9 +1231,190 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式のブース概要に商品名なし(芸人コラボの謎解きや謎解きグッズとあるのみ)。HP・ショップ・BOOTH は検索でも見つからず。検索結果にX アカウント(shimpop023)が出たが開いていない。X で確認が必要。X確認(10/25): @shimpop023 は8/21に「ナゾトキマーケット2026参加します」と投稿のみ。商品の告知なし 再収集(10/30 Web): HP・ショップは Web 検索でも見つからず、新しい告知なし 再収集(10/30 X): 10/24 以降の投稿は芸人活動の話のみ。ナゾトキマーケットの商品告知なし",
+      "notes": "公式のブース概要に商品名なし(芸人コラボの謎解きや謎解きグッズとあるのみ)。HP・ショップ・BOOTH は検索でも見つからず。検索結果にX アカウント(shimpop023)が出たが開いていない。X で確認が必要。X確認(10/25): @shimpop023 は8/21に「ナゾトキマーケット2026参加します」と投稿のみ。商品の告知なし 再収集(10/30 Web): HP・ショップは Web 検索でも見つからず、新しい告知なし 再収集(10/30 X): 10/24 以降の投稿は芸人活動の話のみ。ナゾトキマーケットの商品告知なし 再収集(10/31 X): 団体本人のアカウントは @waranazo(10/24 の告知にグータン森山・Cb20・「新作3点を含む6つの謎解きグッズを販売」とある。10/25 の確認では @shimpop023 しか見ておらず未確認だった)。10/21〜10/24 の商品紹介投稿6件から6点(おうちで笑謎 5種・ネパール周遊謎)を products に追加。10/31 にブース限定キャンペーン2件を告知(campaigns.json に追加)。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no68-1",
+          "name": "おうちで笑謎 -ママタルト編-",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 謎制作：グータン森山、えゆねる",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2112489981797429517",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no68-2",
+          "name": "おうちで笑謎 -かもめんたる編-",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 企画監修：グータン森山 謎制作：台島逸成",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2112861365446779093",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no68-3",
+          "name": "おうちで笑謎 -ゴー☆ジャス編-",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 謎制作：グータン森山、えゆねる",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2113239417313984639",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no68-4",
+          "name": "おうちで笑謎 -スギちゃん編-",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 企画監修：グータン森山 謎制作：にくまき",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2113571410610421993",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no68-5",
+          "name": "おうちで笑謎 -森本しんたろう編-",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 謎制作：グータン森山、山田悠人",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2113942523425313192",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "no68-6",
+          "name": "ネパール周遊謎",
+          "price": 1000,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "ネパールで解く周遊謎。観光しながら作る動画つき",
+          "description": "ネパールで解く周遊謎です！(難易度は上がりますが、行かなくても解けます)グータン森山が観光しながら謎を作っている動画も見れます！",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2112177592036167945",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        }
+      ],
       "candidates": []
     },
     {
@@ -1165,13 +1472,13 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のブース概要は『ほとんどが新作』とあるが作品名・価格なし。HP のブログ1ページ目(8件)にナゾトキマーケットの記事なし(2ページ目は未確認)。BASE ショップで確認できたのは周遊謎1件のみ。新作の中身は X で確認が必要。X確認(10/25): 10/22から1日1商品ずつ告知中(全9商品、リメイク含む)。10/25時点で4商品。価格・難易度は「月末に全商品まとめて告知」とのこと。5商品目以降は未告知 再収集(10/30 Web): HP のブログ(1ページ目)・BASE ショップに新作の掲載・価格の告知なし(BASE は周遊謎2,200円のみ)。価格は X の『月末まとめ告知』待ちで、価格は埋められず 再収集(10/30 X): 10/26〜10/29 の商品紹介(第5〜8弾)で『Plot twist ～離島編～』『Plot twist ～青春編～』『ナゾみくじ』(ナゾトキマーケット限定)『その失踪は、喫茶七番から。』を確認し products に追加(喫茶七番は旧候補から移動)。いずれも「価格やボリューム、難易度などの詳細は月末に全商品まとめてお知らせします」とのことで、既存の no69-1〜4 を含め価格は埋められず(9商品目は10/30 午前時点で未告知)",
+      "notes": "公式のブース概要は『ほとんどが新作』とあるが作品名・価格なし。HP のブログ1ページ目(8件)にナゾトキマーケットの記事なし(2ページ目は未確認)。BASE ショップで確認できたのは周遊謎1件のみ。新作の中身は X で確認が必要。X確認(10/25): 10/22から1日1商品ずつ告知中(全9商品、リメイク含む)。10/25時点で4商品。価格・難易度は「月末に全商品まとめて告知」とのこと。5商品目以降は未告知 再収集(10/30 Web): HP のブログ(1ページ目)・BASE ショップに新作の掲載・価格の告知なし(BASE は周遊謎2,200円のみ)。価格は X の『月末まとめ告知』待ちで、価格は埋められず 再収集(10/30 X): 10/26〜10/29 の商品紹介(第5〜8弾)で『Plot twist ～離島編～』『Plot twist ～青春編～』『ナゾみくじ』(ナゾトキマーケット限定)『その失踪は、喫茶七番から。』を確認し products に追加(喫茶七番は旧候補から移動)。いずれも「価格やボリューム、難易度などの詳細は月末に全商品まとめてお知らせします」とのことで、既存の no69-1〜4 を含め価格は埋められず(9商品目は10/30 午前時点で未告知) 再収集(10/31 X): 10/30 の「全商品ラインナップ公開」画像4枚で全8点の価格と所要時間を確認して埋めた(価格は税込)。マダム・リシェル2,500円/消えた7つの□□□の行方1,500円/その失踪は、喫茶七番から。2,200円/Plot twist 3編は各700円/Dr.リドルの診療所500円/ナゾみくじ100円(「診断」だけ受けて帰るなら完全無料)。",
       "officialPatches": [],
       "products": [
         {
           "id": "no69-1",
           "name": "マダムリシェルと奇妙な美術作品",
-          "price": null,
+          "price": 2500,
           "priceNote": null,
           "category": "kit",
           "oneLiner": "公演型の物語を家で解ける謎にリメイクした、美術作品を追う謎解き",
@@ -1181,9 +1488,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -1195,6 +1505,10 @@
             {
               "url": "https://x.com/RiddleTimez/status/2113144438188896563",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ],
           "unconfirmed": [
@@ -1217,7 +1531,7 @@
         {
           "id": "no69-2",
           "name": "Dr.リドルの診療所",
-          "price": null,
+          "price": 500,
           "priceNote": null,
           "category": "kit",
           "oneLiner": "会場で症状チェックシートに答えて処方箋(謎)を選ぶ、会場限定の謎",
@@ -1227,9 +1541,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": "ナゾトキマーケット限定",
           "days": [
             "sat",
@@ -1241,6 +1558,10 @@
             {
               "url": "https://x.com/RiddleTimez/status/2113586238712394173",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ],
           "unconfirmed": [
@@ -1263,7 +1584,7 @@
         {
           "id": "no69-3",
           "name": "消えた７つの□□□の行方",
-          "price": null,
+          "price": 1500,
           "priceNote": null,
           "category": "kit",
           "oneLiner": "小謎とギミックが盛りだくさんの、約60分の謎解き",
@@ -1273,9 +1594,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -1287,6 +1611,10 @@
             {
               "url": "https://x.com/RiddleTimez/status/2113948627777237098",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ],
           "unconfirmed": [
@@ -1297,7 +1625,7 @@
         {
           "id": "no69-4",
           "name": "Plot twist ～牢獄編～",
-          "price": null,
+          "price": 700,
           "priceNote": null,
           "category": "booklet",
           "oneLiner": "冊子1冊だけで遊べる、どんでん返しの脱出謎(Plot twistシリーズ)",
@@ -1307,9 +1635,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -1321,6 +1652,10 @@
             {
               "url": "https://x.com/RiddleTimez/status/2114311011574628826",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ],
           "unconfirmed": [
@@ -1343,7 +1678,7 @@
         {
           "id": "no69-5",
           "name": "Plot twist ～離島編～",
-          "price": null,
+          "price": 700,
           "priceNote": null,
           "category": "booklet",
           "oneLiner": "離島を襲った謎の存在の正体を暴く、どんでん返しの冊子1冊で解く謎解き",
@@ -1353,9 +1688,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -1367,13 +1705,17 @@
             {
               "url": "https://x.com/RiddleTimez/status/2114673406935183805",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
         {
           "id": "no69-6",
           "name": "Plot twist ～青春編～",
-          "price": null,
+          "price": 700,
           "priceNote": null,
           "category": "booklet",
           "oneLiner": "居場所の分からない彼を探し出す、どんでん返しの冊子1冊で解く謎解き",
@@ -1383,9 +1725,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -1397,14 +1742,18 @@
             {
               "url": "https://x.com/RiddleTimez/status/2115035789159809147",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
         {
           "id": "no69-7",
           "name": "ナゾみくじ",
-          "price": null,
-          "priceNote": null,
+          "price": 100,
+          "priceNote": "ナゾマ限定の企画。現地で2分程度・受付で完結",
           "category": "other",
           "oneLiner": "謎解きにまつわるおみくじ。何が出るかは引いてからのお楽しみ",
           "description": "ナゾトキマーケット限定！謎解きにまつわるおみくじが登場！何が出るかは引いてからのお楽しみ！ぜひ運試しして、結果を「#ナゾみくじ」をつけてSNSに投稿してね。",
@@ -1413,9 +1762,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 2,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": "ナゾトキマーケット限定",
           "days": [
             "sat",
@@ -1427,14 +1779,18 @@
             {
               "url": "https://x.com/RiddleTimez/status/2115398190279078093",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ]
         },
         {
           "id": "no69-8",
           "name": "伏見謎解き街巡り 第二弾「その失踪は、喫茶七番から。」",
-          "price": null,
-          "priceNote": "BASE の通販価格は2,200円。会場での価格は月末の告知待ち",
+          "price": 2200,
+          "priceNote": null,
           "category": "booklet",
           "oneLiner": "一冊の小説に隠された謎を解く、伏見の街歩きでも家でも遊べる小説×謎解き",
           "description": "名古屋・伏見の街を巡る謎解きの第二弾！「小説×謎解き」の世界を楽しめる作品です。伏見の街を歩きながら解くのはもちろん、おうちで最後まで楽しむこともできます！一冊の小説に隠された謎を解き明かし、あなただけの結末を見届けよう。",
@@ -1443,9 +1799,12 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -1461,6 +1820,10 @@
             {
               "url": "https://riddletimez.base.shop/",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
             }
           ]
         }

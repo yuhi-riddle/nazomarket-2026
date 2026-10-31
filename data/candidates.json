@@ -280,18 +280,6 @@
     ]
   },
   {
-    "boothId": "no22",
-    "name": "FUJI",
-    "price": 3000,
-    "reason": "NazoLockの持ち帰り謎。ゲームマーケットのブース(GameKnack x NazoLock x QurioS)に掲載された作品で、ナゾマで売るとは書いていない",
-    "sources": [
-      {
-        "url": "https://gamemarket.jp/booth/6539",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
     "boothId": "no25",
     "name": "焼肉謎 タン編(焼肉キーホルダー付き)",
     "price": 1500,
@@ -316,18 +304,6 @@
       {
         "url": "https://www.tanteijelly.com/shop/",
         "retrievedAt": "2026-10-30"
-      }
-    ]
-  },
-  {
-    "boothId": "no27",
-    "name": "ゲームブック『吹雪に呪われた探偵学校からの招待状』",
-    "price": null,
-    "reason": "検索結果の要約にある新作ゲームブック(本編は2026年8月以降発売予定とのこと)。BOOTHが403で原典を確認できず、ナゾマで売るかも未確認",
-    "sources": [
-      {
-        "url": "https://x.com/kitsutsukido",
-        "retrievedAt": "2026-10-25"
       }
     ]
   },
@@ -953,18 +929,6 @@
         "url": "https://x.com/NaZO_LAB/status/1980952315491385587",
         "retrievedAt": "2026-10-25"
       },
-      {
-        "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no75",
-    "name": "最後の答えはハッピーエンド",
-    "price": 1000,
-    "reason": "2025年のナゾトキマーケットでナゾのみかん箱&Toy×ボーズの共同商品として販売された昨年の商品。今回の出品とは書かれていない",
-    "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
         "retrievedAt": "2026-10-25"
