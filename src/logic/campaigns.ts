@@ -31,6 +31,30 @@ export function listActiveCampaigns(campaigns: Campaign[], now: Date): { withDea
   return { withDeadline: dated.map(({ campaign }) => campaign), noDeadline };
 }
 
+export type CampaignFilter = "all" | Campaign["kind"];
+
+export function filterActiveByKind(
+  active: { withDeadline: Campaign[]; noDeadline: Campaign[] },
+  filter: CampaignFilter,
+): { withDeadline: Campaign[]; noDeadline: Campaign[] } {
+  if (filter === "all") return active;
+  return {
+    withDeadline: active.withDeadline.filter((campaign) => campaign.kind === filter),
+    noDeadline: active.noDeadline.filter((campaign) => campaign.kind === filter),
+  };
+}
+
+export function countByKind(active: { withDeadline: Campaign[]; noDeadline: Campaign[] }): Record<CampaignFilter, number> {
+  const counts: Record<CampaignFilter, number> = { all: 0, bonus: 0, giveaway: 0, discount: 0, other: 0 };
+  for (const items of [active.withDeadline, active.noDeadline]) {
+    for (const campaign of items) {
+      counts.all++;
+      counts[campaign.kind]++;
+    }
+  }
+  return counts;
+}
+
 export function countActive(campaigns: Campaign[], now: Date): number {
   let count = 0;
   for (const campaign of campaigns) if (isCampaignActive(campaign.endsAt, now)) count++;
