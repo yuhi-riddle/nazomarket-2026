@@ -7,6 +7,7 @@ import { button, el, safeExternalLink } from "./dom.ts";
 import { xHashtagLinks } from "./xHashtagLinks.ts";
 import { boothLinkLabel, type BoothLinkKind } from "./boothLinkLabel.ts";
 import { unconfirmedText } from "./unconfirmedText.ts";
+import { limitedPrice } from "../logic/limitedPrice.ts";
 
 export type ProductDialog = { element: HTMLDialogElement; open: (view: ProductView) => void };
 
@@ -89,6 +90,13 @@ export function productDialog(
       appendLinkGroup(boothLinks, "Webサイト", view.booth.links.site, "site", view.booth.name);
       appendLinkGroup(boothLinks, "Instagram", view.booth.links.instagram, "instagram", view.booth.name);
       details.append(el("p", "dialog-price", product.price === null ? "価格未確認" : product.price.toLocaleString("ja-JP") + "円"));
+      const limited = limitedPrice(product.price, product.priceNote);
+      if (limited) {
+        const row = el("p", "product-price-limited");
+        row.append(el("span", "product-price-limited-label", limited.label));
+        if (limited.regularPrice !== null) row.append(el("s", "product-price-regular", "通常" + limited.regularPrice.toLocaleString("ja-JP") + "円"));
+        details.append(row);
+      }
       if (product.priceNote) details.append(el("p", "dialog-note", product.priceNote));
       const description = el("p", "dialog-description", product.description);
       details.append(description);
@@ -114,8 +122,8 @@ export function productDialog(
       sources.append(el("h3", "", "出典"));
       appendLinkGroup(
         sources,
-        "アイテム・団体情報",
-        [...product.sources, ...view.booth.sources].map((source) => source.url),
+        "アイテム情報",
+        product.sources.map((source) => source.url),
         "source",
         view.booth.name,
       );

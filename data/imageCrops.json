@@ -1,0 +1,839 @@
+{
+  "no04-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HV83r8Ia8AAmSR_?format=jpg&name=small",
+    "left": 0.0412,
+    "right": 0.0221,
+    "top": 0.047,
+    "bottom": 0.1253,
+    "width": 680,
+    "height": 383
+  },
+  "no04-3": {
+    "imageUrl": "https://pbs.twimg.com/media/HV9IBFJbMAICC_E?format=jpg&name=small",
+    "left": 0,
+    "right": 0.0427,
+    "top": 0.0286,
+    "bottom": 0.0805,
+    "width": 679,
+    "height": 385
+  },
+  "no04-9": {
+    "imageUrl": "https://pbs.twimg.com/media/HV9LqqhawAAEKQ-?format=jpg&name=small",
+    "left": 0.0309,
+    "right": 0,
+    "top": 0.0444,
+    "bottom": 0.1123,
+    "width": 680,
+    "height": 383
+  },
+  "no08-1": {
+    "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-528x374_webp_4e01b368-5a80-42f8-b4c8-da29f4e5b3ff.webp",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.0267,
+    "width": 528,
+    "height": 374
+  },
+  "no08-2": {
+    "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-590x306_webp_3aa934f8-a775-45d4-9d9e-7797e5f8dafe.webp",
+    "left": 0.1339,
+    "right": 0.1271,
+    "top": 0,
+    "bottom": 0,
+    "width": 590,
+    "height": 306
+  },
+  "no08-4": {
+    "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-590x590_webp_23449c36-d28b-488d-b938-1697036dc514.webp",
+    "left": 0.2322,
+    "right": 0.0271,
+    "top": 0.1441,
+    "bottom": 0.0254,
+    "width": 590,
+    "height": 590
+  },
+  "no10-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HVyNwORaAAAUpTl?format=jpg&name=small",
+    "left": 0.0353,
+    "right": 0.0353,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 442
+  },
+  "no12-10": {
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/a61025f174a9f71c28b1.jpg/fit=scale-down,w=1200",
+    "left": 0,
+    "right": 0,
+    "top": 0.2185,
+    "bottom": 0.2185,
+    "width": 920,
+    "height": 920
+  },
+  "no12-11": {
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/c8f1d9fa3408b737acab.jpg/fit=scale-down,w=1200",
+    "left": 0,
+    "right": 0,
+    "top": 0.1435,
+    "bottom": 0.1435,
+    "width": 920,
+    "height": 920
+  },
+  "no12-12": {
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/16fe0125b03f059ee4a4.jpg/fit=scale-down,w=1200",
+    "left": 0,
+    "right": 0,
+    "top": 0.1435,
+    "bottom": 0.1435,
+    "width": 920,
+    "height": 920
+  },
+  "no12-13": {
+    "imageUrl": "https://pbs.twimg.com/media/GdoMUljXQAA8fNm?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0382,
+    "bottom": 0,
+    "width": 481,
+    "height": 680
+  },
+  "no12-4": {
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/fd03c5a3baa6f587b22d.jpg/fit=scale-down,w=1200",
+    "left": 0,
+    "right": 0,
+    "top": 0.2163,
+    "bottom": 0.2163,
+    "width": 920,
+    "height": 920
+  },
+  "no12-5": {
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_12fba824e4724dc59ab7404617dc7051~mv2.jpg",
+    "left": 0.0707,
+    "right": 0.0976,
+    "top": 0.111,
+    "bottom": 0.047,
+    "width": 707,
+    "height": 1000
+  },
+  "no12-6": {
+    "imageUrl": "https://static.wixstatic.com/media/6c22bb_6db0c11f22e841e1bc07db47d7c2105e~mv2.jpg",
+    "left": 0.0255,
+    "right": 0.0382,
+    "top": 0.046,
+    "bottom": 0.025,
+    "width": 707,
+    "height": 1000
+  },
+  "no12-8": {
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/2d175f8da6ed4d38fc5b.jpg/fit=scale-down,w=1200",
+    "left": 0,
+    "right": 0,
+    "top": 0.1478,
+    "bottom": 0.1457,
+    "width": 920,
+    "height": 920
+  },
+  "no12-9": {
+    "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/48f179f95fe2c2719d49.jpg/fit=scale-down,w=1200",
+    "left": 0,
+    "right": 0,
+    "top": 0.2185,
+    "bottom": 0.2185,
+    "width": 920,
+    "height": 920
+  },
+  "no17-6": {
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2021/09/8b865d4dab818549c58bf5f4be35de22.png",
+    "left": 0.0275,
+    "right": 0.0275,
+    "top": 0.035,
+    "bottom": 0,
+    "width": 510,
+    "height": 400
+  },
+  "no17-9": {
+    "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2025/12/book_main_strong_3bg.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.0625,
+    "width": 599,
+    "height": 400
+  },
+  "no19-1": {
+    "imageUrl": "https://www.groupsne.co.jp/products/bg/mmm/img/mmm29_top.png",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.02,
+    "width": 231,
+    "height": 350
+  },
+  "no20-8": {
+    "imageUrl": "https://ratsnest.works/_astro/folded_tate.BWwZmJOM.webp",
+    "left": 0.0425,
+    "right": 0.0425,
+    "top": 0.038,
+    "bottom": 0.0478,
+    "width": 1600,
+    "height": 2134
+  },
+  "no22-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HUunaAtb0AAEM6F?format=jpg&name=small",
+    "left": 0.1279,
+    "right": 0.1324,
+    "top": 0.1309,
+    "bottom": 0.1279,
+    "width": 680,
+    "height": 680
+  },
+  "no22-4": {
+    "imageUrl": "https://img.gamemarket.jp/thumb_20260508_134253_FUJI@4x.png",
+    "left": 0.1646,
+    "right": 0.1625,
+    "top": 0,
+    "bottom": 0.0296,
+    "width": 480,
+    "height": 270
+  },
+  "no22-5": {
+    "imageUrl": "https://newscast.jp/attachments/bA6DclSDTwAEXp2BNqb7.png?w=600&h=600&a=1",
+    "left": 0.0333,
+    "right": 0.06,
+    "top": 0.0385,
+    "bottom": 0.0325,
+    "width": 600,
+    "height": 338
+  },
+  "no22-6": {
+    "imageUrl": "https://pbs.twimg.com/media/G3cdHS7XEAAvTo2?format=jpg&name=small",
+    "left": 0.0456,
+    "right": 0.0324,
+    "top": 0.0731,
+    "bottom": 0.107,
+    "width": 680,
+    "height": 383
+  },
+  "no22-7": {
+    "imageUrl": "https://pbs.twimg.com/media/HDGPR6maQAE2U_n?format=jpg&name=small",
+    "left": 0.1588,
+    "right": 0.1559,
+    "top": 0.275,
+    "bottom": 0.2676,
+    "width": 680,
+    "height": 680
+  },
+  "no22-8": {
+    "imageUrl": "https://pbs.twimg.com/media/HCI5knKakAAiZnf?format=jpg&name=small",
+    "left": 0.1868,
+    "right": 0.1647,
+    "top": 0.1912,
+    "bottom": 0.1971,
+    "width": 680,
+    "height": 680
+  },
+  "no23-1": {
+    "imageUrl": "https://newscast.jp/attachments/kD4ps5wVhm3QMuvHPD9A.png",
+    "left": 0.1658,
+    "right": 0.1658,
+    "top": 0.1659,
+    "bottom": 0.1659,
+    "width": 1460,
+    "height": 1459
+  },
+  "no23-2": {
+    "imageUrl": "https://newscast.jp/attachments/XOUtsEJQrS2OaNJt8gGw.png",
+    "left": 0.0658,
+    "right": 0.0658,
+    "top": 0.1356,
+    "bottom": 0.1644,
+    "width": 1459,
+    "height": 1460
+  },
+  "no23-3": {
+    "imageUrl": "https://newscast.jp/attachments/liROHgB7VEqq0KROCLMR.png",
+    "left": 0.2481,
+    "right": 0.2474,
+    "top": 0.0439,
+    "bottom": 0.0439,
+    "width": 1459,
+    "height": 1459
+  },
+  "no28-20": {
+    "imageUrl": "https://pbs.twimg.com/media/GdnBgbhXYAAi7Zo?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0265,
+    "bottom": 0,
+    "width": 485,
+    "height": 680
+  },
+  "no28-21": {
+    "imageUrl": "https://pbs.twimg.com/media/G6aIPPYaQAA4yc2?format=jpg&name=small",
+    "left": 0.0216,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.0618,
+    "width": 510,
+    "height": 680
+  },
+  "no30-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HVroG7vawAAto85?format=jpg&name=small",
+    "left": 0.0412,
+    "right": 0.0294,
+    "top": 0.0862,
+    "bottom": 0.0836,
+    "width": 680,
+    "height": 383
+  },
+  "no40-3": {
+    "imageUrl": "https://pbs.twimg.com/media/HB1rgzRa4AAP2RU?format=jpg&name=small",
+    "left": 0.0345,
+    "right": 0.033,
+    "top": 0.042,
+    "bottom": 0.0405,
+    "width": 667,
+    "height": 667
+  },
+  "no40-4": {
+    "imageUrl": "https://pbs.twimg.com/media/GZGKxd5asAAGe93?format=jpg&name=small",
+    "left": 0.1279,
+    "right": 0.1162,
+    "top": 0.2039,
+    "bottom": 0,
+    "width": 680,
+    "height": 456
+  },
+  "no40-6": {
+    "imageUrl": "https://pbs.twimg.com/media/GUxgSTgboAAEFLl?format=jpg&name=small",
+    "left": 0.2794,
+    "right": 0.2765,
+    "top": 0.107,
+    "bottom": 0.1044,
+    "width": 680,
+    "height": 383
+  },
+  "no41-4": {
+    "imageUrl": "https://pbs.twimg.com/media/FhlDbFFaUAA_ok4?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0294,
+    "bottom": 0,
+    "width": 680,
+    "height": 510
+  },
+  "no51-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HV7RqlPbMAAD6eN?format=jpg&name=small",
+    "left": 0.0265,
+    "right": 0,
+    "top": 0.0206,
+    "bottom": 0.0515,
+    "width": 680,
+    "height": 680
+  },
+  "no51-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HV7Rvbxa0AAZyid?format=jpg&name=small",
+    "left": 0.0265,
+    "right": 0,
+    "top": 0.0206,
+    "bottom": 0.0515,
+    "width": 680,
+    "height": 680
+  },
+  "no51-3": {
+    "imageUrl": "https://pbs.twimg.com/media/HV7VsM0aQAAroBH?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0.0206,
+    "bottom": 0.0515,
+    "width": 680,
+    "height": 680
+  },
+  "no51-4": {
+    "imageUrl": "https://pbs.twimg.com/media/HV7VwBmaAAAXIcB?format=jpg&name=small",
+    "left": 0.0265,
+    "right": 0,
+    "top": 0.0206,
+    "bottom": 0.0515,
+    "width": 680,
+    "height": 680
+  },
+  "no60-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HV787Roa8AAFbzg?format=jpg&name=small",
+    "left": 0.1191,
+    "right": 0.1147,
+    "top": 0.0444,
+    "bottom": 0.0261,
+    "width": 680,
+    "height": 383
+  },
+  "no60-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HV9QiSIa8AAQwD7?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.1458,
+    "bottom": 0,
+    "width": 680,
+    "height": 480
+  },
+  "no64-1": {
+    "imageUrl": "https://pbs.twimg.com/media/G4iVR8bbAAAkkBb?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.107,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-1": {
+    "imageUrl": "https://booth.pximg.net/c/620x620/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/3735029/c8825f87-d12f-4faf-8ce7-e7e99f9f51f0_base_resized.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.0516,
+    "bottom": 0,
+    "width": 620,
+    "height": 620
+  },
+  "no67-2": {
+    "imageUrl": "https://booth.pximg.net/c/620x620/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7622846/56a3db13-07a5-4aae-827b-946fb76c9792_base_resized.jpg",
+    "left": 0.1,
+    "right": 0.1,
+    "top": 0,
+    "bottom": 0,
+    "width": 620,
+    "height": 496
+  },
+  "no68-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HVEScPJbIAA9Py7?format=jpg&name=small",
+    "left": 0.0249,
+    "right": 0,
+    "top": 0.025,
+    "bottom": 0.0235,
+    "width": 481,
+    "height": 680
+  },
+  "no68-6": {
+    "imageUrl": "https://pbs.twimg.com/media/HU_2UyEbAAEDWsQ?format=jpg&name=small",
+    "left": 0.0437,
+    "right": 0.0312,
+    "top": 0.1103,
+    "bottom": 0.0235,
+    "width": 481,
+    "height": 680
+  },
+  "no69-4": {
+    "imageUrl": "https://pbs.twimg.com/media/HVYt3XMagAEzlfM?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0.0235,
+    "top": 0.0334,
+    "bottom": 0.0313,
+    "width": 680,
+    "height": 479
+  },
+  "no69-5": {
+    "imageUrl": "https://pbs.twimg.com/media/HViIQbSakAEvCOf?format=jpg&name=small",
+    "left": 0.0236,
+    "right": 0.0221,
+    "top": 0.0334,
+    "bottom": 0.0313,
+    "width": 679,
+    "height": 479
+  },
+  "no69-6": {
+    "imageUrl": "https://pbs.twimg.com/media/HViIVOjakAIqwBG?format=jpg&name=small",
+    "left": 0.0236,
+    "right": 0.0221,
+    "top": 0.0334,
+    "bottom": 0.0313,
+    "width": 679,
+    "height": 479
+  },
+  "no69-7": {
+    "imageUrl": "https://pbs.twimg.com/media/HVtiQI1aoAAwiyz?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0.0515,
+    "top": 0.0412,
+    "bottom": 0.0431,
+    "width": 680,
+    "height": 510
+  },
+  "no70-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HVemUoLaYAA1VGI?format=jpg&name=small",
+    "left": 0.025,
+    "right": 0,
+    "top": 0.0418,
+    "bottom": 0.0313,
+    "width": 680,
+    "height": 383
+  },
+  "no70-3": {
+    "imageUrl": "https://pbs.twimg.com/media/HVyQ8hOa4AASMpi?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.0221,
+    "width": 544,
+    "height": 680
+  },
+  "no70-4": {
+    "imageUrl": "https://pbs.twimg.com/media/HVw9Tz9aIAAMY6Y?format=jpg&name=small",
+    "left": 0.052,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 481,
+    "height": 680
+  },
+  "no76-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HV4Qv-ZbAAAUOqO?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0235,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no76-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HVzFqmobUAANRDX?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0313,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no76-3": {
+    "imageUrl": "https://pbs.twimg.com/media/HVt8CFtaUAI9Fpu?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0235,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no77-10": {
+    "imageUrl": "https://pbs.twimg.com/media/HV8vrOYaEAAkULa?format=jpg&name=small",
+    "left": 0.0206,
+    "right": 0.0206,
+    "top": 0.0206,
+    "bottom": 0.0294,
+    "width": 680,
+    "height": 680
+  },
+  "no77-11": {
+    "imageUrl": "https://pbs.twimg.com/media/HV82fLna4AEMr7m?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0206,
+    "bottom": 0.0294,
+    "width": 680,
+    "height": 680
+  },
+  "no77-2": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/21adfcc49222f7e6702c67706a45d996.png",
+    "left": 0.0629,
+    "right": 0.0629,
+    "top": 0.2265,
+    "bottom": 0.2273,
+    "width": 1685,
+    "height": 1192
+  },
+  "no77-3": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/6bc2f2b843596fbb47366e74678754ea.png",
+    "left": 0.2185,
+    "right": 0.2319,
+    "top": 0.3539,
+    "bottom": 0.0784,
+    "width": 595,
+    "height": 421
+  },
+  "no77-4": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/02e8c12e075cf5c8e41d073ab363a73d.png",
+    "left": 0.1112,
+    "right": 0.0613,
+    "top": 0.0779,
+    "bottom": 0.0257,
+    "width": 881,
+    "height": 1360
+  },
+  "no77-8": {
+    "imageUrl": "https://pbs.twimg.com/media/HVjbYo9a4AAo1YN?format=jpg&name=small",
+    "left": 0.0227,
+    "right": 0.0289,
+    "top": 0,
+    "bottom": 0,
+    "width": 485,
+    "height": 679
+  },
+  "no77-9": {
+    "imageUrl": "https://pbs.twimg.com/media/HV8o3HhbcAAyCKi?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.0294,
+    "width": 680,
+    "height": 680
+  },
+  "no92-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HU0ctWybUAA2Lmc?format=jpg&name=small",
+    "left": 0.0309,
+    "right": 0.0353,
+    "top": 0.0543,
+    "bottom": 0.0397,
+    "width": 680,
+    "height": 479
+  },
+  "no92-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HU0ctmeaYAA9Sf1?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0909,
+    "bottom": 0,
+    "width": 680,
+    "height": 517
+  },
+  "no97-1": {
+    "imageUrl": "https://himitsu-shotaijo.quizknock.com/wp-content/themes/quizknock_layton/images/favicon_ogp/ogp.jpg?v=2",
+    "left": 0.0333,
+    "right": 0.0333,
+    "top": 0,
+    "bottom": 0,
+    "width": 1200,
+    "height": 630
+  },
+  "p01": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no94/product/p01_photo1.png",
+    "left": 0.2087,
+    "right": 0.2562,
+    "top": 0.045,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p03": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no72/product/p03_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p04": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no72/product/p04_photo1.png",
+    "left": 0.2925,
+    "right": 0.2925,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p05": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no72/product/p05_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p06": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no10/product/p06_photo1.png",
+    "left": 0.2913,
+    "right": 0.2913,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p07": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no10/product/p07_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p08": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no10/product/p08_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p09": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no43/product/p09_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p10": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no43/product/p10_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p11": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no43/product/p11_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p16": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no13/product/p16_photo1.png",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.0471,
+    "width": 800,
+    "height": 467
+  },
+  "p18": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no01/product/p18_photo1.png",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.0278,
+    "width": 800,
+    "height": 467
+  },
+  "p19": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no41/product/p19_photo1.png",
+    "left": 0.05,
+    "right": 0.0512,
+    "top": 0.0428,
+    "bottom": 0.0407,
+    "width": 800,
+    "height": 467
+  },
+  "p20": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no29/product/p20_photo1.png",
+    "left": 0.31,
+    "right": 0.3187,
+    "top": 0.0385,
+    "bottom": 0.0257,
+    "width": 800,
+    "height": 467
+  },
+  "p21": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no29/product/p21_photo1.png",
+    "left": 0.3013,
+    "right": 0.3013,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p22": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no29/product/p22_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p27": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no56/product/p27_photo1.png",
+    "left": 0.305,
+    "right": 0.295,
+    "top": 0.0321,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p28": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no36/product/p28_photo1.png",
+    "left": 0.2075,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p30": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no71/product/p30_photo1.png",
+    "left": 0.0862,
+    "right": 0.0862,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p31": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no71/product/p31_photo1.png",
+    "left": 0.0875,
+    "right": 0.0875,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p32": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no71/product/p32_photo1.png",
+    "left": 0.3,
+    "right": 0.3025,
+    "top": 0.0214,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p37": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no75/product/p37_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p38": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no57/product/p38_photo1.png",
+    "left": 0.0875,
+    "right": 0.0875,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p41": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no75/product/p41_photo1.png",
+    "left": 0.295,
+    "right": 0.295,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p43": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no42/product/p43_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p47": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no82/product/p47_photo1.png",
+    "left": 0.0437,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  }
+}

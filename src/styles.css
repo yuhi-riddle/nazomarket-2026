@@ -21,11 +21,8 @@
   --get: #5ee08f;
   --get-soft: color-mix(in srgb, var(--get) 16%, var(--surface));
   --rank-1: #7d86ad;
-  --rank-2: #4fd1e8;
   --rank-3: #a78bfa;
   --rank-4: #ff9f43;
-  --rank-5: #f2c230;
-  --rank-unknown: #8a93b8;
   --font-pixel: "DotGothic16", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", Meiryo, system-ui, sans-serif;
   --tag-bg: var(--surface-2);
   --accent: var(--key);
@@ -398,6 +395,31 @@ a {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.product-media-cropped {
+  container-type: size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+}
+
+.product-image-crop {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--crop-ratio);
+  width: min(100cqw, 100cqh * var(--crop-ratio));
+}
+
+.product-image-crop .product-image {
+  position: absolute;
+  max-width: none;
+  object-fit: fill;
+}
+
+.product-image-crop[hidden] {
+  display: none;
 }
 
 .product-image[hidden],
@@ -2662,18 +2684,11 @@ noscript {
   display: grid;
   grid-template-columns: 84px 150px minmax(0, 1fr) 260px;
   align-items: stretch;
-  border: 2px solid var(--rank-unknown);
+  border: 2px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
   box-shadow: 0 3px 0 var(--band);
 }
-
-.product-card[data-difficulty="1"] { border-color: var(--rank-1); }
-.product-card[data-difficulty="2"] { border-color: var(--rank-2); }
-.product-card[data-difficulty="3"] { border-color: var(--rank-3); }
-.product-card[data-difficulty="4"] { border-color: var(--rank-4); }
-.product-card[data-difficulty="5"] { border-color: var(--rank-5); }
-.product-card[data-difficulty="unknown"] { border-style: dashed; }
 
 .ticket-stub {
   min-width: 0;
@@ -2808,6 +2823,28 @@ noscript {
 
 .product-price-unit {
   margin-left: 2px;
+  font-size: var(--font-12);
+}
+
+.product-price-limited {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+  margin: 0;
+}
+
+.product-price-limited-label {
+  border: 1px solid var(--key);
+  color: var(--key);
+  border-radius: var(--radius-control);
+  padding: 0 var(--space-1);
+  font-size: var(--font-12);
+  font-weight: 700;
+}
+
+.product-price-regular {
+  color: var(--ink-muted);
   font-size: var(--font-12);
 }
 
