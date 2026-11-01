@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Campaign } from "../types.ts";
-import { countActive, countDueSoon, deadlineLabel, isCampaignActive, listActiveCampaigns } from "./campaigns.ts";
+import { countActive, countByKind, countDueSoon, deadlineLabel, filterActiveByKind, isCampaignActive, listActiveCampaigns } from "./campaigns.ts";
 
 // 日本時間の日時を Date にする（例: jst("2026-11-01T23:59")）
 const jst = (local: string) => new Date(local + ":00+09:00");
@@ -76,6 +76,38 @@ describe("countActive", () => {
     const active = listActiveCampaigns(campaigns, now);
     expect(countActive(campaigns, now)).toBe(3);
     expect(countActive(campaigns, now)).toBe(active.withDeadline.length + active.noDeadline.length);
+  });
+});
+
+describe("種類での絞り込み", () => {
+  const ofKind = (id: string, kind: Campaign["kind"], endsAt: string | null): Campaign => ({ ...campaign(id, endsAt), kind });
+  const now = jst("2026-10-30T12:00");
+  const active = listActiveCampaigns([
+    ofKind("bonus-open", "bonus", null),
+    ofKind("giveaway-late", "giveaway", "2026-11-06T23:59"),
+    ofKind("giveaway-soon", "giveaway", "2026-11-01"),
+    ofKind("discount-open", "discount", null),
+    ofKind("bonus-past", "bonus", "2026-10-29"),
+  ], now);
+
+  it("「すべて」なら一覧をそのまま返す", () => {
+    expect(filterActiveByKind(active, "all")).toEqual(active);
+  });
+
+  it("選んだ種類だけを、締切の近い順を保ったまま返す", () => {
+    expect(filterActiveByKind(active, "giveaway")).toEqual({
+      withDeadline: active.withDeadline,
+      noDeadline: [],
+    });
+    expect(filterActiveByKind(active, "bonus").noDeadline.map((c) => c.id)).toEqual(["bonus-open"]);
+  });
+
+  it("該当がなければ両方とも空", () => {
+    expect(filterActiveByKind(active, "other")).toEqual({ withDeadline: [], noDeadline: [] });
+  });
+
+  it("受付中のものを種類ごとに数える（0件の種類も0で返す）", () => {
+    expect(countByKind(active)).toEqual({ all: 4, bonus: 1, giveaway: 2, discount: 1, other: 0 });
   });
 });
 

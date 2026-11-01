@@ -1,5 +1,5 @@
 import { boothById, campaigns, productById } from "../data.ts";
-import { deadlineLabel, listActiveCampaigns } from "../logic/campaigns.ts";
+import { countByKind, deadlineLabel, filterActiveByKind, listActiveCampaigns, type CampaignFilter } from "../logic/campaigns.ts";
 import type { Campaign, Day } from "../types.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import "./campaign.css";
@@ -24,8 +24,13 @@ export function campaignDialog(openMapAtBooth: (code: string) => void): Campaign
   close.addEventListener("click", () => dialog.close());
   const heading = el("h2", "campaign-dialog-title", "キャンペーン情報");
   heading.id = "campaign-dialog-title";
+  const filters = el("div", "campaign-filter-row");
+  filters.setAttribute("role", "group");
+  filters.setAttribute("aria-label", "種類で絞り込む");
+  const filterStatus = el("p", "campaign-filter-status");
+  filterStatus.setAttribute("role", "status");
   const list = el("div", "campaign-dialog-list");
-  content.append(close, heading, list);
+  content.append(close, heading, filters, filterStatus, list);
   dialog.append(content);
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) dialog.close();
@@ -86,13 +91,60 @@ export function campaignDialog(openMapAtBooth: (code: string) => void): Campaign
 
   // 表示中の中身の目印。締切が過ぎる・日付が変わると変わる
   let shownSignature = "";
+  let selectedFilter: CampaignFilter = "all";
+  let currentActive: ReturnType<typeof listActiveCampaigns> = { withDeadline: [], noDeadline: [] };
+  let currentNow = new Date();
+  let currentCounts = countByKind(currentActive);
   const signatureOf = (active: ReturnType<typeof listActiveCampaigns>, now: Date) =>
     active.withDeadline.map((campaign) => campaign.id + ":" + deadlineLabel(campaign.endsAt!, now).remaining)
       .concat(active.noDeadline.map((campaign) => campaign.id)).join("|");
 
+  const filterOptions: CampaignFilter[] = ["all", "bonus", "giveaway", "discount", "other"];
+  const filterButtons = filterOptions.map((filter) => {
+    const control = button("", "button button-secondary campaign-filter-button");
+    control.setAttribute("aria-pressed", "false");
+    control.addEventListener("click", () => {
+      selectedFilter = filter;
+      for (let index = 0; index < filterOptions.length; index++) {
+        filterButtons[index].setAttribute("aria-pressed", String(filterOptions[index] === selectedFilter));
+      }
+      filterStatus.textContent = `${currentCounts[selectedFilter]}件を表示`;
+      const scrollTop = dialog.scrollTop;
+      renderCards(currentNow, currentActive);
+      dialog.scrollTop = scrollTop;
+    });
+    filters.append(control);
+    return control;
+  });
+
+  const updateFilters = (active: ReturnType<typeof listActiveCampaigns>) => {
+    const counts = countByKind(active);
+    currentCounts = counts;
+    filters.hidden = counts.all === 0;
+    filterStatus.hidden = counts.all === 0;
+    for (let index = 0; index < filterOptions.length; index++) {
+      const filter = filterOptions[index];
+      filterButtons[index].textContent = `${filter === "all" ? "すべて" : kindNames[filter]} ${counts[filter]}`;
+      filterButtons[index].setAttribute("aria-pressed", String(selectedFilter === filter));
+    }
+    filterStatus.textContent = `${counts[selectedFilter]}件を表示`;
+  };
+
   const render = (now: Date, active: ReturnType<typeof listActiveCampaigns>) => {
     shownSignature = signatureOf(active, now);
+    currentNow = now;
+    currentActive = active;
+    updateFilters(active);
+    renderCards(now, active);
+  };
+
+  const renderCards = (now: Date, active: ReturnType<typeof listActiveCampaigns>) => {
     list.replaceChildren();
+    const filtered = filterActiveByKind(active, selectedFilter);
+    if ((active.withDeadline.length || active.noDeadline.length) && !filtered.withDeadline.length && !filtered.noDeadline.length) {
+      list.append(el("p", "campaign-empty", "この種類でいま受け付けているキャンペーンはありません。"));
+      return;
+    }
     if (!active.withDeadline.length && !active.noDeadline.length) {
       list.append(el("p", "campaign-empty", "いま受け付けているキャンペーンはありません。"));
       return;
@@ -106,8 +158,8 @@ export function campaignDialog(openMapAtBooth: (code: string) => void): Campaign
       group.append(cards);
       list.append(group);
     };
-    appendGroup("締切あり（近い順）", active.withDeadline);
-    appendGroup("締切なし・会場で受けられるもの", active.noDeadline);
+    appendGroup("締切あり（近い順）", filtered.withDeadline);
+    appendGroup("締切なし・会場で受けられるもの", filtered.noDeadline);
   };
 
   return {
