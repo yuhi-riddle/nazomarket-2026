@@ -67,6 +67,12 @@ npm run dev
    npm run build-data
    ```
 
+   商品の画像を変えたときは、画像の余白を測り直します（Pillow が必要です）。結果は `data/imageCrops.json` に書き出され、一覧の画像の切り抜きに使います
+
+   ```bash
+   python scripts/measure_image_margins.py
+   ```
+
    ```bash
    npm test
    ```

@@ -1510,7 +1510,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のHP欄が空。QuizKnockのサイトにナゾトキマーケット2026の記載なし。NazoLock単独のX・HPは検索で特定できなかった。今年の新作2点は候補に回した。Xに告知がある可能性あり。 X確認(10/25): 公式 @NazoLock_baton(プロフィールに「QuizKnock発のナゾトキ制作チーム」)が10/22にナゾトキマーケット2026出展を告知。QurioStore公式(@QurioStore_QK)の10/16の投稿で新作「Sandwich」をナゾマ(Bb8)で販売と確認。価格は投稿に記載なし。FUJI・Tumbleweed『Q』は今回の告知が見つからず候補のまま。 再収集(10/30 Web): QuizKnock のイベント一覧にナゾマ・Sandwich の記載なし。価格は埋まらず。 再収集(10/30 X): 10/27 の投稿で新作持ち帰り謎『OBENTO』、10/29 の投稿で新作グッズ『ナゾ付きケシゴム』のナゾマ先行販売を確認して追加(どちらも価格は告知なし)。Sandwich の価格も NazoLock・QurioStore(@QurioStore_QK)の10/24以降の投稿に見つからず null のまま。FUJI・Tumbleweed『Q』の告知なしで候補のまま。 再収集(10/31 X): 10/30 の「商品ラインナップ決定」画像で価格を確認(Sandwich 2,800円・ケシゴム700円・OBENTO限定2,000円)し、FUJI(候補から移動)・NazoPizza・折り紙ナゾ付きアクリルキーホルダー・maze maze maze・クリアファイル-BINGO- の5点を追加。ショッパー100円は商品に入れていない。 画像(10/31 Web): no22-4 はゲームマーケットのブースページ、no22-5 は2025年ナゾマのプレスリリース画像(同じNazoPizza、当時の価格は2,500円)から。no22-6〜8 は HP・ショップ・検索で見つからず(商品ごとの画像は X のラインナップ画像のみで、1枚に並ぶお品書きのため入れていない) 画像(11/1 X): no22-6〜8 は NazoLock の過去の商品告知(商品ごとの画像)から",
+      "notes": "公式のHP欄が空。QuizKnockのサイトにナゾトキマーケット2026の記載なし。NazoLock単独のX・HPは検索で特定できなかった。今年の新作2点は候補に回した。Xに告知がある可能性あり。 X確認(10/25): 公式 @NazoLock_baton(プロフィールに「QuizKnock発のナゾトキ制作チーム」)が10/22にナゾトキマーケット2026出展を告知。QurioStore公式(@QurioStore_QK)の10/16の投稿で新作「Sandwich」をナゾマ(Bb8)で販売と確認。価格は投稿に記載なし。FUJI・Tumbleweed『Q』は今回の告知が見つからず候補のまま。 再収集(10/30 Web): QuizKnock のイベント一覧にナゾマ・Sandwich の記載なし。価格は埋まらず。 再収集(10/30 X): 10/27 の投稿で新作持ち帰り謎『OBENTO』、10/29 の投稿で新作グッズ『ナゾ付きケシゴム』のナゾマ先行販売を確認して追加(どちらも価格は告知なし)。Sandwich の価格も NazoLock・QurioStore(@QurioStore_QK)の10/24以降の投稿に見つからず null のまま。FUJI・Tumbleweed『Q』の告知なしで候補のまま。 再収集(10/31 X): 10/30 の「商品ラインナップ決定」画像で価格を確認(Sandwich 2,800円・ケシゴム700円・OBENTO限定2,000円)し、FUJI(候補から移動)・NazoPizza・折り紙ナゾ付きアクリルキーホルダー・maze maze maze・クリアファイル-BINGO- の5点を追加。ショッパー100円は商品に入れていない。 画像(10/31 Web): no22-4 はゲームマーケットのブースページ、no22-5 は2025年ナゾマのプレスリリース画像(同じNazoPizza、当時の価格は2,500円)から。no22-6〜8 は HP・ショップ・検索で見つからず(商品ごとの画像は X のラインナップ画像のみで、1枚に並ぶお品書きのため入れていない) 画像(11/1 X): no22-6〜8 は NazoLock の過去の商品告知(商品ごとの画像)から 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
       "officialPatches": [],
       "products": [
         {
@@ -1543,10 +1543,6 @@
             },
             {
               "url": "https://x.com/NazoLock_baton/status/2110653152890413215",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/NazoLock_baton/status/2113216294669455599",
               "retrievedAt": "2026-10-25"
             },
             {
@@ -1904,7 +1900,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式サイトには公式オリジナルグッズの商品名・価格がなく、SCRAPのプレスリリース(zaikei掲載)で3点を確認。各日の販売数・個数制限の記載なし。開催記念の謎付きTシャツは特典付きチケットの特典で単体販売なしのため入れていない。 X確認(10/25): 主催のSCRAP公式 @realdgame の10/7の投稿に「公式ブース限定グッズ情報も公開中」とあるが、グッズ名・価格は特設サイトの情報と同じで、追加の商品情報は見つからず。 再収集(10/30 Web): 特設サイトに追加のグッズ情報なし。商品は変更なし。 再収集(10/30 X): 10/28 の @realdgame の投稿は特設サイトの商品一覧(56種)の案内のみで、公式グッズ3点の追加情報・変更なし。 画像(10/31 Web): no23-1〜3 は SCRAP のプレスリリース(zaikei掲載)の商品画像から。ステッカーセットは正方形ステッカーの画像、トートバッグはナチュラルの画像(ネイビーもあり)",
+      "notes": "公式サイトには公式オリジナルグッズの商品名・価格がなく、SCRAPのプレスリリース(zaikei掲載)で3点を確認。各日の販売数・個数制限の記載なし。開催記念の謎付きTシャツは特典付きチケットの特典で単体販売なしのため入れていない。 X確認(10/25): 主催のSCRAP公式 @realdgame の10/7の投稿に「公式ブース限定グッズ情報も公開中」とあるが、グッズ名・価格は特設サイトの情報と同じで、追加の商品情報は見つからず。 再収集(10/30 Web): 特設サイトに追加のグッズ情報なし。商品は変更なし。 再収集(10/30 X): 10/28 の @realdgame の投稿は特設サイトの商品一覧(56種)の案内のみで、公式グッズ3点の追加情報・変更なし。 画像(10/31 Web): no23-1〜3 は SCRAP のプレスリリース(zaikei掲載)の商品画像から。ステッカーセットは正方形ステッカーの画像、トートバッグはナチュラルの画像(ネイビーもあり) 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
       "officialPatches": [],
       "products": [
         {
@@ -1938,10 +1934,6 @@
             {
               "url": "https://news.cube-soft.jp/article/4104883",
               "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://www.scrapmagazine.com/s/nazomarket/",
-              "retrievedAt": "2026-10-30"
             }
           ]
         },
@@ -1976,10 +1968,6 @@
             {
               "url": "https://news.cube-soft.jp/article/4104883",
               "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://www.scrapmagazine.com/s/nazomarket/",
-              "retrievedAt": "2026-10-30"
             }
           ]
         },
@@ -2014,10 +2002,6 @@
             {
               "url": "https://news.cube-soft.jp/article/4104883",
               "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://www.scrapmagazine.com/s/nazomarket/",
-              "retrievedAt": "2026-10-30"
             }
           ]
         }
@@ -2745,7 +2729,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HP(noescape.co.jp)のお知らせとGAME KIT一覧、通販サイト(nazocafe.com)にナゾトキマーケット2026の記載なし。公式ブース概要にある季節シリーズ・異変回遊シリーズは、今回持っていくとの記載がないため候補止まり。異変回遊の持ち帰り商品は見つからず。Xに告知がある可能性あり。 X確認(10/25): @NoEscape_game のタイムライン(10/13〜10/25)にナゾトキマーケット2026の告知なし(価格改定・臨時休業・新シリーズ「なぞとき帰りみち」の告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): HP のお知らせ(最新10/29「帰宅型」周遊謎解き)と通販サイトにナゾマの告知なし。「なぞとき帰りみち」Route.01は2,000円(12/30まで1,700円)で、ナゾマで売るとは書かれていないため入れていない。 再収集(10/30 X): @NoEscape_game の10/24以降の投稿(10/28 異変回遊の予告、10/30 なぞとき帰りみち開始)にナゾマの告知なし。 再収集(11/1 X): 11/1 のお品書きと異変回遊601の告知から全商品を追加（お品書きの画像を読んだ）。 再収集(11/1 X): 新しく足した商品の画像は過去の投稿（最新約160件）を商品名で探し、単体の画像がないものは null のまま。",
+      "notes": "HP(noescape.co.jp)のお知らせとGAME KIT一覧、通販サイト(nazocafe.com)にナゾトキマーケット2026の記載なし。公式ブース概要にある季節シリーズ・異変回遊シリーズは、今回持っていくとの記載がないため候補止まり。異変回遊の持ち帰り商品は見つからず。Xに告知がある可能性あり。 X確認(10/25): @NoEscape_game のタイムライン(10/13〜10/25)にナゾトキマーケット2026の告知なし(価格改定・臨時休業・新シリーズ「なぞとき帰りみち」の告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): HP のお知らせ(最新10/29「帰宅型」周遊謎解き)と通販サイトにナゾマの告知なし。「なぞとき帰りみち」Route.01は2,000円(12/30まで1,700円)で、ナゾマで売るとは書かれていないため入れていない。 再収集(10/30 X): @NoEscape_game の10/24以降の投稿(10/28 異変回遊の予告、10/30 なぞとき帰りみち開始)にナゾマの告知なし。 再収集(11/1 X): 11/1 のお品書きと異変回遊601の告知から全商品を追加（お品書きの画像を読んだ）。 再収集(11/1 X): 新しく足した商品の画像は過去の投稿（最新約160件）を商品名で探し、単体の画像がないものは null のまま。 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
       "officialPatches": [],
       "products": [
         {
@@ -2816,10 +2800,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HG51NEJXUAAk0jV?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2048703754132726014",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -2849,10 +2837,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HG--3UOWQAAOm8_?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2049066218892509299",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -3319,10 +3311,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HFnV3XrasAEMBV2?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2042905504129912884",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -3418,10 +3414,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/GdnBgbhXYAAi7Zo?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/1862799230923927881",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -3451,10 +3451,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/G6aIPPYaQAA4yc2?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/1992533588877910325",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -3484,10 +3488,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/GX_tLz_aoAAVkNJ?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/1838518748132839745",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -3517,10 +3525,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/GydfjsDa4AAkGyU?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/1956657436711883208",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -3550,10 +3562,14 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HFnWSXQbEAAwjtz?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2042905747856724346",
               "retrievedAt": "2026-11-01"
             }
           ],

@@ -3,6 +3,9 @@ import type { CartItem } from "../logic/cart.ts";
 import { difficultyTier } from "../logic/difficultyTier.ts";
 import { formatPlayMinutes } from "../logic/playTime.ts";
 import { productImage } from "../logic/remoteImage.ts";
+import { imageCropFor, imageCropLayout } from "../logic/imageCrop.ts";
+import { imageCrops } from "../data.ts";
+import { limitedPrice } from "../logic/limitedPrice.ts";
 import "./catalogPolish.css";
 import { button, el } from "./dom.ts";
 import { celebrateGet, floatGain } from "./gameFx.ts";
@@ -38,6 +41,9 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   card.append(stub);
 
   const media = el("div", "product-media");
+  const crop = imageCropFor(product, imageCrops);
+  const cropLayout = crop ? imageCropLayout(crop) : null;
+  if (cropLayout) media.classList.add("product-media-cropped");
   const fallback = el("span", "image-fallback", CATEGORY_NAMES[product.category]);
   const imageSrc = productImage(product);
   if (imageSrc) {
@@ -47,12 +53,24 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     image.decoding = "async";
     image.width = 640;
     image.height = 480;
+    let cropFrame: HTMLDivElement | null = null;
+    if (cropLayout) {
+      cropFrame = el("div", "product-image-crop");
+      cropFrame.style.setProperty("--crop-ratio", String(cropLayout.aspectRatio));
+      image.style.width = cropLayout.widthPercent + "%";
+      image.style.height = cropLayout.heightPercent + "%";
+      image.style.left = cropLayout.leftPercent + "%";
+      image.style.top = cropLayout.topPercent + "%";
+      cropFrame.append(image);
+    }
     image.addEventListener("error", () => {
       image.hidden = true;
+      if (cropFrame) cropFrame.hidden = true;
       fallback.hidden = false;
     }, { once: true });
     fallback.hidden = true;
-    media.append(image, fallback);
+    if (cropFrame) media.append(cropFrame, fallback);
+    else media.append(image, fallback);
     image.src = imageSrc;
   } else {
     media.append(fallback);
@@ -87,6 +105,13 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
     );
   }
   const oneLiner = el("p", "product-one-liner", product.oneLiner);
+  const limited = limitedPrice(product.price, product.priceNote);
+  if (limited) {
+    const limitedRow = el("span", "product-price-limited");
+    limitedRow.append(el("span", "product-price-limited-label", limited.label));
+    if (limited.regularPrice !== null) limitedRow.append(el("s", "product-price-regular", "通常" + limited.regularPrice.toLocaleString("ja-JP") + "円"));
+    priceElement.append(limitedRow);
+  }
 
   const difficulty = el("div", "difficulty");
   if (!actions.showBoothLocation) difficulty.append(organizationElement);
