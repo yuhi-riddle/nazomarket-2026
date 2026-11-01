@@ -21,11 +21,8 @@
   --get: #5ee08f;
   --get-soft: color-mix(in srgb, var(--get) 16%, var(--surface));
   --rank-1: #7d86ad;
-  --rank-2: #4fd1e8;
   --rank-3: #a78bfa;
   --rank-4: #ff9f43;
-  --rank-5: #f2c230;
-  --rank-unknown: #8a93b8;
   --font-pixel: "DotGothic16", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", Meiryo, system-ui, sans-serif;
   --tag-bg: var(--surface-2);
   --accent: var(--key);
@@ -2687,18 +2684,11 @@ noscript {
   display: grid;
   grid-template-columns: 84px 150px minmax(0, 1fr) 260px;
   align-items: stretch;
-  border: 2px solid var(--rank-unknown);
+  border: 2px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
   box-shadow: 0 3px 0 var(--band);
 }
-
-.product-card[data-difficulty="1"] { border-color: var(--rank-1); }
-.product-card[data-difficulty="2"] { border-color: var(--rank-2); }
-.product-card[data-difficulty="3"] { border-color: var(--rank-3); }
-.product-card[data-difficulty="4"] { border-color: var(--rank-4); }
-.product-card[data-difficulty="5"] { border-color: var(--rank-5); }
-.product-card[data-difficulty="unknown"] { border-style: dashed; }
 
 .ticket-stub {
   min-width: 0;

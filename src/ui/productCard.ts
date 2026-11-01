@@ -1,6 +1,5 @@
 import { CATEGORY_NAMES, type ProductView } from "../logic/catalog.ts";
 import type { CartItem } from "../logic/cart.ts";
-import { difficultyTier } from "../logic/difficultyTier.ts";
 import { formatPlayMinutes } from "../logic/playTime.ts";
 import { productImage } from "../logic/remoteImage.ts";
 import { imageCropFor, imageCropLayout } from "../logic/imageCrop.ts";
@@ -32,7 +31,6 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const card = el("article", "product-card");
   card.dataset.productId = product.id;
   card.dataset.organization = view.booth.name;
-  card.dataset.difficulty = difficultyTier(product.difficulty.level);
 
   const stub = el("div", "ticket-stub");
   if (!view.booth.boothCode) stub.classList.add("is-undecided");
