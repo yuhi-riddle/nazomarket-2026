@@ -447,7 +447,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認 再収集(10/31 X): 10/31 の投稿で新作3点(簡単なパズル3,500円・Q.●▲★■拡張セット3,500円・Öoo×TOKIQIL コラボアパレル)を確認して products に追加。アパレルの価格は未発表。新作アパレルは5組の予定で、ほかの組の商品は未発表。 / 画像(10/31 Web): no04-1 は tokiqil.com(ブランド紹介のみ)・shop.tokiqil.com(429)・検索で見つからず 画像(11/1 X): no04-1 は X(トキキル・公演アカウント)でも商品単体の画像が見つからず(見つかったのは店頭ポスター画像のみ) 再収集(11/1 X): お品書きを反映。Tシャツの価格を埋め、R.オノマトペ・R.●▲★■・K.オノマトペ・Q.●▲★■・ROUNDEAD・新作長袖Tを追加。",
+      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認 再収集(10/31 X): 10/31 の投稿で新作3点(簡単なパズル3,500円・Q.●▲★■拡張セット3,500円・Öoo×TOKIQIL コラボアパレル)を確認して products に追加。アパレルの価格は未発表。新作アパレルは5組の予定で、ほかの組の商品は未発表。 / 画像(10/31 Web): no04-1 は tokiqil.com(ブランド紹介のみ)・shop.tokiqil.com(429)・検索で見つからず 画像(11/1 X): no04-1 は X(トキキル・公演アカウント)でも商品単体の画像が見つからず(見つかったのは店頭ポスター画像のみ) 再収集(11/1 X): お品書きを反映。Tシャツの価格を埋め、R.オノマトペ・R.●▲★■・K.オノマトペ・Q.●▲★■・ROUNDEAD・新作長袖Tを追加。 再収集(11/1 X): 新しく足した商品の画像は過去の投稿（最新約160件）を商品名で探し、単体の画像がないものは null のまま。",
       "officialPatches": [],
       "products": [
         {
@@ -606,7 +606,7 @@
             "sun"
           ],
           "payment": null,
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HV9adgVa4AA0Sv3?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",
@@ -643,10 +643,14 @@
             "sun"
           ],
           "payment": null,
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HUttKXLbAAAomTM?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2110901255732445520",
               "retrievedAt": "2026-11-01"
             }
           ],
@@ -709,7 +713,7 @@
             "sun"
           ],
           "payment": null,
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HV9pr_6bMAAHnbq?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",
@@ -746,7 +750,7 @@
             "sun"
           ],
           "payment": null,
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HV9LqqhawAAEKQ-?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",

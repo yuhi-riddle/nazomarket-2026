@@ -376,7 +376,7 @@
       "sun"
     ],
     "payment": null,
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV9adgVa4AA0Sv3?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
@@ -393,7 +393,6 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -421,10 +420,14 @@
       "sun"
     ],
     "payment": null,
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HUttKXLbAAAomTM?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
+        "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2110901255732445520",
         "retrievedAt": "2026-11-01"
       }
     ],
@@ -435,7 +438,6 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -504,7 +506,7 @@
       "sun"
     ],
     "payment": null,
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV9pr_6bMAAHnbq?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
@@ -521,7 +523,6 @@
     "unconfirmed": [
       "difficulty",
       "isNew",
-      "imageUrl",
       "payment"
     ]
   },
@@ -549,7 +550,7 @@
       "sun"
     ],
     "payment": null,
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HV9LqqhawAAEKQ-?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
@@ -565,7 +566,6 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4980,10 +4980,14 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HTsp-GmXAAAfT-R?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+        "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/2106323401463812160",
         "retrievedAt": "2026-11-01"
       }
     ],
@@ -4993,8 +4997,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5062,10 +5065,14 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HLOYYu8aMAADyQi?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+        "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/2068167202004734028",
         "retrievedAt": "2026-11-01"
       }
     ],
@@ -5075,8 +5082,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -6779,10 +6785,14 @@
       "PayPay",
       "クレジットカード"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G4Bvyl2WMAAYTb1?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/Nazo_Gram/status/2116863145897861143",
+        "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/Nazo_Gram/status/1981706760659595751",
         "retrievedAt": "2026-11-01"
       }
     ],
@@ -6791,8 +6801,7 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -6823,10 +6832,14 @@
       "PayPay",
       "クレジットカード"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G38kR9SXcAAh8X7?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/Nazo_Gram/status/2116863145897861143",
+        "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/Nazo_Gram/status/1981344886646591647",
         "retrievedAt": "2026-11-01"
       }
     ],
@@ -6835,8 +6848,7 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7461,10 +7473,14 @@
     "payment": [
       "現金"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB1rgzRa4AAP2RU?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+        "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/return_zero_thk/status/2025893620864454958",
         "retrievedAt": "2026-11-01"
       }
     ],
@@ -7472,8 +7488,7 @@
     "boothId": "no40",
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7543,10 +7558,14 @@
     "payment": [
       "現金"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HB1rlpgbEAAbDHJ?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+        "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/return_zero_thk/status/2025893704372982068",
         "retrievedAt": "2026-11-01"
       }
     ],
@@ -7554,8 +7573,7 @@
     "boothId": "no40",
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
