@@ -1,6 +1,6 @@
 {
   "range": "no15-no28",
-  "collectedAt": "2026-10-31",
+  "collectedAt": "2026-11-01",
   "booths": [
     {
       "boothId": "no15",
@@ -2745,9 +2745,821 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HP(noescape.co.jp)のお知らせとGAME KIT一覧、通販サイト(nazocafe.com)にナゾトキマーケット2026の記載なし。公式ブース概要にある季節シリーズ・異変回遊シリーズは、今回持っていくとの記載がないため候補止まり。異変回遊の持ち帰り商品は見つからず。Xに告知がある可能性あり。 X確認(10/25): @NoEscape_game のタイムライン(10/13〜10/25)にナゾトキマーケット2026の告知なし(価格改定・臨時休業・新シリーズ「なぞとき帰りみち」の告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): HP のお知らせ(最新10/29「帰宅型」周遊謎解き)と通販サイトにナゾマの告知なし。「なぞとき帰りみち」Route.01は2,000円(12/30まで1,700円)で、ナゾマで売るとは書かれていないため入れていない。 再収集(10/30 X): @NoEscape_game の10/24以降の投稿(10/28 異変回遊の予告、10/30 なぞとき帰りみち開始)にナゾマの告知なし。",
+      "notes": "HP(noescape.co.jp)のお知らせとGAME KIT一覧、通販サイト(nazocafe.com)にナゾトキマーケット2026の記載なし。公式ブース概要にある季節シリーズ・異変回遊シリーズは、今回持っていくとの記載がないため候補止まり。異変回遊の持ち帰り商品は見つからず。Xに告知がある可能性あり。 X確認(10/25): @NoEscape_game のタイムライン(10/13〜10/25)にナゾトキマーケット2026の告知なし(価格改定・臨時休業・新シリーズ「なぞとき帰りみち」の告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): HP のお知らせ(最新10/29「帰宅型」周遊謎解き)と通販サイトにナゾマの告知なし。「なぞとき帰りみち」Route.01は2,000円(12/30まで1,700円)で、ナゾマで売るとは書かれていないため入れていない。 再収集(10/30 X): @NoEscape_game の10/24以降の投稿(10/28 異変回遊の予告、10/30 なぞとき帰りみち開始)にナゾマの告知なし。 再収集(11/1 X): 11/1 のお品書きと異変回遊601の告知から全商品を追加（お品書きの画像を読んだ）。 再収集(11/1 X): 新しく足した商品の画像は過去の投稿（最新約160件）を商品名で探し、単体の画像がないものは null のまま。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "name": "異変回遊601 土産者",
+          "price": 4900,
+          "priceNote": "ナゾマ限定価格（定価5,200円）",
+          "category": "kit",
+          "oneLiner": "2人で物語を読み合わせる箱型の新形式「対話型」先行発売",
+          "description": "お土産を「買った側」「もらう側」の2人になって物語を読み合わせていく新形式「対話型」コンテンツ。NoEscape初の箱型持ち帰り謎解き作品。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度★5/7 → 5/7×5=3.6 → 4"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
+          "players": "2人",
+          "isNew": true,
+          "limited": "限定先行発売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCAEfHX0AAwnaC?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116832644461658561",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2116832646709883285",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-1"
+        },
+        {
+          "name": "異変回遊001 異常可変標識",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "異変回遊001 異常可変標識",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-2"
+        },
+        {
+          "name": "異変回遊002 地方固有災害",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "異変回遊002 地方固有災害",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-3"
+        },
+        {
+          "name": "異変回遊003 体衆町中華",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "異変回遊003 体衆町中華",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-4"
+        },
+        {
+          "name": "異変回遊004 執扱説明書",
+          "price": 2200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "異変回遊004 執扱説明書",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-5"
+        },
+        {
+          "name": "花火",
+          "price": 4700,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "花火",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-6"
+        },
+        {
+          "name": "紅葉",
+          "price": 7700,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "紅葉",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-7"
+        },
+        {
+          "name": "吹雪",
+          "price": 4900,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "吹雪",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HTsp-GmXAAAfT-R?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2106323401463812160",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-8"
+        },
+        {
+          "name": "桜花",
+          "price": 4900,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "桜花",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-9"
+        },
+        {
+          "name": "栗花落",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "栗花落",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HLOYYu8aMAADyQi?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NoEscape_game/status/2068167202004734028",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-10"
+        },
+        {
+          "name": "季節シリーズ全作セット",
+          "price": 23200,
+          "priceNote": "単品合計25,200円から2,000円引き",
+          "category": "kit",
+          "oneLiner": "季節シリーズ全作セット",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-11"
+        },
+        {
+          "name": "テスト謎 5教科セット",
+          "price": 4500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "テスト謎 5教科セット",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-12"
+        },
+        {
+          "name": "折ルト結末ガ変ワル手紙 01 旅人の手紙",
+          "price": 900,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "折ルト結末ガ変ワル手紙 01 旅人の手紙",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-13"
+        },
+        {
+          "name": "折ルト結末ガ変ワル手紙 02 睨み合う手紙",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "折ルト結末ガ変ワル手紙 02 睨み合う手紙",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-14"
+        },
+        {
+          "name": "折ルト結末ガ変ワル手紙 03 告白の手紙",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "折ルト結末ガ変ワル手紙 03 告白の手紙",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-15"
+        },
+        {
+          "name": "折ルト結末ガ変ワル手紙 04 塒を巻く手紙",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "折ルト結末ガ変ワル手紙 04 塒を巻く手紙",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-16"
+        },
+        {
+          "name": "店主のいない喫茶店",
+          "price": 2200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "店主のいない喫茶店",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-17"
+        },
+        {
+          "name": "ファーレンハイトの審判",
+          "price": 2800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ファーレンハイトの審判",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-18"
+        },
+        {
+          "name": "秘密セット",
+          "price": 4000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "秘密セット",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-19"
+        },
+        {
+          "name": "ムーンシャインの秘跡",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ムーンシャインの秘跡",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-20"
+        },
+        {
+          "name": "解読不能文書",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "解読不能文書",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-21"
+        },
+        {
+          "name": "人喰いの路地裏",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "人喰いの路地裏",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-22"
+        },
+        {
+          "name": "十人村殺人事件",
+          "price": 1700,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "十人村殺人事件",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-23"
+        },
+        {
+          "name": "或る華族と一枚の遺書",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "或る華族と一枚の遺書",
+          "description": "ブースのお品書きの画像に商品名と価格のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no28-24"
+        }
+      ],
       "candidates": [
         {
           "name": "長編謎解きミステリー 季節シリーズ",

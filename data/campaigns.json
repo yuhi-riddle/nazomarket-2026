@@ -493,5 +493,197 @@
         "retrievedAt": "2026-10-31"
       }
     ]
+  },
+  {
+    "id": "no04-c1",
+    "boothId": "no04",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "7,000円以上でクリアファイル入りクイズ暗号",
+    "detail": "トキキル商品を7,000円以上買った人に、クリアファイル入りクイズ暗号をプレゼント。Q.●▲★■ と K.オノマトペをテーマにしたクイズで、推定プレイ時間45分。1,000円でも買える",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2116519980103786768",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no17-c1",
+    "boothId": "no17",
+    "productIds": [],
+    "kind": "other",
+    "title": "新作3作品の取り置き予約",
+    "detail": "謎組（Bb9）の新作3作品の取り置き予約を受け付け中。11月5日（木）23:59まで",
+    "endsAt": "2026-11-05T23:59",
+    "days": [],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/NAZOGUMI/status/2116470242780012734",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no24-c1",
+    "boothId": "no24",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "1,000円のお会計ごとに福引チャレンジ",
+    "detail": "1,000円のお会計ごとに1回（Instagram フォローか公式 LINE 友だち追加でも1回）。A賞は好きな持ち帰り謎1つ、B賞はオリジナルコースター、C賞は選べるポストカード謎かお菓子。ハズレなし",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/escape_cafe/status/2116497411967168929",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no28-c1",
+    "boothId": "no28",
+    "productIds": [],
+    "kind": "discount",
+    "title": "3点以上の購入でお会計から500円引き",
+    "detail": "NoEscape（Cb15）で3点以上買うとお会計から500円引き。セット商品は1点と数える（季節シリーズ全作セットを除く）。支払いは現金/PayPay",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no28-c2",
+    "boothId": "no28",
+    "productIds": [
+      "no28-1"
+    ],
+    "kind": "bonus",
+    "title": "『土産者』購入で仕掛け付き紙袋",
+    "detail": "『異変回遊601 土産者』の購入特典として、仕掛け付き紙袋をプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "各日100枚限定",
+    "sources": [
+      {
+        "url": "https://x.com/NoEscape_game/status/2116832646709883285",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no28-c3",
+    "boothId": "no28",
+    "productIds": [
+      "no28-6",
+      "no28-7",
+      "no28-8",
+      "no28-9",
+      "no28-10",
+      "no28-11"
+    ],
+    "kind": "discount",
+    "title": "季節シリーズ全作セットで2,000円お得",
+    "detail": "季節シリーズ（花火・紅葉・吹雪・桜花・栗花落）の全作セットが、通常25,200円のところ23,200円",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/NoEscape_game/status/2116840171735855384",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no32-c3",
+    "boothId": "no32",
+    "productIds": [],
+    "kind": "giveaway",
+    "title": "新作持ち帰り謎を抽選で計4名にプレゼント",
+    "detail": "Sheep Rhythm のアカウントをフォローし、投稿をリポストすると応募完了。ナゾトキマーケット当日に Cc21 で受け取れる人限定",
+    "endsAt": "2026-11-06T23:59",
+    "days": [],
+    "limit": "抽選4名",
+    "sources": [
+      {
+        "url": "https://x.com/sheeprhythm/status/2116870501004104146",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no79-c1",
+    "boothId": "no79",
+    "productIds": [
+      "p36",
+      "p42",
+      "no79-1"
+    ],
+    "kind": "discount",
+    "title": "新作謎セットで200円引き＋ステッカー",
+    "detail": "積謎厳禁と未来謎の2点セットが通常3,200円のところ3,000円。先着で限定の積謎上等ステッカーをプレゼント（無くなり次第終了）",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "ステッカーは先着",
+    "sources": [
+      {
+        "url": "https://x.com/amaka2don/status/2116862828208443525",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
+  },
+  {
+    "id": "no79-c2",
+    "boothId": "no79",
+    "productIds": [
+      "p36",
+      "p42",
+      "p57",
+      "no79-2"
+    ],
+    "kind": "discount",
+    "title": "新作3点のコンプセットで500円引き",
+    "detail": "積謎厳禁・未来謎・謎解偏愛考察の3点セットが、通常5,500円のところ5,000円",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/amaka2don/status/2116862828208443525",
+        "retrievedAt": "2026-11-01"
+      }
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 {
   "range": "no85-no97",
-  "collectedAt": "2026-10-30",
+  "collectedAt": "2026-11-01",
   "booths": [
     {
       "boothId": "no85",
@@ -699,9 +699,76 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式サイト(riworksnazo.github.io)を確認。NEWS(2026-09-06)に、ナゾトキサミット6(9/12-13 広島)で持ち帰り謎を販売予定とあるが、商品名・価格の記載なし。ナゾトキマーケットの告知は未掲載。CONTENTS はタイトル11件のみ（公演型・キット型の別なし）。X を見れば取れそう。 X(@RI_Works_nazo)を確認: 検索・タイムラインとも、2026年9月以降は大阪最宴祭16（公演）の告知のみで、ナゾトキマーケットの告知なし。商品は取れず。 再収集(10/30 Web): 公式サイトのニュースを再確認。最新は2026-10-12・10-06の公演告知のみで、ナゾトキマーケットの告知なし。新しい告知なし。 再収集(10/30 X): 10/24 以降の @RI_Works_nazo の投稿はボイすて2のコンプリートガイド（10/27）のみ。ナゾトキマーケットの商品告知なし（8/21の出展決定告知のみ）",
+      "notes": "公式サイト(riworksnazo.github.io)を確認。NEWS(2026-09-06)に、ナゾトキサミット6(9/12-13 広島)で持ち帰り謎を販売予定とあるが、商品名・価格の記載なし。ナゾトキマーケットの告知は未掲載。CONTENTS はタイトル11件のみ（公演型・キット型の別なし）。X を見れば取れそう。 X(@RI_Works_nazo)を確認: 検索・タイムラインとも、2026年9月以降は大阪最宴祭16（公演）の告知のみで、ナゾトキマーケットの告知なし。商品は取れず。 再収集(10/30 Web): 公式サイトのニュースを再確認。最新は2026-10-12・10-06の公演告知のみで、ナゾトキマーケットの告知なし。新しい告知なし。 再収集(10/30 X): 10/24 以降の @RI_Works_nazo の投稿はボイすて2のコンプリートガイド（10/27）のみ。ナゾトキマーケットの商品告知なし（8/21の出展決定告知のみ） 再収集(11/1 X): 新作『RI:Place』『サクッ！とリドル』を追加。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "name": "RI:Place",
+          "price": 800,
+          "priceNote": "ナゾマ限定価格（通常1,000円）",
+          "category": "kit",
+          "oneLiner": "設定やストーリーのない、Placeが織りなす純粋な謎",
+          "description": "この謎に、設定やストーリーはありません。“Place”が織りなす純粋な謎たちを、ぜひお楽しみください。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 難易度★3/5"
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": 40
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWBGncQbcAAzFve?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2116862819706495065",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no91-1"
+        },
+        {
+          "name": "サクッ！とリドル",
+          "price": 300,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "少しのスキマ時間にサクッと遊べる持ち帰り謎シリーズ",
+          "description": "寝る前の時間やちょっとした休憩時間など、“少しのスキマ時間にサクッ！と遊べる”をコンセプトにした持ち帰り謎のシリーズ。10分程で遊べるので、謎解き初心者にもぴったり。",
+          "difficulty": {
+            "level": 1,
+            "source": "official",
+            "basis": "団体表記 難易度★1〜2/5 の下限"
+          },
+          "playMinutes": {
+            "min": 5,
+            "max": 15
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWBHIblaUAA4FKd?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2116877924859261219",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no91-2"
+        }
+      ],
       "candidates": []
     },
     {
