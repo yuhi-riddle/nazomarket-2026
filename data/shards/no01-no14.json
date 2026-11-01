@@ -1,6 +1,6 @@
 {
   "range": "no01-no14",
-  "collectedAt": "2026-10-31",
+  "collectedAt": "2026-11-01",
   "booths": [
     {
       "boothId": "no01",
@@ -447,14 +447,14 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認 再収集(10/31 X): 10/31 の投稿で新作3点(簡単なパズル3,500円・Q.●▲★■拡張セット3,500円・Öoo×TOKIQIL コラボアパレル)を確認して products に追加。アパレルの価格は未発表。新作アパレルは5組の予定で、ほかの組の商品は未発表。 / 画像(10/31 Web): no04-1 は tokiqil.com(ブランド紹介のみ)・shop.tokiqil.com(429)・検索で見つからず 画像(11/1 X): no04-1 は X(トキキル・公演アカウント)でも商品単体の画像が見つからず(見つかったのは店頭ポスター画像のみ)",
+      "notes": "tokiqil.comはブランド紹介のみでナゾトキマーケットの記載なし。ショップ(shop.tokiqil.com)は Chrome で確認済み(ナゾトキマーケットの記載なし・既存の服のみ)。ブース販売品は未確認。Xで取れそう / X(@tokiqil)確認済み。ブースA5、新作クリエイター5組の告知あり(商品名・価格なし)。2026-10-20の投稿で「ナゾトキマーケット2026 新作鋭意制作中」 / 再収集(10/30 Web): 新しい告知なし。tokiqil.comに告知なし、shop.tokiqil.comは429で再確認できず / 再収集(10/30 X): 10/26 にシュレディンガーズ・コール本人が「トキキルのブースA5で謎解きシャツ発売」と投稿(トキキルがリポスト)したため no04-1 に追加。10/26 のトキキル投稿「新作ラインナップ、制作者公開」の本文に商品名・価格なし。ほかの4組の商品名・価格は未確認 再収集(10/31 X): 10/31 の投稿で新作3点(簡単なパズル3,500円・Q.●▲★■拡張セット3,500円・Öoo×TOKIQIL コラボアパレル)を確認して products に追加。アパレルの価格は未発表。新作アパレルは5組の予定で、ほかの組の商品は未発表。 / 画像(10/31 Web): no04-1 は tokiqil.com(ブランド紹介のみ)・shop.tokiqil.com(429)・検索で見つからず 画像(11/1 X): no04-1 は X(トキキル・公演アカウント)でも商品単体の画像が見つからず(見つかったのは店頭ポスター画像のみ) 再収集(11/1 X): お品書きを反映。Tシャツの価格を埋め、R.オノマトペ・R.●▲★■・K.オノマトペ・Q.●▲★■・ROUNDEAD・新作長袖Tを追加。",
       "officialPatches": [],
       "products": [
         {
           "id": "no04-1",
           "name": "シュレディンガーズ・コール 謎解きシャツ",
-          "price": null,
-          "priceNote": null,
+          "price": 8000,
+          "priceNote": "長袖Tシャツ。お品書きの画像より",
           "category": "goods",
           "oneLiner": "Tシャツの謎を解いた人だけ買える、シュレコデザインのシャツ",
           "description": "『シュレディンガーズ・コール』のTシャツの謎を解いた方だけが、シュレコデザインのシャツを購入できるそうです！（クリエイター側の投稿より）",
@@ -481,6 +481,10 @@
             {
               "url": "https://x.com/tokiqil/status/2114295906749014419",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
             }
           ]
         },
@@ -547,8 +551,8 @@
         {
           "id": "no04-4",
           "name": "Öoo×TOKIQIL コラボアパレル",
-          "price": null,
-          "priceNote": null,
+          "price": 8000,
+          "priceNote": "Tシャツ。お品書きの画像より",
           "category": "goods",
           "oneLiner": "解かないと着られない洋服ブランドÖooとのコラボアパレル",
           "description": "Öoo(@namatakahashi)×TOKIQIL コラボアパレル。限定50着。",
@@ -571,8 +575,219 @@
             {
               "url": "https://x.com/tokiqil/status/2116464027580952871",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
             }
           ]
+        },
+        {
+          "name": "R.オノマトペ",
+          "price": 1500,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "『K.オノマトペ』がテーマのWeb完結の持ち帰り謎（60分）",
+          "description": "『K. オノマトペ』をテーマにした web 完結の持ち帰り謎。謎制作：ほり。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 60
+          },
+          "players": null,
+          "isNew": true,
+          "limited": "限定300部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116511073272779018",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no04-5"
+        },
+        {
+          "name": "R.●▲★■",
+          "price": 2000,
+          "priceNote": "ナゾマスペシャルプライス（通常2,200円）",
+          "category": "kit",
+          "oneLiner": "『Q.●▲★■』がテーマの持ち帰り謎。パッケージ刷新（90分）",
+          "description": "『Q ●▲★■』をテーマにした持ち帰り謎。謎制作：水瀬 yazrow。パッケージをリニューアル。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 90
+          },
+          "players": null,
+          "isNew": null,
+          "limited": "限定300部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no04-6"
+        },
+        {
+          "name": "K.オノマトペ",
+          "price": 3000,
+          "priceNote": "ナゾマスペシャルプライス（通常3,300円）",
+          "category": "other",
+          "oneLiner": "擬音だらけのメモからメニューを推測するボードゲーム",
+          "description": "グツグツ、トントン、ヒエヒエ、パラパラ、擬音だらけのメモから、メニューを推測せよ。10分・2〜11人・7歳以上。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 10,
+            "max": 10
+          },
+          "players": "2〜11人",
+          "isNew": null,
+          "limited": "限定300部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no04-7"
+        },
+        {
+          "name": "Q.●▲★■",
+          "price": 3000,
+          "priceNote": "ナゾマスペシャルプライス（通常3,300円）",
+          "category": "other",
+          "oneLiner": "分割された問題文を繋いで答えるひらめきパーティゲーム",
+          "description": "「誰でも正解できるクイズ」ただしグチャグチャ。バラバラに分割された問題文を、繋いで答える瞬速ひらめきパーティゲーム。10分・3〜12人・8歳以上。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 10,
+            "max": 10
+          },
+          "players": "3〜12人",
+          "isNew": null,
+          "limited": "限定300部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116527398057574709",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no04-8"
+        },
+        {
+          "name": "ROUNDEAD",
+          "price": 7000,
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "回転台のデスゲーム。毒杯ロシアンルーレットのボードゲーム",
+          "description": "回転台のデスゲーム。狂気の毒杯ロシアンルーレット。10〜20分・2〜6人・6歳以上。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 10,
+            "max": 20
+          },
+          "players": "2〜6人",
+          "isNew": true,
+          "limited": "限定60部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116496070218014873",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no04-9"
+        },
+        {
+          "name": "新作コラボ長袖T（あまつパイセン／物理／きまぐれパズル／まっきー）",
+          "price": 8000,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "謎解きクリエイターとのコラボ新作長袖Tシャツ4種",
+          "description": "トキキルの新作アパレル。お品書きの画像に長袖Tシャツとして作家名と価格を記載。完売した場合も受注を受け付ける。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no04-10"
         }
       ],
       "candidates": [
@@ -1698,13 +1913,13 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HPは会社紹介のみでお知らせ・ナゾトキマーケットの記載なし。BASEの物販ページに既存の持ち帰り謎9点(1,000〜2,000円、例: ELEVATOR HOUSE 2,000円、HOLE 1,800円)があるが、発売日・今回持参の記載がなく候補にも入れなかった。アットビの公式サイトは見つからず。Xで取れそう / X(@efex_info・@atobi_PR)確認済み。アットビの新作『逆転！クレーム百貨店』を持参(10/15投稿。もう1作は今回は見送り)。エフェックス側の商品名は見つからず。両社の商品を各1点以上買うと限定コラボ謎解きBOOKをプレゼント(商品ではなく特典。一部200円以下の課金要素あり)。ブースBa2 / 再収集(10/30 Web): 新しい告知なし。BASEショップ(efex.official.ec)に『逆転！クレーム百貨店』の掲載なく、価格はnullのまま / 再収集(10/30 X): @atobi_PR・@efex_info の10/24 以降の投稿に『逆転！クレーム百貨店』の価格・新情報なし(最新はパッケージ制作中の10/21 投稿)。価格はnullのまま / 画像(10/31 Web): no11-1 は efex.official.ec(BASE)・検索で見つからず 画像(11/1 X): no11-1 は 10/17 の投票投稿のメインビジュアル案(card_img。10/21 の投稿で採用された『前者』の案)から",
+      "notes": "HPは会社紹介のみでお知らせ・ナゾトキマーケットの記載なし。BASEの物販ページに既存の持ち帰り謎9点(1,000〜2,000円、例: ELEVATOR HOUSE 2,000円、HOLE 1,800円)があるが、発売日・今回持参の記載がなく候補にも入れなかった。アットビの公式サイトは見つからず。Xで取れそう / X(@efex_info・@atobi_PR)確認済み。アットビの新作『逆転！クレーム百貨店』を持参(10/15投稿。もう1作は今回は見送り)。エフェックス側の商品名は見つからず。両社の商品を各1点以上買うと限定コラボ謎解きBOOKをプレゼント(商品ではなく特典。一部200円以下の課金要素あり)。ブースBa2 / 再収集(10/30 Web): 新しい告知なし。BASEショップ(efex.official.ec)に『逆転！クレーム百貨店』の掲載なく、価格はnullのまま / 再収集(10/30 X): @atobi_PR・@efex_info の10/24 以降の投稿に『逆転！クレーム百貨店』の価格・新情報なし(最新はパッケージ制作中の10/21 投稿)。価格はnullのまま / 画像(10/31 Web): no11-1 は efex.official.ec(BASE)・検索で見つからず 画像(11/1 X): no11-1 は 10/17 の投票投稿のメインビジュアル案(card_img。10/21 の投稿で採用された『前者』の案)から 再収集(11/1 X): クレーム百貨店の価格とひらめき弁当を追加。",
       "officialPatches": [],
       "products": [
         {
           "id": "no11-1",
           "name": "逆転！クレーム百貨店",
-          "price": null,
+          "price": 2800,
           "priceNote": null,
           "category": "kit",
           "oneLiner": "アットビ制作の百貨店テーマの新作持ち帰り謎",
@@ -1732,6 +1947,10 @@
             {
               "url": "https://x.com/atobi_PR/status/2111449634367480085",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/atobi_PR/status/2116844911446401523",
+              "retrievedAt": "2026-11-01"
             }
           ],
           "hashtags": [
@@ -1745,6 +1964,36 @@
               ]
             }
           ]
+        },
+        {
+          "name": "ひらめき弁当",
+          "price": 2500,
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "ナゾトキマーケット会場限定のひらめき弁当。再販なし",
+          "description": "ナゾトキマーケット会場限定販売。販売は11月7日・8日の会場2日間限定。再販は行わない。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": "会場2日間限定・再販なし",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWCVIrVa0AAOwZR?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2116856070933238017",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no11-2"
         }
       ],
       "candidates": [],

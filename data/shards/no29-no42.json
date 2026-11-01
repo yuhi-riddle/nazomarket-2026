@@ -1,6 +1,6 @@
 {
   "range": "no29-no42",
-  "collectedAt": "2026-10-31",
+  "collectedAt": "2026-11-01",
   "booths": [
     {
       "boothId": "no29",
@@ -1193,9 +1193,43 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "BOOTHのトップはHTTP 403で見られず、/items は『現在このショップは非公開中です』の表示で商品一覧なし。Web検索でも商品情報は出ず。ブース概要の『錬金術入門』『ダイイングメッセージ』は既存作の紹介で、今回の持ち込みとは書いていない(ダイイングメッセージはイマーシブ推理ゲームとあり持ち帰り品かも不明)。Xを見れば取れる可能性あり(Xアカウントは未確認) 【Xパス】@cinematrickshop(シネマトリックショップ、シネマトリックの販売用アカウント)を確認。2025年のナゾトキマーケット(Cb6)で『錬金術入門』を完売・追加販売した投稿はあるが、2026年9月以降にナゾトキマーケット2026向けの告知は無し。2026-03-13に『錬金術入門』は『今後Amazonでの販売に一本化』と告知(その後2026-07に名古屋・東京の店頭販売の告知あり)。ナゾトキマーケット2026に持ってくる商品は確認できず。 再収集(10/30 Web): 新しい告知なし(Web検索で商品情報は出ない。BOOTHは前回非公開表示、今回は再確認せず) 再収集(10/30 X): 10/24 以降の @cinematrickshop に投稿なし(最新は2026-07-11)。『シネマトリック ナゾトキマーケット2026』のX検索もヒットなしで、出品の有無は引き続き確認できず。候補のまま",
+      "notes": "BOOTHのトップはHTTP 403で見られず、/items は『現在このショップは非公開中です』の表示で商品一覧なし。Web検索でも商品情報は出ず。ブース概要の『錬金術入門』『ダイイングメッセージ』は既存作の紹介で、今回の持ち込みとは書いていない(ダイイングメッセージはイマーシブ推理ゲームとあり持ち帰り品かも不明)。Xを見れば取れる可能性あり(Xアカウントは未確認) 【Xパス】@cinematrickshop(シネマトリックショップ、シネマトリックの販売用アカウント)を確認。2025年のナゾトキマーケット(Cb6)で『錬金術入門』を完売・追加販売した投稿はあるが、2026年9月以降にナゾトキマーケット2026向けの告知は無し。2026-03-13に『錬金術入門』は『今後Amazonでの販売に一本化』と告知(その後2026-07に名古屋・東京の店頭販売の告知あり)。ナゾトキマーケット2026に持ってくる商品は確認できず。 再収集(10/30 Web): 新しい告知なし(Web検索で商品情報は出ない。BOOTHは前回非公開表示、今回は再確認せず) 再収集(10/30 X): 10/24 以降の @cinematrickshop に投稿なし(最新は2026-07-11)。『シネマトリック ナゾトキマーケット2026』のX検索もヒットなしで、出品の有無は引き続き確認できず。候補のまま 再収集(11/1 X): 新作の謎付きおみくじを追加。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "name": "謎付き“あの”おみくじ",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "星座とルーレットのおみくじ器が謎付きで登場。会場限定",
+          "description": "懐かしの、星座とルーレットの“あの”おみくじ器が「謎付き」で登場。コインを入れてレバーを引くと、おみくじが飛び出し、ルーレットが回る。難易度：初級〜中級。実際におみくじを引くため、イベント会場限定販売。",
+          "difficulty": {
+            "level": 2,
+            "source": "estimated",
+            "basis": "団体表記の「初級〜中級」から推定"
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": 20
+          },
+          "players": null,
+          "isNew": true,
+          "limited": "会場限定販売・通販なし",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": "https://pbs.twimg.com/media/HV-J4mMbsAAWS1J?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/cinematrickshop/status/2116566617739984957",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no34-1"
+        }
+      ],
       "candidates": [
         {
           "name": "謎解きキット『錬金術入門』",
@@ -1435,7 +1469,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式p28(chromakey)のみ。HPは見つからず(公式booth.tsvにも無し)。Web検索(NazoGram chromakey 電子基板 など)でも出てこない。Xアカウントは公式p28の説明にある投稿URL(https://x.com/Nazo_Gram/status/2111064614268285403)から。chromakeyはPC接続の電子基板つきのため category は kit にした(価格・遊び方などはXの投稿を見れば補える可能性あり) 【Xパス】@Nazo_Gram の2026-10-16の告知(ツリー画像)で chromakey の価格5,200円・プレイ時間120分〜・PC専用・限定100個を確認。ブースはCc19。店頭在庫がなくなり次第の受注販売は商品価格に送料300円が加算。他の商品の告知は見つからず。 再収集(10/30 Web): 新しい告知なし(HPなし、Web検索でも出ない) 再収集(10/30 X): 10/24 以降の @Nazo_Gram に新しい告知なし(固定ポストは10/16 の chromakey)。価格・限定数は前回のまま",
+      "notes": "公式p28(chromakey)のみ。HPは見つからず(公式booth.tsvにも無し)。Web検索(NazoGram chromakey 電子基板 など)でも出てこない。Xアカウントは公式p28の説明にある投稿URL(https://x.com/Nazo_Gram/status/2111064614268285403)から。chromakeyはPC接続の電子基板つきのため category は kit にした(価格・遊び方などはXの投稿を見れば補える可能性あり) 【Xパス】@Nazo_Gram の2026-10-16の告知(ツリー画像)で chromakey の価格5,200円・プレイ時間120分〜・PC専用・限定100個を確認。ブースはCc19。店頭在庫がなくなり次第の受注販売は商品価格に送料300円が加算。他の商品の告知は見つからず。 再収集(10/30 Web): 新しい告知なし(HPなし、Web検索でも出ない) 再収集(10/30 X): 10/24 以降の @Nazo_Gram に新しい告知なし(固定ポストは10/16 の chromakey)。価格・限定数は前回のまま 再収集(11/1 X): お品書きから SCRATCH・MOVE IT を追加。",
       "officialPatches": [
         {
           "id": "p28",
@@ -1481,7 +1515,82 @@
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "name": "SCRATCH",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "NazoGramのお品書きに載る作品（20分〜）",
+          "description": "ブースのお品書きの画像に商品名・価格・所要時間のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/Nazo_Gram/status/2116863145897861143",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no36-1"
+        },
+        {
+          "name": "MOVE IT",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "NazoGramのお品書きに載る作品（30分〜）",
+          "description": "ブースのお品書きの画像に商品名・価格・所要時間のみ記載。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/Nazo_Gram/status/2116863145897861143",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no36-2"
+        }
+      ],
       "candidates": [],
       "hashtags": [
         {
@@ -2069,7 +2178,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式product.tsvに商品なし。HPは公式登録がXのみ(@return_zero_thk、Xは開かない方針)。Web検索(東北大学 return 0; 謎解き 持ち帰り謎)では何も出ない。X を見れば取れる可能性あり 【Xパス】@return_zero_thk の10/21・10/22の告知で新作持ち帰り謎2点(各1,000円)が『ナゾトキマーケット2026にて販売予定』と確認。ザトリオは3団体コラボで、return 0;のキットが『あからさまです』(他2団体のキットはこの団体の商品ではないため記録せず)。 再収集(10/30 Web): 新しい告知なし(HPなし、Web検索でも出ない) 再収集(10/30 X): 10/29 のお詫び告知で、『ザトリオ』は他2団体が出展しないため return 0; のキット(あからさまです)のみ予定どおり販売、他2団体のキットは販売しないと判明(ブースはCb9)。3キット必要だった『最後の謎』は1キットで解ける形に。no40-2 の priceNote を更新。怪封記は変更なし",
+      "notes": "公式product.tsvに商品なし。HPは公式登録がXのみ(@return_zero_thk、Xは開かない方針)。Web検索(東北大学 return 0; 謎解き 持ち帰り謎)では何も出ない。X を見れば取れる可能性あり 【Xパス】@return_zero_thk の10/21・10/22の告知で新作持ち帰り謎2点(各1,000円)が『ナゾトキマーケット2026にて販売予定』と確認。ザトリオは3団体コラボで、return 0;のキットが『あからさまです』(他2団体のキットはこの団体の商品ではないため記録せず)。 再収集(10/30 Web): 新しい告知なし(HPなし、Web検索でも出ない) 再収集(10/30 X): 10/29 のお詫び告知で、『ザトリオ』は他2団体が出展しないため return 0; のキット(あからさまです)のみ予定どおり販売、他2団体のキットは販売しないと判明(ブースはCb9)。3キット必要だった『最後の謎』は1キットで解ける形に。no40-2 の priceNote を更新。怪封記は変更なし 再収集(11/1 X): お品書きから mugen ほか3点を追加。",
       "officialPatches": [],
       "products": [
         {
@@ -2174,6 +2283,146 @@
               ]
             }
           ]
+        },
+        {
+          "name": "mugen",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "「持ち帰り謎」？いいえ「持ち帰り箱」です（30〜45分）",
+          "description": "「持ち帰り謎」？いいえ「持ち帰り箱」です。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★4/10 → 4/10×5=2"
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": 45
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no40-3"
+        },
+        {
+          "name": "なぞのふうとうX",
+          "price": 2500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "return 0;の高難度の持ち帰り謎（180分〜）",
+          "description": "ブースのお品書きの画像に商品名・価格・難易度・所要時間のみ記載。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 ★9/10 → 9/10×5=4.5 → 5"
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no40-4"
+        },
+        {
+          "name": "PLATES",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "return 0;の高難度の持ち帰り謎（90〜150分）",
+          "description": "ブースのお品書きの画像に商品名・価格・難易度・所要時間のみ記載。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 ★9/10 → 9/10×5=4.5 → 5"
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 150
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no40-5"
+        },
+        {
+          "name": "バグるLINE謎",
+          "price": 300,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "LINEで遊ぶreturn 0;の謎（80分〜）",
+          "description": "ブースのお品書きの画像に商品名・価格・難易度・所要時間のみ記載。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★8/10 → 8/10×5=4"
+          },
+          "playMinutes": {
+            "min": 80,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金"
+          ],
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no40-6"
         }
       ],
       "candidates": [],
@@ -2258,7 +2507,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式p19『Loops』(1,200円)のみ。公式の説明文は『Loops』の4文字だけで中身は不明。category は持ち帰り謎として kit にしたが仮置き(HP・Web検索とも『Loops』の記述なし)。X(@k_dush2)を見れば遊び方・所要時間などが取れる可能性あり 【Xパス】@K_dush2 の2026-10-24の投稿でブースCb5と『新作持ち帰り謎も販売予定！続報をお待ちください』を確認(商品名・価格は未発表)。『Loops』は2019年から公演会場で売られている既存の持ち帰り謎(投稿: 2019-11-22、2022〜2023)で、2026年の告知にLoopsの詳細は無し。 再収集(10/30 Web): 新しい告知なし(HPにナゾトキマーケット・新作・Loopsの記述なし。Loopsの中身は引き続き不明) 再収集(10/30 X): 10/24 以降に商品名・価格の新しい告知なし(10/24 のブースCb5・新作予定の告知が最新、続報なし)。『Loops』の内容は引き続き不明 再収集(10/31 X): 10/31 のお品書き画像(2枚)で『勇者フリソの冒険』1,500円・『Re: 監獄』500円・『ボスの挑戦状』300円・『eight』2,300円を確認して products に追加し、『Loops』(p19)の所要時間(120分〜)と説明を補った。支払いは現金のみ。10/31 のお品書き投稿に「新作持ち帰り謎は明日20:00発表」とあり、新作の商品名・価格は未発表(固定ポスト・10/25 以降の投稿にも続報なし)。 画像(10/31 Web): no41-1〜4 は HP の公演ページ・検索で見つからず(HP は旧作の公演のみでキットの記載なし) 画像(11/1 X): no41-4 は2022年の価格改定告知のキービジュアルから / no41-1〜3 は商品単体の画像が見つからず(お品書き・物販情報・書店の陳列写真はいずれも複数商品を並べた1枚)",
+      "notes": "公式p19『Loops』(1,200円)のみ。公式の説明文は『Loops』の4文字だけで中身は不明。category は持ち帰り謎として kit にしたが仮置き(HP・Web検索とも『Loops』の記述なし)。X(@k_dush2)を見れば遊び方・所要時間などが取れる可能性あり 【Xパス】@K_dush2 の2026-10-24の投稿でブースCb5と『新作持ち帰り謎も販売予定！続報をお待ちください』を確認(商品名・価格は未発表)。『Loops』は2019年から公演会場で売られている既存の持ち帰り謎(投稿: 2019-11-22、2022〜2023)で、2026年の告知にLoopsの詳細は無し。 再収集(10/30 Web): 新しい告知なし(HPにナゾトキマーケット・新作・Loopsの記述なし。Loopsの中身は引き続き不明) 再収集(10/30 X): 10/24 以降に商品名・価格の新しい告知なし(10/24 のブースCb5・新作予定の告知が最新、続報なし)。『Loops』の内容は引き続き不明 再収集(10/31 X): 10/31 のお品書き画像(2枚)で『勇者フリソの冒険』1,500円・『Re: 監獄』500円・『ボスの挑戦状』300円・『eight』2,300円を確認して products に追加し、『Loops』(p19)の所要時間(120分〜)と説明を補った。支払いは現金のみ。10/31 のお品書き投稿に「新作持ち帰り謎は明日20:00発表」とあり、新作の商品名・価格は未発表(固定ポスト・10/25 以降の投稿にも続報なし)。 画像(10/31 Web): no41-1〜4 は HP の公演ページ・検索で見つからず(HP は旧作の公演のみでキットの記載なし) 画像(11/1 X): no41-4 は2022年の価格改定告知のキービジュアルから / no41-1〜3 は商品単体の画像が見つからず(お品書き・物販情報・書店の陳列写真はいずれも複数商品を並べた1枚) 再収集(11/1 X): 11/1 発表の新作『はじめてのお弁当大作戦！』を追加。",
       "officialPatches": [
         {
           "id": "p19",
@@ -2439,6 +2688,39 @@
               "retrievedAt": "2026-11-01"
             }
           ]
+        },
+        {
+          "name": "はじめてのお弁当大作戦！",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "新人妖精の初任務。あの子のために最高のお弁当を作る",
+          "description": "新人妖精の初任務、あの子のために最高のお弁当を作ろう！",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 40,
+            "max": 80
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWCKY20bkAAQZ34?format=jpg&name=small",
+          "sources": [
+            {
+              "url": "https://x.com/k_dush2/status/2116847735496409566",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no41-5"
         }
       ],
       "candidates": [],
@@ -2494,7 +2776,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式product.tsvに商品なし。HPのお知らせは15周年フェス(2026-08-22/23)と、XEOXY・タカラッシュ・繭玉工房のオンラインショップで売る既存作の案内のみで、ナゾトキマーケット2026の記述は無し。Web検索でも出ない。HP掲載のX(@ENIG_ROID)を見れば取れる可能性あり 【Xパス】@ENIG_ROID の2026-10-23の『新作発表』で『落ちてたもの』(1,000円)をナゾトキマーケット2026で販売と確認。『新作が間に合わなかった』ため『落ちてたものを売る』と説明。HPの通販既存作は今回の告知に無く候補のまま。 再収集(10/30 Web): 新しい告知なし(HPは前回と同じ、「落ちてたもの」の記載なし) 再収集(10/30 公式): 公式に追加された商品と重なるため no42-1→p43、候補「エニグロからの挑戦状（第一弾〜第七弾）・エニグロからの大挑戦状 免許皆伝編」→p45、候補「RIDDLE BUILDING」→p44 に付け替えた。 再収集(10/30 X): 10/24 以降の新しい告知なし(10/24 0:36 の返信はハッシュタグのみ)。『落ちてたもの』(p43)の内容は10/23 の告知(1,000円・難易度☆4/10・30〜90分)のまま、追記なし",
+      "notes": "公式product.tsvに商品なし。HPのお知らせは15周年フェス(2026-08-22/23)と、XEOXY・タカラッシュ・繭玉工房のオンラインショップで売る既存作の案内のみで、ナゾトキマーケット2026の記述は無し。Web検索でも出ない。HP掲載のX(@ENIG_ROID)を見れば取れる可能性あり 【Xパス】@ENIG_ROID の2026-10-23の『新作発表』で『落ちてたもの』(1,000円)をナゾトキマーケット2026で販売と確認。『新作が間に合わなかった』ため『落ちてたものを売る』と説明。HPの通販既存作は今回の告知に無く候補のまま。 再収集(10/30 Web): 新しい告知なし(HPは前回と同じ、「落ちてたもの」の記載なし) 再収集(10/30 公式): 公式に追加された商品と重なるため no42-1→p43、候補「エニグロからの挑戦状（第一弾〜第七弾）・エニグロからの大挑戦状 免許皆伝編」→p45、候補「RIDDLE BUILDING」→p44 に付け替えた。 再収集(10/30 X): 10/24 以降の新しい告知なし(10/24 0:36 の返信はハッシュタグのみ)。『落ちてたもの』(p43)の内容は10/23 の告知(1,000円・難易度☆4/10・30〜90分)のまま、追記なし 再収集(11/1 X): 商品一覧から Rocket Escape・番長謎屋敷・大挑戦状を追加（挑戦状シリーズ9種は既存の1件にまとまっている）。",
       "officialPatches": [
         {
           "id": "p43",
@@ -2542,7 +2824,107 @@
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "name": "Rocket Escape",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎を解いてロケットを上昇させ地球からの脱出を目指す再販",
+          "description": "謎を解いてロケットを上昇させ、地球からの脱出を目指せ！色の判別が必要な謎がある。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度8/10 → 8/10×5=4"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/ENIG_ROID/status/2116500444658987182",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no42-1"
+        },
+        {
+          "name": "番長謎屋敷",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "10枚の謎を解くだけのシンプルな持ち帰り謎の再販",
+          "description": "出題される10枚の謎を解くだけのシンプルな持ち帰り謎。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度7/10 → 7/10×5=3.5 → 4"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/ENIG_ROID/status/2116500444658987182",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no42-2"
+        },
+        {
+          "name": "エニグロからの大挑戦状 〜免許皆伝編〜",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "全21問、5枚セットの大挑戦状の再販（90分〜）",
+          "description": "免許皆伝のためには全21問、全て解け。小謎4問＋大謎1問のセットが4つに加え、ラスト1問（免許皆伝編）の合計5枚セット。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 難易度10/10 → 5"
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "imageUrl": null,
+          "sources": [
+            {
+              "url": "https://x.com/ENIG_ROID/status/2116500444658987182",
+              "retrievedAt": "2026-11-01"
+            }
+          ],
+          "id": "no42-3"
+        }
+      ],
       "candidates": []
     }
   ]
