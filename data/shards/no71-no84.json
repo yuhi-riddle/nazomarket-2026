@@ -1,6 +1,6 @@
 {
   "range": "no71-no84",
-  "collectedAt": "2026-11-01",
+  "collectedAt": "2026-11-02",
   "booths": [
     {
       "boothId": "no71",
@@ -242,6 +242,17 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "メルペイ"
           ]
         },
         {
@@ -278,6 +289,17 @@
               "url": "https://x.com/primalade/status/2115775664020488362",
               "retrievedAt": "2026-10-30"
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "メルペイ"
           ]
         },
         {
@@ -314,6 +336,17 @@
               "url": "https://x.com/primalade/status/2115775664020488362",
               "retrievedAt": "2026-10-30"
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "メルペイ"
           ]
         }
       ],
@@ -623,7 +656,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式ブース概要に『今年もナゾトキマーケットで新作持ち帰り謎を発売』とあるが、題名・価格はHP・BOOTH(0件)・検索で見つからず(HPは2025年分で止まっている)。新作の題名・価格はXで確認できそう。 X(@NaZO_LAB)を確認: 検索とプロフィールの2026年9月以降の投稿は9/17『今年も出展します』のみで、新作の題名・価格の告知は10/25時点で見つからず。 再収集(10/30 Web): HP は2025年の「11/9 ナゾトキマーケット 新作『十六夜絵図』販売」で止まったまま、BOOTH も0件で、新作の題名・価格は見つからず。候補のまま。 再収集(10/30 X): 10/24 以降の投稿なし(検索0件、固定ポストは2025年11月のもの)。新作の題名・価格は未告知のまま。",
+      "notes": "公式ブース概要に『今年もナゾトキマーケットで新作持ち帰り謎を発売』とあるが、題名・価格はHP・BOOTH(0件)・検索で見つからず(HPは2025年分で止まっている)。新作の題名・価格はXで確認できそう。 X(@NaZO_LAB)を確認: 検索とプロフィールの2026年9月以降の投稿は9/17『今年も出展します』のみで、新作の題名・価格の告知は10/25時点で見つからず。 再収集(10/30 Web): HP は2025年の「11/9 ナゾトキマーケット 新作『十六夜絵図』販売」で止まったまま、BOOTH も0件で、新作の題名・価格は見つからず。候補のまま。 再収集(10/30 X): 10/24 以降の投稿なし(検索0件、固定ポストは2025年11月のもの)。新作の題名・価格は未告知のまま。 再収集(11/2 X): スタッフ投稿で新作の持ち帰り謎が告知されたが題名は未発表。",
       "officialPatches": [],
       "products": [],
       "candidates": [
@@ -808,7 +841,16 @@
             {
               "url": "https://x.com/nazo_mikanbox/status/2114190216173101070",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/toykakeboze/status/2116505671361560762",
+              "retrievedAt": "2026-11-02"
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
           ]
         },
         {
@@ -848,7 +890,12 @@
           ],
           "playMinutes": null,
           "players": null,
-          "limited": null
+          "limited": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ]
         },
         {
           "id": "p41",
@@ -856,6 +903,10 @@
             {
               "url": "https://note.com/elejun/m/meabb6757606b",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/toykakeboze/status/2116505671361560762",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "category": "booklet",
@@ -867,7 +918,13 @@
           },
           "playMinutes": null,
           "players": null,
-          "limited": null
+          "limited": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
+          "isNew": true
         }
       ],
       "products": [
@@ -896,7 +953,11 @@
             "sun"
           ],
           "imageUrl": "https://nazo.mikan-box.net/blackcat/assets/img/cover.webp",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
           "sources": [
             {
               "url": "https://nazo.mikan-box.net/blackcat/",
@@ -909,6 +970,10 @@
             {
               "url": "https://x.com/nazo_mikanbox/status/2113948634999853124",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/toykakeboze/status/2116505671361560762",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -948,7 +1013,11 @@
             "sun"
           ],
           "imageUrl": "https://nazo.mikan-box.net/awaji/assets/img/cover.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
           "sources": [
             {
               "url": "https://nazo.mikan-box.net/awaji/",
@@ -961,6 +1030,10 @@
             {
               "url": "https://x.com/nazo_mikanbox/status/2113963719885455649",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/toykakeboze/status/2116505671361560762",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -997,7 +1070,11 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV8leImakAAfusf?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
           "sources": [
             {
               "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
@@ -1006,6 +1083,10 @@
             {
               "url": "https://x.com/toykakeboze/status/2116451559777411404",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/toykakeboze/status/2116505671361560762",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -2251,9 +2332,17 @@
             {
               "url": "https://x.com/amaka2don/status/2112885750937342193",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/amaka2don/status/2116862828208443525",
+              "retrievedAt": "2026-11-02"
             }
           ],
-          "players": null
+          "players": "1人",
+          "payment": [
+            "現金",
+            "PayPay"
+          ]
         },
         {
           "id": "p42",
@@ -2284,10 +2373,18 @@
             {
               "url": "https://x.com/amaka2don/status/2114667176477249765",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/amaka2don/status/2116862828208443525",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "players": null,
-          "limited": "ナゾトキマーケット限定価格（1,000円）"
+          "limited": "ナゾトキマーケット限定価格（1,000円）",
+          "payment": [
+            "現金",
+            "PayPay"
+          ]
         },
         {
           "id": "p57",
@@ -2318,7 +2415,15 @@
             {
               "url": "https://x.com/amaka2don/status/2116424692685017138",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/amaka2don/status/2116862828208443525",
+              "retrievedAt": "2026-11-02"
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         }
       ],
@@ -2728,7 +2833,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 30,
+            "max": 90
+          },
           "players": "1人〜",
           "isNew": true,
           "limited": "先行販売",

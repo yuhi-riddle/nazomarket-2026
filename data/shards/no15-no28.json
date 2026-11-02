@@ -1,6 +1,6 @@
 {
   "range": "no15-no28",
-  "collectedAt": "2026-11-01",
+  "collectedAt": "2026-11-02",
   "booths": [
     {
       "boothId": "no15",
@@ -2316,7 +2316,7 @@
           },
           "playMinutes": null,
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -2354,7 +2354,7 @@
           },
           "playMinutes": null,
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -2611,8 +2611,8 @@
         {
           "id": "no27-1",
           "name": "ゲームブック『吹雪に呪われた探偵学校からの招待状』",
-          "price": null,
-          "priceNote": "価格は告知なし",
+          "price": 2750,
+          "priceNote": null,
           "category": "booklet",
           "oneLiner": "大ボリュームの謎と物語のゲームブック",
           "description": "大ボリュームの謎と物語のゲームブック「吹雪に呪われた探偵学校からの招待状」。(ブースCb2の新作として告知)",
@@ -2639,23 +2639,30 @@
             {
               "url": "https://x.com/kitsutsukido/status/2116393573709197602",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
         {
           "id": "no27-2",
           "name": "謎と味わう世界の朝食から",
-          "price": null,
-          "priceNote": "価格は告知なし",
+          "price": 1400,
+          "priceNote": null,
           "category": "kit",
           "oneLiner": "海外の朝食がモチーフの謎付きキット",
           "description": "海外の朝食がモチーフの謎付きキット「謎と味わう世界の朝食から」。(ブースCb2の新作として告知)",
           "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
+            "level": 1,
+            "source": "official",
+            "basis": "団体表記 ★1/5 をそのまま"
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 20,
+            "max": null
+          },
           "players": null,
           "isNew": true,
           "limited": null,
@@ -2669,6 +2676,484 @@
             {
               "url": "https://x.com/kitsutsukido/status/2116393573709197602",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-3",
+          "name": "深海遊園地からの招待状",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解きクリアファイル招待状シリーズ第1弾",
+          "description": "謎解きクリアファイル招待状シリーズ第1弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/1713881/43a781f1-aef9-446b-9b43-610ce36c2555_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/1713881",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-4",
+          "name": "空飛ぶ寝台列車からの招待状",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解きクリアファイル招待状シリーズ第2弾",
+          "description": "謎解きクリアファイル招待状シリーズ第2弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/1713878/3f4bfd73-af8b-41b2-8f06-693a9877aee9_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/1713878",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-5",
+          "name": "不揃いなトランプ王国からの招待状",
+          "price": 2100,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解きクリアファイル招待状シリーズ第3弾",
+          "description": "謎解きクリアファイル招待状シリーズ第3弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 300,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/2347467/cc16995b-1dbd-422e-aa44-9efb3c8c3996_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/2347467",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-6",
+          "name": "おかしな監獄からの招待状",
+          "price": 2100,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解きクリアファイル招待状シリーズ第4弾",
+          "description": "謎解きクリアファイル招待状シリーズ第4弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 150,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/2982722/47c35025-e78b-4e27-a191-e9bb368c49ec_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/2982722",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-7",
+          "name": "HIRAMEKIYA Section #01 美魔女堂",
+          "price": 800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ふしぎデパート HIRAMEKIYA シリーズ。1階コスメエリアの美魔女堂が舞台",
+          "description": "ふしぎデパート HIRAMEKIYA シリーズ。1階コスメエリアの美魔女堂が舞台。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/6892442/7d5e60cb-16da-4e65-bd15-ac58827a336f_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/6892442",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-8",
+          "name": "魔法の仕立て屋 ふたりの秘密のワンピース・ドレス",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "小説謎解き「魔法の仕立て屋」シリーズ第1弾",
+          "description": "小説謎解き「魔法の仕立て屋」シリーズ第1弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/3813944/4ec528f0-fec6-4596-868b-39e99edc2f28_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/3813944",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-9",
+          "name": "魔法の仕立て屋 お忍び姫の夢見るパジャマ",
+          "price": 1100,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "小説謎解き「魔法の仕立て屋」シリーズ第2弾",
+          "description": "小説謎解き「魔法の仕立て屋」シリーズ第2弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/4244161/de2e7f96-e1f1-44d7-97b7-62db9fe90da4_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/4244161",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-10",
+          "name": "魔法の仕立て屋 愛する人へのタキシード",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "小説謎解き「魔法の仕立て屋」シリーズ第3弾",
+          "description": "小説謎解き「魔法の仕立て屋」シリーズ第3弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/4735511/eb803998-ae9e-4ffd-8010-873375edffdf_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/4735511",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-11",
+          "name": "魔法の仕立て屋 夜空に輝くウェディングドレス",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "小説謎解き「魔法の仕立て屋」シリーズ第4弾",
+          "description": "小説謎解き「魔法の仕立て屋」シリーズ第4弾。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/5335636/135f6077-807d-4037-9379-05229243e4ff_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/5335636",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-12",
+          "name": "リトルウィッチーズ 忘れ去られた魔女物語",
+          "price": 9200,
+          "priceNote": "イベント特価（通常10,000円）",
+          "category": "kit",
+          "oneLiner": "謎と小説を一緒に楽しむ大ボリュームの小説謎解き",
+          "description": "謎と小説を一緒に楽しめる小説謎解きの最新作。見習い魔女である4人姉妹の物語。LINE アプリ・筆記用具・はさみが必要。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 600,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": "会場限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/6301054/46becdc1-19b0-4918-bad9-ef7b8416cbfa_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/6301054",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-13",
+          "name": "謎付きポストカード 探偵学校編",
+          "price": 300,
+          "priceNote": "全6種 各300円",
+          "category": "goods",
+          "oneLiner": "ゲームブックの主人公6人がモチーフの謎付きポストカード",
+          "description": "ゲームブックに登場する6人の主人公をモチーフにした謎付きポストカード。全6種。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 5,
+            "max": 10
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/8430546/5b7e69b4-f0c7-4351-93c3-7eaf59853a6c_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/8430546",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-14",
+          "name": "遊べるお道具箱 第1弾 深海遊園地",
+          "price": 4800,
+          "priceNote": "会場限定価格（通常5,500円）",
+          "category": "kit",
+          "oneLiner": "遊べる文具・謎付き文具・可愛い文具の詰め合わせ",
+          "description": "遊べる文具・謎付き文具・可愛い文具の詰め合わせ。LINE アプリと筆記用具が必要。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": "会場限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/7692584/e5dfb0c2-35be-42e5-b2d1-eb0283982e79_base_resized.jpg",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/7692584",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no27-15",
+          "name": "ゲームブック＆ポストカード6種セット",
+          "price": 4000,
+          "priceNote": "会場限定セット（通常4,550円）",
+          "category": "other",
+          "oneLiner": "ゲームブックとポストカード6種のセット",
+          "description": "ゲームブック『吹雪に呪われた探偵学校からの招待状』と謎付きポストカード6種のセット。特別ポストカード付き。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": "会場限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
             }
           ]
         }

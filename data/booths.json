@@ -2846,6 +2846,10 @@
       {
         "url": "https://x.com/return_zero_thk/status/2115760614031397211",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [
@@ -3338,7 +3342,9 @@
     "summary": "あああああああああああああああああああああ、ああああああああああああ。\nああああああああああああ『ああああああああああ』ああああああああああああ。ああああああああああ。",
     "links": {
       "site": [],
-      "x": [],
+      "x": [
+        "https://x.com/_aa__aaaa__aa_"
+      ],
       "instagram": []
     },
     "logoUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no47/logo.png",
@@ -6038,7 +6044,9 @@
     "summary": "Flambeur’s Coin（フランバーズコイン）は、東京を中心に活動する社会人謎解き制作団体です。\n普段は【小規模だからできる公演】【公演としての楽しさを届ける】を団体のコンセプトとしてルーム型やブース型の公演をメインに制作していますが、今回はおうちで遊べる持ち帰り謎をご用意しております。\n初心者の方向けから謎解きに慣れた方まで、万人が楽しめる作品をご用意しておりますので、是非お立ち寄りください！",
     "links": {
       "site": [],
-      "x": [],
+      "x": [
+        "https://x.com/Flambeurs_Coin"
+      ],
       "instagram": []
     },
     "logoUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no90/logo.png",

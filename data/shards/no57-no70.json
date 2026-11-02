@@ -1,6 +1,6 @@
 {
   "range": "no57-no70",
-  "collectedAt": "2026-11-01",
+  "collectedAt": "2026-11-02",
   "booths": [
     {
       "boothId": "no57",
@@ -90,7 +90,8 @@
               "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
               "retrievedAt": "2026-10-30"
             }
-          ]
+          ],
+          "isNew": true
         }
       ],
       "products": [],
@@ -380,8 +381,8 @@
         {
           "id": "no60-1",
           "name": "なくしもの",
-          "price": null,
-          "priceNote": "価格は告知なし(詳細はリプライで告知予定)",
+          "price": 1000,
+          "priceNote": "ナゾマ限定価格（通常1,200円）",
           "category": "kit",
           "oneLiner": "記憶を失った●●●と1枚の写真をめぐる、初心者向けの持ち帰り謎",
           "description": "「ここは…どこ？自分は…だれ？そして、この写真は…？」記憶を失った●●●と残された1枚の写真をめぐる、謎解きと心温まる物語。本作はレーベルホワイトであり、初心者の方でも安心して遊んでいただけます。",
@@ -390,10 +391,13 @@
             "source": "estimated",
             "basis": "団体が「レーベルホワイト」で初心者向けと告知"
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 80,
+            "max": null
+          },
           "players": null,
           "isNew": true,
-          "limited": null,
+          "limited": "ナゾマ限定価格",
           "days": [
             "sat",
             "sun"
@@ -404,6 +408,10 @@
             {
               "url": "https://x.com/C_lock_row/status/2116470241039655110",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/C_lock_row/status/2116470241383584216",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -1571,7 +1579,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVNlnwHbkAAtN3G?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2113144438188896563",
@@ -1624,7 +1643,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVTN4QmakAAoMMD?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2113586238712394173",
@@ -1677,7 +1707,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVTTKSEa4AAT1-O?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2113948627777237098",
@@ -1718,7 +1759,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVYt3XMagAEzlfM?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2114311011574628826",
@@ -1771,7 +1823,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HViIQbSakAEvCOf?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2114673406935183805",
@@ -1808,7 +1871,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HViIVOjakAIqwBG?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2115035789159809147",
@@ -1845,7 +1919,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVtiQI1aoAAwiyz?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2115398190279078093",
@@ -1882,7 +1967,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVx3owMbcAA8Pye?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
           "sources": [
             {
               "url": "https://x.com/RiddleTimez/status/2115760557907448306",
@@ -2056,11 +2152,26 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVemUoLaYAA1VGI?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "au PAY",
+            "COIN+",
+            "d払い",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "QUICPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/MOT_nazotoki/status/2114341431959842924",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -2089,11 +2200,26 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVy9LMuaEAAL-ug?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "au PAY",
+            "COIN+",
+            "d払い",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "QUICPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazogatokitai/status/2115773955298742451",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -2122,11 +2248,26 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVyQ8hOa4AASMpi?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "au PAY",
+            "COIN+",
+            "d払い",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "QUICPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazogatokitai/status/2115773600519332089",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -2152,11 +2293,26 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVw9Tz9aIAAMY6Y?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "au PAY",
+            "COIN+",
+            "d払い",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "QUICPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/pintoLab/status/2115633352388837513",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
+              "retrievedAt": "2026-11-02"
             }
           ]
         }

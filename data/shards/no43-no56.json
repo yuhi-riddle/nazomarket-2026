@@ -1,6 +1,6 @@
 {
   "range": "no43-no56",
-  "collectedAt": "2026-11-01",
+  "collectedAt": "2026-11-02",
   "booths": [
     {
       "boothId": "no43",
@@ -298,7 +298,7 @@
             "min": 70,
             "max": 150
           },
-          "players": null,
+          "players": "複数人でも可",
           "isNew": true,
           "limited": "初回限定価格",
           "days": [
@@ -306,7 +306,9 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HUlIfz-bYAA3pkX?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/kimagurebox/status/2110337697504170348",
@@ -323,6 +325,10 @@
             {
               "url": "https://x.com/kimagurebox/status/2115027274894639118",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/kimagurebox/status/2116475037121429912",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -581,10 +587,84 @@
         "x"
       ],
       "sources": [],
-      "notes": "HPなし。公式ブース概要は伏せ字（「ああ…」の羅列）で商品情報なし。Web検索（団体名＋謎解き＋ナゾトキマーケット、団体名＋サークル＋BOOTH）でも該当なし。Xで確認する必要あり。 X アカウント見つからず（団体名「ああああああああ」でポスト・アカウントを検索したが、団体本人のアカウントと確信できるものが無かった。2026-10-07の他者ポストで今年の出展が話題になっているのみ）。 再収集(10/30 Web): 検索で新しい告知は見つからなかった。 再収集(10/30 X): 団体の X アカウントが特定できていないため、X では新しい告知を確認できず。",
+      "notes": "HPなし。公式ブース概要は伏せ字（「ああ…」の羅列）で商品情報なし。Web検索（団体名＋謎解き＋ナゾトキマーケット、団体名＋サークル＋BOOTH）でも該当なし。Xで確認する必要あり。 X アカウント見つからず（団体名「ああああああああ」でポスト・アカウントを検索したが、団体本人のアカウントと確信できるものが無かった。2026-10-07の他者ポストで今年の出展が話題になっているのみ）。 再収集(10/30 Web): 検索で新しい告知は見つからなかった。 再収集(10/30 X): 団体の X アカウントが特定できていないため、X では新しい告知を確認できず。 再収集(11/2 X): 団体アカウント @_aa__aaaa__aa_ を確認。赤と緑を告知済み、青と白は未告知。",
       "officialPatches": [],
-      "products": [],
-      "candidates": []
+      "products": [
+        {
+          "id": "no47-1",
+          "name": "あああああああああ（赤）",
+          "price": null,
+          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）",
+          "category": "kit",
+          "oneLiner": "名前も価格も「あ」で伏せられた赤の謎",
+          "description": "すべて「あ」で伏せて告知された作品の赤。謎制作はどや。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★6/10 → 6/10×5=3.0 → 3"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV8rzmbaAAAXcmi?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/_aa__aaaa__aa_/status/2116485335555490138",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/mochissant/status/2116500438862455127",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no47-2",
+          "name": "あああああああああああああ（緑）",
+          "price": null,
+          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）",
+          "category": "kit",
+          "oneLiner": "名前も価格も「あ」で伏せられた緑の謎",
+          "description": "すべて「あ」で伏せて告知された作品の緑。謎制作はフライパン職人。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★7/10 → 7/10×5=3.5 → 4"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWAd-BSbEAIrG6D?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/_aa__aaaa__aa_/status/2116847728340918560",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/mochissant/status/2116866057206116665",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        }
+      ],
+      "candidates": [],
+      "extraLinks": {
+        "x": [
+          "https://x.com/_aa__aaaa__aa_"
+        ]
+      }
     },
     {
       "boothId": "no48",
@@ -1131,9 +1211,9 @@
           "category": "kit",
           "oneLiner": "物語を読み進めながら謎を解いて結末へ進む、謎解きアドベンチャー",
           "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★5/10 → 5/10×5=2.5 → 3"
           },
           "isNew": true,
           "days": [
@@ -1145,7 +1225,12 @@
               "url": "https://x.com/calette_pj/status/2113873120004067794",
               "retrievedAt": "2026-10-25"
             }
-          ]
+          ],
+          "playMinutes": {
+            "min": 180,
+            "max": 240
+          },
+          "players": "1人"
         }
       ],
       "products": [],
@@ -1395,7 +1480,8 @@
               "retrievedAt": "2026-10-31"
             }
           ],
-          "priceNote": "通常版3,400円。公式サイト限定の特装版は4,620円（会場での取り扱いは未確認）"
+          "priceNote": "通常版3,400円。公式サイト限定の特装版は4,620円（会場での取り扱いは未確認）",
+          "isNew": true
         },
         {
           "id": "p27",

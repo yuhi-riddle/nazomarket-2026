@@ -1,6 +1,6 @@
 {
   "range": "no29-no42",
-  "collectedAt": "2026-11-01",
+  "collectedAt": "2026-11-02",
   "booths": [
     {
       "boothId": "no29",
@@ -113,7 +113,7 @@
           },
           "playMinutes": null,
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "sources": [
             {
@@ -499,6 +499,10 @@
             {
               "url": "https://x.com/MayAlcedoatthis/status/2114686922316816436",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -515,6 +519,10 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         },
         {
@@ -549,7 +557,15 @@
             {
               "url": "https://x.com/MayAlcedoatthis/status/2115069668620976227",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
+              "retrievedAt": "2026-11-02"
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         },
         {
@@ -580,7 +596,15 @@
             {
               "url": "https://x.com/MayAlcedoatthis/status/2115769677901336665",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
+              "retrievedAt": "2026-11-02"
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         }
       ],
@@ -1496,6 +1520,10 @@
             {
               "url": "https://x.com/Nazo_Gram/status/2111064725715099999",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/Nazo_Gram/status/2116863145897861143",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -1512,6 +1540,11 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
           ]
         }
       ],
@@ -1858,7 +1891,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": 90,
+          "playMinutes": {
+            "min": 90,
+            "max": 180
+          },
           "players": null,
           "isNew": true,
           "limited": null,
@@ -1930,7 +1966,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
           "players": null,
           "isNew": null,
           "limited": null,
@@ -1964,7 +2003,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": 120,
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
           "players": null,
           "isNew": null,
           "limited": null,
@@ -1998,7 +2040,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": 60,
+          "playMinutes": {
+            "min": 60,
+            "max": 120
+          },
           "players": null,
           "isNew": null,
           "limited": null,
@@ -2184,6 +2229,10 @@
         {
           "url": "https://x.com/return_zero_thk/status/2115760614031397211",
           "retrievedAt": "2026-10-30"
+        },
+        {
+          "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+          "retrievedAt": "2026-11-02"
         }
       ],
       "notes": "公式product.tsvに商品なし。HPは公式登録がXのみ(@return_zero_thk、Xは開かない方針)。Web検索(東北大学 return 0; 謎解き 持ち帰り謎)では何も出ない。X を見れば取れる可能性あり 【Xパス】@return_zero_thk の10/21・10/22の告知で新作持ち帰り謎2点(各1,000円)が『ナゾトキマーケット2026にて販売予定』と確認。ザトリオは3団体コラボで、return 0;のキットが『あからさまです』(他2団体のキットはこの団体の商品ではないため記録せず)。 再収集(10/30 Web): 新しい告知なし(HPなし、Web検索でも出ない) 再収集(10/30 X): 10/29 のお詫び告知で、『ザトリオ』は他2団体が出展しないため return 0; のキット(あからさまです)のみ予定どおり販売、他2団体のキットは販売しないと判明(ブースはCb9)。3キット必要だった『最後の謎』は1キットで解ける形に。no40-2 の priceNote を更新。怪封記は変更なし 再収集(11/1 X): お品書きから mugen ほか3点を追加。 再収集(11/1 X): 新しく足した商品の画像は過去の投稿（最新約160件）を商品名で探し、単体の画像がないものは null のまま。 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
@@ -2202,7 +2251,10 @@
             "source": "official",
             "basis": "団体表記 ★6/10 → 6/10×5=3.0 → 3"
           },
-          "playMinutes": 45,
+          "playMinutes": {
+            "min": 45,
+            "max": 100
+          },
           "players": null,
           "isNew": true,
           "limited": null,
@@ -2211,11 +2263,17 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVJ5CIeboAAMqyi?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/return_zero_thk/status/2112884258742378648",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -2243,7 +2301,10 @@
             "source": "official",
             "basis": "団体表記 ★8/10 → 8/10×5=4.0 → 4"
           },
-          "playMinutes": 40,
+          "playMinutes": {
+            "min": 90,
+            "max": 180
+          },
           "players": null,
           "isNew": true,
           "limited": null,
@@ -2252,7 +2313,9 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVPCulna0AAk-Q1?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/return_zero_thk/status/2113246496934203687",
@@ -2269,6 +2332,10 @@
             {
               "url": "https://x.com/return_zero_thk/status/2115760614031397211",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/return_zero_thk/status/2116864090903839073",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -2587,7 +2654,7 @@
             "max": 120
           },
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -2601,6 +2668,10 @@
             {
               "url": "https://x.com/K_dush2/status/2116485431772721605",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/k_dush2/status/2106632927488684472",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -2736,12 +2807,18 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/HWCKY20bkAAQZ34?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/k_dush2/status/2116847735496409566",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/k_dush2/status/2116485431772721605",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "id": "no41-5"
@@ -2826,7 +2903,14 @@
             {
               "url": "https://x.com/ENIG_ROID/status/2113601338122838345",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/ENIG_ROID/status/2116500444658987182",
+              "retrievedAt": "2026-11-02"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         },
         {
@@ -2835,8 +2919,21 @@
             {
               "url": "http://enig-roid.com/",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/ENIG_ROID/status/2116500444658987182",
+              "retrievedAt": "2026-11-02"
             }
-          ]
+          ],
+          "payment": [
+            "現金のみ"
+          ],
+          "isNew": false,
+          "playMinutes": {
+            "min": 20,
+            "max": 40
+          },
+          "priceNote": "全9種 各500円。難易度は5〜10（10段階）、時間は作品ごとに20〜40分〜"
         },
         {
           "id": "p44",
@@ -2844,8 +2941,20 @@
             {
               "url": "http://enig-roid.com/",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/ENIG_ROID/status/2116500444658987182",
+              "retrievedAt": "2026-11-02"
             }
-          ]
+          ],
+          "payment": [
+            "現金のみ"
+          ],
+          "isNew": false,
+          "playMinutes": {
+            "min": 500,
+            "max": null
+          }
         }
       ],
       "products": [
@@ -2872,7 +2981,9 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "imageUrl": null,
           "sources": [
             {
@@ -2905,7 +3016,9 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "imageUrl": null,
           "sources": [
             {
@@ -2938,7 +3051,9 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/F_NpQ_ubkAAkjLb?format=jpg&name=small",
           "sources": [
             {
