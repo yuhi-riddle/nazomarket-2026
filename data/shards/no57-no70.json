@@ -654,12 +654,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/GOUKXkCaoAAX7g0?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/imy_nazo/status/2115084952782205206",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/imy_nazo/status/1793851434431353257",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -1275,7 +1279,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/4616104/7cebc1cf-793f-420a-b4f2-6d2e0d2f4116_base_resized.jpg",
           "payment": [
             "現金のみ"
           ],
@@ -1283,6 +1287,10 @@
             {
               "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://mysteryfromaki.booth.pm/items/4616104",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -1310,7 +1318,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7621396/1996cbc7-b864-4146-aa96-f20f10ac68c9_base_resized.jpg",
           "payment": [
             "現金のみ"
           ],
@@ -1318,6 +1326,10 @@
             {
               "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://mysteryfromaki.booth.pm/items/7621396",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -1342,7 +1354,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7621407/c68da50d-bdbe-4cef-9f9a-60c275a3178c_base_resized.jpg",
           "payment": [
             "現金のみ"
           ],
@@ -1350,6 +1362,10 @@
             {
               "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://mysteryfromaki.booth.pm/items/7621407",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -1912,7 +1928,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113239314041827328/img/A9_DOU527MqGr5j8.jpg",
           "payment": null,
           "sources": [
             {
@@ -1942,7 +1958,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113571355266621440/img/hJ7uCvgLeBBWvc7K.jpg",
           "payment": null,
           "sources": [
             {
@@ -1972,7 +1988,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113942495625420800/img/gReM99SI0CXxlsX3.jpg",
           "payment": null,
           "sources": [
             {
