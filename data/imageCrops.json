@@ -359,6 +359,123 @@
     "width": 920,
     "height": 920
   },
+  "no13-11": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7f75854fcb673a14f4133ea7d14e3038.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.0883,
+    "right": 0.115,
+    "top": 0.0858,
+    "bottom": 0.0867,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-12": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/f543329f9aef1df4cf98d751ff3c41ce.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.1442,
+    "right": 0.1442,
+    "top": 0,
+    "bottom": 0,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-13": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/258ab14f5ee5f2e979e8d434990b8b06.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.1442,
+    "right": 0.1442,
+    "top": 0,
+    "bottom": 0,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-14": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7daf7d7b99bf1300e880997b2adb30a9.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.1433,
+    "right": 0.1433,
+    "top": 0,
+    "bottom": 0.0258,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-15": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/fa2aea0b3b113443e3d4dde02de4b134.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.1442,
+    "right": 0.1442,
+    "top": 0,
+    "bottom": 0,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-16": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7ec679e3c7ea22b62f8125763d004f9f.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.0625,
+    "right": 0.0358,
+    "top": 0.0842,
+    "bottom": 0.0733,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-17": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/717221a4a31be21ae2165cbc2a7e4a24.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.0675,
+    "right": 0.0683,
+    "top": 0,
+    "bottom": 0,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-19": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/c7a367aede36d6d1f359f9b4064f3cca.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.02,
+    "right": 0.0767,
+    "top": 0,
+    "bottom": 0,
+    "width": 1200,
+    "height": 1200
+  },
+  "no13-4": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/97870f6f974c00a56103f43e5dd9e2ca.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0.0533,
+    "right": 0.07,
+    "top": 0.0642,
+    "bottom": 0.055,
+    "width": 1200,
+    "height": 1200
+  },
+  "no16-10": {
+    "imageUrl": "https://pbs.twimg.com/media/HPAXQWoaUAAYptE?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0662,
+    "bottom": 0,
+    "width": 680,
+    "height": 680
+  },
+  "no16-16": {
+    "imageUrl": "https://pbs.twimg.com/media/HSJ8tVhaAAAKdc9?format=jpg&name=small",
+    "left": 0,
+    "right": 0.025,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 680
+  },
+  "no16-5": {
+    "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.15,
+    "bottom": 0,
+    "width": 680,
+    "height": 680
+  },
+  "no16-7": {
+    "imageUrl": "https://pbs.twimg.com/media/HPAYGMEaQAI53cA?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0941,
+    "bottom": 0,
+    "width": 680,
+    "height": 680
+  },
   "no17-6": {
     "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2021/09/8b865d4dab818549c58bf5f4be35de22.png",
     "left": 0.0275,
@@ -943,6 +1060,15 @@
     "bottom": 0.0294,
     "width": 680,
     "height": 680
+  },
+  "no77-13": {
+    "imageUrl": "https://pbs.twimg.com/media/HWG5JQGbgAAqkYJ?format=jpg&name=small",
+    "left": 0,
+    "right": 0.0221,
+    "top": 0.1175,
+    "bottom": 0.0313,
+    "width": 680,
+    "height": 383
   },
   "no77-2": {
     "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/21adfcc49222f7e6702c67706a45d996.png",

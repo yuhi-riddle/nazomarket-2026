@@ -122,14 +122,14 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "ブランドHP(nazoxnazo.com)のお知らせと商品一覧にナゾトキマーケット2026の記載なし。持ち帰り謎ショップ(nazoxnazo-shop.com)は403で開けず。最新作『最初からクライマックス謎解き-comic-』のプレスリリース(2026-10)は販売先がゲームマーケット2026秋と自社ショップのみで、ナゾマの記載なし。 X確認(10/25): @nazo_rpg の10/23の投稿でナゾトキマーケット2026(両日Bb6)での新作「禁忌体験TETTUI」の販売を確認。ナゾマ現地引換の先行予約(各日50個)とオンライン先行(100個)あり。現地での通常価格は告知なし。 再収集(10/30 Web): ブランドHPのTETTUI掲載ページで費用3,100円・プレイ時間60〜90分を確認し、playMinutes を更新(ナゾマでの価格は10/25 の2,500円のまま)。お知らせの更新は4月が最新で、ナゾマの新しい告知なし。持ち帰り謎ショップは403。 再収集(10/30 X): 10/29 の投稿でナゾマ先行予約(限定100個・通常価格より300円引き)が10/30 19:00開始と確認。価格は変えず priceNote に追記。",
+      "notes": "ブランドHP(nazoxnazo.com)のお知らせと商品一覧にナゾトキマーケット2026の記載なし。持ち帰り謎ショップ(nazoxnazo-shop.com)は403で開けず。最新作『最初からクライマックス謎解き-comic-』のプレスリリース(2026-10)は販売先がゲームマーケット2026秋と自社ショップのみで、ナゾマの記載なし。 X確認(10/25): @nazo_rpg の10/23の投稿でナゾトキマーケット2026(両日Bb6)での新作「禁忌体験TETTUI」の販売を確認。ナゾマ現地引換の先行予約(各日50個)とオンライン先行(100個)あり。現地での通常価格は告知なし。 再収集(10/30 Web): ブランドHPのTETTUI掲載ページで費用3,100円・プレイ時間60〜90分を確認し、playMinutes を更新(ナゾマでの価格は10/25 の2,500円のまま)。お知らせの更新は4月が最新で、ナゾマの新しい告知なし。持ち帰り謎ショップは403。 再収集(10/30 X): 10/29 の投稿でナゾマ先行予約(限定100個・通常価格より300円引き)が10/30 19:00開始と確認。価格は変えず priceNote に追記。 再収集(11/2 X): 商品リストの投稿で既刊とセットを追加し、候補のクライマックス2作を商品へ移した。各商品の画像は過去の告知から。",
       "officialPatches": [],
       "products": [
         {
           "id": "no16-1",
           "name": "禁忌を犯す体験ゲーム「TETTUI」",
           "price": 2500,
-          "priceNote": "2,500円は先行予約チケット(現地引換、別途発券手数料2%)の価格。オンライン先行(100個)も2,500円(送料込み・発送11/9以降)。会場での通常価格は告知なし。10/30: nazoxnazo.com(ブランドHP)のTETTUI掲載ページは費用3,100円・プレイ時間60〜90分(ナゾマ用の価格か通常価格かは書かれていない) 10/29(X): 「ナゾマ先行予約 限定100個・通常価格より300円引き・10/30(金)19:00〜予定個数なくなり次第終了」と告知(通常価格の金額は書かれていない)。",
+          "priceNote": "ナゾマ限定価格（STORES価格3,100円）。2,500円は先行予約チケット(現地引換、別途発券手数料2%)の価格。オンライン先行(100個)も2,500円(送料込み・発送11/9以降)。会場での通常価格は告知なし。10/30: nazoxnazo.com(ブランドHP)のTETTUI掲載ページは費用3,100円・プレイ時間60〜90分(ナゾマ用の価格か通常価格かは書かれていない) 10/29(X): 「ナゾマ先行予約 限定100個・通常価格より300円引き・10/30(金)19:00〜予定個数なくなり次第終了」と告知(通常価格の金額は書かれていない)。",
           "category": "kit",
           "oneLiner": "SNSの嫌な相手を調べて「鉄槌」を下す没入型の持ち帰り謎",
           "description": "ムカつく奴を裁いてみたくないですか？ ムカつく奴を思う存分制裁できる正義の鉄槌・没入型体験ゲーム。実際のSNSアカウントを調査／実際に自分の考えた罵詈雑言を叫べる／自分の正義のままムカつくやつに鉄槌を下せる。内容物: スタートガイド・封筒3種・二つ折りの紙。用意するもの: ネット接続できる端末・筆記用具・Xのアカウント・LINEのアカウント。(注意書き「性格のよいひとはプレイをお控えください」)",
@@ -179,6 +179,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2115715265476321691",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -196,36 +200,635 @@
               ]
             }
           ]
-        }
-      ],
-      "candidates": [
+        },
         {
-          "name": "最初からクライマックス謎解き-comic-",
-          "price": 3200,
-          "reason": "2026年10月発売の新作(通常3,200円・送料込、ゲームマーケット2026秋の会場価格2,800円)。リリースにナゾマでの販売の記載なし",
+          "id": "no16-2",
+          "name": "最初からクライマックス謎解き",
+          "price": 2900,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+          "category": "kit",
+          "oneLiner": "残り時間あと10分の絶望から始まるシリーズ第1弾",
+          "description": "残り時間あと10分の絶望から始まるシリーズ第1弾。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
           "sources": [
             {
-              "url": "https://www.atpress.ne.jp/news/6566703",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://nazoxnazo.com",
-              "retrievedAt": "2026-10-30"
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
         {
-          "name": "最初からクライマックス謎解き",
+          "id": "no16-3",
+          "name": "最初からクライマックス謎解き-Dead-",
           "price": 2900,
-          "reason": "2025年のナゾマでの出品(Cc1・土日)。今回も持ってくるとは書いていない",
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+          "category": "kit",
+          "oneLiner": "死の直前をテーマにしたシリーズ第2弾",
+          "description": "死の直前をテーマにしたシリーズ第2弾。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HNEmLLkaYAANOQ5?format=jpg&name=small",
+          "payment": null,
           "sources": [
             {
-              "url": "https://www.atpress.ne.jp/news/1001937",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2078321361139720403",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-4",
+          "name": "最初からクライマックス謎解き-comic-",
+          "price": 2900,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+          "category": "kit",
+          "oneLiner": "様々な漫画がテーマのシリーズ第3弾",
+          "description": "様々な漫画がテーマのシリーズ第3弾。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HTci351aUAAkmV1?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2105960995755565120",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-5",
+          "name": "sQuare mAze",
+          "price": 2500,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
+          "category": "kit",
+          "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
+          "description": "カード型の謎解きゲーム sQuare mAze シリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2085561583129018550",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-6",
+          "name": "sQuare mAze -another-",
+          "price": 2500,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
+          "category": "kit",
+          "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
+          "description": "カード型の謎解きゲーム sQuare mAze シリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HPAYGMMbwAILged?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2085561583129018550",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-7",
+          "name": "sQuare mAze -cosmos-",
+          "price": 2500,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
+          "category": "kit",
+          "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
+          "description": "カード型の謎解きゲーム sQuare mAze シリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HPAYGMEaQAI53cA?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2085561583129018550",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-8",
+          "name": "箱庭の教室の中で",
+          "price": 2800,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,100円）",
+          "category": "kit",
+          "oneLiner": "禁忌体験シリーズの持ち帰り謎解きゲーム",
+          "description": "禁忌体験シリーズの持ち帰り謎解きゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HMHC9OsbQAA54hk?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2075512853969399856",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-9",
+          "name": "ロストメモリー",
+          "price": 2800,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,100円）",
+          "category": "kit",
+          "oneLiner": "写真を切り刻み、思い出を犠牲に進む禁忌体験",
+          "description": "写真を切り刻み、思い出を犠牲に進む禁忌体験。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HMwIIl4bcAAJBUK?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2076969967375859731",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-10",
+          "name": "CATEGORY",
+          "price": 1800,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,100円）",
+          "category": "kit",
+          "oneLiner": "たった4枚のカードが様々な謎に変容する",
+          "description": "たった4枚のカードが様々な謎に変容する。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HPAXQWoaUAAYptE?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2085199184094011572",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-11",
+          "name": "夢を解く",
+          "price": 2900,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+          "category": "kit",
+          "oneLiner": "人の無意識を解く深層心理ミステリー",
+          "description": "人の無意識を解く深層心理ミステリー。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HMgwuwFasAAr6hD?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2076154587006779563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-12",
+          "name": "ヒラメイクアンサー",
+          "price": 2800,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,100円）",
+          "category": "kit",
+          "oneLiner": "ひらめきを競う瞬間直感の謎解きゲーム",
+          "description": "ひらめきを競う瞬間直感の謎解きゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HMHbeSpa0AA5K9E?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2074418146157670595",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-14",
+          "name": "鎌倉 まるっと謎さんぽ -裏鎌倉編-",
+          "price": 2300,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+          "category": "kit",
+          "oneLiner": "なぞたび。シリーズの周遊謎 裏鎌倉編",
+          "description": "なぞたび。シリーズの周遊謎 裏鎌倉編。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HRCknjlasAA0f7u?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2095346050957492455",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-15",
+          "name": "浅草 まるっと謎さんぽ",
+          "price": 2300,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+          "category": "kit",
+          "oneLiner": "なぞたび。シリーズの周遊謎 浅草編",
+          "description": "なぞたび。シリーズの周遊謎 浅草編。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HRCknjcbQAAoCPt?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2095346050957492455",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-16",
+          "name": "川越 まるっと謎さんぽ",
+          "price": 2300,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+          "category": "kit",
+          "oneLiner": "なぞたび。シリーズの周遊謎 川越編",
+          "description": "なぞたび。シリーズの周遊謎 川越編。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HSJ8tVhaAAAKdc9?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2099694695068938531",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-13",
+          "name": "鎌倉 まるっと謎さんぽ",
+          "price": 2200,
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,500円）",
+          "category": "kit",
+          "oneLiner": "なぞたび。シリーズの周遊謎 鎌倉編",
+          "description": "ノープランで、甘味も古都も潮風も。鎌倉まるっと満喫旅。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://nazoxnazo.com/wp-content/uploads/2025/05/kamakura_nazosampo_MV-1086x1536.png",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://nazoxnazo.com",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-17",
+          "name": "クライマックス謎解きセット",
+          "price": 8500,
+          "priceNote": "ナゾマ限定セット（STORES価格合計9,600円）",
+          "category": "other",
+          "oneLiner": "最初からクライマックス謎解きシリーズ3作のセット",
+          "description": "最初からクライマックス謎解きシリーズ3作のセット。ナゾマ限定のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-18",
+          "name": "sQuare mAzeセット",
+          "price": 7000,
+          "priceNote": "ナゾマ限定セット（STORES価格合計8,400円）",
+          "category": "other",
+          "oneLiner": "sQuare mAze シリーズ3作のセット",
+          "description": "sQuare mAze シリーズ3作のセット。ナゾマ限定のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-19",
+          "name": "問題作3点セット",
+          "price": 8000,
+          "priceNote": "ナゾマ限定セット（STORES価格合計9,600円）",
+          "category": "other",
+          "oneLiner": "箱庭の教室の中で・TETTUI・ロストメモリーのセット",
+          "description": "箱庭の教室の中で・TETTUI・ロストメモリーのセット。ナゾマ限定のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no16-20",
+          "name": "「この店の商品全部ください」セット",
+          "price": 35000,
+          "priceNote": "ナゾマ限定セット（STORES価格合計44,800円）",
+          "category": "other",
+          "oneLiner": "ブースの商品すべてをまとめたセット",
+          "description": "ブースの商品すべてをまとめたセット。ナゾマ限定のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+              "retrievedAt": "2026-11-02"
             }
           ]
         }
       ],
+      "candidates": [],
       "hashtags": [
         {
           "tag": "ナゾトキマーケット2026",
