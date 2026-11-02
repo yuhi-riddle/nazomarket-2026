@@ -141,6 +141,10 @@ export function sortCatalog(catalog: ProductView[], sort: SortKey): ProductView[
   });
 }
 
+export function newProductsFirst(views: ProductView[]): ProductView[] {
+  return [...views].sort((a, b) => Number(b.product.isNew === true) - Number(a.product.isNew === true));
+}
+
 export function countActiveFilters(filters: Filters): number {
   return Number(Boolean(filters.q.trim()))
     + Number(filters.priceMin !== null || filters.priceMax !== null)
