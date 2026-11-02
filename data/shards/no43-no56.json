@@ -1344,6 +1344,10 @@
             {
               "url": "https://x.com/paddle_pj/status/2115730376333443545",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/paddle_pj/status/2116545749534245347",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "hashtags": [
@@ -1355,6 +1359,13 @@
                   "retrievedAt": "2026-10-30"
                 }
               ]
+            }
+          ],
+          "reservations": [
+            {
+              "label": "抽選の事前受付（当日の入力も可）",
+              "url": "https://lowest.paddledayo.net",
+              "endsAt": null
             }
           ]
         },

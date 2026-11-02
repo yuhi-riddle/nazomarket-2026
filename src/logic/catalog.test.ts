@@ -85,6 +85,10 @@ describe("filterCatalog", () => {
     expect(countActiveFilters(emptyFilters)).toBe(0);
     expect(countActiveFilters({ ...emptyFilters, q: " ", priceMin: 1, priceMax: 2, categories: ["kit", "goods"], newOnly: true })).toBe(3);
   });
+  it("団体の指定はその団体の商品だけを残し、条件1つと数える", () => {
+    expect(ids(filterCatalog(catalog, { ...emptyFilters, boothId: "no03" }))).toEqual(["p01"]);
+    expect(countActiveFilters({ ...emptyFilters, boothId: "no03" })).toBe(1);
+  });
 });
 
 describe("sortCatalog", () => {

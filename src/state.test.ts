@@ -1,7 +1,23 @@
 import { describe, expect, it } from "vitest";
-import { defaultState, parseState, serializeState, STORAGE_KEY } from "./state.ts";
+import { defaultState, parseState, serializeState, showBoothInCatalog, STORAGE_KEY } from "./state.ts";
 
 const known = new Set(["p01", "p02", "no10-1"]);
+
+describe("showBoothInCatalog", () => {
+  it("一覧に移り、ほかの条件を外して団体だけに絞る", () => {
+    const next = showBoothInCatalog({ ...defaultState, tab: "map", sort: "priceAsc", filters: { ...defaultState.filters, q: "謎", tags: ["新作"] } }, "no03");
+    expect(next.tab).toBe("catalog");
+    expect(next.sort).toBe("priceAsc");
+    expect(next.filters).toEqual({ ...defaultState.filters, boothId: "no03" });
+  });
+  it("おすすめ順は最大10件しか出ないので、ブース順に変える", () => {
+    expect(showBoothInCatalog({ ...defaultState, sort: "recommended" }, "no03").sort).toBe("booth");
+  });
+  it("団体の指定は保存から戻さない（次に開いたときは全商品）", () => {
+    const saved = serializeState({ ...defaultState, filters: { ...defaultState.filters, boothId: "no03" } });
+    expect(parseState(saved, known).filters.boothId).toBeNull();
+  });
+});
 
 describe("parseState", () => {
   it("保存が無い・壊れている・版が違うときは初期値", () => {

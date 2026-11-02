@@ -1,4 +1,4 @@
-import type { TabId, AppState } from "../state.ts";
+import { showBoothInCatalog, type TabId, type AppState } from "../state.ts";
 import type { CartItem } from "../logic/cart.ts";
 import { captureSharedRoomLink, readSharedRoomCredentials, type SharedRoomCredentials } from "../shared/index.ts";
 import { createStore, type SharedStoreState } from "../store.ts";
@@ -209,13 +209,20 @@ export function app(root: HTMLElement): void {
     updateItems?: (items: CartItem[], state: AppState) => void;
     setActive?: (active: boolean) => void;
     selectBooth?: (code: string) => void;
+    focusResults?: () => void;
   };
   const pages = new Map<TabId, LazyPage>();
   const openMapAtBooth = (code: string) => {
     store.update((state) => ({ ...state, tab: "map" }));
     pages.get("map")?.selectBooth?.(code);
   };
-  const campaignsDialog = campaignDialog(openMapAtBooth);
+  const campaignsDialog = campaignDialog(
+    openMapAtBooth,
+    (boothId) => {
+      store.update((state) => showBoothInCatalog(state, boothId));
+      pages.get("catalog")?.focusResults?.();
+    },
+  );
   campaignButton.addEventListener("click", campaignsDialog.open);
   campaignsDialog.element.addEventListener("close", updateCampaignButton);
   // 締切が過ぎたり日付が変わったりしたら、バッジと開いている一覧を合わせる

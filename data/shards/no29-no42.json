@@ -503,6 +503,10 @@
             {
               "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazocafessp/status/2114686922316816436",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "hashtags": [
@@ -523,6 +527,13 @@
           "payment": [
             "現金",
             "PayPay"
+          ],
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは11/8 14時まで）",
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
+              "endsAt": "2026-11-07T18:00"
+            }
           ]
         },
         {
@@ -600,11 +611,22 @@
             {
               "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazocafessp/status/2115769677901336665",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "payment": [
             "現金",
             "PayPay"
+          ],
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは11/8 14時まで）",
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
+              "endsAt": "2026-11-07T18:00"
+            }
           ]
         }
       ],

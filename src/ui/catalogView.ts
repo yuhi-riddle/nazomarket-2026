@@ -12,6 +12,9 @@ import { filterPanel } from "./filterPanel.ts";
 import { productCard, type ProductCardHandle } from "./productCard.ts";
 import { productDialog } from "./productDialog.ts";
 import type { AppStore, SharedStoreState } from "../store.ts";
+import "./catalog-booth-filter.css";
+
+const boothNamesById = new Map(catalog.map((view) => [view.booth.id, view.booth.name] as const));
 
 const sortOptions: Array<[SortKey, string]> = [
   ["recommended", "おすすめ順"],
@@ -43,6 +46,7 @@ export type CatalogView = {
   element: HTMLElement;
   sync: (state: AppState, shared?: SharedStoreState | null) => void;
   updateItems: (items: CartItem[], state: AppState) => void;
+  focusResults: () => void;
 };
 
 export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) => void): CatalogView {
@@ -81,6 +85,15 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
   const count = el("p", "result-count");
   count.setAttribute("aria-live", "polite");
   count.tabIndex = -1;
+  const boothFilter = el("div", "catalog-booth-filter");
+  const boothFilterLabel = el("span", "catalog-booth-filter-label");
+  const clearBoothFilter = button("解除", "button button-secondary catalog-booth-filter-clear");
+  clearBoothFilter.addEventListener("click", () => {
+    store.update((state) => ({ ...state, filters: { ...state.filters, boothId: null } }));
+    count.focus({ preventScroll: true }); // 押したボタンが消えるので、フォーカスの行き先を残す
+  });
+  boothFilter.append(boothFilterLabel, clearBoothFilter);
+  boothFilter.hidden = true;
   const sortSelect = el("select", "text-input sort-select");
   sortSelect.setAttribute("aria-label", "並び順");
   for (const [value, labelText] of sortOptions) {
@@ -103,7 +116,7 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     for (const group of groups.values()) group.element.open = true;
   });
   groupActions.append(closeAll, openAll);
-  toolbar.append(mobileSearch, filters.openButton, count, sortField, groupActions);
+  toolbar.append(mobileSearch, filters.openButton, count, boothFilter, sortField, groupActions);
 
   const resultRegion = el("div", "catalog-results");
   const recommendationHint = el("p", "recommendation-hint", "リストに入れたアイテムや、指定がある場合はおすすめの条件・残り予算を参考に、最大10件表示します。すべてのアイテムは並び順を変えると見られます。");
@@ -282,6 +295,13 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     ];
 
     count.textContent = !hasRecommendation ? "0件 / " + catalog.length + "件" : ordered.length + "件 / " + catalog.length + "件";
+    const boothId = state.filters.boothId;
+    boothFilter.hidden = boothId === null;
+    if (boothId !== null) {
+      const boothName = boothNamesById.get(boothId) ?? boothId;
+      boothFilterLabel.textContent = boothName + "の商品だけ表示";
+      clearBoothFilter.setAttribute("aria-label", boothName + "の絞り込みを解除");
+    }
     recommendationHint.hidden = state.sort !== "recommended" || !hasRecommendation;
     sortSelect.value = state.sort;
     groupActions.hidden = state.sort !== "booth" && state.sort !== "organization";
@@ -347,6 +367,10 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
   return {
     element: page,
     sync: renderList,
+    focusResults() {
+      count.scrollIntoView({ block: "start" });
+      count.focus({ preventScroll: true });
+    },
     updateItems(items, state) {
       const itemById = new Map(items.map((item): [string, CartItem] => [item.productId, item]));
       for (const [id, handle] of handles) {

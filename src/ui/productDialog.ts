@@ -8,6 +8,8 @@ import { xHashtagLinks } from "./xHashtagLinks.ts";
 import { boothLinkLabel, type BoothLinkKind } from "./boothLinkLabel.ts";
 import { unconfirmedText } from "./unconfirmedText.ts";
 import { limitedPrice } from "../logic/limitedPrice.ts";
+import { activeReservations, reservationDeadlineText } from "../logic/reservations.ts";
+import "./reservation.css";
 
 export type ProductDialog = { element: HTMLDialogElement; open: (view: ProductView) => void };
 
@@ -98,6 +100,29 @@ export function productDialog(
         details.append(row);
       }
       if (product.priceNote) details.append(el("p", "dialog-note", product.priceNote));
+      const reservations = activeReservations(product, new Date());
+      if (reservations.length) {
+        const reservationSection = el("section", "dialog-links dialog-reservations");
+        reservationSection.append(el("h3", "", "予約・取り置き"));
+        const reservationList = el("div", "dialog-link-list");
+        for (const reservation of reservations) {
+          const link = safeExternalLink(reservation.url, reservation.label, "dialog-reservation-link");
+          if (!link) continue;
+          link.setAttribute("aria-label", `${reservation.label}（新しいタブで開く）`);
+          const row = el("div", "dialog-reservation-row");
+          row.append(link);
+          const deadline = reservationDeadlineText(reservation);
+          if (deadline) row.append(el("span", "dialog-reservation-deadline", deadline));
+          reservationList.append(row);
+        }
+        if (reservationList.childElementCount) {
+          reservationSection.append(
+            reservationList,
+            el("p", "dialog-note", "受付状況は団体の案内を確認してください"),
+          );
+          details.append(reservationSection);
+        }
+      }
       const description = el("p", "dialog-description", product.description);
       details.append(description);
       const facts = el("dl", "dialog-facts");

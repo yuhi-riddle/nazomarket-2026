@@ -6,6 +6,7 @@ export type Hashtag = { tag: string; sources: Source[] };
 export type CheckedSource = "official" | "site" | "x" | "search";
 export type Category = "kit" | "booklet" | "online" | "goods" | "other";
 export type PlayMinutes = { min: number; max: number | null };
+export type Reservation = { label: string; url: string; endsAt: string | null };
 
 export type Booth = {
   id: string;                  // booth.tsv の管理用NO（例 "no02"）
@@ -21,6 +22,7 @@ export type Booth = {
 };
 
 export type Product = {
+  reservations?: Reservation[];
   id: string;                  // 公式は商品NO（"p02"）、それ以外は "<boothId>-<連番>"
   boothId: string;
   name: string;

@@ -2220,6 +2220,17 @@
       {
         "url": "https://x.com/tokiqil/status/2116471588724105539",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116877610496176220",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは両日17時まで）",
+        "url": "https://x.gd/HkhHj",
+        "endsAt": null
       }
     ],
     "boothId": "no04",
@@ -2344,9 +2355,20 @@
       {
         "url": "https://x.com/tokiqil/status/2116511073272779018",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116877610496176220",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "id": "no04-5",
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは両日17時まで）",
+        "url": "https://x.gd/HkhHj",
+        "endsAt": null
+      }
+    ],
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
@@ -2388,9 +2410,20 @@
       {
         "url": "https://x.com/tokiqil/status/2110901255732445520",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116877610496176220",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "id": "no04-6",
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは両日17時まで）",
+        "url": "https://x.gd/HkhHj",
+        "endsAt": null
+      }
+    ],
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
@@ -2437,9 +2470,20 @@
       {
         "url": "https://x.com/tokiqil/status/2111441993922748476",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116877610496176220",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "id": "no04-7",
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは両日17時まで）",
+        "url": "https://x.gd/HkhHj",
+        "endsAt": null
+      }
+    ],
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
@@ -2480,9 +2524,20 @@
       {
         "url": "https://x.com/tokiqil/status/2116527398057574709",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116877610496176220",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "id": "no04-8",
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは両日17時まで）",
+        "url": "https://x.gd/HkhHj",
+        "endsAt": null
+      }
+    ],
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
@@ -2524,9 +2579,20 @@
       {
         "url": "https://x.com/tokiqil/status/2116496070218014873",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116877610496176220",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "id": "no04-9",
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは両日17時まで）",
+        "url": "https://x.gd/HkhHj",
+        "endsAt": null
+      }
+    ],
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
@@ -2603,6 +2669,17 @@
       {
         "url": "https://x.com/tokiqil/2116519980103786768",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116877610496176220",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは両日17時まで）",
+        "url": "https://x.gd/HkhHj",
+        "endsAt": null
       }
     ],
     "boothId": "no04",
@@ -5762,6 +5839,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2116107847519940928",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [
@@ -5777,6 +5858,18 @@
             "retrievedAt": "2026-10-26"
           }
         ]
+      }
+    ],
+    "reservations": [
+      {
+        "label": "11/7受け取りの先行予約（現地引換チケット）",
+        "url": "https://nazoxnazo-shop.com/items/6ad87b020479d2cc405206b8",
+        "endsAt": "2026-11-06T23:59"
+      },
+      {
+        "label": "11/8受け取りの先行予約（現地引換チケット）",
+        "url": "https://nazoxnazo-shop.com/items/6ad87bc059cbf471274d93a1",
+        "endsAt": null
       }
     ],
     "boothId": "no16",
@@ -6614,6 +6707,10 @@
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NAZOGUMI/status/2116470242780012734",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [],
@@ -6621,6 +6718,13 @@
       "difficulty",
       "players",
       "payment"
+    ],
+    "reservations": [
+      {
+        "label": "新作の取り置き予約",
+        "url": "https://fsc0.short.gy/mTlFo9",
+        "endsAt": "2026-11-05T23:59"
+      }
     ]
   },
   {
@@ -6670,6 +6774,10 @@
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NAZOGUMI/status/2116470242780012734",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [],
@@ -6677,6 +6785,13 @@
       "difficulty",
       "players",
       "payment"
+    ],
+    "reservations": [
+      {
+        "label": "新作の取り置き予約",
+        "url": "https://fsc0.short.gy/mTlFo9",
+        "endsAt": "2026-11-05T23:59"
+      }
     ]
   },
   {
@@ -6722,6 +6837,10 @@
       {
         "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NAZOGUMI/status/2116470242780012734",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [],
@@ -6729,6 +6848,13 @@
       "difficulty",
       "players",
       "payment"
+    ],
+    "reservations": [
+      {
+        "label": "新作の取り置き予約",
+        "url": "https://fsc0.short.gy/mTlFo9",
+        "endsAt": "2026-11-05T23:59"
+      }
     ]
   },
   {
@@ -10802,6 +10928,10 @@
       {
         "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazocafessp/status/2114686922316816436",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [
@@ -10819,7 +10949,14 @@
         ]
       }
     ],
-    "unconfirmed": []
+    "unconfirmed": [],
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは11/8 14時まで）",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
+        "endsAt": "2026-11-07T18:00"
+      }
+    ]
   },
   {
     "id": "p24",
@@ -10922,10 +11059,21 @@
       {
         "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazocafessp/status/2115769677901336665",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [],
-    "unconfirmed": []
+    "unconfirmed": [],
+    "reservations": [
+      {
+        "label": "取り置き予約（受け取りは11/8 14時まで）",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
+        "endsAt": "2026-11-07T18:00"
+      }
+    ]
   },
   {
     "id": "no32-1",
@@ -13677,6 +13825,10 @@
       {
         "url": "https://x.com/paddle_pj/status/2115730376333443545",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/paddle_pj/status/2116545749534245347",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [
@@ -13688,6 +13840,13 @@
             "retrievedAt": "2026-10-30"
           }
         ]
+      }
+    ],
+    "reservations": [
+      {
+        "label": "抽選の事前受付（当日の入力も可）",
+        "url": "https://lowest.paddledayo.net",
+        "endsAt": null
       }
     ],
     "boothId": "no55",

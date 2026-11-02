@@ -35,6 +35,15 @@ export const defaultState: AppState = {
   prefs: { ...defaultPrefs, categories: [...defaultPrefs.categories] },
 };
 
+export function showBoothInCatalog(state: AppState, boothId: string): AppState {
+  return {
+    ...state,
+    tab: "catalog",
+    sort: state.sort === "recommended" ? "booth" : state.sort,
+    filters: { ...emptyFilters, boothId },
+  };
+}
+
 const tabs: TabId[] = ["catalog", "cart", "map"];
 const categoryValues: Category[] = ["kit", "booklet", "online", "goods", "other"];
 const sorts: SortKey[] = ["recommended", "booth", "organization", "priceAsc", "priceDesc", "difficultyAsc", "difficultyDesc"];
