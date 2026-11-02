@@ -1299,6 +1299,142 @@
             }
           ],
           "id": "no75-8"
+        },
+        {
+          "id": "no75-9",
+          "name": "冠木津圭の事件簿 復讐を紡ぐ朱殷の名刺",
+          "price": 1500,
+          "priceNote": "ナゾマ特別価格",
+          "category": "kit",
+          "oneLiner": "冠木津圭の事件簿シリーズの既刊",
+          "description": "冠木津圭の事件簿シリーズの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "タッチ決済"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no75-10",
+          "name": "眠り姫は謎の上で眠る",
+          "price": 2000,
+          "priceNote": "ナゾマ特別価格",
+          "category": "online",
+          "oneLiner": "オンライン謎解きゲームの既刊",
+          "description": "オンライン謎解きゲームの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "タッチ決済"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no75-11",
+          "name": "18の君に花束を",
+          "price": 2000,
+          "priceNote": "ナゾマ特別価格",
+          "category": "online",
+          "oneLiner": "オンライン謎解きゲームの既刊",
+          "description": "オンライン謎解きゲームの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "タッチ決済"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no75-12",
+          "name": "モニタールームからの脱出",
+          "price": 2000,
+          "priceNote": "ナゾマ特別価格",
+          "category": "online",
+          "oneLiner": "オンライン謎解きゲームの既刊",
+          "description": "オンライン謎解きゲームの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "タッチ決済"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
       "candidates": [
@@ -1793,10 +1929,6 @@
             },
             {
               "url": "https://shizukaarg.mayudamakobo.jp",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/mayudamakobo/status/2114267659021979723",
               "retrievedAt": "2026-10-30"
             }
           ],

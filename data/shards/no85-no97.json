@@ -524,9 +524,9 @@
       "officialPatches": [],
       "products": [
         {
-          "name": "ホロスコープと少しの秘密 〜マスターの仕掛けた淡い謎〜",
-          "price": null,
-          "priceNote": null,
+          "name": "ホロスコープと少しの秘密 〜マスターの仕掛けたとある謎〜",
+          "price": 2500,
+          "priceNote": "会場価格",
           "category": "kit",
           "oneLiner": "北海道のバーで開催された謎解き公演を、持ち帰り謎にした新作",
           "description": "北海道のとあるバーで開催された謎解き公演が、持ち帰り謎になって登場！\nあの日、バーで紡がれた謎を、今度はあなたの手で解き明かしてください",
@@ -549,9 +549,73 @@
             {
               "url": "https://x.com/ChansFactory86/status/2112763201356169468",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/ChansFactory86/status/2117245278109733119",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "id": "no88-1"
+        },
+        {
+          "id": "no88-2",
+          "name": "ナゾトキーホルダー",
+          "price": 1000,
+          "priceNote": "会場価格",
+          "category": "goods",
+          "oneLiner": "解けるキーホルダー。「見えることば」と「できあがる字」の5問",
+          "description": "解けるキーホルダー。Q1・Q2は見えることば、Q3〜Q5はできあがる字を答える。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWH3WkLaUAAiSow?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/ChansFactory86/status/2117245278109733119",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no88-3",
+          "name": "HOTEL・Cipher Vol.2『すこしも入れない化かされる部屋』",
+          "price": 800,
+          "priceNote": "会場価格",
+          "category": "kit",
+          "oneLiner": "名刺サイズの謎 HOTEL・Cipher の第2弾",
+          "description": "名刺サイズの謎 HOTEL・Cipher の Vol.2。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWH3W5caoAANxEF?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/ChansFactory86/status/2117245278109733119",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
       "candidates": [

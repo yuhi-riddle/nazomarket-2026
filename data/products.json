@@ -1,5 +1,55 @@
 [
   {
+    "id": "no01-1",
+    "boothId": "no01",
+    "name": "リアル脱出ゲーム『爆弾魔が描いた絵本』",
+    "price": 3960,
+    "priceNote": "一般発売(2026-12-08)も同価格。特設ページ表記",
+    "category": "kit",
+    "oneLiner": "絵本と捜査資料から、爆弾の在処を推理する自宅用RDG",
+    "description": "「都内にたくさんの爆弾を仕掛けました。\n爆弾のありかの手がかりは、私の最新作の中にあります」\n\n突然の爆破予告と共に出頭した、人気絵本作家。\nその言葉通りに最初の爆発が発生し、世間に衝撃が走る。\n\n「どの爆弾にも、人質を縛り付けています。\n絵本に隠された謎を解き、人質を救うことができるでしょうか？」\n\n絵本作家の要求によって開始された、前代未聞の公開捜査。\n爆弾はどこにあるのか？　誰が人質になっているのか？\n絵本を使った奇妙な劇場型犯罪の目的は、一体何なのか？\n\n渦中の“爆弾魔が描いた絵本”を手に入れたあなたの捜査が、今始まる。\n\n特設サイト：https://realdgame.jp/s/bombersbook/",
+    "difficulty": {
+      "level": 3,
+      "source": "estimated",
+      "basis": "特設ページに難易度表記はなく、約2〜3時間・1〜3人の自宅用RDGのため標準と推定"
+    },
+    "playMinutes": {
+      "min": 120,
+      "max": 180
+    },
+    "players": "1〜3人",
+    "isNew": true,
+    "limited": "先行販売・各日数量限定（一般発売は2026-12-08）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no01/product/p29_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p29",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://realdgame.jp/s/bombersbook/",
+        "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/realdgame/status/2115670085033697779",
+        "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/SCRAP_SHUPPAN/status/2115687325032440033",
+        "retrievedAt": "2026-10-30"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
     "id": "p18",
     "boothId": "no01",
     "name": "おうちで遊べる！　名作リアル脱出ゲーム『君は明日と消えていった』",
@@ -36,90 +86,6 @@
         "retrievedAt": "2026-10-30"
       }
     ],
-    "hashtags": [],
-    "unconfirmed": [
-      "payment"
-    ]
-  },
-  {
-    "id": "p29",
-    "boothId": "no01",
-    "name": "リアル脱出ゲーム『爆弾魔が描いた絵本』",
-    "price": 3960,
-    "priceNote": null,
-    "category": "other",
-    "oneLiner": "「都内にたくさんの爆弾を仕掛けました。",
-    "description": "「都内にたくさんの爆弾を仕掛けました。\n爆弾のありかの手がかりは、私の最新作の中にあります」\n\n突然の爆破予告と共に出頭した、人気絵本作家。\nその言葉通りに最初の爆発が発生し、世間に衝撃が走る。\n\n「どの爆弾にも、人質を縛り付けています。\n絵本に隠された謎を解き、人質を救うことができるでしょうか？」\n\n絵本作家の要求によって開始された、前代未聞の公開捜査。\n爆弾はどこにあるのか？　誰が人質になっているのか？\n絵本を使った奇妙な劇場型犯罪の目的は、一体何なのか？\n\n渦中の“爆弾魔が描いた絵本”を手に入れたあなたの捜査が、今始まる。\n\n特設サイト：https://realdgame.jp/s/bombersbook/",
-    "difficulty": {
-      "level": null,
-      "source": "unknown",
-      "basis": null
-    },
-    "playMinutes": null,
-    "players": null,
-    "isNew": true,
-    "limited": null,
-    "days": [
-      "sat",
-      "sun"
-    ],
-    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no01/product/p29_photo1.png",
-    "payment": null,
-    "sources": [
-      {
-        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p29",
-        "retrievedAt": "2026-11-02"
-      }
-    ],
-    "hashtags": [],
-    "unconfirmed": [
-      "difficulty",
-      "playMinutes",
-      "players",
-      "payment"
-    ]
-  },
-  {
-    "id": "no01-1",
-    "name": "『爆弾魔が描いた絵本』（自宅で遊べるリアル脱出ゲーム）",
-    "price": 3960,
-    "priceNote": "一般発売(2026-12-08)も同価格。特設ページ表記",
-    "category": "kit",
-    "oneLiner": "絵本と捜査資料から、爆弾の在処を推理する自宅用RDG",
-    "description": "爆弾の手がかりは、すべて一冊の絵本の中に。絵本と捜査資料をもとに仕掛けられた爆弾を解除せよ！",
-    "difficulty": {
-      "level": 3,
-      "source": "estimated",
-      "basis": "特設ページに難易度表記はなく、約2〜3時間・1〜3人の自宅用RDGのため標準と推定"
-    },
-    "playMinutes": {
-      "min": 120,
-      "max": 180
-    },
-    "players": "1〜3人",
-    "isNew": true,
-    "limited": "先行販売・各日数量限定（一般発売は2026-12-08）",
-    "days": [
-      "sat",
-      "sun"
-    ],
-    "imageUrl": "https://realdgame.jp/s/bombersbook/img/ogp.jpg?ver1",
-    "payment": null,
-    "sources": [
-      {
-        "url": "https://realdgame.jp/s/bombersbook/",
-        "retrievedAt": "2026-10-30"
-      },
-      {
-        "url": "https://x.com/realdgame/status/2115670085033697779",
-        "retrievedAt": "2026-10-30"
-      },
-      {
-        "url": "https://x.com/SCRAP_SHUPPAN/status/2115687325032440033",
-        "retrievedAt": "2026-10-30"
-      }
-    ],
-    "boothId": "no01",
     "hashtags": [],
     "unconfirmed": [
       "payment"
@@ -5688,12 +5654,12 @@
   },
   {
     "id": "no14-2",
-    "name": "ヴィランサイド初の持ち帰り謎（タイトル未発表）",
-    "price": null,
-    "priceNote": null,
+    "name": "三つの密室の作り方",
+    "price": 3900,
+    "priceNote": "ナゾマ先行販売価格（通常4,300円）",
     "category": "kit",
-    "oneLiner": "ヴィランサイド初の持ち帰り謎。タイトルは当選企画中で未発表",
-    "description": "ナゾマ新作タイトル当て『●●の●●の●●●』 ヴィランサイド初の持ち帰り謎。正解者の中から抽選で3名様にプレゼント（〆切 11/2(月) 18:00）。ナゾトキマーケット2026 出展【Bb3】",
+    "oneLiner": "「だから、密室をつくることにしました。」ヴィランサイド初の持ち帰り謎",
+    "description": "だから、密室をつくることにしました。\nヴィランサイド初の持ち帰り謎。ナゾトキマーケット2026（東京ドームシティ プリズムホール Bb3）で先行販売。",
     "difficulty": {
       "level": null,
       "source": "unknown",
@@ -5713,12 +5679,25 @@
       {
         "url": "https://x.com/far_near_/status/2115745460933599443",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/far_near_/status/2117195014828708183",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "hashtags": [
+      {
+        "tag": "三つの密室の作り方",
+        "sources": [
+          {
+            "url": "https://x.com/far_near_/status/2117195014828708183",
+            "retrievedAt": "2026-11-02"
+          }
+        ]
       }
     ],
     "boothId": "no14",
-    "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
@@ -5781,7 +5760,7 @@
         "retrievedAt": "2026-10-30"
       },
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -5830,7 +5809,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -5869,7 +5848,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -5911,7 +5890,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -5953,7 +5932,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -5995,7 +5974,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6037,7 +6016,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6079,7 +6058,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6121,7 +6100,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6163,7 +6142,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6205,7 +6184,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6247,7 +6226,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6267,8 +6246,8 @@
   {
     "id": "no16-13",
     "name": "鎌倉 まるっと謎さんぽ",
-    "price": 2200,
-    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,500円）",
+    "price": 1900,
+    "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
     "category": "kit",
     "oneLiner": "なぞたび。シリーズの周遊謎 鎌倉編",
     "description": "ノープランで、甘味も古都も潮風も。鎌倉まるっと満喫旅。",
@@ -6289,7 +6268,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6309,8 +6288,8 @@
   {
     "id": "no16-14",
     "name": "鎌倉 まるっと謎さんぽ -裏鎌倉編-",
-    "price": 2300,
-    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+    "price": 2000,
+    "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
     "category": "kit",
     "oneLiner": "なぞたび。シリーズの周遊謎 裏鎌倉編",
     "description": "なぞたび。シリーズの周遊謎 裏鎌倉編。",
@@ -6331,7 +6310,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6351,8 +6330,8 @@
   {
     "id": "no16-15",
     "name": "浅草 まるっと謎さんぽ",
-    "price": 2300,
-    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+    "price": 2000,
+    "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
     "category": "kit",
     "oneLiner": "なぞたび。シリーズの周遊謎 浅草編",
     "description": "なぞたび。シリーズの周遊謎 浅草編。",
@@ -6373,7 +6352,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -6393,8 +6372,8 @@
   {
     "id": "no16-16",
     "name": "川越 まるっと謎さんぽ",
-    "price": 2300,
-    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+    "price": 2000,
+    "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
     "category": "kit",
     "oneLiner": "なぞたび。シリーズの周遊謎 川越編",
     "description": "なぞたび。シリーズの周遊謎 川越編。",
@@ -6415,7 +6394,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -17332,6 +17311,174 @@
     ]
   },
   {
+    "id": "no75-9",
+    "name": "冠木津圭の事件簿 復讐を紡ぐ朱殷の名刺",
+    "price": 1500,
+    "priceNote": "ナゾマ特別価格",
+    "category": "kit",
+    "oneLiner": "冠木津圭の事件簿シリーズの既刊",
+    "description": "冠木津圭の事件簿シリーズの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay",
+      "タッチ決済"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no75",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no75-10",
+    "name": "眠り姫は謎の上で眠る",
+    "price": 2000,
+    "priceNote": "ナゾマ特別価格",
+    "category": "online",
+    "oneLiner": "オンライン謎解きゲームの既刊",
+    "description": "オンライン謎解きゲームの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay",
+      "タッチ決済"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no75",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no75-11",
+    "name": "18の君に花束を",
+    "price": 2000,
+    "priceNote": "ナゾマ特別価格",
+    "category": "online",
+    "oneLiner": "オンライン謎解きゲームの既刊",
+    "description": "オンライン謎解きゲームの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay",
+      "タッチ決済"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no75",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no75-12",
+    "name": "モニタールームからの脱出",
+    "price": 2000,
+    "priceNote": "ナゾマ特別価格",
+    "category": "online",
+    "oneLiner": "オンライン謎解きゲームの既刊",
+    "description": "オンライン謎解きゲームの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay",
+      "タッチ決済"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no75",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
     "id": "no76-1",
     "name": "折り鶴謎",
     "price": 200,
@@ -17722,10 +17869,6 @@
       },
       {
         "url": "https://shizukaarg.mayudamakobo.jp",
-        "retrievedAt": "2026-10-30"
-      },
-      {
-        "url": "https://x.com/mayudamakobo/status/2114267659021979723",
         "retrievedAt": "2026-10-30"
       }
     ],
@@ -19399,9 +19542,9 @@
     ]
   },
   {
-    "name": "ホロスコープと少しの秘密 〜マスターの仕掛けた淡い謎〜",
-    "price": null,
-    "priceNote": null,
+    "name": "ホロスコープと少しの秘密 〜マスターの仕掛けたとある謎〜",
+    "price": 2500,
+    "priceNote": "会場価格",
     "category": "kit",
     "oneLiner": "北海道のバーで開催された謎解き公演を、持ち帰り謎にした新作",
     "description": "北海道のとあるバーで開催された謎解き公演が、持ち帰り謎になって登場！\nあの日、バーで紡がれた謎を、今度はあなたの手で解き明かしてください",
@@ -19424,16 +19567,97 @@
       {
         "url": "https://x.com/ChansFactory86/status/2112763201356169468",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/ChansFactory86/status/2117245278109733119",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no88-1",
     "boothId": "no88",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no88-2",
+    "name": "ナゾトキーホルダー",
+    "price": 1000,
+    "priceNote": "会場価格",
+    "category": "goods",
+    "oneLiner": "解けるキーホルダー。「見えることば」と「できあがる字」の5問",
+    "description": "解けるキーホルダー。Q1・Q2は見えることば、Q3〜Q5はできあがる字を答える。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWH3WkLaUAAiSow?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/ChansFactory86/status/2117245278109733119",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no88",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no88-3",
+    "name": "HOTEL・Cipher Vol.2『すこしも入れない化かされる部屋』",
+    "price": 800,
+    "priceNote": "会場価格",
+    "category": "kit",
+    "oneLiner": "名刺サイズの謎 HOTEL・Cipher の第2弾",
+    "description": "名刺サイズの謎 HOTEL・Cipher の Vol.2。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWH3W5caoAANxEF?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/ChansFactory86/status/2117245278109733119",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no88",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
       "payment"
     ]
   },

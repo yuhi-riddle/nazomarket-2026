@@ -89,7 +89,8 @@ export type VenueLayout = {
 // ---- 収集の途中データ（data/shards/*.json）。build-data がまとめて products.json にする ----
 
 // 公式商品（id が "p" で始まる）は、公式 TSV に無い・上書きしたい項目だけを持つ
-export type ShardOfficialPatch = Partial<Omit<Product, "id" | "boothId" | "unconfirmed" | "hashtags" | "playMinutes">> & { id: string; hashtags?: Hashtag[]; playMinutes?: number | PlayMinutes | null };
+export type ShardOfficialPatch = Partial<Omit<Product, "id" | "boothId" | "unconfirmed" | "hashtags" | "playMinutes">> & { id: string; keepId?: string; hashtags?: Hashtag[]; playMinutes?: number | PlayMinutes | null };
+// keepId は、先に公式以外で載せた商品が後から公式に載ったとき、保存済みのリストを壊さないよう前の ID のまま出すためのもの
 // 公式以外の商品は全項目を持つ（boothId は親の ShardBooth から、unconfirmed は build-data が付ける）
 export type ShardProduct = Omit<Product, "boothId" | "unconfirmed" | "hashtags" | "playMinutes"> & { hashtags?: Hashtag[]; playMinutes: number | PlayMinutes | null };
 

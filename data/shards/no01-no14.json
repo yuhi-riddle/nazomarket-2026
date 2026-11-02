@@ -61,17 +61,13 @@
               "retrievedAt": "2026-10-30"
             }
           ]
-        }
-      ],
-      "products": [
+        },
         {
-          "id": "no01-1",
-          "name": "『爆弾魔が描いた絵本』（自宅で遊べるリアル脱出ゲーム）",
-          "price": 3960,
+          "id": "p29",
+          "keepId": "no01-1",
           "priceNote": "一般発売(2026-12-08)も同価格。特設ページ表記",
           "category": "kit",
           "oneLiner": "絵本と捜査資料から、爆弾の在処を推理する自宅用RDG",
-          "description": "爆弾の手がかりは、すべて一冊の絵本の中に。絵本と捜査資料をもとに仕掛けられた爆弾を解除せよ！",
           "difficulty": {
             "level": 3,
             "source": "estimated",
@@ -88,8 +84,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://realdgame.jp/s/bombersbook/img/ogp.jpg?ver1",
-          "payment": null,
           "sources": [
             {
               "url": "https://realdgame.jp/s/bombersbook/",
@@ -104,7 +98,9 @@
               "retrievedAt": "2026-10-30"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no01-2",
           "name": "ポケット謎図鑑-題材編-",
@@ -5575,12 +5571,12 @@
         },
         {
           "id": "no14-2",
-          "name": "ヴィランサイド初の持ち帰り謎（タイトル未発表）",
-          "price": null,
-          "priceNote": null,
+          "name": "三つの密室の作り方",
+          "price": 3900,
+          "priceNote": "ナゾマ先行販売価格（通常4,300円）",
           "category": "kit",
-          "oneLiner": "ヴィランサイド初の持ち帰り謎。タイトルは当選企画中で未発表",
-          "description": "ナゾマ新作タイトル当て『●●の●●の●●●』 ヴィランサイド初の持ち帰り謎。正解者の中から抽選で3名様にプレゼント（〆切 11/2(月) 18:00）。ナゾトキマーケット2026 出展【Bb3】",
+          "oneLiner": "「だから、密室をつくることにしました。」ヴィランサイド初の持ち帰り謎",
+          "description": "だから、密室をつくることにしました。\nヴィランサイド初の持ち帰り謎。ナゾトキマーケット2026（東京ドームシティ プリズムホール Bb3）で先行販売。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -5600,6 +5596,21 @@
             {
               "url": "https://x.com/far_near_/status/2115745460933599443",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/far_near_/status/2117195014828708183",
+              "retrievedAt": "2026-11-02"
+            }
+          ],
+          "hashtags": [
+            {
+              "tag": "三つの密室の作り方",
+              "sources": [
+                {
+                  "url": "https://x.com/far_near_/status/2117195014828708183",
+                  "retrievedAt": "2026-11-02"
+                }
+              ]
             }
           ]
         }

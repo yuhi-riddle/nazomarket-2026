@@ -269,7 +269,7 @@
     "kind": "giveaway",
     "title": "『水彩を貫く』を抽選で1名にプレゼント",
     "detail": "本投稿をリポストし、アカウントをフォローした人の中から抽選で1名に『水彩を貫く』をプレゼント。当選連絡は11/3(火)",
-    "endsAt": "2026-11-01",
+    "endsAt": "2026-11-01T23:59",
     "days": [],
     "limit": "抽選1名",
     "sources": [
@@ -701,7 +701,11 @@
     "limit": "数量限定",
     "sources": [
       {
-        "url": "https://x.com/Tri_Mobius/2116736235368567156",
+        "url": "https://x.com/Tri_Mobius/status/2116736235368567156",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/Tri_Mobius/status/2117210115275403305",
         "retrievedAt": "2026-11-02"
       }
     ]
@@ -721,7 +725,7 @@
     "limit": null,
     "sources": [
       {
-        "url": "https://x.com/tanteijelly/2117118106548273663",
+        "url": "https://x.com/tanteijelly/status/2117118106548273663",
         "retrievedAt": "2026-11-02"
       }
     ]
@@ -764,6 +768,164 @@
     "sources": [
       {
         "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no10-c1",
+    "boothId": "no10",
+    "productIds": [],
+    "kind": "discount",
+    "title": "ワゴンセール20%OFF",
+    "detail": "タカラッシュ（Bb7）でナゾトキマーケット限定の20%OFFワゴンセールを開催。対象商品は告知に書かれていない",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/real_takara/status/2114265713817133389",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no16-c1",
+    "boothId": "no16",
+    "productIds": [
+      "no16-1",
+      "no16-2",
+      "no16-3",
+      "no16-4",
+      "no16-5",
+      "no16-6",
+      "no16-7",
+      "no16-8",
+      "no16-9",
+      "no16-17",
+      "no16-18",
+      "no16-19",
+      "no16-20"
+    ],
+    "kind": "discount",
+    "title": "人気シリーズのお得なセット4種",
+    "detail": "クライマックス謎解きセット8,500円（STORES価格9,600円）、sQuare mAzeセット7,000円（8,400円）、問題作3点セット8,000円（9,600円）、「この店の商品全部ください」セット35,000円（44,800円）",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2117262537519718418",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no31-c2",
+    "boothId": "no31",
+    "productIds": [
+      "p23",
+      "p24",
+      "p25"
+    ],
+    "kind": "bonus",
+    "title": "予約特典のサニサニーピクニック割引券",
+    "detail": "予約特典として、サニサニーピクニックで使える割引券をプレゼント。孤独に唄うは100円引、水彩を貫くは300円引、五月のカワセミは500円引。利用には店舗の予約が必要で、他の割引券と併用不可。有効期限は2027年12月31日",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2112136440306184380",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no79-c3",
+    "boothId": "no79",
+    "productIds": [
+      "p36"
+    ],
+    "kind": "giveaway",
+    "title": "積み謎を当てろ！新作『積謎厳禁』プレゼント",
+    "detail": "あまつパイセンをフォローしてリポストすると、抽選で3名に『積謎厳禁』。写真の積み謎の総数を予想して引用リポストすると、正解者から10名にも。会場で受け取り",
+    "endsAt": "2026-11-05T23:59",
+    "days": [],
+    "limit": "抽選3名＋正解者から10名",
+    "sources": [
+      {
+        "url": "https://x.com/amaka2don/status/2117225240262828349",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no86-c1",
+    "boothId": "no86",
+    "productIds": [
+      "p12"
+    ],
+    "kind": "giveaway",
+    "title": "『ナゾトキアクキー』を抽選でプレゼント",
+    "detail": "CrossXOneをフォローしてこの投稿をリポストすると抽選で当たる。会場で受け取りか郵送。4種から1つ選べる。人数は告知画像に「合計3名」「4名」の両方が書かれている",
+    "endsAt": "2026-11-04T23:59",
+    "days": [],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/crossxone2110/status/2115330628594041246",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no86-c2",
+    "boothId": "no86",
+    "productIds": [
+      "p13"
+    ],
+    "kind": "giveaway",
+    "title": "『LAST ONE』を抽選で3名にプレゼント",
+    "detail": "CrossXOneをフォローしてこの投稿をリポストすると抽選で当たる。会場で受け取りか郵送。",
+    "endsAt": "2026-11-04T23:59",
+    "days": [],
+    "limit": "抽選3名",
+    "sources": [
+      {
+        "url": "https://x.com/crossxone2110/status/2115331204253966453",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no86-c3",
+    "boothId": "no86",
+    "productIds": [
+      "p14"
+    ],
+    "kind": "giveaway",
+    "title": "『小人は回る』を抽選で3名にプレゼント",
+    "detail": "CrossXOneをフォローしてこの投稿をリポストすると抽選で当たる。会場で受け取りか郵送。",
+    "endsAt": "2026-11-04T23:59",
+    "days": [],
+    "limit": "抽選3名",
+    "sources": [
+      {
+        "url": "https://x.com/crossxone2110/status/2115332382391943631",
         "retrievedAt": "2026-11-02"
       }
     ]

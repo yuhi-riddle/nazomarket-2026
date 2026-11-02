@@ -361,6 +361,26 @@ describe("buildProducts", () => {
     }];
     expect(() => buildProducts({ officialProducts, officialBooths, shards: dup, retrievedAt: DATE })).toThrow(/no72-9.*p03|p03.*no72-9/);
   });
+  it("公式以外の商品が、同じ団体の公式商品と『』内の題名が同じなら例外（前後の飾りが違う二重登録を止める）", () => {
+    const renamedOfficial = officialProducts.map((row) => row.id === "p03" ? { ...row, name: "リアル脱出ゲーム『気怠げ終末』" } : row);
+    const dup: ShardFile[] = [{
+      ...shards[0],
+      booths: [{ ...shards[0].booths[0], products: [{ ...shards[0].booths[0].products[0], id: "no72-9", name: "『気怠げ終末』（自宅で遊べる）" }] }],
+    }];
+    expect(() => buildProducts({ officialProducts: renamedOfficial, officialBooths, shards: dup, retrievedAt: DATE })).toThrow(/no72-9.*p03|p03.*no72-9/);
+  });
+  it("公式の追記に keepId があれば、公式の値のまま既存の商品 ID で出す（保存済みのリストを壊さない）", () => {
+    const kept: ShardFile[] = [{
+      ...shards[0],
+      booths: [{ ...shards[0].booths[0], officialPatches: [{ id: "p03", keepId: "no72-1", limited: "先行販売" }], products: [] }],
+    }];
+    const built = buildProducts({ officialProducts, officialBooths, shards: kept, retrievedAt: DATE });
+    expect(built.some((product) => product.id === "p03")).toBe(false);
+    const product = built.find((item) => item.id === "no72-1")!;
+    expect(product.name).toBe(officialProducts.find((row) => row.id === "p03")!.name);
+    expect(product.limited).toBe("先行販売");
+    expect(product).not.toHaveProperty("keepId");
+  });
   it("存在しない公式商品への追記は例外", () => {
     const bad: ShardFile[] = [
       { range: "x", collectedAt: DATE, booths: [{ ...shards[0].booths[0], officialPatches: [{ id: "p99" }], products: [] }] },
