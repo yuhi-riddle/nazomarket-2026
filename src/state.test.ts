@@ -57,6 +57,13 @@ describe("parseState", () => {
       day: "sat",
     });
   });
+  it("タグの組み合わせ方は保存して戻し、無い・おかしい値は「または」にする", () => {
+    const state = { ...defaultState, filters: { ...defaultState.filters, tags: ["新作"], tagMatch: "all" as const } };
+    expect(parseState(serializeState(state), known).filters.tagMatch).toBe("all");
+    const read = (filters: unknown) => parseState(JSON.stringify({ version: 1, filters }), known).filters.tagMatch;
+    expect(read({ tags: ["新作"] })).toBe("any");
+    expect(read({ tagMatch: "nope" })).toBe("any");
+  });
   it("古い保存の優先度は読み捨て、優先度が無い項目も読む。当日タブはリストタブとして開く", () => {
     const raw = JSON.stringify({
       version: 1,

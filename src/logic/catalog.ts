@@ -2,6 +2,7 @@ import type { Booth, Category, Day, Product, VenueLayout } from "../types.ts";
 import { featureTags } from "./tags.ts";
 
 export type DifficultyKey = 1 | 2 | 3 | 4 | 5 | "unknown";
+export type TagMatch = "any" | "all";
 export type SortKey = "recommended" | "booth" | "organization" | "priceAsc" | "priceDesc" | "difficultyAsc" | "difficultyDesc";
 
 export const CATEGORY_NAMES: Record<Category, string> = {
@@ -29,6 +30,7 @@ export type Filters = {
   difficulties: DifficultyKey[];
   categories: Category[];
   tags: string[];
+  tagMatch: TagMatch;
   newOnly: boolean;
   day: Day | null;
 };
@@ -40,6 +42,7 @@ export const emptyFilters: Filters = {
   difficulties: [],
   categories: [],
   tags: [],
+  tagMatch: "any",
   newOnly: false,
   day: null,
 };
@@ -74,6 +77,10 @@ export function normalizeForSearch(value: string): string {
   );
 }
 
+function matchesTag(tag: string, view: ProductView): boolean {
+  return view.featureTags.includes(tag) || (tag === "1人で遊べる" && !view.product.players);
+}
+
 export function filterCatalog(catalog: ProductView[], filters: Filters): ProductView[] {
   const terms = normalizeForSearch(filters.q).trim().split(/\s+/).filter(Boolean);
   return catalog.filter((view) => {
@@ -96,7 +103,12 @@ export function filterCatalog(catalog: ProductView[], filters: Filters): Product
     }
     if (filters.categories.length && !filters.categories.includes(product.category)) return false;
     // 人数が不明なものは1人で遊べないとは言えないので、価格帯の絞り込みと同じく外さない
-    if (filters.tags.length && !filters.tags.every((tag) => view.featureTags.includes(tag) || (tag === "1人で遊べる" && !product.players))) return false;
+    if (filters.tags.length) {
+      const matches = filters.tagMatch === "all"
+        ? filters.tags.every((tag) => matchesTag(tag, view))
+        : filters.tags.some((tag) => matchesTag(tag, view));
+      if (!matches) return false;
+    }
     if (filters.newOnly && product.isNew !== true) return false;
     if (filters.day && (!product.days.includes(filters.day) || !view.booth.days.includes(filters.day))) return false;
     return true;

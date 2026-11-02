@@ -44,9 +44,9 @@ describe("特徴タグで絞り込む", () => {
   const catalog = buildCatalog(products, [booth({ id: "no01", boothCode: "A1" })], layout);
   const ids = (views: ReturnType<typeof filterCatalog>) => views.map((v) => v.product.id);
 
-  it("選んだタグを全部持つ商品だけ残す", () => {
-    expect(ids(filterCatalog(catalog, { ...emptyFilters, tags: ["新作"] }))).toEqual(["p01", "p02"]);
-    expect(ids(filterCatalog(catalog, { ...emptyFilters, tags: ["新作", "持ち帰り"] }))).toEqual(["p01"]);
+  it("「かつ」では選んだタグを全部持つ商品だけ残す", () => {
+    expect(ids(filterCatalog(catalog, { ...emptyFilters, tags: ["新作"], tagMatch: "all" }))).toEqual(["p01", "p02"]);
+    expect(ids(filterCatalog(catalog, { ...emptyFilters, tags: ["新作", "持ち帰り"], tagMatch: "all" }))).toEqual(["p01"]);
   });
   it("タグの指定なしなら全部。タグ1つにつき条件1つと数える", () => {
     expect(emptyFilters.tags).toEqual([]);
@@ -65,7 +65,7 @@ describe("特徴タグで絞り込む", () => {
       product({ id: "unknown", boothId: "no01", players: null, isNew: true }),
     ], [booth({ id: "no01", boothCode: "A1" })], layout);
     expect(ids(filterCatalog(withPlayers, { ...emptyFilters, tags: ["1人で遊べる"] }))).toEqual(["solo", "unknown"]);
-    expect(ids(filterCatalog(withPlayers, { ...emptyFilters, tags: ["1人で遊べる", "新作"] }))).toEqual(["unknown"]);
+    expect(ids(filterCatalog(withPlayers, { ...emptyFilters, tags: ["1人で遊べる", "新作"], tagMatch: "all" }))).toEqual(["unknown"]);
     expect(withPlayers.find((v) => v.product.id === "unknown")!.featureTags).not.toContain("1人で遊べる");
   });
 });
