@@ -482,7 +482,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://lp.michi.place/nanitabetara/title.webp",
           "payment": null,
           "sources": [
             {
@@ -492,6 +492,10 @@
             {
               "url": "https://x.com/michi_place/status/2113933606238482881",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://lp.michi.place/nanitabetara/",
+              "retrievedAt": "2026-11-02"
             }
           ]
         }

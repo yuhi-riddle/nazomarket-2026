@@ -1,4 +1,184 @@
 {
+  "no01-14": {
+    "imageUrl": "https://scrap.itembox.cloud/product/025/000000002541/000000002541-05.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.0263,
+    "bottom": 0,
+    "width": 3000,
+    "height": 3000
+  },
+  "no01-15": {
+    "imageUrl": "https://scrap.itembox.cloud/product/025/000000002542/000000002542-01.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.0238,
+    "bottom": 0,
+    "width": 800,
+    "height": 800
+  },
+  "no01-16": {
+    "imageUrl": "https://scrap.itembox.cloud/product/017/000000001787/000000001787-01.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.12,
+    "bottom": 0.14,
+    "width": 400,
+    "height": 400
+  },
+  "no01-17": {
+    "imageUrl": "https://scrap.itembox.cloud/product/021/000000002171/000000002171-01.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.12,
+    "bottom": 0.14,
+    "width": 400,
+    "height": 400
+  },
+  "no01-26": {
+    "imageUrl": "https://scrap.itembox.cloud/product/022/000000002285/000000002285-01.jpg",
+    "left": 0.1525,
+    "right": 0.1525,
+    "top": 0,
+    "bottom": 0,
+    "width": 400,
+    "height": 400
+  },
+  "no01-27": {
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000904/000000000904-01.jpg",
+    "left": 0.15,
+    "right": 0.125,
+    "top": 0,
+    "bottom": 0,
+    "width": 400,
+    "height": 400
+  },
+  "no01-28": {
+    "imageUrl": "https://scrap.itembox.cloud/product/027/000000002701/000000002701-01.jpg",
+    "left": 0.1412,
+    "right": 0.1462,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 800
+  },
+  "no01-29": {
+    "imageUrl": "https://scrap.itembox.cloud/product/027/000000002732/000000002732-01.jpg",
+    "left": 0.1437,
+    "right": 0.1437,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 800
+  },
+  "no01-3": {
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002493/000000002493-01.jpg",
+    "left": 0.13,
+    "right": 0.125,
+    "top": 0,
+    "bottom": 0,
+    "width": 400,
+    "height": 400
+  },
+  "no01-30": {
+    "imageUrl": "https://scrap.itembox.cloud/product/019/000000001972/000000001972-01.jpg",
+    "left": 0.135,
+    "right": 0.15,
+    "top": 0,
+    "bottom": 0,
+    "width": 400,
+    "height": 400
+  },
+  "no01-39": {
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002448/000000002448-01.jpg",
+    "left": 0.0675,
+    "right": 0.0675,
+    "top": 0.0525,
+    "bottom": 0.085,
+    "width": 800,
+    "height": 800
+  },
+  "no01-4": {
+    "imageUrl": "https://scrap.itembox.cloud/product/015/000000001567/000000001567-01.jpg",
+    "left": 0.125,
+    "right": 0.14,
+    "top": 0,
+    "bottom": 0,
+    "width": 400,
+    "height": 400
+  },
+  "no01-40": {
+    "imageUrl": "https://pbs.twimg.com/media/GkM00DKacAAzvPF?format=jpg&name=small",
+    "left": 0.0945,
+    "right": 0.051,
+    "top": 0.0559,
+    "bottom": 0.0397,
+    "width": 667,
+    "height": 680
+  },
+  "no01-41": {
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000945/000000000945-01.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.176,
+    "bottom": 0.17,
+    "width": 500,
+    "height": 500
+  },
+  "no01-43": {
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000938/000000000938-01.jpg",
+    "left": 0.0533,
+    "right": 0.0467,
+    "top": 0.3067,
+    "bottom": 0.34,
+    "width": 300,
+    "height": 300
+  },
+  "no01-44": {
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000944/000000000944-01.jpg",
+    "left": 0.022,
+    "right": 0.026,
+    "top": 0.204,
+    "bottom": 0.206,
+    "width": 500,
+    "height": 500
+  },
+  "no01-45": {
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000943/000000000943-01.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.228,
+    "bottom": 0.232,
+    "width": 500,
+    "height": 500
+  },
+  "no01-5": {
+    "imageUrl": "https://scrap.itembox.cloud/product/013/000000001380/000000001380-01.jpg",
+    "left": 0.134,
+    "right": 0.138,
+    "top": 0,
+    "bottom": 0,
+    "width": 500,
+    "height": 500
+  },
+  "no01-6": {
+    "imageUrl": "https://scrap.itembox.cloud/product/013/000000001380/000000001380-01.jpg",
+    "left": 0.134,
+    "right": 0.138,
+    "top": 0,
+    "bottom": 0,
+    "width": 500,
+    "height": 500
+  },
+  "no01-7": {
+    "imageUrl": "https://scrap.itembox.cloud/product/016/000000001632/000000001632-01.jpg",
+    "left": 0,
+    "right": 0,
+    "top": 0.1757,
+    "bottom": 0.1429,
+    "width": 700,
+    "height": 700
+  },
   "no02-3": {
     "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/be872998e9864d9a348c231df2f15f60.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
     "left": 0,
@@ -314,6 +494,33 @@
     "width": 551,
     "height": 620
   },
+  "no28-11": {
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z3276",
+    "left": 0.1444,
+    "right": 0.1467,
+    "top": 0,
+    "bottom": 0,
+    "width": 900,
+    "height": 900
+  },
+  "no28-15": {
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z64",
+    "left": 0,
+    "right": 0,
+    "top": 0.1478,
+    "bottom": 0.1478,
+    "width": 460,
+    "height": 460
+  },
+  "no28-16": {
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z65",
+    "left": 0,
+    "right": 0,
+    "top": 0.1478,
+    "bottom": 0.1478,
+    "width": 460,
+    "height": 460
+  },
   "no28-20": {
     "imageUrl": "https://pbs.twimg.com/media/GdnBgbhXYAAi7Zo?format=jpg&name=small",
     "left": 0,
@@ -331,6 +538,15 @@
     "bottom": 0.0618,
     "width": 510,
     "height": 680
+  },
+  "no28-9": {
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z5860",
+    "left": 0,
+    "right": 0,
+    "top": 0.2644,
+    "bottom": 0.2644,
+    "width": 900,
+    "height": 900
   },
   "no30-1": {
     "imageUrl": "https://pbs.twimg.com/media/HVroG7vawAAto85?format=jpg&name=small",
@@ -547,6 +763,24 @@
     "bottom": 0,
     "width": 620,
     "height": 496
+  },
+  "no67-4": {
+    "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7621396/1996cbc7-b864-4146-aa96-f20f10ac68c9_base_resized.jpg",
+    "left": 0.0938,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 1024,
+    "height": 819
+  },
+  "no67-5": {
+    "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7621407/c68da50d-bdbe-4cef-9f9a-60c275a3178c_base_resized.jpg",
+    "left": 0.1855,
+    "right": 0.0938,
+    "top": 0.1758,
+    "bottom": 0,
+    "width": 1024,
+    "height": 819
   },
   "no67-6": {
     "imageUrl": "https://pbs.twimg.com/media/HVZUjOubsAAHMXF?format=jpg&name=small",

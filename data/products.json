@@ -147,11 +147,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002493/000000002493-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0370",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -161,7 +165,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -186,11 +189,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/015/000000001567/000000001567-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0155",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -200,7 +207,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -225,11 +231,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/013/000000001380/000000001380-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/world-nazo-tour/SCR-03-1626-FS",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -239,7 +249,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -264,11 +273,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/013/000000001380/000000001380-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/world-nazo-tour/SCR-03-1626-FS",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -278,7 +291,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -303,11 +315,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/016/000000001632/000000001632-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/worldnazo2022/gd1632",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -317,7 +333,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -342,11 +357,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002491/000000002491-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/worldnazo2025/SCR-03-3428",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -356,7 +375,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -381,11 +399,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002487/000000002487-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/heiseinazo/gd2487",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -395,7 +417,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -420,11 +441,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002486/000000002486-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/heiseinazo/gd2486",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -434,7 +459,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -459,11 +483,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002485/000000002485-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/heiseinazo/gd2485",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -473,7 +501,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -498,11 +525,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002488/000000002488-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/heiseinazo/gd2488",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -512,7 +543,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -537,11 +567,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/026/000000002673/000000002673-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/oshishinu/SCR-03-3608",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -551,7 +585,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -576,11 +609,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/025/000000002541/000000002541-05.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/kamitomiko/gd2541",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -590,7 +627,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -615,11 +651,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/025/000000002542/000000002542-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/belovedbook/gd2542",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -629,7 +669,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -654,11 +693,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/017/000000001787/000000001787-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0202",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -668,7 +711,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -693,11 +735,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/021/000000002171/000000002171-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0294",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -707,7 +753,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -732,11 +777,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002444/000000002444-02.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/SCR-03-3307",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -746,7 +795,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -771,11 +819,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/021/000000002177/000000002177-04.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/ghostapartment/SCR-03-3000",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -785,7 +837,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -810,11 +861,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/020/000000002000/000000002000-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap_original/SCR-03-2659",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -824,7 +879,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -849,11 +903,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/018/000000001889/000000001889-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap_original/gd1889",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -863,7 +921,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -888,11 +945,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002480/000000002480-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/JACKEYES/gd2480",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -902,7 +963,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -927,11 +987,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002481/000000002481-02.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/Steam_sanpinel/gd2481",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -941,7 +1005,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -966,11 +1029,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/016/000000001643/000000001643-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/hotel-bluerose/gd1640",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -980,7 +1047,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1005,11 +1071,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/023/000000002315/000000002315-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/conanonline2/SCR-03-4008",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1019,7 +1089,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1044,11 +1113,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/022/000000002285/000000002285-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0311",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1058,7 +1131,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1083,11 +1155,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000904/000000000904-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0020-FS",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1097,7 +1173,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1122,11 +1197,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/027/000000002701/000000002701-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0402",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1136,7 +1215,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1161,11 +1239,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/027/000000002732/000000002732-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0436",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1175,7 +1257,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1200,11 +1281,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/019/000000001972/000000001972-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/book/SCR-01-0245",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1214,7 +1299,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1551,11 +1635,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/024/000000002448/000000002448-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap_original/SCR-03-3348",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1565,7 +1653,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1590,11 +1677,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/GkM00DKacAAzvPF?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/scrapmagazine/status/1892423936073175479",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1604,7 +1695,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1629,11 +1719,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000945/000000000945-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/scrap/SCR-03-0970-FS",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1643,7 +1737,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1707,11 +1800,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000938/000000000938-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/sawareru_nazoten/SCR-03-0998-FS",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1721,7 +1818,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1746,11 +1842,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000944/000000000944-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/sawareru_nazoten/SCR-03-1001-FS",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1760,7 +1860,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -1785,11 +1884,15 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://scrap.itembox.cloud/product/009/000000000943/000000000943-01.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-scrapbooth/",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://www.scrapgoods.jp/c/sawareru_nazoten/SCR-03-1002-FS",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -1799,7 +1902,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -7464,11 +7566,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HHEIZL6WIAAZZtH?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/2049428540110598646",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-4",
@@ -7477,8 +7583,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7505,11 +7610,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HHJSFKfXcAAeJWw?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/2049791034889027792",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-5",
@@ -7518,8 +7627,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7546,11 +7654,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazocafe.com/wp-content/uploads/2021/07/hanabi3ten.jpg",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://noescape.co.jp/goods/",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-6",
@@ -7559,8 +7671,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7587,11 +7698,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazocafe.com/wp-content/uploads/2022/12/1-1.jpg",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://noescape.co.jp/goods/",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-7",
@@ -7600,8 +7715,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7672,11 +7786,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z5860",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://store.shopping.yahoo.co.jp/noescape/z5860.html",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-9",
@@ -7685,8 +7803,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7757,11 +7874,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z3276",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://store.shopping.yahoo.co.jp/noescape/z3276.html",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-11",
@@ -7770,8 +7891,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7798,11 +7918,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G1Q2gghbQAAIBiF?format=jpg&name=small",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/1969340760186036426",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-12",
@@ -7811,8 +7935,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7839,11 +7962,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G65qmaYacAAZ9nE?format=png&name=small",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/1994707918294585850",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-13",
@@ -7852,8 +7979,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7880,11 +8006,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G65qnaPaUAAkknq?format=png&name=small",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/1994707918294585850",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-14",
@@ -7893,8 +8023,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7921,11 +8050,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z64",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://store.shopping.yahoo.co.jp/noescape/z64.html",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-15",
@@ -7934,8 +8067,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -7962,11 +8094,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z65",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://store.shopping.yahoo.co.jp/noescape/z65.html",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-16",
@@ -7975,8 +8111,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -8047,11 +8182,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazocafe.com/wp-content/uploads/2022/07/fahrenheit_main-scaled.jpg",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://noescape.co.jp/goods/",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-18",
@@ -8060,8 +8199,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -8088,11 +8226,15 @@
       "現金",
       "PayPay"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://noescape.co.jp/wp-content/uploads/2020/06/himitsu_bn.jpg",
     "sources": [
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://noescape.co.jp/goods/",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no28-19",
@@ -8101,8 +8243,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -11154,7 +11295,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://lp.michi.place/nanitabetara/title.webp",
     "payment": null,
     "sources": [
       {
@@ -11164,6 +11305,10 @@
       {
         "url": "https://x.com/michi_place/status/2113933606238482881",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://lp.michi.place/nanitabetara/",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no45",
@@ -11173,7 +11318,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -12060,12 +12204,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/GOUKXkCaoAAX7g0?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/imy_nazo/status/2115084952782205206",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/imy_nazo/status/1793851434431353257",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no64",
@@ -12075,7 +12223,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -12565,7 +12712,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/4616104/7cebc1cf-793f-420a-b4f2-6d2e0d2f4116_base_resized.jpg",
     "payment": [
       "現金のみ"
     ],
@@ -12573,14 +12720,17 @@
       {
         "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://mysteryfromaki.booth.pm/items/4616104",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no67",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -12607,7 +12757,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7621396/1996cbc7-b864-4146-aa96-f20f10ac68c9_base_resized.jpg",
     "payment": [
       "現金のみ"
     ],
@@ -12615,14 +12765,17 @@
       {
         "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://mysteryfromaki.booth.pm/items/7621396",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no67",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -12646,7 +12799,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7621407/c68da50d-bdbe-4cef-9f9a-60c275a3178c_base_resized.jpg",
     "payment": [
       "現金のみ"
     ],
@@ -12654,6 +12807,10 @@
       {
         "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://mysteryfromaki.booth.pm/items/7621407",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no67",
@@ -12662,8 +12819,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "imageUrl"
+      "isNew"
     ]
   },
   {
@@ -13268,7 +13424,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113239314041827328/img/A9_DOU527MqGr5j8.jpg",
     "payment": null,
     "sources": [
       {
@@ -13282,7 +13438,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -13307,7 +13462,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113571355266621440/img/hJ7uCvgLeBBWvc7K.jpg",
     "payment": null,
     "sources": [
       {
@@ -13321,7 +13476,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -13346,7 +13500,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113942495625420800/img/gReM99SI0CXxlsX3.jpg",
     "payment": null,
     "sources": [
       {
@@ -13360,7 +13514,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
