@@ -226,6 +226,39 @@
             }
           ],
           "id": "no59-2"
+        },
+        {
+          "id": "no59-3",
+          "name": "Bitter Chocolate",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ある男の救えない話を聞きに行くための謎解き作品",
+          "description": "怖がることはない。あくまでも笑い話さ。これはあなたがある男の救えない話を聞きに行くための謎解き作品です。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 難易度★3/5"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVnA_FPbUAAeUgm?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2117179908984295901",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
       "candidates": [

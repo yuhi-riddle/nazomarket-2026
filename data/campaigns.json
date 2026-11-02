@@ -725,5 +725,47 @@
         "retrievedAt": "2026-11-02"
       }
     ]
+  },
+  {
+    "id": "no42-c1",
+    "boothId": "no42",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "ミッションクリアでステッカー最大3枚",
+    "detail": "ENIG-ROIDのXをフォロー、Instagramをフォロー、ブースのショップカードの謎を解く、の各ミッションでオリジナルステッカーを無料でもらえる。全6種類",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/ENIG_ROID/status/2117225224601268235",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no71-c1",
+    "boothId": "no71",
+    "productIds": [
+      "no71-1"
+    ],
+    "kind": "bonus",
+    "title": "限定セットで選べる缶バッジ",
+    "detail": "ナゾマ限定セット（3,500円）を買うと、先着で選べるザコモン缶バッジをプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "先着",
+    "sources": [
+      {
+        "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
   }
 ]

@@ -4362,7 +4362,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式のp15〜p17はHP・BASEショップ(21点掲載)・ゼペッツのサイトのいずれにも載っておらず、公式の記載のみで補った。ほかの出品情報も見つからず / X(@flapzero)確認済み。ブースBa4。BEAUTIFUL(p15)・めくるめく謎(p16)は11/7〜8に先行販売と告知。10/7の投稿に「初のグッズ販売も」とあるが商品名は不明。p17は投稿に出ていない / 再収集(10/30 Web): 新しい告知なし。BASEショップ・ゼペッツのサイトに p15〜p17 や新グッズの掲載なし / 再収集(10/30 X): 10/26 の投稿で p17(山陽電車 なぞときさんぽ旅 2023 リモート版)も11/7・8 のナゾトキマーケットで先行販売と確認(limited を更新)。10/26 に「ナゾトキマーケットでの販売情報は順次お知らせ」との返信あり、グッズの商品名・価格は未告知 再収集(10/31 X): 10/30・10/31 の投稿で新作『ことババ』『この謎が解けないのはボクのせい？ -ホラーハウス脱出編-』のナゾマ先行販売を確認して products に追加(どちらも価格は告知なし)。",
+      "notes": "公式のp15〜p17はHP・BASEショップ(21点掲載)・ゼペッツのサイトのいずれにも載っておらず、公式の記載のみで補った。ほかの出品情報も見つからず / X(@flapzero)確認済み。ブースBa4。BEAUTIFUL(p15)・めくるめく謎(p16)は11/7〜8に先行販売と告知。10/7の投稿に「初のグッズ販売も」とあるが商品名は不明。p17は投稿に出ていない / 再収集(10/30 Web): 新しい告知なし。BASEショップ・ゼペッツのサイトに p15〜p17 や新グッズの掲載なし / 再収集(10/30 X): 10/26 の投稿で p17(山陽電車 なぞときさんぽ旅 2023 リモート版)も11/7・8 のナゾトキマーケットで先行販売と確認(limited を更新)。10/26 に「ナゾトキマーケットでの販売情報は順次お知らせ」との返信あり、グッズの商品名・価格は未告知 再収集(10/31 X): 10/30・10/31 の投稿で新作『ことババ』『この謎が解けないのはボクのせい？ -ホラーハウス脱出編-』のナゾマ先行販売を確認して products に追加(どちらも価格は告知なし)。 再収集(11/2 X): 全商品ラインナップの投稿で価格を埋め、既刊とグッズを追加。商品画像は BASE ショップと新作告知から。グッズとセットは単体の画像なし。",
       "officialPatches": [
         {
           "id": "p15",
@@ -4435,15 +4435,15 @@
         {
           "id": "no13-1",
           "name": "この謎が解けないのはボクのせい？ -ホラーハウス脱出編-",
-          "price": null,
-          "priceNote": "価格は告知なし",
+          "price": 3000,
+          "priceNote": null,
           "category": "kit",
           "oneLiner": "2人で遊べる謎解きゲーム第2弾(ホラーハウス脱出編)",
           "description": "2人で遊べる謎解きゲーム第2弾が登場！謎の数は3倍以上！協力して謎を解こう！(11/7〜8のナゾトキマーケットで先行販売)",
           "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 難易度★2/5"
           },
           "playMinutes": null,
           "players": "2人",
@@ -4459,14 +4459,18 @@
             {
               "url": "https://x.com/flapzero/status/2116470250971492681",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
         {
           "id": "no13-2",
           "name": "ことババ",
-          "price": null,
-          "priceNote": "価格は告知なし",
+          "price": 3000,
+          "priceNote": null,
           "category": "other",
           "oneLiner": "共通穴埋めクイズ×ババ抜きのボードゲーム",
           "description": "共通穴埋めクイズ×ババ抜きのボドゲ「ことババ」！閃けば、手札が多くても一発逆転！？(Ba4ブースで先行販売)",
@@ -4476,7 +4480,7 @@
             "basis": null
           },
           "playMinutes": null,
-          "players": null,
+          "players": "2〜8人",
           "isNew": true,
           "limited": "先行販売",
           "days": [
@@ -4489,21 +4493,25 @@
             {
               "url": "https://x.com/flapzero/status/2116107853735829540",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
         {
           "id": "no13-20",
           "name": "A-B-C",
-          "price": null,
+          "price": 2800,
           "priceNote": null,
           "category": "kit",
           "oneLiner": "3種類の謎解きキットが1つになった大ボリューム作",
           "description": "テーマの異なる3つのキット「Arrow」「BLACK BOX」「CIRCLE」を収録。3つをクリアした先にもう1つのゲームがある。ナゾトキマーケットで先行販売。",
           "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度★4/5"
           },
           "playMinutes": null,
           "players": null,
@@ -4518,6 +4526,918 @@
           "sources": [
             {
               "url": "https://x.com/flapzero/2117154742879052049",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-3",
+          "name": "剥がしてはナラナイシール謎",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "シールを一切剥がさず証拠から真実に辿り着く謎",
+          "description": "「ナラナイ」シリーズ第2弾。シール謎なのに、シールを剥がすことも禁止。警察官のあなたは証拠から真実に辿り着けるか。ナゾトキマーケットで先行販売。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度★4/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "先行販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWGWXVbaAAA4Oj7?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/flapzero/status/2117172360822628803",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-4",
+          "name": "阪急電車 ナゾときっぷ 阪急編 2022 リモートVer.",
+          "price": 1600,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "2022年のナゾときっぷ阪急編をおうちで遊ぶ復刻版",
+          "description": "大好評の2022年のナゾときっぷ阪急編をおうちで楽しめる。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 難易度★2/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/97870f6f974c00a56103f43e5dd9e2ca.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126374632",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-5",
+          "name": "ナゾバーガーズ 通常Ver.",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+          "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": "最大4人",
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7c56c49a93ea5474a38a1d8a346117bc.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/138795426",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-6",
+          "name": "ナゾバーガーズ お汚しVer.",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+          "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": "最大4人",
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/6dc4bd41e62613bea4691f21be8194b0.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/138795782",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-7",
+          "name": "ナゾリングス 通常Ver.",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+          "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": "最大4人",
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7464a84854c7520576900a41ec1b731d.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/138795846",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-8",
+          "name": "ナゾリングス お汚しVer.",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+          "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": "最大4人",
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/247a5affb8abb4d5f2ae502e25ed2b19.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/138795986",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-9",
+          "name": "13Joker",
+          "price": 1400,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "トランプ謎に登場した難易度★5のポケットサイズ謎",
+          "description": "トランプ謎に★5が登場。思う存分悩めるポケットサイズ謎。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 難易度★5/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/e020819632f3fc7d050041ad7fc0d50c.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/143130911",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-10",
+          "name": "オットセイは001号室",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "手渡された大量の鍵でイキモノハウスから脱出する謎",
+          "description": "手渡された大量の鍵。イタズラ好きなイキモノハウスから脱出しよう。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度★4/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/a057862731e3814f20b38cdb90e518aa.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/125885639",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-11",
+          "name": "開けてはナラナイ封筒謎",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "目の前の4つの封筒を決して開けずに解く謎",
+          "description": "目の前に4つの封筒。しかしそれは決して開けてはナラナイ封筒謎。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 難易度★3/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7f75854fcb673a14f4133ea7d14e3038.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126030653",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-12",
+          "name": "群れをなすスペード",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+          "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/f543329f9aef1df4cf98d751ff3c41ce.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126362569",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-13",
+          "name": "沈みゆくハート",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+          "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/258ab14f5ee5f2e979e8d434990b8b06.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126363399",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-14",
+          "name": "綴り綴るクラブ",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+          "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7daf7d7b99bf1300e880997b2adb30a9.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126365864",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-15",
+          "name": "封じられたダイヤ",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+          "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/fa2aea0b3b113443e3d4dde02de4b134.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126460686",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-16",
+          "name": "トランプ謎 4種セット",
+          "price": 4000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "スペード・ハート・クラブ・ダイヤのトランプ謎4種",
+          "description": "群れをなすスペード／沈みゆくハート／綴り綴るクラブ／封じられたダイヤのセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7ec679e3c7ea22b62f8125763d004f9f.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126462405",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-17",
+          "name": "この謎が解けないのはボクのせい？",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "2人で遊べる謎解きゲーム第1弾",
+          "description": "2人で遊べる謎解きゲーム第1弾。ケンカせずに解けるかな？",
+          "difficulty": {
+            "level": 1,
+            "source": "official",
+            "basis": "団体表記 難易度★1/5"
+          },
+          "playMinutes": null,
+          "players": "2人",
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/717221a4a31be21ae2165cbc2a7e4a24.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126034628",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-18",
+          "name": "異世界地図 〜ある魔女のいた島〜",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "異世界にいるとされる最後の魔女を探して島を訪れる謎",
+          "description": "異世界にいるとされる最後の魔女を探しに、とある島を訪れることになり……。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 難易度★3/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/79d2c97707a15507607da480873d7024.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/125983326",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-19",
+          "name": "黒鉄の音は汽笛に沈む",
+          "price": 2600,
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "蒸気機関車の記念運行で事件が起きるマーダーミステリー",
+          "description": "マーダーミステリー。時は産業革命初期。事件は蒸気機関車の記念運行で発生した。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 難易度★3/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/c7a367aede36d6d1f359f9b4064f3cca.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://flapzero.official.ec/items/126361763",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-21",
+          "name": "今治フェイスタオル",
+          "price": 2300,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "新キャラクターのオリジナル今治フェイスタオル",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-22",
+          "name": "缶バッジ",
+          "price": 400,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "新キャラクターのオリジナル缶バッジ",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-23",
+          "name": "関西弁缶バッジ 2種",
+          "price": 300,
+          "priceNote": "各種300円",
+          "category": "goods",
+          "oneLiner": "「謎解き行こや」「ええやん」の缶バッジ",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-24",
+          "name": "アクリルキーホルダー",
+          "price": 800,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "新キャラクターのアクリルキーホルダー",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-25",
+          "name": "ステッカー 10種",
+          "price": 600,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "新キャラクターのマルチシール10種",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-26",
+          "name": "アクリルお守り",
+          "price": 800,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "新キャラクターのアクリルお守り",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-27",
+          "name": "500ml水筒",
+          "price": 1200,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "周遊にぴったりのカラビナ付き軽量水筒",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-28",
+          "name": "ステッカー 2種",
+          "price": 200,
+          "priceNote": "各種200円",
+          "category": "goods",
+          "oneLiner": "新キャラクターのステッカー",
+          "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-29",
+          "name": "おまけ謎付きクリアファイル",
+          "price": 400,
+          "priceNote": "1枚のみ400円、5枚セット2,000円",
+          "category": "goods",
+          "oneLiner": "謎も楽しめるオリジナルA4クリアファイル",
+          "description": "謎も楽しめるオリジナルA4クリアファイル。5枚セットならさらに遊べる大謎つき。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 難易度★2/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-30",
+          "name": "オリジナルトートバッグ付き 新作謎解きセット",
+          "price": 12000,
+          "priceNote": "ナゾトキマーケット限定価格（通常13,500円）",
+          "category": "other",
+          "oneLiner": "新作謎解き5点とオリジナルトートバッグのセット",
+          "description": "内容物: めくるめく謎／「A-B-C」／BEAUTIFUL／剥がしてはナラナイシール謎／この謎が解けないのはボクのせい？ -ホラーハウス脱出編-、オリジナルトートバッグ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no13-31",
+          "name": "100円ガチャ謎",
+          "price": 100,
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "1カプセルに3問入り、ALL新作のガチャ謎",
+          "description": "ALL新作の100円ガチャ謎。1カプセルに3問入り。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/flapzero/status/2117210124179980563",
               "retrievedAt": "2026-11-02"
             }
           ]

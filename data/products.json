@@ -29,7 +29,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p18",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://realdgame.jp/s/ouchi-kimiasu/",
@@ -38,6 +38,44 @@
     ],
     "hashtags": [],
     "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "p29",
+    "boothId": "no01",
+    "name": "リアル脱出ゲーム『爆弾魔が描いた絵本』",
+    "price": 3960,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "「都内にたくさんの爆弾を仕掛けました。",
+    "description": "「都内にたくさんの爆弾を仕掛けました。\n爆弾のありかの手がかりは、私の最新作の中にあります」\n\n突然の爆破予告と共に出頭した、人気絵本作家。\nその言葉通りに最初の爆発が発生し、世間に衝撃が走る。\n\n「どの爆弾にも、人質を縛り付けています。\n絵本に隠された謎を解き、人質を救うことができるでしょうか？」\n\n絵本作家の要求によって開始された、前代未聞の公開捜査。\n爆弾はどこにあるのか？　誰が人質になっているのか？\n絵本を使った奇妙な劇場型犯罪の目的は、一体何なのか？\n\n渦中の“爆弾魔が描いた絵本”を手に入れたあなたの捜査が、今始まる。\n\n特設サイト：https://realdgame.jp/s/bombersbook/",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no01/product/p29_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p29",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
       "payment"
     ]
   },
@@ -3203,7 +3241,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p06",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
@@ -3271,7 +3309,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p07",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
@@ -3315,7 +3353,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p08",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://takaraport.jp/shop/g/gsherlock002/",
@@ -3626,7 +3664,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p51",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.xeoxy.com/news/20261025",
@@ -3689,7 +3727,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p52",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.xeoxy.com/news/20261025",
@@ -3753,7 +3791,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p53",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.xeoxy.com/news/20261025",
@@ -4259,7 +4297,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p15",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/flapzero/status/2113933530220875952",
@@ -4302,7 +4340,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p16",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/flapzero/status/2114295911899636076",
@@ -4345,7 +4383,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p17",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/flapzero/status/2114658301036110014",
@@ -4361,15 +4399,15 @@
   {
     "id": "no13-1",
     "name": "この謎が解けないのはボクのせい？ -ホラーハウス脱出編-",
-    "price": null,
-    "priceNote": "価格は告知なし",
+    "price": 3000,
+    "priceNote": null,
     "category": "kit",
     "oneLiner": "2人で遊べる謎解きゲーム第2弾(ホラーハウス脱出編)",
     "description": "2人で遊べる謎解きゲーム第2弾が登場！謎の数は3倍以上！協力して謎を解こう！(11/7〜8のナゾトキマーケットで先行販売)",
     "difficulty": {
-      "level": null,
-      "source": "unknown",
-      "basis": null
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 難易度★2/5"
     },
     "playMinutes": null,
     "players": "2人",
@@ -4385,13 +4423,15 @@
       {
         "url": "https://x.com/flapzero/status/2116470250971492681",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no13",
     "hashtags": [],
     "unconfirmed": [
-      "price",
-      "difficulty",
       "playMinutes",
       "payment"
     ]
@@ -4399,8 +4439,8 @@
   {
     "id": "no13-2",
     "name": "ことババ",
-    "price": null,
-    "priceNote": "価格は告知なし",
+    "price": 3000,
+    "priceNote": null,
     "category": "other",
     "oneLiner": "共通穴埋めクイズ×ババ抜きのボードゲーム",
     "description": "共通穴埋めクイズ×ババ抜きのボドゲ「ことババ」！閃けば、手札が多くても一発逆転！？(Ba4ブースで先行販売)",
@@ -4410,7 +4450,7 @@
       "basis": null
     },
     "playMinutes": null,
-    "players": null,
+    "players": "2〜8人",
     "isNew": true,
     "limited": "先行販売",
     "days": [
@@ -4423,13 +4463,716 @@
       {
         "url": "https://x.com/flapzero/status/2116107853735829540",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no13",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
+      "playMinutes",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-3",
+    "name": "剥がしてはナラナイシール謎",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "シールを一切剥がさず証拠から真実に辿り着く謎",
+    "description": "「ナラナイ」シリーズ第2弾。シール謎なのに、シールを剥がすことも禁止。警察官のあなたは証拠から真実に辿り着けるか。ナゾトキマーケットで先行販売。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 難易度★4/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWGWXVbaAAA4Oj7?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/flapzero/status/2117172360822628803",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-4",
+    "name": "阪急電車 ナゾときっぷ 阪急編 2022 リモートVer.",
+    "price": 1600,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "2022年のナゾときっぷ阪急編をおうちで遊ぶ復刻版",
+    "description": "大好評の2022年のナゾときっぷ阪急編をおうちで楽しめる。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 難易度★2/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/97870f6f974c00a56103f43e5dd9e2ca.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126374632",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-5",
+    "name": "ナゾバーガーズ 通常Ver.",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+    "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": "最大4人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7c56c49a93ea5474a38a1d8a346117bc.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/138795426",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-6",
+    "name": "ナゾバーガーズ お汚しVer.",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+    "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": "最大4人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/6dc4bd41e62613bea4691f21be8194b0.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/138795782",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-7",
+    "name": "ナゾリングス 通常Ver.",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+    "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": "最大4人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7464a84854c7520576900a41ec1b731d.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/138795846",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-8",
+    "name": "ナゾリングス お汚しVer.",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎4枚入りで最大4人が同時に解けるクリアファイル付き謎",
+    "description": "謎4枚入りで、最大4人まで同時に謎解きできる。A4クリアファイル付き謎。お汚しVer.は高難易度。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": "最大4人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/247a5affb8abb4d5f2ae502e25ed2b19.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/138795986",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-9",
+    "name": "13Joker",
+    "price": 1400,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "トランプ謎に登場した難易度★5のポケットサイズ謎",
+    "description": "トランプ謎に★5が登場。思う存分悩めるポケットサイズ謎。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 難易度★5/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/e020819632f3fc7d050041ad7fc0d50c.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/143130911",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-10",
+    "name": "オットセイは001号室",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "手渡された大量の鍵でイキモノハウスから脱出する謎",
+    "description": "手渡された大量の鍵。イタズラ好きなイキモノハウスから脱出しよう。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 難易度★4/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/a057862731e3814f20b38cdb90e518aa.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/125885639",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-11",
+    "name": "開けてはナラナイ封筒謎",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "目の前の4つの封筒を決して開けずに解く謎",
+    "description": "目の前に4つの封筒。しかしそれは決して開けてはナラナイ封筒謎。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 難易度★3/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7f75854fcb673a14f4133ea7d14e3038.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126030653",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-12",
+    "name": "群れをなすスペード",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+    "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/f543329f9aef1df4cf98d751ff3c41ce.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126362569",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-13",
+    "name": "沈みゆくハート",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+    "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/258ab14f5ee5f2e979e8d434990b8b06.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126363399",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-14",
+    "name": "綴り綴るクラブ",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+    "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7daf7d7b99bf1300e880997b2adb30a9.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126365864",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-15",
+    "name": "封じられたダイヤ",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "マークごとに趣向も難易度も大きく異なるトランプ謎",
+    "description": "マークごとに趣向も難易度も大きく異なる謎が展開するトランプ謎。スペードは王道、ハートは高難易度、クラブは変わり種。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/fa2aea0b3b113443e3d4dde02de4b134.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126460686",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-16",
+    "name": "トランプ謎 4種セット",
+    "price": 4000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "スペード・ハート・クラブ・ダイヤのトランプ謎4種",
+    "description": "群れをなすスペード／沈みゆくハート／綴り綴るクラブ／封じられたダイヤのセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/7ec679e3c7ea22b62f8125763d004f9f.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126462405",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-17",
+    "name": "この謎が解けないのはボクのせい？",
+    "price": 1800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "2人で遊べる謎解きゲーム第1弾",
+    "description": "2人で遊べる謎解きゲーム第1弾。ケンカせずに解けるかな？",
+    "difficulty": {
+      "level": 1,
+      "source": "official",
+      "basis": "団体表記 難易度★1/5"
+    },
+    "playMinutes": null,
+    "players": "2人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/717221a4a31be21ae2165cbc2a7e4a24.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126034628",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-18",
+    "name": "異世界地図 〜ある魔女のいた島〜",
+    "price": 1800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "異世界にいるとされる最後の魔女を探して島を訪れる謎",
+    "description": "異世界にいるとされる最後の魔女を探しに、とある島を訪れることになり……。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 難易度★3/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/79d2c97707a15507607da480873d7024.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/125983326",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-19",
+    "name": "黒鉄の音は汽笛に沈む",
+    "price": 2600,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "蒸気機関車の記念運行で事件が起きるマーダーミステリー",
+    "description": "マーダーミステリー。時は産業革命初期。事件は蒸気機関車の記念運行で発生した。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 難易度★3/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/c7a367aede36d6d1f359f9b4064f3cca.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://flapzero.official.ec/items/126361763",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
       "playMinutes",
       "players",
       "payment"
@@ -4438,15 +5181,15 @@
   {
     "id": "no13-20",
     "name": "A-B-C",
-    "price": null,
+    "price": 2800,
     "priceNote": null,
     "category": "kit",
     "oneLiner": "3種類の謎解きキットが1つになった大ボリューム作",
     "description": "テーマの異なる3つのキット「Arrow」「BLACK BOX」「CIRCLE」を収録。3つをクリアした先にもう1つのゲームがある。ナゾトキマーケットで先行販売。",
     "difficulty": {
-      "level": null,
-      "source": "unknown",
-      "basis": null
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 難易度★4/5"
     },
     "playMinutes": null,
     "players": null,
@@ -4462,15 +5205,445 @@
       {
         "url": "https://x.com/flapzero/2117154742879052049",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "boothId": "no13",
     "hashtags": [],
     "unconfirmed": [
-      "price",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-21",
+    "name": "今治フェイスタオル",
+    "price": 2300,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "新キャラクターのオリジナル今治フェイスタオル",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
       "difficulty",
       "playMinutes",
       "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-22",
+    "name": "缶バッジ",
+    "price": 400,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "新キャラクターのオリジナル缶バッジ",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-23",
+    "name": "関西弁缶バッジ 2種",
+    "price": 300,
+    "priceNote": "各種300円",
+    "category": "goods",
+    "oneLiner": "「謎解き行こや」「ええやん」の缶バッジ",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-24",
+    "name": "アクリルキーホルダー",
+    "price": 800,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "新キャラクターのアクリルキーホルダー",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-25",
+    "name": "ステッカー 10種",
+    "price": 600,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "新キャラクターのマルチシール10種",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-26",
+    "name": "アクリルお守り",
+    "price": 800,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "新キャラクターのアクリルお守り",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-27",
+    "name": "500ml水筒",
+    "price": 1200,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "周遊にぴったりのカラビナ付き軽量水筒",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-28",
+    "name": "ステッカー 2種",
+    "price": 200,
+    "priceNote": "各種200円",
+    "category": "goods",
+    "oneLiner": "新キャラクターのステッカー",
+    "description": "新キャラクター誕生記念のオリジナルグッズ。数量限定。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-29",
+    "name": "おまけ謎付きクリアファイル",
+    "price": 400,
+    "priceNote": "1枚のみ400円、5枚セット2,000円",
+    "category": "goods",
+    "oneLiner": "謎も楽しめるオリジナルA4クリアファイル",
+    "description": "謎も楽しめるオリジナルA4クリアファイル。5枚セットならさらに遊べる大謎つき。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 難易度★2/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-30",
+    "name": "オリジナルトートバッグ付き 新作謎解きセット",
+    "price": 12000,
+    "priceNote": "ナゾトキマーケット限定価格（通常13,500円）",
+    "category": "other",
+    "oneLiner": "新作謎解き5点とオリジナルトートバッグのセット",
+    "description": "内容物: めくるめく謎／「A-B-C」／BEAUTIFUL／剥がしてはナラナイシール謎／この謎が解けないのはボクのせい？ -ホラーハウス脱出編-、オリジナルトートバッグ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no13-31",
+    "name": "100円ガチャ謎",
+    "price": 100,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "1カプセルに3問入り、ALL新作のガチャ謎",
+    "description": "ALL新作の100円ガチャ謎。1カプセルに3問入り。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/flapzero/status/2117210124179980563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no13",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -4556,7 +5729,7 @@
     "id": "no16-1",
     "name": "禁忌を犯す体験ゲーム「TETTUI」",
     "price": 2500,
-    "priceNote": "2,500円は先行予約チケット(現地引換、別途発券手数料2%)の価格。オンライン先行(100個)も2,500円(送料込み・発送11/9以降)。会場での通常価格は告知なし。10/30: nazoxnazo.com(ブランドHP)のTETTUI掲載ページは費用3,100円・プレイ時間60〜90分(ナゾマ用の価格か通常価格かは書かれていない) 10/29(X): 「ナゾマ先行予約 限定100個・通常価格より300円引き・10/30(金)19:00〜予定個数なくなり次第終了」と告知(通常価格の金額は書かれていない)。",
+    "priceNote": "ナゾマ限定価格（STORES価格3,100円）。2,500円は先行予約チケット(現地引換、別途発券手数料2%)の価格。オンライン先行(100個)も2,500円(送料込み・発送11/9以降)。会場での通常価格は告知なし。10/30: nazoxnazo.com(ブランドHP)のTETTUI掲載ページは費用3,100円・プレイ時間60〜90分(ナゾマ用の価格か通常価格かは書かれていない) 10/29(X): 「ナゾマ先行予約 限定100個・通常価格より300円引き・10/30(金)19:00〜予定個数なくなり次第終了」と告知(通常価格の金額は書かれていない)。",
     "category": "kit",
     "oneLiner": "SNSの嫌な相手を調べて「鉄槌」を下す没入型の持ち帰り謎",
     "description": "ムカつく奴を裁いてみたくないですか？ ムカつく奴を思う存分制裁できる正義の鉄槌・没入型体験ゲーム。実際のSNSアカウントを調査／実際に自分の考えた罵詈雑言を叫べる／自分の正義のままムカつくやつに鉄槌を下せる。内容物: スタートガイド・封筒3種・二つ折りの紙。用意するもの: ネット接続できる端末・筆記用具・Xのアカウント・LINEのアカウント。(注意書き「性格のよいひとはプレイをお控えください」)",
@@ -4606,6 +5779,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2115715265476321691",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [
@@ -4625,6 +5802,789 @@
     ],
     "boothId": "no16",
     "unconfirmed": [
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-2",
+    "name": "最初からクライマックス謎解き",
+    "price": 2900,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+    "category": "kit",
+    "oneLiner": "残り時間あと10分の絶望から始まるシリーズ第1弾",
+    "description": "残り時間あと10分の絶望から始まるシリーズ第1弾。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-3",
+    "name": "最初からクライマックス謎解き-Dead-",
+    "price": 2900,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+    "category": "kit",
+    "oneLiner": "死の直前をテーマにしたシリーズ第2弾",
+    "description": "死の直前をテーマにしたシリーズ第2弾。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HNEmLLkaYAANOQ5?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2078321361139720403",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-4",
+    "name": "最初からクライマックス謎解き-comic-",
+    "price": 2900,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+    "category": "kit",
+    "oneLiner": "様々な漫画がテーマのシリーズ第3弾",
+    "description": "様々な漫画がテーマのシリーズ第3弾。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HTci351aUAAkmV1?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2105960995755565120",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-5",
+    "name": "sQuare mAze",
+    "price": 2500,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
+    "category": "kit",
+    "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
+    "description": "カード型の謎解きゲーム sQuare mAze シリーズ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2085561583129018550",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-6",
+    "name": "sQuare mAze -another-",
+    "price": 2500,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
+    "category": "kit",
+    "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
+    "description": "カード型の謎解きゲーム sQuare mAze シリーズ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HPAYGMMbwAILged?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2085561583129018550",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-7",
+    "name": "sQuare mAze -cosmos-",
+    "price": 2500,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
+    "category": "kit",
+    "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
+    "description": "カード型の謎解きゲーム sQuare mAze シリーズ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HPAYGMEaQAI53cA?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2085561583129018550",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-8",
+    "name": "箱庭の教室の中で",
+    "price": 2800,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格3,100円）",
+    "category": "kit",
+    "oneLiner": "禁忌体験シリーズの持ち帰り謎解きゲーム",
+    "description": "禁忌体験シリーズの持ち帰り謎解きゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HMHC9OsbQAA54hk?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2075512853969399856",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-9",
+    "name": "ロストメモリー",
+    "price": 2800,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格3,100円）",
+    "category": "kit",
+    "oneLiner": "写真を切り刻み、思い出を犠牲に進む禁忌体験",
+    "description": "写真を切り刻み、思い出を犠牲に進む禁忌体験。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HMwIIl4bcAAJBUK?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2076969967375859731",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-10",
+    "name": "CATEGORY",
+    "price": 1800,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,100円）",
+    "category": "kit",
+    "oneLiner": "たった4枚のカードが様々な謎に変容する",
+    "description": "たった4枚のカードが様々な謎に変容する。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HPAXQWoaUAAYptE?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2085199184094011572",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-11",
+    "name": "夢を解く",
+    "price": 2900,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+    "category": "kit",
+    "oneLiner": "人の無意識を解く深層心理ミステリー",
+    "description": "人の無意識を解く深層心理ミステリー。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HMgwuwFasAAr6hD?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2076154587006779563",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-12",
+    "name": "ヒラメイクアンサー",
+    "price": 2800,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格3,100円）",
+    "category": "kit",
+    "oneLiner": "ひらめきを競う瞬間直感の謎解きゲーム",
+    "description": "ひらめきを競う瞬間直感の謎解きゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HMHbeSpa0AA5K9E?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2074418146157670595",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-13",
+    "name": "鎌倉 まるっと謎さんぽ",
+    "price": 2200,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,500円）",
+    "category": "kit",
+    "oneLiner": "なぞたび。シリーズの周遊謎 鎌倉編",
+    "description": "ノープランで、甘味も古都も潮風も。鎌倉まるっと満喫旅。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://nazoxnazo.com/wp-content/uploads/2025/05/kamakura_nazosampo_MV-1086x1536.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://nazoxnazo.com",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-14",
+    "name": "鎌倉 まるっと謎さんぽ -裏鎌倉編-",
+    "price": 2300,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+    "category": "kit",
+    "oneLiner": "なぞたび。シリーズの周遊謎 裏鎌倉編",
+    "description": "なぞたび。シリーズの周遊謎 裏鎌倉編。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HRCknjlasAA0f7u?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2095346050957492455",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-15",
+    "name": "浅草 まるっと謎さんぽ",
+    "price": 2300,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+    "category": "kit",
+    "oneLiner": "なぞたび。シリーズの周遊謎 浅草編",
+    "description": "なぞたび。シリーズの周遊謎 浅草編。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HRCknjcbQAAoCPt?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2095346050957492455",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-16",
+    "name": "川越 まるっと謎さんぽ",
+    "price": 2300,
+    "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+    "category": "kit",
+    "oneLiner": "なぞたび。シリーズの周遊謎 川越編",
+    "description": "なぞたび。シリーズの周遊謎 川越編。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HSJ8tVhaAAAKdc9?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2099694695068938531",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-17",
+    "name": "クライマックス謎解きセット",
+    "price": 8500,
+    "priceNote": "ナゾマ限定セット（STORES価格合計9,600円）",
+    "category": "other",
+    "oneLiner": "最初からクライマックス謎解きシリーズ3作のセット",
+    "description": "最初からクライマックス謎解きシリーズ3作のセット。ナゾマ限定のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-18",
+    "name": "sQuare mAzeセット",
+    "price": 7000,
+    "priceNote": "ナゾマ限定セット（STORES価格合計8,400円）",
+    "category": "other",
+    "oneLiner": "sQuare mAze シリーズ3作のセット",
+    "description": "sQuare mAze シリーズ3作のセット。ナゾマ限定のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-19",
+    "name": "問題作3点セット",
+    "price": 8000,
+    "priceNote": "ナゾマ限定セット（STORES価格合計9,600円）",
+    "category": "other",
+    "oneLiner": "箱庭の教室の中で・TETTUI・ロストメモリーのセット",
+    "description": "箱庭の教室の中で・TETTUI・ロストメモリーのセット。ナゾマ限定のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no16-20",
+    "name": "「この店の商品全部ください」セット",
+    "price": 35000,
+    "priceNote": "ナゾマ限定セット（STORES価格合計44,800円）",
+    "category": "other",
+    "oneLiner": "ブースの商品すべてをまとめたセット",
+    "description": "ブースの商品すべてをまとめたセット。ナゾマ限定のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117225218506711378",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no16",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -4658,7 +6618,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p33",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://nazotoki-project.com/blog/%e6%83%85%e5%a0%b1%e8%a7%a3%e7%a6%81%ef%bc%8f%e5%b9%bb%e5%a2%83%e5%a0%82%e3%80%80%e5%ae%8c%e5%85%a8%e6%96%b0%e4%bd%9c/",
@@ -4714,7 +6674,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p34",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://nazotoki-project.com/blog/%e6%83%85%e5%a0%b1%e8%a7%a3%e7%a6%81%ef%bc%8f%e3%83%9f%e3%82%b9%e3%83%86%e3%83%aa%e3%83%bc%e3%83%ac%e3%82%bf%e3%83%bc%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba%e3%80%8c%e3%83%9e%e3%83%ac%e3%83%bc%e3%82%b7/",
@@ -4770,7 +6730,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p35",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://nazotoki-project.com/blog/%e3%83%8a%e3%82%be%e3%83%88%e3%82%ad%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%83%e3%83%882026%e5%85%88%e8%a1%8c%e8%b2%a9%e5%a3%b2%e3%80%80%e6%96%b0%e4%bd%9c%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98/",
@@ -6218,7 +8178,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p48",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -6264,7 +8224,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p49",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -6305,7 +8265,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p50",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -8493,7 +10453,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p20",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/nazocafe/status/2113100184477737421",
@@ -8535,7 +10495,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p21",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://nazoyacafe.jp/nazo/novel_2nd/",
@@ -8581,7 +10541,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p22",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [],
@@ -8846,7 +10806,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p23",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/MayAlcedoatthis/status/2112136160076341392",
@@ -8915,7 +10875,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p24",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/MayAlcedoatthis/status/2026259609305133517",
@@ -8970,7 +10930,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p25",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/MayAlcedoatthis/status/2026259609305133517",
@@ -9550,7 +11510,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p28",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/Nazo_Gram/status/2111064614268285403",
@@ -10493,7 +12453,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p19",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/K_dush2/status/1197688632842174464",
@@ -10763,7 +12723,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p43",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/ENIG_ROID/status/2113601337766387736",
@@ -10815,7 +12775,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p44",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "http://enig-roid.com/",
@@ -10864,7 +12824,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p45",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "http://enig-roid.com/",
@@ -11037,7 +12997,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p09",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://tri-mobius.com/schrodinger/",
@@ -11109,7 +13069,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p10",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://tri-mobius.com/doborrow/",
@@ -11181,7 +13141,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p11",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://tri-mobius.com/karuizawa/",
@@ -11692,7 +13652,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p46",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/calette_pj/status/2113873120004067794",
@@ -11826,7 +13786,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p26",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://terra-nova.co.jp/news/tongari/",
@@ -11880,7 +13840,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p27",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [],
@@ -11920,7 +13880,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p38",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -11964,7 +13924,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p39",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -12048,6 +14008,45 @@
       }
     ],
     "id": "no59-2",
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-3",
+    "name": "Bitter Chocolate",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ある男の救えない話を聞きに行くための謎解き作品",
+    "description": "怖がることはない。あくまでも笑い話さ。これはあなたがある男の救えない話を聞きに行くための謎解き作品です。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 難易度★3/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HVnA_FPbUAAeUgm?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2117179908984295901",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
@@ -12567,7 +14566,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p02",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://booth.pm/ja/items/3735029",
@@ -14247,7 +16246,10 @@
       "source": "unknown",
       "basis": null
     },
-    "playMinutes": null,
+    "playMinutes": {
+      "min": 30,
+      "max": 40
+    },
     "players": null,
     "isNew": true,
     "limited": null,
@@ -14256,23 +16258,28 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no71/product/p30_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p30",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/nazotokibancho/status/2114658302814568496",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -14289,7 +16296,10 @@
       "source": "estimated",
       "basis": "公式説明は「ボリュームたっぷり」でクエスト単位で区切って遊べるため標準の3と推定"
     },
-    "playMinutes": null,
+    "playMinutes": {
+      "min": 240,
+      "max": null
+    },
     "players": null,
     "isNew": false,
     "limited": null,
@@ -14298,22 +16308,27 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no71/product/p31_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p31",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -14339,19 +16354,66 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no71/product/p32_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p32",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "playMinutes",
+      "players"
+    ]
+  },
+  {
+    "id": "no71-1",
+    "name": "ナゾマ限定セット",
+    "price": 3500,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "酔いどれ勇者・ザコモン酒場・クリアファイルのセット",
+    "description": "「酔いどれ勇者からの生還」「ザコモン酒場」「ザコモンクリアファイル」のセット。先着で、選べるザコモン缶バッジをプレゼント。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no71",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
       "players",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -14394,7 +16456,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p03",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -14472,7 +16534,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p04",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -14534,7 +16596,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p05",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -14780,7 +16842,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p37",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/toykakeboze/status/2111744095416918086",
@@ -14842,7 +16904,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p40",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://nazo.mikan-box.net/toaru/",
@@ -14907,7 +16969,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p41",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://note.com/elejun/m/meabb6757606b",
@@ -15928,6 +17990,45 @@
     ]
   },
   {
+    "id": "no77-13",
+    "name": "イヤホン探偵 case01 天使のワンルーム",
+    "price": 500,
+    "priceNote": "会場限定価格（通常600円）",
+    "category": "online",
+    "oneLiner": "音を聞いて想像する、耳で導く推理体験",
+    "description": "音声で導く推理体験。音を聞いて、聞こえた情報から想像しよう。スマホとイヤホンを使う。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 20,
+      "max": 40
+    },
+    "players": "1人",
+    "isNew": false,
+    "limited": "会場限定価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWG5JQGbgAAqkYJ?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/mayudamakobo/status/2117222187392545025",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "payment"
+    ]
+  },
+  {
     "id": "p54",
     "boothId": "no78",
     "name": "オシリドル",
@@ -15950,15 +18051,24 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no78/product/p54_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "カード",
+      "QR",
+      "電子マネー"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p54",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/shareKOBE_/status/2111042321458589870",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/shareKOBE_/status/2117228205837078859",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [
@@ -15975,8 +18085,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -16002,15 +18111,24 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no78/product/p55_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "カード",
+      "QR",
+      "電子マネー"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p55",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/shareKOBE_/status/2113571143323938829",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/shareKOBE_/status/2117228205837078859",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [
@@ -16027,8 +18145,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -16054,19 +18171,27 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no78/product/p56_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "カード",
+      "QR",
+      "電子マネー"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p56",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/shareKOBE_/status/2117228205837078859",
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -16102,7 +18227,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p36",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://note.com/paisen_nazo/n/n59231bc59368",
@@ -16175,7 +18300,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p42",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://note.com/paisen_nazo/n/nf1fefb832104",
@@ -16229,7 +18354,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p57",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://x.com/amaka2don/status/2116131528673824851",
@@ -16702,7 +18827,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p47",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       }
     ],
     "hashtags": [],
@@ -16744,6 +18869,48 @@
       }
     ],
     "id": "no82-1",
+    "boothId": "no82",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no82-2",
+    "name": "尋ね人の交換日記",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "交換日記の暗号を解き、消えた幼馴染を探す新作",
+    "description": "交換日記の暗号を解き、消えた幼馴染を探そう。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWHjj8DaAAEQfcs?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/kirin_for_zou/status/2117223756095721581",
+        "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/kirin_for_zou/status/2117237841541603766",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
     "boothId": "no82",
     "hashtags": [],
     "unconfirmed": [
@@ -16823,7 +18990,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p12",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -16894,7 +19061,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p13",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -16959,7 +19126,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p14",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -17351,6 +19518,174 @@
     ]
   },
   {
+    "id": "no90-1",
+    "name": "謎付きミニチャーム〜フラコと魔法の大冒険〜",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "マスコットのミニチャームを使って進める持ち帰り謎",
+    "description": "Flambeur's Coinマスコットキャラクター「フラコ」のミニチャームを使って謎を解き進める持ち帰り謎キット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 20,
+      "max": 60
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no90",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no90-2",
+    "name": "Borderline",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "クリアファイル付きのシンプルな謎解き",
+    "description": "クリアファイル付きのシンプルな謎解き。想像力を働かせて楽しむ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": 60
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no90",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no90-3",
+    "name": "なもまみれ",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "結婚披露公演の引き出物謎を数量限定で一般販売",
+    "description": "結婚披露公演「公私婚同」にて引き出物謎として頒布された作品を数量限定で一般販売。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 40,
+      "max": 80
+    },
+    "players": null,
+    "isNew": false,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no90",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no90-4",
+    "name": "BREAKTHROUGH",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "2024年末のコミケ頒布作をリデザインした個人制作作品",
+    "description": "2024年末のコミケで頒布した個人制作作品をリデザイン。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": 60
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no90",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
     "name": "RI:Place",
     "price": 800,
     "priceNote": "ナゾマ限定価格（通常1,000円）",
@@ -17421,6 +19756,84 @@
       }
     ],
     "id": "no91-2",
+    "boothId": "no91",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no91-3",
+    "name": "DONUTs",
+    "price": 1200,
+    "priceNote": "ナゾマ限定価格（通常1,500円）",
+    "category": "kit",
+    "oneLiner": "CDケースに収められたドーナツを食べ切る謎",
+    "description": "CDケースに収められた数々のドーナツ。甘くてポップな謎に見えますが、実は壮大なテーマが込められています。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 難易度★4/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 90
+    },
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾマ限定価格",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWHkjhCacAAICvD?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RI_Works_nazo/status/2117225320034308104",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no91",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no91-4",
+    "name": "おうちでもポイすてっ！",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "人気シリーズがおうちで遊べる持ち帰り謎に。新作50問",
+    "description": "RI:Worksの人気シリーズ「ポイすてっ！」がおうちで遊べる持ち帰り謎に。完全新作50問。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 難易度★4/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 100
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWHvK_2a8AE_nnx?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RI_Works_nazo/status/2117236731049292107",
+        "retrievedAt": "2026-11-02"
+      }
+    ],
     "boothId": "no91",
     "hashtags": [],
     "unconfirmed": [
@@ -17560,7 +19973,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p01",
-        "retrievedAt": "2026-11-01"
+        "retrievedAt": "2026-11-02"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",

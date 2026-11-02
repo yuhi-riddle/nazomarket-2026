@@ -717,9 +717,150 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "ブース概要に「おうちで遊べる持ち帰り謎をご用意（初心者向けから慣れた人向けまで）」とあるが、商品名・価格は不明。HP・X の記載なし。検索（団体名・フランバーズコインの両表記）でも該当ページが見つからなかった。X を見れば取れそう。  再収集(10/30 Web): Web 検索でフランバーズコインの告知は見つからず。新しい告知なし。 再収集(10/30 X): 「フランバーズコイン」「フラコイ」で X を再検索。団体本人のアカウントは見つからず、告知なし 再収集(11/2 X): @Flambeurs_Coin が「お品書きの修正版を後程」と投稿。品目はまだ分からない。 2026-11-02 @Flambeurs_Coin が「お品書きの修正版を後程アップロード」と投稿。修正版を待って反映する。",
+      "notes": "ブース概要に「おうちで遊べる持ち帰り謎をご用意（初心者向けから慣れた人向けまで）」とあるが、商品名・価格は不明。HP・X の記載なし。検索（団体名・フランバーズコインの両表記）でも該当ページが見つからなかった。X を見れば取れそう。  再収集(10/30 Web): Web 検索でフランバーズコインの告知は見つからず。新しい告知なし。 再収集(10/30 X): 「フランバーズコイン」「フラコイ」で X を再検索。団体本人のアカウントは見つからず、告知なし 再収集(11/2 X): @Flambeurs_Coin が「お品書きの修正版を後程」と投稿。品目はまだ分からない。 2026-11-02 @Flambeurs_Coin が「お品書きの修正版を後程アップロード」と投稿。修正版を待って反映する。 再収集(11/2 X): お品書きの修正版で4作品を確認して追加。画像はお品書きのみで、単体の画像なし。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no90-1",
+          "name": "謎付きミニチャーム〜フラコと魔法の大冒険〜",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "マスコットのミニチャームを使って進める持ち帰り謎",
+          "description": "Flambeur's Coinマスコットキャラクター「フラコ」のミニチャームを使って謎を解き進める持ち帰り謎キット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": 60
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no90-2",
+          "name": "Borderline",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "クリアファイル付きのシンプルな謎解き",
+          "description": "クリアファイル付きのシンプルな謎解き。想像力を働かせて楽しむ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": 60
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no90-3",
+          "name": "なもまみれ",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "結婚披露公演の引き出物謎を数量限定で一般販売",
+          "description": "結婚披露公演「公私婚同」にて引き出物謎として頒布された作品を数量限定で一般販売。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 40,
+            "max": 80
+          },
+          "players": null,
+          "isNew": false,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no90-4",
+          "name": "BREAKTHROUGH",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "2024年末のコミケ頒布作をリデザインした個人制作作品",
+          "description": "2024年末のコミケで頒布した個人制作作品をリデザイン。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": 60
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "extraLinks": {
         "x": [
@@ -837,6 +978,72 @@
             }
           ],
           "id": "no91-2"
+        },
+        {
+          "id": "no91-3",
+          "name": "DONUTs",
+          "price": 1200,
+          "priceNote": "ナゾマ限定価格（通常1,500円）",
+          "category": "kit",
+          "oneLiner": "CDケースに収められたドーナツを食べ切る謎",
+          "description": "CDケースに収められた数々のドーナツ。甘くてポップな謎に見えますが、実は壮大なテーマが込められています。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度★4/5"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾマ限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWHkjhCacAAICvD?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2117225320034308104",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no91-4",
+          "name": "おうちでもポイすてっ！",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "人気シリーズがおうちで遊べる持ち帰り謎に。新作50問",
+          "description": "RI:Worksの人気シリーズ「ポイすてっ！」がおうちで遊べる持ち帰り謎に。完全新作50問。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 難易度★4/5"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 100
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWHvK_2a8AE_nnx?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2117236731049292107",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
       "candidates": []

@@ -49,7 +49,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式TSVに商品なし・HP欄も空。検索で見つけた公式HP(Googleサイト)の「スケジュール」に『持ち帰り謎出展 11/7、8 東京・水道橋』とあるが、品目・価格の記載なし。持ち帰り謎ページの『心技体』(4,000円)はShareKOBEのサイトデータで2025-11-08公開と分かり、昨年分なので候補止まり。BOOTHに店なし(検索0件)。新作の品目はXで確認できそう。 X(@nazotokibancho)を確認: 検索とタイムラインに今回のナゾトキマーケット向けの告知は見つからず(9〜10月は大阪最宴祭・広島公演の告知のみ)。品目は不明のまま。 再収集(10/30 Web): HP トップ・note を再確認したが、ナゾトキマーケットの品目・価格の新しい告知なし(HP トップは「持ち帰り謎/カフェ謎/LINE謎」のリンクのみ、note は過去のLINE謎とアーカイブス告知のみ)。商品は0件のまま。 再収集(10/30 公式): 公式に追加された商品と重なるため 候補「ザコモン酒場」→p31 に付け替えた。 再収集(10/30 X): 10/26 の新作告知で p30『酔いどれ勇者からの生還』が1,000円・Ca-18ブース・ナゾトキマーケット2026で新発売と確認(公式価格と一致)。p31・p32 と候補2件(心技体・品目未発表)に関する新しい告知なし。p31・p32 の難易度・所要時間・人数は公式説明文に記載なし。",
+      "notes": "公式TSVに商品なし・HP欄も空。検索で見つけた公式HP(Googleサイト)の「スケジュール」に『持ち帰り謎出展 11/7、8 東京・水道橋』とあるが、品目・価格の記載なし。持ち帰り謎ページの『心技体』(4,000円)はShareKOBEのサイトデータで2025-11-08公開と分かり、昨年分なので候補止まり。BOOTHに店なし(検索0件)。新作の品目はXで確認できそう。 X(@nazotokibancho)を確認: 検索とタイムラインに今回のナゾトキマーケット向けの告知は見つからず(9〜10月は大阪最宴祭・広島公演の告知のみ)。品目は不明のまま。 再収集(10/30 Web): HP トップ・note を再確認したが、ナゾトキマーケットの品目・価格の新しい告知なし(HP トップは「持ち帰り謎/カフェ謎/LINE謎」のリンクのみ、note は過去のLINE謎とアーカイブス告知のみ)。商品は0件のまま。 再収集(10/30 公式): 公式に追加された商品と重なるため 候補「ザコモン酒場」→p31 に付け替えた。 再収集(10/30 X): 10/26 の新作告知で p30『酔いどれ勇者からの生還』が1,000円・Ca-18ブース・ナゾトキマーケット2026で新発売と確認(公式価格と一致)。p31・p32 と候補2件(心技体・品目未発表)に関する新しい告知なし。p31・p32 の難易度・所要時間・人数は公式説明文に記載なし。 再収集(11/2 X): ザコモンクリアファイルの所要時間は団体表記「〜30分」で下限がないため、所要時間欄には入れない。",
       "officialPatches": [
         {
           "id": "p31",
@@ -57,6 +57,10 @@
             {
               "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "category": "kit",
@@ -66,10 +70,17 @@
             "source": "estimated",
             "basis": "公式説明は「ボリュームたっぷり」でクエスト単位で区切って遊べるため標準の3と推定"
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 240,
+            "max": null
+          },
           "players": null,
           "limited": null,
-          "isNew": false
+          "isNew": false,
+          "payment": [
+            "現金",
+            "PayPay"
+          ]
         },
         {
           "id": "p30",
@@ -80,7 +91,10 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 30,
+            "max": 40
+          },
           "players": null,
           "limited": null,
           "isNew": true,
@@ -88,7 +102,15 @@
             {
               "url": "https://x.com/nazotokibancho/status/2114658302814568496",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+              "retrievedAt": "2026-11-02"
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         },
         {
@@ -103,10 +125,54 @@
           "playMinutes": null,
           "players": null,
           "limited": null,
-          "isNew": false
+          "isNew": false,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no71-1",
+          "name": "ナゾマ限定セット",
+          "price": 3500,
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "酔いどれ勇者・ザコモン酒場・クリアファイルのセット",
+          "description": "「酔いどれ勇者からの生還」「ザコモン酒場」「ザコモンクリアファイル」のセット。先着で、選べるザコモン缶バッジをプレゼント。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazotokibancho/status/2117210121805971547",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "心技体",
@@ -1940,6 +2006,39 @@
               "retrievedAt": "2026-10-31"
             }
           ]
+        },
+        {
+          "id": "no77-13",
+          "name": "イヤホン探偵 case01 天使のワンルーム",
+          "price": 500,
+          "priceNote": "会場限定価格（通常600円）",
+          "category": "online",
+          "oneLiner": "音を聞いて想像する、耳で導く推理体験",
+          "description": "音声で導く推理体験。音を聞いて、聞こえた情報から想像しよう。スマホとイヤホンを使う。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": 40
+          },
+          "players": "1人",
+          "isNew": false,
+          "limited": "会場限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWG5JQGbgAAqkYJ?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/mayudamakobo/status/2117222187392545025",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
       "candidates": [
@@ -2025,7 +2124,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式サイト(2026-08公開)のグッズ一覧データは昨年(2025-11-08)の4商品のみで、価格の記載なし。今年の持ち帰り謎(公式概要の『クスっと笑える持ち帰り謎』)は題名・価格が見つからず。タンブルウィードのShareKOBEカテゴリは商品0件。今年の品目・価格はXで確認できそう。 X確認(@shareKOBE_): 新作持ち帰り謎を順次発表中(10/13予告、10/16『オシリドル』、10/23『refine』)。ブースはCb19。新作は10/25時点で2作(『ジャンルはかなり異なる新作』と予告があり、さらに増える可能性あり)。 再収集(10/30 Web): 公式サイトのグッズ一覧(昨年の4商品のみ、価格なし)・お知らせ(8/11公開の1件のみ)・タンブルウィードのカテゴリ(商品0件)を再確認。オシリドル1,000円・refine 2,000円の価格と、3作目の題名は Web には出ていない。 再収集(10/30 公式): 公式に追加された商品と重なるため no78-1→p54、no78-2→p55 に付け替えた。 再収集(10/30 X): 10/24 以降の投稿なし(最新は10/23の新作発表②『refine』2,000円・Cb19)。p54 は10/16の告知で『特別割引で1,000円』と確認済みで価格変更なし。p56『点心爛漫！みならいパンダのおっちょこちょい飯店』(2,000円)は X に告知なし。p55・p56 の難易度・所要時間・人数は公式説明文に記載なし。",
+      "notes": "公式サイト(2026-08公開)のグッズ一覧データは昨年(2025-11-08)の4商品のみで、価格の記載なし。今年の持ち帰り謎(公式概要の『クスっと笑える持ち帰り謎』)は題名・価格が見つからず。タンブルウィードのShareKOBEカテゴリは商品0件。今年の品目・価格はXで確認できそう。 X確認(@shareKOBE_): 新作持ち帰り謎を順次発表中(10/13予告、10/16『オシリドル』、10/23『refine』)。ブースはCb19。新作は10/25時点で2作(『ジャンルはかなり異なる新作』と予告があり、さらに増える可能性あり)。 再収集(10/30 Web): 公式サイトのグッズ一覧(昨年の4商品のみ、価格なし)・お知らせ(8/11公開の1件のみ)・タンブルウィードのカテゴリ(商品0件)を再確認。オシリドル1,000円・refine 2,000円の価格と、3作目の題名は Web には出ていない。 再収集(10/30 公式): 公式に追加された商品と重なるため no78-1→p54、no78-2→p55 に付け替えた。 再収集(10/30 X): 10/24 以降の投稿なし(最新は10/23の新作発表②『refine』2,000円・Cb19)。p54 は10/16の告知で『特別割引で1,000円』と確認済みで価格変更なし。p56『点心爛漫！みならいパンダのおっちょこちょい飯店』(2,000円)は X に告知なし。p55・p56 の難易度・所要時間・人数は公式説明文に記載なし。 再収集(11/2 X): 販売ラインナップ画像に、謎解きVtuberユニットVRINQの謎付きクリアファイルやShareKOBEの過去作品も一部販売とある。品目と価格は未告知。",
       "officialPatches": [
         {
           "id": "p54",
@@ -2058,10 +2157,20 @@
             {
               "url": "https://x.com/shareKOBE_/status/2111042321458589870",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/shareKOBE_/status/2117228205837078859",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "playMinutes": null,
-          "players": null
+          "players": null,
+          "payment": [
+            "現金",
+            "カード",
+            "QR",
+            "電子マネー"
+          ]
         },
         {
           "id": "p55",
@@ -2092,11 +2201,21 @@
             {
               "url": "https://x.com/shareKOBE_/status/2113571143323938829",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/shareKOBE_/status/2117228205837078859",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "playMinutes": null,
           "players": null,
-          "limited": null
+          "limited": null,
+          "payment": [
+            "現金",
+            "カード",
+            "QR",
+            "電子マネー"
+          ]
         },
         {
           "id": "p56",
@@ -2114,6 +2233,18 @@
           "days": [
             "sat",
             "sun"
+          ],
+          "payment": [
+            "現金",
+            "カード",
+            "QR",
+            "電子マネー"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/shareKOBE_/status/2117228205837078859",
+              "retrievedAt": "2026-11-02"
+            }
           ]
         }
       ],
@@ -3181,6 +3312,40 @@
             }
           ],
           "id": "no82-1"
+        },
+        {
+          "id": "no82-2",
+          "name": "尋ね人の交換日記",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "交換日記の暗号を解き、消えた幼馴染を探す新作",
+          "description": "交換日記の暗号を解き、消えた幼馴染を探そう。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWHjj8DaAAEQfcs?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kirin_for_zou/status/2117223756095721581",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/kirin_for_zou/status/2117237841541603766",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
       "candidates": [

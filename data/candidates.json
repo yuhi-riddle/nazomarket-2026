@@ -164,34 +164,6 @@
     ]
   },
   {
-    "boothId": "no16",
-    "name": "最初からクライマックス謎解き-comic-",
-    "price": 3200,
-    "reason": "2026年10月発売の新作(通常3,200円・送料込、ゲームマーケット2026秋の会場価格2,800円)。リリースにナゾマでの販売の記載なし",
-    "sources": [
-      {
-        "url": "https://www.atpress.ne.jp/news/6566703",
-        "retrievedAt": "2026-10-25"
-      },
-      {
-        "url": "https://nazoxnazo.com",
-        "retrievedAt": "2026-10-30"
-      }
-    ]
-  },
-  {
-    "boothId": "no16",
-    "name": "最初からクライマックス謎解き",
-    "price": 2900,
-    "reason": "2025年のナゾマでの出品(Cc1・土日)。今回も持ってくるとは書いていない",
-    "sources": [
-      {
-        "url": "https://www.atpress.ne.jp/news/1001937",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
     "boothId": "no18",
     "name": "シアター系謎解き シネマ・ニューウェーブへようこそ",
     "price": 1540,
