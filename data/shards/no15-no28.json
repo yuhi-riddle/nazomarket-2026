@@ -2485,6 +2485,10 @@
             {
               "url": "https://x.com/_Crazy_Lemon_/status/2108768132282380409",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -2523,6 +2527,10 @@
             {
               "url": "https://x.com/_Crazy_Lemon_/status/2088426806047293882",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "retrievedAt": "2026-11-02"
             }
           ]
         },
@@ -2561,6 +2569,44 @@
             {
               "url": "https://x.com/driving1224/status/2033193593444487317",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no26-4",
+          "name": "ヒラメキシークワーズ",
+          "price": 500,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "言葉探しのシークワーズに謎解きのヒラメキを融合",
+          "description": "空欄に0〜9の数字をうまく当てはめながら単語を見つける。一般公開していない公演の一部を持ち帰り謎として復刻。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCAMEiXcAAaiGZ?format=png&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "retrievedAt": "2026-11-02"
             }
           ]
         }

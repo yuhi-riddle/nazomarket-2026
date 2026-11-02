@@ -570,7 +570,7 @@
       "officialPatches": [],
       "products": [
         {
-          "name": "ニチョ謎 ナゾマ最新作（B2ポスター）",
+          "name": "謎 The Poster MAZE",
           "price": 3000,
           "priceNote": null,
           "category": "kit",
@@ -595,6 +595,10 @@
             {
               "url": "https://x.com/nichonazo/status/2116873154639601944",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/nichonazo/2116873154639601944",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "id": "no73-1"
