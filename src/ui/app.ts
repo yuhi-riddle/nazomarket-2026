@@ -209,6 +209,7 @@ export function app(root: HTMLElement): void {
     updateItems?: (items: CartItem[], state: AppState) => void;
     setActive?: (active: boolean) => void;
     selectBooth?: (code: string) => void;
+    focusResults?: () => void;
   };
   const pages = new Map<TabId, LazyPage>();
   const openMapAtBooth = (code: string) => {
@@ -217,7 +218,10 @@ export function app(root: HTMLElement): void {
   };
   const campaignsDialog = campaignDialog(
     openMapAtBooth,
-    (boothId) => store.update((state) => showBoothInCatalog(state, boothId)),
+    (boothId) => {
+      store.update((state) => showBoothInCatalog(state, boothId));
+      pages.get("catalog")?.focusResults?.();
+    },
   );
   campaignButton.addEventListener("click", campaignsDialog.open);
   campaignsDialog.element.addEventListener("close", updateCampaignButton);

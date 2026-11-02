@@ -46,6 +46,7 @@ export type CatalogView = {
   element: HTMLElement;
   sync: (state: AppState, shared?: SharedStoreState | null) => void;
   updateItems: (items: CartItem[], state: AppState) => void;
+  focusResults: () => void;
 };
 
 export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) => void): CatalogView {
@@ -237,8 +238,6 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
   };
 
   const renderList = (state: AppState, shared: SharedStoreState | null = null) => {
-    const shouldFocusBoothFilter = state.filters.boothId !== null
-      && lastFilters?.boothId !== state.filters.boothId;
     const filtersWithDay = state.filters;
     const filtered = filterCatalog(catalog, filtersWithDay);
     let ordered: ProductView[];
@@ -363,15 +362,15 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     lastFilters = state.filters;
     lastSort = state.sort;
     lastDay = state.day;
-    if (shouldFocusBoothFilter) {
-      count.scrollIntoView({ block: "start" });
-      count.focus({ preventScroll: true });
-    }
   };
 
   return {
     element: page,
     sync: renderList,
+    focusResults() {
+      count.scrollIntoView({ block: "start" });
+      count.focus({ preventScroll: true });
+    },
     updateItems(items, state) {
       const itemById = new Map(items.map((item): [string, CartItem] => [item.productId, item]));
       for (const [id, handle] of handles) {
