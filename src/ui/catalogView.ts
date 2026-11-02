@@ -1,5 +1,5 @@
 import type { SortKey, ProductView, Filters } from "../logic/catalog.ts";
-import { countActiveFilters, emptyFilters, filterCatalog, sortCatalog } from "../logic/catalog.ts";
+import { countActiveFilters, emptyFilters, filterCatalog, newProductsFirst, sortCatalog } from "../logic/catalog.ts";
 import { splitUnknownDifficulty } from "../logic/difficultyGroups.ts";
 import { splitUnknownPrice } from "../logic/priceGroups.ts";
 import { setQty, toggleItem, type CartItem } from "../logic/cart.ts";
@@ -315,7 +315,7 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
         group.count.textContent = views.length + "件";
         if (filtersOrSortChanged) group.element.open = true;
         group.products.replaceChildren();
-        for (const view of views) {
+        for (const view of newProductsFirst(views)) {
           const handle = getHandle(view);
           handle.update(itemById.get(view.product.id), reasonsById.get(view.product.id) ?? []);
           group.products.append(handle.element);

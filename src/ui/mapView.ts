@@ -7,7 +7,7 @@ import {
   type CartItem,
 } from "../logic/cart.ts";
 import { boothListStatus, listedItemsForBooth } from "../logic/mapBooths.ts";
-import type { ProductView } from "../logic/catalog.ts";
+import { newProductsFirst, type ProductView } from "../logic/catalog.ts";
 import { xTagsOf } from "../logic/tags.ts";
 import type { AppState } from "../state.ts";
 import type { Day } from "../types.ts";
@@ -344,7 +344,7 @@ export function mapView(store: AppStore, onMapBooth?: (boothCode: string) => voi
         const productList = el("div", "map-product-list");
         const itemById = new Map(listedItemsForBooth(dayViews, state.items)
           .map((item): [string, CartItem] => [item.productId, item]));
-        const orderedViews = [...dayViews].sort((a, b) =>
+        const orderedViews = newProductsFirst(dayViews).sort((a, b) =>
           Number(itemById.has(b.product.id)) - Number(itemById.has(a.product.id)));
         for (const view of orderedViews) {
           const card = productCard(view, itemById.get(view.product.id), {

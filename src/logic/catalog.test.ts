@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildCatalog, countActiveFilters, emptyFilters, filterCatalog, normalizeForSearch, sortCatalog } from "./catalog.ts";
+import { buildCatalog, countActiveFilters, emptyFilters, filterCatalog, newProductsFirst, normalizeForSearch, sortCatalog } from "./catalog.ts";
 import { booths, layout, product } from "./test-helpers.ts";
 
 const products = [
@@ -72,5 +72,17 @@ describe("sortCatalog", () => {
     const before = ids(catalog);
     sortCatalog(catalog, "priceDesc");
     expect(ids(catalog)).toEqual(before);
+  });
+  it("団体の中では新作を先にし、それ以外の順は保つ", () => {
+    const sameBooth = buildCatalog([
+      product({ id: "a", boothId: "no01", isNew: false }),
+      product({ id: "b", boothId: "no01", isNew: null }),
+      product({ id: "c", boothId: "no01", isNew: true }),
+      product({ id: "d", boothId: "no01", isNew: false }),
+      product({ id: "e", boothId: "no01", isNew: true }),
+    ], booths, layout);
+    const before = ids(sameBooth);
+    expect(ids(newProductsFirst(sameBooth))).toEqual(["c", "e", "a", "b", "d"]);
+    expect(ids(sameBooth)).toEqual(before);
   });
 });
