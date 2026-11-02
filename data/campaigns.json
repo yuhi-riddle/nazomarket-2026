@@ -685,5 +685,45 @@
         "retrievedAt": "2026-11-01"
       }
     ]
+  },
+  {
+    "id": "no43-c1",
+    "boothId": "no43",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "新作購入で3大キャンペーン",
+    "detail": "ドボローお試し謎の答えを受付で伝えると謎付きポストカード（数量限定）。新作2作品の購入でシュレディンガーお試し謎に挑戦でき、答えに応じた特製ステッカー（数量限定）。新作に加えて1作品買うごとに追加で挑戦できる",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "数量限定",
+    "sources": [
+      {
+        "url": "https://x.com/Tri_Mobius/2116736235368567156",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "no25-c1",
+    "boothId": "no25",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "リポストで10周年シール",
+    "detail": "告知投稿をリポストして画面を見せると「ジェリーの謎解きルーム 10周年シール」をプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/tanteijelly/2117118106548273663",
+        "retrievedAt": "2026-11-02"
+      }
+    ]
   }
 ]
