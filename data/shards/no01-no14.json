@@ -2054,6 +2054,17 @@
             {
               "url": "https://x.com/tokiqil/status/2116471588724105539",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116877610496176220",
+              "retrievedAt": "2026-11-03"
+            }
+          ],
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは両日17時まで）",
+              "url": "https://x.gd/HkhHj",
+              "endsAt": null
             }
           ]
         },
@@ -2154,9 +2165,20 @@
             {
               "url": "https://x.com/tokiqil/status/2116511073272779018",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116877610496176220",
+              "retrievedAt": "2026-11-03"
             }
           ],
-          "id": "no04-5"
+          "id": "no04-5",
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは両日17時まで）",
+              "url": "https://x.gd/HkhHj",
+              "endsAt": null
+            }
+          ]
         },
         {
           "name": "R.●▲★■",
@@ -2191,9 +2213,20 @@
             {
               "url": "https://x.com/tokiqil/status/2110901255732445520",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116877610496176220",
+              "retrievedAt": "2026-11-03"
             }
           ],
-          "id": "no04-6"
+          "id": "no04-6",
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは両日17時まで）",
+              "url": "https://x.gd/HkhHj",
+              "endsAt": null
+            }
+          ]
         },
         {
           "name": "K.オノマトペ",
@@ -2232,9 +2265,20 @@
             {
               "url": "https://x.com/tokiqil/status/2111441993922748476",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116877610496176220",
+              "retrievedAt": "2026-11-03"
             }
           ],
-          "id": "no04-7"
+          "id": "no04-7",
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは両日17時まで）",
+              "url": "https://x.gd/HkhHj",
+              "endsAt": null
+            }
+          ]
         },
         {
           "name": "Q.●▲★■",
@@ -2269,9 +2313,20 @@
             {
               "url": "https://x.com/tokiqil/status/2116527398057574709",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116877610496176220",
+              "retrievedAt": "2026-11-03"
             }
           ],
-          "id": "no04-8"
+          "id": "no04-8",
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは両日17時まで）",
+              "url": "https://x.gd/HkhHj",
+              "endsAt": null
+            }
+          ]
         },
         {
           "name": "ROUNDEAD",
@@ -2306,9 +2361,20 @@
             {
               "url": "https://x.com/tokiqil/status/2116496070218014873",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116877610496176220",
+              "retrievedAt": "2026-11-03"
             }
           ],
-          "id": "no04-9"
+          "id": "no04-9",
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは両日17時まで）",
+              "url": "https://x.gd/HkhHj",
+              "endsAt": null
+            }
+          ]
         },
         {
           "name": "新作コラボ長袖T（あまつパイセン／物理／きまぐれパズル／まっきー）",
@@ -2370,6 +2436,17 @@
             {
               "url": "https://x.com/tokiqil/2116519980103786768",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116877610496176220",
+              "retrievedAt": "2026-11-03"
+            }
+          ],
+          "reservations": [
+            {
+              "label": "取り置き予約（受け取りは両日17時まで）",
+              "url": "https://x.gd/HkhHj",
+              "endsAt": null
             }
           ]
         }

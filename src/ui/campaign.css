@@ -133,6 +133,21 @@
   font-weight: 700;
 }
 
+.campaign-organization-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--key);
+  font: inherit;
+  font-weight: inherit;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .campaign-sources {
   display: flex;
   flex-wrap: wrap;

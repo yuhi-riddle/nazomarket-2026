@@ -1,0 +1,16 @@
+.catalog-booth-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.catalog-booth-filter-clear {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.catalog-booth-filter[hidden] {
+  display: none;
+}

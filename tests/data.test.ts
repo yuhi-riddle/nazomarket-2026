@@ -73,6 +73,15 @@ describe("products.json", () => {
       }
     }
   });
+  it("予約先は https で、名前があり、締切は日本時間の形", () => {
+    for (const p of products) {
+      for (const r of p.reservations ?? []) {
+        expect(r.url, p.id).toMatch(/^https:\/\//);
+        expect(r.label.trim(), p.id).not.toBe("");
+        if (r.endsAt !== null) expect(r.endsAt, p.id).toMatch(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/);
+      }
+    }
+  });
   it("必須項目に空文字がなく、一言は40字以内", () => {
     for (const p of products) {
       for (const key of ["id", "boothId", "name", "oneLiner", "description"] as const) {

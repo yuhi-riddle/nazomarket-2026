@@ -1,4 +1,4 @@
-import { boothById, campaigns, productById } from "../data.ts";
+import { boothById, campaigns, productById, products } from "../data.ts";
 import { countByKind, deadlineLabel, filterActiveByKind, listActiveCampaigns, type CampaignFilter } from "../logic/campaigns.ts";
 import type { Campaign, Day } from "../types.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
@@ -12,10 +12,14 @@ const kindNames: Record<Campaign["kind"], string> = {
 };
 
 const dayNames: Record<Day, string> = { sat: "土", sun: "日" };
+const boothIdsWithProducts = new Set(products.map((product) => product.boothId));
 
 export type CampaignDialog = { element: HTMLDialogElement; open: () => void; refresh: () => void };
 
-export function campaignDialog(openMapAtBooth: (code: string) => void): CampaignDialog {
+export function campaignDialog(
+  openMapAtBooth: (code: string) => void,
+  showBoothInCatalog: (boothId: string) => void,
+): CampaignDialog {
   const dialog = el("dialog", "campaign-dialog");
   dialog.setAttribute("aria-labelledby", "campaign-dialog-title");
   const content = el("div", "campaign-dialog-content");
@@ -53,6 +57,18 @@ export function campaignDialog(openMapAtBooth: (code: string) => void): Campaign
     article.append(header, title, el("p", "campaign-detail", campaign.detail));
 
     const organization = el("p", "campaign-organization", organizationName + (booth?.boothCode ? `（${booth.boothCode}）` : ""));
+    if (booth && boothIdsWithProducts.has(booth.id)) {
+      const boothButton = button(organizationName, "campaign-organization-link");
+      boothButton.setAttribute("aria-label", `${organizationName}の商品一覧を見る`);
+      boothButton.addEventListener("click", () => {
+        dialog.close();
+        showBoothInCatalog(booth.id);
+      });
+      organization.replaceChildren(
+        boothButton,
+        document.createTextNode(booth.boothCode ? `（${booth.boothCode}）` : ""),
+      );
+    }
     article.append(organization);
 
     const productNames = campaign.productIds.flatMap((id) => {

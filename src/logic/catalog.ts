@@ -33,6 +33,7 @@ export type Filters = {
   tagMatch: TagMatch;
   newOnly: boolean;
   day: Day | null;
+  boothId: string | null;
 };
 
 export const emptyFilters: Filters = {
@@ -45,6 +46,7 @@ export const emptyFilters: Filters = {
   tagMatch: "any",
   newOnly: false,
   day: null,
+  boothId: null,
 };
 
 export function buildCatalog(products: Product[], booths: Booth[], layout: VenueLayout): ProductView[] {
@@ -85,6 +87,7 @@ export function filterCatalog(catalog: ProductView[], filters: Filters): Product
   const terms = normalizeForSearch(filters.q).trim().split(/\s+/).filter(Boolean);
   return catalog.filter((view) => {
     const product = view.product;
+    if (filters.boothId !== null && product.boothId !== filters.boothId) return false;
     if (terms.length) {
       const haystack = normalizeForSearch([
         product.name,
@@ -165,5 +168,6 @@ export function countActiveFilters(filters: Filters): number {
     + Number(filters.categories.length > 0)
     + filters.tags.length
     + Number(filters.newOnly)
-    + Number(filters.day !== null);
+    + Number(filters.day !== null)
+    + Number(filters.boothId !== null);
 }
