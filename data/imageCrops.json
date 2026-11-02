@@ -1,4 +1,13 @@
 {
+  "no02-3": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/be872998e9864d9a348c231df2f15f60.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
+    "left": 0,
+    "right": 0,
+    "top": 0.0475,
+    "bottom": 0,
+    "width": 1200,
+    "height": 1200
+  },
   "no04-2": {
     "imageUrl": "https://pbs.twimg.com/media/HV83r8Ia8AAmSR_?format=jpg&name=small",
     "left": 0.0412,
@@ -260,6 +269,24 @@
     "width": 1459,
     "height": 1459
   },
+  "no27-12": {
+    "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/6301054/46becdc1-19b0-4918-bad9-ef7b8416cbfa_base_resized.jpg",
+    "left": 0.086,
+    "right": 0.0839,
+    "top": 0.0532,
+    "bottom": 0.0516,
+    "width": 465,
+    "height": 620
+  },
+  "no27-7": {
+    "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/6892442/7d5e60cb-16da-4e65-bd15-ac58827a336f_base_resized.jpg",
+    "left": 0.2015,
+    "right": 0,
+    "top": 0.0468,
+    "bottom": 0,
+    "width": 551,
+    "height": 620
+  },
   "no28-20": {
     "imageUrl": "https://pbs.twimg.com/media/GdnBgbhXYAAi7Zo?format=jpg&name=small",
     "left": 0,
@@ -322,6 +349,24 @@
     "bottom": 0,
     "width": 680,
     "height": 510
+  },
+  "no47-1": {
+    "imageUrl": "https://pbs.twimg.com/media/HV8rzmbaAAAXcmi?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0324,
+    "bottom": 0,
+    "width": 510,
+    "height": 680
+  },
+  "no47-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HWAd-BSbEAIrG6D?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0324,
+    "bottom": 0,
+    "width": 510,
+    "height": 680
   },
   "no51-1": {
     "imageUrl": "https://pbs.twimg.com/media/HV7RqlPbMAAD6eN?format=jpg&name=small",

@@ -47,4 +47,13 @@ describe("buildRouteStops", () => {
     const r = buildRouteStops(items, catalog, layout, "sat", { onlyUnbought: true });
     expect(r.stops.map((s) => s.boothId)).toEqual(["no01", "no05"]);
   });
+  it("事前予約フォームの補足だけでは特別印を付けない", () => {
+    const supplementalCatalog = buildCatalog(
+      [product({ id: "supplemental", boothId: "no01", limited: "事前予約フォームあり（10/29 の告知）" })],
+      booths,
+      layout,
+    );
+    const r = buildRouteStops([{ productId: "supplemental", qty: 1, bought: false }], supplementalCatalog, layout, "sat");
+    expect(r.stops[0]?.special).toBe(false);
+  });
 });

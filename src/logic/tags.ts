@@ -1,9 +1,13 @@
 import type { Booth, Product } from "../types.ts";
 import { playStyleOf } from "./insights.ts";
+import { limitedKinds } from "./limitedKinds.ts";
 
 export const FEATURE_TAGS = [
   "新作",
-  "限定",
+  "数量限定",
+  "会場限定",
+  "先行販売",
+  "限定価格",
   "持ち帰り",
   "その場で遊べる",
   "1人で遊べる",
@@ -13,7 +17,7 @@ export const FEATURE_TAGS = [
 export function featureTags(product: Product): string[] {
   const tags: string[] = [];
   if (product.isNew === true) tags.push("新作");
-  if (product.limited) tags.push("限定");
+  tags.push(...limitedKinds(product));
 
   const playStyle = playStyleOf(product);
   if (playStyle === "takeHome") tags.push("持ち帰り");

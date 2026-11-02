@@ -1,6 +1,6 @@
 {
   "range": "no85-no97",
-  "collectedAt": "2026-11-01",
+  "collectedAt": "2026-11-02",
   "booths": [
     {
       "boothId": "no85",
@@ -629,9 +629,74 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式の HP 欄は YouTube と X のみ。YouTube チャンネルは WebFetch で説明欄・動画一覧が取れず（JS 描画）、販売物の情報は確認できなかった。独自サイト・ショップは検索で見つからず。ブース概要は「今回の出展のために制作したコンテンツがたくさん」とあるが商品名・価格は不明。X を見れば取れそう。 X(@AsayakeRepublic、公式TSVのHP欄にリンクあり)を確認: 検索は2020年の投稿のみ、タイムラインも2026年10月まで動画告知のみでナゾトキマーケットの販売告知なし。商品は取れず。 再収集(10/30 Web): Web 検索（Asayake Republic）で告知なし。新しい告知なし。 再収集(10/30 X): 10/24 以降の @AsayakeRepublic の検索結果なし。告知なし",
+      "notes": "公式の HP 欄は YouTube と X のみ。YouTube チャンネルは WebFetch で説明欄・動画一覧が取れず（JS 描画）、販売物の情報は確認できなかった。独自サイト・ショップは検索で見つからず。ブース概要は「今回の出展のために制作したコンテンツがたくさん」とあるが商品名・価格は不明。X を見れば取れそう。 X(@AsayakeRepublic、公式TSVのHP欄にリンクあり)を確認: 検索は2020年の投稿のみ、タイムラインも2026年10月まで動画告知のみでナゾトキマーケットの販売告知なし。商品は取れず。 再収集(10/30 Web): Web 検索（Asayake Republic）で告知なし。新しい告知なし。 再収集(10/30 X): 10/24 以降の @AsayakeRepublic の検索結果なし。告知なし 再収集(11/2 X): お品書きの投稿で2商品を確認。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no89-1",
+          "name": "ドレミハニホ謎解き！",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "あのショート動画をモチーフにした持ち帰り謎",
+          "description": "あのショート動画をモチーフにした持ち帰り謎。LINE を使用します。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWDIdkebcAAsejL?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/AsayakeRepublic/status/2117089322361082124",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no89-2",
+          "name": "朝灼けリパブリック 動画形式ドリル",
+          "price": 300,
+          "priceNote": "全5種 各300円",
+          "category": "booklet",
+          "oneLiner": "過去形式の新問をドリル形式で届ける（全5形式）",
+          "description": "過去形式の新問をドリル形式でお届けする動画形式ドリル。全5形式。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWDIdkXbEAE3q-4?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/AsayakeRepublic/status/2117089322361082124",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "extraLinks": {
         "x": [
@@ -652,10 +717,15 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "ブース概要に「おうちで遊べる持ち帰り謎をご用意（初心者向けから慣れた人向けまで）」とあるが、商品名・価格は不明。HP・X の記載なし。検索（団体名・フランバーズコインの両表記）でも該当ページが見つからなかった。X を見れば取れそう。 X アカウント見つからず（「フランバーズコイン」「Flambeur's Coin」「Flambeur」とナゾトキマーケット関連語のX検索でヒットなし）。 再収集(10/30 Web): Web 検索でフランバーズコインの告知は見つからず。新しい告知なし。 再収集(10/30 X): 「フランバーズコイン」「フラコイ」で X を再検索。団体本人のアカウントは見つからず、告知なし",
+      "notes": "ブース概要に「おうちで遊べる持ち帰り謎をご用意（初心者向けから慣れた人向けまで）」とあるが、商品名・価格は不明。HP・X の記載なし。検索（団体名・フランバーズコインの両表記）でも該当ページが見つからなかった。X を見れば取れそう。 X アカウント見つからず（「フランバーズコイン」「Flambeur's Coin」「Flambeur」とナゾトキマーケット関連語のX検索でヒットなし）。 再収集(10/30 Web): Web 検索でフランバーズコインの告知は見つからず。新しい告知なし。 再収集(10/30 X): 「フランバーズコイン」「フラコイ」で X を再検索。団体本人のアカウントは見つからず、告知なし 再収集(11/2 X): @Flambeurs_Coin が「お品書きの修正版を後程」と投稿。品目はまだ分からない。",
       "officialPatches": [],
       "products": [],
-      "candidates": []
+      "candidates": [],
+      "extraLinks": {
+        "x": [
+          "https://x.com/Flambeurs_Coin"
+        ]
+      }
     },
     {
       "boothId": "no91",

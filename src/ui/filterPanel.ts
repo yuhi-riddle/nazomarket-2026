@@ -186,6 +186,7 @@ function filterControls(options: {
   const tags = checkGroup("タグ", FEATURE_TAGS.map((tag): [string, string] => [tag, tag]), () => filters.tags,
     (values) => options.onChange({ tags: values }), true);
   tags.element.classList.add("filter-tag-group");
+  tags.element.append(el("p", "filter-tag-note", "「1人で遊べる」は人数が不明なものも含みます"));
   root.append(difficulty.element, categories.element, tags.element);
 
   const daySelect = el("select", "text-input");

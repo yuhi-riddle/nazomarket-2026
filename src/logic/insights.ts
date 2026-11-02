@@ -1,6 +1,7 @@
 import type { Category, Day, Product } from "../types.ts";
 import type { ProductView } from "./catalog.ts";
 import type { CartItem } from "./cart.ts";
+import { limitedKinds } from "./limitedKinds.ts";
 
 export type Prefs = {
   difficultyMin: 1 | 2 | 3 | 4 | 5 | null;
@@ -147,7 +148,7 @@ export function scoreProduct(
     score += 1;
     reasons.push("新作");
   }
-  if (product.limited) {
+  if (limitedKinds(product).length > 0) {
     score += 1;
     reasons.push("限定あり");
   }

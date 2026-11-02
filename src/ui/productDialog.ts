@@ -108,7 +108,7 @@ export function productDialog(
         ["支払い", product.payment?.join("・") ?? "未確認"],
         ["難易度", product.difficulty.level === null ? "不明" : product.difficulty.level + " / 5" + (product.difficulty.source === "estimated" ? "（推定）" : "")],
       ];
-      if (product.limited) factRows.push(["限定", product.limited]);
+      if (product.limited) factRows.push(["販売について", product.limited]);
       for (const [label, value] of factRows) {
         facts.append(el("dt", "", label), el("dd", "", value));
       }
