@@ -17,7 +17,7 @@ describe("featureTags", () => {
       price: 1000,
       days: ["sat"],
     });
-    expect(featureTags(p)).toEqual(["新作", "限定", "持ち帰り", "1人で遊べる", "千円以下"]);
+    expect(featureTags(p)).toEqual(["新作", "数量限定", "持ち帰り", "1人で遊べる", "千円以下"]);
   });
   it("その場で遊べるものを表示し、曜日はタグにしない", () => {
     expect(featureTags(product({ id: "a", boothId: "no01", category: "online", playMinutes: { min: 20, max: 20 }, price: 1500, days: ["sun"] }))).toEqual([
@@ -31,7 +31,7 @@ describe("featureTags", () => {
     expect(featureTags(product({ id: "d", boothId: "no01", category: "goods", playMinutes: null, players: "2〜4人" }))).not.toContain("1人で遊べる");
   });
   it("FEATURE_TAGS は画面に並べる順の一覧", () => {
-    expect(FEATURE_TAGS).toEqual(["新作", "限定", "持ち帰り", "その場で遊べる", "1人で遊べる", "千円以下"]);
+    expect(FEATURE_TAGS).toEqual(["新作", "数量限定", "会場限定", "先行販売", "限定価格", "持ち帰り", "その場で遊べる", "1人で遊べる", "千円以下"]);
   });
 });
 
@@ -52,6 +52,21 @@ describe("特徴タグで絞り込む", () => {
     expect(emptyFilters.tags).toEqual([]);
     expect(ids(filterCatalog(catalog, emptyFilters))).toHaveLength(3);
     expect(countActiveFilters({ ...emptyFilters, tags: ["新作", "限定"] })).toBe(2);
+  });
+  it("購入条件ありはカードのタグには出すが、絞り込みの選択肢には出さない", () => {
+    const conditional = product({ id: "c1", boothId: "no01", limited: "謎を解いた人だけ購入可" });
+    expect(featureTags(conditional)).toContain("購入条件あり");
+    expect(FEATURE_TAGS).not.toContain("購入条件あり");
+  });
+  it("「1人で遊べる」は人数が不明なものも残し、タグ自体は付けない", () => {
+    const withPlayers = buildCatalog([
+      product({ id: "solo", boothId: "no01", players: "1〜4人" }),
+      product({ id: "pair", boothId: "no01", players: "2人" }),
+      product({ id: "unknown", boothId: "no01", players: null, isNew: true }),
+    ], [booth({ id: "no01", boothCode: "A1" })], layout);
+    expect(ids(filterCatalog(withPlayers, { ...emptyFilters, tags: ["1人で遊べる"] }))).toEqual(["solo", "unknown"]);
+    expect(ids(filterCatalog(withPlayers, { ...emptyFilters, tags: ["1人で遊べる", "新作"] }))).toEqual(["unknown"]);
+    expect(withPlayers.find((v) => v.product.id === "unknown")!.featureTags).not.toContain("1人で遊べる");
   });
 });
 

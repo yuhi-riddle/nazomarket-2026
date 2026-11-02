@@ -100,6 +100,14 @@ describe("scoreProduct", () => {
   it("条件を何も入れなければ新作・限定だけが点になる", () => {
     expect(scoreProduct(view("p01"), defaultPrefs)).toEqual({ view: view("p01"), score: 1, reasons: ["新作"] });
   });
+  it("事前予約フォームの補足だけでは限定の加点をしない", () => {
+    const supplemental = buildCatalog(
+      [product({ id: "supplemental", boothId: "no01", limited: "事前予約フォームあり（10/29 の告知）" })],
+      booths,
+      layout,
+    )[0];
+    expect(scoreProduct(supplemental, defaultPrefs)).toEqual({ view: supplemental, score: 0, reasons: [] });
+  });
 });
 
 describe("recommend", () => {

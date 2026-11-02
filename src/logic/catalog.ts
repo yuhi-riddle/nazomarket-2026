@@ -95,7 +95,8 @@ export function filterCatalog(catalog: ProductView[], filters: Filters): Product
       if (!filters.difficulties.includes(difficulty)) return false;
     }
     if (filters.categories.length && !filters.categories.includes(product.category)) return false;
-    if (filters.tags.length && !filters.tags.every((tag) => view.featureTags.includes(tag))) return false;
+    // 人数が不明なものは1人で遊べないとは言えないので、価格帯の絞り込みと同じく外さない
+    if (filters.tags.length && !filters.tags.every((tag) => view.featureTags.includes(tag) || (tag === "1人で遊べる" && !product.players))) return false;
     if (filters.newOnly && product.isNew !== true) return false;
     if (filters.day && (!product.days.includes(filters.day) || !view.booth.days.includes(filters.day))) return false;
     return true;

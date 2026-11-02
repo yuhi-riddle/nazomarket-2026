@@ -1,5 +1,6 @@
 import type { Day, Point, VenueLayout } from "../types.ts";
 import type { ProductView } from "./catalog.ts";
+import { limitedKinds } from "./limitedKinds.ts";
 import type { CartItem } from "./cart.ts";
 
 export type RouteStop = {
@@ -44,7 +45,7 @@ export function buildRouteStops(
     }
 
     const existing = grouped.get(view.booth.id);
-    const itemSpecial = view.product.isNew === true || Boolean(view.product.limited);
+    const itemSpecial = view.product.isNew === true || limitedKinds(view.product).length > 0;
     if (existing) {
       existing.special ||= itemSpecial;
     } else {
