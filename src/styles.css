@@ -562,6 +562,18 @@ a {
   min-height: 44px;
 }
 
+.filter-tag-match {
+  flex: 1 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-3);
+}
+
+.filter-tag-match .check-option {
+  flex: 1 1 150px;
+  min-height: 44px;
+}
+
 .product-actions {
   margin-top: auto;
   padding-top: var(--space-3);

@@ -1,5 +1,5 @@
 import type { Category } from "../types.ts";
-import type { DifficultyKey } from "../logic/catalog.ts";
+import { emptyFilters, type DifficultyKey, type TagMatch } from "../logic/catalog.ts";
 import type { AppFilters } from "../state.ts";
 import type { Prefs } from "../logic/insights.ts";
 import { FEATURE_TAGS } from "../logic/tags.ts";
@@ -20,6 +20,8 @@ const difficultyOptions: Array<[DifficultyKey, string]> = [
   [5, "5"],
   ["unknown", "不明"],
 ];
+
+let tagMatchGroupId = 0;
 
 type FilterControls = {
   element: HTMLElement;
@@ -129,7 +131,7 @@ function filterControls(options: {
 }): FilterControls {
   const root = el("div", "filter-controls");
   let searchTimer: number | undefined;
-  let filters: AppFilters = { q: "", priceMin: null, priceMax: null, difficulties: [], categories: [], tags: [], newOnly: false, day: null };
+  let filters: AppFilters = { ...emptyFilters };
   const preferences = preferenceControls(options.onPrefsChange);
   root.append(preferences.element);
 
@@ -186,6 +188,23 @@ function filterControls(options: {
   const tags = checkGroup("タグ", FEATURE_TAGS.map((tag): [string, string] => [tag, tag]), () => filters.tags,
     (values) => options.onChange({ tags: values }), true);
   tags.element.classList.add("filter-tag-group");
+  const tagMatchGroup = el("div", "filter-tag-match");
+  tagMatchGroup.setAttribute("role", "radiogroup");
+  tagMatchGroup.setAttribute("aria-label", "タグの組み合わせ方");
+  const tagMatchInputs: Array<{ input: HTMLInputElement; value: TagMatch }> = [];
+  const tagMatchName = `tag-match-${++tagMatchGroupId}`;
+  for (const [value, labelText] of [["any", "または（どれか）"], ["all", "かつ（全部）"]] as const) {
+    const label = el("label", "check-option");
+    const input = el("input");
+    input.type = "radio";
+    input.name = tagMatchName;
+    input.value = value;
+    input.addEventListener("change", () => options.onChange({ tagMatch: value }));
+    label.append(input, document.createTextNode(labelText));
+    tagMatchGroup.append(label);
+    tagMatchInputs.push({ input, value });
+  }
+  tags.element.insertBefore(tagMatchGroup, tags.element.children[1] ?? null);
   tags.element.append(el("p", "filter-tag-note", "「1人で遊べる」は人数が不明なものも含みます"));
   root.append(difficulty.element, categories.element, tags.element);
 
@@ -213,6 +232,7 @@ function filterControls(options: {
       difficulty.sync();
       categories.sync();
       tags.sync();
+      for (const entry of tagMatchInputs) entry.input.checked = next.tagMatch === entry.value;
       daySelect.value = next.day ?? "";
     },
   };

@@ -82,6 +82,7 @@ function parseFilters(value: unknown, oldDay: Day): AppFilters {
   } else {
     result.tags = [];
   }
+  if (value.tagMatch === "any" || value.tagMatch === "all") result.tagMatch = value.tagMatch;
   if (value.newOnly === true && !result.tags.includes("新作")) result.tags = [...result.tags, "新作"];
   result.newOnly = false;
   if (value.day === "sat" || value.day === "sun" || value.day === null) result.day = value.day;

@@ -50,6 +50,37 @@ describe("filterCatalog", () => {
     expect(ids(filterCatalog(catalog, { ...emptyFilters, day: "sun" }))).not.toContain("no05-1");
     expect(ids(filterCatalog(catalog, { ...emptyFilters, newOnly: true }))).toEqual(["p01"]);
   });
+  describe("タグの組み合わせ", () => {
+    const tagged = buildCatalog([
+      product({ id: "both", boothId: "no01", isNew: true, limited: "数量限定", players: "2人" }),
+      product({ id: "new", boothId: "no01", isNew: true, players: "2人" }),
+      product({ id: "limited", boothId: "no01", limited: "数量限定", players: "2人" }),
+      product({ id: "none", boothId: "no01", players: "2人" }),
+      product({ id: "unknown-players", boothId: "no01", players: null }),
+    ], booths, layout);
+    const tags = ["新作", "数量限定"];
+
+    it("初期値は「または」で、どれか1つでも当てはまれば残す", () => {
+      expect(emptyFilters.tagMatch).toBe("any");
+      expect(ids(filterCatalog(tagged, { ...emptyFilters, tags }))).toEqual(["both", "new", "limited"]);
+    });
+    it("「かつ」は全部に当てはまるものだけ残す", () => {
+      expect(ids(filterCatalog(tagged, { ...emptyFilters, tags, tagMatch: "all" }))).toEqual(["both"]);
+    });
+    it("タグを選んでいなければ、どちらでも全部残す", () => {
+      expect(filterCatalog(tagged, { ...emptyFilters, tagMatch: "any" })).toHaveLength(5);
+      expect(filterCatalog(tagged, { ...emptyFilters, tagMatch: "all" })).toHaveLength(5);
+    });
+    it("「1人で遊べる」は人数不明も当てはまるものとして扱う", () => {
+      const solo = ["1人で遊べる", "新作"];
+      expect(ids(filterCatalog(tagged, { ...emptyFilters, tags: solo, tagMatch: "any" }))).toEqual(["both", "new", "unknown-players"]);
+      expect(ids(filterCatalog(tagged, { ...emptyFilters, tags: solo, tagMatch: "all" }))).toEqual([]);
+      expect(ids(filterCatalog(tagged, { ...emptyFilters, tags: ["1人で遊べる"], tagMatch: "all" }))).toEqual(["unknown-players"]);
+    });
+    it("組み合わせ方は有効な条件の数に入れない", () => {
+      expect(countActiveFilters({ ...emptyFilters, tagMatch: "all" })).toBe(0);
+    });
+  });
   it("有効な条件の数を数える（キーワード・価格帯はそれぞれ1つ）", () => {
     expect(countActiveFilters(emptyFilters)).toBe(0);
     expect(countActiveFilters({ ...emptyFilters, q: " ", priceMin: 1, priceMax: 2, categories: ["kit", "goods"], newOnly: true })).toBe(3);
