@@ -727,7 +727,8 @@
       "extraLinks": {
         "x": [
           "https://x.com/Mysterycakekzkc",
-          "https://x.com/mysterycakekh"
+          "https://x.com/mysterycakekh",
+          "https://x.com/cdrriddle"
         ]
       },
       "sources": [
@@ -744,7 +745,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式のブース概要に『【謎解き問題集バラエティパック】を発売』(100問以上収録)とあるため商品に入れた。価格は未記載。団体の HP・ショップは Web 検索で見つからず(escape.id の団体ページと X アカウントのみ)。価格・難易度は X で確認が必要。X確認(10/25): @Mysterycakekh の検索結果は4月の他団体作品の感想のみ。ナゾトキマーケットの投稿なし。個人名のアカウントのため団体本人かは未確認 再収集(10/30 Web): Web 検索でも価格などの告知は出ず、新しい告知なし(価格は null のまま) 再収集(10/30 X): 公式アカウント @Mysterycakekzkc の10/30 の新作告知で『リドルパーティー』(100問以上・8ジャンル・ナゾトキマーケット限定価格2,000円、通常2,500円)を確認。公式ブース概要の「謎解き問題集バラエティパック(100問以上)」と同じ商品と判断して no65-1 に統合し、価格を埋めた(同一商品という判断は名称が違うため推定)。@mysterycakekh は団体メンバーの個人アカウントらしく、公式は @Mysterycakekzkc 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
+      "notes": "公式のブース概要に『【謎解き問題集バラエティパック】を発売』(100問以上収録)とあるため商品に入れた。価格は未記載。団体の HP・ショップは Web 検索で見つからず(escape.id の団体ページと X アカウントのみ)。価格・難易度は X で確認が必要。X確認(10/25): @Mysterycakekh の検索結果は4月の他団体作品の感想のみ。ナゾトキマーケットの投稿なし。個人名のアカウントのため団体本人かは未確認 再収集(10/30 Web): Web 検索でも価格などの告知は出ず、新しい告知なし(価格は null のまま) 再収集(10/30 X): 公式アカウント @Mysterycakekzkc の10/30 の新作告知で『リドルパーティー』(100問以上・8ジャンル・ナゾトキマーケット限定価格2,000円、通常2,500円)を確認。公式ブース概要の「謎解き問題集バラエティパック(100問以上)」と同じ商品と判断して no65-1 に統合し、価格を埋めた(同一商品という判断は名称が違うため推定)。@mysterycakekh は団体メンバーの個人アカウントらしく、公式は @Mysterycakekzkc 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。 2026-11-02 共同出店の CDR（@cdrriddle）の告知から追加。",
       "officialPatches": [],
       "products": [
         {
@@ -774,6 +775,96 @@
             {
               "url": "https://x.com/Mysterycakekzkc/status/2115987365038879069",
               "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "id": "no65-2",
+          "name": "不思議の森のリドル",
+          "price": 800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解き童話シリーズ第1弾",
+          "description": "可愛らしいイラストと解きごたえのある謎の持ち帰り謎。CDR初の持ち帰り謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCO9kiasAAsUew?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/cdrriddle/2116849029917315557",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no65-3",
+          "name": "3匹のスケル豚",
+          "price": 800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解き童話シリーズ第2弾",
+          "description": "可愛らしいイラストと解きごたえのある謎の持ち帰り謎。CDR初の持ち帰り謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCO9kkbgAA30st?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/cdrriddle/2116849029917315557",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no65-4",
+          "name": "不思議の森のリドル＋3匹のスケル豚 セット",
+          "price": 1500,
+          "priceNote": "単品合計1,600円",
+          "category": "kit",
+          "oneLiner": "童話シリーズ2作のセット",
+          "description": "ナゾトキマーケット限定のセット価格。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾマ限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCO9kibwAAvKel?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/cdrriddle/2116849029917315557",
+              "retrievedAt": "2026-11-02"
             }
           ]
         }
@@ -999,7 +1090,8 @@
           "https://mysteryfromaki.booth.pm/"
         ],
         "x": [
-          "https://x.com/MysteryFromAki"
+          "https://x.com/MysteryFromAki",
+          "https://x.com/teaparty_cooh"
         ]
       },
       "sources": [
@@ -1032,7 +1124,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "公式商品は p02(ふうとう第3弾)のみ。BOOTH(あき03の謎解きショップ)には第1・2弾など既存作があるが、第3弾は未掲載。BOOTH ショップのトップは前担当では403で見られなかったが、Chrome で確認済み(第3弾は未掲載。第1・2弾・STOP謎・ふれないダイス・闇に包まれた世界からの脱出などが並ぶ)。teaparty 側の HP・ショップは見つからず。今回の追加品は X で確認が必要。X確認(10/25): BOOTHショップ(団体のHP)からリンクされた @MysteryFromAki(あき03)の10/17の投稿で、ナゾトキマーケット2026(Cc2ブース)での新作「かぎのかかったふうとうからの脱出3 変化」(=公式p02)の販売と、返信で「過去作も持っていきます」(ハッシュタグは第1作)を確認。第2作・STOP謎などは具体名が無いため候補のまま。価格・所要時間は投稿になし。X検索はエラーで使えず、プロフィールのタイムラインで確認。 再収集(10/30 Web): BOOTH ショップ(mysteryfromaki.booth.pm)は403で見られず、第3弾(p02)の掲載も Web 検索で確認できず。公式 TSV の p02 は2,000円。新しい告知なし 再収集(10/30 X): 10/29 のお品書き画像(Cc2ブース・現金のみ)を読み、p02(2,000円・★3・60分〜)、第1作(2,000円)、第2作(2,000円)、封筒に仕掛けられた爆弾からの脱出(2,000円・★4・60分〜)、STOP謎(600円・30分〜)、ふれないダイス(単品700円・STOP謎とセット1,000円)を確認。第2作・爆弾・STOP謎・ダイスを products に移した(候補→商品3件、新規1件)。『闇に包まれた世界からの脱出』はお品書きに無いので候補のまま 画像(10/31 Web): no67-3,no67-4,no67-5 は BOOTH(403)・検索で見つからず(X のお品書き・告知で見つかる可能性あり) 画像(11/1 X): no67-3〜5 は団体本人の商品単体の画像が見つからず(見つかったのは参加者の投稿写真と複数商品を並べたお品書きのみ)",
+      "notes": "公式商品は p02(ふうとう第3弾)のみ。BOOTH(あき03の謎解きショップ)には第1・2弾など既存作があるが、第3弾は未掲載。BOOTH ショップのトップは前担当では403で見られなかったが、Chrome で確認済み(第3弾は未掲載。第1・2弾・STOP謎・ふれないダイス・闇に包まれた世界からの脱出などが並ぶ)。teaparty 側の HP・ショップは見つからず。今回の追加品は X で確認が必要。X確認(10/25): BOOTHショップ(団体のHP)からリンクされた @MysteryFromAki(あき03)の10/17の投稿で、ナゾトキマーケット2026(Cc2ブース)での新作「かぎのかかったふうとうからの脱出3 変化」(=公式p02)の販売と、返信で「過去作も持っていきます」(ハッシュタグは第1作)を確認。第2作・STOP謎などは具体名が無いため候補のまま。価格・所要時間は投稿になし。X検索はエラーで使えず、プロフィールのタイムラインで確認。 再収集(10/30 Web): BOOTH ショップ(mysteryfromaki.booth.pm)は403で見られず、第3弾(p02)の掲載も Web 検索で確認できず。公式 TSV の p02 は2,000円。新しい告知なし 再収集(10/30 X): 10/29 のお品書き画像(Cc2ブース・現金のみ)を読み、p02(2,000円・★3・60分〜)、第1作(2,000円)、第2作(2,000円)、封筒に仕掛けられた爆弾からの脱出(2,000円・★4・60分〜)、STOP謎(600円・30分〜)、ふれないダイス(単品700円・STOP謎とセット1,000円)を確認。第2作・爆弾・STOP謎・ダイスを products に移した(候補→商品3件、新規1件)。『闇に包まれた世界からの脱出』はお品書きに無いので候補のまま 画像(10/31 Web): no67-3,no67-4,no67-5 は BOOTH(403)・検索で見つからず(X のお品書き・告知で見つかる可能性あり) 画像(11/1 X): no67-3〜5 は団体本人の商品単体の画像が見つからず(見つかったのは参加者の投稿写真と複数商品を並べたお品書きのみ) 2026-11-02 共同出展の teaparty の告知（@teaparty_cooh）から商品を追加。",
       "officialPatches": [
         {
           "id": "p02",
@@ -1258,6 +1350,432 @@
             {
               "url": "https://x.com/MysteryFromAki/status/2115738662218727736",
               "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "id": "no67-6",
+          "name": "TEA4 PARTY オリジナルクリアファイル",
+          "price": 500,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "TEA4 PARTYのオリジナルクリアファイル",
+          "description": "購入するとTEA4 PARTYの各作品が1枚200円になる。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVZUjOubsAAHMXF?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-7",
+          "name": "TEA4 PARTY 蟹",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "全部、蟹。",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。全部、蟹。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV9JmcOaMAAtFEo?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116492886091166201",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-8",
+          "name": "TEA4 PARTY Silent",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "NOTICE:音が出ません。",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。NOTICE:音が出ません。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV9JnNjbQAE5nz8?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116492886091166201",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-9",
+          "name": "TEA4 PARTY オツカイ",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "「君にしか頼めないことだから…」",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。「君にしか頼めないことだから…」",
+          "difficulty": {
+            "level": 1,
+            "source": "official",
+            "basis": "団体表記 ★1/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV9Jo3FaoAAB7Rl?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116492886091166201",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-10",
+          "name": "TEA4 PARTY くみあわせ",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "組んで解いて、解いて組んで。",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。組んで解いて、解いて組んで。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV9JqdrbsAAdBkk?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116492886091166201",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-11",
+          "name": "TEA4 PARTY おーるらいと！",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "楽しむだけでおーるらいと！",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。楽しむだけでおーるらいと！",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCCw1zaoAI8pjo?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116847723131683008",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-12",
+          "name": "TEA4 PARTY 3, 2, 1!",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "うわ〜〜〜〜〜〜！！！！！！！！",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。うわ〜〜〜〜〜〜！！！！！！！！",
+          "difficulty": {
+            "level": 1,
+            "source": "official",
+            "basis": "団体表記 ★1/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 5,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCCy7YagAAvvjQ?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116847723131683008",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-13",
+          "name": "TEA4 PARTY 漢字テスト",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "魚介がカレイに躍動するぞ",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。魚介がカレイに躍動するぞ",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCC175aAAA2QQE?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116847723131683008",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-14",
+          "name": "TEA4 PARTY the rectagle word",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "booklet",
+          "oneLiner": "この謎にはしかけがあります",
+          "description": "A4用紙1枚に収めた謎。1枚から買える。この謎にはしかけがあります",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWCDNSobMAApd_i?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2116847723131683008",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2113971284472426603",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-15",
+          "name": "ナゾトキカガク",
+          "price": 500,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "全12種の解けるアクリルキーホルダー",
+          "description": "図案が謎になっているアクリルキーホルダー。全12種、1個500円。個数が少ない。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVePYL5a4AEjdvV?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2114318555264983105",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-16",
+          "name": "再利用",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "「再利用」をテーマにした骨太な持ち帰り謎",
+          "description": "タイトルの通り再利用をテーマにした持ち帰り謎。再販。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 100,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVec62vagAAhK3v?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2114331096116805778",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/teaparty_cooh/2114331482290573797",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-17",
+          "name": "sek16an",
+          "price": 1700,
+          "priceNote": "ナゾマ特別価格（通常2,000円）",
+          "category": "kit",
+          "oneLiner": "4×4に並んだ石板で進む持ち帰り謎",
+          "description": "少し変わった操作で物語が進む持ち帰り謎。昨年は少量しかなかった作品の再販。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": "会場限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVerX-7agAAY50d?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/2114348348132196512",
+              "retrievedAt": "2026-11-02"
             }
           ]
         }

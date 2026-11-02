@@ -717,7 +717,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "ブース概要に「おうちで遊べる持ち帰り謎をご用意（初心者向けから慣れた人向けまで）」とあるが、商品名・価格は不明。HP・X の記載なし。検索（団体名・フランバーズコインの両表記）でも該当ページが見つからなかった。X を見れば取れそう。 X アカウント見つからず（「フランバーズコイン」「Flambeur's Coin」「Flambeur」とナゾトキマーケット関連語のX検索でヒットなし）。 再収集(10/30 Web): Web 検索でフランバーズコインの告知は見つからず。新しい告知なし。 再収集(10/30 X): 「フランバーズコイン」「フラコイ」で X を再検索。団体本人のアカウントは見つからず、告知なし 再収集(11/2 X): @Flambeurs_Coin が「お品書きの修正版を後程」と投稿。品目はまだ分からない。",
+      "notes": "ブース概要に「おうちで遊べる持ち帰り謎をご用意（初心者向けから慣れた人向けまで）」とあるが、商品名・価格は不明。HP・X の記載なし。検索（団体名・フランバーズコインの両表記）でも該当ページが見つからなかった。X を見れば取れそう。  再収集(10/30 Web): Web 検索でフランバーズコインの告知は見つからず。新しい告知なし。 再収集(10/30 X): 「フランバーズコイン」「フラコイ」で X を再検索。団体本人のアカウントは見つからず、告知なし 再収集(11/2 X): @Flambeurs_Coin が「お品書きの修正版を後程」と投稿。品目はまだ分からない。 2026-11-02 @Flambeurs_Coin が「お品書きの修正版を後程アップロード」と投稿。修正版を待って反映する。",
       "officialPatches": [],
       "products": [],
       "candidates": [],
@@ -894,8 +894,8 @@
         {
           "id": "no92-1",
           "name": "RANDOMIZE",
-          "price": null,
-          "priceNote": null,
+          "price": 1000,
+          "priceNote": "ナゾマ直販価格（通常1,200円）",
           "category": "kit",
           "oneLiner": "トリクレット側の新作。試行錯誤して最後の答えを導く、やや難しめの謎",
           "description": "トリクレット側からは新作『RANDOMIZE』を発表いたします！やや難しめですが、試行錯誤して最後の答えを導いてください！",
@@ -917,6 +917,10 @@
             {
               "url": "https://x.com/A9A_porin/status/2111375391038554604",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/A9A_porin/2116379434618163214",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -934,8 +938,8 @@
         {
           "id": "no92-2",
           "name": "デリートノイズ（TRIQLET No.123）",
-          "price": null,
-          "priceNote": null,
+          "price": 2000,
+          "priceNote": "ナゾマ直販価格（通常2,500円）",
           "category": "kit",
           "oneLiner": "ブロックでノイズを消して謎を解く、去年好評だったTRIQLETの謎（60分）",
           "description": "告知に説明文なし（商品名のみ確認）。2025年の紹介: ブロックでノイズを消して謎を解く。",
@@ -964,6 +968,10 @@
             {
               "url": "https://note.com/mild_panda0110/n/n0c94c6b67602",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/A9A_porin/2116379434618163214",
+              "retrievedAt": "2026-11-02"
             }
           ],
           "hashtags": [
@@ -1073,7 +1081,8 @@
           "https://tachikawaakane.booth.pm/"
         ],
         "x": [
-          "https://x.com/fantasistaKKP"
+          "https://x.com/fantasistaKKP",
+          "https://x.com/naz_zole84671"
         ]
       },
       "sources": [
@@ -1106,7 +1115,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式 product.tsv の p01「むしめがね」を patch。立川茜の note と BOOTH 商品ページを確認したが、むしめがね・今回の持ち帰りの言及なし。BOOTH ショップトップ(tachikawaakane.booth.pm)は WebFetch が403で見られなかった。note の記事「ナゾトキマーケット 新作商品のネタバレ解説」(¥300、2025年11月ごろ公開)は有料のため中身未確認。なぞる側の HP・X は見つからず。立川茜の X から取れそう。 X(@fantasistaKKP)を確認: 9/19・10/15の告知「11/7土曜に出展し新作3つを販売（#封入謎 #TAKEFREE謎 #むしめがね謎）」。10/24の投稿で、むしめがねは pixivFANBOX で先行公開、一般販売は11/7のナゾトキマーケットと確認。告知は動画のみ（YouTube は限定公開で内容を読めず）のため、封入謎・TAKEFREE謎の正式タイトル・価格・形式は未確認。商品名はハッシュタグ名で仮置き。なぞる側の X は見つからず。 再収集(10/30 Web): note は再確認したが、むしめがね・封入謎・TAKEFREE謎の記事なし（Hollow ¥500 は既出）。BOOTH ショップトップは今回も403。公式 product.tsv の p01 は500円（公式表の値）。封入謎・TAKEFREE謎の価格は null のまま。新しい告知なし。 再収集(10/30 X): 10/24 以降の新しい告知なし（最新は10/24 の「むしめがね先行公開・一般販売は11/7」の投稿）。封入謎・TAKEFREE謎の価格・正式タイトルは未判明のまま / 画像(10/31 Web): no94-1,no94-2 は BOOTH ショップ非公開・検索で見つからず 画像(11/1 X): no94-1,no94-2 は告知が動画で、商品の画像が見つからず",
+      "notes": "公式 product.tsv の p01「むしめがね」を patch。立川茜の note と BOOTH 商品ページを確認したが、むしめがね・今回の持ち帰りの言及なし。BOOTH ショップトップ(tachikawaakane.booth.pm)は WebFetch が403で見られなかった。note の記事「ナゾトキマーケット 新作商品のネタバレ解説」(¥300、2025年11月ごろ公開)は有料のため中身未確認。なぞる側の HP・X は見つからず。立川茜の X から取れそう。 X(@fantasistaKKP)を確認: 9/19・10/15の告知「11/7土曜に出展し新作3つを販売（#封入謎 #TAKEFREE謎 #むしめがね謎）」。10/24の投稿で、むしめがねは pixivFANBOX で先行公開、一般販売は11/7のナゾトキマーケットと確認。告知は動画のみ（YouTube は限定公開で内容を読めず）のため、封入謎・TAKEFREE謎の正式タイトル・価格・形式は未確認。商品名はハッシュタグ名で仮置き。なぞる側の X は見つからず。 再収集(10/30 Web): note は再確認したが、むしめがね・封入謎・TAKEFREE謎の記事なし（Hollow ¥500 は既出）。BOOTH ショップトップは今回も403。公式 product.tsv の p01 は500円（公式表の値）。封入謎・TAKEFREE謎の価格は null のまま。新しい告知なし。 再収集(10/30 X): 10/24 以降の新しい告知なし（最新は10/24 の「むしめがね先行公開・一般販売は11/7」の投稿）。封入謎・TAKEFREE謎の価格・正式タイトルは未判明のまま / 画像(10/31 Web): no94-1,no94-2 は BOOTH ショップ非公開・検索で見つからず 画像(11/1 X): no94-1,no94-2 は告知が動画で、商品の画像が見つからず 2026-11-02 なぞる（@naz_zole84671）のお品書きから追加。",
       "officialPatches": [
         {
           "id": "p01",
@@ -1259,6 +1268,216 @@
               ]
             }
           ]
+        },
+        {
+          "id": "no94-3",
+          "name": "トライさんかく パズルなぞ",
+          "price": 1000,
+          "priceNote": "税込",
+          "category": "kit",
+          "oneLiner": "切ったり折ったりしながら解く工作パズル謎",
+          "description": "三角形が出てくる謎やパズルを解き明かしていく。切ったり折ったりしていくと最後に何かができる。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "ナゾトキ度 ★2/3 → 2/3×5=3.3 → 3"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no94-4",
+          "name": "ペンパライト",
+          "price": 500,
+          "priceNote": "税込",
+          "category": "booklet",
+          "oneLiner": "パズルにも謎解きにもなる立川茜コラボ小冊子",
+          "description": "なぞるメンバーが作ったライトなパズルを立川茜が謎解きに改造した小冊子。パズルとしても謎解きとしても解ける。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾマ限定",
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no94-5",
+          "name": "４つの問題",
+          "price": 500,
+          "priceNote": "税込",
+          "category": "booklet",
+          "oneLiner": "さまざまなジャンルのパズル4種を解き明かす",
+          "description": "さまざまなジャンルのパズルを4種類用意。全ての問題を解き明かす。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "ナゾトキ度 ★1/3 → 1/3×5=1.7 → 2"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no94-6",
+          "name": "どうぶつシークワーズ",
+          "price": 500,
+          "priceNote": "税込",
+          "category": "booklet",
+          "oneLiner": "描かれた動物の名前を探して線を引くパズル",
+          "description": "たくさん描かれた動物たちの名前を探して線を引く。かわいいパズルが解きたい人向け。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "パズル難易度 ★1/3 → 1/3×5=1.7 → 2"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no94-7",
+          "name": "五十音表パズル",
+          "price": 500,
+          "priceNote": "税込",
+          "category": "booklet",
+          "oneLiner": "五十音表を盤面にした色々なパズル",
+          "description": "五十音表を盤面に、定番から流行のパズルまで色々解く。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "ひらめき度 ★2/3 → 2/3×5=3.3 → 3"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no94-8",
+          "name": "パズル変換謎解き",
+          "price": 500,
+          "priceNote": "税込",
+          "category": "booklet",
+          "oneLiner": "パズルを解いて謎を解く、謎の一部がパズルの作品",
+          "description": "謎解きの一部がパズルになっている。パズルを解いて謎を解く。知識やひらめきがあれば解かなくても解けるかも。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "ナゾトキ度 ★2/3 → 2/3×5=3.3 → 3"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
         }
       ],
       "candidates": [
@@ -1359,7 +1578,8 @@
       ],
       "extraLinks": {
         "x": [
-          "https://x.com/bar_singles"
+          "https://x.com/bar_singles",
+          "https://x.com/naritaquiken"
         ]
       },
       "sources": [
@@ -1380,9 +1600,72 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "ブース概要に商品名なし。HP の記載なし。バー Common bar SINGLES の公式 X(@bar_singles)を見つけた（note のプロフィールより。団体専用のアカウントかは未確認）。note は2024年の店内イベント告知のみで販売物の言及なし。成田高校クイズ研究部は第4回リアル脱出ゲーム甲子園準優勝（検索結果に出た学校の大会報告）まで確認できたが、持ち帰り謎の情報なし。X を見れば取れそう。 X(@bar_singles)を確認: 大阪のバーの公式アカウントで、プロフィール・固定ポストとも古い内容（2020年）。団体本人と確信できず、ナゾトキマーケット告知も見つからず。「シングルズ ナゾトキマーケット」「成田高校クイズ研究部」のX検索でも団体の告知は見つからなかった。商品は取れず。 再収集(10/30 Web): Web 検索で告知なし。新しい告知なし。 再収集(10/30 X): @bar_singles は10/24 以降の検索結果なし。告知なし",
+      "notes": "ブース概要に商品名なし。HP の記載なし。バー Common bar SINGLES の公式 X(@bar_singles)を見つけた（note のプロフィールより。団体専用のアカウントかは未確認）。note は2024年の店内イベント告知のみで販売物の言及なし。成田高校クイズ研究部は第4回リアル脱出ゲーム甲子園準優勝（検索結果に出た学校の大会報告）まで確認できたが、持ち帰り謎の情報なし。X を見れば取れそう。 X(@bar_singles)を確認: 大阪のバーの公式アカウントで、プロフィール・固定ポストとも古い内容（2020年）。団体本人と確信できず、ナゾトキマーケット告知も見つからず。「シングルズ ナゾトキマーケット」「成田高校クイズ研究部」のX検索でも団体の告知は見つからなかった。商品は取れず。 再収集(10/30 Web): Web 検索で告知なし。新しい告知なし。 再収集(10/30 X): @bar_singles は10/24 以降の検索結果なし。告知なし 2026-11-02 成田高校クイズ研究部（@naritaquiken）の告知から追加。「シングルズさんの新作」は品名未確認。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no96-1",
+          "name": "謎解き共通テスト模試(文系)",
+          "price": 500,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "知識でもひらめきでも解ける共通テスト風の謎",
+          "description": "知識でも閃きでも偶然答えが同じになる問題を集めた模試形式の謎。8日（日）のみ出展、現金のみ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWB005sbUAA8Jqa?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naritaquiken/2116820284787589331",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no96-2",
+          "name": "謎解き共通テスト模試(理系)",
+          "price": 500,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "知識でもひらめきでも解ける共通テスト風の謎",
+          "description": "知識でも閃きでも偶然答えが同じになる問題を集めた模試形式の謎。8日（日）のみ出展、現金のみ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWB005sbUAA8Jqa?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/naritaquiken/2116820284787589331",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        }
+      ],
       "candidates": []
     },
     {

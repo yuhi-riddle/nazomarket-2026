@@ -35,6 +35,33 @@
     "width": 680,
     "height": 383
   },
+  "no06-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HWFqLvLakAAvThu?format=jpg&name=small",
+    "left": 0.1029,
+    "right": 0,
+    "top": 0.0706,
+    "bottom": 0,
+    "width": 680,
+    "height": 680
+  },
+  "no06-3": {
+    "imageUrl": "https://pbs.twimg.com/media/HWFqQoWaYAAgUZX?format=jpg&name=small",
+    "left": 0.1088,
+    "right": 0,
+    "top": 0.0529,
+    "bottom": 0,
+    "width": 680,
+    "height": 680
+  },
+  "no06-4": {
+    "imageUrl": "https://pbs.twimg.com/media/HWFqUf9boAA_SSL?format=jpg&name=small",
+    "left": 0.0926,
+    "right": 0,
+    "top": 0.0441,
+    "bottom": 0,
+    "width": 680,
+    "height": 680
+  },
   "no08-1": {
     "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-528x374_webp_4e01b368-5a80-42f8-b4c8-da29f4e5b3ff.webp",
     "left": 0,
@@ -440,6 +467,78 @@
     "width": 620,
     "height": 620
   },
+  "no67-10": {
+    "imageUrl": "https://pbs.twimg.com/media/HV9JqdrbsAAdBkk?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-11": {
+    "imageUrl": "https://pbs.twimg.com/media/HWCCw1zaoAI8pjo?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-12": {
+    "imageUrl": "https://pbs.twimg.com/media/HWCCy7YagAAvvjQ?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-13": {
+    "imageUrl": "https://pbs.twimg.com/media/HWCC175aAAA2QQE?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-14": {
+    "imageUrl": "https://pbs.twimg.com/media/HWCDNSobMAApd_i?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-15": {
+    "imageUrl": "https://pbs.twimg.com/media/HVePYL5a4AEjdvV?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-16": {
+    "imageUrl": "https://pbs.twimg.com/media/HVec62vagAAhK3v?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-17": {
+    "imageUrl": "https://pbs.twimg.com/media/HVerX-7agAAY50d?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
   "no67-2": {
     "imageUrl": "https://booth.pximg.net/c/620x620/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7622846/56a3db13-07a5-4aae-827b-946fb76c9792_base_resized.jpg",
     "left": 0.1,
@@ -448,6 +547,42 @@
     "bottom": 0,
     "width": 620,
     "height": 496
+  },
+  "no67-6": {
+    "imageUrl": "https://pbs.twimg.com/media/HVZUjOubsAAHMXF?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-7": {
+    "imageUrl": "https://pbs.twimg.com/media/HV9JmcOaMAAtFEo?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-8": {
+    "imageUrl": "https://pbs.twimg.com/media/HV9JnNjbQAE5nz8?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
+  },
+  "no67-9": {
+    "imageUrl": "https://pbs.twimg.com/media/HV9Jo3FaoAAB7Rl?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 680,
+    "height": 383
   },
   "no68-1": {
     "imageUrl": "https://pbs.twimg.com/media/HVEScPJbIAA9Py7?format=jpg&name=small",
