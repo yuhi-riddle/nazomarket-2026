@@ -60,6 +60,10 @@ function normalizeProductName(name: string): string {
   return name.normalize("NFKC").toLowerCase().replace(/\s/gu, "");
 }
 
+function quotedTitles(name: string): string[] {
+  return [...name.matchAll(/[『「]([^』」]+)[』」]/gu)].map((match) => normalizeProductName(match[1]));
+}
+
 function preserveKnownValue<T>(current: T, incoming: T | undefined): T {
   return incoming === undefined || (incoming === null && current !== null) ? current : incoming;
 }
@@ -248,6 +252,7 @@ export function buildProducts(input: {
   const productById = new Map<string, Product>();
   const officialIds = new Set<string>();
   const officialNamesByBooth = new Map<string, Map<string, string>>();
+  const officialTitlesByBooth = new Map<string, Map<string, string>>();
   const patchesById = new Map<string, NonNullable<ShardFile["booths"][number]["officialPatches"]>[number][]>();
   const productBoothOrder = new Map(
     [...input.officialBooths]
@@ -291,6 +296,11 @@ export function buildProducts(input: {
       if (!names.has(normalizedName)) names.set(normalizedName, officialProduct.id);
       officialNamesByBooth.set(officialProduct.boothId, names);
     }
+    const titles = officialTitlesByBooth.get(officialProduct.boothId) ?? new Map<string, string>();
+    for (const title of quotedTitles(officialProduct.name)) {
+      if (!titles.has(title)) titles.set(title, officialProduct.id);
+    }
+    officialTitlesByBooth.set(officialProduct.boothId, titles);
   }
 
   for (const shard of input.shards) {
@@ -306,7 +316,9 @@ export function buildProducts(input: {
       for (const shardProduct of shardBooth.products) {
         if (productById.has(shardProduct.id)) throw new Error(`商品 ID が重複しています: ${shardProduct.id}`);
         const normalizedName = normalizeProductName(shardProduct.name);
-        const officialId = normalizedName ? officialNamesByBooth.get(shardBooth.boothId)?.get(normalizedName) : undefined;
+        const officialTitles = officialTitlesByBooth.get(shardBooth.boothId);
+        const officialId = (normalizedName ? officialNamesByBooth.get(shardBooth.boothId)?.get(normalizedName) : undefined)
+          ?? quotedTitles(shardProduct.name).map((title) => officialTitles?.get(title)).find((id) => id !== undefined);
         if (officialId) {
           throw new Error(`公式以外の商品 ${shardProduct.id} は同じ団体の公式商品 ${officialId} と名前が重複しています`);
         }
@@ -325,7 +337,9 @@ export function buildProducts(input: {
   for (const [productId, patches] of patchesById) {
     let product = productById.get(productId);
     if (!product || !officialIds.has(productId)) throw new Error(`存在しない公式商品への追記です: ${productId}`);
-    for (const patch of patches) {
+    let publicId = productId;
+    for (const { keepId, ...patch } of patches) {
+      if (keepId !== undefined) publicId = keepId;
       product = {
         ...product,
         ...patch,
@@ -343,7 +357,13 @@ export function buildProducts(input: {
         sources: uniqueSources([...product.sources, ...(patch.sources ?? [])]),
       };
     }
-    productById.set(productId, product);
+    if (publicId !== productId) {
+      if (productById.has(publicId)) throw new Error(`商品 ID が重複しています: ${publicId}`);
+      productById.delete(productId);
+      officialIds.add(publicId);
+      product = { ...product, id: publicId };
+    }
+    productById.set(publicId, product);
   }
 
   const productsByBooth = new Map<string, Product[]>();

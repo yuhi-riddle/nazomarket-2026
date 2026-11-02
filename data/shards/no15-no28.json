@@ -181,7 +181,7 @@
               "retrievedAt": "2026-10-30"
             },
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             }
           ],
@@ -226,7 +226,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -256,7 +256,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -290,7 +290,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -324,7 +324,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -358,7 +358,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -392,7 +392,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -426,7 +426,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -460,7 +460,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -494,7 +494,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -528,7 +528,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -562,7 +562,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -574,8 +574,8 @@
         {
           "id": "no16-14",
           "name": "鎌倉 まるっと謎さんぽ -裏鎌倉編-",
-          "price": 2300,
-          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+          "price": 2000,
+          "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
           "category": "kit",
           "oneLiner": "なぞたび。シリーズの周遊謎 裏鎌倉編",
           "description": "なぞたび。シリーズの周遊謎 裏鎌倉編。",
@@ -596,7 +596,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -608,8 +608,8 @@
         {
           "id": "no16-15",
           "name": "浅草 まるっと謎さんぽ",
-          "price": 2300,
-          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+          "price": 2000,
+          "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
           "category": "kit",
           "oneLiner": "なぞたび。シリーズの周遊謎 浅草編",
           "description": "なぞたび。シリーズの周遊謎 浅草編。",
@@ -630,7 +630,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -642,8 +642,8 @@
         {
           "id": "no16-16",
           "name": "川越 まるっと謎さんぽ",
-          "price": 2300,
-          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,600円）",
+          "price": 2000,
+          "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
           "category": "kit",
           "oneLiner": "なぞたび。シリーズの周遊謎 川越編",
           "description": "なぞたび。シリーズの周遊謎 川越編。",
@@ -664,7 +664,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -676,8 +676,8 @@
         {
           "id": "no16-13",
           "name": "鎌倉 まるっと謎さんぽ",
-          "price": 2200,
-          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,500円）",
+          "price": 1900,
+          "priceNote": "ナゾマ限定価格（11/2 の商品リスト）",
           "category": "kit",
           "oneLiner": "なぞたび。シリーズの周遊謎 鎌倉編",
           "description": "ノープランで、甘味も古都も潮風も。鎌倉まるっと満喫旅。",
@@ -698,7 +698,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/nazo_rpg/status/2117210115392905340",
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
             },
             {
