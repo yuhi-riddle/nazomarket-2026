@@ -1,0 +1,110 @@
+.catalog-pending-booths {
+  min-width: 0;
+  margin-block-start: var(--space-5);
+}
+
+.catalog-pending-booths-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.catalog-pending-booths-heading h3 {
+  margin: 0;
+}
+
+.catalog-pending-booths-description {
+  margin-block: var(--space-2);
+}
+
+.catalog-pending-booth-list {
+  min-width: 0;
+}
+
+.catalog-pending-booth {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) auto auto minmax(0, 3fr);
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  min-width: 0;
+  padding-block: var(--space-2);
+  border-top: 1px solid var(--line);
+}
+
+.catalog-pending-booth-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.catalog-pending-booth-code,
+.catalog-pending-booth-day {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.catalog-pending-booth-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.catalog-pending-booth-link {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.catalog-pending-booth-map {
+  min-width: 44px;
+  min-height: 44px;
+  white-space: normal;
+}
+
+@media (max-width: 600px) {
+  .catalog-pending-booth {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .catalog-pending-booth-name {
+    grid-column: 1 / -1;
+  }
+
+  .catalog-pending-booth-code {
+    grid-column: 1;
+  }
+
+  .catalog-pending-booth-day {
+    grid-column: 1;
+  }
+
+  .catalog-pending-booth-actions {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .catalog-pending-booth {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .catalog-pending-booth-name,
+  .catalog-pending-booth-code,
+  .catalog-pending-booth-day,
+  .catalog-pending-booth-actions {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .catalog-pending-booth-actions {
+    justify-content: flex-start;
+  }
+}
