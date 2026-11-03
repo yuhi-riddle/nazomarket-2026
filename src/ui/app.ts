@@ -1,8 +1,9 @@
 import { showBoothInCatalog, type TabId, type AppState } from "../state.ts";
 import type { CartItem } from "../logic/cart.ts";
+import { mergeImportedItems, parseListParam } from "../logic/listLink.ts";
 import { captureSharedRoomLink, readSharedRoomCredentials, type SharedRoomCredentials } from "../shared/index.ts";
 import { createStore, type SharedStoreState } from "../store.ts";
-import { campaigns, dataGeneratedAt } from "../data.ts";
+import { campaigns, dataGeneratedAt, productById } from "../data.ts";
 import { countActive, countDueSoon } from "../logic/campaigns.ts";
 import { budgetMeter } from "./budgetMeter.ts";
 import { catalogView } from "./catalogView.ts";
@@ -12,6 +13,7 @@ import { appStartupPlan } from "./appStartup.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import { installGameFx } from "./gameFx.ts";
 import { campaignDialog } from "./campaignDialog.ts";
+import { listImportDialog } from "./listImportDialog.ts";
 import type { SharedListViewOptions } from "./sharedListView.ts";
 
 const tabNames: Record<TabId, string> = {
@@ -81,6 +83,17 @@ function tabFromHash(): TabId | null {
 }
 
 export function app(root: HTMLElement): void {
+  const initialUrl = new URL(window.location.href);
+  const hasListParam = initialUrl.searchParams.has("list");
+  const hasRoomParam = initialUrl.searchParams.has("room");
+  const importedList = hasListParam && !hasRoomParam
+    ? parseListParam(initialUrl.searchParams.get("list"), new Set(productById.keys()))
+    : null;
+  if (hasListParam) {
+    initialUrl.searchParams.delete("list");
+    window.history.replaceState(null, "", initialUrl.pathname + initialUrl.search + initialUrl.hash);
+  }
+
   const sharedApiUrl = configuredSharedApiUrl();
   const initialRoom = captureInitialSharedRoom();
   const store = createStore();
@@ -210,6 +223,7 @@ export function app(root: HTMLElement): void {
     setActive?: (active: boolean) => void;
     selectBooth?: (code: string) => void;
     focusResults?: () => void;
+    focusHeading?: () => void;
   };
   const pages = new Map<TabId, LazyPage>();
   const openMapAtBooth = (code: string) => {
@@ -225,6 +239,14 @@ export function app(root: HTMLElement): void {
   );
   campaignButton.addEventListener("click", campaignsDialog.open);
   campaignsDialog.element.addEventListener("close", updateCampaignButton);
+  const importDialog = importedList === null ? null : listImportDialog(
+    importedList.items,
+    importedList.skipped,
+    (items) => {
+      store.update((state) => ({ ...state, tab: "cart", items: mergeImportedItems(state.items, items) }));
+      pages.get("cart")?.focusHeading?.();
+    },
+  );
   // 締切が過ぎたり日付が変わったりしたら、バッジと開いている一覧を合わせる
   const refreshCampaigns = () => {
     updateCampaignButton();
@@ -271,7 +293,7 @@ export function app(root: HTMLElement): void {
   footer.append(footerText, rights);
   if (officialLink) footer.append(officialLink);
 
-  root.replaceChildren(header, main, meter.element, footer, campaignsDialog.element);
+  root.replaceChildren(header, main, meter.element, footer, campaignsDialog.element, ...(importDialog ? [importDialog.element] : []));
   installGameFx();
 
   const rootStyle = document.documentElement.style;
@@ -391,4 +413,5 @@ export function app(root: HTMLElement): void {
   if (startupPlan.preconnectSharedList) pageFor("cart");
   store.subscribe((state, previous, shared) => render(state, previous, shared));
   render(store.getState());
+  importDialog?.open();
 }

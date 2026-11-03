@@ -1,4 +1,5 @@
 import { catalog, venueLayout } from "../data.ts";
+import { createListShareUrl } from "../logic/listLink.ts";
 import {
   cartTotals,
   daySummary,
@@ -42,6 +43,7 @@ export type CartView = {
   element: HTMLElement;
   sync: (state: AppState, shared?: SharedStoreState | null) => void;
   setActive?: (active: boolean) => void;
+  focusHeading: () => void;
 };
 
 function sameCartItem(a: CartItem | undefined, b: CartItem | undefined): boolean {
@@ -208,6 +210,7 @@ export function cartView(
 ): CartView {
   const page = el("section", "cart-page");
   const heading = el("h2", "section-title", store.isShared() ? "共同リスト" : "個人リスト");
+  heading.tabIndex = -1;
   const shared = sharedOptions ? sharedListView(store, sharedOptions) : null;
 
   const summary = el("section", "today-summary cart-summary");
@@ -288,8 +291,9 @@ export function cartView(
 
   const actions = el("div", "cart-actions");
   const copyButton = button("テキストでコピー", "button button-secondary");
+  const copyLinkButton = button("リンクをコピー", "button button-secondary");
   const clearButton = button("全部外す", "button button-secondary");
-  actions.append(copyButton, clearButton);
+  actions.append(copyButton, copyLinkButton, clearButton);
   const copyStatus = el("p", "cart-copy-status");
   copyStatus.setAttribute("aria-live", "polite");
   const fallbackText = el("textarea", "cart-copy-fallback");
@@ -532,6 +536,7 @@ export function cartView(
   copyButton.addEventListener("click", async () => {
     const text = exportCartText(store.getState().items, catalog);
     fallbackText.value = text;
+    fallbackText.setAttribute("aria-label", "コピーするリストのテキスト");
     try {
       if (!navigator.clipboard?.writeText) throw new Error("Clipboard API unavailable");
       await navigator.clipboard.writeText(text);
@@ -542,6 +547,22 @@ export function cartView(
       fallbackText.focus();
       fallbackText.select();
       copyStatus.textContent = "コピーできませんでした。下のテキストを選択してコピーしてください";
+    }
+  });
+  copyLinkButton.addEventListener("click", async () => {
+    const link = createListShareUrl(window.location.href, store.getState().items);
+    fallbackText.value = link;
+    fallbackText.setAttribute("aria-label", "コピーするリストのリンク");
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error("Clipboard API unavailable");
+      await navigator.clipboard.writeText(link);
+      fallbackText.hidden = true;
+      copyStatus.textContent = "リンクをコピーしました。開いた人は中身を見て自分のリストに追加できます";
+    } catch {
+      fallbackText.hidden = false;
+      fallbackText.focus();
+      fallbackText.select();
+      copyStatus.textContent = "リンクをコピーできませんでした。下のリンクを選択してコピーしてください";
     }
   });
   clearButton.addEventListener("click", () => { clearConfirm.hidden = false; });
@@ -709,5 +730,5 @@ export function cartView(
     }
   };
 
-  return { element: page, sync, ...(shared ? { setActive: shared.setActive } : {}) };
+  return { element: page, sync, focusHeading: () => heading.focus(), ...(shared ? { setActive: shared.setActive } : {}) };
 }

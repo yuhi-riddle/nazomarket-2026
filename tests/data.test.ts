@@ -73,6 +73,9 @@ describe("products.json", () => {
       }
     }
   });
+  it("商品 ID は取り込みリンクの区切り文字を含まない", () => {
+    for (const p of products) expect(p.id).toMatch(/^[A-Za-z0-9-]+$/);
+  });
   it("予約先は https で、名前があり、締切は日本時間の形", () => {
     for (const p of products) {
       for (const r of p.reservations ?? []) {
