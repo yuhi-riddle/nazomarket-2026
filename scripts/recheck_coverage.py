@@ -30,6 +30,8 @@ for b in booths:
     handles = dict.fromkeys(data.get("handles", []))
     if not handles and b["links"]["x"]:
         problems.append((b, "（取得対象なし）", "Xリンクがあるのに取得していない"))
+    elif not handles:
+        problems.append((b, "（取得対象なし）", "Xアカウントが未登録で投稿を読めていない"))
     for h in handles:
         if any(f.lower().startswith(h.lower() + " ") for f in data.get("failed", [])):
             problems.append((b, h, "取得失敗: " + next(f for f in data["failed"] if f.lower().startswith(h.lower() + " "))))

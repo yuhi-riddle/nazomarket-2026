@@ -2208,7 +2208,107 @@
       ],
       "notes": "公式product.tsvに商品なし。公式booth.tsvにHP・Xとも無く、Web検索(F-enigma 大阪公立大学 謎解き 持ち帰り謎)でも公式サイトやアカウントは見つからず、前回(2025)の出展者一覧に名前があるのみ。X を見れば取れそうだが、アカウントは未確認 【Xパス】X検索で @omunazotoki (表示名『F-enigma 大阪公立大学 謎解きイベント制作団体』、2025年のナゾトキマーケット告知も同アカウント)を発見。2026-08-21の投稿に『旧作に加え、新作謎解きグッズも販売予定』とあるが商品名・価格は無し。9月以降の投稿(10/21の白鷺祭公演告知のみ)にナゾトキマーケット2026の商品告知は無く、商品0件。 再収集(10/30 Web): 新しい告知なし(公式ブースページにHP・Xなし、Web検索でも出ない) 再収集(10/30 X): 10/24 以降の @omunazotoki に投稿なし(最新は10/21 の白鷺祭公演告知)。商品の告知は無く商品0件のまま",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no39-1",
+          "name": "マークシートナゾトキ",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+          "description": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/omunazotoki/status/2117512275120861410",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "no39-2",
+          "name": "ベタベタナゾ",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+          "description": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/omunazotoki/status/2117512275120861410",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "no39-3",
+          "name": "サイ能スゴロク",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "F-enigmaの旧作の持ち帰り謎",
+          "description": "F-enigmaの旧作の持ち帰り謎",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/omunazotoki/status/2117512275120861410",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "extraLinks": {
         "x": [

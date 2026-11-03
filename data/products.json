@@ -12339,6 +12339,129 @@
     ]
   },
   {
+    "id": "no39-1",
+    "name": "マークシートナゾトキ",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+    "description": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 15,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/omunazotoki/status/2117512275120861410",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no39",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no39-2",
+    "name": "ベタベタナゾ",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+    "description": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/omunazotoki/status/2117512275120861410",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no39",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no39-3",
+    "name": "サイ能スゴロク",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "F-enigmaの旧作の持ち帰り謎",
+    "description": "F-enigmaの旧作の持ち帰り謎",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 120
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/omunazotoki/status/2117512275120861410",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no39",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "id": "no40-1",
     "name": "怪封記",
     "price": 1000,
@@ -13665,6 +13788,47 @@
     "unconfirmed": [
       "difficulty",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no50-1",
+    "name": "Vote Show the takeout riddle",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "SBGCの持ち帰り謎の中でも骨太で解きごたえのある謎",
+    "description": "SBGCの持ち帰り謎（#TR04）。告知画像にシトラス座のロゴが併記されている。ナゾトキマーケットに向けてヒントを実装した。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★★★★★"
+    },
+    "playMinutes": {
+      "min": 120,
+      "max": null
+    },
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWLQ8qKaMAA0O3g?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/SBGC13/status/2117484519796396178",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no50",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "players",
+      "isNew",
       "payment"
     ]
   },
@@ -16434,7 +16598,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": null,
+    "limited": "数量限定（100個以上の持ち込みを目指して制作中）",
     "days": [
       "sat",
       "sun"
@@ -16460,6 +16624,10 @@
       {
         "url": "https://x.com/nazogatokitai/status/2116444688484008033",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/pintoLab/status/2117526037773127864",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "boothId": "no70",

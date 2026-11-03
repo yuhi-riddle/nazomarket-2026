@@ -2861,7 +2861,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": null,
+          "limited": "数量限定（100個以上の持ち込みを目指して制作中）",
           "days": [
             "sat",
             "sun"
@@ -2887,6 +2887,10 @@
             {
               "url": "https://x.com/nazogatokitai/status/2116444688484008033",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/pintoLab/status/2117526037773127864",
+              "retrievedAt": "2026-11-03"
             }
           ]
         }
