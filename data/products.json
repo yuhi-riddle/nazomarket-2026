@@ -11801,24 +11801,27 @@
     },
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "ナゾトキマーケットからリニューアル版を販売開始（謎の内容・答えは変更なし）",
     "days": [
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HWMPaItaAAAaX-7?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/JOKer_Project_/status/2117568720788680926",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "boothId": "no35",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -14783,6 +14786,172 @@
       "playMinutes",
       "players",
       "payment"
+    ]
+  },
+  {
+    "id": "no62-1",
+    "name": "ツナゲバ",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "site：Arcanaの新作持ち帰り謎",
+    "description": "site：Arcanaの新作持ち帰り謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 50,
+      "max": 120
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/site_Arcana/status/2117572503040344122",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no62",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no62-2",
+    "name": "魔導士アルカナの大預言",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "タロットカードをモチーフにした謎解き",
+    "description": "タロットカードをモチーフにした謎解き。プレイにはLINEアプリが必要。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★6/10（10段階）"
+    },
+    "playMinutes": {
+      "min": 45,
+      "max": 100
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWMg0CPa0AAUzU6?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/site_Arcana/status/2117572503715651993",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no62",
+    "hashtags": [],
+    "unconfirmed": [
+      "players"
+    ]
+  },
+  {
+    "id": "no62-3",
+    "name": "物語交換録 ー藁で掴む長者伝説ー",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "昨年度の学園祭の学内周遊を持ち帰り謎でも楽しめるようにした作品",
+    "description": "昨年度の学園祭で販売した学内周遊を持ち帰り謎でも楽しめるようにした。謎の内容は昨年度と同じ。プレイにはLINEアプリが必要。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★6/10（10段階）"
+    },
+    "playMinutes": {
+      "min": 50,
+      "max": 90
+    },
+    "players": null,
+    "isNew": false,
+    "limited": "再販",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWMg0CdbwAAsIBg?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/site_Arcana/status/2117572504055349449",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no62",
+    "hashtags": [],
+    "unconfirmed": [
+      "players"
+    ]
+  },
+  {
+    "id": "no62-4",
+    "name": "新作セット（ツナゲバ＋魔導士アルカナの大預言）",
+    "price": 2300,
+    "priceNote": "セット価格（通常2,500円）",
+    "category": "kit",
+    "oneLiner": "新作2作品を同時に買うとお得なセット",
+    "description": "『ツナゲバ』と『魔導士アルカナの大預言』を同時に購入する場合の価格。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWMg0CLaoAAUQWt?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/site_Arcana/status/2117572503040344122",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no62",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew"
     ]
   },
   {
