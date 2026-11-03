@@ -1435,6 +1435,36 @@
               "retrievedAt": "2026-11-02"
             }
           ]
+        },
+        {
+          "id": "no75-13",
+          "name": "体験型エンタメガイド",
+          "price": null,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "エレメンツが販売する体験型エンタメの同人誌",
+          "description": "エレメンツの同人誌。ナゾトキマーケット2026では「ARGガイド」とあわせて販売する。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/ele_jun/status/2117444150945558992",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
         }
       ],
       "candidates": [

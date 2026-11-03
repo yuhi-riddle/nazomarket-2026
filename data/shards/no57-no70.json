@@ -78,20 +78,27 @@
           "category": "booklet",
           "oneLiner": "4つのキューブを置くだけで解く、新感覚のパズルブック",
           "difficulty": {
-            "level": 3,
-            "source": "estimated",
-            "basis": "公式説明に「ひらめかないと一筋縄では解けないものも」「友達や家族とわいわい」とあり標準的と推定"
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★★☆☆☆"
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 40,
+            "max": null
+          },
           "players": "1人でも複数人でも",
-          "limited": null,
+          "limited": "昨年完売作のパッケージ新装版（謎と内容物は過去に販売したものと同じ）",
           "sources": [
             {
               "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazone2019/status/2117251124927574066",
+              "retrievedAt": "2026-11-03"
             }
           ],
-          "isNew": true
+          "isNew": false
         }
       ],
       "products": [],

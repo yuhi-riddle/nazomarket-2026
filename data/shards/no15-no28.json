@@ -934,6 +934,10 @@
             {
               "url": "https://x.com/NAZOGUMI/status/2116470242780012734",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "reservations": [
@@ -942,6 +946,12 @@
               "url": "https://fsc0.short.gy/mTlFo9",
               "endsAt": "2026-11-05T23:59"
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
           ]
         },
         {
@@ -980,6 +990,10 @@
             {
               "url": "https://x.com/NAZOGUMI/status/2116470242780012734",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "reservations": [
@@ -988,6 +1002,12 @@
               "url": "https://fsc0.short.gy/mTlFo9",
               "endsAt": "2026-11-05T23:59"
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
           ]
         },
         {
@@ -1026,6 +1046,10 @@
             {
               "url": "https://x.com/NAZOGUMI/status/2116470242780012734",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "reservations": [
@@ -1034,6 +1058,12 @@
               "url": "https://fsc0.short.gy/mTlFo9",
               "endsAt": "2026-11-05T23:59"
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
           ]
         }
       ],
@@ -1063,7 +1093,12 @@
             "sun"
           ],
           "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2018/10/p82.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
@@ -1072,6 +1107,10 @@
             {
               "url": "https://nazotoki-project.com/event/project82/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
@@ -1100,7 +1139,12 @@
             "sun"
           ],
           "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2019/10/ml2_banner_1280x1000.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
@@ -1109,6 +1153,10 @@
             {
               "url": "https://nazotoki-project.com/event/project90/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
@@ -1137,7 +1185,12 @@
             "sun"
           ],
           "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2021/09/8b865d4dab818549c58bf5f4be35de22.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
@@ -1146,6 +1199,10 @@
             {
               "url": "https://nazotoki-project.com/event/project105/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
@@ -1174,7 +1231,12 @@
             "sun"
           ],
           "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/03/3a1e123bebe07d42e19e11374d65fa1f.jpeg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
@@ -1183,6 +1245,10 @@
             {
               "url": "https://nazotoki-project.com/event/project124/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
@@ -1211,7 +1277,12 @@
             "sun"
           ],
           "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2024/02/yurimoriblog.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
@@ -1220,6 +1291,10 @@
             {
               "url": "https://nazotoki-project.com/event/project122/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
@@ -1248,7 +1323,12 @@
             "sun"
           ],
           "imageUrl": "https://nazotoki-project.com/wp-content/uploads/2025/12/book_main_strong_3bg.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NAZOGUMI/status/2116107851978715306",
@@ -1257,6 +1337,10 @@
             {
               "url": "https://nazotoki-project.com/event/project132/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NAZOGUMI/status/2117451704861905002",
+              "retrievedAt": "2026-11-03"
             }
           ]
         }
@@ -2842,8 +2926,8 @@
         {
           "id": "no25-1",
           "name": "焼肉謎 -タン編-",
-          "price": null,
-          "priceNote": "通販価格は謎のみ800円・通常版1,500円(公式ショップ。10/25 時点の「アクキー付き1,500円」は、10/30 に見たショップページでは「通常版」の表記)。ナゾマでの価格・仕様は告知なし",
+          "price": 800,
+          "priceNote": "謎のみ800円、アクキー付1,500円（税込）。選べる3種盛り・全部位盛りのセットもあり（セット価格は告知なし）",
           "category": "kit",
           "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
           "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
@@ -2874,14 +2958,18 @@
             {
               "url": "https://www.tanteijelly.com/product/yakinikunazo-tan/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tanteijelly/status/2117451703284871362",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
         {
           "id": "no25-2",
           "name": "焼肉謎 -カルビ編-",
-          "price": null,
-          "priceNote": "通販価格は謎のみ800円・通常版1,500円(公式ショップ。10/25 時点の「アクキー付き1,500円」は、10/30 に見たショップページでは「通常版」の表記)。ナゾマでの価格・仕様は告知なし",
+          "price": 800,
+          "priceNote": "謎のみ800円、アクキー付1,500円（税込）。選べる3種盛り・全部位盛りのセットもあり（セット価格は告知なし）",
           "category": "kit",
           "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
           "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
@@ -2912,14 +3000,18 @@
             {
               "url": "https://www.tanteijelly.com/product/yakinikunazo-karubi/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tanteijelly/status/2117451703284871362",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
         {
           "id": "no25-3",
           "name": "焼肉謎 -ロース編-",
-          "price": null,
-          "priceNote": "通販価格は謎のみ800円・通常版1,500円(公式ショップ。10/25 時点の「アクキー付き1,500円」は、10/30 に見たショップページでは「通常版」の表記)。ナゾマでの価格・仕様は告知なし",
+          "price": 800,
+          "priceNote": "謎のみ800円、アクキー付1,500円（税込）。選べる3種盛り・全部位盛りのセットもあり（セット価格は告知なし）",
           "category": "kit",
           "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
           "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
@@ -2950,14 +3042,18 @@
             {
               "url": "https://www.tanteijelly.com/product/yakinikunazo-rosu/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tanteijelly/status/2117451703284871362",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
         {
           "id": "no25-4",
           "name": "焼肉謎 -ホルモン編-",
-          "price": null,
-          "priceNote": "通販価格は謎のみ800円・通常版1,500円(公式ショップ。10/25 時点の「アクキー付き1,500円」は、10/30 に見たショップページでは「通常版」の表記)。ナゾマでの価格・仕様は告知なし",
+          "price": 800,
+          "priceNote": "謎のみ800円、アクキー付1,500円（税込）。選べる3種盛り・全部位盛りのセットもあり（セット価格は告知なし）",
           "category": "kit",
           "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
           "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
@@ -2988,14 +3084,18 @@
             {
               "url": "https://www.tanteijelly.com/product/yakinikunazo-horumon/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tanteijelly/status/2117451703284871362",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
         {
           "id": "no25-5",
           "name": "焼肉謎 -レバー編-",
-          "price": null,
-          "priceNote": "通販価格は謎のみ800円・通常版1,500円(公式ショップ。10/25 時点の「アクキー付き1,500円」は、10/30 に見たショップページでは「通常版」の表記)。ナゾマでの価格・仕様は告知なし",
+          "price": 800,
+          "priceNote": "謎のみ800円、アクキー付1,500円（税込）。選べる3種盛り・全部位盛りのセットもあり（セット価格は告知なし）",
           "category": "kit",
           "oneLiner": "焼肉を焼くように謎を解いていく「焼肉謎」シリーズの1作",
           "description": "肉(なぞ)を焼(と)き、物語を味わう。肉を“焼く”ように、謎を“解いていく”体験を楽しめる焼肉謎シリーズ(全5種: タン/カルビ/ロース/ホルモン/レバー)の1作。",
@@ -3026,6 +3126,10 @@
             {
               "url": "https://www.tanteijelly.com/product/yakinikunazo-reba/",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tanteijelly/status/2117451703284871362",
+              "retrievedAt": "2026-11-03"
             }
           ]
         }

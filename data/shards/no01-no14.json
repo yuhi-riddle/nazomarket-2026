@@ -2058,11 +2058,15 @@
             {
               "url": "https://x.com/tokiqil/status/2116877610496176220",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2117444491842068906",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "reservations": [
             {
-              "label": "取り置き予約（受け取りは両日17時まで）",
+              "label": "取り置き予約（11/3時点で残り5点・受け取りは両日17時まで）",
               "url": "https://x.gd/HkhHj",
               "endsAt": null
             }
@@ -2365,12 +2369,16 @@
             {
               "url": "https://x.com/tokiqil/status/2116877610496176220",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2117444491842068906",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "id": "no04-9",
           "reservations": [
             {
-              "label": "取り置き予約（受け取りは両日17時まで）",
+              "label": "取り置き予約（11/3時点で残り10点・受け取りは両日17時まで）",
               "url": "https://x.gd/HkhHj",
               "endsAt": null
             }

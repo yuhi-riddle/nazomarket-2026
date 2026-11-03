@@ -929,5 +929,47 @@
         "retrievedAt": "2026-11-02"
       }
     ]
+  },
+  {
+    "id": "no54-c1",
+    "boothId": "no54",
+    "productIds": [
+      "p46"
+    ],
+    "kind": "bonus",
+    "title": "『World Hitchhiker』購入でステッカー",
+    "detail": "ナゾトキマーケット限定の購入特典としてビジュアルステッカーが付く",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117451700013617626",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "no75-c1",
+    "boothId": "no75",
+    "productIds": [],
+    "kind": "other",
+    "title": "『その日、偶像の影をひろった』新版を無料でテストプレイ",
+    "detail": "ブラウザで遊ぶスマートフォン探索ゲームの新版テストプレイ（期間限定・人数限定）。参加用QRコード入りのチラシを当日配布",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "人数限定",
+    "sources": [
+      {
+        "url": "https://x.com/ele_jun/status/2117444150945558992",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
   }
 ]
