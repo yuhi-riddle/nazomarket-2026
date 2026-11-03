@@ -911,10 +911,49 @@
         "x"
       ],
       "sources": [],
-      "notes": "HPなし。公式ブース概要は団体紹介のみで商品情報なし。Web検索（SBGC／はまぞう／TUNNEL TOKYO／代表作名の組み合わせ2回）で該当なし。Xで確認する必要あり。 X アカウント見つからず（「SBGC」の投稿・アカウント検索で団体本人と確信できるアカウントが無く、2026-09以降の告知も見つからず）。 再収集(10/30 Web): 検索で新しい告知は見つからなかった。 再収集(10/30 X): X アカウントが特定できず、「SBGC ナゾトキマーケット」の検索でも該当なし。",
+      "notes": "HPなし。公式ブース概要は団体紹介のみで商品情報なし。公式リンクにXの記載がないため、Xは @SBGC13 を別途指定。",
       "officialPatches": [],
-      "products": [],
-      "candidates": []
+      "products": [
+        {
+          "id": "no50-1",
+          "name": "Vote Show the takeout riddle",
+          "price": null,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "SBGCの持ち帰り謎の中でも骨太で解きごたえのある謎",
+          "description": "SBGCの持ち帰り謎（#TR04）。告知画像にシトラス座のロゴが併記されている。ナゾトキマーケットに向けてヒントを実装した。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 ★★★★★"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWLQ8qKaMAA0O3g?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/SBGC13/status/2117484519796396178",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        }
+      ],
+      "candidates": [],
+      "extraLinks": {
+        "x": [
+          "https://x.com/SBGC13"
+        ]
+      }
     },
     {
       "boothId": "no51",
