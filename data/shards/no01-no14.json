@@ -1803,7 +1803,7 @@
           "id": "no03-1",
           "name": "リドラコレクション",
           "price": 14000,
-          "priceNote": "限定価格。10/28〜29のリドラの配信で発表されたと伝える参加者の投稿（6件）による。団体の文字の告知は未確認",
+          "priceNote": "ナゾマ限定価格（税込）",
           "category": "kit",
           "oneLiner": "9人のクリエイターが作った9つの別々の謎解きが入った箱入りの新作",
           "description": "9つの世界を、解き尽くせ。『リドラコレクション』 9人のクリエイターが贈る、全く異なる9つの謎解きが登場。",
@@ -1812,10 +1812,13 @@
             "source": "unknown",
             "basis": null
           },
-          "playMinutes": null,
+          "playMinutes": {
+            "min": 600,
+            "max": 1080
+          },
           "players": null,
           "isNew": true,
-          "limited": "最速先行販売(ナゾトキマーケット2026)",
+          "limited": "最速先行販売(ナゾトキマーケット2026)。初版限定で全9種を収める豪華BOX付き",
           "days": [
             "sat",
             "sun"
@@ -1866,6 +1869,10 @@
             {
               "url": "https://x.com/RIDDLER_nazo/status/2116470232684306858",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2117557399976542218",
+              "retrievedAt": "2026-11-03"
             }
           ],
           "hashtags": [
@@ -2088,7 +2095,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "限定40部",
+          "limited": "限定40部（取り置きは締切。当日分は初日15部、2日目5部ほどを先着順）",
           "days": [
             "sat",
             "sun"
@@ -2099,6 +2106,10 @@
             {
               "url": "https://x.com/tokiqil/status/2116489752547619044",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116773362835833312",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
@@ -3757,6 +3768,36 @@
             }
           ],
           "id": "no11-2"
+        },
+        {
+          "id": "no11-3",
+          "name": "ミステリーポットラック -YAMINABE-",
+          "price": 2500,
+          "priceNote": "税込",
+          "category": "kit",
+          "oneLiner": "実際に「鍋」から「謎」を引いて解き進める持ち帰り謎",
+          "description": "ちょっと不思議なサービスを頼んだあなたに届いた、謎めいた「鍋」。鍋から謎を引いて解き進め、鍋の正体を突き止める。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット2026で先行販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWLG-YEaYAAg76f?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2117549851189657666",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
         }
       ],
       "candidates": [],

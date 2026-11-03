@@ -266,6 +266,39 @@
               "retrievedAt": "2026-11-02"
             }
           ]
+        },
+        {
+          "id": "no59-4",
+          "name": "掛け抜けろ！謎掛けラビリンス",
+          "price": 800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "「この持ち帰り謎」とかけて「手詰まり」ととく、かつてない持ち帰り謎",
+          "description": "「この持ち帰り謎」とかけて、「手詰まり」ととく。どちらも『かつてない』でしょう。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★★★★☆"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV-etTTa4AAr3D-?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2117542305909625179",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
         }
       ],
       "candidates": [

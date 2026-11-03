@@ -2050,7 +2050,7 @@
     "id": "no03-1",
     "name": "リドラコレクション",
     "price": 14000,
-    "priceNote": "限定価格。10/28〜29のリドラの配信で発表されたと伝える参加者の投稿（6件）による。団体の文字の告知は未確認",
+    "priceNote": "ナゾマ限定価格（税込）",
     "category": "kit",
     "oneLiner": "9人のクリエイターが作った9つの別々の謎解きが入った箱入りの新作",
     "description": "9つの世界を、解き尽くせ。『リドラコレクション』 9人のクリエイターが贈る、全く異なる9つの謎解きが登場。",
@@ -2059,10 +2059,13 @@
       "source": "unknown",
       "basis": null
     },
-    "playMinutes": null,
+    "playMinutes": {
+      "min": 600,
+      "max": 1080
+    },
     "players": null,
     "isNew": true,
-    "limited": "最速先行販売(ナゾトキマーケット2026)",
+    "limited": "最速先行販売(ナゾトキマーケット2026)。初版限定で全9種を収める豪華BOX付き",
     "days": [
       "sat",
       "sun"
@@ -2113,6 +2116,10 @@
       {
         "url": "https://x.com/RIDDLER_nazo/status/2116470232684306858",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2117557399976542218",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "hashtags": [
@@ -2141,7 +2148,6 @@
     "boothId": "no03",
     "unconfirmed": [
       "difficulty",
-      "playMinutes",
       "players",
       "payment"
     ]
@@ -2262,7 +2268,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "限定40部",
+    "limited": "限定40部（取り置きは締切。当日分は初日15部、2日目5部ほどを先着順）",
     "days": [
       "sat",
       "sun"
@@ -2273,6 +2279,10 @@
       {
         "url": "https://x.com/tokiqil/status/2116489752547619044",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116773362835833312",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "boothId": "no04",
@@ -3685,6 +3695,44 @@
       "playMinutes",
       "players",
       "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no11-3",
+    "name": "ミステリーポットラック -YAMINABE-",
+    "price": 2500,
+    "priceNote": "税込",
+    "category": "kit",
+    "oneLiner": "実際に「鍋」から「謎」を引いて解き進める持ち帰り謎",
+    "description": "ちょっと不思議なサービスを頼んだあなたに届いた、謎めいた「鍋」。鍋から謎を引いて解き進め、鍋の正体を突き止める。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケット2026で先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWLG-YEaYAAg76f?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/efex_info/status/2117549851189657666",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no11",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
       "payment"
     ]
   },
@@ -11537,6 +11585,122 @@
     ]
   },
   {
+    "id": "no33-1",
+    "name": "ピタッと！リドル",
+    "price": 1200,
+    "priceNote": "ナゾマ価格",
+    "category": "kit",
+    "oneLiner": "枠の中にジャンルに沿ったものをピタッと入れていく謎解き",
+    "description": "ルールは枠の中にジャンルに沿ったものを入れていくだけ。解ける人にはスルスル解け、解けない人には解けない。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾマ先行販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWMC6gfbUAAYcU-?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazotoki_adv/status/2117539460477034529",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no33",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no33-2",
+    "name": "ヒラメキ電球シリーズ LIGHT",
+    "price": 2200,
+    "priceNote": "ナゾマ価格",
+    "category": "kit",
+    "oneLiner": "電球をテーマにした、電球パッケージの持ち帰り謎",
+    "description": "家電屋さんで見つけた気になる電球を買って帰り、箱を開けると物語が始まる。2026年10月発売で、販売は2会場のみ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWMDhZ2aoAAbkeY?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazotoki_adv/status/2117540127912460365",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no33",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no33-3",
+    "name": "100円謎解き",
+    "price": 100,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "昨年話題となった100円の謎解き",
+    "description": "昨年話題となった100円謎解きを今年も販売する。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazotoki_adv/status/2117540595363455289",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no33",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "name": "謎付き“あの”おみくじ",
     "price": 500,
     "priceNote": null,
@@ -14051,6 +14215,45 @@
     ]
   },
   {
+    "id": "no54-2",
+    "name": "時間割泥棒 トルノダーからの脱出",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎の生物トルノダーから時間割を取り返す謎解き",
+    "description": "時間割が奪われ、授業が受けられなくなってしまう。謎の生物「トルノダー」から時間割を取り戻す。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "初版購入特典としてホログラムステッカー付き",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWLC0z_bUAAUsIu?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117542315430473850",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no54",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
     "id": "no55-1",
     "name": "Nuts",
     "price": 80000,
@@ -14448,6 +14651,45 @@
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2117179908984295901",
         "retrievedAt": "2026-11-02"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-4",
+    "name": "掛け抜けろ！謎掛けラビリンス",
+    "price": 800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "「この持ち帰り謎」とかけて「手詰まり」ととく、かつてない持ち帰り謎",
+    "description": "「この持ち帰り謎」とかけて、「手詰まり」ととく。どちらも『かつてない』でしょう。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★★★★☆"
+    },
+    "playMinutes": {
+      "min": 120,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HV-etTTa4AAr3D-?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2117542305909625179",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "boothId": "no59",
@@ -17212,6 +17454,45 @@
     "boothId": "no73",
     "hashtags": [],
     "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no74-1",
+    "name": "十六夜絵図 - イザヨイエズ -",
+    "price": null,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "カードを組み合わせて地図を繋げていく持ち帰り謎",
+    "description": "ある町に伝わる都市伝説『十六夜絵図』。謎を解き、カードを組み合わせ、地図を繋げていくと隠された真相が少しずつ姿を現す。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWMNatvbYAAtlBd?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/NaZO_LAB/status/2117553923691360303",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no74",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
       "difficulty",
       "playMinutes",
       "players",
