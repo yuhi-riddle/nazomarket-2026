@@ -1,0 +1,50 @@
+.list-import-dialog {
+  box-sizing: border-box;
+  width: min(38rem, calc(100vw - 2rem));
+  max-width: calc(100vw - 2rem);
+  max-height: min(88vh, 48rem);
+  overflow: hidden;
+}
+
+.list-import-dialog-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: min(88vh, 48rem);
+  overflow: hidden;
+}
+
+.list-import-dialog-summary,
+.list-import-dialog-empty,
+.list-import-dialog-note {
+  flex: 0 0 auto;
+}
+
+.list-import-dialog-list {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 0.5rem;
+  min-height: 0;
+  max-height: min(50vh, 32rem);
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  overscroll-behavior: contain;
+}
+
+.list-import-dialog-item {
+  overflow-wrap: anywhere;
+}
+
+.list-import-dialog-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.list-import-dialog-actions .button,
+.list-import-dialog-content > .button {
+  min-height: 44px;
+}
