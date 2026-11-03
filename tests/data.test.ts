@@ -146,11 +146,24 @@ describe("campaigns.json", () => {
   });
   it("種類・締切・日の値が決まった形で、出典がある", () => {
     for (const c of campaigns) {
-      expect(["bonus", "giveaway", "discount", "other"], c.id).toContain(c.kind);
+      expect(["bonus", "giveaway", "discount", "reservation", "other"], c.id).toContain(c.kind);
       if (c.endsAt !== null) expect(c.endsAt, c.id).toMatch(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?$/);
       for (const d of c.days) expect(["sat", "sun"], c.id).toContain(d);
       expect(c.sources.length, c.id).toBeGreaterThan(0);
       for (const s of c.sources) expect(s.retrievedAt, c.id).toMatch(DATE_RE);
+    }
+  });
+  it("Xの出典は投稿を開けるURLの形になっている", () => {
+    for (const item of [...products, ...campaigns]) {
+      for (const s of item.sources) {
+        expect(s.url, item.id).not.toMatch(/^https:\/\/(x|twitter)\.com\/[^/]+\/\d+/);
+      }
+    }
+  });
+  it("予約リンクのある商品は、予約・取り置きのキャンペーンにも載っている", () => {
+    const listed = new Set(campaigns.filter((c) => c.kind === "reservation").flatMap((c) => c.productIds));
+    for (const p of products) {
+      if (p.reservations?.length) expect(listed.has(p.id), p.id).toBe(true);
     }
   });
   it("一言は30字以内で、空でない", () => {

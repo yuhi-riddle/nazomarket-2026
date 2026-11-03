@@ -1,5 +1,6 @@
 import { boothById, campaigns, productById, products } from "../data.ts";
 import { countByKind, deadlineLabel, filterActiveByKind, listActiveCampaigns, type CampaignFilter } from "../logic/campaigns.ts";
+import { reservationLinks } from "../logic/reservations.ts";
 import type { Campaign, Day } from "../types.ts";
 import { button, el, safeExternalLink } from "./dom.ts";
 import "./campaign.css";
@@ -8,6 +9,7 @@ const kindNames: Record<Campaign["kind"], string> = {
   bonus: "購入特典",
   giveaway: "抽選・プレゼント",
   discount: "割引",
+  reservation: "予約・取り置き",
   other: "その他",
 };
 
@@ -71,18 +73,26 @@ export function campaignDialog(
     }
     article.append(organization);
 
-    const productNames = campaign.productIds.flatMap((id) => {
+    const targets = campaign.productIds.flatMap((id) => {
       const product = productById.get(id);
-      return product ? [product.name] : [];
+      return product ? [product] : [];
     });
-    if (productNames.length) article.append(el("p", "campaign-meta", "対象：" + productNames.join("、")));
+    if (targets.length) article.append(el("p", "campaign-meta", "対象：" + targets.map((product) => product.name).join("、")));
     if (campaign.days.length) {
       article.append(el("p", "campaign-meta", "受けられる日：" + campaign.days.map((day) => dayNames[day]).join("・") + " 会場"));
     }
     if (campaign.limit) article.append(el("p", "campaign-meta", "数量・人数：" + campaign.limit));
 
-    if (campaign.sources.length) {
+    const reservations = campaign.kind === "reservation" ? reservationLinks(targets, now) : [];
+    if (campaign.sources.length || reservations.length) {
       const sources = el("div", "campaign-sources");
+      for (const reservation of reservations) {
+        const link = safeExternalLink(reservation.url, reservation.label, "campaign-source-link");
+        if (link) {
+          link.setAttribute("aria-label", `${organizationName}の${reservation.label}（新しいタブで開く）`);
+          sources.append(link);
+        }
+      }
       campaign.sources.forEach((source, index) => {
         const label = campaign.sources.length === 1 ? "告知を見る" : `告知を見る ${index + 1}`;
         const link = safeExternalLink(source.url, label, "campaign-source-link");
@@ -115,7 +125,7 @@ export function campaignDialog(
     active.withDeadline.map((campaign) => campaign.id + ":" + deadlineLabel(campaign.endsAt!, now).remaining)
       .concat(active.noDeadline.map((campaign) => campaign.id)).join("|");
 
-  const filterOptions: CampaignFilter[] = ["all", "bonus", "giveaway", "discount", "other"];
+  const filterOptions: CampaignFilter[] = ["all", "bonus", "giveaway", "discount", "reservation", "other"];
   const filterButtons = filterOptions.map((filter) => {
     const control = button("", "button button-secondary campaign-filter-button");
     control.setAttribute("aria-pressed", "false");

@@ -107,7 +107,7 @@ describe("種類での絞り込み", () => {
   });
 
   it("受付中のものを種類ごとに数える（0件の種類も0で返す）", () => {
-    expect(countByKind(active)).toEqual({ all: 4, bonus: 1, giveaway: 2, discount: 1, other: 0 });
+    expect(countByKind(active)).toEqual({ all: 4, bonus: 1, giveaway: 2, discount: 1, reservation: 0, other: 0 });
   });
 });
 
