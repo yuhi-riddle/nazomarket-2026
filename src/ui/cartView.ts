@@ -16,6 +16,7 @@ import type { AppState } from "../state.ts";
 import type { AppStore, SharedStoreState } from "../store.ts";
 import { button, el } from "./dom.ts";
 import { productDialog } from "./productDialog.ts";
+import { productMedia } from "./productMedia.ts";
 import { sharedListView, type SharedListView, type SharedListViewOptions } from "./sharedListView.ts";
 import { celebrateGet } from "./gameFx.ts";
 
@@ -78,12 +79,16 @@ function cartRow(
   boughtLabel.append(checkbox, el("span", "", "買えた"));
 
   const description = el("div", "today-item-description cart-row-main");
+  const media = productMedia(view.product);
+  media.classList.add("cart-row-thumb");
+  const copy = el("div", "cart-row-copy");
   const name = button(view.product.name, "cart-product-name today-item-name");
   name.addEventListener("click", () => openDetails(view));
   const getBadge = el("span", "cart-get-badge", "GET!");
   getBadge.hidden = true;
   const amount = el("span", "today-item-amount cart-price");
-  description.append(name, getBadge, amount);
+  copy.append(name, getBadge, amount);
+  description.append(media, copy);
   const status = el("span", "today-item-status");
   const controls = el("div", "today-item-controls cart-row-controls");
   const ownerSelect = el("select", "text-input shared-owner-select");

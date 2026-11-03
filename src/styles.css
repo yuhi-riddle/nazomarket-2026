@@ -1475,6 +1475,31 @@ a {
 
 .cart-row-main {
   min-width: 0;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.product-media.cart-row-thumb {
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  min-height: 64px;
+  aspect-ratio: 1;
+  border-radius: var(--radius-control);
+}
+
+.cart-row-thumb .image-fallback {
+  padding: 4px;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.cart-row-copy {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .cart-product-name {
