@@ -1161,7 +1161,98 @@
       ],
       "notes": "公式booth.tsvにHP無し。Web検索で公式サイト(nazoad.com)を発見。ニュース1ページ目(2026-02-28〜10-21)にナゾトキマーケット2026の告知は無く、今回の持ち込み商品は確認できず。ブース概要の『前回発売した100円謎解き』は2025年の品で候補止まり。ナゾアドSTORES(nazoad.stores.jp)はHTTP 403で見られず。Xアカウントは未確認だが、X を見れば取れる可能性あり 【Xパス】公式アカウントは @nazotoki_adv (表示名『ナゾトキアドベンチャー』、2025年のナゾトキマーケット告知も同アカウント)。2026年9月以降の投稿に『ナゾトキマーケット2026』向けの告知は無し(最新は10/21の大阪公演の告知)。新作持ち帰り謎『LIGHT』(2,000円)はゲームマーケット2026秋(10/17-18)での先行・特別価格・個数限定販売で、ナゾトキマーケットで売るとは書いていないため候補止まり。 再収集(10/30 Web): 新しい告知なし(ニュースの最新は10/21の大阪公演キャンペーン、ナゾトキマーケット・LIGHTの記述なし。STORESは前回に続き未確認) 再収集(10/30 X): 10/24 以降の @nazotoki_adv にナゾトキマーケット向けの告知なし(10/27 大阪公演・10/28 幕張謎解迷宮の告知のみ)。候補は前回のまま",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no33-1",
+          "name": "ピタッと！リドル",
+          "price": 1200,
+          "priceNote": "ナゾマ価格",
+          "category": "kit",
+          "oneLiner": "枠の中にジャンルに沿ったものをピタッと入れていく謎解き",
+          "description": "ルールは枠の中にジャンルに沿ったものを入れていくだけ。解ける人にはスルスル解け、解けない人には解けない。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾマ先行販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMC6gfbUAAYcU-?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazotoki_adv/status/2117539460477034529",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "no33-2",
+          "name": "ヒラメキ電球シリーズ LIGHT",
+          "price": 2200,
+          "priceNote": "ナゾマ価格",
+          "category": "kit",
+          "oneLiner": "電球をテーマにした、電球パッケージの持ち帰り謎",
+          "description": "家電屋さんで見つけた気になる電球を買って帰り、箱を開けると物語が始まる。2026年10月発売で、販売は2会場のみ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMDhZ2aoAAbkeY?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazotoki_adv/status/2117540127912460365",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "no33-3",
+          "name": "100円謎解き",
+          "price": 100,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "昨年話題となった100円の謎解き",
+          "description": "昨年話題となった100円謎解きを今年も販売する。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazotoki_adv/status/2117540595363455289",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "100円謎解き",

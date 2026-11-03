@@ -728,7 +728,38 @@
       ],
       "notes": "公式ブース概要に『今年もナゾトキマーケットで新作持ち帰り謎を発売』とあるが、題名・価格はHP・BOOTH(0件)・検索で見つからず(HPは2025年分で止まっている)。新作の題名・価格はXで確認できそう。 X(@NaZO_LAB)を確認: 検索とプロフィールの2026年9月以降の投稿は9/17『今年も出展します』のみで、新作の題名・価格の告知は10/25時点で見つからず。 再収集(10/30 Web): HP は2025年の「11/9 ナゾトキマーケット 新作『十六夜絵図』販売」で止まったまま、BOOTH も0件で、新作の題名・価格は見つからず。候補のまま。 再収集(10/30 X): 10/24 以降の投稿なし(検索0件、固定ポストは2025年11月のもの)。新作の題名・価格は未告知のまま。 再収集(11/2 X): スタッフ投稿で新作の持ち帰り謎が告知されたが題名は未発表。",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no74-1",
+          "name": "十六夜絵図 - イザヨイエズ -",
+          "price": null,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "カードを組み合わせて地図を繋げていく持ち帰り謎",
+          "description": "ある町に伝わる都市伝説『十六夜絵図』。謎を解き、カードを組み合わせ、地図を繋げていくと隠された真相が少しずつ姿を現す。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMNatvbYAAtlBd?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/NaZO_LAB/status/2117553923691360303",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "（題名未発表）新作持ち帰り謎",

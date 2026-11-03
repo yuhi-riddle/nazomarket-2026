@@ -971,5 +971,47 @@
         "retrievedAt": "2026-11-03"
       }
     ]
+  },
+  {
+    "id": "no54-c2",
+    "boothId": "no54",
+    "productIds": [
+      "no54-2"
+    ],
+    "kind": "bonus",
+    "title": "『トルノダーからの脱出』初版にステッカー",
+    "detail": "初版購入特典としてトルノダーのホログラムステッカー（48×48mm）をプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "初版",
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117542315430473850",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "no69-c1",
+    "boothId": "no69",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "1,500円以上で限定LINE謎",
+    "detail": "RiddleTimezの商品を1,500円以上買うと、ナゾマ限定のLINE謎『Dr.リドルの挑戦状』（全8問）を遊べる",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/RiddleTimez/status/2117543609310581212",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
   }
 ]
