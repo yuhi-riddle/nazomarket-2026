@@ -1595,7 +1595,7 @@
           "days": [
             "sat"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWKMv3AagAA7T8K?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -1607,6 +1607,10 @@
             {
               "url": "https://x.com/naz_zole84671/2116150068978090466",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/fantasistaKKP/status/2117409534184759339",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
