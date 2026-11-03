@@ -50,7 +50,7 @@ export type Product = {
 
 // ---- キャンペーン（data/campaigns.json）。ナゾトキマーケットに関係する団体・主催の企画を手で収集する ----
 
-export type CampaignKind = "bonus" | "giveaway" | "discount" | "other";  // 購入特典 / 抽選・プレゼント / セット割・割引 / その他の会場企画
+export type CampaignKind = "bonus" | "giveaway" | "discount" | "reservation" | "other";  // 購入特典 / 抽選・プレゼント / セット割・割引 / 予約・取り置き / その他の会場企画
 
 export type Campaign = {
   id: string;                  // "<boothId>-c<連番>"。主催の企画は "official-c<連番>"

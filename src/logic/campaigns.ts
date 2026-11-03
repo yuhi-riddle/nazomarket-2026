@@ -45,7 +45,7 @@ export function filterActiveByKind(
 }
 
 export function countByKind(active: { withDeadline: Campaign[]; noDeadline: Campaign[] }): Record<CampaignFilter, number> {
-  const counts: Record<CampaignFilter, number> = { all: 0, bonus: 0, giveaway: 0, discount: 0, other: 0 };
+  const counts: Record<CampaignFilter, number> = { all: 0, bonus: 0, giveaway: 0, discount: 0, reservation: 0, other: 0 };
   for (const items of [active.withDeadline, active.noDeadline]) {
     for (const campaign of items) {
       counts.all++;

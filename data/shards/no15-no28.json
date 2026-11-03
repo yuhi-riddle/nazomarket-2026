@@ -2914,10 +2914,6 @@
         {
           "url": "https://x.com/tanteijelly/status/2109933306947182650",
           "retrievedAt": "2026-10-25"
-        },
-        {
-          "url": "https://www.tanteijelly.com/shop/",
-          "retrievedAt": "2026-10-30"
         }
       ],
       "notes": "HPのお知らせ(2026-09-20のリニューアルのみ)とショップにナゾトキマーケット2026の記載なし。検索でも今回の出品は見つからなかった。Xに告知がある可能性あり。 X確認(10/25): @tanteijelly の10/13の投稿で「ナゾトキマーケット2026に参戦」「焼肉謎全種揃いました」と告知。焼肉謎シリーズは全5種(タン・カルビ・ロース・ホルモン・レバー)。ナゾマでの価格・仕様(謎のみ800円/アクキー付き1,500円のどちらか)は告知なしのため価格は null。 再収集(10/30 Web): HP とショップにナゾマの告知なし。焼肉謎5種の価格は埋まらず(通販価格のみ)。 再収集(10/30 X): @tanteijelly の10/24以降の投稿は怪談ナイト・空き家謎解きなどで、ナゾマの新しい告知なし(10/13 の告知のみ)。固定ポストは寄付の告知。焼肉謎の価格は埋まらず。 画像(10/31 Web): no25-1〜5 は HP ショップの各商品ページ(アクキー付きの版)の画像から。ナゾマでの販売が「謎のみ」か「アクキー付き」かは不明のまま",
@@ -3243,7 +3239,7 @@
               "retrievedAt": "2026-11-01"
             },
             {
-              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -3285,7 +3281,7 @@
               "retrievedAt": "2026-11-01"
             },
             {
-              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -3327,7 +3323,7 @@
               "retrievedAt": "2026-11-01"
             },
             {
-              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -3361,7 +3357,7 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+              "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -3400,10 +3396,6 @@
         },
         {
           "url": "https://newscast.jp/news/9567486",
-          "retrievedAt": "2026-10-25"
-        },
-        {
-          "url": "https://x.com/kitsutsukido",
           "retrievedAt": "2026-10-25"
         }
       ],

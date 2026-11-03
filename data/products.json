@@ -2215,7 +2215,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "限定300個",
+    "limited": "限定300個（取り置きは締切。当日分は土曜80部、日曜20部ほど。再販は未定）",
     "days": [
       "sat",
       "sun"
@@ -2234,13 +2234,10 @@
       {
         "url": "https://x.com/tokiqil/status/2117444491842068906",
         "retrievedAt": "2026-11-03"
-      }
-    ],
-    "reservations": [
+      },
       {
-        "label": "取り置き予約（11/3時点で残り5点・受け取りは両日17時まで）",
-        "url": "https://x.gd/HkhHj",
-        "endsAt": null
+        "url": "https://x.com/tokiqil/status/2117588364262342843",
+        "retrievedAt": "2026-11-03"
       }
     ],
     "boothId": "no04",
@@ -2685,7 +2682,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/tokiqil/2116519980103786768",
+        "url": "https://x.com/tokiqil/status/2116519980103786768",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -2707,6 +2704,44 @@
       "players",
       "isNew",
       "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no05-1",
+    "name": "さよならのやりなおし",
+    "price": 5000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "よだかのレコード15周年記念の新作",
+    "description": "よだかのレコード15周年を記念した新作の謎解きグッズ。「ドラマチック」な物語を掲げた作品で、ナゾトキマーケットで先行発売する。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "ナゾトキマーケットで先行発売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWMvyYUbsAAamjl?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/yodaka_info/status/2117588798548881756",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no05",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
       "payment"
     ]
   },
@@ -2774,11 +2809,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/AsobiFactory/2117090055508648414",
+        "url": "https://x.com/AsobiFactory/status/2117090055508648414",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/AsobiFactory/2117089659138580817",
+        "url": "https://x.com/AsobiFactory/status/2117089659138580817",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -2816,11 +2851,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/AsobiFactory/2117090138501341607",
+        "url": "https://x.com/AsobiFactory/status/2117090138501341607",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/AsobiFactory/2117089659138580817",
+        "url": "https://x.com/AsobiFactory/status/2117089659138580817",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -2858,11 +2893,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/AsobiFactory/2117090204708466826",
+        "url": "https://x.com/AsobiFactory/status/2117090204708466826",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/AsobiFactory/2117089659138580817",
+        "url": "https://x.com/AsobiFactory/status/2117089659138580817",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -5302,7 +5337,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/flapzero/2117154742879052049",
+        "url": "https://x.com/flapzero/status/2117154742879052049",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -8802,7 +8837,7 @@
         "retrievedAt": "2026-11-01"
       },
       {
-        "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+        "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -8852,7 +8887,7 @@
         "retrievedAt": "2026-11-01"
       },
       {
-        "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+        "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -8902,7 +8937,7 @@
         "retrievedAt": "2026-11-01"
       },
       {
-        "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+        "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -8944,7 +8979,7 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/_Crazy_Lemon_/2116832773268758900",
+        "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -13880,6 +13915,124 @@
     ]
   },
   {
+    "id": "no47-3",
+    "name": "あああああ, あああああ!（青）",
+    "price": null,
+    "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）。紙幣の絵から1,500円らしいが未確定",
+    "category": "kit",
+    "oneLiner": "名前も価格も「あ」で伏せられた青の謎",
+    "description": "すべて「あ」で伏せて告知された作品の青。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★8/10 → 8/10×5=4.0 → 4"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWAeOJgaoAAlOJ0?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_aa__aaaa__aa_/status/2117210117963993275",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no47",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "playMinutes",
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no47-4",
+    "name": "あああ（白）",
+    "price": null,
+    "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）。紙幣の絵から2,000円らしいが未確定",
+    "category": "kit",
+    "oneLiner": "名前も価格も「あ」で伏せられた白の謎",
+    "description": "すべて「あ」で伏せて告知された作品の白。謎制作は4名の連名。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★10/10 → 10/10×5=5.0 → 5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWDK5fhaoAAQLev?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_aa__aaaa__aa_/status/2117572512934502814",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no47",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "playMinutes",
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no47-5",
+    "name": "赤・緑・青・白のセット（内容は伏せ字）",
+    "price": null,
+    "priceNote": "告知の文字が伏せられていて、価格も内容も未確認",
+    "category": "kit",
+    "oneLiner": "4色まとめての告知。文字が伏せられ内容は未確認",
+    "description": "赤・緑・青・白の4作が並ぶセットらしい告知。本文も画像の文字も「あ」で伏せられているため、セット内容と特典は確認できていない。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWDMHmEa8AAq5Cp?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_aa__aaaa__aa_/status/2117587603968897325",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no47",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
     "id": "no49-1",
     "name": "ナゾトキゲーム code:box 迷子のステラと、長すぎた帰り道 編",
     "price": 4000,
@@ -15144,7 +15297,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/cdrriddle/2116849029917315557",
+        "url": "https://x.com/cdrriddle/status/2116849029917315557",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15182,7 +15335,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/cdrriddle/2116849029917315557",
+        "url": "https://x.com/cdrriddle/status/2116849029917315557",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15220,7 +15373,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/cdrriddle/2116849029917315557",
+        "url": "https://x.com/cdrriddle/status/2116849029917315557",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15660,7 +15813,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15701,11 +15854,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116492886091166201",
+        "url": "https://x.com/teaparty_cooh/status/2116492886091166201",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15744,11 +15897,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116492886091166201",
+        "url": "https://x.com/teaparty_cooh/status/2116492886091166201",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15787,11 +15940,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116492886091166201",
+        "url": "https://x.com/teaparty_cooh/status/2116492886091166201",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15830,11 +15983,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116492886091166201",
+        "url": "https://x.com/teaparty_cooh/status/2116492886091166201",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15873,11 +16026,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116847723131683008",
+        "url": "https://x.com/teaparty_cooh/status/2116847723131683008",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15916,11 +16069,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116847723131683008",
+        "url": "https://x.com/teaparty_cooh/status/2116847723131683008",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -15959,11 +16112,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116847723131683008",
+        "url": "https://x.com/teaparty_cooh/status/2116847723131683008",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -16002,11 +16155,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2116847723131683008",
+        "url": "https://x.com/teaparty_cooh/status/2116847723131683008",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2113971284472426603",
+        "url": "https://x.com/teaparty_cooh/status/2113971284472426603",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -16042,7 +16195,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2114318555264983105",
+        "url": "https://x.com/teaparty_cooh/status/2114318555264983105",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -16084,11 +16237,11 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2114331096116805778",
+        "url": "https://x.com/teaparty_cooh/status/2114331096116805778",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/teaparty_cooh/2114331482290573797",
+        "url": "https://x.com/teaparty_cooh/status/2114331482290573797",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -16128,7 +16281,7 @@
     "payment": null,
     "sources": [
       {
-        "url": "https://x.com/teaparty_cooh/2114348348132196512",
+        "url": "https://x.com/teaparty_cooh/status/2114348348132196512",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -17613,10 +17766,6 @@
       {
         "url": "https://x.com/nichonazo/status/2116873154639601944",
         "retrievedAt": "2026-11-01"
-      },
-      {
-        "url": "https://x.com/nichonazo/2116873154639601944",
-        "retrievedAt": "2026-11-02"
       }
     ],
     "id": "no73-1",
@@ -20985,6 +21134,45 @@
     ]
   },
   {
+    "id": "no91-5",
+    "name": "ウラシマボックス",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "オトヒメに「開けてはいけない」と言われた箱を開ける謎",
+    "description": "竜宮城から帰ってきたウラシマが、オトヒメから「開けてはいけない」と言われて貰った箱を開けてしまう物語の謎解き。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 45,
+      "max": 90
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWM1mlObIAAUCLS?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RI_Works_nazo/status/2117595194036298188",
+        "retrievedAt": "2026-11-03"
+      }
+    ],
+    "boothId": "no91",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
     "id": "no92-1",
     "name": "RANDOMIZE",
     "price": 1000,
@@ -21012,7 +21200,7 @@
         "retrievedAt": "2026-10-30"
       },
       {
-        "url": "https://x.com/A9A_porin/2116379434618163214",
+        "url": "https://x.com/A9A_porin/status/2116379434618163214",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21069,7 +21257,7 @@
         "retrievedAt": "2026-10-30"
       },
       {
-        "url": "https://x.com/A9A_porin/2116379434618163214",
+        "url": "https://x.com/A9A_porin/status/2116379434618163214",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21300,11 +21488,11 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naz_zole84671/2117053300516573388",
+        "url": "https://x.com/naz_zole84671/status/2117053300516573388",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/naz_zole84671/2116150068978090466",
+        "url": "https://x.com/naz_zole84671/status/2116150068978090466",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21342,11 +21530,11 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naz_zole84671/2117053300516573388",
+        "url": "https://x.com/naz_zole84671/status/2117053300516573388",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/naz_zole84671/2116150068978090466",
+        "url": "https://x.com/naz_zole84671/status/2116150068978090466",
         "retrievedAt": "2026-11-02"
       },
       {
@@ -21388,11 +21576,11 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naz_zole84671/2117053300516573388",
+        "url": "https://x.com/naz_zole84671/status/2117053300516573388",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/naz_zole84671/2116150068978090466",
+        "url": "https://x.com/naz_zole84671/status/2116150068978090466",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21430,11 +21618,11 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naz_zole84671/2117053300516573388",
+        "url": "https://x.com/naz_zole84671/status/2117053300516573388",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/naz_zole84671/2116150068978090466",
+        "url": "https://x.com/naz_zole84671/status/2116150068978090466",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21472,11 +21660,11 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naz_zole84671/2117053300516573388",
+        "url": "https://x.com/naz_zole84671/status/2117053300516573388",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/naz_zole84671/2116150068978090466",
+        "url": "https://x.com/naz_zole84671/status/2116150068978090466",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21514,11 +21702,11 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naz_zole84671/2117053300516573388",
+        "url": "https://x.com/naz_zole84671/status/2117053300516573388",
         "retrievedAt": "2026-11-02"
       },
       {
-        "url": "https://x.com/naz_zole84671/2116150068978090466",
+        "url": "https://x.com/naz_zole84671/status/2116150068978090466",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21556,7 +21744,7 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naritaquiken/2116820284787589331",
+        "url": "https://x.com/naritaquiken/status/2116820284787589331",
         "retrievedAt": "2026-11-02"
       }
     ],
@@ -21595,7 +21783,7 @@
     ],
     "sources": [
       {
-        "url": "https://x.com/naritaquiken/2116820284787589331",
+        "url": "https://x.com/naritaquiken/status/2116820284787589331",
         "retrievedAt": "2026-11-02"
       }
     ],

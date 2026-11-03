@@ -2050,7 +2050,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "限定300個",
+          "limited": "限定300個（取り置きは締切。当日分は土曜80部、日曜20部ほど。再販は未定）",
           "days": [
             "sat",
             "sun"
@@ -2069,13 +2069,10 @@
             {
               "url": "https://x.com/tokiqil/status/2117444491842068906",
               "retrievedAt": "2026-11-03"
-            }
-          ],
-          "reservations": [
+            },
             {
-              "label": "取り置き予約（11/3時点で残り5点・受け取りは両日17時まで）",
-              "url": "https://x.gd/HkhHj",
-              "endsAt": null
+              "url": "https://x.com/tokiqil/status/2117588364262342843",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },
@@ -2453,7 +2450,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/tokiqil/2116519980103786768",
+              "url": "https://x.com/tokiqil/status/2116519980103786768",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -2550,7 +2547,38 @@
       ],
       "notes": "HPのニュース(最新2026-03-16)に今回の出品告知なし。2025年のナゾトキマーケットでは新作2点を特別価格で販売していたので候補に回した(2026-03-16に価格改定の告知あり、現在価格は未確認)。/goods/は403で見られず。Xで取れそう / X(@yodaka_info)確認済み。2026-08-21の出展告知は「『さよなら』の物語を描いた『美しい謎解き』をテーマにした豪華で綺麗な作品」とだけで商品名・価格なし(8月の投稿のため候補扱いは変えず)。9月以降の投稿は別イベントの告知のみ。/goods/ は Chrome でも403 / 再収集(10/30 Web): 新しい告知なし。ニュースは2026-03-16の価格改定が最新で、今回の出品告知なし / 再収集(10/30 X): 10/24 以降の @yodaka_info の投稿は10/28 の別イベント(ドラマチックダンジョン5)の告知のみで、ナゾトキマーケットの告知なし。候補のまま",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no05-1",
+          "name": "さよならのやりなおし",
+          "price": 5000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "よだかのレコード15周年記念の新作",
+          "description": "よだかのレコード15周年を記念した新作の謎解きグッズ。「ドラマチック」な物語を掲げた作品で、ナゾトキマーケットで先行発売する。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケットで先行発売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMvyYUbsAAamjl?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/yodaka_info/status/2117588798548881756",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "QUBE",
@@ -2663,11 +2691,11 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/AsobiFactory/2117090055508648414",
+              "url": "https://x.com/AsobiFactory/status/2117090055508648414",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/AsobiFactory/2117089659138580817",
+              "url": "https://x.com/AsobiFactory/status/2117089659138580817",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -2697,11 +2725,11 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/AsobiFactory/2117090138501341607",
+              "url": "https://x.com/AsobiFactory/status/2117090138501341607",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/AsobiFactory/2117089659138580817",
+              "url": "https://x.com/AsobiFactory/status/2117089659138580817",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -2731,11 +2759,11 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/AsobiFactory/2117090204708466826",
+              "url": "https://x.com/AsobiFactory/status/2117090204708466826",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/AsobiFactory/2117089659138580817",
+              "url": "https://x.com/AsobiFactory/status/2117089659138580817",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -4647,7 +4675,7 @@
           "payment": null,
           "sources": [
             {
-              "url": "https://x.com/flapzero/2117154742879052049",
+              "url": "https://x.com/flapzero/status/2117154742879052049",
               "retrievedAt": "2026-11-02"
             },
             {

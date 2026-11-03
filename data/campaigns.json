@@ -517,8 +517,12 @@
   {
     "id": "no17-c1",
     "boothId": "no17",
-    "productIds": [],
-    "kind": "other",
+    "productIds": [
+      "p33",
+      "p34",
+      "p35"
+    ],
+    "kind": "reservation",
     "title": "新作3作品の取り置き予約",
     "detail": "謎組（Bb9）の新作3作品の取り置き予約を受け付け中。11月5日（木）23:59まで",
     "endsAt": "2026-11-05T23:59",
@@ -1034,6 +1038,119 @@
     "sources": [
       {
         "url": "https://x.com/site_Arcana/status/2117572503040344122",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "no04-c2",
+    "boothId": "no04",
+    "productIds": [
+      "no04-5",
+      "no04-6",
+      "no04-7",
+      "no04-8",
+      "no04-9",
+      "no04-11"
+    ],
+    "kind": "reservation",
+    "title": "謎解き・ボードゲームの取り置き予約",
+    "detail": "数量限定・先着で取り置き予約を受付中。受け取りは両日17時まで。『ROUNDEAD』は11/3時点で残り10点。『簡単なパズル』と『Q.●▲★■』拡張の取り置きは締切済み",
+    "endsAt": null,
+    "days": [],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2116530805094916535",
+        "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117444491842068906",
+        "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117588364262342843",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "no16-c2",
+    "boothId": "no16",
+    "productIds": [
+      "no16-1"
+    ],
+    "kind": "reservation",
+    "title": "新作TETTUIの現地引換先行予約",
+    "detail": "受け取り日ごとに分かれた現地引換の先行予約（各日限定50個）。7日受け取り分は11/6 23:59まで",
+    "endsAt": null,
+    "days": [],
+    "limit": "各日50個",
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2116107847519940928",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "no31-c3",
+    "boothId": "no31",
+    "productIds": [
+      "p23",
+      "p25"
+    ],
+    "kind": "reservation",
+    "title": "『水彩を貫く』『孤独に唄う』の取り置き予約",
+    "detail": "予約フォームの受付は11/7 18:00まで。予定数に達すると締切。取り置きは11/8 14:00まで。『五月のカワセミ』は予約数に達して受付終了",
+    "endsAt": "2026-11-07T18:00",
+    "days": [],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2114686922316816436",
+        "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2117232044879282588",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "no55-c1",
+    "boothId": "no55",
+    "productIds": [
+      "no55-1"
+    ],
+    "kind": "reservation",
+    "title": "『Nuts』抽選の事前受付",
+    "detail": "フォームに入力した人がブースで抽選に参加でき、当選者のみ購入できる。当日の入力も可能だが、事前の入力が勧められている",
+    "endsAt": null,
+    "days": [],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/paddle_pj/status/2116545749534245347",
+        "retrievedAt": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "id": "no05-c1",
+    "boothId": "no05",
+    "productIds": [
+      "no05-1"
+    ],
+    "kind": "giveaway",
+    "title": "『さよならのやりなおし』を抽選で15名にプレゼント",
+    "detail": "アカウントのフォローと引用元の投稿のリポストで応募。会場のA2で受け取れる人が対象",
+    "endsAt": "2026-11-06T12:00",
+    "days": [],
+    "limit": "15名",
+    "sources": [
+      {
+        "url": "https://x.com/yodaka_info/status/2117593668483969520",
         "retrievedAt": "2026-11-03"
       }
     ]

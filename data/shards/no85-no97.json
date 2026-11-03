@@ -1108,6 +1108,39 @@
               "retrievedAt": "2026-11-02"
             }
           ]
+        },
+        {
+          "id": "no91-5",
+          "name": "ウラシマボックス",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "オトヒメに「開けてはいけない」と言われた箱を開ける謎",
+          "description": "竜宮城から帰ってきたウラシマが、オトヒメから「開けてはいけない」と言われて貰った箱を開けてしまう物語の謎解き。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5"
+          },
+          "playMinutes": {
+            "min": 45,
+            "max": 90
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWM1mlObIAAUCLS?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2117595194036298188",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
         }
       ],
       "candidates": []
@@ -1190,7 +1223,7 @@
               "retrievedAt": "2026-10-30"
             },
             {
-              "url": "https://x.com/A9A_porin/2116379434618163214",
+              "url": "https://x.com/A9A_porin/status/2116379434618163214",
               "retrievedAt": "2026-11-02"
             }
           ],
@@ -1241,7 +1274,7 @@
               "retrievedAt": "2026-10-30"
             },
             {
-              "url": "https://x.com/A9A_porin/2116379434618163214",
+              "url": "https://x.com/A9A_porin/status/2116379434618163214",
               "retrievedAt": "2026-11-02"
             }
           ],
@@ -1566,11 +1599,11 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "url": "https://x.com/naz_zole84671/status/2117053300516573388",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "url": "https://x.com/naz_zole84671/status/2116150068978090466",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -1601,11 +1634,11 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "url": "https://x.com/naz_zole84671/status/2117053300516573388",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "url": "https://x.com/naz_zole84671/status/2116150068978090466",
               "retrievedAt": "2026-11-02"
             },
             {
@@ -1640,11 +1673,11 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "url": "https://x.com/naz_zole84671/status/2117053300516573388",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "url": "https://x.com/naz_zole84671/status/2116150068978090466",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -1675,11 +1708,11 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "url": "https://x.com/naz_zole84671/status/2117053300516573388",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "url": "https://x.com/naz_zole84671/status/2116150068978090466",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -1710,11 +1743,11 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "url": "https://x.com/naz_zole84671/status/2117053300516573388",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "url": "https://x.com/naz_zole84671/status/2116150068978090466",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -1745,11 +1778,11 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naz_zole84671/2117053300516573388",
+              "url": "https://x.com/naz_zole84671/status/2117053300516573388",
               "retrievedAt": "2026-11-02"
             },
             {
-              "url": "https://x.com/naz_zole84671/2116150068978090466",
+              "url": "https://x.com/naz_zole84671/status/2116150068978090466",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -1904,7 +1937,7 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naritaquiken/2116820284787589331",
+              "url": "https://x.com/naritaquiken/status/2116820284787589331",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -1935,7 +1968,7 @@
           ],
           "sources": [
             {
-              "url": "https://x.com/naritaquiken/2116820284787589331",
+              "url": "https://x.com/naritaquiken/status/2116820284787589331",
               "retrievedAt": "2026-11-02"
             }
           ]
