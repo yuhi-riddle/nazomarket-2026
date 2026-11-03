@@ -5,16 +5,20 @@ import { splitUnknownPrice } from "../logic/priceGroups.ts";
 import { setQty, toggleItem, type CartItem } from "../logic/cart.ts";
 import { rankForCatalog } from "../logic/insights.ts";
 import { hasRecommendationBasis } from "../logic/recommendationBasis.ts";
+import { pendingBooths } from "../logic/pendingBooths.ts";
 import type { AppState } from "../state.ts";
-import { catalog } from "../data.ts";
-import { button, el } from "./dom.ts";
+import { booths, catalog } from "../data.ts";
+import { button, el, safeExternalLink } from "./dom.ts";
 import { filterPanel } from "./filterPanel.ts";
 import { productCard, type ProductCardHandle } from "./productCard.ts";
 import { productDialog } from "./productDialog.ts";
+import { boothLinkLabel } from "./boothLinkLabel.ts";
 import type { AppStore, SharedStoreState } from "../store.ts";
 import "./catalog-booth-filter.css";
+import "./pendingBooths.css";
 
 const boothNamesById = new Map(catalog.map((view) => [view.booth.id, view.booth.name] as const));
+const productsForPendingBooths = catalog.map(({ product }) => product);
 
 const sortOptions: Array<[SortKey, string]> = [
   ["recommended", "おすすめ順"],
@@ -41,6 +45,8 @@ type CatalogGroup = {
   count: HTMLElement;
   products: HTMLElement;
 };
+
+type PendingBoothRow = { element: HTMLElement };
 
 export type CatalogView = {
   element: HTMLElement;
@@ -133,6 +139,16 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
   };
   const unknownDifficulty = makeUnknownSection("difficulty", "難易度不明");
   const unknownPrice = makeUnknownSection("price", "価格不明");
+  const pendingSection = el("section", "catalog-pending-booths");
+  const pendingHeading = el("div", "catalog-pending-booths-heading");
+  const pendingCount = el("span", "catalog-group-count");
+  const pendingRows = el("div", "catalog-pending-booth-list");
+  pendingHeading.append(el("h3", "", "商品情報がまだない団体"), pendingCount);
+  pendingSection.append(
+    pendingHeading,
+    el("p", "catalog-pending-booths-description", "出展は分かっていますが、商品はまだ分かっていません。"),
+    pendingRows,
+  );
   const empty = el("div", "empty-state");
   resultRegion.append(grid);
   main.append(toolbar, recommendationHint, resultRegion);
@@ -142,6 +158,7 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
 
   const handles = new Map<string, ProductCardHandle>();
   const groups = new Map<string, CatalogGroup>();
+  const pendingRowsByBoothId = new Map<string, PendingBoothRow>();
   let lastItemById = new Map<string, CartItem>();
   let lastFilters: AppState["filters"] | undefined;
   let lastSort: SortKey | undefined;
@@ -221,6 +238,73 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
     });
     handles.set(view.product.id, handle);
     return handle;
+  };
+
+  const getPendingBoothRow = (booth: (typeof booths)[number]): PendingBoothRow => {
+    const existing = pendingRowsByBoothId.get(booth.id);
+    if (existing) return existing;
+
+    const element = el("div", "catalog-pending-booth");
+    element.dataset.boothId = booth.id;
+    const hasSaturday = booth.days.includes("sat");
+    const hasSunday = booth.days.includes("sun");
+    const dayLabel = hasSaturday && hasSunday
+      ? "両日"
+      : hasSaturday
+        ? "土曜のみ"
+        : hasSunday
+          ? "日曜のみ"
+          : "出展日未定";
+    element.append(
+      el("strong", "catalog-pending-booth-name", booth.name),
+      el("span", "catalog-pending-booth-code", booth.boothCode || "未定"),
+      el("span", "catalog-pending-booth-day", dayLabel),
+    );
+
+    const actions = el("div", "catalog-pending-booth-actions");
+    const xUrl = booth.links.x?.[0];
+    const siteUrl = booth.links.site?.[0];
+    const xLink = xUrl
+      ? safeExternalLink(xUrl, booth.name + " · " + boothLinkLabel(xUrl, "x"), "catalog-pending-booth-link")
+      : null;
+    const externalLink = xLink ?? (siteUrl
+      ? safeExternalLink(siteUrl, booth.name + " · " + boothLinkLabel(siteUrl, "site"), "catalog-pending-booth-link")
+      : null);
+    if (externalLink) actions.append(externalLink);
+
+    const boothCode = booth.boothCode;
+    if (boothCode && onMapBooth) {
+      const mapButton = button("マップで見る", "button button-secondary catalog-pending-booth-map");
+      mapButton.setAttribute("aria-label", booth.name + "をマップで見る");
+      mapButton.addEventListener("click", () => onMapBooth(boothCode));
+      actions.append(mapButton);
+    }
+    if (actions.childElementCount > 0) element.append(actions);
+
+    const row = { element };
+    pendingRowsByBoothId.set(booth.id, row);
+    return row;
+  };
+
+  const renderPendingBooths = (state: AppState) => {
+    const matches = pendingBooths(booths, productsForPendingBooths, state.filters, state.sort);
+    if (matches.length === 0) {
+      pendingSection.remove();
+      return;
+    }
+
+    pendingCount.textContent = matches.length + "団体";
+    const matchingIds = new Set(matches.map((booth) => booth.id));
+    for (const child of [...pendingRows.children]) {
+      if (!matchingIds.has((child as HTMLElement).dataset.boothId ?? "")) child.remove();
+    }
+    matches.forEach((booth, index) => {
+      const row = getPendingBoothRow(booth).element;
+      const current = pendingRows.children[index];
+      if (current !== row) pendingRows.insertBefore(row, current ?? null);
+    });
+    // 動かすと欄の中のフォーカスが外れるので、すでに末尾なら触らない
+    if (resultRegion.lastElementChild !== pendingSection) resultRegion.append(pendingSection);
   };
 
   const showEmpty = (visible: boolean, recommended: boolean) => {
@@ -359,6 +443,7 @@ export function catalogView(store: AppStore, onMapBooth?: (boothCode: string) =>
       }
       resultRegion.append(group.section);
     }
+    renderPendingBooths(state);
     lastFilters = state.filters;
     lastSort = state.sort;
     lastDay = state.day;
