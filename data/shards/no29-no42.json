@@ -1493,17 +1493,21 @@
           "playMinutes": 15,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "ナゾトキマーケットからリニューアル版を販売開始（謎の内容・答えは変更なし）",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWMPaItaAAAaX-7?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/JOKer_Project_/status/2117568720788680926",
+              "retrievedAt": "2026-11-03"
             }
           ]
         },

@@ -618,7 +618,149 @@
       ],
       "notes": "公式のブース概要に商品名なし。HP は公演の紹介が中心で、お知らせは2024年11月のむつめ祭のみ。販売・持ち帰り謎の記載なし。検索でも持ち帰り謎の情報は出ず。X で確認が必要。X確認(10/25): X アカウント見つからず。@site_Arcana(埼玉大学謎解きサークル)らしいものはあるが、ナゾトキマーケットの投稿が出ず本人と確信できないため不使用 再収集(10/30 Web): HP のお知らせは2024年11月のまま。新しい告知なし 再収集(10/30 X): @site_Arcana(埼玉大学 謎解きサークル【site : Arcana】)が8/21 に「ナゾトキマーケットに出展・新作の持ち帰り謎を出す予定」と投稿しており本人のアカウントと確認できたため extraLinks に追加(10/25 の「見つからず」を訂正)。作品名・価格の告知は未投稿(10/24 以降は毎週謎の投稿のみ)",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no62-1",
+          "name": "ツナゲバ",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "site：Arcanaの新作持ち帰り謎",
+          "description": "site：Arcanaの新作持ち帰り謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 50,
+            "max": 120
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/site_Arcana/status/2117572503040344122",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "no62-2",
+          "name": "魔導士アルカナの大預言",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "タロットカードをモチーフにした謎解き",
+          "description": "タロットカードをモチーフにした謎解き。プレイにはLINEアプリが必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★6/10（10段階）"
+          },
+          "playMinutes": {
+            "min": 45,
+            "max": 100
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMg0CPa0AAUzU6?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/site_Arcana/status/2117572503715651993",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "no62-3",
+          "name": "物語交換録 ー藁で掴む長者伝説ー",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "昨年度の学園祭の学内周遊を持ち帰り謎でも楽しめるようにした作品",
+          "description": "昨年度の学園祭で販売した学内周遊を持ち帰り謎でも楽しめるようにした。謎の内容は昨年度と同じ。プレイにはLINEアプリが必要。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★6/10（10段階）"
+          },
+          "playMinutes": {
+            "min": 50,
+            "max": 90
+          },
+          "players": null,
+          "isNew": false,
+          "limited": "再販",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMg0CdbwAAsIBg?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/site_Arcana/status/2117572504055349449",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        },
+        {
+          "id": "no62-4",
+          "name": "新作セット（ツナゲバ＋魔導士アルカナの大預言）",
+          "price": 2300,
+          "priceNote": "セット価格（通常2,500円）",
+          "category": "kit",
+          "oneLiner": "新作2作品を同時に買うとお得なセット",
+          "description": "『ツナゲバ』と『魔導士アルカナの大預言』を同時に購入する場合の価格。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMg0CLaoAAUQWt?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/site_Arcana/status/2117572503040344122",
+              "retrievedAt": "2026-11-03"
+            }
+          ]
+        }
+      ],
       "candidates": []
     },
     {
