@@ -1288,6 +1288,10 @@
         {
           "url": "https://x.com/calette_pj/status/2113873120004067794",
           "retrievedAt": "2026-10-25"
+        },
+        {
+          "url": "https://x.com/calette_pj/status/2117889585619574961",
+          "retrievedAt": "2026-11-04"
         }
       ],
       "notes": "HPは公演・作品の実績ページが中心で、価格・ショップ・ナゾトキマーケットの言及なし。ニュースは2026-07-10に新潟のワンダーラボで『新世界ALKAからの脱出』『壊れた童話からの脱出』の委託販売開始とあるのみ。『新世界ALKA』は2022-08にBOOTH・コミケ100で頒布した既存作。検索ではCaletteが2025年のナゾトキマーケットにも出展していたという記述のみで、今回の商品は不明。HPのXリンクは公式アカウント。Xで確認する必要あり。 Xで確認済み：2026-10-24の告知で新作お持ち帰り謎『World Hitchhiker』のリリースを確認（ブースCc8、土日）。同日の別ポストで価格・頒布物入りのお品書きは後日公開とあり、価格は未確認。ALKA・壊れた童話は今回の告知に出ず候補のまま。 再収集(10/30 Web): HP のニュースは2026-07-10が最新で、World Hitchhiker の価格・お品書きは見つからず。価格は null のまま。 再収集(10/30 X): 10/24 以降の新しい投稿なし。World Hitchhiker の価格・お品書きは未公開のまま。価格は null のまま。 再収集(10/30 公式): 公式に追加された商品と重なるため no54-1→p46 に付け替えた。 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
@@ -1316,7 +1320,18 @@
             "min": 180,
             "max": 240
           },
-          "players": "1人"
+          "players": "1人",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "Alipay",
+            "WeChat Pay"
+          ]
         }
       ],
       "products": [
@@ -1342,13 +1357,228 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWLC0z_bUAAUsIu?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "Alipay",
+            "WeChat Pay"
+          ],
           "sources": [
             {
               "url": "https://x.com/calette_pj/status/2117542315430473850",
               "retrievedAt": "2026-11-03"
             }
           ]
+        },
+        {
+          "id": "no54-3",
+          "name": "ひっくり返る反重力からの脱出",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "反重力を題材にした持ち帰り謎",
+          "description": "ナゾトキマーケット2026のお品書きに新作として掲載。『海底料理店 龍の味咲』と2作品まとめて買うと500円引き。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "Alipay",
+            "WeChat Pay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-04"
+            }
+          ],
+          "hashtags": []
+        },
+        {
+          "id": "no54-4",
+          "name": "海底料理店 龍の味咲",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "海底料理店を舞台にした持ち帰り謎",
+          "description": "ナゾトキマーケット2026のお品書きに新作として掲載。『ひっくり返る反重力からの脱出』と2作品まとめて買うと500円引き。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "Alipay",
+            "WeChat Pay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-04"
+            }
+          ],
+          "hashtags": []
+        },
+        {
+          "id": "no54-5",
+          "name": "CiRCLE",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "「このナゾは百年解ける。」高難度の持ち帰り謎",
+          "description": "お品書きでは「このナゾは百年解ける。」「高難易度お持ち帰り謎」と紹介。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "Alipay",
+            "WeChat Pay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-04"
+            }
+          ],
+          "hashtags": []
+        },
+        {
+          "id": "no54-6",
+          "name": "新世界ALKAからの脱出",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "Caletteの代表作として紹介された持ち帰り謎",
+          "description": "お品書きでは、累計1,300人以上がプレイしたCaletteのお持ち帰りナゾの代表作と紹介。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "Alipay",
+            "WeChat Pay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-04"
+            }
+          ],
+          "hashtags": []
+        },
+        {
+          "id": "no54-7",
+          "name": "壊れた童話からの脱出",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "開いた本の物語の様子が変わる持ち帰り謎",
+          "description": "とある本を開いたあなた。しかし物語の様子が変で……？",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "Alipay",
+            "WeChat Pay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-04"
+            }
+          ],
+          "hashtags": []
         }
       ],
       "candidates": [

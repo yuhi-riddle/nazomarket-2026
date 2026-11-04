@@ -1328,5 +1328,109 @@
         "retrievedAt": "2026-11-04"
       }
     ]
+  },
+  {
+    "id": "no14-c2",
+    "boothId": "no14",
+    "productIds": [
+      "no14-2"
+    ],
+    "kind": "giveaway",
+    "title": "三つの密室の作り方を抽選3名にプレゼント",
+    "detail": "ファーニャー公式X（@far_near_）をフォローし、対象の告知投稿をリポストすると、持ち帰り謎『三つの密室の作り方』を抽選で3名にプレゼント。旧企画のタイトル予想・引用リポストとは応募方法が異なる。受取方法は告知に明記なし。",
+    "endsAt": "2026-11-05T23:59",
+    "days": [],
+    "limit": "抽選3名",
+    "sources": [
+      {
+        "url": "https://x.com/far_near_/status/2117919793894621381",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no11-c2",
+    "boothId": "no11",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "商品1点以上の購入でロゴ入りボールペン",
+    "detail": "ナゾトキマーケットのBa2ブース内の商品を1個以上購入すると、エフェックスロゴ入りボールペンをプレゼント。11月7日・8日の各日先着30名。両社の商品を1点ずつ買うコラボBOOK特典とは別企画。",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "各日先着30名",
+    "sources": [
+      {
+        "url": "https://x.com/efex_info/status/2117904701664457013",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no54-c3",
+    "boothId": "no54",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "ブース購入者にロゴホログラムステッカー",
+    "detail": "Calette（Cc8）ブースの購入者全員に、1人1枚のロゴホログラムステッカーをプレゼント。各作品の購入特典とは別の、ブース共通特典。",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "1人1枚",
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no54-c4",
+    "boothId": "no54",
+    "productIds": [
+      "no54-3",
+      "no54-4"
+    ],
+    "kind": "discount",
+    "title": "反重力・海底料理店の2作品で500円引き",
+    "detail": "各1,000円の『ひっくり返る反重力からの脱出』『海底料理店 龍の味咲』を2作品セットで購入すると500円引き。合計2,000円から1,500円になる。",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no59-c1",
+    "boothId": "no59",
+    "productIds": [
+      "no59-5"
+    ],
+    "kind": "bonus",
+    "title": "初版購入者に「＝キカ＝」第2版を無料提供",
+    "detail": "初版『−キカ−』を購入済みの人は、専用LINEの画面提示で第2版『＝キカ＝』を無料でもらえる。ナゾトキマーケット2026での発売告知。一般販売が無料という意味ではなく、通常販売価格は未確認。",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "初版購入済み・専用LINEの画面提示が必要",
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2117904706685022574",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
   }
 ]

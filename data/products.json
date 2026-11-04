@@ -15435,7 +15435,17 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no54/product/p46_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "Alipay",
+      "WeChat Pay"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p46",
@@ -15447,9 +15457,7 @@
       }
     ],
     "hashtags": [],
-    "unconfirmed": [
-      "payment"
-    ]
+    "unconfirmed": []
   },
   {
     "id": "no54-2",
@@ -15473,7 +15481,17 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HWLC0z_bUAAUsIu?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "Alipay",
+      "WeChat Pay"
+    ],
     "sources": [
       {
         "url": "https://x.com/calette_pj/status/2117542315430473850",
@@ -15486,8 +15504,245 @@
       "price",
       "difficulty",
       "playMinutes",
+      "players"
+    ]
+  },
+  {
+    "id": "no54-3",
+    "name": "ひっくり返る反重力からの脱出",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "反重力を題材にした持ち帰り謎",
+    "description": "ナゾトキマーケット2026のお品書きに新作として掲載。『海底料理店 龍の味咲』と2作品まとめて買うと500円引き。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "Alipay",
+      "WeChat Pay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-04"
+      }
+    ],
+    "hashtags": [],
+    "boothId": "no54",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players"
+    ]
+  },
+  {
+    "id": "no54-4",
+    "name": "海底料理店 龍の味咲",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "海底料理店を舞台にした持ち帰り謎",
+    "description": "ナゾトキマーケット2026のお品書きに新作として掲載。『ひっくり返る反重力からの脱出』と2作品まとめて買うと500円引き。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "Alipay",
+      "WeChat Pay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-04"
+      }
+    ],
+    "hashtags": [],
+    "boothId": "no54",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players"
+    ]
+  },
+  {
+    "id": "no54-5",
+    "name": "CiRCLE",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "「このナゾは百年解ける。」高難度の持ち帰り謎",
+    "description": "お品書きでは「このナゾは百年解ける。」「高難易度お持ち帰り謎」と紹介。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "Alipay",
+      "WeChat Pay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-04"
+      }
+    ],
+    "hashtags": [],
+    "boothId": "no54",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
       "players",
-      "payment"
+      "isNew"
+    ]
+  },
+  {
+    "id": "no54-6",
+    "name": "新世界ALKAからの脱出",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Caletteの代表作として紹介された持ち帰り謎",
+    "description": "お品書きでは、累計1,300人以上がプレイしたCaletteのお持ち帰りナゾの代表作と紹介。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "Alipay",
+      "WeChat Pay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-04"
+      }
+    ],
+    "hashtags": [],
+    "boothId": "no54",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew"
+    ]
+  },
+  {
+    "id": "no54-7",
+    "name": "壊れた童話からの脱出",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "開いた本の物語の様子が変わる持ち帰り謎",
+    "description": "とある本を開いたあなた。しかし物語の様子が変で……？",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWP9TIfaEAAQHKN.jpg?format=jpg&name=small",
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "Alipay",
+      "WeChat Pay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-04"
+      }
+    ],
+    "hashtags": [],
+    "boothId": "no54",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew"
     ]
   },
   {
@@ -16105,6 +16360,45 @@
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-5",
+    "name": "＝キカ＝",
+    "price": null,
+    "priceNote": "一般向け販売価格は未確認。初版購入者は専用LINEの画面提示で第2版を無料でもらえる。",
+    "category": "kit",
+    "oneLiner": "初版「−キカ−」を改良した第2版",
+    "description": "ナゾトキマーケット2026で第2版を発売。初版『−キカ−』購入済みの人は、専用LINEの画面を提示すると第2版を無料でもらえる。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HV-SxfSbsAA5XDg.png?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2117904706685022574",
+        "retrievedAt": "2026-11-04"
+      }
+    ],
+    "hashtags": [],
+    "boothId": "no59",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
       "players",
       "payment"
     ]

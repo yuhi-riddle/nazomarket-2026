@@ -163,6 +163,10 @@
         {
           "url": "https://sites.google.com/view/nazotokixcape/",
           "retrievedAt": "2026-10-30"
+        },
+        {
+          "url": "https://x.com/_X_c_a_p_e_/status/2117904706685022574",
+          "retrievedAt": "2026-11-04"
         }
       ],
       "notes": "HP の『持ち帰り謎・グッズ』ページに既存作10件。いずれもナゾトキマーケット2026への言及・価格の記載なしのため、全て候補止まり(今回の出品は X で確認が必要)。スケジュールページは学祭向けに持ち帰り謎を作ると書くのみ。X確認(10/25): @_X_c_a_p_e_ は8/21に「新作の持ち帰り謎も制作中」と投稿のみ。作品名・価格の告知なし。候補は今回持参と確認できず 再収集(10/30 Web): HP トップとナビに新作・ナゾトキマーケット2026・価格の記載なし。候補は変わらず 再収集(10/30 X): 10/24 以降の投稿は京都工芸繊維大学の松ヶ崎祭向け公演『おとぎは小さな一歩から』の告知のみ。ナゾトキマーケット向けの新しい告知なし 再収集(10/31 X): 10/31 の「新作情報①」で『ちびっこおばけのおかしなおつかい』(難易度★3・1,500円・90分〜)を確認して products に追加。「新作情報①」とあり、続報がある可能性。 画像(10/31 Web): no59-1 は HP・検索で見つからず(X の告知画像で見つかる可能性あり) 画像(11/1 X): no59-1 は告知投稿のキービジュアルから 再収集(11/1 X): 新作『イラストだらけの100枚謎』を追加。",
@@ -279,6 +283,37 @@
               "retrievedAt": "2026-11-03"
             }
           ]
+        },
+        {
+          "id": "no59-5",
+          "name": "＝キカ＝",
+          "price": null,
+          "priceNote": "一般向け販売価格は未確認。初版購入者は専用LINEの画面提示で第2版を無料でもらえる。",
+          "category": "kit",
+          "oneLiner": "初版「−キカ−」を改良した第2版",
+          "description": "ナゾトキマーケット2026で第2版を発売。初版『−キカ−』購入済みの人は、専用LINEの画面を提示すると第2版を無料でもらえる。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV-SxfSbsAA5XDg.png?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2117904706685022574",
+              "retrievedAt": "2026-11-04"
+            }
+          ],
+          "hashtags": []
         }
       ],
       "candidates": [
