@@ -263,33 +263,21 @@
         }
       ],
       "notes": "公式product.tsvに商品なし。HPのニュースは公演告知(Reduction・マッチョ等)が中心で、持ち帰り謎・ナゾトキマーケットの記述は見つからず。WEB謎・LINE謎のページも商品情報なし。Web検索でも出展商品は出てこない。HP掲載のX(@Another_Vision_)を見れば取れる可能性あり 【Xパス】@Another_Vision_ の2026-10-22の告知で、新作持ち帰り謎『OXA -オクサ-』は駒場祭(11/21-23・11/28-29)とBOOTHでの販売で、『11/7(土)~8(日)に開催されるナゾトキマーケットでは販売いたしません』と明記。ナゾトキマーケットで売る商品の告知は見つからず、商品0件のまま。 再収集(10/30 Web): 新しい告知なし(HPのNEWSは3月10日が最新)。OXAは前回のとおり候補止まり 再収集(10/30 X): 10/28・10/29 の告知で新作持ち帰り謎2点(Lost&Innovate 1,800円・わがままおてがみ 1,500円)と2作セット3,000円(ナゾトキマーケット限定)、ブースCa6、支払いは現金/PayPayを確認し no30-1〜3 に追加。OXAは前回どおり販売しない告知のまま候補止まり。難易度は告知に表記なし 画像(10/31 Web): no30-3 は HP・検索で見つからず(X で見れば告知画像がありそう) 画像(11/1 X): no30-3 は2作セットの告知画像(2作とセット価格を載せた1枚)から",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no30-1",
-          "name": "Lost&Innovate",
-          "price": 1800,
-          "priceNote": null,
+          "id": "p170",
+          "keepId": "no30-1",
           "category": "kit",
           "oneLiner": "荒廃した世界で見つけた謎の機械の正体に迫る新作持ち帰り謎",
-          "description": "荒廃した世界で見つけた謎の機械、その正体とは、、、",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 60,
             "max": 120
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVroG7vawAAto85?format=jpg&name=small",
           "payment": [
             "現金",
             "PayPay"
@@ -303,33 +291,23 @@
               "url": "https://x.com/Another_Vision_/status/2115775666444714081",
               "retrievedAt": "2026-10-30"
             }
-          ]
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVroG7vawAAto85?format=jpg&name=small"
         },
         {
-          "id": "no30-2",
-          "name": "わがままおてがみ",
-          "price": 1500,
-          "priceNote": null,
+          "id": "p171",
+          "keepId": "no30-2",
           "category": "kit",
           "oneLiner": "わがままな女の子の手紙に絵本作家として応える新作持ち帰り謎",
-          "description": "絵本作家のもとに届いたのは、わがままな女の子からの手紙。絵本作家は女の子のわがままに応えることができるのか？",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 45,
             "max": 90
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVroXK4bgAApyBz?format=jpg&name=small",
           "payment": [
             "現金",
             "PayPay"
@@ -348,7 +326,9 @@
               "retrievedAt": "2026-10-30"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no30-3",
           "name": "新作2作セット（Lost&Innovate＋わがままおてがみ）",
@@ -719,16 +699,13 @@
         }
       ],
       "notes": "公式product.tsvに商品なし。HPは公式登録がXのみ(Xは開かない方針)。Web検索(Sheep Rhythm 謎解き 持ち帰り謎 ナゾトキマーケット)では商品情報が出ず、前回(2025)の出展者一覧に名前があるのみ。X(@sheeprhythm)を見れば取れる可能性あり 【Xパス】@sheeprhythm の10/20・10/22・10/24の告知(『ナゾマ2026 新作①〜③』)から新作3点を確認。ブース番号はCc21。告知画像(価格・プレイ時間入り)を読んで記録。四枚謎本・交は先行特別価格。羊皮紙vol.2『ARTS』は特別価格の記載なし。既存作の出品は見つからず。 再収集(10/30 Web): 新しい告知なし(HPなし、Web検索でも商品情報は出ない) 再収集(10/30 X): 10/29 の『ナゾマ お品書き』(画像4枚)で全商品と価格を確認。新作④PATHCODE(1,000円・10/27告知)と、昨年の再販『羊皮紙 vol.1 18 cards』(500円)・『謎付きステッカー』(各300円・2種セット500円)を no32-4〜6 に追加。既存3商品の価格は変わらず(四枚謎本3,000円・交2,000円は先行特別価格のまま、ARTS 500円)、所要時間を告知画像の範囲に直した。支払いは現金のみ、ブースCc21。特典: 当日4,000円以上の購入で限定LINEナゾ、新作のおためし謎入りチラシを無料配布予定",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no32-1",
-          "name": "四枚謎本",
-          "price": 3000,
+          "id": "p161",
+          "keepId": "no32-1",
           "priceNote": "先行特別価格（通常3,500円）",
           "category": "booklet",
           "oneLiner": "珠玉の四枚謎を全25問収録した問題集。こひつじレーベル第1弾",
-          "description": "珠玉の四枚謎を全25問収録した、新感覚のナゾトキ問題集が #シープリズム から登場。#こひつじレーベル の幕開けを飾る、初心者から上級者まで楽しめる一冊になっています。",
           "difficulty": {
             "level": 3,
             "source": "estimated",
@@ -738,14 +715,12 @@
             "min": 300,
             "max": 600
           },
-          "players": null,
           "isNew": true,
           "limited": "ナゾトキマーケットでの先行発売（特別価格）",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVEodCgbwAEeN-5?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -788,6 +763,110 @@
             }
           ]
         },
+        {
+          "id": "p162",
+          "keepId": "no32-3",
+          "priceNote": "先行特別価格（通常2,200円）",
+          "category": "kit",
+          "oneLiner": "紙片だけが入った上級者向けの持ち帰り謎。指示文なし",
+          "difficulty": {
+            "level": 5,
+            "source": "estimated",
+            "basis": "『上級者向けの新作持ち帰り謎』と告知され、指示文も手順もなく紙片だけで解く形式のため"
+          },
+          "playMinutes": {
+            "min": 45,
+            "max": 120
+          },
+          "isNew": true,
+          "limited": "ナゾトキマーケットでの先行発売（特別価格）",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/sheeprhythm/status/2113963790551404551",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/sheeprhythm/status/2113963798969328039",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/sheeprhythm/status/2115775687575622063",
+              "retrievedAt": "2026-10-30"
+            }
+          ],
+          "hashtags": [
+            {
+              "tag": "交ナゾ",
+              "sources": [
+                {
+                  "url": "https://x.com/sheeprhythm/status/2113963790551404551",
+                  "retrievedAt": "2026-10-26"
+                },
+                {
+                  "url": "https://x.com/sheeprhythm/status/2113963798969328039",
+                  "retrievedAt": "2026-10-26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p163",
+          "keepId": "no32-4",
+          "category": "kit",
+          "oneLiner": "48問の謎に隠された26個のCODEをつなぐ、挑戦的な持ち帰り謎",
+          "difficulty": {
+            "level": 4,
+            "source": "estimated",
+            "basis": "『挑戦的な謎解きキット』と告知され、所要75〜210分と長めのため難しめの4とした"
+          },
+          "playMinutes": {
+            "min": 75,
+            "max": 210
+          },
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/sheeprhythm/status/2115050928013520926",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/sheeprhythm/status/2115050935596863966",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/sheeprhythm/status/2115775687575622063",
+              "retrievedAt": "2026-10-30"
+            }
+          ],
+          "hashtags": [
+            {
+              "tag": "パスコードナゾ",
+              "sources": [
+                {
+                  "url": "https://x.com/sheeprhythm/status/2115050928013520926",
+                  "retrievedAt": "2026-10-30"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "products": [
         {
           "id": "no32-2",
           "name": "羊皮紙 vol.2『ARTS』",
@@ -841,118 +920,6 @@
                 {
                   "url": "https://x.com/sheeprhythm/status/2113239067123163332",
                   "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "no32-3",
-          "name": "交 −KOH−",
-          "price": 2000,
-          "priceNote": "先行特別価格（通常2,200円）",
-          "category": "kit",
-          "oneLiner": "紙片だけが入った上級者向けの持ち帰り謎。指示文なし",
-          "description": "箱を開けると、そこには積み重なった紙片のみ。答えへの道筋は一切記されていません。ひらめきを頼りに紐解き、たった一つの正解に辿り着け。",
-          "difficulty": {
-            "level": 5,
-            "source": "estimated",
-            "basis": "『上級者向けの新作持ち帰り謎』と告知され、指示文も手順もなく紙片だけで解く形式のため"
-          },
-          "playMinutes": {
-            "min": 45,
-            "max": 120
-          },
-          "players": null,
-          "isNew": true,
-          "limited": "ナゾトキマーケットでの先行発売（特別価格）",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVZO3I5awAId0FQ?format=jpg&name=small",
-          "payment": [
-            "現金のみ"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/sheeprhythm/status/2113963790551404551",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/sheeprhythm/status/2113963798969328039",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/sheeprhythm/status/2115775687575622063",
-              "retrievedAt": "2026-10-30"
-            }
-          ],
-          "hashtags": [
-            {
-              "tag": "交ナゾ",
-              "sources": [
-                {
-                  "url": "https://x.com/sheeprhythm/status/2113963790551404551",
-                  "retrievedAt": "2026-10-26"
-                },
-                {
-                  "url": "https://x.com/sheeprhythm/status/2113963798969328039",
-                  "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "no32-4",
-          "name": "PATHCODE（パスコード）",
-          "price": 1000,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "48問の謎に隠された26個のCODEをつなぐ、挑戦的な持ち帰り謎",
-          "description": "観察と推測を繰り返して解読を目指す、挑戦的な謎解きキットです。48問の謎に隠された26個のCODE。それらを突き止め、繋ぎ合わせた先にLAST ANSWERが待っています。",
-          "difficulty": {
-            "level": 4,
-            "source": "estimated",
-            "basis": "『挑戦的な謎解きキット』と告知され、所要75〜210分と長めのため難しめの4とした"
-          },
-          "playMinutes": {
-            "min": 75,
-            "max": 210
-          },
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVorm8jboAEKgVi?format=jpg&name=small",
-          "payment": [
-            "現金のみ"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/sheeprhythm/status/2115050928013520926",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/sheeprhythm/status/2115050935596863966",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/sheeprhythm/status/2115775687575622063",
-              "retrievedAt": "2026-10-30"
-            }
-          ],
-          "hashtags": [
-            {
-              "tag": "パスコードナゾ",
-              "sources": [
-                {
-                  "url": "https://x.com/sheeprhythm/status/2115050928013520926",
-                  "retrievedAt": "2026-10-30"
                 }
               ]
             }
@@ -1160,31 +1127,19 @@
         }
       ],
       "notes": "公式booth.tsvにHP無し。Web検索で公式サイト(nazoad.com)を発見。ニュース1ページ目(2026-02-28〜10-21)にナゾトキマーケット2026の告知は無く、今回の持ち込み商品は確認できず。ブース概要の『前回発売した100円謎解き』は2025年の品で候補止まり。ナゾアドSTORES(nazoad.stores.jp)はHTTP 403で見られず。Xアカウントは未確認だが、X を見れば取れる可能性あり 【Xパス】公式アカウントは @nazotoki_adv (表示名『ナゾトキアドベンチャー』、2025年のナゾトキマーケット告知も同アカウント)。2026年9月以降の投稿に『ナゾトキマーケット2026』向けの告知は無し(最新は10/21の大阪公演の告知)。新作持ち帰り謎『LIGHT』(2,000円)はゲームマーケット2026秋(10/17-18)での先行・特別価格・個数限定販売で、ナゾトキマーケットで売るとは書いていないため候補止まり。 再収集(10/30 Web): 新しい告知なし(ニュースの最新は10/21の大阪公演キャンペーン、ナゾトキマーケット・LIGHTの記述なし。STORESは前回に続き未確認) 再収集(10/30 X): 10/24 以降の @nazotoki_adv にナゾトキマーケット向けの告知なし(10/27 大阪公演・10/28 幕張謎解迷宮の告知のみ)。候補は前回のまま",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no33-1",
-          "name": "ピタッと！リドル",
-          "price": 1200,
+          "id": "p223",
+          "keepId": "no33-1",
           "priceNote": "ナゾマ価格",
           "category": "kit",
           "oneLiner": "枠の中にジャンルに沿ったものをピタッと入れていく謎解き",
-          "description": "ルールは枠の中にジャンルに沿ったものを入れていくだけ。解ける人にはスルスル解け、解けない人には解けない。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "ナゾマ先行販売",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWMC6gfbUAAYcU-?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/nazotoki_adv/status/2117539460477034529",
@@ -1193,35 +1148,24 @@
           ]
         },
         {
-          "id": "no33-2",
-          "name": "ヒラメキ電球シリーズ LIGHT",
-          "price": 2200,
+          "id": "p224",
+          "keepId": "no33-2",
           "priceNote": "ナゾマ価格",
           "category": "kit",
           "oneLiner": "電球をテーマにした、電球パッケージの持ち帰り謎",
-          "description": "家電屋さんで見つけた気になる電球を買って帰り、箱を開けると物語が始まる。2026年10月発売で、販売は2会場のみ。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": null,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWMDhZ2aoAAbkeY?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/nazotoki_adv/status/2117540127912460365",
               "retrievedAt": "2026-11-03"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no33-3",
           "name": "100円謎解き",
@@ -1335,15 +1279,12 @@
         }
       ],
       "notes": "BOOTHのトップはHTTP 403で見られず、/items は『現在このショップは非公開中です』の表示で商品一覧なし。Web検索でも商品情報は出ず。ブース概要の『錬金術入門』『ダイイングメッセージ』は既存作の紹介で、今回の持ち込みとは書いていない(ダイイングメッセージはイマーシブ推理ゲームとあり持ち帰り品かも不明)。Xを見れば取れる可能性あり(Xアカウントは未確認) 【Xパス】@cinematrickshop(シネマトリックショップ、シネマトリックの販売用アカウント)を確認。2025年のナゾトキマーケット(Cb6)で『錬金術入門』を完売・追加販売した投稿はあるが、2026年9月以降にナゾトキマーケット2026向けの告知は無し。2026-03-13に『錬金術入門』は『今後Amazonでの販売に一本化』と告知(その後2026-07に名古屋・東京の店頭販売の告知あり)。ナゾトキマーケット2026に持ってくる商品は確認できず。 再収集(10/30 Web): 新しい告知なし(Web検索で商品情報は出ない。BOOTHは前回非公開表示、今回は再確認せず) 再収集(10/30 X): 10/24 以降の @cinematrickshop に投稿なし(最新は2026-07-11)。『シネマトリック ナゾトキマーケット2026』のX検索もヒットなしで、出品の有無は引き続き確認できず。候補のまま 再収集(11/1 X): 新作の謎付きおみくじを追加。 再収集(11/4 HTTP): 11/4の公式X告知で既存作『錬金術入門』をナゾトキマーケット2026で販売すると確認。イベント特別価格2,000円（通常2,500円）で no34-2 に追加。候補欄は過去の調査記録として残す。所要時間・難易度・支払い方法は未確認。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "name": "謎付き“あの”おみくじ",
-          "price": 500,
-          "priceNote": null,
+          "id": "p137",
+          "keepId": "no34-1",
           "category": "kit",
           "oneLiner": "星座とルーレットのおみくじ器が謎付きで登場。会場限定",
-          "description": "懐かしの、星座とルーレットの“あの”おみくじ器が「謎付き」で登場。コインを入れてレバーを引くと、おみくじが飛び出し、ルーレットが回る。難易度：初級〜中級。実際におみくじを引くため、イベント会場限定販売。",
           "difficulty": {
             "level": 2,
             "source": "estimated",
@@ -1353,46 +1294,30 @@
             "min": 20,
             "max": 20
           },
-          "players": null,
           "isNew": true,
           "limited": "会場限定販売・通販なし",
           "days": [
             "sat",
             "sun"
           ],
-          "payment": null,
-          "imageUrl": "https://pbs.twimg.com/media/HV-J4mMbsAAWS1J?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/cinematrickshop/status/2116566617739984957",
               "retrievedAt": "2026-11-01"
             }
-          ],
-          "id": "no34-1"
+          ]
         },
         {
-          "id": "no34-2",
-          "name": "錬金術入門",
-          "price": 2000,
+          "id": "p138",
+          "keepId": "no34-2",
           "priceNote": "イベント特別価格（通常2,500円）",
           "category": "kit",
           "oneLiner": "マジシャンが考えた、不思議なことが起きる謎解きキット",
-          "description": "マジシャンが考えた謎解きキット。本当に不思議なことが起きる、ちょっと特別な謎解き体験。ナゾトキマーケット2026でイベント特別価格2,000円（通常2,500円）で販売。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": false,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/cinematrickshop/status/2117818454497771784",
@@ -1401,6 +1326,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "謎解きキット『錬金術入門』",
@@ -1475,16 +1401,12 @@
         }
       ],
       "notes": "お知らせ(2026-03〜10)にナゾトキマーケット2026の告知は無い。持ち帰り謎ページは作品名のみ(JOKER NAZO EXTRA、クリアファイル謎、ALL Gamers!など)で価格なし。2026-08-17から持ち帰り謎を価格改定(個別価格は未確認)。BOOTH(jokerproject.booth.pm)はHTTP 403で見られず。新作『夕陽が落ちるまでに』は10/17-18のゲームマーケット2026秋向けで、今回持ってくるかは不明。Xを見れば取れる可能性あり(Xアカウントは未確認) 【Xパス】@JOKer_Project_ の2026-10-24の『ナゾトキマーケット2026 出展情報』画像で、新作『水神に捧げる謎』とリニューアルした『クリアファイル謎1・2』を確認(ブースCa13)。『夕陽が落ちるまでに』はゲムマ秋向けで、ナゾトキマーケットの告知には無いため候補のまま。 再収集(10/30 Web): 新しい告知なし。お知らせ一覧に8/7の持ち帰り謎の価格改定(8/17〜)があるのみで、持ち帰りページにも価格なし。BOOTH(jokerproject.booth.pm)は再びHTTP 403で見られず。no35-1〜3の価格(1,650円・各660円)は10/24のX告知のまま 再収集(10/30 X): 10/24 以降の @JOKer_Project_ に商品の新しい告知なし(10/29 は無料配布シナリオと川越の周遊謎解きの告知のみ)。価格は10/24 の告知のまま 画像(10/31 Web): no35-1〜3 は HP の持ち帰り謎ページ(ヒントページのみ)・検索で見つからず。BOOTH は 403 画像(11/1 X): no35-1〜3 は X でも商品単体の画像が見つからず(出展情報の画像は2商品を並べた1枚のみ)",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no35-1",
-          "name": "水神に捧げる謎",
-          "price": 1650,
-          "priceNote": null,
+          "id": "p88",
+          "keepId": "no35-1",
           "category": "kit",
           "oneLiner": "2人用ミステリーテリングゲームのスピンオフ謎解きゲーム",
-          "description": "2人用ミステリーテリングゲーム「故郷が沈むまでに」をモチーフとした謎解きゲームです。山奥の村に住むあなた達は、江戸時代に作られた謎を解き明かしていくことに…（本編のネタバレ要素はありません）",
           "difficulty": {
             "level": 4,
             "source": "official",
@@ -1493,13 +1415,10 @@
           "playMinutes": 50,
           "players": "2人",
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
@@ -1512,28 +1431,23 @@
           ]
         },
         {
-          "id": "no35-2",
-          "name": "クリアファイル謎1",
-          "price": 660,
+          "id": "p89",
+          "keepId": "no35-2",
           "priceNote": "クリアファイル謎2も各660円",
           "category": "goods",
           "oneLiner": "10年続くクリアファイル謎シリーズのリニューアル版",
-          "description": "10年にわたってご好評をいただいているクリアファイル謎シリーズがリニューアル！謎の内容は変わらず、どなたにも解きやすいよう調整を加えました。解き終えたクリアファイルは普段使いにも◎",
           "difficulty": {
             "level": 2,
             "source": "official",
             "basis": "団体表記 ★★☆☆☆（2/5）をそのまま"
           },
           "playMinutes": 15,
-          "players": null,
           "isNew": false,
           "limited": "ナゾトキマーケットからリニューアル版を販売開始（謎の内容・答えは変更なし）",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWMPaItaAAAaX-7?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
@@ -1546,28 +1460,22 @@
           ]
         },
         {
-          "id": "no35-3",
-          "name": "クリアファイル謎2",
-          "price": 660,
+          "id": "p90",
+          "keepId": "no35-3",
           "priceNote": "クリアファイル謎1も各660円",
           "category": "goods",
           "oneLiner": "10年続くクリアファイル謎シリーズのリニューアル版",
-          "description": "10年にわたってご好評をいただいているクリアファイル謎シリーズがリニューアル！謎の内容は変わらず、どなたにも解きやすいよう調整を加えました。解き終えたクリアファイルは普段使いにも◎",
           "difficulty": {
             "level": 2,
             "source": "official",
             "basis": "団体表記 ★★☆☆☆（2/5）をそのまま"
           },
           "playMinutes": 15,
-          "players": null,
           "isNew": false,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
@@ -1576,6 +1484,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "ミステリーテリングゲーム『夕陽が落ちるまでに』",
@@ -1840,31 +1749,17 @@
         }
       ],
       "notes": "公式product.tsvに商品なし。HPは公演情報が中心で、メニューにある『お持ち帰り謎・書籍』ページのURLを取れず(/book/ /takeout/ は404)。ナゾトキマーケット2026の告知は無し。Web検索でも出展商品は出ない。HP掲載のX(@hard_nuts_)を見れば取れる可能性あり 【Xパス】@hard_nuts_ の2026-10-25の『ナゾトキマーケット 商品情報』で販売作品4点とブース番号Cb10を確認。ポスト本文に価格・所要時間の記載は無く、添付画像4枚は題名中心のため価格などは未確認(null)。 再収集(10/30 Web): 新しい告知なし。HPのお知らせ・活動記録に今回の4作品の価格はなく、価格は埋められず(追体験版は2025-03-15、茜色の残り香の持ち帰り版は2024-02-17の発売と活動記録にあるが価格の記載なし) 再収集(10/30 X): 10/25 以降にナゾトキマーケット向けの新しい告知なし(10/26 以降は公演情報のみ)。10/25 の投稿の画像4枚は題名のみで4作とも価格なし。FLAG持ち帰り謎は10/9 の告知画像で公演会場価格1,500円と分かったが、今回の価格の告知ではないため price は null のまま priceNote に記載。ほか3作の価格は引き続き未確認",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no37-1",
-          "name": "SQUARE ONE",
-          "price": null,
+          "id": "p114",
+          "keepId": "no37-1",
           "priceNote": "告知に価格の記載なし",
           "category": "online",
           "oneLiner": "LINEで遊ぶ謎解き",
-          "description": "『SQUARE ONE』(LINE謎)",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": null,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVdDz0OacAAJ5bD?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/hard_nuts_/status/2114326119994339428",
@@ -1873,28 +1768,15 @@
           ]
         },
         {
-          "id": "no37-2",
-          "name": "秋めぐる君と一葉 追体験版",
-          "price": null,
+          "id": "p112",
+          "keepId": "no37-2",
           "priceNote": "告知に価格の記載なし",
           "category": "other",
           "oneLiner": "『秋めぐる君と一葉』の追体験版（詳細は告知に無し）",
-          "description": "『秋めぐる君と一葉 追体験版』",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": null,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVdDz0JaMAAxpkL?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/hard_nuts_/status/2114326119994339428",
@@ -1903,35 +1785,24 @@
           ]
         },
         {
-          "id": "no37-3",
-          "name": "持ち帰り版 茜色の残り香",
-          "price": null,
+          "id": "p113",
+          "keepId": "no37-3",
           "priceNote": "告知に価格の記載なし",
           "category": "kit",
           "oneLiner": "『茜色の残り香』の持ち帰り版",
-          "description": "『持ち帰り版 茜色の残り香』",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": null,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVdDz0Vb0AAD4qZ?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/hard_nuts_/status/2114326119994339428",
               "retrievedAt": "2026-10-25"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no37-4",
           "name": "FLAG クリアファイル付き持ち帰り謎",
@@ -2027,34 +1898,22 @@
         }
       ],
       "notes": "公式product.tsvに商品なし。HPのニュース(2025-11〜2026-10)に持ち帰り謎・ナゾトキマーケットの記述は無し。Web検索でも出ない。HP掲載のX(@algo6le)を見れば取れる可能性あり 【Xパス】@algo6le の2026-10-24『ナゾトキマーケット お品書き』(画像2枚)で全6作の持ち帰り謎と3点セット、ブースCc11を確認。価格・所要時間は画像から。Project Mappingは10/11の商品情報で1,500円・web使用・広い場所推奨。難易度の表記は無し。 再収集(10/30 Web): 新しい告知なし(HPのニュースの10月は10/2のalgoフェスのみ) 再収集(10/30 X): 10/24 以降の新しい商品告知なし(お品書きは10/24 のまま)。10/24 に『Mystery of Postcard』のLINE登録用二次元コードが一定期間後に広告ページへ遷移する場合があるとの注意告知あり 画像(10/31 Web): no38-1〜7 は HP・検索で見つからず(ALGORYTHM(2020 年の公演)の画像は HP にあるが、商品と同一か確認できず入れない) 画像(11/1 X): no38-1〜6 は algo の過去の商品告知(商品ごとのカード画像)から / no38-7 はセット商品で、セット単独の画像なし",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no38-1",
-          "name": "Project Mapping",
-          "price": 1500,
+          "id": "p172",
+          "keepId": "no38-1",
           "priceNote": "オススメ3点セットあり（Project Mapping＋world＋ALGORITHMで3,500円）",
           "category": "kit",
           "oneLiner": "針が示す先を探る新作の持ち帰り謎（web使用）",
-          "description": "Project Mapping ― 針が示すは未知の先 ―。webを使用します。広いスペースで解くことを推奨します。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 90,
             "max": 180
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HUWSjvKasAAuAaY?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/algo6le/status/2113963733613687128",
@@ -2070,6 +1929,58 @@
             }
           ]
         },
+        {
+          "id": "p173",
+          "keepId": "no38-5",
+          "priceNote": "オススメ3点セットあり",
+          "category": "kit",
+          "oneLiner": "繋げて、流して、叶えて遊ぶ持ち帰り謎",
+          "playMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/algo6le/status/2113963733613687128",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/algo6le/status/2026994276966789500",
+              "retrievedAt": "2026-11-01"
+            }
+          ]
+        },
+        {
+          "id": "p174",
+          "keepId": "no38-6",
+          "priceNote": "オススメ3点セットあり",
+          "category": "kit",
+          "oneLiner": "論理的に実行する、120〜240分かかる持ち帰り謎",
+          "playMinutes": {
+            "min": 120,
+            "max": 240
+          },
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/algo6le/status/2113963733613687128",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/algo6le/status/2026994276966789500",
+              "retrievedAt": "2026-11-01"
+            }
+          ]
+        }
+      ],
+      "products": [
         {
           "id": "no38-2",
           "name": "Mystery of Postcard",
@@ -2179,80 +2090,6 @@
           ]
         },
         {
-          "id": "no38-5",
-          "name": "world",
-          "price": 1500,
-          "priceNote": "オススメ3点セットあり",
-          "category": "kit",
-          "oneLiner": "繋げて、流して、叶えて遊ぶ持ち帰り謎",
-          "description": "繋げて、流して、叶えて",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": {
-            "min": 60,
-            "max": 120
-          },
-          "players": null,
-          "isNew": null,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HB-5mSYbQAAlOdz?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/algo6le/status/2113963733613687128",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/algo6le/status/2026994276966789500",
-              "retrievedAt": "2026-11-01"
-            }
-          ]
-        },
-        {
-          "id": "no38-6",
-          "name": "ALGORITHM",
-          "price": 1000,
-          "priceNote": "オススメ3点セットあり",
-          "category": "kit",
-          "oneLiner": "論理的に実行する、120〜240分かかる持ち帰り謎",
-          "description": "論理的に、実行しましょう。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": {
-            "min": 120,
-            "max": 240
-          },
-          "players": null,
-          "isNew": null,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HB-5mSBa0AAJPZ7?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/algo6le/status/2113963733613687128",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/algo6le/status/2026994276966789500",
-              "retrievedAt": "2026-11-01"
-            }
-          ]
-        },
-        {
           "id": "no38-7",
           "name": "オススメ3点セット（Project Mapping＋world＋ALGORITHM）",
           "price": 3500,
@@ -2336,34 +2173,21 @@
         }
       ],
       "notes": "公式product.tsvに商品なし。公式booth.tsvにHP・Xとも無く、Web検索(F-enigma 大阪公立大学 謎解き 持ち帰り謎)でも公式サイトやアカウントは見つからず、前回(2025)の出展者一覧に名前があるのみ。X を見れば取れそうだが、アカウントは未確認 【Xパス】X検索で @omunazotoki (表示名『F-enigma 大阪公立大学 謎解きイベント制作団体』、2025年のナゾトキマーケット告知も同アカウント)を発見。2026-08-21の投稿に『旧作に加え、新作謎解きグッズも販売予定』とあるが商品名・価格は無し。9月以降の投稿(10/21の白鷺祭公演告知のみ)にナゾトキマーケット2026の商品告知は無く、商品0件。 再収集(10/30 Web): 新しい告知なし(公式ブースページにHP・Xなし、Web検索でも出ない) 再収集(10/30 X): 10/24 以降の @omunazotoki に投稿なし(最新は10/21 の白鷺祭公演告知)。商品の告知は無く商品0件のまま",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no39-1",
-          "name": "マークシートナゾトキ",
-          "price": 500,
-          "priceNote": null,
+          "id": "p189",
+          "keepId": "no39-1",
           "category": "kit",
           "oneLiner": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
-          "description": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 15,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/omunazotoki/status/2117512275120861410",
@@ -2372,31 +2196,19 @@
           ]
         },
         {
-          "id": "no39-2",
-          "name": "ベタベタナゾ",
-          "price": 500,
-          "priceNote": null,
+          "id": "p190",
+          "keepId": "no39-2",
           "category": "kit",
           "oneLiner": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
-          "description": "過去の白鷺祭で行ったカフェ謎の持ち帰り版",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 30,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/omunazotoki/status/2117512275120861410",
@@ -2405,31 +2217,19 @@
           ]
         },
         {
-          "id": "no39-3",
-          "name": "サイ能スゴロク",
-          "price": 1000,
-          "priceNote": null,
+          "id": "p191",
+          "keepId": "no39-3",
           "category": "kit",
           "oneLiner": "F-enigmaの旧作の持ち帰り謎",
-          "description": "F-enigmaの旧作の持ち帰り謎",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 60,
             "max": 120
           },
-          "players": null,
           "isNew": false,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/omunazotoki/status/2117512275120861410",
@@ -2438,6 +2238,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [],
       "extraLinks": {
         "x": [
@@ -2487,16 +2288,12 @@
         }
       ],
       "notes": "公式product.tsvに商品なし。HPは公式登録がXのみ(@return_zero_thk、Xは開かない方針)。Web検索(東北大学 return 0; 謎解き 持ち帰り謎)では何も出ない。X を見れば取れる可能性あり 【Xパス】@return_zero_thk の10/21・10/22の告知で新作持ち帰り謎2点(各1,000円)が『ナゾトキマーケット2026にて販売予定』と確認。ザトリオは3団体コラボで、return 0;のキットが『あからさまです』(他2団体のキットはこの団体の商品ではないため記録せず)。 再収集(10/30 Web): 新しい告知なし(HPなし、Web検索でも出ない) 再収集(10/30 X): 10/29 のお詫び告知で、『ザトリオ』は他2団体が出展しないため return 0; のキット(あからさまです)のみ予定どおり販売、他2団体のキットは販売しないと判明(ブースはCb9)。3キット必要だった『最後の謎』は1キットで解ける形に。no40-2 の priceNote を更新。怪封記は変更なし 再収集(11/1 X): お品書きから mugen ほか3点を追加。 再収集(11/1 X): 新しく足した商品の画像は過去の投稿（最新約160件）を商品名で探し、単体の画像がないものは null のまま。 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no40-1",
-          "name": "怪封記",
-          "price": 1000,
-          "priceNote": null,
+          "id": "p194",
+          "keepId": "no40-1",
           "category": "kit",
           "oneLiner": "神社を巡って封印された怪異に迫る持ち帰り謎",
-          "description": "師匠と共に様々な神社を巡るあなた。今日は、怪異が封印されているという神社に訪れたが…",
           "difficulty": {
             "level": 3,
             "source": "official",
@@ -2506,14 +2303,11 @@
             "min": 45,
             "max": 100
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVJ5CIeboAAMqyi?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -2540,13 +2334,11 @@
           ]
         },
         {
-          "id": "no40-2",
-          "name": "あからさまです（ザトリオ return 0;編）",
-          "price": 1000,
+          "id": "p195",
+          "keepId": "no40-2",
           "priceNote": "『あからさまです』のキットと『最後の謎』が遊べるLINEアカウントのセットで1,000円(10/29 の告知)",
           "category": "kit",
           "oneLiner": "未知のルールを既知のセカイで解く謎。1キットで最後の謎まで遊べる",
-          "description": "未知のルールを、既知のセカイで。（『ザトリオ』―3団体のコラボで届ける、珠玉の謎解き。すべてをクリアし「最後の謎」に挑め） ※10/29 の告知: 『あからさまです』の謎解きキットと『最後の謎』が遊べるLINEアカウントがセットになって1000円。",
           "difficulty": {
             "level": 4,
             "source": "official",
@@ -2556,14 +2348,11 @@
             "min": 90,
             "max": 180
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVPCulna0AAk-Q1?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -2609,7 +2398,9 @@
               ]
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "name": "mugen",
           "price": 1000,
@@ -2884,34 +2675,21 @@
           "payment": [
             "現金のみ"
           ]
-        }
-      ],
-      "products": [
+        },
         {
-          "id": "no41-1",
-          "name": "勇者フリソの冒険",
-          "price": 1500,
-          "priceNote": null,
+          "id": "p102",
+          "keepId": "no41-1",
           "category": "kit",
           "oneLiner": "可愛い勇者が主役の学生謎解きサークル対抗戦の持ち帰り謎",
-          "description": "学生謎解きサークル対抗戦が現在開催中です！可愛い勇者のビジュアルにも注目です！",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 60,
             "max": 120
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
           "payment": [
             "現金のみ"
           ],
@@ -2926,6 +2704,36 @@
             }
           ]
         },
+        {
+          "id": "p127",
+          "keepId": "no41-5",
+          "category": "kit",
+          "oneLiner": "新人妖精の初任務。あの子のために最高のお弁当を作る",
+          "playMinutes": {
+            "min": 40,
+            "max": 80
+          },
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/k_dush2/status/2116847735496409566",
+              "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/k_dush2/status/2116485431772721605",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        }
+      ],
+      "products": [
         {
           "id": "no41-2",
           "name": "Re: 監獄",
@@ -3034,45 +2842,6 @@
               "retrievedAt": "2026-11-01"
             }
           ]
-        },
-        {
-          "name": "はじめてのお弁当大作戦！",
-          "price": 1500,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "新人妖精の初任務。あの子のために最高のお弁当を作る",
-          "description": "新人妖精の初任務、あの子のために最高のお弁当を作ろう！",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": {
-            "min": 40,
-            "max": 80
-          },
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "payment": [
-            "現金のみ"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HWCKY20bkAAQZ34?format=jpg&name=small",
-          "sources": [
-            {
-              "url": "https://x.com/k_dush2/status/2116847735496409566",
-              "retrievedAt": "2026-11-01"
-            },
-            {
-              "url": "https://x.com/k_dush2/status/2116485431772721605",
-              "retrievedAt": "2026-11-02"
-            }
-          ],
-          "id": "no41-5"
         }
       ],
       "candidates": [],

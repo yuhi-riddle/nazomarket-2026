@@ -389,6 +389,78 @@ describe("buildProducts", () => {
   });
 });
 
+describe("buildProducts representedBy", () => {
+  const individual = shards[0].booths[0].products[0];
+  const seriesShards = (patch: Record<string, unknown> = {}): ShardFile[] => [{
+    ...shards[0],
+    booths: [{
+      ...shards[0].booths[0],
+      officialPatches: [{ id: "p03", representedBy: ["no72-1", "no72-2"], ...patch }],
+      products: [individual, { ...individual, id: "no72-2", price: 1800 }],
+    }],
+  }];
+  const build = (data: ShardFile[]) => buildProducts({ officialProducts, officialBooths, shards: data, retrievedAt: DATE });
+
+  it("シリーズ公式行は出さず、各商品の値を保って出典だけ重複なしで合流する", () => {
+    const data = seriesShards({ price: 9999, description: "上書き禁止", imageUrl: "series.png",
+      difficulty: { level: 5, source: "official", basis: "シリーズ" }, playMinutes: 999,
+      sources: [individual.sources[0], { url: "https://example.com/series", retrievedAt: DATE }],
+    });
+    const built = build(data);
+    expect(built.map((p) => p.id)).toEqual(["p19", "no72-1", "no72-2"]);
+    for (const id of ["no72-1", "no72-2"]) {
+      const product = built.find((p) => p.id === id)!;
+      const { sources, ...fields } = individual;
+      expect(product).toMatchObject({ ...fields, id, price: id === "no72-1" ? null : 1800 });
+      expect(product.sources.map((s) => s.url)).toEqual([
+        individual.sources[0].url, `${BASE}product/product.html?pno=p03`, "https://example.com/series",
+      ]);
+      expect(product).not.toHaveProperty("representedBy");
+      expect(product).not.toHaveProperty("keepId");
+    }
+  });
+
+  it.each(["気怠げ終末レジスタンス", "『シリーズ』個別版"])("対象商品の公式名・引用題名の重複を許可する: %s", (name) => {
+    const data = seriesShards();
+    data[0].booths[0].products = data[0].booths[0].products.map((p) => ({ ...p, name }));
+    const rows = officialProducts.map((p) => p.id === "p03" ? { ...p, name: name.includes("『") ? "公式『シリーズ』" : name } : p);
+    expect(buildProducts({ officialProducts: rows, officialBooths, shards: data, retrievedAt: DATE })).toHaveLength(3);
+  });
+
+  it("別shardで指定した対象も名前重複を許可する", () => {
+    const data = seriesShards();
+    const boothData = data[0].booths[0];
+    const patches = boothData.officialPatches;
+    boothData.officialPatches = [];
+    boothData.products[0] = { ...individual, name: officialProducts[0].name };
+    data.push({ ...data[0], booths: [{ ...boothData, products: [], officialPatches: patches }] });
+    expect(build(data)).toHaveLength(3);
+  });
+
+  it("明示していない商品の名前重複は引き続き例外", () => {
+    const data = seriesShards();
+    data[0].booths[0].products.push({ ...individual, id: "no72-3", name: officialProducts[0].name });
+    expect(() => build(data)).toThrow(/no72-3.*p03/);
+  });
+
+  it.each([
+    { representedBy: [] },
+    { representedBy: ["no72-1", "missing"] },
+    { representedBy: ["no72-1", "p19"] },
+    { representedBy: ["no72-1", "p03"] },
+    { keepId: "no72-kept" },
+    { id: "p999" },
+  ])("不正な指定は例外: %j", (patch) => {
+    expect(() => build(seriesShards(patch))).toThrow();
+  });
+
+  it("同じ公式行の別patchにkeepIdがあっても併用を拒否する", () => {
+    const data = seriesShards();
+    data[0].booths[0].officialPatches.push({ id: "p03", keepId: "no72-kept" });
+    expect(() => build(data)).toThrow(/p03/);
+  });
+});
+
 describe("buildBooths", () => {
   const booths = buildBooths({
     officialBooths,

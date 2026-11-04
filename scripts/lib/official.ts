@@ -156,18 +156,22 @@ export function classifyLinks(values: string[]): OfficialLinks {
   return links;
 }
 
-function tsvRows(value: string, columnCount: number): string[][] {
+function tsvRows(value: string, columnCount: number, rowStart: RegExp): string[][] {
   const lines = value.replace(/^\uFEFF/, "").split(/\r\n|\n|\r/);
-  return lines.slice(1).flatMap((line) => {
-    if (!line.trim()) return [];
+  const records: string[] = [];
+  for (const line of lines.slice(1)) {
+    if (rowStart.test(line)) records.push(line);
+    else if (records.length > 0 && line.trim()) records[records.length - 1] += `\n${line}`;
+  }
+  return records.map((line) => {
     const columns = line.split("\t");
     while (columns.length < columnCount) columns.push("");
-    return [columns];
+    return columns;
   });
 }
 
 export function parseBoothTsv(value: string): OfficialBoothRow[] {
-  return tsvRows(value, 12).map((columns) => {
+  return tsvRows(value, 12, /^no\d+\t/u).map((columns) => {
     const dayLabel = columns[1].trim();
     return {
       id: columns[0].trim(),
@@ -188,7 +192,7 @@ function parseImageCount(value: string): number | null {
 }
 
 export function parseProductTsv(value: string): OfficialProductRow[] {
-  return tsvRows(value, 8).map((columns) => ({
+  return tsvRows(value, 8, /^p\d+\t/u).filter((columns) => columns[1].trim() !== "0").map((columns) => ({
     id: columns[0].trim(),
     boothId: columns[1].trim(),
     name: columns[2].trim(),
