@@ -1,6 +1,6 @@
 {
   "range": "no43-no56",
-  "collectedAt": "2026-11-02",
+  "collectedAt": "2026-11-04",
   "booths": [
     {
       "boothId": "no43",
@@ -279,16 +279,13 @@
         }
       ],
       "notes": "HPなし。公式ブース概要は「謎解き好きなら一度はやってみたいアレを持ち帰り謎にする予定」とあるだけで商品名・価格なし。Web検索でも今回の商品は見つからず（検索語: きまぐれボックス ナゾトキマーケット など）。過去作が楽天の「宝探しSHOP」に載っていたので候補に入れた（楽天ページは文字化けのため価格以外の説明は取れず）。Xで告知を確認する必要あり。 Xで確認済み（@kimagurebox）：2026-10-14の新作告知で『とにかくバクダン解除するだけ』を今回販売と確認（現地頒布のみ）。過去作の候補3件は告知に出ず候補のまま。 再収集(10/30 Web): 検索と楽天ページを再確認したが新しい告知なし。『とにかくバクダン解除するだけ』の価格は10/25時点の6,000円（初回限定価格）のまま。 再収集(10/30 X): 10/27 に『とにかくバクダン解除するだけ』の動画告知（ブース Cc5）があるが価格・個数の記載なし。価格は10/25 時点の6,000円（初回限定価格）のまま。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no44-1",
-          "name": "とにかくバクダン解除するだけ",
-          "price": 6000,
+          "id": "p128",
+          "keepId": "no44-1",
           "priceNote": "初回限定価格（告知画像より）",
           "category": "kit",
           "oneLiner": "時限爆弾の10本のケーブルを切り分けて解除する持ち帰り謎",
-          "description": "究極の謎解き体験。10本のケーブル。止まらないカウント。必要なものは解析力とひらめき力、そして勇気。このゲームは、ただ一度のミスも許されない。 内容物：時限爆弾1個、取扱説明書1冊、解除手順書1枚、ニッパー1本、電池1個。梱包外形 長さ260×幅190×深さ110mm（手提げ袋付き）。ゲームの特性上、途中で止めたりやり直すことはできません。 想定時間：70分〜150分（ノーマル／ハードモードで選択可。告知画像では100分以上）。対象年齢13歳以上。",
           "difficulty": {
             "level": 5,
             "source": "official",
@@ -305,7 +302,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HUlIfz-bYAA3pkX?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -356,6 +352,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "インカに眠る幻の秘宝",
@@ -459,34 +456,21 @@
         }
       ],
       "notes": "HPなし。公式ブース概要は「ヒラメキゲームブランド」とあるだけで商品情報なし。Web検索で2024-10-05にBOOTHで発売されたスマホゲーム『CIRCLE』（MICHI第2作）が見つかった（記事本体はgamebizが503で開けず、検索結果の要約のみ確認）。第1作『D』も購入ページ非公開で販売との記事あり。購入ページが謎を解くと出る隠しページ方式のため通販URLは取れず。今回の出品は不明。Xで確認する必要あり。 Xで確認済み（@michi_place）：2026-10-24の告知でMICHI vol.4『なにを食べたら思いつくんだ』を今回発売と確認（ブースCa4、土日）。価格は告知に無く未確認。CIRCLEは告知に出ず候補のまま。 再収集(10/30 Web): 検索で MICHI vol.4 の価格・詳細は見つからず、新しい告知なし。価格は null のまま。 再収集(10/30 X): 10/24 以降の新しい告知なし（告知画像・動画に価格の記載は確認できず）。価格は null のまま。 / 画像(10/31 Web): no45-1 は検索で見つからず 画像(11/1 X): no45-1 は告知が動画とリンクカード(アプリのロゴ)のみで、商品の画像が見つからず 再収集(11/4 HTTP): 公式特設サイトの商品情報で価格1,500円、プレイ時間の目安約2時間〜、11/7・8のナゾトキマーケット先行発売を確認し no45-1 に反映。ページの更新日は不明で、11/3以後の変更とは断定しない。Xの新しい商品告知は確認できず。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no45-1",
-          "name": "なにを食べたら思いつくんだ",
-          "price": 1500,
-          "priceNote": null,
+          "id": "p58",
+          "keepId": "no45-1",
           "category": "online",
           "oneLiner": "食べ物でヒラメキを届ける、謎解きに行き詰まった人向けのスマホ謎解きゲーム",
-          "description": "謎解きに行き詰まった人たちに、食べ物でヒラメキを届けるスマホ謎解きゲーム（MICHI vol.4。特設サイトの説明文より）",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 120,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://lp.michi.place/nanitabetara/title.webp",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/michi_place/status/2113933603034042791",
@@ -503,6 +487,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "CIRCLE",
@@ -595,13 +580,61 @@
       ],
       "sources": [],
       "notes": "HPなし。公式ブース概要は伏せ字（「ああ…」の羅列）で商品情報なし。Web検索（団体名＋謎解き＋ナゾトキマーケット、団体名＋サークル＋BOOTH）でも該当なし。Xで確認する必要あり。 X アカウント見つからず（団体名「ああああああああ」でポスト・アカウントを検索したが、団体本人のアカウントと確信できるものが無かった。2026-10-07の他者ポストで今年の出展が話題になっているのみ）。 再収集(10/30 Web): 検索で新しい告知は見つからなかった。 再収集(10/30 X): 団体の X アカウントが特定できていないため、X では新しい告知を確認できず。 再収集(11/2 X): 団体アカウント @_aa__aaaa__aa_ を確認。赤と緑を告知済み、青と白は未告知。",
-      "officialPatches": [],
+      "officialPatches": [
+        {
+          "id": "p155",
+          "keepId": "no47-4",
+          "category": "kit",
+          "oneLiner": "白の謎。謎制作は4名の連名",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 ★10/10 → 10/10×5=5.0 → 5"
+          },
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/_aa__aaaa__aa_/status/2117572512934502814",
+              "retrievedAt": "2026-11-03"
+            }
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWDK5fhaoAAQLev?format=jpg&name=small"
+        },
+        {
+          "id": "p156",
+          "keepId": "no47-5",
+          "category": "kit",
+          "oneLiner": "赤・緑・青・白の4作品をまとめたセット",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/_aa__aaaa__aa_/status/2117587603968897325",
+              "retrievedAt": "2026-11-03"
+            }
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWDMHmEa8AAq5Cp?format=jpg&name=small"
+        },
+        {
+          "id": "p154",
+          "representedBy": [
+            "no47-1",
+            "no47-2",
+            "no47-3"
+          ]
+        }
+      ],
       "products": [
         {
           "id": "no47-1",
           "name": "あああああああああ（赤）",
           "price": null,
-          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）",
+          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁） 3作品をまとめた公式掲載の価格は1,500円。単品・セットの適用範囲が不明なため各作品の価格は未確認。",
           "category": "kit",
           "oneLiner": "名前も価格も「あ」で伏せられた赤の謎",
           "description": "すべて「あ」で伏せて告知された作品の赤。謎制作はどや。",
@@ -635,7 +668,7 @@
           "id": "no47-2",
           "name": "あああああああああああああ（緑）",
           "price": null,
-          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）",
+          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁） 3作品をまとめた公式掲載の価格は1,500円。単品・セットの適用範囲が不明なため各作品の価格は未確認。",
           "category": "kit",
           "oneLiner": "名前も価格も「あ」で伏せられた緑の謎",
           "description": "すべて「あ」で伏せて告知された作品の緑。謎制作はフライパン職人。",
@@ -669,7 +702,7 @@
           "id": "no47-3",
           "name": "あああああ, あああああ!（青）",
           "price": null,
-          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）。紙幣の絵から1,500円らしいが未確定",
+          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）。紙幣の絵から1,500円らしいが未確定 3作品をまとめた公式掲載の価格は1,500円。単品・セットの適用範囲が不明なため各作品の価格は未確認。",
           "category": "kit",
           "oneLiner": "名前も価格も「あ」で伏せられた青の謎",
           "description": "すべて「あ」で伏せて告知された作品の青。",
@@ -691,66 +724,6 @@
           "sources": [
             {
               "url": "https://x.com/_aa__aaaa__aa_/status/2117210117963993275",
-              "retrievedAt": "2026-11-03"
-            }
-          ]
-        },
-        {
-          "id": "no47-4",
-          "name": "あああ（白）",
-          "price": null,
-          "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）。紙幣の絵から2,000円らしいが未確定",
-          "category": "kit",
-          "oneLiner": "名前も価格も「あ」で伏せられた白の謎",
-          "description": "すべて「あ」で伏せて告知された作品の白。謎制作は4名の連名。",
-          "difficulty": {
-            "level": 5,
-            "source": "official",
-            "basis": "団体表記 ★10/10 → 10/10×5=5.0 → 5"
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": null,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HWDK5fhaoAAQLev?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/_aa__aaaa__aa_/status/2117572512934502814",
-              "retrievedAt": "2026-11-03"
-            }
-          ]
-        },
-        {
-          "id": "no47-5",
-          "name": "赤・緑・青・白のセット（内容は伏せ字）",
-          "price": null,
-          "priceNote": "告知の文字が伏せられていて、価格も内容も未確認",
-          "category": "kit",
-          "oneLiner": "4色まとめての告知。文字が伏せられ内容は未確認",
-          "description": "赤・緑・青・白の4作が並ぶセットらしい告知。本文も画像の文字も「あ」で伏せられているため、セット内容と特典は確認できていない。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": null,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HWDMHmEa8AAq5Cp?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/_aa__aaaa__aa_/status/2117587603968897325",
               "retrievedAt": "2026-11-03"
             }
           ]
@@ -869,34 +842,21 @@
         }
       ],
       "notes": "公式ブース概要に「持ち帰り謎『code:box』シリーズなどを販売」とあるが、どの巻を持ってくるかの告知は見つからず、全部候補止まり。HPのニュースは2025-04-29が最新でナゾトキマーケットの言及なし。BOOTH（lollistore.booth.pm）は403で見られなかった。持ち帰り謎一覧: code:box #1〜#4（#1・#2はLITE版もあり）、ぐずりありどるメモリーズ、謎解きトランプ。#1〜#3の価格は未確認。HPにXの記載なし。 Xで確認済み（代表のぐずりあ氏の個人アカウント @guzuria_vtuber。ブース告知もここで出している）：2026-10-15の投稿に「code:box探偵助手の再販（パッケージ終売による新装版）とナゾケットでの新作、どちらも4000円になることが濃厚」とあるが、商品名・確定価格の告知は10/24時点で無く、商品は候補のまま。10/19の投稿で新作は未告知（「今週中頃に告知」）。10/21の投稿から新作は鉱物研究施設が題材とみられる。 再収集(10/30 Web): HP を再確認したがニュースは2025-04-29が最新で、新作・再販の告知なし。 再収集(10/30 X): 10/27 の告知で新作『code:box 迷子のステラと、長すぎた帰り道 編』（コードボックス第5作）を今回発売と確認（4,000円・90分〜、ブース Cb1）。products へ追加。10/28 の投稿に「通販分は箱サイズが少し変わる」とある。10/15 に触れていた『探偵助手』の再販は10/24 以降の告知に出ず、候補のまま。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no49-1",
-          "name": "ナゾトキゲーム code:box 迷子のステラと、長すぎた帰り道 編",
-          "price": 4000,
-          "priceNote": null,
+          "id": "p199",
+          "keepId": "no49-1",
           "category": "kit",
           "oneLiner": "紙30枚・パズル16枚・おまもり入りの code:box 第5作",
-          "description": "ナゾトキゲーム code:box 迷子のステラと、長すぎた帰り道 編。11月7-8日開催のナゾトキマーケットにて発売。価格：4000円、プレイ時間：90分〜、内容物：いっぱい（10/26 の投稿より：コードボックスシリーズの5作目。紙類が30枚くらい、パズル類が16枚くらい、スマホで読み込む特別なカード、アクリル製おまもり）。10/28 の投稿より：白い箱に活版印刷のシンプルなパッケージ。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 90,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVo_55zawAA-1ZN?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/guzuria_vtuber/status/2115074799466930336",
@@ -945,6 +905,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "謎解きゲーム code:box #4 探偵助手と、とおまわりのメッセージ編",
@@ -1057,16 +1018,12 @@
       ],
       "sources": [],
       "notes": "HPなし。公式ブース概要は「無策師の名をかたる者の謎が販売される予定」とあるだけで商品名・価格なし。Web検索（無策師／謎制作王決定戦／BOOTHなど2回）で該当なし。Xで確認する必要あり。 X アカウント見つからず（「無策師」の検索では団体本人のアカウントが特定できなかった。他者の投稿で今年も出展と分かるのみ）。 再収集(10/30 Web): 検索で新しい告知は見つからなかった。 再収集(10/30 X): X で「無策師」を検索し、2025年のナゾトキマーケットに持ち帰り謎で出展していた @musakushi_ を見つけた（本人のポスト。団体名と同名のため extraLinks に追加）。10/17 に「ナゾマ用のキット、半日かけて40部製作」とあるが商品名・価格の告知は10/24 以降も見つからず。 再収集(10/31 X): 10/31 のお品書き(新作4つ)と各作品の紹介画像で価格・限定数・所要時間を確認し、4点を products に追加。お品書きに「謎解きに慣れた人向け・再販予定なし・現金のみ」とある。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no51-1",
-          "name": "無遮 -MUSHA-",
-          "price": 1000,
-          "priceNote": null,
+          "id": "p115",
+          "keepId": "no51-1",
           "category": "kit",
           "oneLiner": "中身が丸見えのクリアファイル。仮説と推測を積み重ねる謎",
-          "description": "昨年のナカニナニカナゾとは真逆のコンセプト！中身が丸見えです！スケスケです！マジで中身はこれだけなので、指示文も問題文もありません！仮説と推測を積み重ねて答えを導いてください(LINEでヒントサポートあり)",
           "difficulty": {
             "level": 4,
             "source": "estimated",
@@ -1076,14 +1033,12 @@
             "min": 30,
             "max": 90
           },
-          "players": null,
           "isNew": true,
           "limited": "限定99部",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV7RqlPbMAAD6eN?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -1096,16 +1051,14 @@
               "url": "https://x.com/musakushi_/status/2116380894483165498",
               "retrievedAt": "2026-10-31"
             }
-          ]
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV7RqlPbMAAD6eN?format=jpg&name=small"
         },
         {
-          "id": "no51-2",
-          "name": "ぱすてるーむ(PRETTY・COOL セット)",
-          "price": 3000,
-          "priceNote": null,
+          "id": "p116",
+          "keepId": "no51-2",
           "category": "kit",
           "oneLiner": "クリアファイルに描かれたお部屋を観察して解く2種セット",
-          "description": "クリアファイルに描かれたお部屋をじっくり観察して、謎を解き明かそう！ピンクの「PRETTY」とブルーの「COOL」、さいごの謎が楽しめるセット作品です。かわいいお部屋にナゾがいっぱい",
           "difficulty": {
             "level": 4,
             "source": "estimated",
@@ -1115,14 +1068,12 @@
             "min": 60,
             "max": 120
           },
-          "players": null,
           "isNew": true,
           "limited": "限定200部",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV7Rvbxa0AAZyid?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -1135,16 +1086,14 @@
               "url": "https://x.com/musakushi_/status/2116380894483165498",
               "retrievedAt": "2026-10-31"
             }
-          ]
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV7Rvbxa0AAZyid?format=jpg&name=small"
         },
         {
-          "id": "no51-3",
-          "name": "むむむむむむむむ",
-          "price": 1000,
-          "priceNote": null,
+          "id": "p117",
+          "keepId": "no51-3",
           "category": "kit",
           "oneLiner": "全ての文字が「む」になった謎",
-          "description": "むむむっ！？全ての文字が「む」になってる！？ゲシュタルト崩壊必至の、むの世界をお楽しむください！",
           "difficulty": {
             "level": 4,
             "source": "estimated",
@@ -1154,14 +1103,12 @@
             "min": 40,
             "max": 90
           },
-          "players": null,
           "isNew": true,
           "limited": "限定500部",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV7VsM0aQAAroBH?format=jpg&name=small",
           "payment": [
             "現金のみ"
           ],
@@ -1174,8 +1121,11 @@
               "url": "https://x.com/musakushi_/status/2116380894483165498",
               "retrievedAt": "2026-10-31"
             }
-          ]
-        },
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV7VsM0aQAAroBH?format=jpg&name=small"
+        }
+      ],
+      "products": [
         {
           "id": "no51-4",
           "name": "無策師オールスター THE LOST",
@@ -1471,30 +1421,19 @@
         }
       ],
       "notes": "HPなし。公式ブース概要は「命の再配布。」の一言のみで商品情報なし。Web検索（PADDLE／命の再配布／謎解き団体 PADDLE 持ち帰り謎 BOOTH）で該当なし。Xで確認する必要あり。 Xで確認済み（@paddle_pj）：2026-10-07の投稿で「全て新作をご用意する予定」とあるが、商品名・価格の告知は10/24時点で見つからず。 再収集(10/30 Web): 検索で新しい告知は見つからなかった。 再収集(10/30 X): 10/29 の告知で新作『Nuts』を確認（ブース Ce1）。価格は告知画像で80,000円（現金・クレジットカード決済のみ）、ブースでの抽選に当選した方のみ購入可、商品は会期後に郵送。10/7 の「全て新作」の予定どおり。ほかの新作は告知に出ず。 再収集(11/1 X): 新作『transpoRTAtion』を追加。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no55-1",
-          "name": "Nuts",
-          "price": 80000,
+          "id": "p133",
+          "keepId": "no55-1",
           "priceNote": "ブースでの抽選に当選した方のみ購入可（告知画像より）",
           "category": "other",
           "oneLiner": "抽選に当選した人だけが買える、会期後に郵送される新作（スマホとLINEが必要）",
-          "description": "PADDLE 新作『Nuts』。とても限られた方に向けた作品です。抽選に当選した方のみ、ご体験いただけます。内容をよく読んで、ご購入ください。凶兆、猜疑心、禁忌、陥穽、終焉。理の外へ。覚悟をもってご購入ください。（告知画像の注意事項より：商品はナゾトキマーケット終了後に郵送。プレイにはインターネットに接続できるスマートフォンと LINE アカウントが必要。購入者はナゾトキマーケット当日に行う抽選で決定し、抽選に参加するには当日 PADDLE ブースに来場する必要がある。当選者は先着順での購入で、売り切れる場合がある。購入後のキャンセル・返品・返金は不可。ゲームに関する一切の情報の口外・公開は固くお断り。）",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "抽選に当選した方のみ購入可（先着順・売り切れの場合あり）",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVyURoibUAAV3oN?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード"
@@ -1533,36 +1472,28 @@
           ]
         },
         {
-          "name": "transpoRTAtion",
-          "price": 2500,
-          "priceNote": null,
+          "id": "p132",
+          "keepId": "no55-2",
           "category": "kit",
           "oneLiner": "東京を駆け回りタイムを競う周遊謎。11/9以降に開始",
-          "description": "好きな駅を選び、スタートボタンを押すとタイムカウントが始まる。東京を駆け回り謎を解く、タイムアタックをする周遊謎。ゲーム終了後にランキングが表示される。自宅に持ち帰ってから好きなタイミングで好きな場所からスタートできる。2026年11月9日以降から遊べる。ナゾトキマーケット会場内を周遊する企画ではない。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "payment": null,
-          "imageUrl": "https://pbs.twimg.com/media/HV9eOqva4AElojY?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/paddle_pj/status/2116742024166576564",
               "retrievedAt": "2026-11-01"
             }
-          ],
-          "id": "no55-2"
+          ]
+        },
+        {
+          "id": "p134",
+          "priceNote": "公式価格欄は2,000円。説明では500円単位で購入金額を上げられ、最大5,000円。当日ブースで注意事項を確認して購入。"
         }
       ],
+      "products": [],
       "candidates": [],
       "extraLinks": {
         "x": [

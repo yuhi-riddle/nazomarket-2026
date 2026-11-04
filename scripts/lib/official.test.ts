@@ -131,6 +131,32 @@ describe("parseBoothTsv", () => {
 });
 
 describe("parseProductTsv", () => {
+  it("商品説明内の改行を保持し、続きの行を商品として扱わない", () => {
+    const tsv = [
+      PRODUCT_HEADER,
+      "p68\tno67\tTEA4 PARTY\t200円\t説明の前半",
+      "説明の後半<br>難易度：★★★\t1\t1\t2",
+      "p69\tno67\tsek16an\t1700円\t次の商品\t0\t0\t",
+    ].join("\r\n");
+    const rows = parseProductTsv(tsv);
+    expect(rows.map((product) => product.id)).toEqual(["p68", "p69"]);
+    expect(rows[0]).toMatchObject({
+      description: "説明の前半\n説明の後半\n難易度：★★★",
+      pickup: true,
+      isNew: true,
+      imageCount: 2,
+    });
+  });
+
+  it("団体番号が0になった旧行を除き、掲載フラグ0の有効商品は残す", () => {
+    const tsv = [
+      PRODUCT_HEADER,
+      "p01\t0\t旧商品\t500円\t説明\t1\t1\t",
+      "p02\tno67\t掲載外商品\t2000円\t説明\t0\t1\t",
+    ].join("\n");
+    expect(parseProductTsv(tsv).map((product) => product.id)).toEqual(["p02"]);
+  });
+
   it("価格を数値にし、バッジ・ピックアップ・画像枚数を型付きにする", () => {
     const tsv = [
       PRODUCT_HEADER,

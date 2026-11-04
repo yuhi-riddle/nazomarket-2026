@@ -1,6 +1,6 @@
 {
   "range": "no57-no70",
-  "collectedAt": "2026-11-02",
+  "collectedAt": "2026-11-04",
   "booths": [
     {
       "boothId": "no57",
@@ -166,16 +166,12 @@
         }
       ],
       "notes": "HP の『持ち帰り謎・グッズ』ページに既存作10件。いずれもナゾトキマーケット2026への言及・価格の記載なしのため、全て候補止まり(今回の出品は X で確認が必要)。スケジュールページは学祭向けに持ち帰り謎を作ると書くのみ。X確認(10/25): @_X_c_a_p_e_ は8/21に「新作の持ち帰り謎も制作中」と投稿のみ。作品名・価格の告知なし。候補は今回持参と確認できず 再収集(10/30 Web): HP トップとナビに新作・ナゾトキマーケット2026・価格の記載なし。候補は変わらず 再収集(10/30 X): 10/24 以降の投稿は京都工芸繊維大学の松ヶ崎祭向け公演『おとぎは小さな一歩から』の告知のみ。ナゾトキマーケット向けの新しい告知なし 再収集(10/31 X): 10/31 の「新作情報①」で『ちびっこおばけのおかしなおつかい』(難易度★3・1,500円・90分〜)を確認して products に追加。「新作情報①」とあり、続報がある可能性。 画像(10/31 Web): no59-1 は HP・検索で見つからず(X の告知画像で見つかる可能性あり) 画像(11/1 X): no59-1 は告知投稿のキービジュアルから 再収集(11/1 X): 新作『イラストだらけの100枚謎』を追加。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no59-1",
-          "name": "ちびっこおばけのおかしなおつかい",
-          "price": 1500,
-          "priceNote": null,
+          "id": "p71",
+          "keepId": "no59-1",
           "category": "kit",
           "oneLiner": "お菓子と謎の小さな冒険をする持ち帰り謎",
-          "description": "お菓子と謎の小さな冒険へいざ、出発！",
           "difficulty": {
             "level": 3,
             "source": "official",
@@ -185,15 +181,11 @@
             "min": 90,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVftchFacAAoNhD?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2116455138214703576",
@@ -202,12 +194,10 @@
           ]
         },
         {
-          "name": "イラストだらけの100枚謎",
-          "price": 1000,
-          "priceNote": null,
+          "id": "p72",
+          "keepId": "no59-2",
           "category": "kit",
           "oneLiner": "ただの1枚謎を100枚解きたい人へ（120分〜）",
-          "description": "ただの1枚謎を100枚解きたいあなたへ。",
           "difficulty": {
             "level": 1,
             "source": "official",
@@ -217,31 +207,23 @@
             "min": 120,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "payment": null,
-          "imageUrl": "https://pbs.twimg.com/media/HVnApsnboAAiyR0?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2116817532539515102",
               "retrievedAt": "2026-11-01"
             }
-          ],
-          "id": "no59-2"
+          ]
         },
         {
-          "id": "no59-3",
-          "name": "Bitter Chocolate",
-          "price": 1000,
-          "priceNote": null,
+          "id": "p73",
+          "keepId": "no59-3",
           "category": "kit",
           "oneLiner": "ある男の救えない話を聞きに行くための謎解き作品",
-          "description": "怖がることはない。あくまでも笑い話さ。これはあなたがある男の救えない話を聞きに行くための謎解き作品です。",
           "difficulty": {
             "level": 3,
             "source": "official",
@@ -251,22 +233,20 @@
             "min": 60,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVnA_FPbUAAeUgm?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2117179908984295901",
               "retrievedAt": "2026-11-02"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no59-4",
           "name": "掛け抜けろ！謎掛けラビリンス",
@@ -449,16 +429,13 @@
         }
       ],
       "notes": "公式のブース概要は『ご自宅で楽しむ持ち帰り謎を用意』とあるだけで商品名なし。note は数年前の記事が中心で今回の告知なし。旧HP(c-lock-row.github.io)は404。BOOTH ショップのトップは確認できず(商品ページのみ閲覧)。今回の品は X で確認が必要。X確認(10/25): @C_lock_row の9〜10月の投稿は工大祭(10/10-11)の告知のみ。ナゾトキマーケット向けは8/21の出展告知だけで商品の告知なし 再収集(10/30 Web): note に新作告知なし(最新は『ニブンノイチ』解説)。BOOTH の転売注意は2,500円のまま、新作の掲載なし。新しい告知なし 再収集(10/30 X): 10/24 以降の投稿なし。新しい告知なし 再収集(10/31 X): 10/31 19:00 の投稿で新作持ち帰り謎『なくしもの』(レーベルホワイト)を確認して products に追加。価格は告知なし。 再収集(11/1 X): 新作『111』を追加（価格は告知で見つからず）。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no60-1",
-          "name": "なくしもの",
-          "price": 1000,
+          "id": "p149",
+          "keepId": "no60-1",
           "priceNote": "ナゾマ限定価格（通常1,200円）",
           "category": "kit",
           "oneLiner": "記憶を失った●●●と1枚の写真をめぐる、初心者向けの持ち帰り謎",
-          "description": "「ここは…どこ？自分は…だれ？そして、この写真は…？」記憶を失った●●●と残された1枚の写真をめぐる、謎解きと心温まる物語。本作はレーベルホワイトであり、初心者の方でも安心して遊んでいただけます。",
           "difficulty": {
             "level": 1,
             "source": "estimated",
@@ -468,15 +445,12 @@
             "min": 80,
             "max": null
           },
-          "players": null,
           "isNew": true,
           "limited": "ナゾマ限定価格",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV787Roa8AAFbzg?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/C_lock_row/status/2116470241039655110",
@@ -486,30 +460,19 @@
               "url": "https://x.com/C_lock_row/status/2116470241383584216",
               "retrievedAt": "2026-11-02"
             }
-          ]
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HV787Roa8AAFbzg?format=jpg&name=small"
         },
         {
-          "name": "111",
-          "price": null,
-          "priceNote": null,
+          "id": "p150",
+          "keepId": "no60-2",
           "category": "kit",
           "oneLiner": "「+1」がテーマの持ち帰り謎3作（告白／１との遭遇／カイフウ）",
-          "description": "『+1』をテーマにした3つの持ち帰り謎。『告白』想いを読み解け（30分〜）、『１との遭遇』（90〜150分）、『カイフウ』開けつくそう（60〜120分）。3つの間に『+1』がテーマであること以外の共通点はなく、それぞれ独立している。プレイ時に Web サイトを使用する。色の識別が必要な謎を含む。『告白』『カイフウ』はレーベルブラック（持ち帰り謎に慣れた方向け）。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "payment": null,
-          "imageUrl": "https://pbs.twimg.com/media/HV9QiSIa8AAQwD7?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/C_lock_row/status/2116563598378184956",
@@ -520,9 +483,10 @@
               "retrievedAt": "2026-11-01"
             }
           ],
-          "id": "no60-2"
+          "imageUrl": "https://pbs.twimg.com/media/HV9QiSIa8AAQwD7?format=jpg&name=small"
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "転売注意",
@@ -586,38 +550,27 @@
         }
       ],
       "notes": "公式のブース概要は『ストーリー重視の謎解きを作った』とあるが作品名・価格なし。HP のお知らせ(2026年7月まで)に販売・ナゾトキマーケットの記載なし。HP のブログは記事が動的読み込みで取得できず。作品名は X で確認が必要。X確認(10/25): @onilaby にナゾトキマーケット関連の投稿が検索で出ず 再収集(10/30 Web): HP のお知らせは2026年7月までで販売・ナゾトキマーケットの記載なし。新しい告知なし 再収集(10/30 X): 10/24 以降の投稿は毎週の謎(広大ナゾ)のみ。ナゾトキマーケットの商品告知なし(最新の関連投稿は8/29 の出展告知) 再調査(2026-11-04 HTTP): 11/4の公式X本文でCa7・両日出展、おにぎり謎の再販とプチおにぎり謎の販売を確認。価格は本文に記載なし。併売する新作3点は本文に題名がなく、画像未確認のため未登録。 画像補強(2026-11-04): 同投稿のお品書きをHTTP保存してview_imageで確認。おにぎり謎はさけ・うめ・たらこ各500円、3種セット1,200円。プチおにぎり謎は画像上「ミニおにぎりくじ」、1回300円。複数商品の共通お品書きのためimageUrlはnullを維持。画像の新作3点は今回の補強対象外として追加しない。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no61-1",
-          "name": "おにぎり謎",
-          "price": 500,
+          "id": "p175",
+          "keepId": "no61-1",
           "priceNote": "さけ・うめ・たらこ各500円。3種セット1,200円",
           "category": "kit",
           "oneLiner": "前回好評だったおにぎり謎をナゾトキマーケット2026で再販。",
-          "description": "定番のおにぎり謎を再販。さけ・うめ・たらこの3種類で、各500円。3種セットは1,200円。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": false,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/onilaby/status/2117828124461474247",
               "retrievedAt": "2026-11-04"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no61-2",
           "name": "プチおにぎり謎",
@@ -682,33 +635,21 @@
         }
       ],
       "notes": "公式のブース概要に商品名なし。HP は公演の紹介が中心で、お知らせは2024年11月のむつめ祭のみ。販売・持ち帰り謎の記載なし。検索でも持ち帰り謎の情報は出ず。X で確認が必要。X確認(10/25): X アカウント見つからず。@site_Arcana(埼玉大学謎解きサークル)らしいものはあるが、ナゾトキマーケットの投稿が出ず本人と確信できないため不使用 再収集(10/30 Web): HP のお知らせは2024年11月のまま。新しい告知なし 再収集(10/30 X): @site_Arcana(埼玉大学 謎解きサークル【site : Arcana】)が8/21 に「ナゾトキマーケットに出展・新作の持ち帰り謎を出す予定」と投稿しており本人のアカウントと確認できたため extraLinks に追加(10/25 の「見つからず」を訂正)。作品名・価格の告知は未投稿(10/24 以降は毎週謎の投稿のみ)",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no62-1",
-          "name": "ツナゲバ",
-          "price": 1000,
-          "priceNote": null,
+          "id": "p167",
+          "keepId": "no62-1",
           "category": "kit",
           "oneLiner": "site：Arcanaの新作持ち帰り謎",
-          "description": "site：Arcanaの新作持ち帰り謎。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 50,
             "max": 120
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": null,
           "payment": [
             "現金",
             "クレジットカード"
@@ -721,13 +662,10 @@
           ]
         },
         {
-          "id": "no62-2",
-          "name": "魔導士アルカナの大預言",
-          "price": 1500,
-          "priceNote": null,
+          "id": "p139",
+          "keepId": "no62-2",
           "category": "kit",
           "oneLiner": "タロットカードをモチーフにした謎解き",
-          "description": "タロットカードをモチーフにした謎解き。プレイにはLINEアプリが必要。",
           "difficulty": {
             "level": 3,
             "source": "official",
@@ -737,14 +675,11 @@
             "min": 45,
             "max": 100
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWMg0CPa0AAUzU6?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード"
@@ -754,8 +689,11 @@
               "url": "https://x.com/site_Arcana/status/2117572503715651993",
               "retrievedAt": "2026-11-03"
             }
-          ]
-        },
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWMg0CPa0AAUzU6?format=jpg&name=small"
+        }
+      ],
+      "products": [
         {
           "id": "no62-3",
           "name": "物語交換録 ー藁で掴む長者伝説ー",
@@ -881,7 +819,26 @@
         }
       ],
       "notes": "公式のブース概要に商品名なし(巨大クロスワード・ペンシルパズル系の持ち帰り謎とある)。BOOTH ショップ(imy.booth.pm)は403で見られず。団体の HP は見つからず。X で確認が必要。X確認(10/25): X アカウント見つからず(検索で団体名・作品名とも該当なし) 再収集(10/30 Web): BOOTH(imy.booth.pm)は再度403で見られず。Web 検索でも新しい告知なし 再収集(10/30 X): X アカウント @imy_nazo(iMY(あいまい)。嫌クロの制作者アカウント)を見つけて extraLinks に追加(10/25 の「見つからず」を訂正)。10/27 の投稿「ナゾマ作ったやつまとめ(2/2)」で iMY《Ce4》「新作はとりあえず今嫌クロワ6をデバッグしてもらってます／旧作はあいまいみにシリーズ、嫌クロワシリーズ、Yazzle辺りは全部持っていきます！」。旧作3シリーズを products に入れ、価格は告知なしで null。嫌クロワ Vol.6 は間に合うか不明なので候補。旧候補の嫌クロワ vol.2 は嫌クロワシリーズに含めた。ブース番号は投稿でCe4 画像(10/31 Web): no64-1,no64-2,no64-3 は HP・BOOTH(403)・検索で見つからず(X で見れば見つかりそう) 画像(11/1 X): no64-1〜3 は過去の告知にある画像が特定の巻・版(嫌クロワ Vol.05、Yazzle#02 など)で、シリーズ全体を表すものがなく入れず 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。 再調査(2026-11-04 HTTP): 11/4の公式X本文でVol.06の会場販売・1,000円（以降1,500円）・1600マスを確認しno64-4を追加。no64-1は旧作シリーズとして維持。候補「嫌クロワ Vol.6」は過去の調査記録として残すが、販売は確認済み。お品書き画像とand moreの品名・価格は未確認。 画像補強(2026-11-04): Vol.06単体画像を確認しimageUrlに取得成功したPNG URLを設定（JPEGは404）。価格は画像にないが既確認の本文で1,000円。no64-1は10/27告知の旧作シリーズ、Vol.06は当時制作中だった別商品。既存IDを維持しno64-1の名称・説明で旧作のみ／Vol.06を含まないことを明記。旧作の巻ごとの内訳は未確定。",
-      "officialPatches": [],
+      "officialPatches": [
+        {
+          "id": "p160",
+          "keepId": "no64-4",
+          "priceNote": "ナゾマ2026限定価格（以降の販売時は1,500円）",
+          "category": "kit",
+          "oneLiner": "1600マスを埋める巨大クロスワードの新作。Ce4で販売。",
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/imy_nazo/status/2117794618335264857",
+              "retrievedAt": "2026-11-04"
+            }
+          ]
+        }
+      ],
       "products": [
         {
           "id": "no64-1",
@@ -984,36 +941,6 @@
               "retrievedAt": "2026-11-01"
             }
           ]
-        },
-        {
-          "id": "no64-4",
-          "name": "嫌がらせのようなクロスワードVol.06",
-          "price": 1000,
-          "priceNote": "ナゾマ2026限定価格（以降の販売時は1,500円）",
-          "category": "kit",
-          "oneLiner": "1600マスを埋める巨大クロスワードの新作。Ce4で販売。",
-          "description": "1600マスを埋める巨大クロスワードの新作。Ce4で販売。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HWPqVN6bkAAeRDT?format=png&name=large",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/imy_nazo/status/2117794618335264857",
-              "retrievedAt": "2026-11-04"
-            }
-          ]
         }
       ],
       "candidates": [
@@ -1068,31 +995,24 @@
         }
       ],
       "notes": "公式のブース概要に『【謎解き問題集バラエティパック】を発売』(100問以上収録)とあるため商品に入れた。価格は未記載。団体の HP・ショップは Web 検索で見つからず(escape.id の団体ページと X アカウントのみ)。価格・難易度は X で確認が必要。X確認(10/25): @Mysterycakekh の検索結果は4月の他団体作品の感想のみ。ナゾトキマーケットの投稿なし。個人名のアカウントのため団体本人かは未確認 再収集(10/30 Web): Web 検索でも価格などの告知は出ず、新しい告知なし(価格は null のまま) 再収集(10/30 X): 公式アカウント @Mysterycakekzkc の10/30 の新作告知で『リドルパーティー』(100問以上・8ジャンル・ナゾトキマーケット限定価格2,000円、通常2,500円)を確認。公式ブース概要の「謎解き問題集バラエティパック(100問以上)」と同じ商品と判断して no65-1 に統合し、価格を埋めた(同一商品という判断は名称が違うため推定)。@mysterycakekh は団体メンバーの個人アカウントらしく、公式は @Mysterycakekzkc 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。 2026-11-02 共同出店の CDR（@cdrriddle）の告知から追加。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no65-1",
-          "name": "リドルパーティー",
-          "price": 2000,
+          "id": "p70",
+          "keepId": "no65-1",
           "priceNote": "ナゾトキマーケット限定価格（通常2,500円）",
           "category": "booklet",
           "oneLiner": "100問以上・8ジャンルの小謎を詰めた、ひたすら解くための問題集",
-          "description": "ミステリーケーキの持ち帰り謎が発売！『リドルパーティー』・問題数は100問以上・バラエティー豊かな8ジャンルの謎解き・ひたすら謎を解きたい人にオススメ！・初心者から上級者まで楽しめます！ 多種多様な小謎が大集合！(公式ブース概要: 【謎解き問題集バラエティパック】100問以上が収録された小謎集)",
           "difficulty": {
             "level": 3,
             "source": "estimated",
             "basis": "「初心者から上級者まで楽しめます」とあり幅広い層向けの標準的な難易度と推定"
           },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "会場限定価格",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV1_SpmaQAAsWxG?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/Mysterycakekzkc/status/2115987365038879069",
@@ -1101,28 +1021,15 @@
           ]
         },
         {
-          "id": "no65-2",
-          "name": "不思議の森のリドル",
-          "price": 800,
-          "priceNote": null,
+          "id": "p135",
+          "keepId": "no65-2",
           "category": "kit",
           "oneLiner": "謎解き童話シリーズ第1弾",
-          "description": "可愛らしいイラストと解きごたえのある謎の持ち帰り謎。CDR初の持ち帰り謎。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWCO9kiasAAsUew?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/cdrriddle/status/2116849029917315557",
@@ -1131,35 +1038,24 @@
           ]
         },
         {
-          "id": "no65-3",
-          "name": "3匹のスケル豚",
-          "price": 800,
-          "priceNote": null,
+          "id": "p136",
+          "keepId": "no65-3",
           "category": "kit",
           "oneLiner": "謎解き童話シリーズ第2弾",
-          "description": "可愛らしいイラストと解きごたえのある謎の持ち帰り謎。CDR初の持ち帰り謎。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWCO9kkbgAA30st?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/cdrriddle/status/2116849029917315557",
               "retrievedAt": "2026-11-02"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no65-4",
           "name": "不思議の森のリドル＋3匹のスケル豚 セット",
@@ -1229,61 +1125,38 @@
         }
       ],
       "notes": "HP のお知らせに2026年のナゾトキマーケット告知はまだ無い。見つかった『お品書き』(archives/5496)は2025年11月の前回分なので全て候補止まり。BOOTH ショップのトップは403で見られず(価格は HP 記事と検索結果の抜粋による)。今回の品は X・HP の続報で確認が必要。X確認(10/25): @MysteryJ_nazo の最新の関連投稿は8/21「ちょっと怖い謎・お酒テーマの大人向け謎・腰を据えて遊べる謎などを用意予定」のみ。作品名・価格の告知なし。候補は今回持参と確認できず 再収集(10/30 Web): HP のお知らせ最新は8/19の『なぞ呑み』で、2026年のお品書きは未掲載。候補は変わらず 再収集(10/30 X): 10/29 の告知で新作『ニタクタワー』(500円・ワンコイン謎シリーズ・先行販売)を確認して products に追加。ほかの旧作候補はお品書き未投稿のため候補のまま 再収集(10/31 X): 10/30 の投稿で『エニグマの予言』(1部500円・10部3,000円)、10/31 の投稿で新作持ち帰り謎②『カスクド怪盗団からの挑戦状』(ナゾマ先行販売)を確認して products に追加(後者の価格は告知なし)。 画像(10/31 Web): no66-2,no66-3 は HP・検索で見つからず(X の告知画像で見つかりそう) 画像(11/1 X): no66-2,no66-3 は各商品の告知投稿の商品画像から",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no66-1",
-          "name": "ニタクタワー",
-          "price": 500,
+          "id": "p63",
+          "keepId": "no66-1",
           "priceNote": "ワンコイン謎シリーズ",
           "category": "kit",
           "oneLiner": "各階の「二択の扉」のルールを見抜いて100階を目指す、ワンコインの持ち帰り謎",
-          "description": "＼新作持ち帰り謎、登場！／目指すは、100階の頂上！各フロアで待ち受けるのは「二択の扉」。扉のルールを明らかにし、正しいと思う方を選びながら上へ進め！あなたは100階まで辿り着けるか？ #ナゾトキマーケット2026 にて先行販売！！価格はなんとワンコイン(500円)！",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "先行販売",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVy_RXnaEAACm6r?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/MysteryJ_nazo/status/2115776237499228510",
               "retrievedAt": "2026-10-30"
             }
-          ]
+          ],
+          "name": "ミステリージャックのワンコイン謎シリーズ『ニタクタワー』"
         },
         {
-          "id": "no66-2",
-          "name": "エニグマジックシリーズVol.1『エニグマの予言』",
-          "price": 500,
+          "id": "p62",
+          "keepId": "no66-2",
           "priceNote": "1部500円、10部3,000円",
           "category": "goods",
           "oneLiner": "謎解き×マジックの、予言が書かれた紙のグッズ",
-          "description": "謎解き×マジック。マジシャン林王子とタッグを組んだ、全く新しいグッズ。その紙には、謎解きという名の予言が書かれている。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV30X4ObwAAKs2A?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/MysteryJ_nazo/status/2116116095400804578",
@@ -1292,28 +1165,16 @@
           ]
         },
         {
-          "id": "no66-3",
-          "name": "カスクド怪盗団からの挑戦状 ―最高の銘酒を守り抜け！―",
-          "price": null,
-          "priceNote": "価格は告知なし",
+          "id": "p64",
+          "keepId": "no66-3",
           "category": "kit",
           "oneLiner": "ハッカーとなって暗号を解き、富豪の銘酒を守る持ち帰り謎",
-          "description": "「今宵、最高の銘酒を救いに参上する。」義賊・カスクド怪盗団から届いた予告状。ハッカーとなって暗号を解き明かし、富豪の銘酒を守り抜け！(ナゾマ先行販売・新作持ち帰り謎②)",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
           "isNew": true,
           "limited": "先行販売",
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV9EnOEaIAAtpma?format=jpg&name=small",
-          "payment": null,
           "sources": [
             {
               "url": "https://x.com/MysteryJ_nazo/status/2116485800908972382",
@@ -1322,6 +1183,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "Little Christmas Presents",
@@ -1483,6 +1345,43 @@
           ],
           "payment": [
             "現金のみ"
+          ]
+        },
+        {
+          "id": "p69",
+          "keepId": "no67-17",
+          "priceNote": "ナゾマ特別価格（通常2,000円）",
+          "category": "kit",
+          "oneLiner": "4×4に並んだ石板で進む持ち帰り謎",
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "isNew": false,
+          "limited": "会場限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_cooh/status/2114348348132196512",
+              "retrievedAt": "2026-11-02"
+            }
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVerX-7agAAY50d?format=jpg&name=small"
+        },
+        {
+          "id": "p68",
+          "representedBy": [
+            "no67-7",
+            "no67-8",
+            "no67-9",
+            "no67-10",
+            "no67-11",
+            "no67-12",
+            "no67-13",
+            "no67-14"
           ]
         }
       ],
@@ -1721,7 +1620,7 @@
           "id": "no67-7",
           "name": "TEA4 PARTY 蟹",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "全部、蟹。",
           "description": "A4用紙1枚に収めた謎。1枚から買える。全部、蟹。",
@@ -1758,7 +1657,7 @@
           "id": "no67-8",
           "name": "TEA4 PARTY Silent",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "NOTICE:音が出ません。",
           "description": "A4用紙1枚に収めた謎。1枚から買える。NOTICE:音が出ません。",
@@ -1795,7 +1694,7 @@
           "id": "no67-9",
           "name": "TEA4 PARTY オツカイ",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "「君にしか頼めないことだから…」",
           "description": "A4用紙1枚に収めた謎。1枚から買える。「君にしか頼めないことだから…」",
@@ -1832,7 +1731,7 @@
           "id": "no67-10",
           "name": "TEA4 PARTY くみあわせ",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "組んで解いて、解いて組んで。",
           "description": "A4用紙1枚に収めた謎。1枚から買える。組んで解いて、解いて組んで。",
@@ -1869,7 +1768,7 @@
           "id": "no67-11",
           "name": "TEA4 PARTY おーるらいと！",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "楽しむだけでおーるらいと！",
           "description": "A4用紙1枚に収めた謎。1枚から買える。楽しむだけでおーるらいと！",
@@ -1906,7 +1805,7 @@
           "id": "no67-12",
           "name": "TEA4 PARTY 3, 2, 1!",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "うわ〜〜〜〜〜〜！！！！！！！！",
           "description": "A4用紙1枚に収めた謎。1枚から買える。うわ〜〜〜〜〜〜！！！！！！！！",
@@ -1943,7 +1842,7 @@
           "id": "no67-13",
           "name": "TEA4 PARTY 漢字テスト",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "魚介がカレイに躍動するぞ",
           "description": "A4用紙1枚に収めた謎。1枚から買える。魚介がカレイに躍動するぞ",
@@ -1980,7 +1879,7 @@
           "id": "no67-14",
           "name": "TEA4 PARTY the rectagle word",
           "price": 300,
-          "priceNote": "クリアファイル購入時は200円",
+          "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
           "oneLiner": "この謎にはしかけがあります",
           "description": "A4用紙1枚に収めた謎。1枚から買える。この謎にはしかけがあります",
@@ -2079,39 +1978,6 @@
               "retrievedAt": "2026-11-02"
             }
           ]
-        },
-        {
-          "id": "no67-17",
-          "name": "sek16an",
-          "price": 1700,
-          "priceNote": "ナゾマ特別価格（通常2,000円）",
-          "category": "kit",
-          "oneLiner": "4×4に並んだ石板で進む持ち帰り謎",
-          "description": "少し変わった操作で物語が進む持ち帰り謎。昨年は少量しかなかった作品の再販。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": {
-            "min": 90,
-            "max": null
-          },
-          "players": null,
-          "isNew": false,
-          "limited": "会場限定価格",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVerX-7agAAY50d?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/teaparty_cooh/status/2114348348132196512",
-              "retrievedAt": "2026-11-02"
-            }
-          ]
         }
       ],
       "candidates": [
@@ -2163,7 +2029,59 @@
         }
       ],
       "notes": "公式のブース概要に商品名なし(芸人コラボの謎解きや謎解きグッズとあるのみ)。HP・ショップ・BOOTH は検索でも見つからず。検索結果にX アカウント(shimpop023)が出たが開いていない。X で確認が必要。X確認(10/25): @shimpop023 は8/21に「ナゾトキマーケット2026参加します」と投稿のみ。商品の告知なし 再収集(10/30 Web): HP・ショップは Web 検索でも見つからず、新しい告知なし 再収集(10/30 X): 10/24 以降の投稿は芸人活動の話のみ。ナゾトキマーケットの商品告知なし 再収集(10/31 X): 団体本人のアカウントは @waranazo(10/24 の告知にグータン森山・Cb20・「新作3点を含む6つの謎解きグッズを販売」とある。10/25 の確認では @shimpop023 しか見ておらず未確認だった)。10/21〜10/24 の商品紹介投稿6件から6点(おうちで笑謎 5種・ネパール周遊謎)を products に追加。10/31 にブース限定キャンペーン2件を告知(campaigns.json に追加)。 画像(10/31 Web): no68-1〜6 は HP・ショップ・検索で見つからず(X の商品紹介投稿に画像がありそう) 画像(11/1 X): no68-1,no68-2,no68-6 は各商品紹介の投稿画像から / no68-3〜5(ゴー☆ジャス・スギちゃん・森本しんたろう編)は紹介投稿が動画で、商品の画像が見つからず",
-      "officialPatches": [],
+      "officialPatches": [
+        {
+          "id": "p65",
+          "keepId": "no68-3",
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2113239417313984639",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "p67",
+          "keepId": "no68-4",
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2113571410610421993",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "p66",
+          "keepId": "no68-5",
+          "category": "kit",
+          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/waranazo/status/2113942523425313192",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        }
+      ],
       "products": [
         {
           "id": "no68-1",
@@ -2222,96 +2140,6 @@
             {
               "url": "https://x.com/waranazo/status/2112861365446779093",
               "retrievedAt": "2026-11-01"
-            }
-          ]
-        },
-        {
-          "id": "no68-3",
-          "name": "おうちで笑謎 -ゴー☆ジャス編-",
-          "price": 2000,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
-          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 謎制作：グータン森山、えゆねる",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113239314041827328/img/A9_DOU527MqGr5j8.jpg",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/waranazo/status/2113239417313984639",
-              "retrievedAt": "2026-10-31"
-            }
-          ]
-        },
-        {
-          "id": "no68-4",
-          "name": "おうちで笑謎 -スギちゃん編-",
-          "price": 2000,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
-          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 企画監修：グータン森山 謎制作：にくまき",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113571355266621440/img/hJ7uCvgLeBBWvc7K.jpg",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/waranazo/status/2113571410610421993",
-              "retrievedAt": "2026-10-31"
-            }
-          ]
-        },
-        {
-          "id": "no68-5",
-          "name": "おうちで笑謎 -森本しんたろう編-",
-          "price": 2000,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "芸人本人が解く特典映像つきの、お笑い×謎解きキット",
-          "description": "内容物：クリアファイル／冊子。クリアすると、ご本人が実際に解いている様子が見られる豪華特典映像つき！ 謎制作：グータン森山、山田悠人",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2113942495625420800/img/gReM99SI0CXxlsX3.jpg",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/waranazo/status/2113942523425313192",
-              "retrievedAt": "2026-10-31"
             }
           ]
         },
@@ -2404,33 +2232,21 @@
         }
       ],
       "notes": "公式のブース概要は『ほとんどが新作』とあるが作品名・価格なし。HP のブログ1ページ目(8件)にナゾトキマーケットの記事なし(2ページ目は未確認)。BASE ショップで確認できたのは周遊謎1件のみ。新作の中身は X で確認が必要。X確認(10/25): 10/22から1日1商品ずつ告知中(全9商品、リメイク含む)。10/25時点で4商品。価格・難易度は「月末に全商品まとめて告知」とのこと。5商品目以降は未告知 再収集(10/30 Web): HP のブログ(1ページ目)・BASE ショップに新作の掲載・価格の告知なし(BASE は周遊謎2,200円のみ)。価格は X の『月末まとめ告知』待ちで、価格は埋められず 再収集(10/30 X): 10/26〜10/29 の商品紹介(第5〜8弾)で『Plot twist ～離島編～』『Plot twist ～青春編～』『ナゾみくじ』(ナゾトキマーケット限定)『その失踪は、喫茶七番から。』を確認し products に追加(喫茶七番は旧候補から移動)。いずれも「価格やボリューム、難易度などの詳細は月末に全商品まとめてお知らせします」とのことで、既存の no69-1〜4 を含め価格は埋められず(9商品目は10/30 午前時点で未告知) 再収集(10/31 X): 10/30 の「全商品ラインナップ公開」画像4枚で全8点の価格と所要時間を確認して埋めた(価格は税込)。マダム・リシェル2,500円/消えた7つの□□□の行方1,500円/その失踪は、喫茶七番から。2,200円/Plot twist 3編は各700円/Dr.リドルの診療所500円/ナゾみくじ100円(「診断」だけ受けて帰るなら完全無料)。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no69-1",
-          "name": "マダムリシェルと奇妙な美術作品",
-          "price": 2500,
-          "priceNote": null,
+          "id": "p105",
+          "keepId": "no69-1",
           "category": "kit",
           "oneLiner": "公演型の物語を家で解ける謎にリメイクした、美術作品を追う謎解き",
-          "description": "もともと公演型の物語を家で解ける謎にリメイク！\n美術作品を追い求めるボリュームもギミックも満点の謎解きです！！\n（公演型と同じ謎にさらに追加の謎もあります）",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
           "playMinutes": {
             "min": 120,
             "max": null
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVNlnwHbkAAtN3G?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -2470,6 +2286,90 @@
             }
           ]
         },
+        {
+          "id": "p107",
+          "keepId": "no69-3",
+          "category": "kit",
+          "oneLiner": "小謎とギミックが盛りだくさんの、約60分の謎解き",
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/RiddleTimez/status/2113948627777237098",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
+            }
+          ],
+          "unconfirmed": [
+            "price",
+            "difficulty"
+          ]
+        },
+        {
+          "id": "p106",
+          "keepId": "no69-8",
+          "category": "booklet",
+          "oneLiner": "一冊の小説に隠された謎を解く、伏見の街歩きでも家でも遊べる小説×謎解き",
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "isNew": true,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "楽天ペイ",
+            "d払い",
+            "au PAY",
+            "メルペイ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/RiddleTimez/status/2115760557907448306",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://riddletimez.base.shop/",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        }
+      ],
+      "products": [
         {
           "id": "no69-2",
           "name": "Dr.リドルの診療所",
@@ -2532,58 +2432,6 @@
                 }
               ]
             }
-          ]
-        },
-        {
-          "id": "no69-3",
-          "name": "消えた７つの□□□の行方",
-          "price": 1500,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "小謎とギミックが盛りだくさんの、約60分の謎解き",
-          "description": "小謎もギミックも盛りだくさん！約60分たっぷり楽しめる、ボリューム満点の謎解きです。謎を解き進めた先で気付く「いつもそこにあるもの」の大切さとは……？",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": {
-            "min": 90,
-            "max": null
-          },
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVTTKSEa4AAT1-O?format=jpg&name=small",
-          "payment": [
-            "現金",
-            "クレジットカード",
-            "交通系電子マネー",
-            "iD",
-            "QUICPay",
-            "PayPay",
-            "楽天ペイ",
-            "d払い",
-            "au PAY",
-            "メルペイ"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/RiddleTimez/status/2113948627777237098",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
-              "retrievedAt": "2026-10-31"
-            }
-          ],
-          "unconfirmed": [
-            "price",
-            "difficulty"
           ]
         },
         {
@@ -2793,58 +2641,6 @@
               "retrievedAt": "2026-10-31"
             }
           ]
-        },
-        {
-          "id": "no69-8",
-          "name": "伏見謎解き街巡り 第二弾「その失踪は、喫茶七番から。」",
-          "price": 2200,
-          "priceNote": null,
-          "category": "booklet",
-          "oneLiner": "一冊の小説に隠された謎を解く、伏見の街歩きでも家でも遊べる小説×謎解き",
-          "description": "名古屋・伏見の街を巡る謎解きの第二弾！「小説×謎解き」の世界を楽しめる作品です。伏見の街を歩きながら解くのはもちろん、おうちで最後まで楽しむこともできます！一冊の小説に隠された謎を解き明かし、あなただけの結末を見届けよう。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": {
-            "min": 90,
-            "max": null
-          },
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVx3owMbcAA8Pye?format=jpg&name=small",
-          "payment": [
-            "現金",
-            "クレジットカード",
-            "交通系電子マネー",
-            "iD",
-            "QUICPay",
-            "PayPay",
-            "楽天ペイ",
-            "d払い",
-            "au PAY",
-            "メルペイ"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/RiddleTimez/status/2115760557907448306",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://riddletimez.base.shop/",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/RiddleTimez/status/2116126496809157032",
-              "retrievedAt": "2026-10-31"
-            }
-          ]
         }
       ],
       "candidates": [],
@@ -2977,16 +2773,13 @@
         }
       ],
       "notes": "なぞねこ・pintoLab の HP にナゾトキマーケットの記載なし(なぞねこの持ち帰り謎ページは店頭取扱の他団体一覧で、会場向けの商品ではない)。MOT! の HP は検索で見つからず。公式のブース概要に商品名なし。3団体の今回の品は X で確認が必要。X確認(10/25): @nazogatokitai(なぞねこ)10/15「3団体合同・ブースCb18・両日出展」、@pintoLab 8/21出展告知、@MOT_nazotoki 8/21「MOT!初の持ち帰り謎を持っていきます」のみ。商品名・価格の告知なし 再収集(10/30 Web): なぞねこのブログ(最新10/15)・pintoLab・ナゾホリの HP に今回の品の告知なし。新しい告知なし 再収集(10/30 X): MOT!『ROLL』(10/25・2,000円=通常2,500円・120〜180分・スマホ必要)、なぞねこ『VEGETABLE MISSION』『ぬりえすけーぷ！』(10/29・1,600円/2,200円)、pintoLab『HIKIGANE』(10/29・価格の告知なし)を確認して products に追加。ブースは3団体合同でCb18",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no70-1",
-          "name": "ROLL（MOT!）",
-          "price": 2000,
+          "id": "p81",
+          "keepId": "no70-1",
           "priceNote": "特別価格（通常2,500円）",
           "category": "kit",
           "oneLiner": "暗号とスマホを手掛かりに、実際に回転させながら解く怪盗×館の持ち帰り謎",
-          "description": "怪盗から届いた一通の予告状。手元の暗号と、デバイスを駆使し、相棒と協力して館に眠る宝を守り抜け！これは、手元の暗号とスマホを手掛かりにあなたが実際に回転しながら謎を解き明かす作品です。必要なもの: スマートフォン。ナゾマにて初公開。",
           "difficulty": {
             "level": 4,
             "source": "estimated",
@@ -2996,14 +2789,11 @@
             "min": 120,
             "max": 180
           },
-          "players": null,
           "isNew": true,
-          "limited": null,
           "days": [
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVemUoLaYAA1VGI?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -3025,8 +2815,94 @@
               "url": "https://x.com/nazogatokitai/status/2116444688484008033",
               "retrievedAt": "2026-11-02"
             }
-          ]
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVemUoLaYAA1VGI?format=jpg&name=small"
         },
+        {
+          "id": "p82",
+          "keepId": "no70-3",
+          "priceNote": "定価(税込)",
+          "category": "kit",
+          "oneLiner": "箱入りの持ち帰り謎(15歳以上・50分〜)",
+          "difficulty": {
+            "level": 3,
+            "source": "estimated",
+            "basis": "推奨年齢15歳以上・50分〜で標準的と推定"
+          },
+          "playMinutes": {
+            "min": 50,
+            "max": null
+          },
+          "players": "1人〜",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "au PAY",
+            "COIN+",
+            "d払い",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "QUICPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazogatokitai/status/2115773600519332089",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
+              "retrievedAt": "2026-11-02"
+            }
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVyQ8hOa4AASMpi?format=jpg&name=small"
+        },
+        {
+          "id": "p80",
+          "keepId": "no70-4",
+          "category": "kit",
+          "oneLiner": "「開けてはいけない」呪われた箱の謎を、手元のアイテムで解く持ち帰り謎",
+          "isNew": true,
+          "limited": "数量限定（100個以上の持ち込みを目指して制作中）",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay",
+            "au PAY",
+            "COIN+",
+            "d払い",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "QUICPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/pintoLab/status/2115633352388837513",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/pintoLab/status/2117526037773127864",
+              "retrievedAt": "2026-11-03"
+            }
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HVw9Tz9aIAAMY6Y?format=jpg&name=small"
+        }
+      ],
+      "products": [
         {
           "id": "no70-2",
           "name": "VEGETABLE MISSION 極秘野菜ファイル（なぞねこ）",
@@ -3072,103 +2948,6 @@
             {
               "url": "https://x.com/nazogatokitai/status/2116444688484008033",
               "retrievedAt": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "id": "no70-3",
-          "name": "ぬりえすけーぷ！（なぞねこ）",
-          "price": 2200,
-          "priceNote": "定価(税込)",
-          "category": "kit",
-          "oneLiner": "箱入りの持ち帰り謎(15歳以上・50分〜)",
-          "description": "告知に説明文なし(商品名のみ確認)。告知画像の表記: プレイ人数1人〜・プレイ時間50分〜・プレイ推奨年齢15歳以上・定価2,200円(税込)。",
-          "difficulty": {
-            "level": 3,
-            "source": "estimated",
-            "basis": "推奨年齢15歳以上・50分〜で標準的と推定"
-          },
-          "playMinutes": {
-            "min": 50,
-            "max": null
-          },
-          "players": "1人〜",
-          "isNew": null,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVyQ8hOa4AASMpi?format=jpg&name=small",
-          "payment": [
-            "現金",
-            "クレジットカード",
-            "PayPay",
-            "au PAY",
-            "COIN+",
-            "d払い",
-            "楽天ペイ",
-            "J-Coin",
-            "Smart Code",
-            "QUICPay"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/nazogatokitai/status/2115773600519332089",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
-              "retrievedAt": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "id": "no70-4",
-          "name": "HIKIGANE（pintoLab）",
-          "price": null,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "「開けてはいけない」呪われた箱の謎を、手元のアイテムで解く持ち帰り謎",
-          "description": "【新作持ち帰り謎】『HIKIGANE』「開けてはいけない」箱を開けた瞬間、あなたへと降りかかる不気味な呪い。手元のアイテムを駆使し、呪われた箱の謎を解き明かせ！11/7-8開催 ナゾトキマーケット2026 にて初公開＆販売！",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": "数量限定（100個以上の持ち込みを目指して制作中）",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVw9Tz9aIAAMY6Y?format=jpg&name=small",
-          "payment": [
-            "現金",
-            "クレジットカード",
-            "PayPay",
-            "au PAY",
-            "COIN+",
-            "d払い",
-            "楽天ペイ",
-            "J-Coin",
-            "Smart Code",
-            "QUICPay"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/pintoLab/status/2115633352388837513",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/nazogatokitai/status/2116444688484008033",
-              "retrievedAt": "2026-11-02"
-            },
-            {
-              "url": "https://x.com/pintoLab/status/2117526037773127864",
-              "retrievedAt": "2026-11-03"
             }
           ]
         }

@@ -1,6 +1,6 @@
 {
   "range": "no01-no14",
-  "collectedAt": "2026-11-02",
+  "collectedAt": "2026-11-04",
   "booths": [
     {
       "boothId": "no01",
@@ -1620,16 +1620,13 @@
         }
       ],
       "notes": "HPのトップ・ニュース(〜2026-10-06)にナゾトキマーケットの告知なし。公式ブース概要にも商品名なし。オンラインショップの最新作は候補止まり。検索でも個別の出品情報は出ず。Xで告知があれば取れそう / X(@tumbleweedjp)確認済み。2026-08-21の出展告知は「新作をはじめとする大人気商品を多数販売予定」とだけで商品名・価格なし。9月以降の投稿(ゲムマ出展・クリスマス公演など)にも今回の商品名なし。候補は候補のまま / 再収集(10/30 Web): 通販ショップに11/7(土)00:00発売の新作3点(『10』4,800円・HIRAMEKI TRUMP BLACK 3,000円・WHITE 2,800円)が出たが、販売先はオンラインショップのみの記載でナゾトキマーケットでの販売は書かれておらず候補止まり。HPニュースは10/06以降更新なし / 再収集(10/30 X): 10/24 以降の @tumbleweedjp の投稿(10/27 HIRAMEKI TRUMP BLACK/WHITE の情報解禁、10/29 10周年記念公演SPの告知など)にナゾトキマーケットでの販売の記載なし。候補のまま 再収集(11/2 X): 『10』と HIRAMEKI TRUMP 2種は返信投稿に外部出展の明記があったため商品へ移した。タイタン・Q は明記がなく候補のまま。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no02-1",
-          "name": "『10』（タンブルウィード10周年記念特別作品）",
-          "price": 4800,
+          "id": "p108",
+          "keepId": "no02-1",
           "priceNote": null,
           "category": "kit",
           "oneLiner": "タンブルウィード10周年を記念した特別作品",
-          "description": "タンブルウィード10周年記念特別作品。スマートフォンと筆記用具が必要。ナゾトキマーケットでの販売は X の告知による。",
           "difficulty": {
             "level": 4,
             "source": "official",
@@ -1646,7 +1643,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVjeryqaEAEnxcD?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -1660,13 +1656,11 @@
           ]
         },
         {
-          "id": "no02-2",
-          "name": "HIRAMEKI TRUMP BLACK",
-          "price": 3000,
+          "id": "p109",
+          "keepId": "no02-2",
           "priceNote": null,
           "category": "kit",
           "oneLiner": "弩級の仕掛けが牙を剥く、至強のブラック",
-          "description": "弩級の仕掛けが牙を剥く、至強のブラック。iMY との制作。ナゾトキマーケットでの販売は X の告知による。",
           "difficulty": {
             "level": 5,
             "source": "official",
@@ -1683,7 +1677,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/267be5b96432b922428bddc66ac2d2d5.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
           "payment": null,
           "sources": [
             {
@@ -1701,13 +1694,11 @@
           ]
         },
         {
-          "id": "no02-3",
-          "name": "HIRAMEKI TRUMP WHITE",
-          "price": 2800,
+          "id": "p110",
+          "keepId": "no02-3",
           "priceNote": null,
           "category": "kit",
           "oneLiner": "華麗なる閃きが連鎖する、絶美のホワイト",
-          "description": "華麗なる閃きが連鎖する、絶美のホワイト。ねずみの巣との制作。ナゾトキマーケットでの販売は X の告知による。",
           "difficulty": {
             "level": 4,
             "source": "official",
@@ -1724,7 +1715,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/be872998e9864d9a348c231df2f15f60.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
           "payment": null,
           "sources": [
             {
@@ -1739,9 +1729,11 @@
               "url": "https://x.com/tumbleweedjp/status/2115036718600757693",
               "retrievedAt": "2026-11-02"
             }
-          ]
+          ],
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/be872998e9864d9a348c231df2f15f60.png?imformat=generic&q=90&im=Resize,width=1200,type=normal"
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "深海の城 タイタン（キット版）",
@@ -1797,16 +1789,13 @@
         }
       ],
       "notes": "公式HPはXのみ(開いていない)。ブース概要に『RIDDLER史上最も力の入った新作謎解き』とあるが商品名は未確認。検索ではナゾトキマーケット向けの告知は出ず、直近の持ち帰り謎(謎解きカクテルシリーズ)は候補止まり。Xを見れば取れそう / X(@RIDDLER_nazo)確認済み。ブースA6。10/17に新作『リドラコレクション』解禁、収録作の紹介は10/24『CROSS BOX』(わち)・10/25『RIDDLE TRIAL!!!』(kk)など。価格は投稿に書かれておらず未確認 / 再収集(10/30 Web): 新しい告知なし。リドラコレクションの価格はWeb検索でも出ず、null のまま(Xなら取れる可能性) / 再収集(10/30 X): 10/29 までにリドラコレクション収録9作のうち6作(CROSS BOX / RIDDLE TRIAL!!! / N×N-grid Puzzle / 幻燈縁日 / 炉軸高校生徒会の論理パズル的日常 / スマホゲーム『朝焼けのクレスト』イベント特典限定謎)が紹介された。価格は公式投稿に無く、配信での発表を伝えるユーザー投稿の14,000円を暫定で採用(no03-1 の priceNote 参照) 再収集(10/30 確認): 価格14,000円は参加者の投稿のみが根拠のため price は null に戻し priceNote に残した。 再収集(10/31 X): 10/30・10/31 の公式投稿でリドラコレクション収録作の紹介⑦『Still Hope』・⑧『あなたは見知らぬ場所にいた。』(どちらも「#ナゾトキマーケット2026 最速先行販売」)を確認し、no03-1 の出典に追加。価格の告知はなく、price は null のまま。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no03-1",
-          "name": "リドラコレクション",
-          "price": 14000,
+          "id": "p111",
+          "keepId": "no03-1",
           "priceNote": "ナゾマ限定価格（税込）",
           "category": "kit",
           "oneLiner": "9人のクリエイターが作った9つの別々の謎解きが入った箱入りの新作",
-          "description": "9つの世界を、解き尽くせ。『リドラコレクション』 9人のクリエイターが贈る、全く異なる9つの謎解きが登場。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -1823,7 +1812,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HU0HtAVbYAEnYG9?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -1900,6 +1888,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "謎のマティーニ（LIQUOR GAMERS CLUB×RIDDLER）",
@@ -2550,16 +2539,13 @@
         }
       ],
       "notes": "HPのニュース(最新2026-03-16)に今回の出品告知なし。2025年のナゾトキマーケットでは新作2点を特別価格で販売していたので候補に回した(2026-03-16に価格改定の告知あり、現在価格は未確認)。/goods/は403で見られず。Xで取れそう / X(@yodaka_info)確認済み。2026-08-21の出展告知は「『さよなら』の物語を描いた『美しい謎解き』をテーマにした豪華で綺麗な作品」とだけで商品名・価格なし(8月の投稿のため候補扱いは変えず)。9月以降の投稿は別イベントの告知のみ。/goods/ は Chrome でも403 / 再収集(10/30 Web): 新しい告知なし。ニュースは2026-03-16の価格改定が最新で、今回の出品告知なし / 再収集(10/30 X): 10/24 以降の @yodaka_info の投稿は10/28 の別イベント(ドラマチックダンジョン5)の告知のみで、ナゾトキマーケットの告知なし。候補のまま 再収集(2026-11-04 HTTP): 公式Xの11/4個別投稿本文で新作「メガネなき謎の遺跡からの脱出」の11/7発売・会場A2販売・会場特別価格2,500円（通常2,800円）を確認しno05-2に追加。所要時間・人数・難易度・商品画像は未確認。抽選企画は別の提案ファイルに保存。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no05-1",
-          "name": "さよならのやりなおし",
-          "price": 5000,
+          "id": "p220",
+          "keepId": "no05-1",
           "priceNote": null,
           "category": "kit",
           "oneLiner": "よだかのレコード15周年記念の新作",
-          "description": "よだかのレコード15周年を記念した新作の謎解きグッズ。「ドラマチック」な物語を掲げた作品で、ナゾトキマーケットで先行発売する。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -2573,7 +2559,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWMvyYUbsAAamjl?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -2583,13 +2568,11 @@
           ]
         },
         {
-          "id": "no05-2",
-          "name": "メガネなき謎の遺跡からの脱出",
-          "price": 2500,
+          "id": "p221",
+          "keepId": "no05-2",
           "priceNote": "ナゾトキマーケット特別価格（通常2,800円）",
           "category": "kit",
           "oneLiner": "メガネを盗まれ、ぼんやりした謎に挑む新作",
-          "description": "サルにメガネを盗まれた！！！ 謎はぼんやり？ 解けばスッキリ！！ ナゾトキマーケットA2ブース、よだかのレコード各店舗で11/7より販売。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -2603,7 +2586,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWQBWrkacAIFO9L?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -2613,6 +2595,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "QUBE",
@@ -2668,16 +2651,13 @@
         }
       ],
       "notes": "booth.tsvにHPなし。検索で出た公式通販yte-ec.comはログイン画面のみ(商品なし)、yte.co.jpは名前解決できず。今回の出品商品名は見つからず。ブース概要の『ATOMO』は実物を配布するマガジンで販売品ではない。謎ファイル2種は2026年4月発売の既存作で候補止まり(価格は検索結果のプレスリリース記事より)。Xで取れそう / X(@AsobiFactory「YTE【公式】(旧あそびファクトリー)」)確認済み。2026年9月以降の投稿に今回のナゾトキマーケット向けの告知なし(2025年はB6ブースで過去の謎ファイルを販売と告知) / 再収集(10/30 Web): 新しい告知なし。yte-ec.comはログイン画面のみで商品情報なし / 再収集(10/30 X): 10/26 の「ナゾトキマーケット2026 出展情報」投稿(画像あり)で、ブースA7・福キーボックス11,000円(税込)の数量限定販売、新作謎ファイル、割引率50%以上の旧作セールを告知。福キーボックスを no06-1 に追加。新作謎ファイルの商品名・価格は未告知。候補の謎ファイル2種は4月発売の既存作のままで、新作かは不明 2026-11-02 11/2の告知でダンガンロンパ謎ファイル新作3種を追加。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no06-1",
-          "name": "福キーボックス",
-          "price": 11000,
+          "id": "p91",
+          "keepId": "no06-1",
           "priceNote": "税込。画像に「5,000円以上の謎解きを封入」と表記。封入内容は一部ランダムで、個別の商品名は未告知",
           "category": "other",
           "oneLiner": "数字入力式キーボックスにYTEの過去謎解き商品を封入した福袋",
-          "description": "謎解きユーザーなら誰でも見たことがある「数字入力式キーボックス」にYTEの過去謎解き商品を封入した「福キーボックス」を数量限定販売！",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -2691,7 +2671,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVhrXuyaoAAGl3o?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -2700,6 +2679,16 @@
             }
           ]
         },
+        {
+          "id": "p92",
+          "representedBy": [
+            "no06-2",
+            "no06-3",
+            "no06-4"
+          ]
+        }
+      ],
+      "products": [
         {
           "id": "no06-2",
           "name": "ダンガンロンパ 謎ファイル 絶望vs希望編「ワックワクドッキドキの謎解きデスゲーム」",
@@ -2863,7 +2852,58 @@
         }
       ],
       "notes": "HPは街歩き型イベント(2,500円〜)中心で、持ち帰りキットやナゾトキマーケットの記載なし。ブース概要に『本格派の謎解きキットをお披露目＆販売』とあるが商品名は未確認。Xで取れそう / X(@kyuzituhack)と商品ページ(machihack.com/unknox-c9n2)で確認。販売期間は2026-11-07・08のナゾトキマーケット会場内、会場限定の豪華くじ引きあり。必要なものは筆記用具とネット接続機器。色を使った謎あり。セットの所要時間はRED100分〜を採用 / 再収集(10/30 Web): 新しい告知なし。商品ページ machihack.com/unknox-c9n2 は今回タイトルしか取れず再確認できなかった(価格は10/25のまま) / 再収集(10/30 X): 10/27(RED)・10/29(BLUE)の投稿でも「11/7・8 ナゾトキマーケット2026 にて販売」と再告知。価格・限定数の変更なし",
-      "officialPatches": [],
+      "officialPatches": [
+        {
+          "id": "p103",
+          "keepId": "no07-3",
+          "priceNote": "ナゾトキマーケット限定価格(通常7,400円)",
+          "category": "kit",
+          "oneLiner": "UNKNOXのRED編とBLUE編のセット(会場限定価格)",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": 100,
+          "players": null,
+          "isNew": true,
+          "limited": "ナゾトキマーケット限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://machihack.com/unknox-c9n2",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+              "retrievedAt": "2026-10-25"
+            }
+          ],
+          "hashtags": [
+            {
+              "tag": "アンノックス",
+              "sources": [
+                {
+                  "url": "https://x.com/kyuzituhack/status/2113842922798153901",
+                  "retrievedAt": "2026-10-26"
+                },
+                {
+                  "url": "https://x.com/kyuzituhack/status/2113948620060029041",
+                  "retrievedAt": "2026-10-26"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "products": [
         {
           "id": "no07-1",
@@ -2984,59 +3024,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "no07-3",
-          "name": "UNKNOX:RED BLUE セット",
-          "price": 7000,
-          "priceNote": "ナゾトキマーケット限定価格(通常7,400円)",
-          "category": "kit",
-          "oneLiner": "UNKNOXのRED編とBLUE編のセット(会場限定価格)",
-          "description": "突如世界に現れた、謎の箱型物質。未知の物質を、解析せよ。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": 100,
-          "players": null,
-          "isNew": true,
-          "limited": "ナゾトキマーケット限定価格",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://storage.googleapis.com/production-os-assets/assets/a51d1c1f-c1e3-4479-b37c-82671bae533a",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://machihack.com/unknox-c9n2",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/kyuzituhack/status/2113842922798153901",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/kyuzituhack/status/2113948620060029041",
-              "retrievedAt": "2026-10-25"
-            }
-          ],
-          "hashtags": [
-            {
-              "tag": "アンノックス",
-              "sources": [
-                {
-                  "url": "https://x.com/kyuzituhack/status/2113842922798153901",
-                  "retrievedAt": "2026-10-26"
-                },
-                {
-                  "url": "https://x.com/kyuzituhack/status/2113948620060029041",
-                  "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
         }
       ],
       "candidates": [],
@@ -3110,16 +3097,56 @@
         }
       ],
       "notes": "booth.tsvのHPはXのみ。公式サイトi-ku-kan.comはMachihack!のサイトのリンクから判明したが、トップは Chrome で確認済み。ブース概要に『とある少女たちの物語』を販売とあるが商品名・価格は未確認。検索でも出ず。Xで取れそう / 公式サイト(i-ku-kan.com/mixstars)を Chrome で確認。ブースBb1で販売、3キット+セット。必要なものは筆記用具とLINEが使えるスマホ。遊ぶ場所はどこでも。X(@i_kukan)の10/19投稿で「一気に3キット発売」 / 再収集(10/30 Web): 新しい告知なし。i-ku-kan.comは今回タイトルしか取れず再確認できなかった(価格は10/25のまま) / 再収集(10/30 X): 10/26〜28 のオーディション密着映像(Episode 01〜03)の投稿で「MIXStars Project 11/7・8 発売決定」を再告知。価格・内容の新情報なし",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no08-1",
-          "name": "MIXStars Project 天野茉乃のインスタント写真風カード",
-          "price": 2500,
+          "id": "p96",
+          "keepId": "no08-4",
+          "priceNote": "ナゾマ限定価格(通常7,700円)",
+          "category": "kit",
+          "oneLiner": "MIXStars Projectの3キットをまとめたお得なセット",
+          "difficulty": {
+            "level": 3,
+            "source": "estimated",
+            "basis": "3キットの所要時間(90〜120分〜)と「中学生以上対象」から推定"
+          },
+          "playMinutes": null,
+          "players": "1人〜",
+          "isNew": true,
+          "limited": "ナゾマ限定価格",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://i-ku-kan.com/mixstars",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/i_kukan/status/2112123939187253663",
+              "retrievedAt": "2026-10-25"
+            }
+          ],
+          "hashtags": [
+            {
+              "tag": "ミクスタ謎",
+              "sources": [
+                {
+                  "url": "https://x.com/i_kukan/status/2112123939187253663",
+                  "retrievedAt": "2026-10-26"
+                }
+              ]
+            }
+          ],
+          "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-590x590_webp_23449c36-d28b-488d-b938-1697036dc514.webp"
+        },
+        {
+          "id": "p97",
+          "keepId": "no08-3",
           "priceNote": null,
           "category": "kit",
-          "oneLiner": "アイドルの私生活を切り取った写真風カードの裏側を調べる没入型キット",
-          "description": "少女たちの夢をかけた、アイドルオーディション企画『MIXStars Project』",
+          "oneLiner": "流出した3人の履歴書に隠された嘘と秘密を暴く没入型キット",
           "difficulty": {
             "level": 2,
             "source": "estimated",
@@ -3136,7 +3163,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-528x374_webp_4e01b368-5a80-42f8-b4c8-da29f4e5b3ff.webp",
           "payment": null,
           "sources": [
             {
@@ -3160,6 +3186,54 @@
             }
           ]
         },
+        {
+          "id": "p98",
+          "keepId": "no08-1",
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "アイドルの私生活を切り取った写真風カードの裏側を調べる没入型キット",
+          "difficulty": {
+            "level": 2,
+            "source": "estimated",
+            "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間90分〜から推定"
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": null
+          },
+          "players": "1人〜",
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://i-ku-kan.com/mixstars",
+              "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/i_kukan/status/2112123939187253663",
+              "retrievedAt": "2026-10-25"
+            }
+          ],
+          "hashtags": [
+            {
+              "tag": "ミクスタ謎",
+              "sources": [
+                {
+                  "url": "https://x.com/i_kukan/status/2112123939187253663",
+                  "retrievedAt": "2026-10-26"
+                }
+              ]
+            }
+          ],
+          "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-528x374_webp_4e01b368-5a80-42f8-b4c8-da29f4e5b3ff.webp"
+        }
+      ],
+      "products": [
         {
           "id": "no08-2",
           "name": "MIXStars Project 西園寺冬和の謎解きゲーム",
@@ -3185,99 +3259,6 @@
             "sun"
           ],
           "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-590x306_webp_3aa934f8-a775-45d4-9d9e-7797e5f8dafe.webp",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://i-ku-kan.com/mixstars",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/i_kukan/status/2112123939187253663",
-              "retrievedAt": "2026-10-25"
-            }
-          ],
-          "hashtags": [
-            {
-              "tag": "ミクスタ謎",
-              "sources": [
-                {
-                  "url": "https://x.com/i_kukan/status/2112123939187253663",
-                  "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "no08-3",
-          "name": "MIXStars Project 望月野々香・矢野いろは・初瀬翠の履歴書",
-          "price": 2500,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "流出した3人の履歴書に隠された嘘と秘密を暴く没入型キット",
-          "description": "少女たちの夢をかけた、アイドルオーディション企画『MIXStars Project』",
-          "difficulty": {
-            "level": 2,
-            "source": "estimated",
-            "basis": "公式サイトに「中学生以上対象・初心者も楽しめる」とあり、所要時間90分〜から推定"
-          },
-          "playMinutes": {
-            "min": 90,
-            "max": null
-          },
-          "players": "1人〜",
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-340x426_webp_32b86194-edf3-43ad-ae38-6bba80fb86b6.webp",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://i-ku-kan.com/mixstars",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/i_kukan/status/2112123939187253663",
-              "retrievedAt": "2026-10-25"
-            }
-          ],
-          "hashtags": [
-            {
-              "tag": "ミクスタ謎",
-              "sources": [
-                {
-                  "url": "https://x.com/i_kukan/status/2112123939187253663",
-                  "retrievedAt": "2026-10-26"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "no08-4",
-          "name": "MIXStars Project 3種セット",
-          "price": 7000,
-          "priceNote": "ナゾマ限定価格(通常7,700円)",
-          "category": "kit",
-          "oneLiner": "MIXStars Projectの3キットをまとめたお得なセット",
-          "description": "少女たちの夢をかけた、アイドルオーディション企画『MIXStars Project』",
-          "difficulty": {
-            "level": 3,
-            "source": "estimated",
-            "basis": "3キットの所要時間(90〜120分〜)と「中学生以上対象」から推定"
-          },
-          "playMinutes": null,
-          "players": "1人〜",
-          "isNew": true,
-          "limited": "ナゾマ限定価格",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-590x590_webp_23449c36-d28b-488d-b938-1697036dc514.webp",
           "payment": null,
           "sources": [
             {
@@ -3750,16 +3731,40 @@
         }
       ],
       "notes": "HPは会社紹介のみでお知らせ・ナゾトキマーケットの記載なし。BASEの物販ページに既存の持ち帰り謎9点(1,000〜2,000円、例: ELEVATOR HOUSE 2,000円、HOLE 1,800円)があるが、発売日・今回持参の記載がなく候補にも入れなかった。アットビの公式サイトは見つからず。Xで取れそう / X(@efex_info・@atobi_PR)確認済み。アットビの新作『逆転！クレーム百貨店』を持参(10/15投稿。もう1作は今回は見送り)。エフェックス側の商品名は見つからず。両社の商品を各1点以上買うと限定コラボ謎解きBOOKをプレゼント(商品ではなく特典。一部200円以下の課金要素あり)。ブースBa2 / 再収集(10/30 Web): 新しい告知なし。BASEショップ(efex.official.ec)に『逆転！クレーム百貨店』の掲載なく、価格はnullのまま / 再収集(10/30 X): @atobi_PR・@efex_info の10/24 以降の投稿に『逆転！クレーム百貨店』の価格・新情報なし(最新はパッケージ制作中の10/21 投稿)。価格はnullのまま / 画像(10/31 Web): no11-1 は efex.official.ec(BASE)・検索で見つからず 画像(11/1 X): no11-1 は 10/17 の投票投稿のメインビジュアル案(card_img。10/21 の投稿で採用された『前者』の案)から 再収集(11/1 X): クレーム百貨店の価格とひらめき弁当を追加。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no11-1",
-          "name": "逆転！クレーム百貨店",
-          "price": 2800,
+          "id": "p164",
+          "keepId": "no11-2",
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "ナゾトキマーケット会場限定のひらめき弁当。再販なし",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": "会場2日間限定・再販なし",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2116856070933238017",
+              "retrievedAt": "2026-11-01"
+            }
+          ]
+        },
+        {
+          "id": "p165",
+          "keepId": "no11-1",
           "priceNote": null,
           "category": "kit",
           "oneLiner": "アットビ制作の百貨店テーマの新作持ち帰り謎",
-          "description": "ナゾマは『逆転！クレーム百貨店』を新作として持っていきます！",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -3773,7 +3778,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/card_img/2111449625093935104/Cfe-oRHU?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -3802,43 +3806,11 @@
           ]
         },
         {
-          "name": "ひらめき弁当",
-          "price": 2500,
-          "priceNote": null,
-          "category": "other",
-          "oneLiner": "ナゾトキマーケット会場限定のひらめき弁当。再販なし",
-          "description": "ナゾトキマーケット会場限定販売。販売は11月7日・8日の会場2日間限定。再販は行わない。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": null,
-          "limited": "会場2日間限定・再販なし",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "payment": null,
-          "imageUrl": "https://pbs.twimg.com/media/HWCVIrVa0AAOwZR?format=jpg&name=small",
-          "sources": [
-            {
-              "url": "https://x.com/efex_info/status/2116856070933238017",
-              "retrievedAt": "2026-11-01"
-            }
-          ],
-          "id": "no11-2"
-        },
-        {
-          "id": "no11-3",
-          "name": "ミステリーポットラック -YAMINABE-",
-          "price": 2500,
+          "id": "p166",
+          "keepId": "no11-3",
           "priceNote": "税込",
           "category": "kit",
           "oneLiner": "実際に「鍋」から「謎」を引いて解き進める持ち帰り謎",
-          "description": "ちょっと不思議なサービスを頼んだあなたに届いた、謎めいた「鍋」。鍋から謎を引いて解き進め、鍋の正体を突き止める。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -3852,16 +3824,17 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWLG-YEaYAAg76f?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/efex_info/status/2117549851189657666",
               "retrievedAt": "2026-11-03"
             }
-          ]
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWLG-YEaYAAg76f?format=jpg&name=small"
         }
       ],
+      "products": [],
       "candidates": [],
       "hashtags": [
         {

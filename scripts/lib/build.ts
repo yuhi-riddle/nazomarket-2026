@@ -251,8 +251,6 @@ export function buildProducts(input: {
   const boothById = new Map(input.officialBooths.map((booth) => [booth.id, booth]));
   const productById = new Map<string, Product>();
   const officialIds = new Set<string>();
-  const officialNamesByBooth = new Map<string, Map<string, string>>();
-  const officialTitlesByBooth = new Map<string, Map<string, string>>();
   const patchesById = new Map<string, NonNullable<ShardFile["booths"][number]["officialPatches"]>[number][]>();
   const productBoothOrder = new Map(
     [...input.officialBooths]
@@ -290,17 +288,6 @@ export function buildProducts(input: {
     };
     productById.set(product.id, product);
     officialIds.add(product.id);
-    const normalizedName = normalizeProductName(officialProduct.name);
-    if (normalizedName) {
-      const names = officialNamesByBooth.get(officialProduct.boothId) ?? new Map<string, string>();
-      if (!names.has(normalizedName)) names.set(normalizedName, officialProduct.id);
-      officialNamesByBooth.set(officialProduct.boothId, names);
-    }
-    const titles = officialTitlesByBooth.get(officialProduct.boothId) ?? new Map<string, string>();
-    for (const title of quotedTitles(officialProduct.name)) {
-      if (!titles.has(title)) titles.set(title, officialProduct.id);
-    }
-    officialTitlesByBooth.set(officialProduct.boothId, titles);
   }
 
   for (const shard of input.shards) {
@@ -315,13 +302,6 @@ export function buildProducts(input: {
       }
       for (const shardProduct of shardBooth.products) {
         if (productById.has(shardProduct.id)) throw new Error(`商品 ID が重複しています: ${shardProduct.id}`);
-        const normalizedName = normalizeProductName(shardProduct.name);
-        const officialTitles = officialTitlesByBooth.get(shardBooth.boothId);
-        const officialId = (normalizedName ? officialNamesByBooth.get(shardBooth.boothId)?.get(normalizedName) : undefined)
-          ?? quotedTitles(shardProduct.name).map((title) => officialTitles?.get(title)).find((id) => id !== undefined);
-        if (officialId) {
-          throw new Error(`公式以外の商品 ${shardProduct.id} は同じ団体の公式商品 ${officialId} と名前が重複しています`);
-        }
         const product: Product = {
           ...shardProduct,
           boothId: shardBooth.boothId,
@@ -334,11 +314,45 @@ export function buildProducts(input: {
     }
   }
 
+  for (const product of productById.values()) {
+    if (officialIds.has(product.id)) continue;
+    const name = normalizeProductName(product.name);
+    const titles = quotedTitles(product.name);
+    for (const official of input.officialProducts) {
+      if (official.boothId !== product.boothId) continue;
+      if (patchesById.get(official.id)?.some((patch) => patch.representedBy?.includes(product.id))) continue;
+      if ((name && name === normalizeProductName(official.name))
+        || quotedTitles(official.name).some((title) => titles.includes(title))) {
+        throw new Error(`公式以外の商品 ${product.id} は同じ団体の公式商品 ${official.id} と名前が重複しています`);
+      }
+    }
+  }
+
+  const representedSources = new Map<string, Source[]>();
   for (const [productId, patches] of patchesById) {
     let product = productById.get(productId);
     if (!product || !officialIds.has(productId)) throw new Error(`存在しない公式商品への追記です: ${productId}`);
+    const representations = patches.filter((patch) => patch.representedBy !== undefined);
+    if (representations.length > 0) {
+      if (patches.some((patch) => patch.keepId !== undefined)) {
+        throw new Error(`representedBy と keepId は併用できません: ${productId}`);
+      }
+      for (const patch of representations) {
+        if (patch.representedBy!.length === 0) throw new Error(`representedBy は空にできません: ${productId}`);
+        for (const targetId of patch.representedBy!) {
+          const target = productById.get(targetId);
+          if (targetId === productId || !target || target.boothId !== product.boothId) {
+            throw new Error(`representedBy の対象が不正です: ${productId} → ${targetId}`);
+          }
+          representedSources.set(targetId, [
+            ...(representedSources.get(targetId) ?? []), ...product.sources, ...patches.flatMap((p) => p.sources ?? []),
+          ]);
+        }
+      }
+      continue;
+    }
     let publicId = productId;
-    for (const { keepId, ...patch } of patches) {
+    for (const { keepId, representedBy, ...patch } of patches) {
       if (keepId !== undefined) publicId = keepId;
       product = {
         ...product,
@@ -364,6 +378,15 @@ export function buildProducts(input: {
       product = { ...product, id: publicId };
     }
     productById.set(publicId, product);
+  }
+
+  for (const [targetId, sources] of representedSources) {
+    const target = productById.get(targetId);
+    if (!target) throw new Error(`representedBy の対象が見つかりません: ${targetId}`);
+    target.sources = uniqueSources([...target.sources, ...sources]);
+  }
+  for (const [id, patches] of patchesById) {
+    if (patches.some((patch) => patch.representedBy !== undefined)) productById.delete(id);
   }
 
   const productsByBooth = new Map<string, Product[]>();

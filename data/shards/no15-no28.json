@@ -1,6 +1,6 @@
 {
   "range": "no15-no28",
-  "collectedAt": "2026-11-02",
+  "collectedAt": "2026-11-04",
   "booths": [
     {
       "boothId": "no15",
@@ -123,16 +123,13 @@
         }
       ],
       "notes": "ブランドHP(nazoxnazo.com)のお知らせと商品一覧にナゾトキマーケット2026の記載なし。持ち帰り謎ショップ(nazoxnazo-shop.com)は403で開けず。最新作『最初からクライマックス謎解き-comic-』のプレスリリース(2026-10)は販売先がゲームマーケット2026秋と自社ショップのみで、ナゾマの記載なし。 X確認(10/25): @nazo_rpg の10/23の投稿でナゾトキマーケット2026(両日Bb6)での新作「禁忌体験TETTUI」の販売を確認。ナゾマ現地引換の先行予約(各日50個)とオンライン先行(100個)あり。現地での通常価格は告知なし。 再収集(10/30 Web): ブランドHPのTETTUI掲載ページで費用3,100円・プレイ時間60〜90分を確認し、playMinutes を更新(ナゾマでの価格は10/25 の2,500円のまま)。お知らせの更新は4月が最新で、ナゾマの新しい告知なし。持ち帰り謎ショップは403。 再収集(10/30 X): 10/29 の投稿でナゾマ先行予約(限定100個・通常価格より300円引き)が10/30 19:00開始と確認。価格は変えず priceNote に追記。 再収集(11/2 X): 商品リストの投稿で既刊とセットを追加し、候補のクライマックス2作を商品へ移した。各商品の画像は過去の告知から。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no16-1",
-          "name": "禁忌を犯す体験ゲーム「TETTUI」",
-          "price": 2500,
+          "id": "p93",
+          "keepId": "no16-1",
           "priceNote": "ナゾマ限定価格（STORES価格3,100円）。2,500円は先行予約チケット(現地引換、別途発券手数料2%)の価格。オンライン先行(100個)も2,500円(送料込み・発送11/9以降)。会場での通常価格は告知なし。10/30: nazoxnazo.com(ブランドHP)のTETTUI掲載ページは費用3,100円・プレイ時間60〜90分(ナゾマ用の価格か通常価格かは書かれていない) 10/29(X): 「ナゾマ先行予約 限定100個・通常価格より300円引き・10/30(金)19:00〜予定個数なくなり次第終了」と告知(通常価格の金額は書かれていない)。",
           "category": "kit",
           "oneLiner": "SNSの嫌な相手を調べて「鉄槌」を下す没入型の持ち帰り謎",
-          "description": "ムカつく奴を裁いてみたくないですか？ ムカつく奴を思う存分制裁できる正義の鉄槌・没入型体験ゲーム。実際のSNSアカウントを調査／実際に自分の考えた罵詈雑言を叫べる／自分の正義のままムカつくやつに鉄槌を下せる。内容物: スタートガイド・封筒3種・二つ折りの紙。用意するもの: ネット接続できる端末・筆記用具・Xのアカウント・LINEのアカウント。(注意書き「性格のよいひとはプレイをお控えください」)",
           "difficulty": {
             "level": 3,
             "source": "official",
@@ -149,7 +146,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVNkyEcb0AApJPz?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -218,6 +214,71 @@
           ]
         },
         {
+          "id": "p94",
+          "keepId": "no16-4",
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
+          "category": "kit",
+          "oneLiner": "様々な漫画がテーマのシリーズ第3弾",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2105960995755565120",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "p95",
+          "keepId": "no16-5",
+          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
+          "category": "kit",
+          "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2085561583129018550",
+              "retrievedAt": "2026-11-02"
+            }
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small"
+        }
+      ],
+      "products": [
+        {
           "id": "no16-2",
           "name": "最初からクライマックス謎解き",
           "price": 2900,
@@ -277,74 +338,6 @@
             },
             {
               "url": "https://x.com/nazo_rpg/status/2078321361139720403",
-              "retrievedAt": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "id": "no16-4",
-          "name": "最初からクライマックス謎解き-comic-",
-          "price": 2900,
-          "priceNote": "ナゾトキマーケット会場価格（STORES価格3,200円）",
-          "category": "kit",
-          "oneLiner": "様々な漫画がテーマのシリーズ第3弾",
-          "description": "様々な漫画がテーマのシリーズ第3弾。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HTci351aUAAkmV1?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
-              "retrievedAt": "2026-11-02"
-            },
-            {
-              "url": "https://x.com/nazo_rpg/status/2105960995755565120",
-              "retrievedAt": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "id": "no16-5",
-          "name": "sQuare mAze",
-          "price": 2500,
-          "priceNote": "ナゾトキマーケット会場価格（STORES価格2,800円）",
-          "category": "kit",
-          "oneLiner": "カード型の謎解きゲーム sQuare mAze シリーズ",
-          "description": "カード型の謎解きゲーム sQuare mAze シリーズ。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": false,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/nazo_rpg/status/2117262537519718418",
-              "retrievedAt": "2026-11-02"
-            },
-            {
-              "url": "https://x.com/nazo_rpg/status/2085561583129018550",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -1411,16 +1404,13 @@
         }
       ],
       "notes": "10/9の出展告知に「新作謎解きゲームをはじめ、同社が制作する商品をイベント価格で販売予定」とあるだけで、商品名・価格は未公表。最新情報はXで発信すると書かれている。直近の新作2点は候補に回した。 X確認(10/25): @ClaGlaLtd の検索で2026年のナゾトキマーケット告知なし(2025年11月の昨年の回の投稿のみ)。10/23の新作「モイワショーギクラブ 真冬のドライブ」は11/19発売・11/13LINE先行で、ナゾマで売るとは書かれていないため候補のまま。10/16のお品書きはゲームマーケット秋用。 再収集(10/30 Web): 10/29 の公式ブログで『モイワショーギクラブ 真冬のドライブ』をナゾマで会場限定先行販売(イベント価格2,700円、ブースBb5)と確認し、候補から商品へ移した。ほかの商品(ボードゲーム等)は本文に売る旨の記載がなくサイトのメニューのみのため入れていない。 再収集(10/30 X): 10/29 の @ClaGlaLtd の投稿で『モイワショーギクラブ 真冬のドライブ』の会場限定先行販売と購入特典ポストカード謎を再確認(価格は投稿になし。2,700円は公式ブログの値のまま)。他の商品の告知なし。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no18-1",
-          "name": "モイワショーギクラブ 真冬のドライブ",
-          "price": 2700,
+          "id": "p178",
+          "keepId": "no18-1",
           "priceNote": "ナゾマのイベント価格2,700円(税込)。希望小売価格は2,750円(税込)。10/25 時点は2,750円(候補)、10/29 の告知でイベント価格2,700円。謎解きゲーム全品を対象に3点まとめて購入で合計から500円引き",
           "category": "kit",
           "oneLiner": "音楽CD風シートと手紙を手がかりに解く、歌と歌詞の謎解きゲーム",
-          "description": "内容物: 音楽CD風シート1部、手紙1通、キラキラスマホステッカー1枚。必要なもの: 筆記用具、スマートフォン。プレイ人数1〜2人、プレイ時間60分〜、対象年齢12歳〜。会場で購入すると特製ポストカード謎『モイワショーギクラブの日本縦断双六』が1枚もらえる。(歌と歌詞をヒントにする新しい謎解きシリーズとして10/23に告知)",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -1437,7 +1427,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://www.clagla.jp/blog/uploads/2026/10/news_image_mafuyu.jpg",
           "payment": null,
           "sources": [
             {
@@ -1455,6 +1444,7 @@
           ]
         }
       ],
+      "products": [],
       "candidates": [
         {
           "name": "シアター系謎解き シネマ・ニューウェーブへようこそ",
@@ -1525,16 +1515,13 @@
         }
       ],
       "notes": "公式サイトのピックアップ欄に「ナゾトキマーケット先行作品」として1点掲載。イベント出展情報のまとめ(2026-09-10)には出品作・ブース番号の記載なし。商品ページ自体に先行販売の記載はない(トップの表示のみが根拠)。 X確認(10/25): @GroupSNE の10/18の投稿で『ナゾトキマーケット2026』への出展を確認。商品名・価格・お品書きの告知は見つからず(@SNE_BG も同様)。 再収集(10/30 Web): グループSNE の出展ページ(ブースBa3)で新作『そして誰もいなくなる？』(11/06発売)を確認して商品に追加。「ナゾトキ作品を数多く販売」とあるが個別の作品名・価格は書かれていない。 再収集(10/30 X): 10/27 の @GroupSNE の投稿でBa3での出展と「先行・新作を含めてナゾトキ作品も販売」を確認したが、作品名・価格の追加なし。 画像(10/31 Web): no19-2 は HP の商品ページ(t_17.html)の表紙画像から",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no19-1",
-          "name": "あなたに捧げる殺人",
-          "price": 2970,
-          "priceNote": "税込(2,700円+税)。マーダーミステリーミニシリーズ。対象年齢15歳以上。10/30: ナゾマ出展ページ(Ba3)にも2,700円(税の区分なしの表記)で掲載",
+          "id": "p59",
+          "keepId": "no19-1",
+          "priceNote": "公式TSVの会場価格は2,700円。既存の商品ページ情報は2,700円+税=2,970円で矛盾あり。公式価格を採用。対象年齢15歳以上。",
           "category": "other",
           "oneLiner": "作中作がテーマの4人用マーダーミステリー",
-          "description": "街の喧騒が、なぜかいつにもまして耳に残った。\n2021年の春。あなたたちは友人に招かれ、彼の自宅を訪問する。しかし肝心の友人の姿が見えない。\n困惑のさなか、メッセージが届く。\n「とあるゲームを遊んでほしい。事情は後で話す」\nそれは制作者の実体験を元に作られた“マーダーミステリー”だという。\n真意を掴み切れないまま、ゲームを始めることになるが――。\n物語の先で明らかになる真実と結末。これは、“あなたに捧げる殺人”。\n作中作をテーマに、過去のシリーズ作品にない構成やギミックが用意されています。\n一風変わった物語・推理体験をぜひお楽しみください。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -1551,7 +1538,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://www.groupsne.co.jp/products/bg/mmm/img/mmm29_top.png",
           "payment": null,
           "sources": [
             {
@@ -1566,16 +1552,15 @@
               "url": "https://www.groupsne.co.jp/news/etc2026_event3.html",
               "retrievedAt": "2026-10-30"
             }
-          ]
+          ],
+          "imageUrl": "https://www.groupsne.co.jp/products/bg/mmm/img/mmm29_top.png"
         },
         {
-          "id": "no19-2",
-          "name": "そして誰もいなくなる？",
-          "price": 2970,
+          "id": "p60",
+          "keepId": "no19-2",
           "priceNote": "ナゾマ出展ページの表記は2,700円で、税込か税別かの記載なし。同ページの『あなたに捧げる殺人』も2,700円表記で、商品ページでは2,700円+税=2,970円のため、税込2,970円と推定",
           "category": "other",
           "oneLiner": "離島の別荘に残された痕跡から事件の真相を解く協力型推理ゲーム",
-          "description": "登場人物はみんな会話不能!? 離島の別荘に残された痕跡から、事件の真相を解き明かそう。本作ならではのギミックも楽しい協力型推理ゲームです。(1〜4人/120分/2,700円)",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -1592,7 +1577,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://www.groupsne.co.jp/products/bg/bloodyantique/img/t_17_top.png",
           "payment": null,
           "sources": [
             {
@@ -1603,9 +1587,11 @@
               "url": "https://www.groupsne.co.jp/products/bg/bloodyantique/t_17.html",
               "retrievedAt": "2026-10-31"
             }
-          ]
+          ],
+          "price": 2970
         }
       ],
+      "products": [],
       "candidates": [],
       "hashtags": [
         {
@@ -1663,7 +1649,100 @@
         }
       ],
       "notes": "HP(ratsnest.works)の制作物一覧とニュースにナゾトキマーケット2026の記載・価格なし。直近の制作物(Unlock!参加者限定ナゾ、名探偵コナン謎ファイル コナン＆世良ver)は他社・他イベント向けで、ナゾマで売るとの記載はない。Xに告知がある可能性あり。 X確認(10/25): @ratsnest_works の10/24・10/25の投稿で、ねずみ探検隊シリーズの新作2点がナゾトキマーケット2026で販売開始と確認。価格・所要時間は投稿の画像にも記載なし。 再収集(10/30 Web): HP(制作物・ニュース)にナゾマの記載・価格なし。新作2点の価格は埋まらず。 再収集(10/30 X): 10/29 のお品書き画像(Ba7・投稿2枚)で RAGING OCEAN・CRYSTAL SKY の価格1,500円と所要時間を埋め、WILD JUNGLE・ゆらぎの奇術師・タンブラー・やじるしねずみ・KORON(候補から移動)・folded・トートバッグの7点を追加。お品書きの表示価格は税込。4,000円以上の購入で全員に限定ナゾトキ『バナナといったらネズミ？』(10〜30分)がもらえる(非売品のため商品には入れていない)。支払いは現金・PayPay・VISA・Mastercard・タッチ決済。 再収集(10/31 X): 画像が無かった6商品(WILD JUNGLE・たぶんなに？タンブラー・おでかけ♪やじるしねずみ・KORON・folded・LOVELY RATSトートバッグ)の商品画像を、団体のHP(ratsnest.works/works/*)の各商品ページから imageUrl に入れた(各ページの商品の紹介画像で、価格表示入り)。",
-      "officialPatches": [],
+      "officialPatches": [
+        {
+          "id": "p130",
+          "keepId": "no20-4",
+          "priceNote": "お品書き(10/29)の表示価格(税込)",
+          "category": "kit",
+          "oneLiner": "謎多き奇術師「黒猫」の館に忍び込む高難度キット（BGM付き）",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記『高難度』→ 4"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay",
+            "VISA",
+            "Mastercard",
+            "タッチ決済"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/ratsnest_works/status/2115761815221051660",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/ratsnest_works/status/2115398177289543882",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/ratsnest_works/status/2115398177604112578",
+              "retrievedAt": "2026-10-30"
+            }
+          ]
+        },
+        {
+          "id": "p131",
+          "keepId": "no20-6",
+          "priceNote": "お品書き(10/29)の表示価格(税込)",
+          "category": "goods",
+          "oneLiner": "ぬいぐるみストラップのねずみを使って遊ぶ限定ナゾトキ付き",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "PayPay",
+            "VISA",
+            "Mastercard",
+            "タッチ決済"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/ratsnest_works/status/2115761815221051660",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://ratsnest.works/works/yajirushi",
+              "retrievedAt": "2026-10-31"
+            }
+          ]
+        },
+        {
+          "id": "p129",
+          "representedBy": [
+            "no20-1",
+            "no20-2",
+            "no20-3"
+          ]
+        }
+      ],
       "products": [
         {
           "id": "no20-1",
@@ -1849,53 +1928,6 @@
           ]
         },
         {
-          "id": "no20-4",
-          "name": "ゆらぎの奇術師",
-          "price": 3000,
-          "priceNote": "お品書き(10/29)の表示価格(税込)",
-          "category": "kit",
-          "oneLiner": "謎多き奇術師「黒猫」の館に忍び込む高難度キット（BGM付き）",
-          "description": "思考とヒラメキを駆使する高難度キット型ナゾトキゲーム。あなたは、謎多き奇術師「黒猫」の秘密を暴くべく、その館に忍び込む。そこで目にするものとは──。常識がゆらぐ、不思議な奇術の世界へようこそ。(オリジナルBGM付き)",
-          "difficulty": {
-            "level": 4,
-            "source": "official",
-            "basis": "団体表記『高難度』→ 4"
-          },
-          "playMinutes": {
-            "min": 120,
-            "max": null
-          },
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVptcsDbkAA1DtZ?format=jpg&name=small",
-          "payment": [
-            "現金",
-            "PayPay",
-            "VISA",
-            "Mastercard",
-            "タッチ決済"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/ratsnest_works/status/2115761815221051660",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/ratsnest_works/status/2115398177289543882",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/ratsnest_works/status/2115398177604112578",
-              "retrievedAt": "2026-10-30"
-            }
-          ]
-        },
-        {
           "id": "no20-5",
           "name": "たぶんなに？タンブラー",
           "price": 2700,
@@ -1931,49 +1963,6 @@
             },
             {
               "url": "https://ratsnest.works/works/tumbler",
-              "retrievedAt": "2026-10-31"
-            }
-          ]
-        },
-        {
-          "id": "no20-6",
-          "name": "おでかけ♪やじるしねずみ",
-          "price": 2700,
-          "priceNote": "お品書き(10/29)の表示価格(税込)",
-          "category": "goods",
-          "oneLiner": "ぬいぐるみストラップのねずみを使って遊ぶ限定ナゾトキ付き",
-          "description": "ねずみの巣のねずみが、ぬいぐるみストラップになって登場！いろいろな場所へ連れて行って写真を撮ろう！やじるしねずみを使って遊べる限定ナゾトキ付き！",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": {
-            "min": 15,
-            "max": 30
-          },
-          "players": null,
-          "isNew": true,
-          "limited": "数量限定販売",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://ratsnest.works/_astro/yajirushi_tate.CLUeV6_8.webp",
-          "payment": [
-            "現金",
-            "PayPay",
-            "VISA",
-            "Mastercard",
-            "タッチ決済"
-          ],
-          "sources": [
-            {
-              "url": "https://x.com/ratsnest_works/status/2115761815221051660",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://ratsnest.works/works/yajirushi",
               "retrievedAt": "2026-10-31"
             }
           ]
@@ -2247,16 +2236,56 @@
         }
       ],
       "notes": "公式のHP欄が空。QuizKnockのサイトにナゾトキマーケット2026の記載なし。NazoLock単独のX・HPは検索で特定できなかった。今年の新作2点は候補に回した。Xに告知がある可能性あり。 X確認(10/25): 公式 @NazoLock_baton(プロフィールに「QuizKnock発のナゾトキ制作チーム」)が10/22にナゾトキマーケット2026出展を告知。QurioStore公式(@QurioStore_QK)の10/16の投稿で新作「Sandwich」をナゾマ(Bb8)で販売と確認。価格は投稿に記載なし。FUJI・Tumbleweed『Q』は今回の告知が見つからず候補のまま。 再収集(10/30 Web): QuizKnock のイベント一覧にナゾマ・Sandwich の記載なし。価格は埋まらず。 再収集(10/30 X): 10/27 の投稿で新作持ち帰り謎『OBENTO』、10/29 の投稿で新作グッズ『ナゾ付きケシゴム』のナゾマ先行販売を確認して追加(どちらも価格は告知なし)。Sandwich の価格も NazoLock・QurioStore(@QurioStore_QK)の10/24以降の投稿に見つからず null のまま。FUJI・Tumbleweed『Q』の告知なしで候補のまま。 再収集(10/31 X): 10/30 の「商品ラインナップ決定」画像で価格を確認(Sandwich 2,800円・ケシゴム700円・OBENTO限定2,000円)し、FUJI(候補から移動)・NazoPizza・折り紙ナゾ付きアクリルキーホルダー・maze maze maze・クリアファイル-BINGO- の5点を追加。ショッパー100円は商品に入れていない。 画像(10/31 Web): no22-4 はゲームマーケットのブースページ、no22-5 は2025年ナゾマのプレスリリース画像(同じNazoPizza、当時の価格は2,500円)から。no22-6〜8 は HP・ショップ・検索で見つからず(商品ごとの画像は X のラインナップ画像のみで、1枚に並ぶお品書きのため入れていない) 画像(11/1 X): no22-6〜8 は NazoLock の過去の商品告知(商品ごとの画像)から 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no22-1",
-          "name": "Sandwich(ナゾロサンドイッチ)",
-          "price": 2800,
+          "id": "p74",
+          "keepId": "no22-3",
+          "priceNote": "ナゾトキマーケット限定価格(通常2,300円)。公式TSV: ナゾトキマーケット限定特別価格2,000円",
+          "category": "kit",
+          "oneLiner": "お弁当をテーマにした持ち帰り謎（STEP1〜3）",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "先行販売(ナゾマで先行販売と告知)",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/NazoLock_baton/status/2115028234945352030",
+              "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
+              "retrievedAt": "2026-10-31"
+            }
+          ],
+          "hashtags": [
+            {
+              "tag": "ナゾロOBENTO",
+              "sources": [
+                {
+                  "url": "https://x.com/NazoLock_baton/status/2115028234945352030",
+                  "retrievedAt": "2026-10-30"
+                }
+              ]
+            }
+          ],
+          "price": 2000
+        },
+        {
+          "id": "p75",
+          "keepId": "no22-1",
           "priceNote": null,
           "category": "kit",
           "oneLiner": "NazoLockの新作持ち帰り謎『Sandwich』",
-          "description": "NazoLockの新作持ち帰り謎『Sandwich』。2026年10月17・18日のゲームマーケット2026秋で先行販売し、ナゾトキマーケット2026(Bb8)でも販売。後日、通販サイトQurioStoreでも取り扱い予定。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -2270,7 +2299,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HUunaAtb0AAEM6F?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -2296,16 +2324,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HUunaAtb0AAEM6F?format=jpg&name=small"
         },
         {
-          "id": "no22-2",
-          "name": "ナゾ付きケシゴム",
-          "price": 700,
+          "id": "p76",
+          "keepId": "no22-2",
           "priceNote": null,
           "category": "goods",
           "oneLiner": "謎解きのお供になる、おまけの謎解き付きケシゴム",
-          "description": "NazoLockから新作グッズ『ナゾ付きケシゴム』が登場。謎解きを遊ぶ際のお供にどうぞ。おまけの謎解きも遊べます。先行販売は11/7(土)・8(日)のナゾトキマーケット2026。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -2319,7 +2346,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVxwsewbAAAw23E?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -2342,52 +2368,9 @@
               ]
             }
           ]
-        },
-        {
-          "id": "no22-3",
-          "name": "OBENTO",
-          "price": 2000,
-          "priceNote": "ナゾトキマーケット限定価格(通常2,300円)",
-          "category": "kit",
-          "oneLiner": "お弁当をテーマにした持ち帰り謎（STEP1〜3）",
-          "description": "NazoLockの新作持ち帰り謎『OBENTO』。「謎を解いてお腹いっぱい!?」とある。先行販売は11/7(土)・8(日)のナゾトキマーケット2026。(説明文は告知になく、商品名と画像のコピーのみ確認)",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": "先行販売(ナゾマで先行販売と告知)",
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HVnl2j1akAARTbi?format=jpg&name=small",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/NazoLock_baton/status/2115028234945352030",
-              "retrievedAt": "2026-10-30"
-            },
-            {
-              "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
-              "retrievedAt": "2026-10-31"
-            }
-          ],
-          "hashtags": [
-            {
-              "tag": "ナゾロOBENTO",
-              "sources": [
-                {
-                  "url": "https://x.com/NazoLock_baton/status/2115028234945352030",
-                  "retrievedAt": "2026-10-30"
-                }
-              ]
-            }
-          ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no22-4",
           "name": "FUJI",
@@ -2917,7 +2900,31 @@
         }
       ],
       "notes": "HPのお知らせ(2026-09-20のリニューアルのみ)とショップにナゾトキマーケット2026の記載なし。検索でも今回の出品は見つからなかった。Xに告知がある可能性あり。 X確認(10/25): @tanteijelly の10/13の投稿で「ナゾトキマーケット2026に参戦」「焼肉謎全種揃いました」と告知。焼肉謎シリーズは全5種(タン・カルビ・ロース・ホルモン・レバー)。ナゾマでの価格・仕様(謎のみ800円/アクキー付き1,500円のどちらか)は告知なしのため価格は null。 再収集(10/30 Web): HP とショップにナゾマの告知なし。焼肉謎5種の価格は埋まらず(通販価格のみ)。 再収集(10/30 X): @tanteijelly の10/24以降の投稿は怪談ナイト・空き家謎解きなどで、ナゾマの新しい告知なし(10/13 の告知のみ)。固定ポストは寄付の告知。焼肉謎の価格は埋まらず。 画像(10/31 Web): no25-1〜5 は HP ショップの各商品ページ(アクキー付きの版)の画像から。ナゾマでの販売が「謎のみ」か「アクキー付き」かは不明のまま",
-      "officialPatches": [],
+      "officialPatches": [
+        {
+          "id": "p118",
+          "representedBy": [
+            "no25-1",
+            "no25-2",
+            "no25-3",
+            "no25-4",
+            "no25-5"
+          ]
+        },
+        {
+          "id": "p119",
+          "category": "kit",
+          "oneLiner": "焼肉謎5部位とキーホルダー5種の限定セット",
+          "priceNote": "単品でそろえるより1,000円引き。謎のみ5作品のセットとは内容が異なる。",
+          "limited": "ナゾトキマーケット限定、2日間合計10セット"
+        },
+        {
+          "id": "p120",
+          "category": "kit",
+          "oneLiner": "地震・水害・火災の防災謎解き3種セット",
+          "priceNote": "会場特価3,500円。通販は商品4,500円＋送料500円。商品代で1,000円、送料込みの比較では1,500円お得。"
+        }
+      ],
       "products": [
         {
           "id": "no25-1",
@@ -3200,16 +3207,44 @@
         }
       ],
       "notes": "公式のHP欄はXのみ(Xは開いていない)。検索で見つかった公演情報(LAST ORDER等)はホール型公演で、持ち帰り謎の今回の出品は見つからなかった。Xを見れば取れそう。 X確認(10/25): 公式TSVのHP欄にあるXアカウント @_Crazy_Lemon_ のタイムライン(最新は10/14)を確認。ナゾトキマーケット2026の告知・お品書きなし(公演・チケットの告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): X 以外の情報源は見つからず、新しい告知なし。 再収集(10/30 X): 10/27 の投稿(画像1枚)で『CMY』1,300円・『コジコト』1,800円・『流石にダメでした...』2,200円と「and more.」を確認。いずれも会場限定価格。ブース Cc12。支払いは現金・クレジットカード・PayPay。コジコトは候補から商品へ移した。CMY・流石にダメでしたはカテゴリ不明のため other とした。「and more」の中身は告知なし。 画像(10/31 Web): no26-1〜3 は HP・ショップ・検索で見つからず(X の告知画像のみ) 画像(11/1 X): no26-1,no26-2 は CrazyLemon の過去の商品告知から / no26-3 は団体がリポストした制作者の投稿の商品写真から",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no26-1",
-          "name": "CMY",
-          "price": 1300,
+          "id": "p151",
+          "keepId": "no26-4",
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "言葉探しのシークワーズに謎解きのヒラメキを融合",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "p152",
+          "keepId": "no26-1",
           "priceNote": "投稿画像の表示価格。投稿に「会場限定価格で販売します」とある",
           "category": "other",
           "oneLiner": "ナゾマ会場限定価格で販売される商品(内容は告知なし)",
-          "description": "告知に説明文なし(商品名のみ確認)",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -3223,7 +3258,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HKXfbH_XcAA9zEp?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -3245,13 +3279,11 @@
           ]
         },
         {
-          "id": "no26-2",
-          "name": "コジコト(KANJI×YOU×CRAZYLEMON)",
-          "price": 1800,
+          "id": "p153",
+          "keepId": "no26-2",
           "priceNote": "投稿画像の表示価格。投稿に「会場限定価格で販売します」とある。通常価格は1,980円(候補メモの値)",
           "category": "kit",
           "oneLiner": "「この箱の中には漢字が紡ぐ古の知恵が眠る」の箱入り商品",
-          "description": "投稿画像の文言: 「この箱の中には 漢字が紡ぐ 古の知恵が眠る」。説明文は告知になし",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -3265,7 +3297,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HPuVG77b0AA9HKo?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -3285,7 +3316,9 @@
               "retrievedAt": "2026-11-02"
             }
           ]
-        },
+        }
+      ],
+      "products": [
         {
           "id": "no26-3",
           "name": "流石にダメでした...",
@@ -3322,40 +3355,6 @@
               "url": "https://x.com/driving1224/status/2033193593444487317",
               "retrievedAt": "2026-11-01"
             },
-            {
-              "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
-              "retrievedAt": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "id": "no26-4",
-          "name": "ヒラメキシークワーズ",
-          "price": 500,
-          "priceNote": null,
-          "category": "booklet",
-          "oneLiner": "言葉探しのシークワーズに謎解きのヒラメキを融合",
-          "description": "空欄に0〜9の数字をうまく当てはめながら単語を見つける。一般公開していない公演の一部を持ち帰り謎として復刻。",
-          "difficulty": {
-            "level": null,
-            "source": "unknown",
-            "basis": null
-          },
-          "playMinutes": null,
-          "players": null,
-          "isNew": true,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://pbs.twimg.com/media/HWCAMEiXcAAaiGZ?format=png&name=small",
-          "payment": [
-            "現金",
-            "クレジットカード",
-            "PayPay"
-          ],
-          "sources": [
             {
               "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
               "retrievedAt": "2026-11-02"
@@ -3400,16 +3399,13 @@
         }
       ],
       "notes": "公式HP(kitsutsukido.shopinfo.jp)は503で2回とも開けず、BOOTH(kitsutsukido.booth.pm)は403。検索結果のXプロフィールの要約に「今年は両日出展予定。新作とゲームブックを持っていく予定。詳細は後日」とあるが、投稿日が確認できず商品名もないので商品には入れていない。Xを見れば取れそう。 X確認(10/25): @kitsutsukido のタイムライン(10/17・18のゲームマーケット秋の投稿が最新)にナゾトキマーケット2026の告知なし。新作「謎と味わう世界の朝食から」・ゲームブックはゲムマ向けの投稿で、ナゾマで売るとは書かれていないため候補のまま。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): 公式HPは503で開けず、BOOTHは未確認。他団体ショップのキツツキ堂カテゴリに新作の掲載なし。 再収集(10/30 X): @kitsutsukido のタイムラインの最新は10/18(ゲームマーケット秋)で、10/24以降の投稿なし。ナゾマの告知なし。 再収集(10/31 X): 10/31 の投稿でブースCb2の新作として『吹雪に呪われた探偵学校からの招待状』『謎と味わう世界の朝食から』を確認し、候補から移して products に追加(価格は告知なし)。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "id": "no27-1",
-          "name": "ゲームブック『吹雪に呪われた探偵学校からの招待状』",
-          "price": 2750,
+          "id": "p124",
+          "keepId": "no27-1",
           "priceNote": null,
           "category": "booklet",
           "oneLiner": "大ボリュームの謎と物語のゲームブック",
-          "description": "大ボリュームの謎と物語のゲームブック「吹雪に呪われた探偵学校からの招待状」。(ブースCb2の新作として告知)",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -3423,7 +3419,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV7wvN8bQAAbH6_?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -3441,13 +3436,11 @@
           ]
         },
         {
-          "id": "no27-2",
-          "name": "謎と味わう世界の朝食から",
-          "price": 1400,
+          "id": "p125",
+          "keepId": "no27-2",
           "priceNote": null,
           "category": "kit",
           "oneLiner": "海外の朝食がモチーフの謎付きキット",
-          "description": "海外の朝食がモチーフの謎付きキット「謎と味わう世界の朝食から」。(ブースCb2の新作として告知)",
           "difficulty": {
             "level": 1,
             "source": "official",
@@ -3464,7 +3457,6 @@
             "sat",
             "sun"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV7wvN7awAAGTeo?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -3477,6 +3469,42 @@
             }
           ]
         },
+        {
+          "id": "p126",
+          "keepId": "no27-8",
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "小説謎解き「魔法の仕立て屋」シリーズ第1弾",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5 をそのまま"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
+              "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://kitsutsukido.booth.pm/items/3813944",
+              "retrievedAt": "2026-11-02"
+            }
+          ]
+        }
+      ],
+      "products": [
         {
           "id": "no27-3",
           "name": "深海遊園地からの招待状",
@@ -3658,43 +3686,6 @@
             },
             {
               "url": "https://kitsutsukido.booth.pm/items/6892442",
-              "retrievedAt": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "id": "no27-8",
-          "name": "魔法の仕立て屋 ふたりの秘密のワンピース・ドレス",
-          "price": 1000,
-          "priceNote": null,
-          "category": "kit",
-          "oneLiner": "小説謎解き「魔法の仕立て屋」シリーズ第1弾",
-          "description": "小説謎解き「魔法の仕立て屋」シリーズ第1弾。LINE アプリと筆記用具が必要。",
-          "difficulty": {
-            "level": 3,
-            "source": "official",
-            "basis": "団体表記 ★3/5 をそのまま"
-          },
-          "playMinutes": {
-            "min": 60,
-            "max": null
-          },
-          "players": null,
-          "isNew": null,
-          "limited": null,
-          "days": [
-            "sat",
-            "sun"
-          ],
-          "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/3813944/4ec528f0-fec6-4596-868b-39e99edc2f28_base_resized.jpg",
-          "payment": null,
-          "sources": [
-            {
-              "url": "https://x.com/kitsutsukido/status/2116502959282680027",
-              "retrievedAt": "2026-11-02"
-            },
-            {
-              "url": "https://kitsutsukido.booth.pm/items/3813944",
               "retrievedAt": "2026-11-02"
             }
           ]
@@ -4009,15 +4000,13 @@
         }
       ],
       "notes": "HP(noescape.co.jp)のお知らせとGAME KIT一覧、通販サイト(nazocafe.com)にナゾトキマーケット2026の記載なし。公式ブース概要にある季節シリーズ・異変回遊シリーズは、今回持っていくとの記載がないため候補止まり。異変回遊の持ち帰り商品は見つからず。Xに告知がある可能性あり。 X確認(10/25): @NoEscape_game のタイムライン(10/13〜10/25)にナゾトキマーケット2026の告知なし(価格改定・臨時休業・新シリーズ「なぞとき帰りみち」の告知のみ)。X検索はエラーで使えなかったため、タイムラインのみの確認。 再収集(10/30 Web): HP のお知らせ(最新10/29「帰宅型」周遊謎解き)と通販サイトにナゾマの告知なし。「なぞとき帰りみち」Route.01は2,000円(12/30まで1,700円)で、ナゾマで売るとは書かれていないため入れていない。 再収集(10/30 X): @NoEscape_game の10/24以降の投稿(10/28 異変回遊の予告、10/30 なぞとき帰りみち開始)にナゾマの告知なし。 再収集(11/1 X): 11/1 のお品書きと異変回遊601の告知から全商品を追加（お品書きの画像を読んだ）。 再収集(11/1 X): 新しく足した商品の画像は過去の投稿（最新約160件）を商品名で探し、単体の画像がないものは null のまま。 出典の見直し(11/1): 商品の情報が載っていない出典を外し、商品単体の画像を過去の投稿から補った。",
-      "officialPatches": [],
-      "products": [
+      "officialPatches": [
         {
-          "name": "異変回遊601 土産者",
-          "price": 4900,
+          "id": "p181",
+          "keepId": "no28-1",
           "priceNote": "ナゾマ限定価格（定価5,200円）",
           "category": "kit",
           "oneLiner": "2人で物語を読み合わせる箱型の新形式「対話型」先行発売",
-          "description": "お土産を「買った側」「もらう側」の2人になって物語を読み合わせていく新形式「対話型」コンテンツ。NoEscape初の箱型持ち帰り謎解き作品。",
           "difficulty": {
             "level": 4,
             "source": "official",
@@ -4038,7 +4027,6 @@
             "現金",
             "PayPay"
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HWCAEfHX0AAwnaC?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/NoEscape_game/status/2116832644461658561",
@@ -4052,9 +4040,29 @@
               "url": "https://x.com/NoEscape_game/status/2116840171735855384",
               "retrievedAt": "2026-11-01"
             }
-          ],
-          "id": "no28-1"
+          ]
         },
+        {
+          "id": "p182",
+          "representedBy": [
+            "no28-2",
+            "no28-3",
+            "no28-4",
+            "no28-5"
+          ]
+        },
+        {
+          "id": "p183",
+          "representedBy": [
+            "no28-6",
+            "no28-7",
+            "no28-8",
+            "no28-9",
+            "no28-10"
+          ]
+        }
+      ],
+      "products": [
         {
           "name": "異変回遊001 異常可変標識",
           "price": 1800,

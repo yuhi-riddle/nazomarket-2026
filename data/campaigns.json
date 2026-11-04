@@ -1284,5 +1284,49 @@
         "retrievedAt": "2026-11-04"
       }
     ]
+  },
+  {
+    "boothId": "no25",
+    "kind": "discount",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "id": "no25-c2",
+    "productIds": [
+      "p119"
+    ],
+    "title": "焼肉謎5部位＋キーホルダーが1,000円引き",
+    "detail": "焼肉謎の全5部位を、それぞれの焼肉アクリルキーホルダー付きでまとめた会場限定セットが6,500円。各1,500円×5部位の7,500円より1,000円安い。謎のみ5作品とは別のセット。2日間合計10セット。",
+    "limit": "2日間合計10セット",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "boothId": "no25",
+    "kind": "discount",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "id": "no25-c3",
+    "productIds": [
+      "p120"
+    ],
+    "title": "防災謎解き3種セットが会場特価3,500円",
+    "detail": "地震編・水害編・火災編の3種セット。各作品に防災ハンドブック付き。会場3,500円に対し通販の商品代は4,500円、送料は500円。商品代の差は1,000円、通販送料まで含めると1,500円お得。",
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
   }
 ]
