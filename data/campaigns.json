@@ -1154,5 +1154,135 @@
         "retrievedAt": "2026-11-03"
       }
     ]
+  },
+  {
+    "id": "official-c1",
+    "boothId": null,
+    "productIds": [],
+    "kind": "bonus",
+    "title": "周辺飲食店で1,000円以上なら謎コースター",
+    "detail": "11/7・11/8、対象店舗で1会計1,000円（税込）以上利用すると、謎付きコースター（全3種）を1枚もらえる。対象は山本のハンバーグ MeatBall and Wine、SCHMATZ、タイ料理ダオタイ、アニタッチ「CAPPY cafe」、マリオンクレープ（Hi!EVERYVALLEY店）、DUMBO Doughnuts and Coffee。各店の営業時間・支払方法は要確認。",
+    "endsAt": "2026-11-08",
+    "days": [],
+    "limit": "予定枚数に達し次第終了",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-1007/",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no01-c2",
+    "boothId": "no01",
+    "productIds": [
+      "no01-1"
+    ],
+    "kind": "bonus",
+    "title": "団員限定・絵本購入でオリジナルふせん",
+    "detail": "少年探偵SCRAP団（FC）団員がナゾトキマーケットで『爆弾魔が描いた絵本』を購入し、団員専用スペースで団員ページを提示すると、オリジナルふせんをもらえる。",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://scrapshuppan.com/books/bombersbook/",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "official-c2",
+    "boothId": null,
+    "productIds": [],
+    "kind": "other",
+    "title": "購入数に応じて福引に参加・ナゾコレ",
+    "detail": "入口でもらうMAPを持ち、会場で購入する際に裏面へ購入証明のチェックをもらう。出口付近のナゾコレ受付でチェック数に応じた福引に参加できる（最大5回）。賞品は東京ドームホテルのペアディナー招待券、アトラクションズのワンデーパスポートなど。購入数と回数の対応は告知に明記されていない。会場内で購入したグッズが対象。",
+    "endsAt": "2026-11-08",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "賞品は各開催日分を用意し、なくなり次第終了",
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/news/nazotokimarket2026-1014/",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no05-c2",
+    "boothId": "no05",
+    "productIds": [
+      "no05-2"
+    ],
+    "kind": "giveaway",
+    "title": "新作「メガネなき謎」を抽選で15名に",
+    "detail": "よだかのレコード公式X（@yodaka_info）をフォローし、引用元の新作告知投稿をリポストすると応募できる。『メガネなき謎の遺跡からの脱出』を抽選で計15名にプレゼント。ナゾトキマーケットのA2ブースで受け取れる人が対象。",
+    "endsAt": "2026-11-06T12:00",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "抽選15名",
+    "sources": [
+      {
+        "url": "https://x.com/yodaka_info/status/2117828023722688553",
+        "retrievedAt": "2026-11-04"
+      },
+      {
+        "url": "https://x.com/yodaka_info/status/2117819218477592587",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no91-c1",
+    "boothId": "no91",
+    "productIds": [
+      "no91-1",
+      "no91-2",
+      "no91-3",
+      "no91-4",
+      "no91-5"
+    ],
+    "kind": "giveaway",
+    "title": "新作5作品を各1名にプレゼント",
+    "detail": "公式Xアカウント（@RI_Works_nazo）をフォローし、対象投稿をリポストして応募。当日会場で受け取れる方限定。RI:Place、DONUTs、サクッ！とリドル（新作全種）、おうちでもポイすてっ！、ウラシマボックスを各1名・計5名にプレゼント。どの作品が当たるかはランダム。応募締切は11/5(木)23:59。",
+    "endsAt": "2026-11-05T23:59",
+    "days": [],
+    "limit": "各コンテンツ1名、計5名",
+    "sources": [
+      {
+        "url": "https://x.com/RI_Works_nazo/status/2117606484158951638",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no61-c1",
+    "boothId": "no61",
+    "productIds": [
+      "no61-1"
+    ],
+    "kind": "discount",
+    "title": "おにぎり謎3種セットで300円引き",
+    "detail": "おにぎり謎のさけ・うめ・たらこを3種セットで購入すると1,200円。各500円を単品で3種買う場合の合計1,500円から300円引き。",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/onilaby/status/2117828124461474247",
+        "retrievedAt": "2026-11-04"
+      }
+    ]
   }
 ]
