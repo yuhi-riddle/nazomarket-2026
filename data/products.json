@@ -29,7 +29,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p29",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://realdgame.jp/s/bombersbook/",
@@ -79,7 +79,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p18",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://realdgame.jp/s/ouchi-kimiasu/",
@@ -1939,7 +1939,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p108",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://shop.tumbleweed.jp/items/132792221",
@@ -1986,7 +1986,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p109",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://shop.tumbleweed.jp/items/156794997",
@@ -2037,7 +2037,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p110",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://shop.tumbleweed.jp/items/157516845",
@@ -2088,7 +2088,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p111",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/RIDDLER_nazo/status/2111396810547704011",
@@ -2165,6 +2165,129 @@
     "unconfirmed": [
       "difficulty",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no03-2",
+    "name": "RIDDLE BOX!!!",
+    "price": 3000,
+    "priceNote": "ナゾマ特別価格",
+    "category": "kit",
+    "oneLiner": "リドラ人気No.1の謎解きキット",
+    "description": "リドラ人気No.1の謎解きキット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": 120
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no03",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no03-3",
+    "name": "RIDDLE BOX2!!!",
+    "price": 3000,
+    "priceNote": "ナゾマ特別価格",
+    "category": "kit",
+    "oneLiner": "人気シリーズの第2弾",
+    "description": "人気シリーズの第2弾。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": 120
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no03",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no03-4",
+    "name": "ALPHABETZ",
+    "price": 3500,
+    "priceNote": "ナゾマ特別価格",
+    "category": "kit",
+    "oneLiner": "26文字が織りなす謎解き",
+    "description": "26文字が織りなす謎解き。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 120,
+      "max": 180
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no03",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -2386,6 +2509,10 @@
       {
         "url": "https://x.com/tokiqil/status/2116877610496176220",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no04-5",
@@ -2393,7 +2520,7 @@
       {
         "label": "取り置き予約（受け取りは両日17時まで）",
         "url": "https://x.gd/HkhHj",
-        "endsAt": null
+        "endsAt": "2026-11-05T23:59"
       }
     ],
     "boothId": "no04",
@@ -2441,6 +2568,10 @@
       {
         "url": "https://x.com/tokiqil/status/2116877610496176220",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no04-6",
@@ -2448,7 +2579,7 @@
       {
         "label": "取り置き予約（受け取りは両日17時まで）",
         "url": "https://x.gd/HkhHj",
-        "endsAt": null
+        "endsAt": "2026-11-05T23:59"
       }
     ],
     "boothId": "no04",
@@ -2501,6 +2632,10 @@
       {
         "url": "https://x.com/tokiqil/status/2116877610496176220",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no04-7",
@@ -2508,7 +2643,7 @@
       {
         "label": "取り置き予約（受け取りは両日17時まで）",
         "url": "https://x.gd/HkhHj",
-        "endsAt": null
+        "endsAt": "2026-11-05T23:59"
       }
     ],
     "boothId": "no04",
@@ -2555,6 +2690,10 @@
       {
         "url": "https://x.com/tokiqil/status/2116877610496176220",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no04-8",
@@ -2562,7 +2701,7 @@
       {
         "label": "取り置き予約（受け取りは両日17時まで）",
         "url": "https://x.gd/HkhHj",
-        "endsAt": null
+        "endsAt": "2026-11-05T23:59"
       }
     ],
     "boothId": "no04",
@@ -2591,7 +2730,7 @@
     },
     "players": "2〜6人",
     "isNew": true,
-    "limited": "限定60部",
+    "limited": "限定60部（取り置きは終了。当日在庫のみ）",
     "days": [
       "sat",
       "sun"
@@ -2614,16 +2753,13 @@
       {
         "url": "https://x.com/tokiqil/status/2117444491842068906",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no04-9",
-    "reservations": [
-      {
-        "label": "取り置き予約（11/3時点で残り10点・受け取りは両日17時まで）",
-        "url": "https://x.gd/HkhHj",
-        "endsAt": null
-      }
-    ],
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
@@ -2704,13 +2840,17 @@
       {
         "url": "https://x.com/tokiqil/status/2116877610496176220",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "reservations": [
       {
         "label": "取り置き予約（受け取りは両日17時まで）",
         "url": "https://x.gd/HkhHj",
-        "endsAt": null
+        "endsAt": "2026-11-05T23:59"
       }
     ],
     "boothId": "no04",
@@ -2720,6 +2860,134 @@
       "players",
       "isNew",
       "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no04-12",
+    "name": "オノマトペセット（K.オノマトペ＋R.オノマトペ）",
+    "price": 4500,
+    "priceNote": "通常4,800円",
+    "category": "kit",
+    "oneLiner": "ボードゲームと謎解きのセット。特製ステッカー付き",
+    "description": "ボードゲームと謎解きのセット。特製ステッカー付き。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no04",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no04-13",
+    "name": "●▲★■セット（Q.●▲★■＋R.●▲★■）",
+    "price": 5000,
+    "priceNote": "通常5,500円",
+    "category": "kit",
+    "oneLiner": "ボードゲームと謎解きのセット。特製ステッカー付き",
+    "description": "ボードゲームと謎解きのセット。特製ステッカー付き。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no04",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no04-14",
+    "name": "ダ・ヴィンチ恐山 制作のトキキル 2種",
+    "price": null,
+    "priceNote": "告知に価格の記載なし",
+    "category": "goods",
+    "oneLiner": "市場に出回っていないダ・ヴィンチ恐山制作のトキキル",
+    "description": "市場に出回っていないダ・ヴィンチ恐山制作のトキキル。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "限定15着",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWV9iJZaQAAIyUM?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2118237998299201845",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no04",
+    "hashtags": [],
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
       "payment"
     ]
   },
@@ -2750,7 +3018,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p220",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/yodaka_info/status/2117588798548881756",
@@ -2792,7 +3060,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p221",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/yodaka_info/status/2117819218477592587",
@@ -2834,7 +3102,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p91",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/AsobiFactory/status/2114558085843058799",
@@ -2883,7 +3151,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p92",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no06",
@@ -2929,7 +3197,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p92",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no06",
@@ -2975,7 +3243,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p92",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no06",
@@ -3017,7 +3285,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p103",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://machihack.com/unknox-c9n2",
@@ -3080,7 +3348,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p104",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -3254,7 +3522,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p98",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://i-ku-kan.com/mixstars",
@@ -3310,7 +3578,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p97",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://i-ku-kan.com/mixstars",
@@ -3363,7 +3631,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p96",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://i-ku-kan.com/mixstars",
@@ -3443,6 +3711,558 @@
     ]
   },
   {
+    "id": "no09-1",
+    "name": "毒洋菓子店の物語",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "手のひらサイズのダンボール箱シリーズ「ナゾトキ物語便」の第3弾",
+    "description": "手のひらサイズのダンボール箱シリーズ「ナゾトキ物語便」の第3弾。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWWkIdVaAAANTUm?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-2",
+    "name": "星間調査社の物語",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ナゾトキ物語便の第2弾",
+    "description": "ナゾトキ物語便の第2弾。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-3",
+    "name": "探偵猫の物語",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ナゾトキ物語便の第1弾",
+    "description": "ナゾトキ物語便の第1弾。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-4",
+    "name": "マッチ謎 10種セット",
+    "price": 7700,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "マッチ箱型の謎解き「マッチ謎」全10種のセット",
+    "description": "マッチ箱型の謎解き「マッチ謎」全10種のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-5",
+    "name": "マッチ謎（単品・全10種）",
+    "price": 700,
+    "priceNote": "種類により700〜900円",
+    "category": "kit",
+    "oneLiner": "マッチ箱型の謎解き。HOTEL うたたねなど全10種",
+    "description": "マッチ箱型の謎解き。HOTEL うたたねなど全10種。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-6",
+    "name": "オーダーの少ないファミリーレストラン",
+    "price": 3200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "「不思議な店」シリーズの第1弾",
+    "description": "「不思議な店」シリーズの第1弾。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★4/5"
+    },
+    "playMinutes": {
+      "min": 180,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-7",
+    "name": "不思議な家シリーズ（全8作）",
+    "price": 2500,
+    "priceNote": "作品により2,500〜3,700円",
+    "category": "kit",
+    "oneLiner": "奇妙な発明家の家など、シリーズ全8作",
+    "description": "奇妙な発明家の家など、シリーズ全8作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-8",
+    "name": "夜空に消えた3つの物語",
+    "price": 2900,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "短編小説が入った「謎解きアンソロジー」の第1弾",
+    "description": "短編小説が入った「謎解きアンソロジー」の第1弾。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★4/5"
+    },
+    "playMinutes": {
+      "min": 120,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-9",
+    "name": "黒猫3奇譚",
+    "price": 3500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎解きアンソロジーの第2弾",
+    "description": "謎解きアンソロジーの第2弾。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★4/5"
+    },
+    "playMinutes": {
+      "min": 180,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-10",
+    "name": "ナゾサンド（全6種）",
+    "price": 800,
+    "priceNote": "種類により800〜1,200円",
+    "category": "kit",
+    "oneLiner": "小腹が空いたときに解くサンドイッチ型の謎",
+    "description": "小腹が空いたときに解くサンドイッチ型の謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-11",
+    "name": "たばこ謎 ワンカートンセット",
+    "price": 6900,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "たばこの箱型の謎「たばこ謎」のセット",
+    "description": "たばこの箱型の謎「たばこ謎」のセット。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-12",
+    "name": "たばこ謎（単品）",
+    "price": 600,
+    "priceNote": "種類により600〜800円",
+    "category": "kit",
+    "oneLiner": "所要15〜60分の一服サイズの謎",
+    "description": "所要15〜60分の一服サイズの謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-13",
+    "name": "スカイポート連続殺人事件",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "昔懐かしのゲームを再現した「レトロゲームコンピュータ」",
+    "description": "昔懐かしのゲームを再現した「レトロゲームコンピュータ」。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 210,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no09-14",
+    "name": "殺意はカクテルに映る",
+    "price": 8800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ナゾストア発のマーダーミステリー「SCREAM AND」第3弾",
+    "description": "ナゾストア発のマーダーミステリー「SCREAM AND」第3弾。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 180,
+      "max": null
+    },
+    "players": "4人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no09",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "id": "p06",
     "boothId": "no10",
     "name": "KARIUDO-KRAKEN",
@@ -3469,7 +4289,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p06",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
@@ -3537,7 +4357,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p07",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/real_takara/status/2114265713817133389",
@@ -3581,7 +4401,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p08",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://takaraport.jp/shop/g/gsherlock002/",
@@ -3797,7 +4617,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p165",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/atobi_PR/status/2110577917424209971",
@@ -3857,7 +4677,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p164",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/efex_info/status/2116856070933238017",
@@ -3902,7 +4722,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p166",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/efex_info/status/2117549851189657666",
@@ -3943,7 +4763,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p51",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.xeoxy.com/news/20261025",
@@ -4006,7 +4826,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p52",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.xeoxy.com/news/20261025",
@@ -4070,7 +4890,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p53",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.xeoxy.com/news/20261025",
@@ -4576,7 +5396,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p15",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/flapzero/status/2113933530220875952",
@@ -4619,7 +5439,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p16",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/flapzero/status/2114295911899636076",
@@ -4662,7 +5482,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p17",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/flapzero/status/2114658301036110014",
@@ -5929,8 +6749,8 @@
   {
     "id": "no14-1",
     "name": "DOORS 1〜4",
-    "price": null,
-    "priceNote": null,
+    "price": 1500,
+    "priceNote": "ナゾマ限定価格。DOORS 1,500円、DOORS2 1,800円、DOORS3・4 各2,500円",
     "category": "kit",
     "oneLiner": "これまでの無料Web謎DOORSをデザイン一新して販売",
     "description": "『DOORS 1〜4』 デザインを一新して、ナゾトキマーケット2026（11/7・8）で販売が決定しました！",
@@ -5953,12 +6773,15 @@
       {
         "url": "https://x.com/far_near_/status/2113223853254308136",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/far_near_/status/2117942435791917435",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no14",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "isNew",
@@ -6018,6 +6841,45 @@
     ]
   },
   {
+    "id": "no14-3",
+    "name": "DOORS Series 全4作セット",
+    "price": 8000,
+    "priceNote": "ナゾマ限定価格",
+    "category": "online",
+    "oneLiner": "デザインを一新したWeb謎『DOORS』全4作のセット",
+    "description": "デザインを一新したWeb謎『DOORS』全4作のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/far_near_/status/2117942435791917435",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no14",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "id": "no16-1",
     "boothId": "no16",
     "name": "TETTUI",
@@ -6047,7 +6909,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p93",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazo_rpg/status/2113586235293761546",
@@ -6144,7 +7006,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p94",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -6190,7 +7052,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p95",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -6943,7 +7805,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p33",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://nazotoki-project.com/blog/%e6%83%85%e5%a0%b1%e8%a7%a3%e7%a6%81%ef%bc%8f%e5%b9%bb%e5%a2%83%e5%a0%82%e3%80%80%e5%ae%8c%e5%85%a8%e6%96%b0%e4%bd%9c/",
@@ -7018,7 +7880,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p34",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://nazotoki-project.com/blog/%e6%83%85%e5%a0%b1%e8%a7%a3%e7%a6%81%ef%bc%8f%e3%83%9f%e3%82%b9%e3%83%86%e3%83%aa%e3%83%bc%e3%83%ac%e3%82%bf%e3%83%bc%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba%e3%80%8c%e3%83%9e%e3%83%ac%e3%83%bc%e3%82%b7/",
@@ -7093,7 +7955,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p35",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://nazotoki-project.com/blog/%e3%83%8a%e3%82%be%e3%83%88%e3%82%ad%e3%83%9e%e3%83%bc%e3%82%b1%e3%83%83%e3%83%882026%e5%85%88%e8%a1%8c%e8%b2%a9%e5%a3%b2%e3%80%80%e6%96%b0%e4%bd%9c%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98/",
@@ -7471,7 +8333,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p178",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.clagla.jp/blog/2026/10/261029/",
@@ -7519,7 +8381,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p179",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -7558,7 +8420,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p180",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -7600,7 +8462,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p59",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.groupsne.co.jp/",
@@ -7651,7 +8513,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p60",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.groupsne.co.jp/news/etc2026_event3.html",
@@ -7695,7 +8557,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p61",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -7704,6 +8566,357 @@
       "playMinutes",
       "players",
       "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-3",
+    "name": "EXIT 脱出：ザ・ゲーム",
+    "price": 2800,
+    "priceNote": "各2,800円。お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "謎解きゲーム「EXIT」シリーズ",
+    "description": "謎解きゲーム「EXIT」シリーズ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-4",
+    "name": "卓上探偵団（言葉の魔術師、死神または天使）",
+    "price": 2700,
+    "priceNote": "各2,700円。お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "協力ミステリーゲーム「卓上探偵団」シリーズの既刊",
+    "description": "協力ミステリーゲーム「卓上探偵団」シリーズの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-5",
+    "name": "DEKA 集え、探偵諸君！",
+    "price": 3200,
+    "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "協力ミステリーゲーム短編集",
+    "description": "協力ミステリーゲーム短編集。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-6",
+    "name": "Murder Mystery Mini（引っ越しバイト、消えたパンツと空飛ぶサカナ、紫乃淵リライト）",
+    "price": 2700,
+    "priceNote": "各2,700円。お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "マーダーミステリー「Murder Mystery Mini」の既刊",
+    "description": "マーダーミステリー「Murder Mystery Mini」の既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-7",
+    "name": "Mystery Party in the Box（何度だって青い月に火を灯した、崇高なる労働をいただきありがとうございます）",
+    "price": 4000,
+    "priceNote": "各4,000円。お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "マーダーミステリー「Mystery Party in the Box」",
+    "description": "マーダーミステリー「Mystery Party in the Box」。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-8",
+    "name": "異世界パスポート審査官",
+    "price": 3600,
+    "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "グループSNEのゲーム",
+    "description": "グループSNEのゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-9",
+    "name": "そういうお前はどうなんだ? 狂気病棟編",
+    "price": 2200,
+    "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "グループSNEのゲーム",
+    "description": "グループSNEのゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-10",
+    "name": "ブラックストーリーズ",
+    "price": 1800,
+    "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "グループSNEのゲーム",
+    "description": "グループSNEのゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no19-11",
+    "name": "謎とき探偵デューク＆エルウィン",
+    "price": 3200,
+    "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+    "category": "kit",
+    "oneLiner": "グループSNEのゲーム",
+    "description": "グループSNEのゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118267086803751029",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no19",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -7743,7 +8956,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p130",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/ratsnest_works/status/2115761815221051660",
@@ -7799,7 +9012,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p131",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/ratsnest_works/status/2115761815221051660",
@@ -7867,7 +9080,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p129",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [
@@ -7945,7 +9158,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p129",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [
@@ -8015,7 +9228,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p129",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no20",
@@ -8249,7 +9462,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p85",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -8287,7 +9500,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p86",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -8326,7 +9539,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p87",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -8364,7 +9577,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p75",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/QurioStore_QK/status/2110966593761202308",
@@ -8424,7 +9637,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p76",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/NazoLock_baton/status/2115753011125325861",
@@ -8480,7 +9693,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p74",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/NazoLock_baton/status/2115028234945352030",
@@ -8879,7 +10092,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p48",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -8925,7 +10138,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p49",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -8966,7 +10179,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p50",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -8977,6 +10190,123 @@
     "unconfirmed": [
       "playMinutes",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no24-1",
+    "name": "繁華街殺人事件",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "TokiTokiの新作",
+    "description": "TokiTokiの新作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/escape_cafe/status/2118184745238761629",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no24",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no24-2",
+    "name": "結愛のらぶれたー",
+    "price": 1650,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "メンヘラに愛される衝撃のラストの謎",
+    "description": "メンヘラに愛される衝撃のラストの謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/escape_cafe/status/2118184745238761629",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no24",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no24-3",
+    "name": "マスターからの挑戦錠",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "本物の鍵が入った謎",
+    "description": "本物の鍵が入った謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/escape_cafe/status/2118184745238761629",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no24",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -9007,7 +10337,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p119",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -9045,7 +10375,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p120",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -9099,7 +10429,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p118",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no25",
@@ -9154,7 +10484,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p118",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no25",
@@ -9209,7 +10539,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p118",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no25",
@@ -9264,7 +10594,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p118",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no25",
@@ -9318,7 +10648,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p118",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no25",
@@ -9364,7 +10694,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p152",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
@@ -9420,7 +10750,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p153",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2115020874243821872",
@@ -9476,7 +10806,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p151",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_Crazy_Lemon_/status/2116832773268758900",
@@ -9566,7 +10896,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p124",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/kitsutsukido",
@@ -9619,7 +10949,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p125",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/kitsutsukido/status/2116393573709197602",
@@ -9666,7 +10996,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p126",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/kitsutsukido/status/2116502959282680027",
@@ -10243,7 +11573,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p181",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/NoEscape_game/status/2116832644461658561",
@@ -10297,7 +11627,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p182",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-2",
@@ -10345,7 +11675,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p182",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-3",
@@ -10393,7 +11723,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p182",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-4",
@@ -10441,7 +11771,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p182",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-5",
@@ -10489,7 +11819,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p183",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-6",
@@ -10537,7 +11867,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p183",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-7",
@@ -10585,7 +11915,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p183",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-8",
@@ -10633,7 +11963,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p183",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-9",
@@ -10681,7 +12011,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p183",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "id": "no28-10",
@@ -11336,7 +12666,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p20",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazocafe/status/2113100184477737421",
@@ -11378,7 +12708,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p21",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://nazoyacafe.jp/nazo/novel_2nd/",
@@ -11424,7 +12754,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p22",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -11553,7 +12883,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p170",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/Another_Vision_/status/2115398179982024914",
@@ -11603,7 +12933,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p171",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/Another_Vision_/status/2115760558402154569",
@@ -11665,6 +12995,555 @@
     ]
   },
   {
+    "id": "no30-4",
+    "name": "サイファアーカイブ",
+    "price": 700,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": {
+      "min": 50,
+      "max": 70
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-5",
+    "name": "近見知新聞解読依頼",
+    "price": 700,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 40,
+      "max": 70
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-6",
+    "name": "コウサク",
+    "price": 1800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 120,
+      "max": 240
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-7",
+    "name": "Record 謎付きクリアファイル",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-8",
+    "name": "case:P",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★5/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 150
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-9",
+    "name": "IneviTable Game",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 180,
+      "max": 360
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-10",
+    "name": "告白しくはっく",
+    "price": 800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 100
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-11",
+    "name": "モンドウ",
+    "price": 1600,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": 30
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-12",
+    "name": "ノバリスと失踪少女",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★5/5"
+    },
+    "playMinutes": {
+      "min": 100,
+      "max": 240
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-13",
+    "name": "アナビナゾ",
+    "price": 1400,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": 300
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-14",
+    "name": "謎登山",
+    "price": 1650,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 120
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-15",
+    "name": "アケ_テ",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★4/5"
+    },
+    "playMinutes": {
+      "min": 45,
+      "max": 80
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no30-16",
+    "name": "S to G",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "AnotherVisionの既刊",
+    "description": "AnotherVisionの既刊。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 90
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no30",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
     "id": "p23",
     "boothId": "no31",
     "name": "水彩を貫く",
@@ -11684,7 +13563,7 @@
     },
     "players": "1~2人",
     "isNew": true,
-    "limited": "事前予約フォームあり（受付11/7 18:00まで）",
+    "limited": "予約は満枠で受付終了。当日分はわずか",
     "days": [
       "sat",
       "sun"
@@ -11697,7 +13576,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p23",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/MayAlcedoatthis/status/2112136160076341392",
@@ -11718,6 +13597,10 @@
       {
         "url": "https://x.com/nazocafessp/status/2114686922316816436",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2118191101723217937",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [
@@ -11735,14 +13618,7 @@
         ]
       }
     ],
-    "unconfirmed": [],
-    "reservations": [
-      {
-        "label": "取り置き予約（受け取りは11/8 14時まで）",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
-        "endsAt": "2026-11-07T18:00"
-      }
-    ]
+    "unconfirmed": []
   },
   {
     "id": "p24",
@@ -11764,7 +13640,7 @@
     },
     "players": "1~2人",
     "isNew": false,
-    "limited": "事前予約制。10/27 に予約数に達したため予約受付を終了（在庫が少ない）",
+    "limited": "予約は満枠で受付終了。当日分はわずか",
     "days": [
       "sat",
       "sun"
@@ -11777,7 +13653,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p24",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/MayAlcedoatthis/status/2026259609305133517",
@@ -11794,6 +13670,10 @@
       {
         "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2118191101723217937",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -11819,7 +13699,7 @@
     },
     "players": "1人",
     "isNew": false,
-    "limited": "事前予約フォームあり（10/29 の告知）",
+    "limited": "予約は満枠で受付終了。当日分はわずか",
     "days": [
       "sat",
       "sun"
@@ -11832,7 +13712,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p25",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/MayAlcedoatthis/status/2026259609305133517",
@@ -11849,17 +13729,14 @@
       {
         "url": "https://x.com/nazocafessp/status/2115769677901336665",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/MayAlcedoatthis/status/2118191101723217937",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
-    "unconfirmed": [],
-    "reservations": [
-      {
-        "label": "取り置き予約（受け取りは11/8 14時まで）",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
-        "endsAt": "2026-11-07T18:00"
-      }
-    ]
+    "unconfirmed": []
   },
   {
     "id": "no32-1",
@@ -11893,7 +13770,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p161",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/sheeprhythm/status/2112514185947168971",
@@ -11968,7 +13845,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p162",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/sheeprhythm/status/2113963790551404551",
@@ -12034,7 +13911,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p163",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/sheeprhythm/status/2115050928013520926",
@@ -12266,7 +14143,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p223",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazotoki_adv/status/2117539460477034529",
@@ -12308,7 +14185,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p224",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazotoki_adv/status/2117540127912460365",
@@ -12319,6 +14196,47 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
+      "players",
+      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "id": "p229",
+    "boothId": "no33",
+    "name": "ORBIT",
+    "price": 3960,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "昨年12月に発売され、新たな挑戦者を今なお生み続けるモンスター謎解きがこちら｢…",
+    "description": "昨年12月に発売され、新たな挑戦者を今なお生み続けるモンスター謎解きがこちら｢ORBIT｣。\n発売当初、所要時間180分～という表記でしたが、これまで挑んだユーザーの声を反映させ現在は240分～としております。\n手に取って頂ければわかると思いますが、￥3,960に対しての重さではありません。箱の中には5つの封筒が入っていて、1～4をクリアして最後の5に挑むという形式になっています。圧倒的ボリュームの｢ORBIT｣に、あなたのこれまでの謎解き力を試す時が来た･･････。\n新たな挑戦者をお待ちしております。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 180,
+      "max": null
+    },
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no33/product/p229_photo1.png",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p229",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
       "players",
       "isNew",
       "payment"
@@ -12393,7 +14311,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p137",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/cinematrickshop/status/2116566617739984957",
@@ -12436,7 +14354,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p138",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/cinematrickshop/status/2117818454497771784",
@@ -12479,7 +14397,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p88",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
@@ -12525,7 +14443,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p89",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
@@ -12562,21 +14480,25 @@
     },
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "ナゾトキマーケットからリニューアル版を販売開始（謎の内容・答えは変更なし）",
     "days": [
       "sat",
       "sun"
     ],
-    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no35/product/p90_photo1.png",
+    "imageUrl": "https://pbs.twimg.com/media/HWOQo8BbIAAOgIt?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p90",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/JOKer_Project_/status/2117936896814772724",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -12619,7 +14541,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p28",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/Nazo_Gram/status/2111064614268285403",
@@ -12775,7 +14697,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p114",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/hard_nuts_/status/2114326119994339428",
@@ -12818,7 +14740,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p112",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/hard_nuts_/status/2114326119994339428",
@@ -12861,7 +14783,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p113",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/hard_nuts_/status/2114326119994339428",
@@ -12951,7 +14873,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p172",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
@@ -13003,7 +14925,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p173",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
@@ -13052,7 +14974,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p174",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
@@ -13276,7 +15198,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p189",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/omunazotoki/status/2117512275120861410",
@@ -13320,7 +15242,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p190",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/omunazotoki/status/2117512275120861410",
@@ -13364,7 +15286,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p191",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/omunazotoki/status/2117512275120861410",
@@ -13410,7 +15332,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p194",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/return_zero_thk/status/2112884258742378648",
@@ -13468,7 +15390,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p195",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/return_zero_thk/status/2113246496934203687",
@@ -13723,7 +15645,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p102",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/K_dush2/status/2116485431772721605",
@@ -13772,7 +15694,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p127",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/k_dush2/status/2116847735496409566",
@@ -13821,7 +15743,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p19",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/K_dush2/status/1197688632842174464",
@@ -14000,7 +15922,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p43",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/ENIG_ROID/status/2113601337766387736",
@@ -14052,7 +15974,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p44",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "http://enig-roid.com/",
@@ -14101,7 +16023,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p45",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "http://enig-roid.com/",
@@ -14274,7 +16196,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p09",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://tri-mobius.com/schrodinger/",
@@ -14346,7 +16268,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p10",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://tri-mobius.com/doborrow/",
@@ -14418,7 +16340,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p11",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://tri-mobius.com/karuizawa/",
@@ -14467,7 +16389,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p128",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/kimagurebox/status/2110337697504170348",
@@ -14545,7 +16467,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p58",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/michi_place/status/2113933603034042791",
@@ -14594,7 +16516,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p222",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -14632,7 +16554,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p155",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_aa__aaaa__aa_/status/2117572512934502814",
@@ -14673,7 +16595,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p156",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_aa__aaaa__aa_/status/2117587603968897325",
@@ -14722,7 +16644,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p154",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no47",
@@ -14769,7 +16691,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p154",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no47",
@@ -14812,7 +16734,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p154",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no47",
@@ -14852,7 +16774,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p184",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -14890,7 +16812,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p185",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -14929,7 +16851,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p186",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -14971,7 +16893,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p199",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/guzuria_vtuber/status/2115074799466930336",
@@ -15097,7 +17019,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p115",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/musakushi_/status/2116379636313784444",
@@ -15145,7 +17067,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p116",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/musakushi_/status/2116379887489499641",
@@ -15193,7 +17115,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p117",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/musakushi_/status/2116380139181551770",
@@ -15280,7 +17202,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p192",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15319,7 +17241,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p193",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15358,7 +17280,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p83",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15397,7 +17319,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p84",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15439,7 +17361,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p46",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/calette_pj/status/2113873120004067794",
@@ -15454,7 +17376,7 @@
   {
     "id": "no54-2",
     "name": "時間割泥棒 トルノダーからの脱出",
-    "price": null,
+    "price": 1000,
     "priceNote": null,
     "category": "kit",
     "oneLiner": "謎の生物トルノダーから時間割を取り返す謎解き",
@@ -15478,15 +17400,213 @@
       {
         "url": "https://x.com/calette_pj/status/2117542315430473850",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no54",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no54-3",
+    "name": "ひっくり返る反重力からの脱出",
+    "price": 1000,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "3D脱出ゲームの新作",
+    "description": "3D脱出ゲームの新作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no54",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no54-4",
+    "name": "海底料理店 龍の味咲",
+    "price": 1000,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "Web ARGの新作",
+    "description": "Web ARGの新作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no54",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no54-5",
+    "name": "CiRCLE",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "「このナゾは百年解ける。」高難易度の持ち帰り謎",
+    "description": "「このナゾは百年解ける。」高難易度の持ち帰り謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no54",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no54-6",
+    "name": "新世界ALKAからの脱出",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "累計1,300人以上がプレイしたCaletteの代表作",
+    "description": "累計1,300人以上がプレイしたCaletteの代表作。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no54",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no54-7",
+    "name": "壊れた童話からの脱出",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "とある本を開いたら物語の様子が変になっている謎",
+    "description": "とある本を開いたら物語の様子が変になっている謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no54",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -15520,7 +17640,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p133",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/paddle_pj/status/2115731112836349974",
@@ -15586,7 +17706,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p132",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/paddle_pj/status/2116742024166576564",
@@ -15628,7 +17748,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p134",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15669,7 +17789,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p26",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://terra-nova.co.jp/news/tongari/",
@@ -15723,7 +17843,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p27",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15763,7 +17883,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p38",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -15810,7 +17930,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p39",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -15853,7 +17973,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p206",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15892,7 +18012,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p207",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15930,7 +18050,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p208",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -15971,7 +18091,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p71",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2116455138214703576",
@@ -16014,7 +18134,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p72",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2116817532539515102",
@@ -16057,7 +18177,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p73",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2117179908984295901",
@@ -16110,6 +18230,330 @@
     ]
   },
   {
+    "id": "no59-5",
+    "name": "＝キカ＝",
+    "price": 800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "「−キカ−」の一部の謎やギミックをリニューアルしたリメイク作",
+    "description": "持ち帰り謎「−キカ−」の一部の謎やギミックをリニューアルしたリメイク作（第2版）。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★5/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2117908378047656403",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-6",
+    "name": "赤い糸を結んで",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Xcapeの持ち帰り謎",
+    "description": "Xcapeの持ち帰り謎。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-7",
+    "name": "CLOWN",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Xcapeの持ち帰り謎",
+    "description": "Xcapeの持ち帰り謎。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-8",
+    "name": "八つ目の大罪",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Xcapeの持ち帰り謎",
+    "description": "Xcapeの持ち帰り謎。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★2/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-9",
+    "name": "BLACK&WHITE",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Xcapeの持ち帰り謎",
+    "description": "Xcapeの持ち帰り謎。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 ★4/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-10",
+    "name": "Ouroboros",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Xcapeの持ち帰り謎",
+    "description": "Xcapeの持ち帰り謎。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記 ★5/5"
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-11",
+    "name": "謎解きができるだけでモテちゃった件",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Xcapeの持ち帰り謎",
+    "description": "Xcapeの持ち帰り謎。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 20,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no59-12",
+    "name": "終わらないアンケートからの脱出",
+    "price": 200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "Xcapeの持ち帰り謎",
+    "description": "Xcapeの持ち帰り謎。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★3/5"
+    },
+    "playMinutes": {
+      "min": 15,
+      "max": null
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no59",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "id": "no60-1",
     "boothId": "no60",
     "name": "なくしもの",
@@ -16139,7 +18583,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p149",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/C_lock_row/status/2116470241039655110",
@@ -16183,7 +18627,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p150",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/C_lock_row/status/2116563598378184956",
@@ -16200,6 +18644,166 @@
       "playMinutes",
       "players",
       "payment"
+    ]
+  },
+  {
+    "id": "no60-3",
+    "name": "転売注意",
+    "price": 2500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "限定の持ち帰り謎が転売されている謎",
+    "description": "限定の持ち帰り謎が転売されている謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "再販",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/C_lock_row/status/2117949993638052193",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no60",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no60-4",
+    "name": "色覚",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "色が導くのはどんな世界かを解く謎",
+    "description": "色が導くのはどんな世界かを解く謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "再販",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/C_lock_row/status/2117949993638052193",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no60",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no60-5",
+    "name": "NUMBER+",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "封筒に入っているのはたった一枚の紙という謎",
+    "description": "封筒に入っているのはたった一枚の紙という謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "再販",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/C_lock_row/status/2117949993638052193",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no60",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "id": "no60-6",
+    "name": "ジャスト・イン・カメラ",
+    "price": 1650,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "新感覚の謎解き",
+    "description": "新感覚の謎解き。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "特別販売",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/C_lock_row/status/2117949993638052193",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no60",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
     ]
   },
   {
@@ -16229,7 +18833,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p175",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/onilaby/status/2117828124461474247",
@@ -16271,7 +18875,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p176",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -16309,7 +18913,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p177",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -16393,7 +18997,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p167",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/site_Arcana/status/2117572503040344122",
@@ -16439,7 +19043,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p139",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/site_Arcana/status/2117572503715651993",
@@ -16560,7 +19164,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p203",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -16598,7 +19202,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p204",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -16637,7 +19241,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p205",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -16676,7 +19280,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p160",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/imy_nazo/status/2117794618335264857",
@@ -16694,8 +19298,8 @@
   {
     "id": "no64-1",
     "name": "嫌がらせのようなクロスワード（旧作シリーズ）",
-    "price": null,
-    "priceNote": null,
+    "price": 500,
+    "priceNote": "Vol.01〜03 500円、Vol.04 Xtreme・Hard 800円、Vol.05 1,000円",
     "category": "kit",
     "oneLiner": "巨大クロスワードを軸にした、歯ごたえのあるペンシルパズル系の持ち帰り謎シリーズ",
     "description": "告知に説明文なし(シリーズ名のみ確認)。公式ブース概要: 巨大クロスワードをはじめとして、歯ごたえのあるペンシルパズルを軸とした謎解きもあります。 旧作シリーズをまとめた行。2026年新作Vol.06はno64-4として個別登録しており、この行には含めない。",
@@ -16722,12 +19326,15 @@
       {
         "url": "https://x.com/imy_nazo/status/1984002843087696310",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/imy_nazo/status/2117824692170236257",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no64",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "playMinutes",
       "players",
       "payment"
@@ -16736,8 +19343,8 @@
   {
     "id": "no64-2",
     "name": "あいまいみにシリーズ",
-    "price": null,
-    "priceNote": null,
+    "price": 500,
+    "priceNote": "Vol.01〜04 500円、Vol.05 1,000円",
     "category": "kit",
     "oneLiner": "旧作の持ち帰り謎シリーズ(あいまいみに)",
     "description": "告知に説明文なし(シリーズ名のみ確認)。",
@@ -16764,12 +19371,15 @@
       {
         "url": "https://x.com/imy_nazo/status/1793851434431353257",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/imy_nazo/status/2117824692170236257",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no64",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
@@ -16779,8 +19389,8 @@
   {
     "id": "no64-3",
     "name": "Yazzle",
-    "price": null,
-    "priceNote": null,
+    "price": 800,
+    "priceNote": "Yazzle#01",
     "category": "kit",
     "oneLiner": "旧作の持ち帰り謎(Yazzle)",
     "description": "告知に説明文なし(商品名のみ確認)。10/27 の投稿では「Yazzle辺り」と書かれており、Yazzle 系の作品を持っていくという意味。",
@@ -16807,15 +19417,96 @@
       {
         "url": "https://x.com/imy_nazo/status/1984002845461631065",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/imy_nazo/status/2117824692170236257",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no64",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no64-5",
+    "name": "嫌がらせのようなクロスワード Vol.4.5",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "一般販売のないシリーズの1冊",
+    "description": "一般販売のないシリーズの1冊。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/imy_nazo/status/2117824692170236257",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no64",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no64-6",
+    "name": "YAZ謎",
+    "price": 500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "一般販売のない謎",
+    "description": "一般販売のない謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "現品限り、再販予定なし",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/imy_nazo/status/2117824692170236257",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no64",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -16846,7 +19537,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p70",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/Mysterycakekzkc/status/2115987365038879069",
@@ -16887,7 +19578,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p135",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/cdrriddle/status/2116849029917315557",
@@ -16929,7 +19620,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p136",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/cdrriddle/status/2116849029917315557",
@@ -17009,7 +19700,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p63",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/MysteryJ_nazo/status/2115776237499228510",
@@ -17051,7 +19742,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p62",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/MysteryJ_nazo/status/2116116095400804578",
@@ -17093,7 +19784,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p64",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/MysteryJ_nazo/status/2116485800908972382",
@@ -17138,7 +19829,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p69",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/teaparty_cooh/status/2114348348132196512",
@@ -17184,7 +19875,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p02",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://booth.pm/ja/items/3735029",
@@ -17514,7 +20205,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17561,7 +20252,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17608,7 +20299,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17655,7 +20346,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17702,7 +20393,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17749,7 +20440,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17796,7 +20487,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17843,7 +20534,7 @@
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p68",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no67",
@@ -17963,7 +20654,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p65",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/waranazo/status/2113239417313984639",
@@ -18005,7 +20696,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p67",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/waranazo/status/2113571410610421993",
@@ -18047,7 +20738,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p66",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/waranazo/status/2113942523425313192",
@@ -18217,7 +20908,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p105",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/RiddleTimez/status/2113144438188896563",
@@ -18285,7 +20976,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p107",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/RiddleTimez/status/2113948627777237098",
@@ -18343,7 +21034,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p106",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/RiddleTimez/status/2115760557907448306",
@@ -18695,7 +21386,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p81",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/MOT_nazotoki/status/2114341431959842924",
@@ -18752,7 +21443,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p82",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazogatokitai/status/2115773600519332089",
@@ -18783,7 +21474,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "数量限定（100個以上の持ち込みを目指して制作中）",
+    "limited": "100個以上を用意",
     "days": [
       "sat",
       "sun"
@@ -18804,7 +21495,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p80",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/pintoLab/status/2115633352388837513",
@@ -18817,6 +21508,10 @@
       {
         "url": "https://x.com/pintoLab/status/2117526037773127864",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/pintoLab/status/2118195209494512045",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -18912,7 +21607,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p30",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazotokibancho/status/2114658302814568496",
@@ -18962,7 +21657,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p31",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
@@ -19008,7 +21703,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p32",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nazotokibancho/status/2117210121805971547",
@@ -19103,7 +21798,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p03",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -19181,7 +21876,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p04",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -19243,7 +21938,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p05",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/",
@@ -19443,7 +22138,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p225",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nichonazo/status/2116873154639601944",
@@ -19567,7 +22262,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p37",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/toykakeboze/status/2111744095416918086",
@@ -19629,7 +22324,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p40",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://nazo.mikan-box.net/toaru/",
@@ -19694,7 +22389,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p41",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://note.com/elejun/m/meabb6757606b",
@@ -20295,7 +22990,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p122",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/akazukin_NAZO/status/2116147297759474068",
@@ -20339,7 +23034,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p121",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/akazukin_NAZO/status/2115783264569008415",
@@ -20383,7 +23078,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p123",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/akazukin_NAZO/status/2115420834731061315",
@@ -20427,7 +23122,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p168",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/mayudamakobo/status/2114267659021979723",
@@ -20485,7 +23180,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p169",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/mayudamakobo/status/2114681248023187726",
@@ -20979,6 +23674,84 @@
     ]
   },
   {
+    "id": "no77-14",
+    "name": "なんの異常もないただのチェキ",
+    "price": 500,
+    "priceNote": "1枚500円、6枚セット2,500円",
+    "category": "goods",
+    "oneLiner": "ちょっとしたLINE謎のおまけ付きチェキ",
+    "description": "ちょっとしたLINE謎のおまけ付きチェキ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWWz7RubYAAHAMx?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/mayudamakobo/status/2118297035858411758",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "payment"
+    ]
+  },
+  {
+    "id": "no77-15",
+    "name": "第一紀美術展~わたしたちのあとに~ 音声ガイド",
+    "price": 800,
+    "priceNote": "会場限定価格（通常価格は未定）",
+    "category": "kit",
+    "oneLiner": "音声ガイドで楽しむ美術鑑賞の謎",
+    "description": "音声ガイドで楽しむ美術鑑賞の謎。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": 60
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWW0KoDagAAWXqe?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/mayudamakobo/status/2118297298623185134",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no77",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "payment"
+    ]
+  },
+  {
     "id": "p54",
     "boothId": "no78",
     "name": "オシリドル",
@@ -21010,7 +23783,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p54",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/shareKOBE_/status/2111042321458589870",
@@ -21070,7 +23843,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p55",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/shareKOBE_/status/2113571143323938829",
@@ -21130,7 +23903,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p56",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/shareKOBE_/status/2117228205837078859",
@@ -21142,6 +23915,201 @@
       "difficulty",
       "playMinutes",
       "players"
+    ]
+  },
+  {
+    "id": "no78-1",
+    "name": "謎付きクリアファイル（OTONARINO・KOKORONI NONNO）",
+    "price": 2000,
+    "priceNote": "各種2,000円",
+    "category": "kit",
+    "oneLiner": "VRINQの謎付きクリアファイル",
+    "description": "VRINQの謎付きクリアファイル。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no78",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no78-2",
+    "name": "VRINQ オリジナルトートバッグ",
+    "price": 2500,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "VRINQのオリジナルトートバッグ",
+    "description": "VRINQのオリジナルトートバッグ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no78",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no78-3",
+    "name": "ココロニ・ノンノと一通の予告状",
+    "price": 1500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "誕生日記念グッズ2026の謎付きクリアファイル",
+    "description": "誕生日記念グッズ2026の謎付きクリアファイル。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no78",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no78-4",
+    "name": "乙奈りの5周年記念 謎付きクリアファイル",
+    "price": 2000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "5周年記念の謎付きクリアファイル",
+    "description": "5周年記念の謎付きクリアファイル。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no78",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no78-5",
+    "name": "心を結ぶお茶会の謎",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ハーブティ専門店とのコラボ謎解きキット（ハーブティー付属なし）",
+    "description": "ハーブティ専門店とのコラボ謎解きキット（ハーブティー付属なし）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no78",
+    "hashtags": [],
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
     ]
   },
   {
@@ -21177,7 +24145,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p36",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://note.com/paisen_nazo/n/n59231bc59368",
@@ -21250,7 +24218,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p42",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://note.com/paisen_nazo/n/nf1fefb832104",
@@ -21291,7 +24259,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "数量限定(各日150部。ナゾマ以降の再販等は未定)",
+    "limited": "数量限定。完売後は両日とも会場限定で受注生産予約を受付",
     "days": [
       "sat",
       "sun"
@@ -21304,7 +24272,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p57",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/amaka2don/status/2116131528673824851",
@@ -21321,6 +24289,10 @@
       {
         "url": "https://x.com/amaka2don/status/2116862828208443525",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/amaka2don/status/2117962651511009524",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -21565,7 +24537,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p214",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/tsukumorozuya/status/2112876560659444214",
@@ -21633,7 +24605,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p213",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/tsukumorozuya/status/2116862837221970229",
@@ -21679,7 +24651,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p212",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/tsukumorozuya/status/2116500905285882277",
@@ -21786,7 +24758,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p209",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -21824,7 +24796,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p210",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -21862,7 +24834,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p211",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -21902,7 +24874,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p157",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/kirin_for_zou/status/2116856236310421917",
@@ -21953,7 +24925,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p158",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/kirin_for_zou/status/2117223756095721581",
@@ -22007,7 +24979,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p159",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/kirin_for_zou/status/2117598193160700375",
@@ -22050,7 +25022,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p47",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22086,7 +25058,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p77",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/nowarete/status/2115807819526222308",
@@ -22132,7 +25104,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p78",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22170,7 +25142,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p79",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22213,7 +25185,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p187",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22253,7 +25225,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p188",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22290,7 +25262,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p200",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22331,7 +25303,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p201",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22372,7 +25344,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p202",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -22410,7 +25382,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p12",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -22481,7 +25453,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p13",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -22546,7 +25518,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p14",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
@@ -22748,7 +25720,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p141",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/booth.tsv",
@@ -22794,7 +25766,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p140",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/ro__kkayun/status/2114682274944020855",
@@ -22853,7 +25825,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p144",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/ChansFactory86/status/2112763201356169468",
@@ -22896,7 +25868,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p145",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/ChansFactory86/status/2117245278109733119",
@@ -22942,7 +25914,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p146",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/ChansFactory86/status/2117245278109733119",
@@ -22984,7 +25956,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p147",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/AsayakeRepublic/status/2117089322361082124",
@@ -23027,7 +25999,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p148",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/AsayakeRepublic/status/2117089322361082124",
@@ -23073,7 +26045,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p226",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
@@ -23118,7 +26090,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p227",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
@@ -23163,7 +26135,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p228",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/Flambeurs_Coin/status/2117179927493484550",
@@ -23248,7 +26220,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p217",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/RI_Works_nazo/status/2116862819706495065",
@@ -23291,7 +26263,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p218",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/RI_Works_nazo/status/2117225320034308104",
@@ -23334,7 +26306,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p219",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/RI_Works_nazo/status/2117236731049292107",
@@ -23454,7 +26426,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p198",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/A9A_porin/status/2111375391038554604",
@@ -23510,7 +26482,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p196",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -23548,7 +26520,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p197",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -23615,6 +26587,123 @@
     ]
   },
   {
+    "id": "no92-3",
+    "name": "KIQAGIQA",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "初心者〜中級者向けの新作",
+    "description": "初心者〜中級者向けの新作。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 ★6/10（10段階）"
+    },
+    "playMinutes": {
+      "min": 30,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/4ceDimension/status/2118260749185454148",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no92",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no92-4",
+    "name": "MUSCAT",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "初心者〜中級者向けの新作",
+    "description": "初心者〜中級者向けの新作。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★5/10（10段階）"
+    },
+    "playMinutes": {
+      "min": 20,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/4ceDimension/status/2118260749185454148",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no92",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "id": "no92-5",
+    "name": "いまいちなぞ",
+    "price": 300,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "初心者〜中級者向けの新作",
+    "description": "初心者〜中級者向けの新作。",
+    "difficulty": {
+      "level": 2,
+      "source": "official",
+      "basis": "団体表記 ★3/10（10段階）"
+    },
+    "playMinutes": {
+      "min": 10,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/4ceDimension/status/2118260749185454148",
+        "retrievedAt": "2026-11-05"
+      }
+    ],
+    "boothId": "no92",
+    "hashtags": [],
+    "unconfirmed": [
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "id": "no94-3",
     "boothId": "no94",
     "name": "トライさんかくパズルなぞ",
@@ -23642,7 +26731,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p143",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/naz_zole84671/status/2117053300516573388",
@@ -23687,7 +26776,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p142",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/naz_zole84671/status/2117053300516573388",
@@ -24087,7 +27176,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p215",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -24124,7 +27213,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p216",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -24163,7 +27252,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p100",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       },
       {
         "url": "https://x.com/naritaquiken/status/2116820284787589331",
@@ -24203,7 +27292,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p99",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -24240,7 +27329,7 @@
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p101",
-        "retrievedAt": "2026-11-04"
+        "retrievedAt": "2026-11-05"
       }
     ],
     "hashtags": [],
@@ -24316,7 +27405,11 @@
       "sun"
     ],
     "imageUrl": "https://himitsu-shotaijo.quizknock.com/wp-content/themes/quizknock_layton/images/favicon_ogp/ogp.jpg?v=2",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://himitsu-shotaijo.quizknock.com/",
@@ -24333,12 +27426,14 @@
       {
         "url": "https://x.com/quizknock_tdc/status/2112061180717986212",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/quizknock_tdc/status/2118229657476813045",
+        "retrievedAt": "2026-11-05"
       }
     ],
     "boothId": "no97",
     "hashtags": [],
-    "unconfirmed": [
-      "payment"
-    ]
+    "unconfirmed": []
   }
 ]

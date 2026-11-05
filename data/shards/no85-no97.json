@@ -1148,6 +1148,102 @@
               ]
             }
           ]
+        },
+        {
+          "id": "no92-3",
+          "name": "KIQAGIQA",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "初心者〜中級者向けの新作",
+          "description": "初心者〜中級者向けの新作。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★6/10（10段階）"
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/4ceDimension/status/2118260749185454148",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no92-4",
+          "name": "MUSCAT",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "初心者〜中級者向けの新作",
+          "description": "初心者〜中級者向けの新作。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★5/10（10段階）"
+          },
+          "playMinutes": {
+            "min": 20,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/4ceDimension/status/2118260749185454148",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no92-5",
+          "name": "いまいちなぞ",
+          "price": 300,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "初心者〜中級者向けの新作",
+          "description": "初心者〜中級者向けの新作。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★3/10（10段階）"
+          },
+          "playMinutes": {
+            "min": 10,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/4ceDimension/status/2118260749185454148",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
         }
       ],
       "candidates": [
@@ -1895,7 +1991,11 @@
             "sun"
           ],
           "imageUrl": "https://himitsu-shotaijo.quizknock.com/wp-content/themes/quizknock_layton/images/favicon_ogp/ogp.jpg?v=2",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://himitsu-shotaijo.quizknock.com/",
@@ -1912,6 +2012,10 @@
             {
               "url": "https://x.com/quizknock_tdc/status/2112061180717986212",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/quizknock_tdc/status/2118229657476813045",
+              "retrievedAt": "2026-11-05"
             }
           ]
         }

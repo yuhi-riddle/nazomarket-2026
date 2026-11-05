@@ -1050,13 +1050,12 @@
       "no04-6",
       "no04-7",
       "no04-8",
-      "no04-9",
       "no04-11"
     ],
     "kind": "reservation",
     "title": "謎解き・ボードゲームの取り置き予約",
-    "detail": "数量限定・先着で取り置き予約を受付中。受け取りは両日17時まで。『ROUNDEAD』は11/3時点で残り10点。『簡単なパズル』と『Q.●▲★■』拡張の取り置きは締切済み",
-    "endsAt": null,
+    "detail": "数量限定・先着で取り置き予約を受付中。11/5 23:59まで。受け取りは両日17時まで。『簡単なパズル』『ROUNDEAD』『Q.●▲★■』拡張の取り置きは終了",
+    "endsAt": "2026-11-05T23:59",
     "days": [],
     "limit": null,
     "sources": [
@@ -1071,6 +1070,14 @@
       {
         "url": "https://x.com/tokiqil/status/2117588364262342843",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2117959327860527453",
+        "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-05"
       }
     ]
   },
@@ -1089,30 +1096,6 @@
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2116107847519940928",
-        "retrievedAt": "2026-11-03"
-      }
-    ]
-  },
-  {
-    "id": "no31-c3",
-    "boothId": "no31",
-    "productIds": [
-      "p23",
-      "p25"
-    ],
-    "kind": "reservation",
-    "title": "『水彩を貫く』『孤独に唄う』の取り置き予約",
-    "detail": "予約フォームの受付は11/7 18:00まで。予定数に達すると締切。取り置きは11/8 14:00まで。『五月のカワセミ』は予約数に達して受付終了",
-    "endsAt": "2026-11-07T18:00",
-    "days": [],
-    "limit": null,
-    "sources": [
-      {
-        "url": "https://x.com/MayAlcedoatthis/status/2114686922316816436",
-        "retrievedAt": "2026-11-03"
-      },
-      {
-        "url": "https://x.com/MayAlcedoatthis/status/2117232044879282588",
         "retrievedAt": "2026-11-03"
       }
     ]
@@ -1326,6 +1309,311 @@
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/data/product.tsv",
         "retrievedAt": "2026-11-04"
+      }
+    ]
+  },
+  {
+    "id": "no04-c3",
+    "boothId": "no04",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "トキキルを着て行くと特製ステッカー",
+    "detail": "当日トキキルを着てA5ブースの外側レジへ行くと、限定ノベルティの特製ステッカーをもらえる。なくなり次第終了",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "なくなり次第終了",
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2117956326899044530",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no04-c4",
+    "boothId": "no04",
+    "productIds": [
+      "no04-2"
+    ],
+    "kind": "giveaway",
+    "title": "『簡単なパズル』を抽選で1名にプレゼント",
+    "detail": "告知の投稿をリポストで応募。当選者のみ11/6中にDMで連絡",
+    "endsAt": "2026-11-06T12:00",
+    "days": [],
+    "limit": "1名",
+    "sources": [
+      {
+        "url": "https://x.com/tokiqil/status/2117963415776055771",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no11-c2",
+    "boothId": "no11",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "1個以上の購入でロゴ入りボールペン",
+    "detail": "ブース内の商品を1個以上買うと、各日先着30名にエフェックスロゴ入りボールペンをプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "各日先着30名",
+    "sources": [
+      {
+        "url": "https://x.com/efex_info/status/2117904701664457013",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no14-c2",
+    "boothId": "no14",
+    "productIds": [
+      "no14-2"
+    ],
+    "kind": "giveaway",
+    "title": "『三つの密室の作り方』を抽選で3名にプレゼント",
+    "detail": "フォロー＆リポストで応募",
+    "endsAt": "2026-11-05T23:59",
+    "days": [],
+    "limit": "3名",
+    "sources": [
+      {
+        "url": "https://x.com/far_near_/status/2117919793894621381",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no16-c3",
+    "boothId": "no16",
+    "productIds": [
+      "no16-1"
+    ],
+    "kind": "bonus",
+    "title": "TETTUIミニゲームのクリア画面でステッカー",
+    "detail": "WebのTETTUIミニゲームのクリア画面を当日ブースで見せるとステッカーをもらえる。数量限定",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "数量限定",
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2117934905875157309",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no29-c1",
+    "boothId": "no29",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "購入でおまけ謎、2点以上で卓上カレンダー",
+    "detail": "購入者全員に「おまけ謎2026」。いずれか2点以上の購入で「謎解き卓上カレンダー2027」を無料でプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazocafe/status/2118247388163056122",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no41-c1",
+    "boothId": "no41",
+    "productIds": [],
+    "kind": "other",
+    "title": "謎付きチラシを無料配布",
+    "detail": "ブースCb5で謎付きチラシを無料で配布",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/K_dush2/status/2117934904164188629",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no46-c1",
+    "boothId": "no46",
+    "productIds": [
+      "p222"
+    ],
+    "kind": "giveaway",
+    "title": "『謎だらけの音楽室からの脱出』を抽選で3名に",
+    "detail": "フォロー＆リポストで応募。受け取りは会場のみ。締切は告知の投稿で確認",
+    "endsAt": null,
+    "days": [],
+    "limit": "3名",
+    "sources": [
+      {
+        "url": "https://x.com/Coda_escape/status/2118274672043450680",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no54-c3",
+    "boothId": "no54",
+    "productIds": [
+      "no54-3",
+      "no54-4"
+    ],
+    "kind": "discount",
+    "title": "新作2作のセットで500円引き",
+    "detail": "『ひっくり返る反重力からの脱出』と『海底料理店 龍の味咲』をセットで買うと500円引き",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no54-c4",
+    "boothId": "no54",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "購入者にロゴホログラムステッカー",
+    "detail": "ブースで購入すると1人1枚ロゴホログラムステッカーをプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no59-c1",
+    "boothId": "no59",
+    "productIds": [
+      "no59-5"
+    ],
+    "kind": "other",
+    "title": "初版「−キカ−」購入済みなら第2版を無料",
+    "detail": "初版を購入済みの人は、専用LINEの画面を見せると第2版「＝キカ＝」を無料でもらえる",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2117904706685022574",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no75-c2",
+    "boothId": "no75",
+    "productIds": [
+      "p40",
+      "no75-2",
+      "no75-3"
+    ],
+    "kind": "bonus",
+    "title": "新作3点セットでスピードくじ",
+    "detail": "新作3点をセットで買うと、ノベルティの何かが当たるスピードくじに参加できる",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazo_mikanbox/status/2117986534783885387",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no77-c3",
+    "boothId": "no77",
+    "productIds": [],
+    "kind": "giveaway",
+    "title": "新作4種から1点を抽選でプレゼント",
+    "detail": "お品書きの投稿をリポストで応募。締切は告知の投稿で確認",
+    "endsAt": null,
+    "days": [],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no87-c1",
+    "boothId": "no87",
+    "productIds": [],
+    "kind": "other",
+    "title": "練習問題付きチラシを配布",
+    "detail": "オリジナルの練習問題付きチラシを数量限定で配布",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "数量限定",
+    "sources": [
+      {
+        "url": "https://x.com/ro__kkayun/status/2117969514562531400",
+        "retrievedAt": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "id": "no89-c1",
+    "boothId": "no89",
+    "productIds": [
+      "no89-1",
+      "no89-2"
+    ],
+    "kind": "giveaway",
+    "title": "新作と動画形式ドリルを抽選で3名にプレゼント",
+    "detail": "フォロー＆リポストで応募。会場のCa3で受け取れる人が対象",
+    "endsAt": "2026-11-06T19:00",
+    "days": [],
+    "limit": "3名",
+    "sources": [
+      {
+        "url": "https://x.com/AsayakeRepublic/status/2117991707614880196",
+        "retrievedAt": "2026-11-05"
       }
     ]
   }

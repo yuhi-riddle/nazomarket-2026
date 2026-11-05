@@ -1888,7 +1888,107 @@
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no03-2",
+          "name": "RIDDLE BOX!!!",
+          "price": 3000,
+          "priceNote": "ナゾマ特別価格",
+          "category": "kit",
+          "oneLiner": "リドラ人気No.1の謎解きキット",
+          "description": "リドラ人気No.1の謎解きキット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 120
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no03-3",
+          "name": "RIDDLE BOX2!!!",
+          "price": 3000,
+          "priceNote": "ナゾマ特別価格",
+          "category": "kit",
+          "oneLiner": "人気シリーズの第2弾",
+          "description": "人気シリーズの第2弾。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 120
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no03-4",
+          "name": "ALPHABETZ",
+          "price": 3500,
+          "priceNote": "ナゾマ特別価格",
+          "category": "kit",
+          "oneLiner": "26文字が織りなす謎解き",
+          "description": "26文字が織りなす謎解き。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": 180
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "謎のマティーニ（LIQUOR GAMERS CLUB×RIDDLER）",
@@ -2170,6 +2270,10 @@
             {
               "url": "https://x.com/tokiqil/status/2116877610496176220",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2117959327860527453",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "id": "no04-5",
@@ -2177,7 +2281,7 @@
             {
               "label": "取り置き予約（受け取りは両日17時まで）",
               "url": "https://x.gd/HkhHj",
-              "endsAt": null
+              "endsAt": "2026-11-05T23:59"
             }
           ]
         },
@@ -2218,6 +2322,10 @@
             {
               "url": "https://x.com/tokiqil/status/2116877610496176220",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2117959327860527453",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "id": "no04-6",
@@ -2225,7 +2333,7 @@
             {
               "label": "取り置き予約（受け取りは両日17時まで）",
               "url": "https://x.gd/HkhHj",
-              "endsAt": null
+              "endsAt": "2026-11-05T23:59"
             }
           ]
         },
@@ -2270,6 +2378,10 @@
             {
               "url": "https://x.com/tokiqil/status/2116877610496176220",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2117959327860527453",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "id": "no04-7",
@@ -2277,7 +2389,7 @@
             {
               "label": "取り置き予約（受け取りは両日17時まで）",
               "url": "https://x.gd/HkhHj",
-              "endsAt": null
+              "endsAt": "2026-11-05T23:59"
             }
           ]
         },
@@ -2318,6 +2430,10 @@
             {
               "url": "https://x.com/tokiqil/status/2116877610496176220",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2117959327860527453",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "id": "no04-8",
@@ -2325,7 +2441,7 @@
             {
               "label": "取り置き予約（受け取りは両日17時まで）",
               "url": "https://x.gd/HkhHj",
-              "endsAt": null
+              "endsAt": "2026-11-05T23:59"
             }
           ]
         },
@@ -2347,7 +2463,7 @@
           },
           "players": "2〜6人",
           "isNew": true,
-          "limited": "限定60部",
+          "limited": "限定60部（取り置きは終了。当日在庫のみ）",
           "days": [
             "sat",
             "sun"
@@ -2370,16 +2486,13 @@
             {
               "url": "https://x.com/tokiqil/status/2117444491842068906",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-05"
             }
           ],
-          "id": "no04-9",
-          "reservations": [
-            {
-              "label": "取り置き予約（11/3時点で残り10点・受け取りは両日17時まで）",
-              "url": "https://x.gd/HkhHj",
-              "endsAt": null
-            }
-          ]
+          "id": "no04-9"
         },
         {
           "name": "新作コラボ長袖T（あまつパイセン／物理／きまぐれパズル／まっきー）",
@@ -2445,13 +2558,115 @@
             {
               "url": "https://x.com/tokiqil/status/2116877610496176220",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2117959327860527453",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "reservations": [
             {
               "label": "取り置き予約（受け取りは両日17時まで）",
               "url": "https://x.gd/HkhHj",
-              "endsAt": null
+              "endsAt": "2026-11-05T23:59"
+            }
+          ]
+        },
+        {
+          "id": "no04-12",
+          "name": "オノマトペセット（K.オノマトペ＋R.オノマトペ）",
+          "price": 4500,
+          "priceNote": "通常4,800円",
+          "category": "kit",
+          "oneLiner": "ボードゲームと謎解きのセット。特製ステッカー付き",
+          "description": "ボードゲームと謎解きのセット。特製ステッカー付き。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2117959327860527453",
+              "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no04-13",
+          "name": "●▲★■セット（Q.●▲★■＋R.●▲★■）",
+          "price": 5000,
+          "priceNote": "通常5,500円",
+          "category": "kit",
+          "oneLiner": "ボードゲームと謎解きのセット。特製ステッカー付き",
+          "description": "ボードゲームと謎解きのセット。特製ステッカー付き。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2117959327860527453",
+              "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no04-14",
+          "name": "ダ・ヴィンチ恐山 制作のトキキル 2種",
+          "price": null,
+          "priceNote": "告知に価格の記載なし",
+          "category": "goods",
+          "oneLiner": "市場に出回っていないダ・ヴィンチ恐山制作のトキキル",
+          "description": "市場に出回っていないダ・ヴィンチ恐山制作のトキキル。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": "限定15着",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWV9iJZaQAAIyUM?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/tokiqil/status/2118237998299201845",
+              "retrievedAt": "2026-11-05"
             }
           ]
         }
@@ -3329,7 +3544,452 @@
       ],
       "notes": "公式HP(the-nazo-store.com)は Chrome で確認済み。検索でも今回の出品情報は出ず。Xで取れそう / X(@THE_NAZO_STORE)確認済み。2026-08-24に「人気の謎解き商品をたくさん持っていきます」との出展告知のみで商品名・価格なし。9月以降の投稿にも今回の商品告知なし。HPはChromeで開けたがニュースに今回の記載なし(新着は不思議な店シリーズ・ナゾトキ物語便など通販商品) / 再収集(10/30 Web): 新しい告知なし。the-nazo-store.comは今回403で見られず。検索でも今回の品書きは出なかった / 再収集(10/30 X): 10/24 以降の @THE_NAZO_STORE の投稿に告知なし(10/29 の大阪メトロ謎の告知など別件のみ)。「ナゾトキマーケット」を含む投稿も9月以降見つからず。商品は0件のまま",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "id": "no09-1",
+          "name": "毒洋菓子店の物語",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "手のひらサイズのダンボール箱シリーズ「ナゾトキ物語便」の第3弾",
+          "description": "手のひらサイズのダンボール箱シリーズ「ナゾトキ物語便」の第3弾。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5"
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWWkIdVaAAANTUm?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-2",
+          "name": "星間調査社の物語",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ナゾトキ物語便の第2弾",
+          "description": "ナゾトキ物語便の第2弾。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5"
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-3",
+          "name": "探偵猫の物語",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ナゾトキ物語便の第1弾",
+          "description": "ナゾトキ物語便の第1弾。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5"
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-4",
+          "name": "マッチ謎 10種セット",
+          "price": 7700,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "マッチ箱型の謎解き「マッチ謎」全10種のセット",
+          "description": "マッチ箱型の謎解き「マッチ謎」全10種のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-5",
+          "name": "マッチ謎（単品・全10種）",
+          "price": 700,
+          "priceNote": "種類により700〜900円",
+          "category": "kit",
+          "oneLiner": "マッチ箱型の謎解き。HOTEL うたたねなど全10種",
+          "description": "マッチ箱型の謎解き。HOTEL うたたねなど全10種。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-6",
+          "name": "オーダーの少ないファミリーレストラン",
+          "price": 3200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "「不思議な店」シリーズの第1弾",
+          "description": "「不思議な店」シリーズの第1弾。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5"
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-7",
+          "name": "不思議な家シリーズ（全8作）",
+          "price": 2500,
+          "priceNote": "作品により2,500〜3,700円",
+          "category": "kit",
+          "oneLiner": "奇妙な発明家の家など、シリーズ全8作",
+          "description": "奇妙な発明家の家など、シリーズ全8作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-8",
+          "name": "夜空に消えた3つの物語",
+          "price": 2900,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "短編小説が入った「謎解きアンソロジー」の第1弾",
+          "description": "短編小説が入った「謎解きアンソロジー」の第1弾。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5"
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-9",
+          "name": "黒猫3奇譚",
+          "price": 3500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解きアンソロジーの第2弾",
+          "description": "謎解きアンソロジーの第2弾。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5"
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-10",
+          "name": "ナゾサンド（全6種）",
+          "price": 800,
+          "priceNote": "種類により800〜1,200円",
+          "category": "kit",
+          "oneLiner": "小腹が空いたときに解くサンドイッチ型の謎",
+          "description": "小腹が空いたときに解くサンドイッチ型の謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-11",
+          "name": "たばこ謎 ワンカートンセット",
+          "price": 6900,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "たばこの箱型の謎「たばこ謎」のセット",
+          "description": "たばこの箱型の謎「たばこ謎」のセット。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-12",
+          "name": "たばこ謎（単品）",
+          "price": 600,
+          "priceNote": "種類により600〜800円",
+          "category": "kit",
+          "oneLiner": "所要15〜60分の一服サイズの謎",
+          "description": "所要15〜60分の一服サイズの謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-13",
+          "name": "スカイポート連続殺人事件",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "昔懐かしのゲームを再現した「レトロゲームコンピュータ」",
+          "description": "昔懐かしのゲームを再現した「レトロゲームコンピュータ」。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5"
+          },
+          "playMinutes": {
+            "min": 210,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no09-14",
+          "name": "殺意はカクテルに映る",
+          "price": 8800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ナゾストア発のマーダーミステリー「SCREAM AND」第3弾",
+          "description": "ナゾストア発のマーダーミステリー「SCREAM AND」第3弾。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": null
+          },
+          "players": "4人",
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "extraLinks": {
         "x": [
@@ -5703,8 +6363,8 @@
         {
           "id": "no14-1",
           "name": "DOORS 1〜4",
-          "price": null,
-          "priceNote": null,
+          "price": 1500,
+          "priceNote": "ナゾマ限定価格。DOORS 1,500円、DOORS2 1,800円、DOORS3・4 各2,500円",
           "category": "kit",
           "oneLiner": "これまでの無料Web謎DOORSをデザイン一新して販売",
           "description": "『DOORS 1〜4』 デザインを一新して、ナゾトキマーケット2026（11/7・8）で販売が決定しました！",
@@ -5727,6 +6387,10 @@
             {
               "url": "https://x.com/far_near_/status/2113223853254308136",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/far_near_/status/2117942435791917435",
+              "retrievedAt": "2026-11-05"
             }
           ]
         },
@@ -5772,6 +6436,36 @@
                   "retrievedAt": "2026-11-02"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "no14-3",
+          "name": "DOORS Series 全4作セット",
+          "price": 8000,
+          "priceNote": "ナゾマ限定価格",
+          "category": "online",
+          "oneLiner": "デザインを一新したWeb謎『DOORS』全4作のセット",
+          "description": "デザインを一新したWeb謎『DOORS』全4作のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/far_near_/status/2117942435791917435",
+              "retrievedAt": "2026-11-05"
             }
           ]
         }

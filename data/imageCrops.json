@@ -215,6 +215,15 @@
     "width": 680,
     "height": 383
   },
+  "no06-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no06/product/p91_photo1.png",
+    "left": 0,
+    "right": 0,
+    "top": 0.0728,
+    "bottom": 0.0728,
+    "width": 800,
+    "height": 467
+  },
   "no06-2": {
     "imageUrl": "https://pbs.twimg.com/media/HWFqLvLakAAvThu?format=jpg&name=small",
     "left": 0.1029,
@@ -259,6 +268,15 @@
     "bottom": 0,
     "width": 590,
     "height": 306
+  },
+  "no08-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no08/product/p97_photo1.png",
+    "left": 0.16,
+    "right": 0.16,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no08-4": {
     "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/4BqNzl52qr/s-590x590_webp_23449c36-d28b-488d-b938-1697036dc514.webp",
@@ -449,6 +467,15 @@
     "width": 1200,
     "height": 1200
   },
+  "no16-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no16/product/p93_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no16-10": {
     "imageUrl": "https://pbs.twimg.com/media/HPAXQWoaUAAYptE?format=jpg&name=small",
     "left": 0,
@@ -466,6 +493,15 @@
     "bottom": 0,
     "width": 680,
     "height": 680
+  },
+  "no16-4": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no16/product/p94_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no16-5": {
     "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small",
@@ -512,6 +548,15 @@
     "width": 231,
     "height": 350
   },
+  "no19-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no19/product/p60_photo1.png",
+    "left": 0.3275,
+    "right": 0.3287,
+    "top": 0.0535,
+    "bottom": 0.0535,
+    "width": 800,
+    "height": 467
+  },
   "no20-8": {
     "imageUrl": "https://ratsnest.works/_astro/folded_tate.BWwZmJOM.webp",
     "left": 0.0425,
@@ -529,6 +574,24 @@
     "bottom": 0.1279,
     "width": 680,
     "height": 680
+  },
+  "no22-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no22/product/p76_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no22-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no22/product/p74_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no22-4": {
     "imageUrl": "https://img.gamemarket.jp/thumb_20260508_134253_FUJI@4x.png",
@@ -602,6 +665,33 @@
     "width": 1459,
     "height": 1459
   },
+  "no26-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no26/product/p152_photo1.png",
+    "left": 0.085,
+    "right": 0.085,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no26-4": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no26/product/p151_photo1.png",
+    "left": 0.0862,
+    "right": 0.0862,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no27-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no27/product/p124_photo1.png",
+    "left": 0.2925,
+    "right": 0.2925,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no27-12": {
     "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/6301054/46becdc1-19b0-4918-bad9-ef7b8416cbfa_base_resized.jpg",
     "left": 0.086,
@@ -611,6 +701,15 @@
     "width": 465,
     "height": 620
   },
+  "no27-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no27/product/p125_photo1.png",
+    "left": 0.1113,
+    "right": 0.1113,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no27-7": {
     "imageUrl": "https://booth.pximg.net/c/620x620/43a58276-8d22-46af-acf8-7e8504d083a9/i/6892442/7d5e60cb-16da-4e65-bd15-ac58827a336f_base_resized.jpg",
     "left": 0.2015,
@@ -619,6 +718,15 @@
     "bottom": 0,
     "width": 551,
     "height": 620
+  },
+  "no27-8": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no27/product/p126_photo1.png",
+    "left": 0.1113,
+    "right": 0.1113,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no28-11": {
     "imageUrl": "https://item-shopping.c.yimg.jp/i/n/noescape_z3276",
@@ -683,6 +791,96 @@
     "width": 680,
     "height": 383
   },
+  "no30-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no30/product/p171_photo1.png",
+    "left": 0.2812,
+    "right": 0.2812,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no33-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no33/product/p224_photo1.png",
+    "left": 0.355,
+    "right": 0.355,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no34-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no34/product/p138_photo1.png",
+    "left": 0.045,
+    "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no37-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no37/product/p114_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no38-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no38/product/p172_photo1.png",
+    "left": 0.0875,
+    "right": 0.0875,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no38-5": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no38/product/p173_photo1.png",
+    "left": 0.0887,
+    "right": 0.0887,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no38-6": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no38/product/p174_photo1.png",
+    "left": 0.08,
+    "right": 0.0788,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no39-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no39/product/p189_photo1.png",
+    "left": 0.0912,
+    "right": 0.0912,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no39-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no39/product/p190_photo1.png",
+    "left": 0.1525,
+    "right": 0.1138,
+    "top": 0.0321,
+    "bottom": 0.0493,
+    "width": 800,
+    "height": 467
+  },
+  "no39-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no39/product/p191_photo1.png",
+    "left": 0.0875,
+    "right": 0.0875,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no40-3": {
     "imageUrl": "https://pbs.twimg.com/media/HB1rgzRa4AAP2RU?format=jpg&name=small",
     "left": 0.0345,
@@ -710,6 +908,15 @@
     "width": 680,
     "height": 383
   },
+  "no41-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no41/product/p102_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no41-4": {
     "imageUrl": "https://pbs.twimg.com/media/FhlDbFFaUAA_ok4?format=jpg&name=small",
     "left": 0,
@@ -718,6 +925,15 @@
     "bottom": 0,
     "width": 680,
     "height": 510
+  },
+  "no44-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no44/product/p128_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no47-1": {
     "imageUrl": "https://pbs.twimg.com/media/HV8rzmbaAAAXcmi?format=jpg&name=small",
@@ -809,6 +1025,33 @@
     "width": 680,
     "height": 680
   },
+  "no59-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no59/product/p71_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no59-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no59/product/p72_photo1.png",
+    "left": 0.0912,
+    "right": 0.0912,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no59-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no59/product/p73_photo1.png",
+    "left": 0.0775,
+    "right": 0.0775,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no60-1": {
     "imageUrl": "https://pbs.twimg.com/media/HV787Roa8AAFbzg?format=jpg&name=small",
     "left": 0.1191,
@@ -826,6 +1069,15 @@
     "bottom": 0,
     "width": 680,
     "height": 480
+  },
+  "no62-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no62/product/p167_photo1.png",
+    "left": 0.0875,
+    "right": 0.0875,
+    "top": 0,
+    "bottom": 0.0471,
+    "width": 800,
+    "height": 467
   },
   "no62-2": {
     "imageUrl": "https://pbs.twimg.com/media/HWMg0CPa0AAUzU6?format=jpg&name=small",
@@ -862,6 +1114,69 @@
     "bottom": 0,
     "width": 680,
     "height": 383
+  },
+  "no64-4": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no64/product/p160_photo1.png",
+    "left": 0.0475,
+    "right": 0.0425,
+    "top": 0.0921,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no65-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no65/product/p70_photo1.png",
+    "left": 0.2925,
+    "right": 0.2925,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no65-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no65/product/p135_photo1.png",
+    "left": 0.09,
+    "right": 0.09,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no65-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no65/product/p136_photo1.png",
+    "left": 0.09,
+    "right": 0.09,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no66-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no66/product/p63_photo1.png",
+    "left": 0,
+    "right": 0,
+    "top": 0.0578,
+    "bottom": 0.0578,
+    "width": 800,
+    "height": 467
+  },
+  "no66-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no66/product/p62_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no66-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no66/product/p64_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no67-1": {
     "imageUrl": "https://booth.pximg.net/c/620x620/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/3735029/c8825f87-d12f-4faf-8ce7-e7e99f9f51f0_base_resized.jpg",
@@ -1016,6 +1331,33 @@
     "width": 481,
     "height": 680
   },
+  "no68-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no68/product/p65_photo1.png",
+    "left": 0.3063,
+    "right": 0.3038,
+    "top": 0.03,
+    "bottom": 0.03,
+    "width": 800,
+    "height": 467
+  },
+  "no68-4": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no68/product/p67_photo1.png",
+    "left": 0.305,
+    "right": 0.3038,
+    "top": 0.03,
+    "bottom": 0.0278,
+    "width": 800,
+    "height": 467
+  },
+  "no68-5": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no68/product/p66_photo1.png",
+    "left": 0.3113,
+    "right": 0.2963,
+    "top": 0.0343,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no68-6": {
     "imageUrl": "https://pbs.twimg.com/media/HU_2UyEbAAEDWsQ?format=jpg&name=small",
     "left": 0.0437,
@@ -1024,6 +1366,24 @@
     "bottom": 0.0235,
     "width": 481,
     "height": 680
+  },
+  "no69-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no69/product/p105_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no69-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no69/product/p107_photo1.png",
+    "left": 0.0437,
+    "right": 0.0437,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no69-4": {
     "imageUrl": "https://pbs.twimg.com/media/HVYt3XMagAEzlfM?format=jpg&name=small",
@@ -1061,6 +1421,15 @@
     "width": 680,
     "height": 510
   },
+  "no69-8": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no69/product/p106_photo1.png",
+    "left": 0.2925,
+    "right": 0.2925,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no70-1": {
     "imageUrl": "https://pbs.twimg.com/media/HVemUoLaYAA1VGI?format=jpg&name=small",
     "left": 0.025,
@@ -1087,6 +1456,24 @@
     "bottom": 0,
     "width": 481,
     "height": 680
+  },
+  "no73-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no73/product/p225_photo1.png",
+    "left": 0,
+    "right": 0,
+    "top": 0.1263,
+    "bottom": 0.1263,
+    "width": 800,
+    "height": 467
+  },
+  "no74-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HWNGaMsbkAA5VaJ?format=jpg&name=orig",
+    "left": 0.1249,
+    "right": 0.0883,
+    "top": 0.05,
+    "bottom": 0.0643,
+    "width": 1201,
+    "height": 1601
   },
   "no76-1": {
     "imageUrl": "https://pbs.twimg.com/media/HV4Qv-ZbAAAUOqO?format=jpg&name=small",
@@ -1187,6 +1574,114 @@
     "width": 680,
     "height": 680
   },
+  "no80-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no80/product/p214_photo1.png",
+    "left": 0.0963,
+    "right": 0.0963,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no82-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no82/product/p157_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no82-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no82/product/p159_photo1.png",
+    "left": 0.0912,
+    "right": 0.0912,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no83-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no83/product/p77_photo1.png",
+    "left": 0.3312,
+    "right": 0.3312,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no87-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no87/product/p141_photo1.png",
+    "left": 0.1113,
+    "right": 0.1113,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no87-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no87/product/p140_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no90-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no90/product/p226_photo1.png",
+    "left": 0.295,
+    "right": 0.295,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no90-2": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no90/product/p227_photo1.png",
+    "left": 0.0887,
+    "right": 0.0887,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no90-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no90/product/p228_photo1.png",
+    "left": 0.11,
+    "right": 0.11,
+    "top": 0.03,
+    "bottom": 0.0407,
+    "width": 800,
+    "height": 467
+  },
+  "no91-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no91/product/p217_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no91-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no91/product/p218_photo1.png",
+    "left": 0.2925,
+    "right": 0.2925,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no91-4": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no91/product/p219_photo1.png",
+    "left": 0.2925,
+    "right": 0.2925,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "no92-1": {
     "imageUrl": "https://pbs.twimg.com/media/HU0ctWybUAA2Lmc?format=jpg&name=small",
     "left": 0.0309,
@@ -1204,6 +1699,33 @@
     "bottom": 0,
     "width": 680,
     "height": 517
+  },
+  "no94-3": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no94/product/p143_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "no94-4": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no94/product/p142_photo1.png",
+    "left": 0.2075,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0.0214,
+    "width": 800,
+    "height": 467
+  },
+  "no96-1": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no96/product/p100_photo1.png",
+    "left": 0.15,
+    "right": 0.15,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
   },
   "no97-1": {
     "imageUrl": "https://himitsu-shotaijo.quizknock.com/wp-content/themes/quizknock_layton/images/favicon_ogp/ogp.jpg?v=2",
@@ -1295,12 +1817,39 @@
     "width": 800,
     "height": 467
   },
+  "p101": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no96/product/p101_photo1.png",
+    "left": 0.2575,
+    "right": 0.2575,
+    "top": 0.0428,
+    "bottom": 0.1285,
+    "width": 800,
+    "height": 467
+  },
+  "p104": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no07/product/p104_photo1.png",
+    "left": 0,
+    "right": 0,
+    "top": 0.0514,
+    "bottom": 0.0493,
+    "width": 800,
+    "height": 467
+  },
   "p11": {
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no43/product/p11_photo1.png",
     "left": 0.2938,
     "right": 0.2938,
     "top": 0,
     "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p134": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no55/product/p134_photo1.png",
+    "left": 0,
+    "right": 0,
+    "top": 0.1263,
+    "bottom": 0.1263,
     "width": 800,
     "height": 467
   },
@@ -1313,12 +1862,66 @@
     "width": 800,
     "height": 467
   },
+  "p176": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no61/product/p176_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p177": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no61/product/p177_photo1.png",
+    "left": 0.2562,
+    "right": 0.2562,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
   "p18": {
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no01/product/p18_photo1.png",
     "left": 0,
     "right": 0,
     "top": 0,
     "bottom": 0.0278,
+    "width": 800,
+    "height": 467
+  },
+  "p184": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no48/product/p184_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p185": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no48/product/p185_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p186": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no48/product/p186_photo1.png",
+    "left": 0.3262,
+    "right": 0.3237,
+    "top": 0,
+    "bottom": 0.03,
+    "width": 800,
+    "height": 467
+  },
+  "p187": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no84/product/p187_photo1.png",
+    "left": 0,
+    "right": 0.0475,
+    "top": 0,
+    "bottom": 0,
     "width": 800,
     "height": 467
   },
@@ -1331,12 +1934,102 @@
     "width": 800,
     "height": 467
   },
+  "p192": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no52/product/p192_photo1.png",
+    "left": 0.3013,
+    "right": 0.3013,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p193": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no52/product/p193_photo1.png",
+    "left": 0.2725,
+    "right": 0.2437,
+    "top": 0.1006,
+    "bottom": 0.0707,
+    "width": 800,
+    "height": 467
+  },
   "p20": {
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no29/product/p20_photo1.png",
     "left": 0.31,
     "right": 0.3187,
     "top": 0.0385,
     "bottom": 0.0257,
+    "width": 800,
+    "height": 467
+  },
+  "p201": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no85/product/p201_photo1.png",
+    "left": 0.0625,
+    "right": 0.0625,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p202": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no85/product/p202_photo1.png",
+    "left": 0.2087,
+    "right": 0.2087,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p203": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no63/product/p203_photo1.png",
+    "left": 0.2975,
+    "right": 0.2963,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p205": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no63/product/p205_photo1.png",
+    "left": 0.0963,
+    "right": 0.0963,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p206": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no58/product/p206_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p207": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no58/product/p207_photo1.png",
+    "left": 0.0887,
+    "right": 0.0887,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p208": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no58/product/p208_photo1.png",
+    "left": 0.0887,
+    "right": 0.0887,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p209": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no81/product/p209_photo1.png",
+    "left": 0.0875,
+    "right": 0.0875,
+    "top": 0,
+    "bottom": 0,
     "width": 800,
     "height": 467
   },
@@ -1355,6 +2048,24 @@
     "right": 0.2938,
     "top": 0,
     "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p222": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no46/product/p222_photo1.png",
+    "left": 0.1475,
+    "right": 0.1487,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p229": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no33/product/p229_photo1.png",
+    "left": 0.325,
+    "right": 0.3225,
+    "top": 0.1949,
+    "bottom": 0.1927,
     "width": 800,
     "height": 467
   },
@@ -1443,6 +2154,69 @@
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no82/product/p47_photo1.png",
     "left": 0.0437,
     "right": 0,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p61": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no19/product/p61_photo1.png",
+    "left": 0.3088,
+    "right": 0.31,
+    "top": 0.0535,
+    "bottom": 0.0535,
+    "width": 800,
+    "height": 467
+  },
+  "p78": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no83/product/p78_photo1.png",
+    "left": 0.2938,
+    "right": 0.2938,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p79": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no83/product/p79_photo1.png",
+    "left": 0.0712,
+    "right": 0.0712,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p85": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no21/product/p85_photo1.png",
+    "left": 0.3,
+    "right": 0.3162,
+    "top": 0.03,
+    "bottom": 0.0471,
+    "width": 800,
+    "height": 467
+  },
+  "p86": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no21/product/p86_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p87": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no21/product/p87_photo1.png",
+    "left": 0.2075,
+    "right": 0.2075,
+    "top": 0,
+    "bottom": 0,
+    "width": 800,
+    "height": 467
+  },
+  "p99": {
+    "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no96/product/p99_photo1.png",
+    "left": 0.2087,
+    "right": 0.2075,
     "top": 0,
     "bottom": 0,
     "width": 800,
