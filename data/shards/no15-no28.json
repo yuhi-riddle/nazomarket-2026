@@ -1591,7 +1591,278 @@
           "price": 2970
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no19-3",
+          "name": "EXIT 脱出：ザ・ゲーム",
+          "price": 2800,
+          "priceNote": "各2,800円。お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "謎解きゲーム「EXIT」シリーズ",
+          "description": "謎解きゲーム「EXIT」シリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-4",
+          "name": "卓上探偵団（言葉の魔術師、死神または天使）",
+          "price": 2700,
+          "priceNote": "各2,700円。お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "協力ミステリーゲーム「卓上探偵団」シリーズの既刊",
+          "description": "協力ミステリーゲーム「卓上探偵団」シリーズの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-5",
+          "name": "DEKA 集え、探偵諸君！",
+          "price": 3200,
+          "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "協力ミステリーゲーム短編集",
+          "description": "協力ミステリーゲーム短編集。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-6",
+          "name": "Murder Mystery Mini（引っ越しバイト、消えたパンツと空飛ぶサカナ、紫乃淵リライト）",
+          "price": 2700,
+          "priceNote": "各2,700円。お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "マーダーミステリー「Murder Mystery Mini」の既刊",
+          "description": "マーダーミステリー「Murder Mystery Mini」の既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-7",
+          "name": "Mystery Party in the Box（何度だって青い月に火を灯した、崇高なる労働をいただきありがとうございます）",
+          "price": 4000,
+          "priceNote": "各4,000円。お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "マーダーミステリー「Mystery Party in the Box」",
+          "description": "マーダーミステリー「Mystery Party in the Box」。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-8",
+          "name": "異世界パスポート審査官",
+          "price": 3600,
+          "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "グループSNEのゲーム",
+          "description": "グループSNEのゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-9",
+          "name": "そういうお前はどうなんだ? 狂気病棟編",
+          "price": 2200,
+          "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "グループSNEのゲーム",
+          "description": "グループSNEのゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-10",
+          "name": "ブラックストーリーズ",
+          "price": 1800,
+          "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "グループSNEのゲーム",
+          "description": "グループSNEのゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no19-11",
+          "name": "謎とき探偵デューク＆エルウィン",
+          "price": 3200,
+          "priceNote": "お品書きの表記（税込か税別かの記載なし）",
+          "category": "kit",
+          "oneLiner": "グループSNEのゲーム",
+          "description": "グループSNEのゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/GroupSNE/status/2118267086803751029",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "hashtags": [
         {
@@ -2862,7 +3133,98 @@
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no24-1",
+          "name": "繁華街殺人事件",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "TokiTokiの新作",
+          "description": "TokiTokiの新作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/escape_cafe/status/2118184745238761629",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no24-2",
+          "name": "結愛のらぶれたー",
+          "price": 1650,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "メンヘラに愛される衝撃のラストの謎",
+          "description": "メンヘラに愛される衝撃のラストの謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/escape_cafe/status/2118184745238761629",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no24-3",
+          "name": "マスターからの挑戦錠",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "本物の鍵が入った謎",
+          "description": "本物の鍵が入った謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/escape_cafe/status/2118184745238761629",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        }
+      ],
       "candidates": []
     },
     {

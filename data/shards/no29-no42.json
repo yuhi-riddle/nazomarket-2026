@@ -361,6 +361,471 @@
               "retrievedAt": "2026-11-01"
             }
           ]
+        },
+        {
+          "id": "no30-4",
+          "name": "サイファアーカイブ",
+          "price": 700,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5"
+          },
+          "playMinutes": {
+            "min": 50,
+            "max": 70
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-5",
+          "name": "近見知新聞解読依頼",
+          "price": 700,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5"
+          },
+          "playMinutes": {
+            "min": 40,
+            "max": 70
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-6",
+          "name": "コウサク",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 120,
+            "max": 240
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-7",
+          "name": "Record 謎付きクリアファイル",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-8",
+          "name": "case:P",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 ★5/5"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 150
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-9",
+          "name": "IneviTable Game",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": 360
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-10",
+          "name": "告白しくはっく",
+          "price": 800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 2,
+            "source": "official",
+            "basis": "団体表記 ★2/5"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 100
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-11",
+          "name": "モンドウ",
+          "price": 1600,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": 30
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-12",
+          "name": "ノバリスと失踪少女",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記 ★5/5"
+          },
+          "playMinutes": {
+            "min": 100,
+            "max": 240
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-13",
+          "name": "アナビナゾ",
+          "price": 1400,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 300
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-14",
+          "name": "謎登山",
+          "price": 1650,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-15",
+          "name": "アケ_テ",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5"
+          },
+          "playMinutes": {
+            "min": 45,
+            "max": 80
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no30-16",
+          "name": "S to G",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AnotherVisionの既刊",
+          "description": "AnotherVisionの既刊。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5"
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/Another_Vision_/status/2117934897155219595",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
         }
       ],
       "candidates": [
@@ -462,7 +927,7 @@
           },
           "players": "1~2人",
           "isNew": true,
-          "limited": "事前予約フォームあり（受付11/7 18:00まで）",
+          "limited": "予約は満枠で受付終了。当日分はわずか",
           "sources": [
             {
               "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p23",
@@ -487,6 +952,10 @@
             {
               "url": "https://x.com/nazocafessp/status/2114686922316816436",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/MayAlcedoatthis/status/2118191101723217937",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "hashtags": [
@@ -507,13 +976,6 @@
           "payment": [
             "現金",
             "PayPay"
-          ],
-          "reservations": [
-            {
-              "label": "取り置き予約（受け取りは11/8 14時まで）",
-              "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
-              "endsAt": "2026-11-07T18:00"
-            }
           ]
         },
         {
@@ -531,7 +993,7 @@
           },
           "players": "1~2人",
           "isNew": false,
-          "limited": "事前予約制。10/27 に予約数に達したため予約受付を終了（在庫が少ない）",
+          "limited": "予約は満枠で受付終了。当日分はわずか",
           "sources": [
             {
               "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p24",
@@ -552,6 +1014,10 @@
             {
               "url": "https://x.com/MayAlcedoatthis/status/2115423801630675351",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/MayAlcedoatthis/status/2118191101723217937",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "payment": [
@@ -574,7 +1040,7 @@
           },
           "players": "1人",
           "isNew": false,
-          "limited": "事前予約フォームあり（10/29 の告知）",
+          "limited": "予約は満枠で受付終了。当日分はわずか",
           "sources": [
             {
               "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p25",
@@ -595,18 +1061,15 @@
             {
               "url": "https://x.com/nazocafessp/status/2115769677901336665",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/MayAlcedoatthis/status/2118191101723217937",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "payment": [
             "現金",
             "PayPay"
-          ],
-          "reservations": [
-            {
-              "label": "取り置き予約（受け取りは11/8 14時まで）",
-              "url": "https://docs.google.com/forms/d/e/1FAIpQLSdcF2c_MqiTOXqPJ_DhTpybEphhU5J8AYNF_BD2fCKufweRWQ/viewform",
-              "endsAt": "2026-11-07T18:00"
-            }
           ]
         }
       ],
@@ -1480,8 +1943,14 @@
             {
               "url": "https://x.com/JOKer_Project_/status/2113956467724501337",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/JOKer_Project_/status/2117936896814772724",
+              "retrievedAt": "2026-11-05"
             }
-          ]
+          ],
+          "limited": "ナゾトキマーケットからリニューアル版を販売開始（謎の内容・答えは変更なし）",
+          "imageUrl": "https://pbs.twimg.com/media/HWOQo8BbIAAOgIt?format=jpg&name=small"
         }
       ],
       "products": [],

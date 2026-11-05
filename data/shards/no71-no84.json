@@ -2199,6 +2199,69 @@
               "retrievedAt": "2026-11-02"
             }
           ]
+        },
+        {
+          "id": "no77-14",
+          "name": "なんの異常もないただのチェキ",
+          "price": 500,
+          "priceNote": "1枚500円、6枚セット2,500円",
+          "category": "goods",
+          "oneLiner": "ちょっとしたLINE謎のおまけ付きチェキ",
+          "description": "ちょっとしたLINE謎のおまけ付きチェキ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWWz7RubYAAHAMx?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/mayudamakobo/status/2118297035858411758",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no77-15",
+          "name": "第一紀美術展~わたしたちのあとに~ 音声ガイド",
+          "price": 800,
+          "priceNote": "会場限定価格（通常価格は未定）",
+          "category": "kit",
+          "oneLiner": "音声ガイドで楽しむ美術鑑賞の謎",
+          "description": "音声ガイドで楽しむ美術鑑賞の謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": 60
+          },
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWW0KoDagAAWXqe?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/mayudamakobo/status/2118297298623185134",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
         }
       ],
       "candidates": [
@@ -2408,7 +2471,158 @@
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no78-1",
+          "name": "謎付きクリアファイル（OTONARINO・KOKORONI NONNO）",
+          "price": 2000,
+          "priceNote": "各種2,000円",
+          "category": "kit",
+          "oneLiner": "VRINQの謎付きクリアファイル",
+          "description": "VRINQの謎付きクリアファイル。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no78-2",
+          "name": "VRINQ オリジナルトートバッグ",
+          "price": 2500,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "VRINQのオリジナルトートバッグ",
+          "description": "VRINQのオリジナルトートバッグ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no78-3",
+          "name": "ココロニ・ノンノと一通の予告状",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "誕生日記念グッズ2026の謎付きクリアファイル",
+          "description": "誕生日記念グッズ2026の謎付きクリアファイル。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no78-4",
+          "name": "乙奈りの5周年記念 謎付きクリアファイル",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "5周年記念の謎付きクリアファイル",
+          "description": "5周年記念の謎付きクリアファイル。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no78-5",
+          "name": "心を結ぶお茶会の謎",
+          "price": 1200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ハーブティ専門店とのコラボ謎解きキット（ハーブティー付属なし）",
+          "description": "ハーブティ専門店とのコラボ謎解きキット（ハーブティー付属なし）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/shareKOBE_/status/2118142460350357947",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "（題名未発表）クスっと笑える持ち帰り謎",
@@ -2692,7 +2906,7 @@
           },
           "playMinutes": null,
           "players": null,
-          "limited": "数量限定(各日150部。ナゾマ以降の再販等は未定)",
+          "limited": "数量限定。完売後は両日とも会場限定で受注生産予約を受付",
           "isNew": true,
           "days": [
             "sat",
@@ -2714,6 +2928,10 @@
             {
               "url": "https://x.com/amaka2don/status/2116862828208443525",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/amaka2don/status/2117962651511009524",
+              "retrievedAt": "2026-11-05"
             }
           ],
           "payment": [

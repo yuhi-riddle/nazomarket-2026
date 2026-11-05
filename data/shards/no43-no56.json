@@ -1323,7 +1323,7 @@
         {
           "id": "no54-2",
           "name": "時間割泥棒 トルノダーからの脱出",
-          "price": null,
+          "price": 1000,
           "priceNote": null,
           "category": "kit",
           "oneLiner": "謎の生物トルノダーから時間割を取り返す謎解き",
@@ -1347,6 +1347,160 @@
             {
               "url": "https://x.com/calette_pj/status/2117542315430473850",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no54-3",
+          "name": "ひっくり返る反重力からの脱出",
+          "price": 1000,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "3D脱出ゲームの新作",
+          "description": "3D脱出ゲームの新作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no54-4",
+          "name": "海底料理店 龍の味咲",
+          "price": 1000,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "Web ARGの新作",
+          "description": "Web ARGの新作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no54-5",
+          "name": "CiRCLE",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "「このナゾは百年解ける。」高難易度の持ち帰り謎",
+          "description": "「このナゾは百年解ける。」高難易度の持ち帰り謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no54-6",
+          "name": "新世界ALKAからの脱出",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "累計1,300人以上がプレイしたCaletteの代表作",
+          "description": "累計1,300人以上がプレイしたCaletteの代表作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no54-7",
+          "name": "壊れた童話からの脱出",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "とある本を開いたら物語の様子が変になっている謎",
+          "description": "とある本を開いたら物語の様子が変になっている謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/calette_pj/status/2117889585619574961",
+              "retrievedAt": "2026-11-05"
             }
           ]
         }
