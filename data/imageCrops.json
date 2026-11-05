@@ -188,6 +188,15 @@
     "width": 1200,
     "height": 1200
   },
+  "no02-4": {
+    "imageUrl": "https://pbs.twimg.com/media/HWXG77CbYAAyaZl?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0.025,
+    "width": 680,
+    "height": 680
+  },
   "no04-2": {
     "imageUrl": "https://pbs.twimg.com/media/HV83r8Ia8AAmSR_?format=jpg&name=small",
     "left": 0.0412,
@@ -466,6 +475,42 @@
     "bottom": 0.055,
     "width": 1200,
     "height": 1200
+  },
+  "no14-4": {
+    "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+    "left": 0.0294,
+    "right": 0.0294,
+    "top": 0,
+    "bottom": 0,
+    "width": 510,
+    "height": 680
+  },
+  "no14-5": {
+    "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+    "left": 0.0294,
+    "right": 0.0294,
+    "top": 0,
+    "bottom": 0,
+    "width": 510,
+    "height": 680
+  },
+  "no14-6": {
+    "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+    "left": 0.0294,
+    "right": 0.0294,
+    "top": 0,
+    "bottom": 0,
+    "width": 510,
+    "height": 680
+  },
+  "no14-7": {
+    "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+    "left": 0.0294,
+    "right": 0.0294,
+    "top": 0,
+    "bottom": 0,
+    "width": 510,
+    "height": 680
   },
   "no16-1": {
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no16/product/p93_photo1.png",
@@ -1267,6 +1312,15 @@
     "bottom": 0,
     "width": 620,
     "height": 496
+  },
+  "no67-32": {
+    "imageUrl": "https://pbs.twimg.com/media/HWR7FFyagAAsL3y?format=jpg&name=small",
+    "left": 0.0235,
+    "right": 0.0706,
+    "top": 0.0287,
+    "bottom": 0.0366,
+    "width": 680,
+    "height": 383
   },
   "no67-4": {
     "imageUrl": "https://booth.pximg.net/f55dddf8-4a8d-4069-a28e-feaaa43319ca/i/7621396/1996cbc7-b864-4146-aa96-f20f10ac68c9_base_resized.jpg",
