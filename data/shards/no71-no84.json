@@ -648,11 +648,780 @@
             {
               "url": "https://x.com/nichonazo/status/2116873154639601944",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "limited": "150部",
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ]
+        }
+      ],
+      "products": [
+        {
+          "id": "no73-2",
+          "name": "お主、祠を壊したんか！？",
+          "price": 1500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（ヴェル）",
+          "description": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（ヴェル）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "20部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-3",
+          "name": "卒業式後に謎解きレター入れたやつ誰だよ",
+          "price": 800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（七松こう）",
+          "description": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（七松こう）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "50部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-4",
+          "name": "雨上がりの空に",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（せら）",
+          "description": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（せら）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "100部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-5",
+          "name": "マーガレット",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（マナ）",
+          "description": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（マナ）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "100部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-6",
+          "name": "透明を駆使して答えを導け！！ TO MAKE'S",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（東雲楽）",
+          "description": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（東雲楽）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "100部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-7",
+          "name": "らっぴの大冒険",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（アリス）",
+          "description": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（アリス）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "120部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-8",
+          "name": "トンツーの壁〜伝説の書〜",
+          "price": 300,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（与那都新虹）",
+          "description": "バンタンゲームアカデミー謎解きクリエイター専攻の学生作品（与那都新虹）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "200部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-9",
+          "name": "メモリアルゲームズ",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "懐かしのゲームがモチーフのパズル",
+          "description": "懐かしのゲームがモチーフのパズル。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "100部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-10",
+          "name": "ニチョ謎 Lesson AtoZ in the room",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "イベント作品を持ち帰り化した、パズル要素の強い作品",
+          "description": "イベント作品を持ち帰り化した、パズル要素の強い作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "100部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-11",
+          "name": "ニチョ謎 Lesson AtoZ #9",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "昨年のナゾマにも出品した作品",
+          "description": "昨年のナゾマにも出品した作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "100部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-12",
+          "name": "Xproducts おかみ謎 ―答えはおかみです―",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "昨年のナゾマにも出品した作品",
+          "description": "昨年のナゾマにも出品した作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "100部",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-13",
+          "name": "Xproducts dictionarians beard",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎の作品",
+          "description": "髭謎の作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-14",
+          "name": "髭謎 漢字編",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎の作品",
+          "description": "髭謎の作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-15",
+          "name": "髭謎 しりとり編",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎の作品",
+          "description": "髭謎の作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-16",
+          "name": "髭謎 寿編",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎の作品",
+          "description": "髭謎の作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-17",
+          "name": "髭謎ミニ 001",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-18",
+          "name": "髭謎ミニ 002",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-19",
+          "name": "髭謎ミニ 003",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-20",
+          "name": "髭謎ミニ 004",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-21",
+          "name": "髭謎ミニ 005",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-22",
+          "name": "髭謎ミニ 006",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-23",
+          "name": "髭謎ミニ 007",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no73-24",
+          "name": "髭謎ミニ 008",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "髭謎のミニシリーズ",
+          "description": "髭謎のミニシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
       ],
-      "products": [],
       "candidates": [
         {
           "name": "メモリアルゲームズ【パズル80%】（封筒版）",
@@ -1617,9 +2386,16 @@
             {
               "url": "https://x.com/akazukin_NAZO/status/2116147297759474068",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/akazukin_NAZO/status/2117225218875830707",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HV4Qv-ZbAAAUOqO?format=jpg&name=small"
+          "imageUrl": "https://pbs.twimg.com/media/HV4Qv-ZbAAAUOqO?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ]
         },
         {
           "id": "p121",
@@ -1639,9 +2415,16 @@
             {
               "url": "https://x.com/akazukin_NAZO/status/2115783264569008415",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/akazukin_NAZO/status/2117225218875830707",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVzFqmobUAANRDX?format=jpg&name=small"
+          "imageUrl": "https://pbs.twimg.com/media/HVzFqmobUAANRDX?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ]
         },
         {
           "id": "p123",
@@ -1662,9 +2445,16 @@
             {
               "url": "https://x.com/akazukin_NAZO/status/2115420834731061315",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/akazukin_NAZO/status/2117225218875830707",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVt8CFtaUAI9Fpu?format=jpg&name=small"
+          "imageUrl": "https://pbs.twimg.com/media/HVt8CFtaUAI9Fpu?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ]
         }
       ],
       "products": [],
@@ -1769,6 +2559,10 @@
             {
               "url": "https://shizukaarg.mayudamakobo.jp",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -1781,6 +2575,10 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         },
         {
@@ -1799,9 +2597,17 @@
             {
               "url": "https://x.com/mayudamakobo/status/2114681248023187726",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "imageUrl": "https://pbs.twimg.com/media/HVjbYo9a4AAo1YN?format=jpg&name=small"
+          "imageUrl": "https://pbs.twimg.com/media/HVjbYo9a4AAo1YN?format=jpg&name=small",
+          "payment": [
+            "現金",
+            "PayPay"
+          ]
         }
       ],
       "products": [
@@ -1827,7 +2633,10 @@
             "sun"
           ],
           "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/74ad466e3fcf9438eee8270b2024b47e.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://cocoonwork.base.shop/items/127724370",
@@ -1840,6 +2649,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1865,7 +2678,10 @@
             "sun"
           ],
           "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/21adfcc49222f7e6702c67706a45d996.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://cocoonwork.base.shop/items/127724605",
@@ -1878,6 +2694,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1906,7 +2726,10 @@
             "sun"
           ],
           "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/6bc2f2b843596fbb47366e74678754ea.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://cocoonwork.base.shop/items/127724693",
@@ -1923,6 +2746,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1948,7 +2775,10 @@
             "sun"
           ],
           "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/02e8c12e075cf5c8e41d073ab363a73d.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://cocoonwork.base.shop/items/127724510",
@@ -1961,6 +2791,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1986,7 +2820,10 @@
             "sun"
           ],
           "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/3a11aa55db548ffd3691411450e7b3ed.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://cocoonwork.base.shop/items/127724780",
@@ -1999,6 +2836,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2027,11 +2868,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVi9iy1aQAEoaYP?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/mayudamakobo/status/2114648639616475353",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2057,7 +2905,10 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV8o3HhbcAAyCKi?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116455289629348212",
@@ -2066,6 +2917,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2091,7 +2946,10 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV8vrOYaEAAkULa?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116462845034660350",
@@ -2100,6 +2958,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2125,7 +2987,10 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV82fLna4AEMr7m?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116470282215186632",
@@ -2134,6 +2999,10 @@
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2159,11 +3028,18 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/FAreweLL_o_o/status/2116477983011795129",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2192,11 +3068,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWG5JQGbgAAqkYJ?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/mayudamakobo/status/2117222187392545025",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2222,11 +3105,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWWz7RubYAAHAMx?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/mayudamakobo/status/2118297035858411758",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2255,11 +3145,18 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWW0KoDagAAWXqe?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/mayudamakobo/status/2118297298623185134",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/mayudamakobo/status/2117937133420007754",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
@@ -3547,7 +4444,79 @@
       "officialPatches": [
         {
           "id": "p209",
-          "priceNote": "『0』『1』をまとめた公式掲載。500円が各作品の価格か2種セットの価格かは説明本文に明記なし。"
+          "priceNote": "『0』『1』をまとめた公式掲載。500円が各作品の価格か2種セットの価格かは説明本文に明記なし。",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "メルペイ",
+            "COIN+",
+            "WeChat Pay",
+            "UnionPay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/0001_nazo/status/2117951633535684787",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "p210",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "メルペイ",
+            "COIN+",
+            "WeChat Pay",
+            "UnionPay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/0001_nazo/status/2117951633535684787",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "p211",
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "メルペイ",
+            "COIN+",
+            "WeChat Pay",
+            "UnionPay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/0001_nazo/status/2117951633535684787",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
         }
       ],
       "products": [],

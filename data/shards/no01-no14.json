@@ -1733,7 +1733,42 @@
           "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/be872998e9864d9a348c231df2f15f60.png?imformat=generic&q=90&im=Resize,width=1200,type=normal"
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no02-4",
+          "name": "UNSTOPPABLE（パッケージ版）",
+          "price": 2800,
+          "priceNote": "オンラインショップの価格。会場価格は告知に記載なし",
+          "category": "online",
+          "oneLiner": "爆弾列車を止めるWEBゲームのパッケージ版。シリアルカードと限定ステッカー付き",
+          "description": "爆弾列車を止めるWEBゲームのパッケージ版。シリアルカードと限定ステッカー付き。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "11/7発売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWXG77CbYAAyaZl?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118318230255349920",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://shop.tumbleweed.jp/items/164360928",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "深海の城 タイタン（キット版）",
@@ -4411,11 +4446,18 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
           "sources": [
             {
               "url": "https://x.com/efex_info/status/2116856070933238017",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4438,7 +4480,10 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
           "sources": [
             {
               "url": "https://x.com/atobi_PR/status/2110577917424209971",
@@ -4451,6 +4496,10 @@
             {
               "url": "https://x.com/atobi_PR/status/2116844911446401523",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -4484,17 +4533,358 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
           "sources": [
             {
               "url": "https://x.com/efex_info/status/2117549851189657666",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWLG-YEaYAAg76f?format=jpg&name=small"
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no11-4",
+          "name": "HOLE",
+          "price": 1800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "「穴」がテーマの謎解き。ナゾトキマーケット初出品",
+          "description": "「穴」がテーマの謎解き。ナゾトキマーケット初出品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-5",
+          "name": "ELEVATOR HOUSE",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "エレベーターだらけの家に閉じ込められる謎解き。ナゾトキマーケット初出品",
+          "description": "エレベーターだらけの家に閉じ込められる謎解き。ナゾトキマーケット初出品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-6",
+          "name": "パズルマスターと謎の試練",
+          "price": 800,
+          "priceNote": "会場限定で表示価格から200円引き（表示1,000円）",
+          "category": "kit",
+          "oneLiner": "エフェックスの旧作",
+          "description": "エフェックスの旧作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-7",
+          "name": "知能拡張キット",
+          "price": 1000,
+          "priceNote": "会場限定で表示価格から200円引き（表示1,200円）",
+          "category": "kit",
+          "oneLiner": "エフェックスの旧作",
+          "description": "エフェックスの旧作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-8",
+          "name": "数夜にわたる星物語",
+          "price": 1500,
+          "priceNote": "会場限定で表示価格から200円引き（表示1,700円）",
+          "category": "kit",
+          "oneLiner": "エフェックスの旧作",
+          "description": "エフェックスの旧作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-9",
+          "name": "GOODRUG薬局",
+          "price": 1200,
+          "priceNote": "会場限定で表示価格から200円引き（表示1,400円）",
+          "category": "kit",
+          "oneLiner": "エフェックスの旧作",
+          "description": "エフェックスの旧作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-10",
+          "name": "TOWER OF ALIEN",
+          "price": 1300,
+          "priceNote": "会場限定で表示価格から200円引き（表示1,500円）",
+          "category": "kit",
+          "oneLiner": "エフェックスの旧作",
+          "description": "エフェックスの旧作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-11",
+          "name": "なりきり！謎クリエイター",
+          "price": 1600,
+          "priceNote": "会場限定で表示価格から200円引き（表示1,800円）",
+          "category": "kit",
+          "oneLiner": "エフェックスの旧作",
+          "description": "エフェックスの旧作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no11-12",
+          "name": "紙でわくわくクッキング",
+          "price": 1400,
+          "priceNote": "会場限定で表示価格から200円引き（表示1,600円）",
+          "category": "kit",
+          "oneLiner": "エフェックスの旧作",
+          "description": "エフェックスの旧作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "キャッシュレス"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/efex_info/status/2118179055627649306",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        }
+      ],
       "candidates": [],
       "hashtags": [
         {
@@ -4624,7 +5014,11 @@
             }
           ],
           "playMinutes": null,
-          "players": null
+          "players": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ]
         },
         {
           "id": "p52",
@@ -4672,7 +5066,11 @@
             }
           ],
           "playMinutes": null,
-          "players": null
+          "players": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ]
         },
         {
           "id": "p51",
@@ -4720,7 +5118,11 @@
             }
           ],
           "playMinutes": null,
-          "players": null
+          "players": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ]
         }
       ],
       "products": [
@@ -4746,7 +5148,10 @@
             "sun"
           ],
           "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/fd03c5a3baa6f587b22d.jpg/fit=scale-down,w=1200",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -4784,7 +5189,10 @@
             "sun"
           ],
           "imageUrl": "https://static.wixstatic.com/media/6c22bb_12fba824e4724dc59ab7404617dc7051~mv2.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -4822,7 +5230,10 @@
             "sun"
           ],
           "imageUrl": "https://static.wixstatic.com/media/6c22bb_6db0c11f22e841e1bc07db47d7c2105e~mv2.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -4860,7 +5271,10 @@
             "sun"
           ],
           "imageUrl": "https://static.wixstatic.com/media/6c22bb_b0647faa92284f5f931ae6d0a32dd006~mv2.jpg",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -4869,6 +5283,10 @@
             {
               "url": "https://xeoxy.shop/items/68e19e6a40aa6275ad912484",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/2114326114047053912",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4894,7 +5312,10 @@
             "sun"
           ],
           "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/2d175f8da6ed4d38fc5b.jpg/fit=scale-down,w=1200",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -4903,6 +5324,10 @@
             {
               "url": "https://xeoxy.shop/items/68e040309183255fd0239bdd",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/2114326114047053912",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4928,7 +5353,10 @@
             "sun"
           ],
           "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/48f179f95fe2c2719d49.jpg/fit=scale-down,w=1200",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -4937,6 +5365,10 @@
             {
               "url": "https://xeoxy.shop/items/653982ac2d2599068ca2d3ba",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/2114326114047053912",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4962,7 +5394,10 @@
             "sun"
           ],
           "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/a61025f174a9f71c28b1.jpg/fit=scale-down,w=1200",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -4971,6 +5406,10 @@
             {
               "url": "https://xeoxy.shop/items/62e6daa9ac366147ed5e0327",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/2114326114047053912",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4996,7 +5435,10 @@
             "sun"
           ],
           "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/c8f1d9fa3408b737acab.jpg/fit=scale-down,w=1200",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -5005,6 +5447,10 @@
             {
               "url": "https://xeoxy.shop/items/5ee2dcfbd26fa5765d4da43c",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/2114326114047053912",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -5030,7 +5476,10 @@
             "sun"
           ],
           "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/16fe0125b03f059ee4a4.jpg/fit=scale-down,w=1200",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -5039,6 +5488,10 @@
             {
               "url": "https://xeoxy.shop/items/5ee2dd80b5a42579c8fc4a99",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/2114326114047053912",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -5064,7 +5517,10 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/GdoMUljXQAA8fNm?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://www.xeoxy.com/news/20261025",
@@ -5073,6 +5529,10 @@
             {
               "url": "https://x.com/_XEOXY/status/1862814950298960215",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_XEOXY/status/2114326114047053912",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
@@ -6466,6 +6926,126 @@
             {
               "url": "https://x.com/far_near_/status/2117942435791917435",
               "retrievedAt": "2026-11-05"
+            }
+          ]
+        },
+        {
+          "id": "no14-4",
+          "name": "未来監獄脱出",
+          "price": 1800,
+          "priceNote": "税込。公演会場価格は1,500円",
+          "category": "kit",
+          "oneLiner": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売",
+          "description": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "ナゾマで2日限りの特別販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/far_near_/status/2118313095068299295",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no14-5",
+          "name": "現代魔女裁判脱出",
+          "price": 1800,
+          "priceNote": "税込。公演会場価格は1,500円",
+          "category": "kit",
+          "oneLiner": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売",
+          "description": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "ナゾマで2日限りの特別販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/far_near_/status/2118313095068299295",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no14-6",
+          "name": "見立て犯サイド脱出",
+          "price": 1800,
+          "priceNote": "税込。公演会場価格は1,500円",
+          "category": "kit",
+          "oneLiner": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売",
+          "description": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "ナゾマで2日限りの特別販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/far_near_/status/2118313095068299295",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no14-7",
+          "name": "役立たず無人島脱出",
+          "price": 1800,
+          "priceNote": "税込。公演会場価格は1,500円",
+          "category": "kit",
+          "oneLiner": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売",
+          "description": "公演限定の持ち帰り謎をナゾマで2日限りの特別販売。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "ナゾマで2日限りの特別販売",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWXCX6PbkAAK_0J?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/far_near_/status/2118313095068299295",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }

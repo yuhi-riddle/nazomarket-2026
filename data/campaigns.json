@@ -1616,5 +1616,181 @@
         "retrievedAt": "2026-11-05"
       }
     ]
+  },
+  {
+    "id": "no02-c1",
+    "boothId": "no02",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "2点以上の購入で限定グッズ",
+    "detail": "タンブルウィードブースで2つ買うと『10』発売記念の限定クリアファイル、3つでさらに限定ハンドタオル、4つでさらに限定オリジナルマグネット。いずれも非売品。同じ商品を複数個買っても対象",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "なくなり次第終了",
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118301041032847637",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no11-c3",
+    "boothId": "no11",
+    "productIds": [
+      "no11-6",
+      "no11-7",
+      "no11-8",
+      "no11-9",
+      "no11-10",
+      "no11-11",
+      "no11-12"
+    ],
+    "kind": "discount",
+    "title": "旧作7作品が全品200円引き",
+    "detail": "エフェックスの旧作7作品が会場限定で表示価格から200円引き",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/efex_info/status/2118179055627649306",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no12-c1",
+    "boothId": "no12",
+    "productIds": [],
+    "kind": "giveaway",
+    "title": "3,000円ごとにHAPPY LOTTERY",
+    "detail": "3,000円お買い上げごとに1回抽選。1等 公演無料招待券（5本）、2等 オリジナルTシャツ（10本）、3等 オリジナルノート（200本）、参加賞 オリジナル待ち受け（全員）",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/_XEOXY/status/2114326114047053912",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no21-c1",
+    "boothId": "no21",
+    "productIds": [],
+    "kind": "other",
+    "title": "1,000円ごとにキャッシュバック勝負",
+    "detail": "1,000円購入ごとにキャッシュバックチャレンジ券を1回分。スタッフとワードチンチロで勝負し、1回勝つごとに100円キャッシュバック",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/unit_karakara/status/2118300217456071102",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no66-c1",
+    "boothId": "no66",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "1点購入でおまけ謎を無料配布",
+    "detail": "いずれか1点の購入で『SPY IN THE OFFICE』を無料配布",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "数量限定。なくなり次第終了",
+    "sources": [
+      {
+        "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/MysteryJ_nazo/status/2118316285084025291",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no67-c2",
+    "boothId": "no67",
+    "productIds": [
+      "no67-32"
+    ],
+    "kind": "discount",
+    "title": "TEA4 PARTY全22種セットが3,800円",
+    "detail": "クリアファイルとTEA4 PARTY全22種のセットがナゾマ限定価格3,800円（通常4,900円）",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no77-c4",
+    "boothId": "no77",
+    "productIds": [
+      "no77-9"
+    ],
+    "kind": "bonus",
+    "title": "パスを首から下げると成功ステッカー",
+    "detail": "『存在しない謎解き公演のパス』を会場で購入し、その場で首から下げた全員に「成功ステッカー」をプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/FAreweLL_o_o/status/2118325056392794442",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no91-c2",
+    "boothId": "no91",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "3,000円以上で限定ステッカー",
+    "detail": "3,000円以上の購入で、どんな組み合わせでも2日間限定のロゴステッカーをプレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "先着",
+    "sources": [
+      {
+        "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
   }
 ]

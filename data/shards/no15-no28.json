@@ -2438,7 +2438,45 @@
         }
       ],
       "notes": "公式のHP欄が空のため検索で公式サイトを特定。karakara.studio.site は本文がほぼ取れず(スクリプトで描画されるページ)、escape.id の団体ページに持ち帰り謎の記載なし。BOOTH店の情報は見つからず。Xに告知がある可能性あり。 X確認(10/25): @unit_karakara の検索結果(9〜10月)にナゾトキマーケット2026の告知なし(公演・チケットの告知のみ)。10/23にミッドナイトレーベル新作の予告(Coming soon)があるが、売る場所は書かれていない。 再収集(10/30 Web): HP は本文が取れず、新しい告知なし。 再収集(10/30 X): @unit_karakara の10/24以降の投稿は公演・チケット・ミッドナイトレーベル新作(2027/1)の告知のみで、ナゾマの告知なし。",
-      "officialPatches": [],
+      "officialPatches": [
+        {
+          "id": "p87",
+          "price": 660,
+          "sources": [
+            {
+              "url": "https://x.com/unit_karakara/status/2118300217456071102",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "payment": [
+            "各種決済対応"
+          ]
+        },
+        {
+          "id": "p85",
+          "payment": [
+            "各種決済対応"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/unit_karakara/status/2118300217456071102",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "p86",
+          "payment": [
+            "各種決済対応"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/unit_karakara/status/2118300217456071102",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        }
+      ],
       "products": [],
       "candidates": [
         {

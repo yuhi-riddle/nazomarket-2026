@@ -116,6 +116,10 @@
             {
               "url": "https://x.com/crossxone2110/status/2115713659800629648",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/crossxone2110/status/2117236097705296157",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -132,6 +136,12 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済（楽天ペイを除く）"
           ]
         },
         {
@@ -162,6 +172,10 @@
             {
               "url": "https://x.com/crossxone2110/status/2115713659800629648",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/crossxone2110/status/2117236097705296157",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -174,6 +188,12 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済（楽天ペイを除く）"
           ]
         },
         {
@@ -204,6 +224,10 @@
             {
               "url": "https://x.com/crossxone2110/status/2115713659800629648",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/crossxone2110/status/2117236097705296157",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -216,6 +240,12 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済（楽天ペイを除く）"
           ]
         }
       ],
@@ -241,7 +271,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVyGWNCb0AAqxn-?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済（楽天ペイを除く）"
+          ],
           "sources": [
             {
               "url": "https://x.com/crossxone2110/status/2111022569046573060",
@@ -254,6 +289,10 @@
             {
               "url": "https://x.com/crossxone2110/status/2115713647922327728",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/crossxone2110/status/2117236097705296157",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no86-1"
@@ -279,7 +318,12 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済（楽天ペイを除く）"
+          ],
           "sources": [
             {
               "url": "https://x.com/crossxone2110/status/2111022569046573060",
@@ -288,6 +332,10 @@
             {
               "url": "https://x.com/crossxone2110/status/2115713659800629648",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/crossxone2110/status/2117236097705296157",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no86-2"
@@ -313,7 +361,12 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "電子マネー",
+            "QRコード決済（楽天ペイを除く）"
+          ],
           "sources": [
             {
               "url": "https://x.com/crossxone2110/status/2111022569046573060",
@@ -322,6 +375,10 @@
             {
               "url": "https://x.com/crossxone2110/status/2115713659800629648",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/crossxone2110/status/2117236097705296157",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no86-3"
@@ -881,7 +938,15 @@
             {
               "url": "https://x.com/RI_Works_nazo/status/2116862819706495065",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         },
         {
@@ -909,7 +974,16 @@
             {
               "url": "https://x.com/RI_Works_nazo/status/2117225320034308104",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "name": "DONUTs",
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         },
         {
@@ -935,7 +1009,15 @@
             {
               "url": "https://x.com/RI_Works_nazo/status/2117236731049292107",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "payment": [
+            "現金",
+            "PayPay"
           ]
         }
       ],
@@ -963,12 +1045,19 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/HWBHIblaUAA4FKd?format=jpg&name=small",
           "sources": [
             {
               "url": "https://x.com/RI_Works_nazo/status/2116877924859261219",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no91-2"
@@ -998,11 +1087,159 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWM1mlObIAAUCLS?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/RI_Works_nazo/status/2117595194036298188",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no91-6",
+          "name": "注意事項が多い謎解きゲームからの脱出",
+          "price": 700,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "摩訶不思議な注意事項を掻い潜り、脱出成功を目指す再販作",
+          "description": "摩訶不思議な注意事項を掻い潜り、脱出成功を目指す再販作。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5"
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no91-7",
+          "name": "天気ョ",
+          "price": 600,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "家のポストに届いた天気の調査のお願いから始まる再販作",
+          "description": "家のポストに届いた天気の調査のお願いから始まる再販作。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 ★4/5"
+          },
+          "playMinutes": {
+            "min": 40,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no91-8",
+          "name": "異物混入参加者限定ナゾ",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "公演『異物混入』参加者限定の持ち帰り謎",
+          "description": "公演『異物混入』参加者限定の持ち帰り謎。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 ★3/5"
+          },
+          "playMinutes": {
+            "min": 30,
+            "max": null
+          },
+          "players": null,
+          "isNew": false,
+          "limited": "公演参加済みの方のみ購入可。チケットの画像などが必要",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no91-9",
+          "name": "ポイすてっ！2 コンプリートガイド",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "公演『ポイすてっ！2』のコンプリートガイド",
+          "description": "公演『ポイすてっ！2』のコンプリートガイド。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "公演参加済みの方のみ購入可。チケットの画像などが必要",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }

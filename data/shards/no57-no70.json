@@ -69,9 +69,16 @@
             {
               "url": "https://x.com/nazone2019/status/2113208753575346357",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/nazone2019/status/2117919794728939746",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "priceNote": "ナゾマ特別価格1,500円（通常価格2,000円）"
+          "priceNote": "ナゾマ特別価格1,500円（通常価格2,000円）",
+          "payment": [
+            "現金のみ"
+          ]
         },
         {
           "id": "p39",
@@ -96,9 +103,16 @@
             {
               "url": "https://x.com/nazone2019/status/2117251124927574066",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/nazone2019/status/2117919794728939746",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "isNew": false
+          "isNew": false,
+          "payment": [
+            "現金のみ"
+          ]
         }
       ],
       "products": [],
@@ -997,6 +1011,36 @@
               "retrievedAt": "2026-11-04"
             }
           ]
+        },
+        {
+          "id": "no61-3",
+          "name": "在りし日の、とある画家からの手紙。",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "古いアトリエにあった手紙の謎。画家が遺した思いを解く新作",
+          "description": "古いアトリエにあった手紙の謎。画家が遺した思いを解く新作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/onilaby/status/2117828124461474247",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
         }
       ],
       "candidates": []
@@ -1652,7 +1696,221 @@
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "id": "no66-4",
+          "name": "パズBINGO",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ナゾBINGOとのセット購入で奇跡の体験ができるBINGOシリーズ",
+          "description": "ナゾBINGOとのセット購入で奇跡の体験ができるBINGOシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no66-5",
+          "name": "ナゾBINGO",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "パズBINGOとのセット購入で奇跡の体験ができるBINGOシリーズ",
+          "description": "パズBINGOとのセット購入で奇跡の体験ができるBINGOシリーズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no66-6",
+          "name": "Little Christmas Presents",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "10分で遊べるワンコイン謎",
+          "description": "10分で遊べるワンコイン謎。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 10,
+            "max": 10
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no66-7",
+          "name": "秘められた迷宮と49の謎",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "大量の謎とギミックの迷宮を解き明かす大ボリューム作",
+          "description": "大量の謎とギミックの迷宮を解き明かす大ボリューム作。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no66-8",
+          "name": "チェーンギフト",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "人格を問われるARGの謎解き体験",
+          "description": "人格を問われるARGの謎解き体験。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no66-9",
+          "name": "シラナイAI【ミーナ】",
+          "price": 2000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "AI育成と謎解きを組み合わせた作品",
+          "description": "AI育成と謎解きを組み合わせた作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no66-10",
+          "name": "時空爆弾のパラドックス",
+          "price": 2800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "時空を超えて爆弾を解除する本格SF作品",
+          "description": "時空を超えて爆弾を解除する本格SF作品。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/MysteryJ_nazo/status/2118312722106572812",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        }
+      ],
       "candidates": [
         {
           "name": "Little Christmas Presents",
@@ -2346,7 +2604,7 @@
         },
         {
           "id": "no67-14",
-          "name": "TEA4 PARTY the rectagle word",
+          "name": "TEA4 PARTY the rectangle word",
           "price": 300,
           "priceNote": "クリアファイル購入時は200円 公式のシリーズ総称は200円。各作品への適用範囲が不明のため、個別告知の300円を保持。",
           "category": "booklet",
@@ -2445,6 +2703,456 @@
             {
               "url": "https://x.com/teaparty_cooh/status/2114331482290573797",
               "retrievedAt": "2026-11-02"
+            }
+          ]
+        },
+        {
+          "id": "no67-18",
+          "name": "TEA4 PARTY 塗って！",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（初心者向け）",
+          "description": "TEA4 PARTYの1作（初心者向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-19",
+          "name": "TEA4 PARTY ふぁーすとのーと！",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（初心者向け）",
+          "description": "TEA4 PARTYの1作（初心者向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-20",
+          "name": "TEA4 PARTY Dice",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（中級者向け）",
+          "description": "TEA4 PARTYの1作（中級者向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-21",
+          "name": "TEA4 PARTY 待ち合わせ",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（中級者向け）",
+          "description": "TEA4 PARTYの1作（中級者向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-22",
+          "name": "TEA4 PARTY ああああ",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（中級者向け）",
+          "description": "TEA4 PARTYの1作（中級者向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-23",
+          "name": "TEA4 PARTY 旨",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（中級者向け）",
+          "description": "TEA4 PARTYの1作（中級者向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-24",
+          "name": "TEA4 PARTY 透明人間",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-25",
+          "name": "TEA4 PARTY ニコイチ",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-26",
+          "name": "TEA4 PARTY Option",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-27",
+          "name": "TEA4 PARTY 神★域",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-28",
+          "name": "TEA4 PARTY 9tickets",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-29",
+          "name": "TEA4 PARTY タバスコ",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-30",
+          "name": "TEA4 PARTY CAELUM",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-31",
+          "name": "TEA4 PARTY きめら。",
+          "price": 300,
+          "priceNote": "クリアファイル購入時は200円",
+          "category": "kit",
+          "oneLiner": "TEA4 PARTYの1作（訓練された方向け）",
+          "description": "TEA4 PARTYの1作（訓練された方向け）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "no67-32",
+          "name": "TEA4 PARTY コンプリートセット",
+          "price": 3800,
+          "priceNote": "ナゾマ限定価格（通常4,900円）",
+          "category": "kit",
+          "oneLiner": "クリアファイルとTEA4 PARTY全22種のセット",
+          "description": "クリアファイルとTEA4 PARTY全22種のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWR7FFyagAAsL3y?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/teaparty_COOH/status/2117953759401656583",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
