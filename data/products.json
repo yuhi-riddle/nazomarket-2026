@@ -13756,8 +13756,8 @@
   {
     "id": "no29-2",
     "name": "謎屋珈琲店 21番目の挑戦",
-    "price": null,
-    "priceNote": "価格は告知なし",
+    "price": 1980,
+    "priceNote": null,
     "category": "booklet",
     "oneLiner": "峰月響介のデビュー作となるヒューマンミステリー小説",
     "description": "峰月響介デビュー作「謎屋珈琲店 21番目の挑戦」もあわせて出品いたします。「ミステリーカフェのオーナーが書くミステリー小説」を味わえる。当日は著者の在席も予定。(いずれもミステリー小説であり、謎解き本ではありません)",
@@ -13789,7 +13789,6 @@
     "boothId": "no29",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
@@ -17558,8 +17557,8 @@
   {
     "id": "no47-1",
     "name": "あああああああああ（赤）",
-    "price": null,
-    "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁） 3作品をまとめた公式掲載の価格は1,500円。単品・セットの適用範囲が不明なため各作品の価格は未確認。",
+    "price": 1500,
+    "priceNote": "推定価格。告知は伏せ字（4桁）で、3作品をまとめた公式掲載の価格が1,500円。正式な単品価格は未確認",
     "category": "kit",
     "oneLiner": "名前も価格も「あ」で伏せられた赤の謎",
     "description": "すべて「あ」で伏せて告知された作品の赤。謎制作はどや。",
@@ -17595,7 +17594,6 @@
     "boothId": "no47",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "playMinutes",
       "players",
       "isNew",
@@ -17605,8 +17603,8 @@
   {
     "id": "no47-2",
     "name": "あああああああああああああ（緑）",
-    "price": null,
-    "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁） 3作品をまとめた公式掲載の価格は1,500円。単品・セットの適用範囲が不明なため各作品の価格は未確認。",
+    "price": 1500,
+    "priceNote": "推定価格。告知は伏せ字（4桁）で、3作品をまとめた公式掲載の価格が1,500円。正式な単品価格は未確認",
     "category": "kit",
     "oneLiner": "名前も価格も「あ」で伏せられた緑の謎",
     "description": "すべて「あ」で伏せて告知された作品の緑。謎制作はフライパン職人。",
@@ -17642,7 +17640,6 @@
     "boothId": "no47",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "playMinutes",
       "players",
       "isNew",
@@ -17652,8 +17649,8 @@
   {
     "id": "no47-3",
     "name": "あああああ, あああああ!（青）",
-    "price": null,
-    "priceNote": "名前・価格・時間は「あ」で伏せて告知（価格は4桁）。紙幣の絵から1,500円らしいが未確定 3作品をまとめた公式掲載の価格は1,500円。単品・セットの適用範囲が不明なため各作品の価格は未確認。",
+    "price": 1500,
+    "priceNote": "推定価格。告知は伏せ字（4桁）で、3作品をまとめた公式掲載の価格が1,500円。正式な単品価格は未確認",
     "category": "kit",
     "oneLiner": "名前も価格も「あ」で伏せられた青の謎",
     "description": "すべて「あ」で伏せて告知された作品の青。",
@@ -17685,7 +17682,6 @@
     "boothId": "no47",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "playMinutes",
       "players",
       "isNew",
@@ -25148,8 +25144,8 @@
   {
     "id": "no74-2",
     "name": "十六夜絵図2『星空のロストシグナル』",
-    "price": null,
-    "priceNote": null,
+    "price": 2000,
+    "priceNote": "会場特別価格",
     "category": "kit",
     "oneLiner": "ナゾトキマーケット2026で販売する新作持ち帰り謎。",
     "description": "ナゾトキマーケット2026で販売する新作持ち帰り謎。",
@@ -25172,12 +25168,15 @@
       {
         "url": "https://x.com/NaZO_LAB/status/2117615263202062581",
         "retrievedAt": "2026-11-04"
+      },
+      {
+        "url": "https://x.com/NaZO_LAB/status/2118484972738879611",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no74",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
@@ -30151,12 +30150,12 @@
     ]
   },
   {
-    "name": "封入謎（正式タイトル未確認）",
-    "price": null,
+    "name": "封入",
+    "price": 500,
     "priceNote": null,
     "category": "kit",
-    "oneLiner": "今回の新作3つのうちの1つ。封入形式の謎",
-    "description": "告知に説明文なし（商品名のみ確認）",
+    "oneLiner": "謎を一問ずつ切ったり折ったりして封筒に入れる、封入作業を体験する謎",
+    "description": "謎制作において、最後に行われる封入作業を体験できる謎解きです。謎を一問一問切り離したり、時には謎を成立させるために工夫を施したり。無事に封入したら知り合いにプレゼントできます。\n形式：A4サイズ1枚＋封筒　難易度：★★",
     "difficulty": {
       "level": null,
       "source": "unknown",
@@ -30169,7 +30168,7 @@
     "days": [
       "sat"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HWar-LbbwAA1nW-?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -30179,6 +30178,14 @@
       {
         "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118569809990611307",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no94-1",
@@ -30199,21 +30206,19 @@
     ],
     "boothId": "no94",
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
   {
-    "name": "TAKEFREE謎（正式タイトル未確認）",
-    "price": null,
-    "priceNote": null,
+    "name": "TAKE FREE",
+    "price": 300,
+    "priceNote": "問題は無料で持ち帰り。300円は専用の正誤判定サイト（購入は任意）",
     "category": "kit",
-    "oneLiner": "今回の新作3つのうちの1つ。TAKEFREE形式の謎",
-    "description": "告知に説明文なし（商品名のみ確認）",
+    "oneLiner": "無料で持ち帰れる謎（全3種）。正誤判定サイトは300円",
+    "description": "形式：無料持ち帰り　全3種　難易度：★\n「TAKE FREE」専用解答サイト（300円）：無料謎解き「TAKE FREE」の正誤判定を行うためのサイトURLです。購入は任意です。",
     "difficulty": {
       "level": null,
       "source": "unknown",
@@ -30226,7 +30231,7 @@
     "days": [
       "sat"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HWasa-HbMAAcStH?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
@@ -30236,6 +30241,14 @@
       {
         "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118570283829469639",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no94-2",
@@ -30256,11 +30269,9 @@
     ],
     "boothId": "no94",
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -30433,10 +30444,200 @@
     ]
   },
   {
+    "name": "Souvenirs",
+    "price": 300,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "ご当地アイテムを同梱した謎解き。お土産向け",
+    "description": "ご当地アイテムを同梱した謎解きです。お土産にぴったり。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no94-9",
+    "hashtags": [],
+    "boothId": "no94",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "Hollow",
+    "price": 500,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "突然の正統派ウェブ謎解き",
+    "description": "突然の正統派ウェブ謎解き。突出して面白すぎるので、他の商品より相対的に激安です。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no94-10",
+    "hashtags": [],
+    "boothId": "no94",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "SiteSeeking",
+    "price": 200,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "サイトに隠された謎を暴くWebジョーク作品",
+    "description": "サイトに隠された謎を暴けＷｅｂジョーク作品",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no94-11",
+    "hashtags": [],
+    "boothId": "no94",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "立川茜の謎解き本 vol.1",
+    "price": 500,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "「真面目に考えたら負け」の異色の謎解き本。コメンタリーあり",
+    "description": "「真面目に考えたら負け」の異色の謎解き本　コメンタリーあり",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no94-12",
+    "hashtags": [],
+    "boothId": "no94",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "立川茜の謎解き本 vol.2",
+    "price": 500,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "「真面目に考えなくていいんだよ」がテーマの謎解き本。コメンタリーあり",
+    "description": "「真面目に考えなくていいんだよ」がテーマ。コメンタリーあり",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no94-13",
+    "hashtags": [],
+    "boothId": "no94",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "id": "p01",
     "name": "むしめがね",
     "price": 500,
-    "priceNote": "11/4夜の公式データでは団体番号が0に変更され掲載対象外。以前の情報を保持しており、今回の販売状況は未確認。",
+    "priceNote": null,
     "category": "online",
     "oneLiner": "スマホ専用で遊ぶ、全4問のライトな新作謎解き",
     "description": "スマホ専用、全4問のライトな謎解きです。\n「せいかい」を導くため、渡されたものは……",
@@ -30474,6 +30675,10 @@
       {
         "url": "https://x.com/fantasistaKKP/status/2101614772815020049",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [

@@ -1518,8 +1518,8 @@
         {
           "id": "no74-2",
           "name": "十六夜絵図2『星空のロストシグナル』",
-          "price": null,
-          "priceNote": null,
+          "price": 2000,
+          "priceNote": "会場特別価格",
           "category": "kit",
           "oneLiner": "ナゾトキマーケット2026で販売する新作持ち帰り謎。",
           "description": "ナゾトキマーケット2026で販売する新作持ち帰り謎。",
@@ -1542,6 +1542,10 @@
             {
               "url": "https://x.com/NaZO_LAB/status/2117615263202062581",
               "retrievedAt": "2026-11-04"
+            },
+            {
+              "url": "https://x.com/NaZO_LAB/status/2118484972738879611",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }

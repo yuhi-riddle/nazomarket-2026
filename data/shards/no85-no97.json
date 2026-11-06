@@ -1674,12 +1674,12 @@
       ],
       "products": [
         {
-          "name": "封入謎（正式タイトル未確認）",
-          "price": null,
+          "name": "封入",
+          "price": 500,
           "priceNote": null,
           "category": "kit",
-          "oneLiner": "今回の新作3つのうちの1つ。封入形式の謎",
-          "description": "告知に説明文なし（商品名のみ確認）",
+          "oneLiner": "謎を一問ずつ切ったり折ったりして封筒に入れる、封入作業を体験する謎",
+          "description": "謎制作において、最後に行われる封入作業を体験できる謎解きです。謎を一問一問切り離したり、時には謎を成立させるために工夫を施したり。無事に封入したら知り合いにプレゼントできます。\n形式：A4サイズ1枚＋封筒　難易度：★★",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -1692,7 +1692,7 @@
           "days": [
             "sat"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWar-LbbwAA1nW-?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -1702,6 +1702,14 @@
             {
               "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118569809990611307",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no94-1",
@@ -1722,12 +1730,12 @@
           ]
         },
         {
-          "name": "TAKEFREE謎（正式タイトル未確認）",
-          "price": null,
-          "priceNote": null,
+          "name": "TAKE FREE",
+          "price": 300,
+          "priceNote": "問題は無料で持ち帰り。300円は専用の正誤判定サイト（購入は任意）",
           "category": "kit",
-          "oneLiner": "今回の新作3つのうちの1つ。TAKEFREE形式の謎",
-          "description": "告知に説明文なし（商品名のみ確認）",
+          "oneLiner": "無料で持ち帰れる謎（全3種）。正誤判定サイトは300円",
+          "description": "形式：無料持ち帰り　全3種　難易度：★\n「TAKE FREE」専用解答サイト（300円）：無料謎解き「TAKE FREE」の正誤判定を行うためのサイトURLです。購入は任意です。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -1740,7 +1748,7 @@
           "days": [
             "sat"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWasa-HbMAAcStH?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
@@ -1750,6 +1758,14 @@
             {
               "url": "https://x.com/fantasistaKKP/status/2101242788528705554",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118570283829469639",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no94-2",
@@ -1913,7 +1929,7 @@
           "id": "p01",
           "name": "むしめがね",
           "price": 500,
-          "priceNote": "11/4夜の公式データでは団体番号が0に変更され掲載対象外。以前の情報を保持しており、今回の販売状況は未確認。",
+          "priceNote": null,
           "category": "online",
           "oneLiner": "スマホ専用で遊ぶ、全4問のライトな新作謎解き",
           "description": "スマホ専用、全4問のライトな謎解きです。\n「せいかい」を導くため、渡されたものは……",
@@ -1951,6 +1967,10 @@
             {
               "url": "https://x.com/fantasistaKKP/status/2101614772815020049",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -1972,6 +1992,156 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Souvenirs",
+          "price": 300,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "ご当地アイテムを同梱した謎解き。お土産向け",
+          "description": "ご当地アイテムを同梱した謎解きです。お土産にぴったり。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no94-9",
+          "hashtags": []
+        },
+        {
+          "name": "Hollow",
+          "price": 500,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "突然の正統派ウェブ謎解き",
+          "description": "突然の正統派ウェブ謎解き。突出して面白すぎるので、他の商品より相対的に激安です。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no94-10",
+          "hashtags": []
+        },
+        {
+          "name": "SiteSeeking",
+          "price": 200,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "サイトに隠された謎を暴くWebジョーク作品",
+          "description": "サイトに隠された謎を暴けＷｅｂジョーク作品",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no94-11",
+          "hashtags": []
+        },
+        {
+          "name": "立川茜の謎解き本 vol.1",
+          "price": 500,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "「真面目に考えたら負け」の異色の謎解き本。コメンタリーあり",
+          "description": "「真面目に考えたら負け」の異色の謎解き本　コメンタリーあり",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no94-12",
+          "hashtags": []
+        },
+        {
+          "name": "立川茜の謎解き本 vol.2",
+          "price": 500,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "「真面目に考えなくていいんだよ」がテーマの謎解き本。コメンタリーあり",
+          "description": "「真面目に考えなくていいんだよ」がテーマ。コメンタリーあり",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no94-13",
+          "hashtags": []
         }
       ],
       "candidates": [
