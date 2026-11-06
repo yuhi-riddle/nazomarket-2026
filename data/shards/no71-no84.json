@@ -171,24 +171,145 @@
               "retrievedAt": "2026-11-02"
             }
           ]
+        },
+        {
+          "name": "シン・真相室",
+          "price": null,
+          "priceNote": "価格は告知に記載なし",
+          "category": "kit",
+          "oneLiner": "前回発売の持ち帰り謎。少量のみ",
+          "description": "お品書き画像の商品とは別に、少量だけ持参。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "少量のみ",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no71-2",
+          "hashtags": []
+        },
+        {
+          "name": "心技体セット",
+          "price": null,
+          "priceNote": "価格は告知に記載なし",
+          "category": "kit",
+          "oneLiner": "前回発売のセット。少量のみ",
+          "description": "お品書き画像の商品とは別に、少量だけ持参。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "少量のみ",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no71-3",
+          "hashtags": []
+        },
+        {
+          "name": "ザコモン缶バッジ",
+          "price": null,
+          "priceNote": "価格は告知に記載なし",
+          "category": "goods",
+          "oneLiner": "ザコモンの缶バッジ。少量のみ",
+          "description": "お品書き画像の商品とは別に、少量だけ持参。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "少量のみ",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no71-4",
+          "hashtags": []
+        },
+        {
+          "name": "ザコモンTシャツ",
+          "price": null,
+          "priceNote": "価格は告知に記載なし",
+          "category": "goods",
+          "oneLiner": "ザコモンのTシャツ。少量のみ",
+          "description": "お品書き画像の商品とは別に、少量だけ持参。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": "少量のみ",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no71-5",
+          "hashtags": []
         }
       ],
       "candidates": [
-        {
-          "name": "心技体",
-          "price": 4000,
-          "reason": "ナゾトキ番長のHPに『ナゾトキマーケットに向けてCrossXOne・ShareKOBEと共同制作』とあるが、ShareKOBEのサイトデータでは2025-11-08公開の昨年の商品。今回も持ってくるとは書いていない",
-          "sources": [
-            {
-              "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://raw.githubusercontent.com/ShareKOBEinc/Homepage/main/js/goods-data.js",
-              "retrievedAt": "2026-10-25"
-            }
-          ]
-        },
         {
           "name": "（品目未発表）持ち帰り謎の出展",
           "price": null,
@@ -4385,6 +4506,10 @@
             {
               "url": "https://x.com/tsukumorozuya/status/2112876560223232055",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
           ],
           "hashtags": [
@@ -4405,6 +4530,9 @@
                 }
               ]
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         },
         {
@@ -4432,7 +4560,14 @@
             {
               "url": "https://x.com/tsukumorozuya/status/2116862837943316768",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         },
         {
@@ -4456,7 +4591,14 @@
             {
               "url": "https://x.com/tsukumorozuya/status/2116501194659258810",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         }
       ],
@@ -4483,7 +4625,9 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HVI1_GyboAApkI5?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/tsukumorozuya/status/2112861469318779275",
@@ -4496,6 +4640,10 @@
             {
               "url": "https://x.com/tsukumorozuya/status/2112861468970594761",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
           ],
           "hashtags": [
@@ -4517,91 +4665,273 @@
               ]
             }
           ]
-        }
-      ],
-      "candidates": [
-        {
-          "name": "（題名未発表）新作の謎解き",
-          "price": null,
-          "reason": "公式ブース概要に『新作の謎解き・過去ゲームイベントで頒布した旧作・その他いくつかの商品をお持ちします』とあるが、題名・価格が見つからない。Xでも10/25時点でナゾトキマーケット向けの新作謎の題名・価格は告知なし",
-          "sources": [
-            {
-              "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
-              "retrievedAt": "2026-10-25"
-            },
-            {
-              "url": "https://x.com/tsukumorozuya/status/2114249646860366002",
-              "retrievedAt": "2026-10-25"
-            }
-          ]
         },
         {
-          "name": "【謎解き】ツクモロのまたとない不運な一日",
+          "name": "ツクモロステッカー（5種セット）",
+          "price": 800,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "ツクモロのステッカー5種セット（シークレットあり）",
+          "description": "ツクモロのステッカー5種セット（シークレットあり）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no80-5",
+          "hashtags": []
+        },
+        {
+          "name": "ツクモロのまたとない不運な一日",
           "price": 600,
-          "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2026春の新作、難易度4/10・10〜30分",
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "キット型持ち帰り謎解き（旧作）",
+          "description": "キット型持ち帰り謎解き（旧作）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
-              "url": "https://booth.pm/ja/items/8356955",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no80-6",
+          "hashtags": []
         },
         {
-          "name": "【グッズ】九十九金運開運御守",
+          "name": "九十九金運開運御守",
           "price": 1100,
-          "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。おまけ謎付きのアクリルキーホルダー(約50×70mm)",
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "謎付きアクリルキーホルダー（旧作）",
+          "description": "謎付きアクリルキーホルダー（旧作）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
-              "url": "https://booth.pm/ja/items/8357054",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no80-7",
+          "hashtags": []
         },
         {
-          "name": "【暗号】解解 -kaidoku- vol.001『境』",
+          "name": "解解 -kaidoku- vol.001『境』",
           "price": 600,
-          "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2025秋に先行販売",
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "キット型持ち帰り謎解き。暗号もの（旧作）",
+          "description": "キット型持ち帰り謎解き。暗号もの（旧作）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
-              "url": "https://booth.pm/ja/items/7898841",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no80-8",
+          "hashtags": []
         },
         {
-          "name": "【謎解き】形 -katachi-",
-          "price": 1000,
-          "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2025秋の新作、難易度3/10・30〜90分",
+          "name": "Collapse",
+          "price": 1500,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "新クトゥルフ神話TRPGのシナリオ集（3本入り）",
+          "description": "新クトゥルフ神話TRPGのシナリオ集（3本入り）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
-              "url": "https://booth.pm/ja/items/7898835",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no80-9",
+          "hashtags": []
         },
         {
-          "name": "【謎解き】adapt",
+          "name": "adapt",
           "price": 1200,
-          "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)",
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "キット型持ち帰り謎解き（旧作）",
+          "description": "キット型持ち帰り謎解き（旧作）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
-              "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no80-10",
+          "hashtags": []
         },
         {
-          "name": "【謎解き】99g -ツクモグラム-",
+          "name": "形 -katachi-",
           "price": 1000,
-          "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)",
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "言葉を使わないキット型持ち帰り謎解き（旧作）",
+          "description": "言葉を使わないキット型持ち帰り謎解き（旧作）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
-              "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no80-11",
+          "hashtags": []
+        },
+        {
+          "name": "99g -ツクモグラム-",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "キット型持ち帰り謎解き（旧作）",
+          "description": "キット型持ち帰り謎解き（旧作）。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no80-12",
+          "hashtags": []
         }
       ],
+      "candidates": [],
       "hashtags": [
         {
           "tag": "ナゾトキマーケット2026",

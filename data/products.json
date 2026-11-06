@@ -3669,7 +3669,19 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no05/product/p220_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "タッチ決済",
+      "Apple Pay",
+      "iD",
+      "QUICPay",
+      "交通系電子マネー",
+      "PayPay",
+      "au PAY",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p220",
@@ -3678,14 +3690,17 @@
       {
         "url": "https://x.com/yodaka_info/status/2117588798548881756",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/yodaka_info/status/2118691079881121909",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -3711,7 +3726,19 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no05/product/p221_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "タッチ決済",
+      "Apple Pay",
+      "iD",
+      "QUICPay",
+      "交通系電子マネー",
+      "PayPay",
+      "au PAY",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p221",
@@ -3720,14 +3747,177 @@
       {
         "url": "https://x.com/yodaka_info/status/2117819218477592587",
         "retrievedAt": "2026-11-04"
+      },
+      {
+        "url": "https://x.com/yodaka_info/status/2118691079881121909",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "playMinutes",
+      "players"
+    ]
+  },
+  {
+    "name": "さよならのやりなおし（ハンドメイド版）",
+    "price": 7000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "専用のカット・印刷を施した15周年記念作の特別版",
+    "description": "15周年記念の新作『さよならのやりなおし』を、ディレクターのこだわりを詰め込んだハンドメイドで作った特別版。一部アイテムのデザインが通常版と異なるが、謎の内容は通常版と同じ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 110,
+      "max": null
+    },
+    "players": null,
+    "isNew": true,
+    "limited": "両日合計50部（現地販売と予約分を含む）",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "タッチ決済",
+      "Apple Pay",
+      "iD",
+      "QUICPay",
+      "交通系電子マネー",
+      "PayPay",
+      "au PAY",
+      "WeChat Pay",
+      "Alipay+"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/yodaka_info/status/2118709285513552097",
+        "retrievedAt": "2026-11-07"
+      },
+      {
+        "url": "https://x.com/yodaka_info/status/2118691079881121909",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no05-3",
+    "hashtags": [],
+    "boothId": "no05",
+    "unconfirmed": [
+      "difficulty",
       "players",
-      "payment"
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "ORINAZO 世界一周",
+    "price": 2800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "紙を折って解く、世界一周がテーマの謎解きゲーム",
+    "description": "紙を折って謎を解くか、謎を解いて紙を折るか？世界一周をテーマにした謎解きゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 60,
+      "max": 180
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "タッチ決済",
+      "Apple Pay",
+      "iD",
+      "QUICPay",
+      "交通系電子マネー",
+      "PayPay",
+      "au PAY",
+      "WeChat Pay",
+      "Alipay+"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/yodaka_info/status/2118691079881121909",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no05-4",
+    "hashtags": [],
+    "boothId": "no05",
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "ドジな勇者は26回脱出する",
+    "price": 2800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "RPGがテーマの、26ステージの脱出劇に挑む謎解き",
+    "description": "RPGをテーマにした謎解きゲーム。26ステージの脱出劇に挑む。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": 180
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "タッチ決済",
+      "Apple Pay",
+      "iD",
+      "QUICPay",
+      "交通系電子マネー",
+      "PayPay",
+      "au PAY",
+      "WeChat Pay",
+      "Alipay+"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/yodaka_info/status/2118691079881121909",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no05-5",
+    "hashtags": [],
+    "boothId": "no05",
+    "unconfirmed": [
+      "difficulty",
+      "players",
+      "imageUrl"
     ]
   },
   {
@@ -12128,6 +12318,10 @@
       {
         "url": "https://news.cube-soft.jp/article/4104883",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "boothId": "no23",
@@ -12171,6 +12365,10 @@
       {
         "url": "https://news.cube-soft.jp/article/4104883",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "boothId": "no23",
@@ -12214,6 +12412,10 @@
       {
         "url": "https://news.cube-soft.jp/article/4104883",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "boothId": "no23",
@@ -12223,6 +12425,45 @@
       "playMinutes",
       "players",
       "isNew",
+      "payment"
+    ]
+  },
+  {
+    "name": "ナゾトキマーケット2026 限定謎付きグッズセット",
+    "price": 3200,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "公式グッズ全種とセット限定の謎のセット。トートの色を選べる",
+    "description": "公式オリジナルグッズ全種（謎付きクリアファイル・参加記念ステッカーセット・トートバッグ）に、セット限定の特別な謎がつく。トートバッグはナチュラル／ネイビーから選べる。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": "数量限定・会場限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no23-4",
+    "hashtags": [],
+    "boothId": "no23",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -19324,6 +19565,10 @@
       {
         "url": "https://x.com/guzuria_vtuber/status/2115407685567070654",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [
@@ -19361,6 +19606,123 @@
     "unconfirmed": [
       "difficulty",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "name": "ナゾトキゲーム code:box 探偵助手と、遠回りのメッセージ編（新装版）",
+    "price": 4000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "code:boxシリーズの準新作を新装版で販売",
+    "description": "code:boxシリーズの準新作。今回は新装版。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no49-2",
+    "hashtags": [],
+    "boothId": "no49",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "ぐずりありどるメモリーズ PDF版",
+    "price": 500,
+    "priceNote": null,
+    "category": "online",
+    "oneLiner": "旧作セールのPDF版",
+    "description": "旧作セールとしてPDF版を販売。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no49-3",
+    "hashtags": [],
+    "boothId": "no49",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "謎解きトランプ",
+    "price": 1000,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "旧作セールの謎解きトランプ",
+    "description": "旧作セールとして販売。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no49-4",
+    "hashtags": [],
+    "boothId": "no49",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl",
       "payment"
     ]
   },
@@ -21672,7 +22034,7 @@
     },
     "players": null,
     "isNew": true,
-    "limited": null,
+    "limited": "ヒント機能の実装は11/11(水) 21:00の予定",
     "days": [
       "sat",
       "sun"
@@ -21690,6 +22052,10 @@
       {
         "url": "https://x.com/site_Arcana/status/2117572503040344122",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/site_Arcana/status/2118695777828753836",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [],
@@ -25314,6 +25680,174 @@
     "boothId": "no71",
     "hashtags": [],
     "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "シン・真相室",
+    "price": null,
+    "priceNote": "価格は告知に記載なし",
+    "category": "kit",
+    "oneLiner": "前回発売の持ち帰り謎。少量のみ",
+    "description": "お品書き画像の商品とは別に、少量だけ持参。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "少量のみ",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no71-2",
+    "hashtags": [],
+    "boothId": "no71",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "心技体セット",
+    "price": null,
+    "priceNote": "価格は告知に記載なし",
+    "category": "kit",
+    "oneLiner": "前回発売のセット。少量のみ",
+    "description": "お品書き画像の商品とは別に、少量だけ持参。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "少量のみ",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no71-3",
+    "hashtags": [],
+    "boothId": "no71",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "ザコモン缶バッジ",
+    "price": null,
+    "priceNote": "価格は告知に記載なし",
+    "category": "goods",
+    "oneLiner": "ザコモンの缶バッジ。少量のみ",
+    "description": "お品書き画像の商品とは別に、少量だけ持参。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "少量のみ",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no71-4",
+    "hashtags": [],
+    "boothId": "no71",
+    "unconfirmed": [
+      "price",
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "ザコモンTシャツ",
+    "price": null,
+    "priceNote": "価格は告知に記載なし",
+    "category": "goods",
+    "oneLiner": "ザコモンのTシャツ。少量のみ",
+    "description": "お品書き画像の商品とは別に、少量だけ持参。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": "少量のみ",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/nazotokibancho/status/2118683595971948994",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no71-5",
+    "hashtags": [],
+    "boothId": "no71",
+    "unconfirmed": [
+      "price",
       "difficulty",
       "playMinutes",
       "players",
@@ -29404,7 +29938,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no80/product/p214_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p214",
@@ -29421,6 +29957,10 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2112876560223232055",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [
@@ -29442,9 +29982,7 @@
         ]
       }
     ],
-    "unconfirmed": [
-      "payment"
-    ]
+    "unconfirmed": []
   },
   {
     "id": "no80-3",
@@ -29472,7 +30010,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no80/product/p213_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p213",
@@ -29485,12 +30025,14 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2116862837943316768",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [],
-    "unconfirmed": [
-      "payment"
-    ]
+    "unconfirmed": []
   },
   {
     "id": "no80-4",
@@ -29518,7 +30060,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no80/product/p212_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p212",
@@ -29531,12 +30075,14 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2116501194659258810",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [],
-    "unconfirmed": [
-      "payment"
-    ]
+    "unconfirmed": []
   },
   {
     "id": "no80-1",
@@ -29560,7 +30106,9 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HVI1_GyboAApkI5?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/tsukumorozuya/status/2112861469318779275",
@@ -29573,6 +30121,10 @@
       {
         "url": "https://x.com/tsukumorozuya/status/2112861468970594761",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [
@@ -29598,8 +30150,327 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
+      "players"
+    ]
+  },
+  {
+    "name": "ツクモロステッカー（5種セット）",
+    "price": 800,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "ツクモロのステッカー5種セット（シークレットあり）",
+    "description": "ツクモロのステッカー5種セット（シークレットあり）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-5",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
       "players",
-      "payment"
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "ツクモロのまたとない不運な一日",
+    "price": 600,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "キット型持ち帰り謎解き（旧作）",
+    "description": "キット型持ち帰り謎解き（旧作）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-6",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "九十九金運開運御守",
+    "price": 1100,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "謎付きアクリルキーホルダー（旧作）",
+    "description": "謎付きアクリルキーホルダー（旧作）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-7",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "解解 -kaidoku- vol.001『境』",
+    "price": 600,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "キット型持ち帰り謎解き。暗号もの（旧作）",
+    "description": "キット型持ち帰り謎解き。暗号もの（旧作）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-8",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "Collapse",
+    "price": 1500,
+    "priceNote": null,
+    "category": "booklet",
+    "oneLiner": "新クトゥルフ神話TRPGのシナリオ集（3本入り）",
+    "description": "新クトゥルフ神話TRPGのシナリオ集（3本入り）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-9",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "adapt",
+    "price": 1200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "キット型持ち帰り謎解き（旧作）",
+    "description": "キット型持ち帰り謎解き（旧作）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-10",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "形 -katachi-",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "言葉を使わないキット型持ち帰り謎解き（旧作）",
+    "description": "言葉を使わないキット型持ち帰り謎解き（旧作）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-11",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "99g -ツクモグラム-",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "キット型持ち帰り謎解き（旧作）",
+    "description": "キット型持ち帰り謎解き（旧作）。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
+      }
+    ],
+    "id": "no80-12",
+    "hashtags": [],
+    "boothId": "no80",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
     ]
   },
   {
@@ -31241,7 +32112,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": null,
+    "limited": "販売用カードの到着待ちで、少なくとも初日（11/7）昼過ぎまで在庫なし",
     "days": [
       "sat",
       "sun"
@@ -31258,6 +32129,10 @@
       {
         "url": "https://x.com/AsayakeRepublic/status/2117089322361082124",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/AsayakeRepublic/status/2118720667344621720",
+        "retrievedAt": "2026-11-07"
       }
     ],
     "hashtags": [],
