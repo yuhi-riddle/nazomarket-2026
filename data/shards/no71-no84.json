@@ -652,9 +652,13 @@
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
               "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "limited": "150部",
+          "limited": "150部。お一人様5点まで",
           "payment": [
             "現金",
             "クレジットカード"
@@ -678,7 +682,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "20部",
+          "limited": "20部。お一人様1点まで",
           "days": [
             "sat",
             "sun"
@@ -691,6 +695,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -711,7 +719,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "50部",
+          "limited": "50部。お一人様3点まで",
           "days": [
             "sat",
             "sun"
@@ -724,6 +732,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -744,7 +756,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "100部",
+          "limited": "100部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -757,6 +769,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -777,7 +793,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "100部",
+          "limited": "100部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -790,6 +806,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -810,7 +830,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "100部",
+          "limited": "100部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -823,6 +843,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -843,7 +867,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "120部",
+          "limited": "120部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -856,6 +880,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -876,7 +904,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": "200部",
+          "limited": "200部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -889,6 +917,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -909,7 +941,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": "100部",
+          "limited": "100部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -922,6 +954,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -942,7 +978,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": "100部",
+          "limited": "100部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -955,6 +991,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -975,7 +1015,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": "100部",
+          "limited": "100部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -988,6 +1028,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1008,7 +1052,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": "100部",
+          "limited": "100部。お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1021,6 +1065,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1041,7 +1089,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1054,6 +1102,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1074,7 +1126,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1087,6 +1139,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1107,7 +1163,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1120,6 +1176,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1140,7 +1200,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1153,6 +1213,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1173,7 +1237,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1186,6 +1250,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1206,7 +1274,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1219,6 +1287,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1239,7 +1311,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1252,6 +1324,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1272,7 +1348,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1285,6 +1361,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1305,7 +1385,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1318,6 +1398,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1338,7 +1422,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1351,6 +1435,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1371,7 +1459,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1384,6 +1472,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1404,7 +1496,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": true,
-          "limited": null,
+          "limited": "お一人様5点まで",
           "days": [
             "sat",
             "sun"
@@ -1417,6 +1509,10 @@
           "sources": [
             {
               "url": "https://x.com/nichonazo/status/2118327538238001155",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/nichonazo/status/2118670446044512482",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1488,8 +1584,8 @@
         {
           "id": "no74-1",
           "name": "十六夜絵図 - イザヨイエズ -",
-          "price": null,
-          "priceNote": null,
+          "price": 1400,
+          "priceNote": "新作『星空のロストシグナル』と一緒に買うと1,200円（2作セット3,200円）",
           "category": "kit",
           "oneLiner": "カードを組み合わせて地図を繋げていく持ち帰り謎",
           "description": "ある町に伝わる都市伝説『十六夜絵図』。謎を解き、カードを組み合わせ、地図を繋げていくと隠された真相が少しずつ姿を現す。",
@@ -1501,7 +1597,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "限定再販",
           "days": [
             "sat",
             "sun"
@@ -1512,6 +1608,14 @@
             {
               "url": "https://x.com/NaZO_LAB/status/2117553923691360303",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/NaZO_LAB/status/2118629555321905428",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/NaZO_LAB/status/2118627157593477469",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1546,8 +1650,43 @@
             {
               "url": "https://x.com/NaZO_LAB/status/2118484972738879611",
               "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/NaZO_LAB/status/2118629555321905428",
+              "retrievedAt": "2026-11-06"
             }
           ]
+        },
+        {
+          "name": "2作品セット（星空のロストシグナル＋十六夜絵図）",
+          "price": 3200,
+          "priceNote": "通常3,400円から200円引き",
+          "category": "kit",
+          "oneLiner": "新作と限定再販の2作をまとめたセット",
+          "description": "新作『星空のロストシグナル』（2,000円）と限定再販『十六夜絵図』（1,400円）のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/NaZO_LAB/status/2118629555321905428",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no74-3",
+          "hashtags": []
         }
       ],
       "candidates": [
@@ -1777,6 +1916,10 @@
             {
               "url": "https://x.com/toykakeboze/status/2116505671361560762",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/toykakeboze/status/2118630034835755010",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "playMinutes": null,
@@ -2030,7 +2173,7 @@
           "playMinutes": null,
           "players": null,
           "isNew": false,
-          "limited": null,
+          "limited": "代表のサイン入り",
           "days": [
             "sat",
             "sun"
@@ -2049,6 +2192,10 @@
             {
               "url": "https://x.com/toykakeboze/status/1537760847652876288",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/toykakeboze/status/2118630034835755010",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no75-6"
@@ -4542,7 +4689,7 @@
       "officialPatches": [
         {
           "id": "p209",
-          "priceNote": "『0』『1』をまとめた公式掲載。500円が各作品の価格か2種セットの価格かは説明本文に明記なし。",
+          "priceNote": "『ゼロ』『イチ』各500円",
           "payment": [
             "現金",
             "クレジットカード",
@@ -4562,6 +4709,10 @@
           "sources": [
             {
               "url": "https://x.com/0001_nazo/status/2117951633535684787",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/0001_nazo/status/2118674774381785122",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -4588,6 +4739,10 @@
             {
               "url": "https://x.com/0001_nazo/status/2117951633535684787",
               "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/0001_nazo/status/2118674774381785122",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4613,24 +4768,201 @@
             {
               "url": "https://x.com/0001_nazo/status/2117951633535684787",
               "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/0001_nazo/status/2118674774381785122",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
       ],
-      "products": [],
-      "candidates": [
+      "products": [
+        {
+          "name": "なぞみくじ",
+          "price": 100,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "100円で引ける謎つきのおみくじ",
+          "description": "100円で引ける謎つきのおみくじ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "メルペイ",
+            "COIN+",
+            "WeChat Pay",
+            "UnionPay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/0001_nazo/status/2118674774381785122",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no81-1",
+          "hashtags": []
+        },
+        {
+          "name": "START!!",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎解き初心者から楽しめるA5サイズの謎解きグッズ",
+          "description": "謎解き初心者からお楽しみいただける謎解きグッズ（持ち帰り謎）。A5サイズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "メルペイ",
+            "COIN+",
+            "WeChat Pay",
+            "UnionPay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/0001_nazo/status/2118674774381785122",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no81-2",
+          "hashtags": []
+        },
         {
           "name": "トニナルコトバ",
           "price": 2500,
-          "reason": "2025年のナゾトキマーケット(Cc4・土日)の商品。『瞬発力と語彙力でコトバをひらめけ！』。今回の出品とは書かれていない",
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "単純明快なルールで戦う対戦型ひらめきカードゲーム",
+          "description": "単純明快なルールで戦う対戦型ひらめきカードゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "メルペイ",
+            "COIN+",
+            "WeChat Pay",
+            "UnionPay",
+            "Alipay+"
+          ],
           "sources": [
             {
-              "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/0001_nazo/status/2118674774381785122",
+              "retrievedAt": "2026-11-06"
             }
-          ]
+          ],
+          "id": "no81-3",
+          "hashtags": []
+        },
+        {
+          "name": "八回廻し",
+          "price": 1500,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "あるものを八回使い回して解く謎解きグッズ",
+          "description": "あるものを八回使い回して解く、初心者から楽しめる謎解きグッズ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "au PAY",
+            "楽天ペイ",
+            "J-Coin",
+            "Smart Code",
+            "メルペイ",
+            "COIN+",
+            "WeChat Pay",
+            "UnionPay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/0001_nazo/status/2118674774381785122",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no81-4",
+          "hashtags": []
         }
-      ]
+      ],
+      "candidates": []
     },
     {
       "boothId": "no82",

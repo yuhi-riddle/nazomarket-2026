@@ -146,7 +146,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2113586235293761546",
@@ -183,6 +188,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2116107847519940928",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -232,7 +241,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -241,6 +255,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2105960995755565120",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -263,7 +281,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -272,6 +295,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2085561583129018550",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small"
@@ -300,11 +327,20 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -330,7 +366,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HNEmLLkaYAANOQ5?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -339,6 +380,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2078321361139720403",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -364,7 +409,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HPAYGMMbwAILged?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -373,6 +423,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2085561583129018550",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -398,7 +452,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HPAYGMEaQAI53cA?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -407,6 +466,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2085561583129018550",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -432,7 +495,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HMHC9OsbQAA54hk?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -441,6 +509,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2075512853969399856",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -466,7 +538,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HMwIIl4bcAAJBUK?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -475,6 +552,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2076969967375859731",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -500,7 +581,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HPAXQWoaUAAYptE?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -509,6 +595,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2085199184094011572",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -534,7 +624,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HMgwuwFasAAr6hD?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -543,6 +638,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2076154587006779563",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -568,7 +667,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HMHbeSpa0AA5K9E?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -577,6 +681,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2074418146157670595",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -602,7 +710,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HRCknjlasAA0f7u?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -611,6 +724,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2095346050957492455",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -636,7 +753,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HRCknjcbQAAoCPt?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -645,6 +767,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2095346050957492455",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -670,7 +796,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HSJ8tVhaAAAKdc9?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -679,6 +810,10 @@
             {
               "url": "https://x.com/nazo_rpg/status/2099694695068938531",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -704,7 +839,12 @@
             "sun"
           ],
           "imageUrl": "https://nazoxnazo.com/wp-content/uploads/2025/05/kamakura_nazosampo_MV-1086x1536.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -713,6 +853,10 @@
             {
               "url": "https://nazoxnazo.com",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -738,11 +882,20 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117225218506711378",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -768,11 +921,20 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117225218506711378",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -798,11 +960,20 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117225218506711378",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -828,11 +999,20 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "交通系電子マネー",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/nazo_rpg/status/2117225218506711378",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
@@ -3356,6 +3536,37 @@
               "retrievedAt": "2026-11-05"
             }
           ]
+        },
+        {
+          "name": "大富豪セット",
+          "price": 23500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "謎17個とオリジナルグッズ2個が入ったセット",
+          "description": "17個の謎とオリジナルグッズ2個が入ったセット。購入すると福引を23回引ける。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": "両日合わせて2点限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/escape_cafe/status/2118649431818158442",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no24-4",
+          "hashtags": []
         }
       ],
       "candidates": []
@@ -3411,7 +3622,13 @@
           "category": "kit",
           "oneLiner": "焼肉謎5部位とキーホルダー5種の限定セット",
           "priceNote": "単品でそろえるより1,000円引き。謎のみ5作品のセットとは内容が異なる。",
-          "limited": "ナゾトキマーケット限定、2日間合計10セット"
+          "limited": "ナゾトキマーケット限定、2日間合計10セット",
+          "sources": [
+            {
+              "url": "https://x.com/tanteijelly/status/2118659673679081622",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
         },
         {
           "id": "p120",

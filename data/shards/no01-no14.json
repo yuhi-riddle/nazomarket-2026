@@ -1619,7 +1619,7 @@
           "retrievedAt": "2026-10-30"
         }
       ],
-      "notes": "HPのトップ・ニュース(〜2026-10-06)にナゾトキマーケットの告知なし。公式ブース概要にも商品名なし。オンラインショップの最新作は候補止まり。検索でも個別の出品情報は出ず。Xで告知があれば取れそう / X(@tumbleweedjp)確認済み。2026-08-21の出展告知は「新作をはじめとする大人気商品を多数販売予定」とだけで商品名・価格なし。9月以降の投稿(ゲムマ出展・クリスマス公演など)にも今回の商品名なし。候補は候補のまま / 再収集(10/30 Web): 通販ショップに11/7(土)00:00発売の新作3点(『10』4,800円・HIRAMEKI TRUMP BLACK 3,000円・WHITE 2,800円)が出たが、販売先はオンラインショップのみの記載でナゾトキマーケットでの販売は書かれておらず候補止まり。HPニュースは10/06以降更新なし / 再収集(10/30 X): 10/24 以降の @tumbleweedjp の投稿(10/27 HIRAMEKI TRUMP BLACK/WHITE の情報解禁、10/29 10周年記念公演SPの告知など)にナゾトキマーケットでの販売の記載なし。候補のまま 再収集(11/2 X): 『10』と HIRAMEKI TRUMP 2種は返信投稿に外部出展の明記があったため商品へ移した。タイタン・Q は明記がなく候補のまま。",
+      "notes": "HPのトップ・ニュース(〜2026-10-06)にナゾトキマーケットの告知なし。公式ブース概要にも商品名なし。オンラインショップの最新作は候補止まり。検索でも個別の出品情報は出ず。Xで告知があれば取れそう / X(@tumbleweedjp)確認済み。2026-08-21の出展告知は「新作をはじめとする大人気商品を多数販売予定」とだけで商品名・価格なし。9月以降の投稿(ゲムマ出展・クリスマス公演など)にも今回の商品名なし。候補は候補のまま / 再収集(10/30 Web): 通販ショップに11/7(土)00:00発売の新作3点(『10』4,800円・HIRAMEKI TRUMP BLACK 3,000円・WHITE 2,800円)が出たが、販売先はオンラインショップのみの記載でナゾトキマーケットでの販売は書かれておらず候補止まり。HPニュースは10/06以降更新なし / 再収集(10/30 X): 10/24 以降の @tumbleweedjp の投稿(10/27 HIRAMEKI TRUMP BLACK/WHITE の情報解禁、10/29 10周年記念公演SPの告知など)にナゾトキマーケットでの販売の記載なし。候補のまま 再収集(11/2 X): 『10』と HIRAMEKI TRUMP 2種は返信投稿に外部出展の明記があったため商品へ移した。タイタン・Q は明記がなく候補のまま。 再収集(11/6 夜 X): 前日のラインナップ画像で12作品(新作4)と価格を確認し、未掲載の8作品を追加。候補だったタイタン・Qも含まれていたので商品へ移した。支払いは現金/PayPay。",
       "officialPatches": [
         {
           "id": "p108",
@@ -1643,7 +1643,10 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://shop.tumbleweed.jp/items/132792221",
@@ -1652,6 +1655,10 @@
             {
               "url": "https://x.com/tumbleweedjp/status/2114688550394569138",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1677,7 +1684,10 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://shop.tumbleweed.jp/items/156794997",
@@ -1690,6 +1700,10 @@
             {
               "url": "https://x.com/tumbleweedjp/status/2115044090509496450",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1715,7 +1729,10 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://shop.tumbleweed.jp/items/157516845",
@@ -1728,6 +1745,10 @@
             {
               "url": "https://x.com/tumbleweedjp/status/2115036718600757693",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/be872998e9864d9a348c231df2f15f60.png?imformat=generic&q=90&im=Resize,width=1200,type=normal"
@@ -1738,7 +1759,7 @@
           "id": "no02-4",
           "name": "UNSTOPPABLE（パッケージ版）",
           "price": 2800,
-          "priceNote": "オンラインショップの価格。会場価格は告知に記載なし",
+          "priceNote": null,
           "category": "online",
           "oneLiner": "爆弾列車を止めるWEBゲームのパッケージ版。シリアルカードと限定ステッカー付き",
           "description": "爆弾列車を止めるWEBゲームのパッケージ版。シリアルカードと限定ステッカー付き。",
@@ -1756,7 +1777,10 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWXG77CbYAAyaZl?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
               "url": "https://x.com/tumbleweedjp/status/2118318230255349920",
@@ -1765,34 +1789,351 @@
             {
               "url": "https://shop.tumbleweed.jp/items/164360928",
               "retrievedAt": "2026-11-06"
-            }
-          ]
-        }
-      ],
-      "candidates": [
-        {
-          "name": "深海の城 タイタン（キット版）",
-          "price": 3000,
-          "reason": "2026-10-17発売の通販新作。ナゾトキマーケットで売るとは書かれていない",
-          "sources": [
+            },
             {
-              "url": "https://shop.tumbleweed.jp/items/154795582",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/michi_place/status/2118643517438431434",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
         {
-          "name": "Tumbleweed 10th Anniversary『Q』（制作：NazoLock×タンブルウィード）",
-          "price": 3000,
-          "reason": "2026-08-07発売の通販商品。ナゾトキマーケットで売るとは書かれていない",
+          "name": "TUMBLEWEED ALLSTAR THE LAST",
+          "price": 22000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "テーマ『十人十色』で10人のクリエイターが作った10作品入り",
+          "description": "結びを飾る最後のテーマは『十人十色』。10人のクリエイターが集大成として放つ10作品。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+          },
+          "playMinutes": {
+            "min": 650,
+            "max": null
+          },
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
           "sources": [
             {
-              "url": "https://shop.tumbleweed.jp/items/147425079",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
             }
-          ]
+          ],
+          "id": "no02-5",
+          "hashtags": []
+        },
+        {
+          "name": "Q",
+          "price": 3000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "NazoLockとタンブルウィードの共同制作。クイズと謎解きの融合",
+          "description": "QuizKnock発のナゾトキ制作集団「NazoLock」とタンブルウィードの共同制作。クイズと謎解きを組み合わせた謎解き。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 180
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no02-6",
+          "hashtags": []
+        },
+        {
+          "name": "SORT+CONTROLLER 名作復刻セット",
+          "price": 5000,
+          "priceNote": "通常5,300円から300円引き",
+          "category": "kit",
+          "oneLiner": "名作『SORT』『CONTROLLER』の2作セット",
+          "description": "タンブルウィードの名作『SORT』『CONTROLLER』の2作をまとめた特別価格のセット。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 LEVEL 8/10 → 8/10×5=4 → 4"
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": 360
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no02-7",
+          "hashtags": []
+        },
+        {
+          "name": "26+12 タンブルウィードスターターセット",
+          "price": 5000,
+          "priceNote": "通常5,300円から300円引き",
+          "category": "kit",
+          "oneLiner": "代表作『26』『12』の2作セット。初めての人向け",
+          "description": "代表作『26』と『12』の2作品のセット。タンブルウィードが初めての人向け。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 LEVEL 6/10 → 6/10×5=3 → 3"
+          },
+          "playMinutes": {
+            "min": 150,
+            "max": 300
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no02-8",
+          "hashtags": []
+        },
+        {
+          "name": "深海の城タイタン キット版",
+          "price": 3000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "異言語解読のナゾトキゲームをキットにしたもの",
+          "description": "タンブルウィードの名作を一箱にしたキット版。異文化交流がテーマの異言語解読ナゾトキゲーム。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 LEVEL 8/10 → 8/10×5=4 → 4"
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 180
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no02-9",
+          "hashtags": []
+        },
+        {
+          "name": "INTO THE TWIN TOWER",
+          "price": 2800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "2つのキットを持ち寄って2人で解くペア謎",
+          "description": "2つのキットを持ち寄り、ペアで協力して解き明かすタイプの持ち帰りナゾ。昨年のクリスマスペアナゾで配布したものを数量限定で販売。",
+          "difficulty": {
+            "level": 3,
+            "source": "official",
+            "basis": "団体表記 LEVEL 6/10 → 6/10×5=3 → 3"
+          },
+          "playMinutes": {
+            "min": 80,
+            "max": 160
+          },
+          "players": "2人",
+          "isNew": false,
+          "limited": "数量限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no02-10",
+          "hashtags": []
+        },
+        {
+          "name": "テストプレイお願いします",
+          "price": 2800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "発売前のナゾトキグッズを最終テストプレイする謎",
+          "description": "発売前のナゾトキグッズ『SQUARE』の最終テストプレイを頼まれたあなた。疑心暗鬼のナゾトキ体験。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+          },
+          "playMinutes": {
+            "min": 80,
+            "max": 200
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no02-11",
+          "hashtags": []
+        },
+        {
+          "name": "ULTIMATE PUZZLE TOWER",
+          "price": 2200,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "パズルを解き進めて『塔の真相』に迫る謎",
+          "description": "パズルを解き明かし、『塔の真相』を解き明かす。王道パズルが中心。",
+          "difficulty": {
+            "level": 4,
+            "source": "official",
+            "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+          },
+          "playMinutes": {
+            "min": 180,
+            "max": 360
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no02-12",
+          "hashtags": []
         }
-      ]
+      ],
+      "candidates": []
     },
     {
       "boothId": "no03",

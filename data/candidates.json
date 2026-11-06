@@ -1,29 +1,5 @@
 [
   {
-    "boothId": "no02",
-    "name": "深海の城 タイタン（キット版）",
-    "price": 3000,
-    "reason": "2026-10-17発売の通販新作。ナゾトキマーケットで売るとは書かれていない",
-    "sources": [
-      {
-        "url": "https://shop.tumbleweed.jp/items/154795582",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no02",
-    "name": "Tumbleweed 10th Anniversary『Q』（制作：NazoLock×タンブルウィード）",
-    "price": 3000,
-    "reason": "2026-08-07発売の通販商品。ナゾトキマーケットで売るとは書かれていない",
-    "sources": [
-      {
-        "url": "https://shop.tumbleweed.jp/items/147425079",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
     "boothId": "no03",
     "name": "謎のマティーニ（LIQUOR GAMERS CLUB×RIDDLER）",
     "price": 2400,
@@ -1083,18 +1059,6 @@
     "sources": [
       {
         "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no81",
-    "name": "トニナルコトバ",
-    "price": 2500,
-    "reason": "2025年のナゾトキマーケット(Cc4・土日)の商品。『瞬発力と語彙力でコトバをひらめけ！』。今回の出品とは書かれていない",
-    "sources": [
-      {
-        "url": "https://www.scrapmagazine.com/news/nazotokimarket-1031/",
         "retrievedAt": "2026-10-25"
       }
     ]
