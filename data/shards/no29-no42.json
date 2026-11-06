@@ -1650,12 +1650,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://nazoad.com/wp-content/uploads/2025/10/100yen-707x1000.jpg",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/nazotoki_adv/status/2117540595363455289",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://nazoad.com/event/100yen/",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }

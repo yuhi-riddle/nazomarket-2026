@@ -197,6 +197,33 @@
     "width": 680,
     "height": 680
   },
+  "no03-2": {
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/riddlebox_2x-100.jpg?v=1702389179",
+    "left": 0.03,
+    "right": 0.03,
+    "top": 0.03,
+    "bottom": 0.03,
+    "width": 2000,
+    "height": 2000
+  },
+  "no03-3": {
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/riddlebox2_2x-100.jpg?v=1702390395",
+    "left": 0.03,
+    "right": 0.03,
+    "top": 0.03,
+    "bottom": 0.03,
+    "width": 2000,
+    "height": 2000
+  },
+  "no03-4": {
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/2112_ALPHABETZ_product_f_2x-100.jpg?v=1730203201",
+    "left": 0.03,
+    "right": 0.03,
+    "top": 0.03,
+    "bottom": 0.03,
+    "width": 2000,
+    "height": 2000
+  },
   "no04-2": {
     "imageUrl": "https://pbs.twimg.com/media/HV83r8Ia8AAmSR_?format=jpg&name=small",
     "left": 0.0412,
@@ -296,6 +323,15 @@
     "width": 590,
     "height": 590
   },
+  "no09-2": {
+    "imageUrl": "https://pbs.twimg.com/media/HImJFl0asAARxiv.jpg?format=jpg&name=small",
+    "left": 0,
+    "right": 0,
+    "top": 0.0235,
+    "bottom": 0,
+    "width": 480,
+    "height": 680
+  },
   "no10-2": {
     "imageUrl": "https://pbs.twimg.com/media/HVyNwORaAAAUpTl?format=jpg&name=small",
     "left": 0.0353,
@@ -313,6 +349,42 @@
     "bottom": 0,
     "width": 482,
     "height": 680
+  },
+  "no11-4": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/ffb767090dbaca8682ef604dd88061f6.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+    "left": 0,
+    "right": 0,
+    "top": 0.0879,
+    "bottom": 0,
+    "width": 640,
+    "height": 910
+  },
+  "no11-5": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/70302038ff359e09cf8d54b96e495f9c.png?imformat=generic&q=90&im=Resize,width=640,type=normal",
+    "left": 0.0391,
+    "right": 0.0391,
+    "top": 0.025,
+    "bottom": 0.0297,
+    "width": 640,
+    "height": 640
+  },
+  "no11-7": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/d07519471f85f20c6f19317e1c180d99.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+    "left": 0,
+    "right": 0,
+    "top": 0.1859,
+    "bottom": 0.0406,
+    "width": 640,
+    "height": 640
+  },
+  "no11-8": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/94d4a570547c0e4419547ac2a97bb6ca.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
+    "left": 0.0422,
+    "right": 0.0422,
+    "top": 0.0319,
+    "bottom": 0.0319,
+    "width": 640,
+    "height": 910
   },
   "no12-10": {
     "imageUrl": "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/5e96c15955fa0371b7dba1da/a61025f174a9f71c28b1.jpg/fit=scale-down,w=1200",
@@ -853,6 +925,15 @@
     "bottom": 0,
     "width": 800,
     "height": 467
+  },
+  "no33-3": {
+    "imageUrl": "https://nazoad.com/wp-content/uploads/2025/10/100yen-707x1000.jpg",
+    "left": 0.041,
+    "right": 0.0438,
+    "top": 0.174,
+    "bottom": 0.178,
+    "width": 707,
+    "height": 1000
   },
   "no34-2": {
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no34/product/p138_photo1.png",
@@ -1528,6 +1609,24 @@
     "bottom": 0.0643,
     "width": 1201,
     "height": 1601
+  },
+  "no75-11": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/37e47afa8eca07f58fe869640739b57f.png?im=Resize%2Cwidth%3D1280%2Ctype%3Dnormal&imformat=generic&q=90",
+    "left": 0.0703,
+    "right": 0.0688,
+    "top": 0.0319,
+    "bottom": 0.033,
+    "width": 1280,
+    "height": 1816
+  },
+  "no75-12": {
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/37035635a7e81a7971859b8bef3dad92.png?im=Resize%2Cwidth%3D1280%2Ctype%3Dnormal&imformat=generic&q=90",
+    "left": 0.0656,
+    "right": 0.0648,
+    "top": 0.0336,
+    "bottom": 0.033,
+    "width": 1280,
+    "height": 1816
   },
   "no76-1": {
     "imageUrl": "https://pbs.twimg.com/media/HV4Qv-ZbAAAUOqO?format=jpg&name=small",
