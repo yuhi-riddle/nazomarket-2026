@@ -98,7 +98,7 @@
     ],
     "kind": "discount",
     "title": "MIXStars 3種セットが7,000円",
-    "detail": "インスタント写真風カード（2,500円）・謎解きゲーム（3,300円）・履歴書（2,500円）の3種セットが、ナゾトキマーケット限定価格7,000円（セットの通常価格は7,700円）。別々に買うより1,300円安い",
+    "detail": "インスタント写真風カード（2,500円）・謎解きゲーム（3,300円）・履歴書（2,500円）の3種セットが、ナゾトキマーケット限定価格7,000円（セットの通常価格は7,700円）。別々に買うより1,300円安い。3種セットにはおまけ謎つき",
     "endsAt": null,
     "days": [
       "sat",
@@ -109,6 +109,10 @@
       {
         "url": "https://i-ku-kan.com/mixstars",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/i_kukan/status/2118644573908185236",
+        "retrievedAt": "2026-11-06"
       }
     ]
   },
@@ -572,6 +576,10 @@
       {
         "url": "https://x.com/NoEscape_game/status/2116840171735855384",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NoEscape_game/status/2118644840871207393",
+        "retrievedAt": "2026-11-06"
       }
     ]
   },
@@ -1409,6 +1417,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2117934905875157309",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118644566840811943",
+        "retrievedAt": "2026-11-06"
       }
     ]
   },
@@ -1634,6 +1646,10 @@
       {
         "url": "https://x.com/tumbleweedjp/status/2118301041032847637",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674999058047386",
+        "retrievedAt": "2026-11-06"
       }
     ]
   },
@@ -1808,6 +1824,102 @@
     "sources": [
       {
         "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no16-c4",
+    "boothId": "no16",
+    "productIds": [],
+    "kind": "discount",
+    "title": "鉄槌ミニゲームで割引クーポン",
+    "detail": "ブース（Bb6）で実際に鉄槌を振り下ろすミニゲームに参加すると割引クーポンが当たる。特賞は商品1つプレゼント。クーポンはなくなり次第終了",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "なくなり次第終了",
+    "sources": [
+      {
+        "url": "https://x.com/nazo_rpg/status/2118659666381287763",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no24-c2",
+    "boothId": "no24",
+    "productIds": [
+      "no24-4"
+    ],
+    "kind": "bonus",
+    "title": "大富豪セット購入で福引23回",
+    "detail": "「大富豪セット」（23,500円）を買った人は福引キャンペーンに23回参加できる",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "セットは両日合わせて2点限定",
+    "sources": [
+      {
+        "url": "https://x.com/escape_cafe/status/2118649431818158442",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no70-c1",
+    "boothId": "no70",
+    "productIds": [
+      "no70-4"
+    ],
+    "kind": "bonus",
+    "title": "『HIKIGANE』購入時のひと言でオリジナルグッズ",
+    "detail": "Cb18ブースで『HIKIGANE』を買うときに、ピントラボのおじさんに「呪い、解きにきました！」と声をかけるとオリジナルグッズをもらえる",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "数量限定",
+    "sources": [
+      {
+        "url": "https://x.com/pintoLab/status/2118637479360377306",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no74-c1",
+    "boothId": "no74",
+    "productIds": [
+      "no74-1",
+      "no74-2",
+      "no74-3"
+    ],
+    "kind": "discount",
+    "title": "2作品セットで200円引き（3,200円）",
+    "detail": "新作『星空のロストシグナル』（2,000円）と限定再販『十六夜絵図』（1,400円）をまとめて買うと、通常3,400円が3,200円に",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/NaZO_LAB/status/2118629555321905428",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/NaZO_LAB/status/2118627157593477469",
         "retrievedAt": "2026-11-06"
       }
     ]

@@ -1935,7 +1935,10 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no02/product/p108_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p108",
@@ -1948,12 +1951,15 @@
       {
         "url": "https://x.com/tumbleweedjp/status/2114688550394569138",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -1982,7 +1988,10 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no02/product/p109_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p109",
@@ -1999,12 +2008,15 @@
       {
         "url": "https://x.com/tumbleweedjp/status/2115044090509496450",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -2033,7 +2045,10 @@
       "sun"
     ],
     "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/be872998e9864d9a348c231df2f15f60.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
-    "payment": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p110",
@@ -2050,19 +2065,22 @@
       {
         "url": "https://x.com/tumbleweedjp/status/2115036718600757693",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
     "id": "no02-4",
     "name": "UNSTOPPABLE（パッケージ版）",
     "price": 2800,
-    "priceNote": "オンラインショップの価格。会場価格は告知に記載なし",
+    "priceNote": null,
     "category": "online",
     "oneLiner": "爆弾列車を止めるWEBゲームのパッケージ版。シリアルカードと限定ステッカー付き",
     "description": "爆弾列車を止めるWEBゲームのパッケージ版。シリアルカードと限定ステッカー付き。",
@@ -2080,7 +2098,10 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HWXG77CbYAAyaZl?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
     "sources": [
       {
         "url": "https://x.com/tumbleweedjp/status/2118318230255349920",
@@ -2089,6 +2110,18 @@
       {
         "url": "https://shop.tumbleweed.jp/items/164360928",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/michi_place/status/2118643517438431434",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no02",
@@ -2096,8 +2129,375 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
+      "players"
+    ]
+  },
+  {
+    "name": "TUMBLEWEED ALLSTAR THE LAST",
+    "price": 22000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "テーマ『十人十色』で10人のクリエイターが作った10作品入り",
+    "description": "結びを飾る最後のテーマは『十人十色』。10人のクリエイターが集大成として放つ10作品。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+    },
+    "playMinutes": {
+      "min": 650,
+      "max": null
+    },
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-5",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
       "players",
-      "payment"
+      "isNew",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "Q",
+    "price": 3000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "NazoLockとタンブルウィードの共同制作。クイズと謎解きの融合",
+    "description": "QuizKnock発のナゾトキ制作集団「NazoLock」とタンブルウィードの共同制作。クイズと謎解きを組み合わせた謎解き。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": 180
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-6",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "SORT+CONTROLLER 名作復刻セット",
+    "price": 5000,
+    "priceNote": "通常5,300円から300円引き",
+    "category": "kit",
+    "oneLiner": "名作『SORT』『CONTROLLER』の2作セット",
+    "description": "タンブルウィードの名作『SORT』『CONTROLLER』の2作をまとめた特別価格のセット。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 LEVEL 8/10 → 8/10×5=4 → 4"
+    },
+    "playMinutes": {
+      "min": 180,
+      "max": 360
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-7",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "26+12 タンブルウィードスターターセット",
+    "price": 5000,
+    "priceNote": "通常5,300円から300円引き",
+    "category": "kit",
+    "oneLiner": "代表作『26』『12』の2作セット。初めての人向け",
+    "description": "代表作『26』と『12』の2作品のセット。タンブルウィードが初めての人向け。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 LEVEL 6/10 → 6/10×5=3 → 3"
+    },
+    "playMinutes": {
+      "min": 150,
+      "max": 300
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-8",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "深海の城タイタン キット版",
+    "price": 3000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "異言語解読のナゾトキゲームをキットにしたもの",
+    "description": "タンブルウィードの名作を一箱にしたキット版。異文化交流がテーマの異言語解読ナゾトキゲーム。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 LEVEL 8/10 → 8/10×5=4 → 4"
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": 180
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-9",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "INTO THE TWIN TOWER",
+    "price": 2800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "2つのキットを持ち寄って2人で解くペア謎",
+    "description": "2つのキットを持ち寄り、ペアで協力して解き明かすタイプの持ち帰りナゾ。昨年のクリスマスペアナゾで配布したものを数量限定で販売。",
+    "difficulty": {
+      "level": 3,
+      "source": "official",
+      "basis": "団体表記 LEVEL 6/10 → 6/10×5=3 → 3"
+    },
+    "playMinutes": {
+      "min": 80,
+      "max": 160
+    },
+    "players": "2人",
+    "isNew": false,
+    "limited": "数量限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-10",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "テストプレイお願いします",
+    "price": 2800,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "発売前のナゾトキグッズを最終テストプレイする謎",
+    "description": "発売前のナゾトキグッズ『SQUARE』の最終テストプレイを頼まれたあなた。疑心暗鬼のナゾトキ体験。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+    },
+    "playMinutes": {
+      "min": 80,
+      "max": 200
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-11",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "ULTIMATE PUZZLE TOWER",
+    "price": 2200,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "パズルを解き進めて『塔の真相』に迫る謎",
+    "description": "パズルを解き明かし、『塔の真相』を解き明かす。王道パズルが中心。",
+    "difficulty": {
+      "level": 4,
+      "source": "official",
+      "basis": "団体表記 LEVEL 7/10 → 7/10×5=3.5 → 4"
+    },
+    "playMinutes": {
+      "min": 180,
+      "max": 360
+    },
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "PayPay"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118672948630598042",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/tumbleweedjp/status/2118674007658815776",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no02-12",
+    "hashtags": [],
+    "boothId": "no02",
+    "unconfirmed": [
+      "players",
+      "imageUrl"
     ]
   },
   {
@@ -7828,7 +8228,12 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no16/product/p93_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p93",
@@ -7869,6 +8274,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2116107847519940928",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [
@@ -7886,9 +8295,7 @@
         ]
       }
     ],
-    "unconfirmed": [
-      "payment"
-    ],
+    "unconfirmed": [],
     "reservations": [
       {
         "label": "11/7受け取りの先行予約（現地引換チケット）",
@@ -7925,7 +8332,12 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no16/product/p94_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p94",
@@ -7938,14 +8350,17 @@
       {
         "url": "https://x.com/nazo_rpg/status/2105960995755565120",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -7971,7 +8386,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HPAYGMEacAAScbV?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p95",
@@ -7984,14 +8404,17 @@
       {
         "url": "https://x.com/nazo_rpg/status/2085561583129018550",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8016,11 +8439,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8029,8 +8461,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -8055,7 +8486,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HNEmLLkaYAANOQ5?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8064,6 +8500,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2078321361139720403",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8071,8 +8511,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8097,7 +8536,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HPAYGMMbwAILged?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8106,6 +8550,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2085561583129018550",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8113,8 +8561,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8139,7 +8586,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HPAYGMEaQAI53cA?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8148,6 +8600,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2085561583129018550",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8155,8 +8611,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8181,7 +8636,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HMHC9OsbQAA54hk?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8190,6 +8650,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2075512853969399856",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8197,8 +8661,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8223,7 +8686,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HMwIIl4bcAAJBUK?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8232,6 +8700,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2076969967375859731",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8239,8 +8711,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8265,7 +8736,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HPAXQWoaUAAYptE?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8274,6 +8750,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2085199184094011572",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8281,8 +8761,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8307,7 +8786,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HMgwuwFasAAr6hD?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8316,6 +8800,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2076154587006779563",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8323,8 +8811,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8349,7 +8836,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HMHbeSpa0AA5K9E?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8358,6 +8850,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2074418146157670595",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8365,8 +8861,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8391,7 +8886,12 @@
       "sun"
     ],
     "imageUrl": "https://nazoxnazo.com/wp-content/uploads/2025/05/kamakura_nazosampo_MV-1086x1536.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8400,6 +8900,10 @@
       {
         "url": "https://nazoxnazo.com",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8407,8 +8911,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8433,7 +8936,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HRCknjlasAA0f7u?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8442,6 +8950,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2095346050957492455",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8449,8 +8961,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8475,7 +8986,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HRCknjcbQAAoCPt?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8484,6 +9000,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2095346050957492455",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8491,8 +9011,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8517,7 +9036,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HSJ8tVhaAAAKdc9?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117262537519718418",
@@ -8526,6 +9050,10 @@
       {
         "url": "https://x.com/nazo_rpg/status/2099694695068938531",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8533,8 +9061,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -8559,11 +9086,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117225218506711378",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8572,8 +9108,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -8598,11 +9133,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117225218506711378",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8611,8 +9155,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -8637,11 +9180,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117225218506711378",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8650,8 +9202,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -8676,11 +9227,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "交通系電子マネー",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/nazo_rpg/status/2117225218506711378",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/nazo_rpg/status/2118652114461188385",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no16",
@@ -8689,8 +9249,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -11345,6 +11904,46 @@
     ]
   },
   {
+    "name": "大富豪セット",
+    "price": 23500,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎17個とオリジナルグッズ2個が入ったセット",
+    "description": "17個の謎とオリジナルグッズ2個が入ったセット。購入すると福引を23回引ける。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": "両日合わせて2点限定",
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/escape_cafe/status/2118649431818158442",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no24-4",
+    "hashtags": [],
+    "boothId": "no24",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
     "id": "p119",
     "boothId": "no25",
     "name": "贅沢焼肉謎コース【ナゾトキマーケット限定・数量限定10セット】",
@@ -11372,6 +11971,10 @@
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p119",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tanteijelly/status/2118659673679081622",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -13925,6 +14528,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2115775666444714081",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -13979,6 +14586,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2115775666444714081",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -14017,6 +14628,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2115775666444714081",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14060,6 +14675,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14102,6 +14721,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14144,6 +14767,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14184,6 +14811,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14228,6 +14859,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14270,6 +14905,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14313,6 +14952,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14355,6 +14998,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14398,6 +15045,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14440,6 +15091,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14483,6 +15138,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14525,6 +15184,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -14567,6 +15230,10 @@
       {
         "url": "https://x.com/Another_Vision_/status/2117934897155219595",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/Another_Vision_/status/2118629471527829722",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no30",
@@ -15904,7 +16571,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no38/product/p172_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p172",
@@ -15921,13 +16590,16 @@
       {
         "url": "https://x.com/algo6le/status/2109253149198598485",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2118674763300180269",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -15956,7 +16628,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no38/product/p173_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p173",
@@ -15969,14 +16643,17 @@
       {
         "url": "https://x.com/algo6le/status/2026994276966789500",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2118674763300180269",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -16005,7 +16682,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no38/product/p174_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p174",
@@ -16018,14 +16697,17 @@
       {
         "url": "https://x.com/algo6le/status/2026994276966789500",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2118674763300180269",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -16053,7 +16735,9 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HRcF--8bcAEi-D5?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
@@ -16062,6 +16746,10 @@
       {
         "url": "https://x.com/algo6le/status/2096176515658416447",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2118674763300180269",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no38",
@@ -16069,8 +16757,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -16098,7 +16785,9 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HRcGDY0a0AAdMnA?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
@@ -16107,6 +16796,10 @@
       {
         "url": "https://x.com/algo6le/status/2096177770833617000",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2118674763300180269",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no38",
@@ -16114,8 +16807,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -16143,7 +16835,9 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HB-5mSAaMAAzaeH?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
@@ -16152,6 +16846,10 @@
       {
         "url": "https://x.com/algo6le/status/2026994276966789500",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2118674763300180269",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no38",
@@ -16159,8 +16857,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -16185,11 +16882,17 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/algo6le/status/2113963733613687128",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/algo6le/status/2118674763300180269",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no38",
@@ -16199,8 +16902,7 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -17502,7 +18204,23 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no45/product/p58_photo1.png",
-    "payment": null,
+    "payment": [
+      "クレジットカード",
+      "タッチ決済",
+      "Apple Pay",
+      "iD",
+      "QUICPay",
+      "COIN+",
+      "d払い",
+      "PayPay",
+      "au PAY",
+      "楽天ペイ",
+      "J-Coin",
+      "Smart Code",
+      "WeChat Pay",
+      "UnionPay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p58",
@@ -17519,13 +18237,16 @@
       {
         "url": "https://lp.michi.place/nanitabetara/",
         "retrievedAt": "2026-11-04"
+      },
+      {
+        "url": "https://x.com/michi_place/status/2118643526078763051",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -19287,7 +20008,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no59/product/p71_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p71",
@@ -19296,12 +20019,15 @@
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2116455138214703576",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -19330,7 +20056,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no59/product/p72_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p72",
@@ -19339,12 +20067,15 @@
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2116817532539515102",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -19373,7 +20104,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no59/product/p73_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p73",
@@ -19382,12 +20115,15 @@
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2117179908984295901",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -19415,18 +20151,23 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HV-etTTa4AAr3D-?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2117542305909625179",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -19454,7 +20195,9 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
@@ -19467,14 +20210,17 @@
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2117904706685022574",
         "retrievedAt": "2026-11-04"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -19502,19 +20248,24 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -19542,19 +20293,24 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -19582,19 +20338,24 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -19622,19 +20383,24 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -19662,19 +20428,24 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -19702,19 +20473,24 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -19742,19 +20518,24 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no59",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -24245,7 +25026,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "150部",
+    "limited": "150部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24266,6 +25047,10 @@
       },
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24292,7 +25077,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "20部",
+    "limited": "20部。お一人様1点まで",
     "days": [
       "sat",
       "sun"
@@ -24305,6 +25090,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24333,7 +25122,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "50部",
+    "limited": "50部。お一人様3点まで",
     "days": [
       "sat",
       "sun"
@@ -24346,6 +25135,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24374,7 +25167,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "100部",
+    "limited": "100部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24387,6 +25180,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24415,7 +25212,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "100部",
+    "limited": "100部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24428,6 +25225,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24456,7 +25257,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "100部",
+    "limited": "100部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24469,6 +25270,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24497,7 +25302,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "120部",
+    "limited": "120部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24510,6 +25315,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24538,7 +25347,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": "200部",
+    "limited": "200部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24551,6 +25360,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24579,7 +25392,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": "100部",
+    "limited": "100部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24592,6 +25405,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24620,7 +25437,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": "100部",
+    "limited": "100部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24633,6 +25450,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24661,7 +25482,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": "100部",
+    "limited": "100部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24674,6 +25495,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24702,7 +25527,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": "100部",
+    "limited": "100部。お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24715,6 +25540,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24743,7 +25572,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24756,6 +25585,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24784,7 +25617,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24797,6 +25630,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24825,7 +25662,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24838,6 +25675,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24866,7 +25707,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24879,6 +25720,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24907,7 +25752,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24920,6 +25765,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24948,7 +25797,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -24961,6 +25810,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -24989,7 +25842,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -25002,6 +25855,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -25030,7 +25887,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -25043,6 +25900,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -25071,7 +25932,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -25084,6 +25945,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -25112,7 +25977,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -25125,6 +25990,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -25153,7 +26022,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -25166,6 +26035,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -25194,7 +26067,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": true,
-    "limited": null,
+    "limited": "お一人様5点まで",
     "days": [
       "sat",
       "sun"
@@ -25207,6 +26080,10 @@
     "sources": [
       {
         "url": "https://x.com/nichonazo/status/2118327538238001155",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/nichonazo/status/2118670446044512482",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -25222,8 +26099,8 @@
   {
     "id": "no74-1",
     "name": "十六夜絵図 - イザヨイエズ -",
-    "price": null,
-    "priceNote": null,
+    "price": 1400,
+    "priceNote": "新作『星空のロストシグナル』と一緒に買うと1,200円（2作セット3,200円）",
     "category": "kit",
     "oneLiner": "カードを組み合わせて地図を繋げていく持ち帰り謎",
     "description": "ある町に伝わる都市伝説『十六夜絵図』。謎を解き、カードを組み合わせ、地図を繋げていくと隠された真相が少しずつ姿を現す。",
@@ -25235,7 +26112,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "限定再販",
     "days": [
       "sat",
       "sun"
@@ -25246,12 +26123,19 @@
       {
         "url": "https://x.com/NaZO_LAB/status/2117553923691360303",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/NaZO_LAB/status/2118629555321905428",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/NaZO_LAB/status/2118627157593477469",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no74",
     "hashtags": [],
     "unconfirmed": [
-      "price",
       "difficulty",
       "playMinutes",
       "players",
@@ -25289,6 +26173,10 @@
       {
         "url": "https://x.com/NaZO_LAB/status/2118484972738879611",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/NaZO_LAB/status/2118629555321905428",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no74",
@@ -25297,6 +26185,46 @@
       "difficulty",
       "playMinutes",
       "players",
+      "payment"
+    ]
+  },
+  {
+    "name": "2作品セット（星空のロストシグナル＋十六夜絵図）",
+    "price": 3200,
+    "priceNote": "通常3,400円から200円引き",
+    "category": "kit",
+    "oneLiner": "新作と限定再販の2作をまとめたセット",
+    "description": "新作『星空のロストシグナル』（2,000円）と限定再販『十六夜絵図』（1,400円）のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/NaZO_LAB/status/2118629555321905428",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no74-3",
+    "hashtags": [],
+    "boothId": "no74",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
       "payment"
     ]
   },
@@ -25340,6 +26268,10 @@
       {
         "url": "https://x.com/toykakeboze/status/2116505671361560762",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/toykakeboze/status/2118630034835755010",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [
@@ -25706,7 +26638,7 @@
     "playMinutes": null,
     "players": null,
     "isNew": false,
-    "limited": null,
+    "limited": "代表のサイン入り",
     "days": [
       "sat",
       "sun"
@@ -25725,6 +26657,10 @@
       {
         "url": "https://x.com/toykakeboze/status/1537760847652876288",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/toykakeboze/status/2118630034835755010",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no75-6",
@@ -28007,7 +28943,7 @@
     "boothId": "no81",
     "name": "謎付きクリアファイル『0(ゼロ)』『1(イチ)』",
     "price": 500,
-    "priceNote": "『0』『1』をまとめた公式掲載。500円が各作品の価格か2種セットの価格かは説明本文に明記なし。",
+    "priceNote": "『ゼロ』『イチ』各500円",
     "category": "other",
     "oneLiner": "初めての謎解きにオススメ！",
     "description": "初めての謎解きにオススメ！\n0と1をテーマとした、謎解きの楽しさをコンパクトに味わえる一作です。\n\n#ゼロイチファイル0\n#ゼロイチファイル1",
@@ -28048,6 +28984,10 @@
       },
       {
         "url": "https://x.com/0001_nazo/status/2117951633535684787",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/0001_nazo/status/2118674774381785122",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -28105,6 +29045,10 @@
       {
         "url": "https://x.com/0001_nazo/status/2117951633535684787",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/0001_nazo/status/2118674774381785122",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -28161,6 +29105,10 @@
       {
         "url": "https://x.com/0001_nazo/status/2117951633535684787",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/0001_nazo/status/2118674774381785122",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -28168,6 +29116,218 @@
       "difficulty",
       "playMinutes",
       "players"
+    ]
+  },
+  {
+    "name": "なぞみくじ",
+    "price": 100,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "100円で引ける謎つきのおみくじ",
+    "description": "100円で引ける謎つきのおみくじ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "au PAY",
+      "楽天ペイ",
+      "J-Coin",
+      "Smart Code",
+      "メルペイ",
+      "COIN+",
+      "WeChat Pay",
+      "UnionPay",
+      "Alipay+"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/0001_nazo/status/2118674774381785122",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no81-1",
+    "hashtags": [],
+    "boothId": "no81",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "START!!",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "謎解き初心者から楽しめるA5サイズの謎解きグッズ",
+    "description": "謎解き初心者からお楽しみいただける謎解きグッズ（持ち帰り謎）。A5サイズ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "au PAY",
+      "楽天ペイ",
+      "J-Coin",
+      "Smart Code",
+      "メルペイ",
+      "COIN+",
+      "WeChat Pay",
+      "UnionPay",
+      "Alipay+"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/0001_nazo/status/2118674774381785122",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no81-2",
+    "hashtags": [],
+    "boothId": "no81",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "トニナルコトバ",
+    "price": 2500,
+    "priceNote": null,
+    "category": "other",
+    "oneLiner": "単純明快なルールで戦う対戦型ひらめきカードゲーム",
+    "description": "単純明快なルールで戦う対戦型ひらめきカードゲーム。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "au PAY",
+      "楽天ペイ",
+      "J-Coin",
+      "Smart Code",
+      "メルペイ",
+      "COIN+",
+      "WeChat Pay",
+      "UnionPay",
+      "Alipay+"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/0001_nazo/status/2118674774381785122",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no81-3",
+    "hashtags": [],
+    "boothId": "no81",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "八回廻し",
+    "price": 1500,
+    "priceNote": null,
+    "category": "goods",
+    "oneLiner": "あるものを八回使い回して解く謎解きグッズ",
+    "description": "あるものを八回使い回して解く、初心者から楽しめる謎解きグッズ。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "au PAY",
+      "楽天ペイ",
+      "J-Coin",
+      "Smart Code",
+      "メルペイ",
+      "COIN+",
+      "WeChat Pay",
+      "UnionPay",
+      "Alipay+"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/0001_nazo/status/2118674774381785122",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no81-4",
+    "hashtags": [],
+    "boothId": "no81",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "imageUrl"
     ]
   },
   {
@@ -28565,7 +29725,7 @@
     "boothId": "no85",
     "name": "BABEL",
     "price": 4400,
-    "priceNote": null,
+    "priceNote": "11/6 の本人のお品書き（全3作品）には載っていない",
     "category": "other",
     "oneLiner": "『全地は一の言語 一の音のみなりき』 ── 創世記 第十一章一節",
     "description": "『全地は一の言語 一の音のみなりき』 ── 創世記 第十一章一節",
@@ -28588,6 +29748,10 @@
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p200",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/whale94o/status/2118633591504875929",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -28608,17 +29772,17 @@
     "oneLiner": "Who is she?",
     "description": "Who is she?\n\n■ 商品情報\n・サイズ：125mm × 125mm\n・用意するもの：スマートフォン、筆記用具\n\n■ 難易度・対象年齢\n・難易度：Abyss\n・対象年齢：Adult\n・想定プレイ時間：3時間〜12時間",
     "difficulty": {
-      "level": null,
-      "source": "unknown",
-      "basis": null
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記「全3作品、すべて超高難易度」→ 5"
     },
     "playMinutes": {
       "min": 180,
       "max": 720
     },
     "players": null,
-    "isNew": null,
-    "limited": null,
+    "isNew": false,
+    "limited": "再販",
     "days": [
       "sat",
       "sun"
@@ -28629,13 +29793,15 @@
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p201",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/whale94o/status/2118633591504875929",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "difficulty",
       "players",
-      "isNew",
       "payment"
     ]
   },
@@ -28649,17 +29815,17 @@
     "oneLiner": "封筒に入っているのは、",
     "description": "封筒に入っているのは、\n数字だけが書かれた たった1枚の紙。\n\n■ 商品情報\n・サイズ：114mm × 162mm\n・用意するもの：筆記用具\n\n■ 難易度・対象年齢\n・難易度：Numberless\n・対象年齢：Adult\n・想定プレイ時間：30分〜永遠",
     "difficulty": {
-      "level": null,
-      "source": "unknown",
-      "basis": null
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記「全3作品、すべて超高難易度」→ 5"
     },
     "playMinutes": {
       "min": 30,
       "max": null
     },
     "players": null,
-    "isNew": null,
-    "limited": null,
+    "isNew": false,
+    "limited": "再販",
     "days": [
       "sat",
       "sun"
@@ -28670,13 +29836,56 @@
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p202",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/whale94o/status/2118633591504875929",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "difficulty",
       "players",
-      "isNew",
+      "payment"
+    ]
+  },
+  {
+    "name": "NUMBER␣（ナンバーブランク）",
+    "price": 1000,
+    "priceNote": null,
+    "category": "kit",
+    "oneLiner": "数字だけが書かれた1枚の紙。『NUMBER+』10周年の新作",
+    "description": "封筒に入っているのは、数字だけが書かれたたった1枚の紙。『NUMBER+』の発売から10年。『NUMBER+』を未プレイでも遊べる。想定プレイ時間は1週間〜永遠。",
+    "difficulty": {
+      "level": 5,
+      "source": "official",
+      "basis": "団体表記「全3作品、すべて超高難易度」→ 5"
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": true,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": "https://pbs.twimg.com/media/HWbiUf-bYAAvX20?format=jpg&name=small",
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/whale94o/status/2118633591504875929",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/whale94o/status/2118629520991564005",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no85-1",
+    "hashtags": [],
+    "boothId": "no85",
+    "unconfirmed": [
+      "playMinutes",
+      "players",
       "payment"
     ]
   },
@@ -29778,7 +30987,7 @@
     },
     "players": null,
     "isNew": true,
-    "limited": null,
+    "limited": "プレイ開始は11/20 20:00から",
     "days": [
       "sat",
       "sun"
@@ -29795,6 +31004,10 @@
       },
       {
         "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/RI_Works_nazo/status/2118648349662556552",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -30299,11 +31512,11 @@
     "imageUrl": null,
     "payment": [
       "現金",
-      "クレジットカード"
+      "PayPay"
     ],
     "sources": [
       {
-        "url": "https://x.com/escaplugged/status/2118637082990252244",
+        "url": "https://x.com/escaplugged/status/2118658265215283666",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -30339,11 +31552,11 @@
     "imageUrl": null,
     "payment": [
       "現金",
-      "クレジットカード"
+      "PayPay"
     ],
     "sources": [
       {
-        "url": "https://x.com/escaplugged/status/2118637082990252244",
+        "url": "https://x.com/escaplugged/status/2118658265215283666",
         "retrievedAt": "2026-11-06"
       }
     ],
@@ -30379,11 +31592,11 @@
     "imageUrl": null,
     "payment": [
       "現金",
-      "クレジットカード"
+      "PayPay"
     ],
     "sources": [
       {
-        "url": "https://x.com/escaplugged/status/2118637082990252244",
+        "url": "https://x.com/escaplugged/status/2118658265215283666",
         "retrievedAt": "2026-11-06"
       }
     ],

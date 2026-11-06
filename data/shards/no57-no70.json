@@ -208,7 +208,14 @@
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2116455138214703576",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         },
         {
@@ -234,7 +241,14 @@
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2116817532539515102",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         },
         {
@@ -260,7 +274,14 @@
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2117179908984295901",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         }
       ],
@@ -290,11 +311,17 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV-etTTa4AAr3D-?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2117542305909625179",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -323,7 +350,9 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
@@ -336,6 +365,10 @@
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2117904706685022574",
               "retrievedAt": "2026-11-04"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -364,11 +397,17 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -397,11 +436,17 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -430,11 +475,17 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -463,11 +514,17 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -496,11 +553,17 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -529,11 +592,17 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -562,11 +631,17 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金のみ"
+          ],
           "sources": [
             {
               "url": "https://x.com/_X_c_a_p_e_/status/2118267080155734232",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/_X_c_a_p_e_/status/2118629480499401136",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }

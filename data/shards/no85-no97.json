@@ -32,9 +32,96 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "公式の出展者データに HP/X の記載なし。検索で X アカウント @whale94o を確認（中身は未確認）。BOOTH 検索「鯨井翔 謎」は0件。謎解き Wiki にも販売物の記載なし。2025年の出展者一覧(76ブース)に名前がなく、今回が初出展の可能性がある。ブース概要は「問題文を省いた、少しだけ変な高難度なもの盛沢山」とあるが商品名・価格は不明。X を見れば取れそう。 X(@whale94o)を確認: 検索はヒットなし、タイムラインも2026年9月以降でナゾトキマーケットの告知なし（うみねこ脱出2ディレクター告知など別件のみ）。X アカウントは名前一致だが団体本人との確証は弱い。商品は取れず。 再収集(10/30 Web): Web 検索（鯨井翔＋ナゾトキマーケット2026・お品書き）で告知なし。新しい告知なし。 再収集(10/30 X): 10/24 以降の @whale94o の検索結果は別件のリポスト(10/28)のみ。ナゾトキマーケットの告知なし",
-      "officialPatches": [],
-      "products": [],
+      "notes": "公式の出展者データに HP/X の記載なし。検索で X アカウント @whale94o を確認（中身は未確認）。BOOTH 検索「鯨井翔 謎」は0件。謎解き Wiki にも販売物の記載なし。2025年の出展者一覧(76ブース)に名前がなく、今回が初出展の可能性がある。ブース概要は「問題文を省いた、少しだけ変な高難度なもの盛沢山」とあるが商品名・価格は不明。X を見れば取れそう。 X(@whale94o)を確認: 検索はヒットなし、タイムラインも2026年9月以降でナゾトキマーケットの告知なし（うみねこ脱出2ディレクター告知など別件のみ）。X アカウントは名前一致だが団体本人との確証は弱い。商品は取れず。 再収集(10/30 Web): Web 検索（鯨井翔＋ナゾトキマーケット2026・お品書き）で告知なし。新しい告知なし。 再収集(10/30 X): 10/24 以降の @whale94o の検索結果は別件のリポスト(10/28)のみ。ナゾトキマーケットの告知なし 再収集(11/6 夜 X): 11/6 のお品書きは『NUMBER+』500円・新作『NUMBER␣』1,000円・『誰何』3,300円の全3作品。公式掲載の『BABEL』はお品書きにない。",
+      "officialPatches": [
+        {
+          "id": "p201",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記「全3作品、すべて超高難易度」→ 5"
+          },
+          "isNew": false,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "limited": "再販",
+          "sources": [
+            {
+              "url": "https://x.com/whale94o/status/2118633591504875929",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "p202",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記「全3作品、すべて超高難易度」→ 5"
+          },
+          "isNew": false,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "limited": "再販",
+          "sources": [
+            {
+              "url": "https://x.com/whale94o/status/2118633591504875929",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        },
+        {
+          "id": "p200",
+          "priceNote": "11/6 の本人のお品書き（全3作品）には載っていない",
+          "sources": [
+            {
+              "url": "https://x.com/whale94o/status/2118633591504875929",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "name": "NUMBER␣（ナンバーブランク）",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "数字だけが書かれた1枚の紙。『NUMBER+』10周年の新作",
+          "description": "封筒に入っているのは、数字だけが書かれたたった1枚の紙。『NUMBER+』の発売から10年。『NUMBER+』を未プレイでも遊べる。想定プレイ時間は1週間〜永遠。",
+          "difficulty": {
+            "level": 5,
+            "source": "official",
+            "basis": "団体表記「全3作品、すべて超高難易度」→ 5"
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": "https://pbs.twimg.com/media/HWbiUf-bYAAvX20?format=jpg&name=small",
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/whale94o/status/2118633591504875929",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/whale94o/status/2118629520991564005",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no85-1",
+          "hashtags": []
+        }
+      ],
       "candidates": []
     },
     {
@@ -1085,7 +1172,7 @@
           },
           "players": null,
           "isNew": true,
-          "limited": null,
+          "limited": "プレイ開始は11/20 20:00から",
           "days": [
             "sat",
             "sun"
@@ -1102,6 +1189,10 @@
             },
             {
               "url": "https://x.com/RI_Works_nazo/status/2118312612471701993",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/RI_Works_nazo/status/2118648349662556552",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -1541,7 +1632,7 @@
           "retrievedAt": "2026-10-25"
         }
       ],
-      "notes": "HP なし（X のみ）。escape.id の団体ページにナゾトキマーケットの言及なし。2025年（Cd9・土曜）の新作持ち帰り謎「問題ございません。」(1,000円)だけ分かった。今回の出品とは書かれていないため candidates に回した。X を見れば取れそう。 X(@escaplugged、公式TSVのリンク)を確認: 検索はヒットなし、タイムラインにも2026年9月以降のナゾトキマーケット告知なし。商品は取れず。候補は据え置き。 再収集(10/30 Web): escape.id の団体ページを再確認。開催予定イベントなし、商品告知なし。新しい告知なし。 再収集(10/30 X): @escaplugged は10/24 以降の検索結果なし。ナゾトキマーケット告知は2025年のものだけで、候補は据え置き",
+      "notes": "HP なし（X のみ）。escape.id の団体ページにナゾトキマーケットの言及なし。2025年（Cd9・土曜）の新作持ち帰り謎「問題ございません。」(1,000円)だけ分かった。今回の出品とは書かれていないため candidates に回した。X を見れば取れそう。 X(@escaplugged、公式TSVのリンク)を確認: 検索はヒットなし、タイムラインにも2026年9月以降のナゾトキマーケット告知なし。商品は取れず。候補は据え置き。 再収集(10/30 Web): escape.id の団体ページを再確認。開催予定イベントなし、商品告知なし。新しい告知なし。 再収集(10/30 X): @escaplugged は10/24 以降の検索結果なし。ナゾトキマーケット告知は2025年のものだけで、候補は据え置き 再収集(11/6 夜 X): 11/6 19:54 の告知で支払いは現金/PayPay。前回根拠にした投稿（現金・クレジットカード）は削除済み(404)で、同じお品書き画像の新しい投稿に差し替えた。",
       "officialPatches": [],
       "products": [
         {
@@ -1566,11 +1657,11 @@
           "imageUrl": null,
           "payment": [
             "現金",
-            "クレジットカード"
+            "PayPay"
           ],
           "sources": [
             {
-              "url": "https://x.com/escaplugged/status/2118637082990252244",
+              "url": "https://x.com/escaplugged/status/2118658265215283666",
               "retrievedAt": "2026-11-06"
             }
           ],
@@ -1599,11 +1690,11 @@
           "imageUrl": null,
           "payment": [
             "現金",
-            "クレジットカード"
+            "PayPay"
           ],
           "sources": [
             {
-              "url": "https://x.com/escaplugged/status/2118637082990252244",
+              "url": "https://x.com/escaplugged/status/2118658265215283666",
               "retrievedAt": "2026-11-06"
             }
           ],
@@ -1632,11 +1723,11 @@
           "imageUrl": null,
           "payment": [
             "現金",
-            "クレジットカード"
+            "PayPay"
           ],
           "sources": [
             {
-              "url": "https://x.com/escaplugged/status/2118637082990252244",
+              "url": "https://x.com/escaplugged/status/2118658265215283666",
               "retrievedAt": "2026-11-06"
             }
           ],
