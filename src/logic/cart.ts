@@ -33,6 +33,27 @@ export function toggleBought(items: CartItem[], productId: string): CartItem[] {
 
 export type CartTotals = { amount: number; unknownPrice: number; items: number; qty: number };
 
+export function acceptsCashless(payment: readonly string[] | null): boolean {
+  return payment?.some((method) => method !== "現金" && method !== "現金のみ") ?? false;
+}
+
+export function cashSplit(
+  items: CartItem[],
+  priceOf: (productId: string) => number | null,
+  paymentOf: (productId: string) => readonly string[] | null,
+): { cash: number; cashless: number } {
+  let cash = 0;
+  let cashless = 0;
+  for (const item of items) {
+    if (item.bought) continue;
+    const price = priceOf(item.productId);
+    if (price === null) continue;
+    if (acceptsCashless(paymentOf(item.productId))) cashless += price * item.qty;
+    else cash += price * item.qty;
+  }
+  return { cash, cashless };
+}
+
 export function cartTotals(items: CartItem[], priceOf: (productId: string) => number | null): CartTotals {
   let amount = 0;
   let unknownPrice = 0;

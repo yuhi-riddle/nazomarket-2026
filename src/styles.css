@@ -1393,6 +1393,46 @@ a {
   font-size: var(--font-13);
 }
 
+.cart-cash-split {
+  min-width: 0;
+  margin-top: var(--space-2);
+  color: var(--ink-muted);
+  font-size: var(--font-13);
+  overflow-wrap: anywhere;
+}
+
+.cart-cash-split-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--space-2);
+  margin: 0;
+}
+
+.cart-cash-split-label {
+  color: var(--ink);
+  font-size: var(--font-15);
+  font-weight: 700;
+}
+
+.cart-cash-split-amount {
+  color: var(--ink);
+  font-size: var(--font-20);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.cart-cash-split-sub {
+  flex-basis: 100%;
+  font-variant-numeric: tabular-nums;
+}
+
+.cart-cash-split-note {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: var(--font-12);
+}
+
 .cart-actions {
   display: flex;
   flex-wrap: wrap;

@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
+  acceptsCashless,
+  cashSplit,
   addItem,
   budgetStatus,
   cartTotals,
@@ -72,6 +74,39 @@ describe("cartTotals", () => {
   });
   it("空のリスト", () => {
     expect(cartTotals([], priceOf)).toEqual({ amount: 0, unknownPrice: 0, items: 0, qty: 0 });
+  });
+});
+
+describe("acceptsCashless", () => {
+  it("現金以外の支払い方法が1つでもあればキャッシュレス可", () => {
+    expect(acceptsCashless(["現金", "PayPay"])).toBe(true);
+    expect(acceptsCashless(["クレジットカード"])).toBe(true);
+    expect(acceptsCashless(["各種決済対応"])).toBe(true);
+  });
+  it("現金だけ・未確認はキャッシュレス不可として扱う", () => {
+    expect(acceptsCashless(["現金のみ"])).toBe(false);
+    expect(acceptsCashless(["現金"])).toBe(false);
+    expect(acceptsCashless([])).toBe(false);
+    expect(acceptsCashless(null)).toBe(false);
+  });
+});
+
+describe("cashSplit（まだ買っていない分）", () => {
+  const payments: Record<string, string[] | null> = { a: ["現金", "PayPay"], b: ["現金のみ"], c: ["PayPay"], d: null, e: ["クレジットカード"] };
+  const paymentOf = (id: string) => payments[id] ?? null;
+  it("現金のみ・未確認は用意する現金、キャッシュレス可は別に足す。買った分と価格不明は除く", () => {
+    const list: CartItem[] = [
+      { productId: "a", qty: 2, bought: true },
+      { productId: "b", qty: 1, bought: false },
+      { productId: "c", qty: 1, bought: false },
+      { productId: "d", qty: 3, bought: false },
+      { productId: "e", qty: 2, bought: false },
+    ];
+    const priceList: Record<string, number | null> = { a: 1000, b: 2500, c: null, d: 500, e: 800 };
+    expect(cashSplit(list, (id) => priceList[id] ?? null, paymentOf)).toEqual({ cash: 4000, cashless: 1600 });
+  });
+  it("空のリスト", () => {
+    expect(cashSplit([], priceOf, paymentOf)).toEqual({ cash: 0, cashless: 0 });
   });
 });
 
