@@ -1543,7 +1543,107 @@
       ],
       "notes": "HP なし（X のみ）。escape.id の団体ページにナゾトキマーケットの言及なし。2025年（Cd9・土曜）の新作持ち帰り謎「問題ございません。」(1,000円)だけ分かった。今回の出品とは書かれていないため candidates に回した。X を見れば取れそう。 X(@escaplugged、公式TSVのリンク)を確認: 検索はヒットなし、タイムラインにも2026年9月以降のナゾトキマーケット告知なし。商品は取れず。候補は据え置き。 再収集(10/30 Web): escape.id の団体ページを再確認。開催予定イベントなし、商品告知なし。新しい告知なし。 再収集(10/30 X): @escaplugged は10/24 以降の検索結果なし。ナゾトキマーケット告知は2025年のものだけで、候補は据え置き",
       "officialPatches": [],
-      "products": [],
+      "products": [
+        {
+          "name": "切り離して、お考えください。",
+          "price": 1300,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "たった9問の謎を解き明かしてクリアを目指す新作の持ち帰り謎",
+          "description": "皆様には、たった9問の謎を解き明かして、「クリア」を目指してもらいます。さて、扉を開きましょう。知恵比べの時間です。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/escaplugged/status/2118637082990252244",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no93-1",
+          "hashtags": []
+        },
+        {
+          "name": "問題ございません。",
+          "price": 1000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "封筒にはヒントだけ。問題がどこかへ消えた持ち帰り謎の再販",
+          "description": "お手元の封筒には、ヒントしか入っていません。問題はどこかに行きました。それでも、あなたなら解けるはずです。だってヒント、ありますから。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/escaplugged/status/2118637082990252244",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no93-2",
+          "hashtags": []
+        },
+        {
+          "name": "EscaPLUGGEDからの挑戦状",
+          "price": 500,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "A4 1枚とは思えない重厚感の謎の再販",
+          "description": "A4 1枚だとは思えない重厚感！あなたは解き明かすことができるのか？",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/escaplugged/status/2118637082990252244",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no93-3",
+          "hashtags": []
+        }
+      ],
       "candidates": [
         {
           "name": "問題ございません。",
