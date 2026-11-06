@@ -22,6 +22,7 @@ import { createSharedPollingController } from "../shared/polling.ts";
 import { clearSharedMeIfRemoved, readSharedMe, writeSharedMe } from "../shared/me.ts";
 import type { AppStore } from "../store.ts";
 import { button, el } from "./dom.ts";
+import { sharedPanelOpen } from "./sharedPanelOpen.ts";
 
 export type SharedListViewOptions = {
   apiUrl: string;
@@ -107,8 +108,16 @@ function operationAlreadyApplied(operation: SharedOperation, state: SharedListSt
 export function sharedListView(store: AppStore, options: SharedListViewOptions): SharedListView {
   const element = el("section", "shared-list-panel");
   element.setAttribute("aria-labelledby", "shared-list-heading");
-  const heading = el("h3", "shared-list-heading", "共同リスト");
+  const heading = el("h3", "shared-list-heading");
   heading.id = "shared-list-heading";
+  const headingToggle = button("", "shared-list-toggle");
+  headingToggle.setAttribute("aria-expanded", "false");
+  headingToggle.setAttribute("aria-controls", "shared-list-body");
+  headingToggle.append(el("span", "shared-list-toggle-label", "共同リスト"), el("span", "shared-list-chevron", "⌄"));
+  heading.append(headingToggle);
+  const body = el("div", "shared-list-body");
+  body.id = "shared-list-body";
+  body.hidden = true;
   const status = el("p", "shared-list-status");
   status.setAttribute("role", "status");
   status.setAttribute("aria-live", "polite");
@@ -227,11 +236,8 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   const cancelAction = button("キャンセル", "button button-secondary");
   confirmPanel.append(confirmText, confirmAction, cancelAction);
 
-  element.append(
-    heading,
-    status,
+  body.append(
     mePanel,
-    error,
     controls,
     joinForm,
     activeControls,
@@ -240,8 +246,15 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     copyProgress,
     continueCopyButton,
     createdRoomGuide,
+  );
+
+  element.append(
+    heading,
+    status,
+    error,
     pendingPanel,
     confirmPanel,
+    body,
   );
 
   let client: SharedListClient | null = null;
@@ -269,6 +282,7 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   let copyWriteTimes: number[] = [];
   let copyWindowTimer: ReturnType<typeof setTimeout> | null = null;
   let confirmKind: "leave" | "resolve-rebase" | "resolve-discard" | "resolve-first-discard" | "mark-applied" | "discard-pending" | "discard-unsaved" | null = null;
+  let userChoice: boolean | null = null;
 
   const setPolling = createSharedPollingController(() => client!.startPolling(5_000), {
     getVisibilityState: () => document.visibilityState,
@@ -348,6 +362,10 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
     mePanel.hidden = !isInSharedList;
     const chooserHadFocus = meChooser.contains(document.activeElement);
     const selectedMember = projectedMembers.find((member) => member.id === meId);
+    if (userChoice === null && (options.roomLinkNeedsPaste || joinForm.dataset.open)) userChoice = true;
+    const isPanelOpen = sharedPanelOpen({ userChoice, needsMe: isInSharedList && selectedMember === undefined });
+    body.hidden = !isPanelOpen;
+    headingToggle.setAttribute("aria-expanded", String(isPanelOpen));
     meSelected.hidden = selectedMember === undefined;
     meRenameForm.hidden = selectedMember === undefined;
     if (selectedMember && document.activeElement !== meRenameInput && meRenameInput.value !== selectedMember.name) {
@@ -1013,6 +1031,10 @@ export function sharedListView(store: AppStore, options: SharedListViewOptions):
   };
 
   createButton.addEventListener("click", () => { void createRoom(); });
+  headingToggle.addEventListener("click", () => {
+    userChoice = headingToggle.getAttribute("aria-expanded") !== "true";
+    render();
+  });
   createCopyButton.addEventListener("click", () => { void createRoom(true); });
   continueCopyButton.addEventListener("click", () => { void runCopyBatch(); });
   joinToggle.addEventListener("click", () => {
