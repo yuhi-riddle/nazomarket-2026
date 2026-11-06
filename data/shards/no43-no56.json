@@ -1755,13 +1755,36 @@
             {
               "url": "https://x.com/paddle_pj/status/2117912672381624414",
               "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/paddle_pj/status/2118585923332170233",
+              "retrievedAt": "2026-11-06"
             }
           ],
-          "limited": "プレイできるのは11/9以降"
+          "limited": "プレイできるのは11/9以降",
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ]
         },
         {
           "id": "p134",
-          "priceNote": "公式価格欄は2,000円。説明では500円単位で購入金額を上げられ、最大5,000円。当日ブースで注意事項を確認して購入。"
+          "priceNote": "公式価格欄は2,000円。説明では500円単位で購入金額を上げられ、最大5,000円。当日ブースで注意事項を確認して購入。",
+          "name": "ASSEMBLE",
+          "payment": [
+            "現金",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/paddle_pj/status/2118585923332170233",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/paddle_pj/status/2118585168826937648",
+              "retrievedAt": "2026-11-06"
+            }
+          ]
         }
       ],
       "products": [

@@ -2276,7 +2276,7 @@
         {
           "id": "no75-13",
           "name": "体験型エンタメガイド",
-          "price": null,
+          "price": 1000,
           "priceNote": null,
           "category": "booklet",
           "oneLiner": "エレメンツが販売する体験型エンタメの同人誌",
@@ -2295,13 +2295,91 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
           "sources": [
             {
               "url": "https://x.com/ele_jun/status/2117444150945558992",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/ele_jun/status/2118478761620623818",
+              "retrievedAt": "2026-11-06"
             }
           ]
+        },
+        {
+          "name": "ARGガイド2025",
+          "price": 1000,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "ARG（代替現実ゲーム）の作品を紹介するガイド本の2025年版",
+          "description": "エレメンツの同人誌。ナゾトキマーケット2026で「ARGガイド VOL.3」「体験型エンタメガイド」とあわせて販売する。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/ele_jun/status/2118478761620623818",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no75-14",
+          "hashtags": []
+        },
+        {
+          "name": "ARGガイド2024",
+          "price": 1500,
+          "priceNote": null,
+          "category": "booklet",
+          "oneLiner": "ARG（代替現実ゲーム）の作品を紹介するガイド本の2024年版",
+          "description": "エレメンツの同人誌。ナゾトキマーケット2026で「ARGガイド VOL.3」「体験型エンタメガイド」とあわせて販売する。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "PayPay",
+            "クレジットカード"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/ele_jun/status/2118478761620623818",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no75-15",
+          "hashtags": []
         }
       ],
       "candidates": [
