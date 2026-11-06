@@ -4715,7 +4715,8 @@
               "url": "https://x.com/0001_nazo/status/2118674774381785122",
               "retrievedAt": "2026-11-06"
             }
-          ]
+          ],
+          "category": "goods"
         },
         {
           "id": "p210",
@@ -4743,8 +4744,14 @@
             {
               "url": "https://x.com/0001_nazo/status/2118674774381785122",
               "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/0001_nazo/status/2118644573182345557",
+              "retrievedAt": "2026-11-06"
             }
-          ]
+          ],
+          "category": "online",
+          "description": "【あらすじ】\nエージェント0001として、我が国の危機を秘密裏に防いでいるあなた。\n次のミッションは、とある大企業が所有するの奪取。\n噂によると、この企業は海外からのサイバー攻撃対策として、\n日本独自の「謎解き」をセキュリティに組み込んでいるらしい…？\nセキュリティをかいくぐり、機密文書を盗み出せ。\n\n#ゼロイチキミツブンショ\n\n※推奨環境：PC"
         },
         {
           "id": "p211",
@@ -4773,7 +4780,8 @@
               "url": "https://x.com/0001_nazo/status/2118674774381785122",
               "retrievedAt": "2026-11-06"
             }
-          ]
+          ],
+          "category": "kit"
         }
       ],
       "products": [
@@ -4829,7 +4837,7 @@
           "priceNote": null,
           "category": "kit",
           "oneLiner": "謎解き初心者から楽しめるA5サイズの謎解きグッズ",
-          "description": "謎解き初心者からお楽しみいただける謎解きグッズ（持ち帰り謎）。A5サイズ。",
+          "description": "謎解き初心者からお楽しみいただける謎解きグッズ（持ち帰り謎）。A5サイズ。見た目サイズはA5。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -4875,7 +4883,7 @@
           "priceNote": null,
           "category": "other",
           "oneLiner": "単純明快なルールで戦う対戦型ひらめきカードゲーム",
-          "description": "単純明快なルールで戦う対戦型ひらめきカードゲーム。",
+          "description": "単純明快なルールで戦う対戦型ひらめきカードゲーム。箱サイズは71×97×28mm。",
           "difficulty": {
             "level": null,
             "source": "unknown",
@@ -4921,7 +4929,7 @@
           "priceNote": null,
           "category": "goods",
           "oneLiner": "あるものを八回使い回して解く謎解きグッズ",
-          "description": "あるものを八回使い回して解く、初心者から楽しめる謎解きグッズ。",
+          "description": "あるものを八回使い回して解く、初心者から楽しめる謎解きグッズ。0001の「謎解きグッズ」シリーズその2。",
           "difficulty": {
             "level": null,
             "source": "unknown",

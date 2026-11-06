@@ -9868,6 +9868,10 @@
       {
         "url": "https://x.com/ClaGlaLtd/status/2115730861437919556",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -9951,6 +9955,526 @@
       "playMinutes",
       "players",
       "isNew",
+      "payment"
+    ]
+  },
+  {
+    "name": "強制快速 しらたきの車窓から",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのトラベル系謎解き「強制快速 しらたきの車窓から」",
+    "description": "ナゾグラのトラベル系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-2",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "笑撃！無限漫才グランプリからの脱出",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのお笑い系謎解き「笑撃！無限漫才グランプリからの脱出」",
+    "description": "ナゾグラのお笑い系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-3",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "解くまで飲めないナゾトキブリューイング",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのグルメ系謎解き「解くまで飲めないナゾトキブリューイング」",
+    "description": "ナゾグラのグルメ系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-4",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "タメニナル無人島サバイバル",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのアウトドア系謎解き「タメニナル無人島サバイバル」",
+    "description": "ナゾグラのアウトドア系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-5",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "着陸しないミステリーフライトからの脱出",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのトラベル系謎解き「着陸しないミステリーフライトからの脱出」",
+    "description": "ナゾグラのトラベル系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-6",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "謎に埋もれた化石の奇跡",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラの科学系謎解き「謎に埋もれた化石の奇跡」",
+    "description": "ナゾグラの科学系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-7",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "お寿司が消えたこの世界で",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのグルメ系謎解き「お寿司が消えたこの世界で」",
+    "description": "ナゾグラのグルメ系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-8",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "まぼろしサウナからの脱出",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのヘルシー系謎解き「まぼろしサウナからの脱出」",
+    "description": "ナゾグラのヘルシー系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-9",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "ギャラリーベントンの鑑定依頼",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラの文化系謎解き「ギャラリーベントンの鑑定依頼」",
+    "description": "ナゾグラの文化系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-10",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "饒舌なエイリアン",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのSF系謎解き「饒舌なエイリアン」",
+    "description": "ナゾグラのSF系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-11",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "迷惑な地下墓地からの脱出",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラのホラー系謎解き「迷惑な地下墓地からの脱出」",
+    "description": "ナゾグラのホラー系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-12",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "退屈人間の歩き方",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラの日常系謎解き「退屈人間の歩き方」",
+    "description": "ナゾグラの日常系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-13",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "退屈研究所からの手紙",
+    "price": 1500,
+    "priceNote": "イベント価格",
+    "category": "kit",
+    "oneLiner": "ナゾグラの日常系謎解き「退屈研究所からの手紙」",
+    "description": "ナゾグラの日常系謎解き。ナゾトキマーケット2026のお品書きに掲載。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no18-14",
+    "hashtags": [],
+    "boothId": "no18",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl",
       "payment"
     ]
   },
@@ -10438,6 +10962,50 @@
       "difficulty",
       "playMinutes",
       "players",
+      "imageUrl",
+      "payment"
+    ]
+  },
+  {
+    "name": "ESCALOGUE アリスと謎とくらやみの物語",
+    "price": 3200,
+    "priceNote": "ブース画像の表記。公式の定価は3,520円（3,200円+税）で、画像の価格が税込か税別かは書かれていない",
+    "category": "other",
+    "oneLiner": "グループSNEの謎解きゲーム「エスカローグ」シリーズの1作",
+    "description": "グループSNEの謎解きゲーム「ESCALOGUE（エスカローグ）」シリーズの1作。2018年発売。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": {
+      "min": 90,
+      "max": 180
+    },
+    "players": "1〜6人",
+    "isNew": false,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": null,
+    "sources": [
+      {
+        "url": "https://x.com/GroupSNE/status/2118629468491100241",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://www.groupsne.co.jp/products/bg/index.html",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no19-12",
+    "hashtags": [],
+    "boothId": "no19",
+    "unconfirmed": [
+      "difficulty",
       "imageUrl",
       "payment"
     ]
@@ -16096,7 +16664,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no35/product/p88_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p88",
@@ -16109,12 +16679,14 @@
       {
         "url": "https://x.com/getget4343/status/2113964103886925996",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
-    "unconfirmed": [
-      "payment"
-    ]
+    "unconfirmed": []
   },
   {
     "id": "no35-2",
@@ -16142,7 +16714,9 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no35/product/p89_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p89",
@@ -16155,12 +16729,15 @@
       {
         "url": "https://x.com/JOKer_Project_/status/2117568720788680926",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -16189,7 +16766,9 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HWOQo8BbIAAOgIt?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金のみ"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p90",
@@ -16202,12 +16781,97 @@
       {
         "url": "https://x.com/JOKer_Project_/status/2117936896814772724",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
     "unconfirmed": [
+      "players"
+    ]
+  },
+  {
+    "name": "新作セット（水神に捧げる謎＋クリアファイル謎1・2）",
+    "price": 2600,
+    "priceNote": "通常2,970円から370円引き",
+    "category": "kit",
+    "oneLiner": "新作『水神に捧げる謎』とクリアファイル謎1・2のセット",
+    "description": "『水神に捧げる謎』（1,650円）とリニューアルしたクリアファイル謎1・2（各660円）のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no35-4",
+    "hashtags": [],
+    "boothId": "no35",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
       "players",
-      "payment"
+      "isNew",
+      "imageUrl"
+    ]
+  },
+  {
+    "name": "はじめてセット（クリアファイル謎1・2＋はじめてのナゾトキBOOK）",
+    "price": 1700,
+    "priceNote": "通常1,980円から280円引き",
+    "category": "kit",
+    "oneLiner": "クリアファイル謎1・2とはじめてのナゾトキBOOKのセット",
+    "description": "クリアファイル謎1・2（各660円）と『はじめてのナゾトキBOOK』のセット。",
+    "difficulty": {
+      "level": null,
+      "source": "unknown",
+      "basis": null
+    },
+    "playMinutes": null,
+    "players": null,
+    "isNew": null,
+    "limited": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "imageUrl": null,
+    "payment": [
+      "現金のみ"
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+        "retrievedAt": "2026-11-06"
+      }
+    ],
+    "id": "no35-5",
+    "hashtags": [],
+    "boothId": "no35",
+    "unconfirmed": [
+      "difficulty",
+      "playMinutes",
+      "players",
+      "isNew",
+      "imageUrl"
     ]
   },
   {
@@ -28944,7 +29608,7 @@
     "name": "謎付きクリアファイル『0(ゼロ)』『1(イチ)』",
     "price": 500,
     "priceNote": "『ゼロ』『イチ』各500円",
-    "category": "other",
+    "category": "goods",
     "oneLiner": "初めての謎解きにオススメ！",
     "description": "初めての謎解きにオススメ！\n0と1をテーマとした、謎解きの楽しさをコンパクトに味わえる一作です。\n\n#ゼロイチファイル0\n#ゼロイチファイル1",
     "difficulty": {
@@ -29004,9 +29668,9 @@
     "name": "機密文書ゼロを盗み出せ!",
     "price": 1500,
     "priceNote": null,
-    "category": "other",
+    "category": "online",
     "oneLiner": "エージェント0001として、我が国の危機を秘密裏に防いでいるあなた。",
-    "description": "【あらすじ】\nエージェント0001として、我が国の危機を秘密裏に防いでいるあなた。\n次のミッションは、とある大企業が所有するの奪取。\n噂によると、この企業は海外からのサイバー攻撃対策として、\n日本独自の「謎解き」をセキュリティに組み込んでいるらしい…？\nセキュリティをかいくぐり、機密文書を盗み出せ。\n\n#ゼロイチキミツブンショ",
+    "description": "【あらすじ】\nエージェント0001として、我が国の危機を秘密裏に防いでいるあなた。\n次のミッションは、とある大企業が所有するの奪取。\n噂によると、この企業は海外からのサイバー攻撃対策として、\n日本独自の「謎解き」をセキュリティに組み込んでいるらしい…？\nセキュリティをかいくぐり、機密文書を盗み出せ。\n\n#ゼロイチキミツブンショ\n\n※推奨環境：PC",
     "difficulty": {
       "level": null,
       "source": "unknown",
@@ -29049,6 +29713,10 @@
       {
         "url": "https://x.com/0001_nazo/status/2118674774381785122",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/0001_nazo/status/2118644573182345557",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
@@ -29064,7 +29732,7 @@
     "name": "解く!政令!?無一文太郎の下剋上",
     "price": 1500,
     "priceNote": null,
-    "category": "other",
+    "category": "kit",
     "oneLiner": "ある日、多額の負債を抱える無一 文太郎（むいち・もんたろう）の元に、督促状が届…",
     "description": "【あらすじ】\nある日、多額の負債を抱える無一 文太郎（むいち・もんたろう）の元に、督促状が届きました。\nまたかと思いながら渋々中身を開けてみると、何やらいつもと中身が違うようです。\n\n「議会の結果、\"解政令（とくせいれい）\"が発布されることになりました。直ちに中に入っている謎を解き進めてください。もし、全ての謎を解き明かすことができた場合、今あなたの持っている負債額を0円にします。」\n\n「これはまたとないチャンスだ」と思った文太郎は、早速謎を解くのでした……\n\n#ゼロイチモンタロウ\n#ゼロイチゲコクジョウ",
     "difficulty": {
@@ -29177,7 +29845,7 @@
     "priceNote": null,
     "category": "kit",
     "oneLiner": "謎解き初心者から楽しめるA5サイズの謎解きグッズ",
-    "description": "謎解き初心者からお楽しみいただける謎解きグッズ（持ち帰り謎）。A5サイズ。",
+    "description": "謎解き初心者からお楽しみいただける謎解きグッズ（持ち帰り謎）。A5サイズ。見た目サイズはA5。",
     "difficulty": {
       "level": null,
       "source": "unknown",
@@ -29230,7 +29898,7 @@
     "priceNote": null,
     "category": "other",
     "oneLiner": "単純明快なルールで戦う対戦型ひらめきカードゲーム",
-    "description": "単純明快なルールで戦う対戦型ひらめきカードゲーム。",
+    "description": "単純明快なルールで戦う対戦型ひらめきカードゲーム。箱サイズは71×97×28mm。",
     "difficulty": {
       "level": null,
       "source": "unknown",
@@ -29283,7 +29951,7 @@
     "priceNote": null,
     "category": "goods",
     "oneLiner": "あるものを八回使い回して解く謎解きグッズ",
-    "description": "あるものを八回使い回して解く、初心者から楽しめる謎解きグッズ。",
+    "description": "あるものを八回使い回して解く、初心者から楽しめる謎解きグッズ。0001の「謎解きグッズ」シリーズその2。",
     "difficulty": {
       "level": null,
       "source": "unknown",
