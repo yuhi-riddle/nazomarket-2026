@@ -251,7 +251,7 @@
       ],
       "products": [
         {
-          "name": "へんな夢のおひさまは眠りやすく月にふれ星もそろえて打ち合わせ夜をぬいだ過去と未来",
+          "name": "へんな夢のおひさまは眠りやすく月にふれ星もそろえて打ち合わせ夜をぬけた過去と未来",
           "price": 1000,
           "priceNote": null,
           "category": "kit",
@@ -292,6 +292,10 @@
             },
             {
               "url": "https://x.com/crossxone2110/status/2117236097705296157",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://x.com/crossxone2110/status/2118550488350380525",
               "retrievedAt": "2026-11-06"
             }
           ],
