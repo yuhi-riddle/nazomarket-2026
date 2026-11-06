@@ -890,6 +890,10 @@
             {
               "url": "https://x.com/guzuria_vtuber/status/2115407685567070654",
               "retrievedAt": "2026-10-30"
+            },
+            {
+              "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+              "retrievedAt": "2026-11-07"
             }
           ],
           "hashtags": [
@@ -926,42 +930,102 @@
           ]
         }
       ],
-      "products": [],
-      "candidates": [
+      "products": [
         {
-          "name": "謎解きゲーム code:box #4 探偵助手と、とおまわりのメッセージ編",
-          "price": 3200,
-          "reason": "公式ブース概要の「code:boxシリーズ」にあたる最新作とみられるが、今回どの巻を持ってくるかは書いていない。イベント価格3,200円、通販（BOOTH）は4,000円（送料込）。専用Webサイトを使うためスマホ必要",
+          "name": "ナゾトキゲーム code:box 探偵助手と、遠回りのメッセージ編（新装版）",
+          "price": 4000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "code:boxシリーズの準新作を新装版で販売",
+          "description": "code:boxシリーズの準新作。今回は新装版。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
           "sources": [
             {
-              "url": "https://sukuranburu.net/riddle/codebox4",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no49-2",
+          "hashtags": []
         },
         {
-          "name": "ぐずりありどるメモリーズ",
-          "price": 1200,
-          "reason": "謎解きドリル（300問＋ラス謎、B5・58ページ）。書籍版1,200円（DL版800円）。コミケ・ゲムマなどの頒布実績はあるが、今回持ってくるとは書いていない",
+          "name": "ぐずりありどるメモリーズ PDF版",
+          "price": 500,
+          "priceNote": null,
+          "category": "online",
+          "oneLiner": "旧作セールのPDF版",
+          "description": "旧作セールとしてPDF版を販売。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
           "sources": [
             {
-              "url": "https://sukuranburu.net/gzrar_memories/",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no49-3",
+          "hashtags": []
         },
         {
-          "name": "謎を解かないとゲームにならないトランプ（謎解きトランプ）",
-          "price": 2000,
-          "reason": "2022年秋のゲームマーケットで頒布開始した既存作。今回持ってくるとは書いていない",
+          "name": "謎解きトランプ",
+          "price": 1000,
+          "priceNote": null,
+          "category": "other",
+          "oneLiner": "旧作セールの謎解きトランプ",
+          "description": "旧作セールとして販売。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
           "sources": [
             {
-              "url": "https://sukuranburu.net/nazotora/",
-              "retrievedAt": "2026-10-25"
+              "url": "https://x.com/guzuria_vtuber/status/2118714030546387407",
+              "retrievedAt": "2026-11-07"
             }
-          ]
+          ],
+          "id": "no49-4",
+          "hashtags": []
         }
       ],
+      "candidates": [],
       "hashtags": [
         {
           "tag": "ナゾトキマーケット2026",

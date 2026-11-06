@@ -3656,6 +3656,10 @@
             {
               "url": "https://news.cube-soft.jp/article/4104883",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+              "retrievedAt": "2026-11-07"
             }
           ]
         },
@@ -3690,6 +3694,10 @@
             {
               "url": "https://news.cube-soft.jp/article/4104883",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+              "retrievedAt": "2026-11-07"
             }
           ]
         },
@@ -3724,8 +3732,43 @@
             {
               "url": "https://news.cube-soft.jp/article/4104883",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+              "retrievedAt": "2026-11-07"
             }
           ]
+        },
+        {
+          "name": "ナゾトキマーケット2026 限定謎付きグッズセット",
+          "price": 3200,
+          "priceNote": null,
+          "category": "goods",
+          "oneLiner": "公式グッズ全種とセット限定の謎のセット。トートの色を選べる",
+          "description": "公式オリジナルグッズ全種（謎付きクリアファイル・参加記念ステッカーセット・トートバッグ）に、セット限定の特別な謎がつく。トートバッグはナチュラル／ネイビーから選べる。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": "数量限定・会場限定",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/SCRAP_SHUPPAN/status/2118665830573760761",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no23-4",
+          "hashtags": []
         }
       ],
       "candidates": [],

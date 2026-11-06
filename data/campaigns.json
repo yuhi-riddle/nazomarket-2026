@@ -985,6 +985,10 @@
       {
         "url": "https://x.com/ele_jun/status/2117444150945558992",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/ele_jun/status/2118698920549445837",
+        "retrievedAt": "2026-11-07"
       }
     ]
   },
@@ -1341,6 +1345,10 @@
       {
         "url": "https://x.com/tokiqil/status/2117956326899044530",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2118708677268181118",
+        "retrievedAt": "2026-11-07"
       }
     ]
   },
@@ -1951,6 +1959,72 @@
       {
         "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
         "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no57-c1",
+    "boothId": "no57",
+    "productIds": [
+      "p38"
+    ],
+    "kind": "reservation",
+    "title": "『まずは内容物一覧をご確認ください』完売後の受注予約",
+    "detail": "完売後も両日とも会場限定で受注予約を受け付ける。商品価格1,500円＋送料300円で郵送、お届けは11月下旬ごろ。規定数に達したら締め切る場合あり",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": "規定数まで",
+    "sources": [
+      {
+        "url": "https://x.com/nazone2019/status/2118678998352044066",
+        "retrievedAt": "2026-11-07"
+      },
+      {
+        "url": "https://x.com/nazone2019/status/2118679240870924786",
+        "retrievedAt": "2026-11-07"
+      }
+    ]
+  },
+  {
+    "id": "no67-c3",
+    "boothId": "no67",
+    "productIds": [],
+    "kind": "other",
+    "title": "注文用紙の裏に謎（無料）",
+    "detail": "Cc2ブースで配る注文用紙の裏に謎がついている。取るだけなら無料",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/teaparty_COOH/status/2118706585157710251",
+        "retrievedAt": "2026-11-07"
+      }
+    ]
+  },
+  {
+    "id": "no80-c1",
+    "boothId": "no80",
+    "productIds": [],
+    "kind": "bonus",
+    "title": "4,000円以上でツクモロステッカー",
+    "detail": "4,000円以上買った人に、ツクモロステッカーをランダムで1枚プレゼント",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/tsukumorozuya/status/2118689865864970549",
+        "retrievedAt": "2026-11-07"
       }
     ]
   }

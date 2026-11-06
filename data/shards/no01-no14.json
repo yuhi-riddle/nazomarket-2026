@@ -3363,7 +3363,7 @@
           "retrievedAt": "2026-11-04"
         }
       ],
-      "notes": "HPのニュース(最新2026-03-16)に今回の出品告知なし。2025年のナゾトキマーケットでは新作2点を特別価格で販売していたので候補に回した(2026-03-16に価格改定の告知あり、現在価格は未確認)。/goods/は403で見られず。Xで取れそう / X(@yodaka_info)確認済み。2026-08-21の出展告知は「『さよなら』の物語を描いた『美しい謎解き』をテーマにした豪華で綺麗な作品」とだけで商品名・価格なし(8月の投稿のため候補扱いは変えず)。9月以降の投稿は別イベントの告知のみ。/goods/ は Chrome でも403 / 再収集(10/30 Web): 新しい告知なし。ニュースは2026-03-16の価格改定が最新で、今回の出品告知なし / 再収集(10/30 X): 10/24 以降の @yodaka_info の投稿は10/28 の別イベント(ドラマチックダンジョン5)の告知のみで、ナゾトキマーケットの告知なし。候補のまま 再収集(2026-11-04 HTTP): 公式Xの11/4個別投稿本文で新作「メガネなき謎の遺跡からの脱出」の11/7発売・会場A2販売・会場特別価格2,500円（通常2,800円）を確認しno05-2に追加。所要時間・人数・難易度・商品画像は未確認。抽選企画は別の提案ファイルに保存。",
+      "notes": "HPのニュース(最新2026-03-16)に今回の出品告知なし。2025年のナゾトキマーケットでは新作2点を特別価格で販売していたので候補に回した(2026-03-16に価格改定の告知あり、現在価格は未確認)。/goods/は403で見られず。Xで取れそう / X(@yodaka_info)確認済み。2026-08-21の出展告知は「『さよなら』の物語を描いた『美しい謎解き』をテーマにした豪華で綺麗な作品」とだけで商品名・価格なし(8月の投稿のため候補扱いは変えず)。9月以降の投稿は別イベントの告知のみ。/goods/ は Chrome でも403 / 再収集(10/30 Web): 新しい告知なし。ニュースは2026-03-16の価格改定が最新で、今回の出品告知なし / 再収集(10/30 X): 10/24 以降の @yodaka_info の投稿は10/28 の別イベント(ドラマチックダンジョン5)の告知のみで、ナゾトキマーケットの告知なし。候補のまま 再収集(2026-11-04 HTTP): 公式Xの11/4個別投稿本文で新作「メガネなき謎の遺跡からの脱出」の11/7発売・会場A2販売・会場特別価格2,500円（通常2,800円）を確認しno05-2に追加。所要時間・人数・難易度・商品画像は未確認。抽選企画は別の提案ファイルに保存。 再収集(11/7 X): お品書きで新作2点と既存作2点の価格・決済方法を確認。ほかに人気作20作品以上を販売予定（題名なし）。",
       "officialPatches": [
         {
           "id": "p220",
@@ -3384,11 +3384,27 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "タッチ決済",
+            "Apple Pay",
+            "iD",
+            "QUICPay",
+            "交通系電子マネー",
+            "PayPay",
+            "au PAY",
+            "WeChat Pay",
+            "Alipay+"
+          ],
           "sources": [
             {
               "url": "https://x.com/yodaka_info/status/2117588798548881756",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/yodaka_info/status/2118691079881121909",
+              "retrievedAt": "2026-11-07"
             }
           ]
         },
@@ -3411,16 +3427,175 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "タッチ決済",
+            "Apple Pay",
+            "iD",
+            "QUICPay",
+            "交通系電子マネー",
+            "PayPay",
+            "au PAY",
+            "WeChat Pay",
+            "Alipay+"
+          ],
           "sources": [
             {
               "url": "https://x.com/yodaka_info/status/2117819218477592587",
               "retrievedAt": "2026-11-04"
+            },
+            {
+              "url": "https://x.com/yodaka_info/status/2118691079881121909",
+              "retrievedAt": "2026-11-07"
             }
           ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "name": "さよならのやりなおし（ハンドメイド版）",
+          "price": 7000,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "専用のカット・印刷を施した15周年記念作の特別版",
+          "description": "15周年記念の新作『さよならのやりなおし』を、ディレクターのこだわりを詰め込んだハンドメイドで作った特別版。一部アイテムのデザインが通常版と異なるが、謎の内容は通常版と同じ。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 110,
+            "max": null
+          },
+          "players": null,
+          "isNew": true,
+          "limited": "両日合計50部（現地販売と予約分を含む）",
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "タッチ決済",
+            "Apple Pay",
+            "iD",
+            "QUICPay",
+            "交通系電子マネー",
+            "PayPay",
+            "au PAY",
+            "WeChat Pay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/yodaka_info/status/2118709285513552097",
+              "retrievedAt": "2026-11-07"
+            },
+            {
+              "url": "https://x.com/yodaka_info/status/2118691079881121909",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no05-3",
+          "hashtags": []
+        },
+        {
+          "name": "ORINAZO 世界一周",
+          "price": 2800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "紙を折って解く、世界一周がテーマの謎解きゲーム",
+          "description": "紙を折って謎を解くか、謎を解いて紙を折るか？世界一周をテーマにした謎解きゲーム。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 60,
+            "max": 180
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "タッチ決済",
+            "Apple Pay",
+            "iD",
+            "QUICPay",
+            "交通系電子マネー",
+            "PayPay",
+            "au PAY",
+            "WeChat Pay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/yodaka_info/status/2118691079881121909",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no05-4",
+          "hashtags": []
+        },
+        {
+          "name": "ドジな勇者は26回脱出する",
+          "price": 2800,
+          "priceNote": null,
+          "category": "kit",
+          "oneLiner": "RPGがテーマの、26ステージの脱出劇に挑む謎解き",
+          "description": "RPGをテーマにした謎解きゲーム。26ステージの脱出劇に挑む。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": {
+            "min": 90,
+            "max": 180
+          },
+          "players": null,
+          "isNew": false,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "タッチ決済",
+            "Apple Pay",
+            "iD",
+            "QUICPay",
+            "交通系電子マネー",
+            "PayPay",
+            "au PAY",
+            "WeChat Pay",
+            "Alipay+"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/yodaka_info/status/2118691079881121909",
+              "retrievedAt": "2026-11-07"
+            }
+          ],
+          "id": "no05-5",
+          "hashtags": []
+        }
+      ],
       "candidates": [
         {
           "name": "QUBE",

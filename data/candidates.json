@@ -416,42 +416,6 @@
     ]
   },
   {
-    "boothId": "no49",
-    "name": "謎解きゲーム code:box #4 探偵助手と、とおまわりのメッセージ編",
-    "price": 3200,
-    "reason": "公式ブース概要の「code:boxシリーズ」にあたる最新作とみられるが、今回どの巻を持ってくるかは書いていない。イベント価格3,200円、通販（BOOTH）は4,000円（送料込）。専用Webサイトを使うためスマホ必要",
-    "sources": [
-      {
-        "url": "https://sukuranburu.net/riddle/codebox4",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no49",
-    "name": "ぐずりありどるメモリーズ",
-    "price": 1200,
-    "reason": "謎解きドリル（300問＋ラス謎、B5・58ページ）。書籍版1,200円（DL版800円）。コミケ・ゲムマなどの頒布実績はあるが、今回持ってくるとは書いていない",
-    "sources": [
-      {
-        "url": "https://sukuranburu.net/gzrar_memories/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no49",
-    "name": "謎を解かないとゲームにならないトランプ（謎解きトランプ）",
-    "price": 2000,
-    "reason": "2022年秋のゲームマーケットで頒布開始した既存作。今回持ってくるとは書いていない",
-    "sources": [
-      {
-        "url": "https://sukuranburu.net/nazotora/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
     "boothId": "no53",
     "name": "善良なる悪しき者",
     "price": 2000,
@@ -757,22 +721,6 @@
   },
   {
     "boothId": "no71",
-    "name": "心技体",
-    "price": 4000,
-    "reason": "ナゾトキ番長のHPに『ナゾトキマーケットに向けてCrossXOne・ShareKOBEと共同制作』とあるが、ShareKOBEのサイトデータでは2025-11-08公開の昨年の商品。今回も持ってくるとは書いていない",
-    "sources": [
-      {
-        "url": "https://sites.google.com/view/nazotokibancho/%E6%8C%81%E3%81%A1%E5%B8%B0%E3%82%8A%E8%AC%8E%E3%82%AB%E3%83%95%E3%82%A7%E8%AC%8Eline%E8%AC%8E",
-        "retrievedAt": "2026-10-25"
-      },
-      {
-        "url": "https://raw.githubusercontent.com/ShareKOBEinc/Homepage/main/js/goods-data.js",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no71",
     "name": "（品目未発表）持ち帰り謎の出展",
     "price": null,
     "reason": "HPのスケジュールに『持ち帰り謎出展 11/7、8 東京・水道橋』とあるが、品目・価格・新作かどうかが書かれていない (10/30 X 確認: 品目の告知は新作『酔いどれ勇者からの生還』のみで、公式 p30〜p32 に該当)",
@@ -943,94 +891,6 @@
     "sources": [
       {
         "url": "https://note.com/paisen_nazo/n/n5ca8a0374d94",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no80",
-    "name": "（題名未発表）新作の謎解き",
-    "price": null,
-    "reason": "公式ブース概要に『新作の謎解き・過去ゲームイベントで頒布した旧作・その他いくつかの商品をお持ちします』とあるが、題名・価格が見つからない。Xでも10/25時点でナゾトキマーケット向けの新作謎の題名・価格は告知なし",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
-        "retrievedAt": "2026-10-25"
-      },
-      {
-        "url": "https://x.com/tsukumorozuya/status/2114249646860366002",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no80",
-    "name": "【謎解き】ツクモロのまたとない不運な一日",
-    "price": 600,
-    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2026春の新作、難易度4/10・10〜30分",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/items/8356955",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no80",
-    "name": "【グッズ】九十九金運開運御守",
-    "price": 1100,
-    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。おまけ謎付きのアクリルキーホルダー(約50×70mm)",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/items/8357054",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no80",
-    "name": "【暗号】解解 -kaidoku- vol.001『境』",
-    "price": 600,
-    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2025秋に先行販売",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/items/7898841",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no80",
-    "name": "【謎解き】形 -katachi-",
-    "price": 1000,
-    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)。ゲムマ2025秋の新作、難易度3/10・30〜90分",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/items/7898835",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no80",
-    "name": "【謎解き】adapt",
-    "price": 1200,
-    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no80",
-    "name": "【謎解き】99g -ツクモグラム-",
-    "price": 1000,
-    "reason": "BOOTHに掲載。『ゲムマ』で販売開始と書かれており、ナゾトキマーケットでの販売は書かれていない(公式概要の『過去ゲームイベントで頒布した旧作』に当たる可能性)",
-    "sources": [
-      {
-        "url": "https://booth.pm/ja/search/%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%90%AC%E5%B1%8B",
         "retrievedAt": "2026-10-25"
       }
     ]
