@@ -2565,7 +2565,11 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2115028234945352030",
@@ -2574,6 +2578,10 @@
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -2608,7 +2616,11 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/QurioStore_QK/status/2110966593761202308",
@@ -2621,6 +2633,10 @@
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -2655,7 +2671,11 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2115753011125325861",
@@ -2664,6 +2684,10 @@
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -2702,7 +2726,11 @@
             "sun"
           ],
           "imageUrl": "https://img.gamemarket.jp/thumb_20260508_134253_FUJI@4x.png",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://gamemarket.jp/booth/6539",
@@ -2711,6 +2739,10 @@
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2736,7 +2768,11 @@
             "sun"
           ],
           "imageUrl": "https://newscast.jp/attachments/bA6DclSDTwAEXp2BNqb7.png?w=600&h=600&a=1",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -2745,6 +2781,10 @@
             {
               "url": "https://www.atpress.ne.jp/news/1781874",
               "retrievedAt": "2026-10-31"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2770,7 +2810,11 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/G3cdHS7XEAAvTo2?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -2779,6 +2823,10 @@
             {
               "url": "https://x.com/NazoLock_baton/status/1979095039557996742",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2804,7 +2852,11 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HDGPR6maQAE2U_n?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -2813,6 +2865,10 @@
             {
               "url": "https://x.com/NazoLock_baton/status/2034963171341926801",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2838,7 +2894,11 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HCI5knKakAAiZnf?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "QRコード決済"
+          ],
           "sources": [
             {
               "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -2847,6 +2907,10 @@
             {
               "url": "https://x.com/NazoLock_baton/status/2029889732583510489",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }

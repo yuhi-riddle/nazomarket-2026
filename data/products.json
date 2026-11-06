@@ -2126,7 +2126,19 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no03/product/p111_photo1.png",
-    "payment": null,
+    "payment": [
+      "クレジットカード",
+      "交通系電子マネー",
+      "iD",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p111",
@@ -2179,6 +2191,10 @@
       {
         "url": "https://x.com/RIDDLER_nazo/status/2117557399976542218",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [
@@ -2206,8 +2222,7 @@
     ],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -2235,7 +2250,19 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "クレジットカード",
+      "交通系電子マネー",
+      "iD",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
@@ -2247,8 +2274,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -2276,7 +2302,19 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "クレジットカード",
+      "交通系電子マネー",
+      "iD",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
@@ -2288,8 +2326,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -2317,7 +2354,19 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "クレジットカード",
+      "交通系電子マネー",
+      "iD",
+      "QUICPay",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
@@ -2329,8 +2378,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -2355,7 +2403,12 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/ACRChirimenjako/status/2114623328807948775",
@@ -2368,6 +2421,14 @@
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no04",
@@ -2376,8 +2437,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -2402,7 +2462,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HV83r8Ia8AAmSR_?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116471588724105539",
@@ -2419,6 +2484,14 @@
       {
         "url": "https://x.com/tokiqil/status/2117588364262342843",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no04",
@@ -2426,8 +2499,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -2452,7 +2524,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HV9IBFJbMAICC_E?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116489752547619044",
@@ -2461,6 +2538,14 @@
       {
         "url": "https://x.com/tokiqil/status/2116773362835833312",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no04",
@@ -2468,8 +2553,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -2494,7 +2578,12 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HV8wdEragAEdjrf?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116464027580952871",
@@ -2503,6 +2592,14 @@
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no04",
@@ -2510,8 +2607,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -2537,7 +2633,12 @@
       "sat",
       "sun"
     ],
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "imageUrl": "https://pbs.twimg.com/media/HV9adgVa4AA0Sv3?format=jpg&name=small",
     "sources": [
       {
@@ -2555,6 +2656,14 @@
       {
         "url": "https://x.com/tokiqil/status/2117959327860527453",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no04-5",
@@ -2569,8 +2678,7 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -2596,7 +2704,12 @@
       "sat",
       "sun"
     ],
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "imageUrl": "https://pbs.twimg.com/media/HUttKXLbAAAomTM?format=jpg&name=small",
     "sources": [
       {
@@ -2614,6 +2727,14 @@
       {
         "url": "https://x.com/tokiqil/status/2117959327860527453",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no04-6",
@@ -2629,8 +2750,7 @@
     "unconfirmed": [
       "difficulty",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -2656,7 +2776,12 @@
       "sat",
       "sun"
     ],
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "imageUrl": "https://pbs.twimg.com/media/HTIZDnvbAAAI3YY?format=jpg&name=small",
     "sources": [
       {
@@ -2678,6 +2803,14 @@
       {
         "url": "https://x.com/tokiqil/status/2117959327860527453",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no04-7",
@@ -2691,8 +2824,7 @@
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
-      "difficulty",
-      "payment"
+      "difficulty"
     ]
   },
   {
@@ -2718,7 +2850,12 @@
       "sat",
       "sun"
     ],
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "imageUrl": "https://pbs.twimg.com/media/HV9pr_6bMAAHnbq?format=jpg&name=small",
     "sources": [
       {
@@ -2736,6 +2873,14 @@
       {
         "url": "https://x.com/tokiqil/status/2117959327860527453",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no04-8",
@@ -2750,8 +2895,7 @@
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -2777,7 +2921,12 @@
       "sat",
       "sun"
     ],
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "imageUrl": "https://pbs.twimg.com/media/HV9LqqhawAAEKQ-?format=jpg&name=small",
     "sources": [
       {
@@ -2799,14 +2948,17 @@
       {
         "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no04-9",
     "boothId": "no04",
     "hashtags": [],
     "unconfirmed": [
-      "difficulty",
-      "payment"
+      "difficulty"
     ]
   },
   {
@@ -2829,12 +2981,25 @@
       "sat",
       "sun"
     ],
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "imageUrl": null,
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "id": "no04-10",
@@ -2844,8 +3009,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -2873,7 +3037,12 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2116519980103786768",
@@ -2886,6 +3055,14 @@
       {
         "url": "https://x.com/tokiqil/status/2117959327860527453",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "reservations": [
@@ -2901,8 +3078,7 @@
       "difficulty",
       "players",
       "isNew",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -2927,7 +3103,12 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2117959327860527453",
@@ -2936,6 +3117,10 @@
       {
         "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no04",
@@ -2945,8 +3130,7 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -2971,7 +3155,12 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2117959327860527453",
@@ -2980,6 +3169,10 @@
       {
         "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no04",
@@ -2989,8 +3182,7 @@
       "playMinutes",
       "players",
       "isNew",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -3015,11 +3207,24 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HWV9iJZaQAAIyUM?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "キャッシュレス決済各種",
+      "バーコード決済各種"
+    ],
     "sources": [
       {
         "url": "https://x.com/tokiqil/status/2118237998299201845",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/tokiqil/status/2116553238698934281",
+        "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no04",
@@ -3029,8 +3234,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -10259,7 +10463,11 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HUunaAtb0AAEM6F?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p75",
@@ -10276,6 +10484,10 @@
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [
@@ -10292,8 +10504,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -10319,7 +10530,11 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no22/product/p76_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p76",
@@ -10332,6 +10547,10 @@
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [
@@ -10348,8 +10567,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -10375,7 +10593,11 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no22/product/p74_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p74",
@@ -10388,6 +10610,10 @@
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [
@@ -10404,8 +10630,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -10430,7 +10655,11 @@
       "sun"
     ],
     "imageUrl": "https://img.gamemarket.jp/thumb_20260508_134253_FUJI@4x.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://gamemarket.jp/booth/6539",
@@ -10439,6 +10668,10 @@
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no22",
@@ -10446,8 +10679,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -10472,7 +10704,11 @@
       "sun"
     ],
     "imageUrl": "https://newscast.jp/attachments/bA6DclSDTwAEXp2BNqb7.png?w=600&h=600&a=1",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -10481,6 +10717,10 @@
       {
         "url": "https://www.atpress.ne.jp/news/1781874",
         "retrievedAt": "2026-10-31"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no22",
@@ -10489,8 +10729,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -10515,7 +10754,11 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/G3cdHS7XEAAvTo2?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -10524,6 +10767,10 @@
       {
         "url": "https://x.com/NazoLock_baton/status/1979095039557996742",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no22",
@@ -10532,8 +10779,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -10558,7 +10804,11 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HDGPR6maQAE2U_n?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -10567,6 +10817,10 @@
       {
         "url": "https://x.com/NazoLock_baton/status/2034963171341926801",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no22",
@@ -10575,8 +10829,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -10601,7 +10854,11 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HCI5knKakAAiZnf?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QRコード決済"
+    ],
     "sources": [
       {
         "url": "https://x.com/NazoLock_baton/status/2116111619537391963",
@@ -10610,6 +10867,10 @@
       {
         "url": "https://x.com/NazoLock_baton/status/2029889732583510489",
         "retrievedAt": "2026-11-01"
+      },
+      {
+        "url": "https://x.com/NazoLock_baton/status/2116111619889766741",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no22",
@@ -10618,8 +10879,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "isNew",
-      "payment"
+      "isNew"
     ]
   },
   {
@@ -18042,7 +18302,20 @@
       "sun"
     ],
     "imageUrl": "https://www.scrapmagazine.com/s/nazomarket/img/booth/no54/product/p46_photo1.png",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "Apple Pay",
+      "タッチ決済",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://www.scrapmagazine.com/s/nazomarket/product/product.html?pno=p46",
@@ -18051,12 +18324,14 @@
       {
         "url": "https://x.com/calette_pj/status/2113873120004067794",
         "retrievedAt": "2026-10-25"
+      },
+      {
+        "url": "https://x.com/calette_pj/status/2117889585619574961",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "hashtags": [],
-    "unconfirmed": [
-      "payment"
-    ]
+    "unconfirmed": []
   },
   {
     "id": "no54-2",
@@ -18080,7 +18355,20 @@
       "sun"
     ],
     "imageUrl": "https://pbs.twimg.com/media/HWLC0z_bUAAUsIu?format=jpg&name=small",
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "Apple Pay",
+      "タッチ決済",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/calette_pj/status/2117542315430473850",
@@ -18096,8 +18384,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "payment"
+      "players"
     ]
   },
   {
@@ -18122,7 +18409,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "Apple Pay",
+      "タッチ決済",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
@@ -18135,8 +18435,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -18161,7 +18460,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "Apple Pay",
+      "タッチ決済",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
@@ -18174,8 +18486,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -18200,7 +18511,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "Apple Pay",
+      "タッチ決済",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
@@ -18213,8 +18537,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -18239,7 +18562,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "Apple Pay",
+      "タッチ決済",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
@@ -18252,8 +18588,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {
@@ -18278,7 +18613,20 @@
       "sun"
     ],
     "imageUrl": null,
-    "payment": null,
+    "payment": [
+      "現金",
+      "クレジットカード",
+      "QUICPay",
+      "Apple Pay",
+      "タッチ決済",
+      "PayPay",
+      "d払い",
+      "楽天ペイ",
+      "au PAY",
+      "メルペイ",
+      "WeChat Pay",
+      "Alipay+"
+    ],
     "sources": [
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
@@ -18291,8 +18639,7 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
-      "payment"
+      "imageUrl"
     ]
   },
   {

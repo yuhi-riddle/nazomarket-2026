@@ -1847,7 +1847,19 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "WeChat Pay",
+            "Alipay+"
+          ],
           "sources": [
             {
               "url": "https://x.com/RIDDLER_nazo/status/2111396810547704011",
@@ -1896,6 +1908,10 @@
             {
               "url": "https://x.com/RIDDLER_nazo/status/2117557399976542218",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "hashtags": [
@@ -1949,7 +1965,19 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "WeChat Pay",
+            "Alipay+"
+          ],
           "sources": [
             {
               "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
@@ -1982,7 +2010,19 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "WeChat Pay",
+            "Alipay+"
+          ],
           "sources": [
             {
               "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
@@ -2015,7 +2055,19 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "クレジットカード",
+            "交通系電子マネー",
+            "iD",
+            "QUICPay",
+            "PayPay",
+            "d払い",
+            "楽天ペイ",
+            "au PAY",
+            "メルペイ",
+            "WeChat Pay",
+            "Alipay+"
+          ],
           "sources": [
             {
               "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
@@ -2142,7 +2194,12 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/ACRChirimenjako/status/2114623328807948775",
@@ -2155,6 +2212,14 @@
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2180,7 +2245,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV83r8Ia8AAmSR_?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116471588724105539",
@@ -2197,6 +2267,14 @@
             {
               "url": "https://x.com/tokiqil/status/2117588364262342843",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2222,7 +2300,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV9IBFJbMAICC_E?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116489752547619044",
@@ -2231,6 +2314,14 @@
             {
               "url": "https://x.com/tokiqil/status/2116773362835833312",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2256,7 +2347,12 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HV8wdEragAEdjrf?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116464027580952871",
@@ -2265,6 +2361,14 @@
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2291,7 +2395,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/HV9adgVa4AA0Sv3?format=jpg&name=small",
           "sources": [
             {
@@ -2309,6 +2418,14 @@
             {
               "url": "https://x.com/tokiqil/status/2117959327860527453",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no04-5",
@@ -2343,7 +2460,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/HUttKXLbAAAomTM?format=jpg&name=small",
           "sources": [
             {
@@ -2361,6 +2483,14 @@
             {
               "url": "https://x.com/tokiqil/status/2117959327860527453",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no04-6",
@@ -2395,7 +2525,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/HTIZDnvbAAAI3YY?format=jpg&name=small",
           "sources": [
             {
@@ -2417,6 +2552,14 @@
             {
               "url": "https://x.com/tokiqil/status/2117959327860527453",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no04-7",
@@ -2451,7 +2594,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/HV9pr_6bMAAHnbq?format=jpg&name=small",
           "sources": [
             {
@@ -2469,6 +2617,14 @@
             {
               "url": "https://x.com/tokiqil/status/2117959327860527453",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no04-8",
@@ -2503,7 +2659,12 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "imageUrl": "https://pbs.twimg.com/media/HV9LqqhawAAEKQ-?format=jpg&name=small",
           "sources": [
             {
@@ -2525,6 +2686,10 @@
             {
               "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no04-9"
@@ -2549,12 +2714,25 @@
             "sat",
             "sun"
           ],
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "imageUrl": null,
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",
               "retrievedAt": "2026-11-01"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "id": "no04-10"
@@ -2584,7 +2762,12 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2116519980103786768",
@@ -2597,6 +2780,14 @@
             {
               "url": "https://x.com/tokiqil/status/2117959327860527453",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "reservations": [
@@ -2629,7 +2820,12 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2117959327860527453",
@@ -2638,6 +2834,10 @@
             {
               "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2663,7 +2863,12 @@
             "sun"
           ],
           "imageUrl": null,
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2117959327860527453",
@@ -2672,6 +2877,10 @@
             {
               "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2697,11 +2906,24 @@
             "sun"
           ],
           "imageUrl": "https://pbs.twimg.com/media/HWV9iJZaQAAIyUM?format=jpg&name=small",
-          "payment": null,
+          "payment": [
+            "現金",
+            "クレジットカード",
+            "キャッシュレス決済各種",
+            "バーコード決済各種"
+          ],
           "sources": [
             {
               "url": "https://x.com/tokiqil/status/2118237998299201845",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/tokiqil/status/2116553238698934281",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://tokiqil-nazotokimarket-2026.kurumi963000.chatgpt.site/",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
