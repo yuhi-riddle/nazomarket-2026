@@ -13,6 +13,7 @@ import {
 } from "../logic/cart.ts";
 import { boothPayment } from "../logic/boothPayment.ts";
 import { sortCatalog, type ProductView } from "../logic/catalog.ts";
+import { dayOnlyLabel } from "../logic/dayOnly.ts";
 import { summarizeMembers, type MemberSummaryRow } from "../logic/memberSummary.ts";
 import type { AppState } from "../state.ts";
 import type { AppStore, SharedStoreState } from "../store.ts";
@@ -86,10 +87,14 @@ function cartRow(
   const copy = el("div", "cart-row-copy");
   const name = button(view.product.name, "cart-product-name today-item-name");
   name.addEventListener("click", () => openDetails(view));
+  const dayOnly = dayOnlyLabel(view.product.days);
+  const dayOnlyBadge = dayOnly ? el("span", "cart-day-only", dayOnly) : null;
   const getBadge = el("span", "cart-get-badge", "GET!");
   getBadge.hidden = true;
   const amount = el("span", "today-item-amount cart-price");
-  copy.append(name, getBadge, amount);
+  copy.append(name);
+  if (dayOnlyBadge) copy.append(dayOnlyBadge);
+  copy.append(getBadge, amount);
   description.append(media, copy);
   const status = el("span", "today-item-status");
   const controls = el("div", "today-item-controls cart-row-controls");

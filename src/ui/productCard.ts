@@ -1,6 +1,7 @@
 import { type ProductView } from "../logic/catalog.ts";
 import type { CartItem } from "../logic/cart.ts";
 import { copiesLabel } from "../logic/copies.ts";
+import { dayOnlyLabel } from "../logic/dayOnly.ts";
 import { formatPlayMinutes } from "../logic/playTime.ts";
 import { limitedPrice } from "../logic/limitedPrice.ts";
 import "./catalogPolish.css";
@@ -69,13 +70,15 @@ export function productCard(view: ProductView, item: CartItem | undefined, actio
   const oneLiner = el("p", "product-one-liner", product.oneLiner);
   const limited = limitedPrice(product.price, product.priceNote);
   const copies = copiesLabel(product.limited);
-  if (limited || copies) {
+  const dayOnly = dayOnlyLabel(product.days);
+  if (limited || copies || dayOnly) {
     const limitedRow = el("span", "product-price-limited");
     if (limited) {
       limitedRow.append(el("span", "product-price-limited-label", limited.label));
       if (limited.regularPrice !== null) limitedRow.append(el("s", "product-price-regular", "通常" + limited.regularPrice.toLocaleString("ja-JP") + "円"));
     }
     if (copies) limitedRow.append(el("span", "product-copies", copies));
+    if (dayOnly) limitedRow.append(el("span", "product-day-only", dayOnly));
     priceElement.append(limitedRow);
   }
 

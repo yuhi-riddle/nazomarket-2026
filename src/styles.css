@@ -3030,13 +3030,23 @@ noscript {
 }
 
 .product-price-limited-label,
-.product-copies {
+.product-copies,
+.product-day-only,
+.cart-day-only {
+  display: inline-block;
+  max-width: 100%;
   border: 1px solid var(--key);
   color: var(--key);
   border-radius: var(--radius-control);
   padding: 0 var(--space-1);
   font-size: var(--font-12);
   font-weight: 700;
+}
+
+.cart-day-only {
+  display: block;
+  width: fit-content;
+  margin: var(--space-1) 0;
 }
 
 .product-price-regular {
