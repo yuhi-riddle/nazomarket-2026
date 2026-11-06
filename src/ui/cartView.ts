@@ -1,6 +1,7 @@
 import { catalog, venueLayout } from "../data.ts";
 import { createListShareUrl } from "../logic/listLink.ts";
 import {
+  cashSplit,
   cartTotals,
   daySummary,
   exportCartText,
@@ -235,6 +236,11 @@ export function cartView(
     summary.append(tile);
     summaryValues.set(key, { tile, value });
   }
+  const cashSplitSummary = el("div", "cart-cash-split");
+  cashSplitSummary.hidden = true;
+  const cashSplitText = el("p", "cart-cash-split-text");
+  const cashSplitNote = el("small", "cart-cash-split-note", "支払い方法が分からないブースは現金に入れています");
+  cashSplitSummary.append(cashSplitText, cashSplitNote);
 
   const budgetPanel = el("div", "cart-budget-panel");
   const budgetLabel = el("label", "cart-budget-field");
@@ -317,6 +323,7 @@ export function cartView(
     heading,
     ...(shared ? [shared.element] : []),
     summary,
+    cashSplitSummary,
     memberOverview,
     unknownPrice,
     unknownBought,
@@ -592,6 +599,17 @@ export function cartView(
   const updateTotals = (state: AppState) => {
     const totals = cartTotals(state.items, (id) => viewById.get(id)?.product.price ?? null);
     const spent = daySummary(state.items, (id) => viewById.get(id)?.product.price ?? null, state.budget);
+    const cash = cashSplit(
+      state.items,
+      (id) => viewById.get(id)?.product.price ?? null,
+      (id) => viewById.get(id)?.product.payment ?? null,
+    );
+    cashSplitSummary.hidden = state.items.length === 0 || spent.leftToBuy === 0;
+    cashSplitText.replaceChildren(
+      el("span", "cart-cash-split-label", "用意する現金"),
+      el("strong", "cart-cash-split-amount", format(cash.cash)),
+      el("span", "cart-cash-split-sub", "キャッシュレスで払える分 " + format(cash.cashless)),
+    );
     summaryValues.get("total")!.value.textContent = format(totals.amount);
     summaryValues.get("spent")!.value.textContent = format(spent.spent);
     const remaining = summaryValues.get("remaining")!;
