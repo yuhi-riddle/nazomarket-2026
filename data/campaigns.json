@@ -1792,5 +1792,24 @@
         "retrievedAt": "2026-11-06"
       }
     ]
+  },
+  {
+    "id": "no94-c1",
+    "boothId": "no94",
+    "productIds": [],
+    "kind": "discount",
+    "title": "3点買うごとに100円引き",
+    "detail": "立川茜の作品を3点購入するごとに100円引き（お品書きより）",
+    "endsAt": null,
+    "days": [
+      "sat"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/fantasistaKKP/status/2118494112601247911",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
   }
 ]
