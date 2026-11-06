@@ -1958,7 +1958,14 @@
             {
               "url": "https://x.com/getget4343/status/2113964103886925996",
               "retrievedAt": "2026-10-25"
+            },
+            {
+              "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         },
         {
@@ -1987,7 +1994,14 @@
             {
               "url": "https://x.com/JOKer_Project_/status/2117568720788680926",
               "retrievedAt": "2026-11-03"
+            },
+            {
+              "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+              "retrievedAt": "2026-11-06"
             }
+          ],
+          "payment": [
+            "現金のみ"
           ]
         },
         {
@@ -2015,13 +2029,87 @@
             {
               "url": "https://x.com/JOKer_Project_/status/2117936896814772724",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+              "retrievedAt": "2026-11-06"
             }
           ],
           "limited": "ナゾトキマーケットからリニューアル版を販売開始（謎の内容・答えは変更なし）",
-          "imageUrl": "https://pbs.twimg.com/media/HWOQo8BbIAAOgIt?format=jpg&name=small"
+          "imageUrl": "https://pbs.twimg.com/media/HWOQo8BbIAAOgIt?format=jpg&name=small",
+          "payment": [
+            "現金のみ"
+          ]
         }
       ],
-      "products": [],
+      "products": [
+        {
+          "name": "新作セット（水神に捧げる謎＋クリアファイル謎1・2）",
+          "price": 2600,
+          "priceNote": "通常2,970円から370円引き",
+          "category": "kit",
+          "oneLiner": "新作『水神に捧げる謎』とクリアファイル謎1・2のセット",
+          "description": "『水神に捧げる謎』（1,650円）とリニューアルしたクリアファイル謎1・2（各660円）のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no35-4",
+          "hashtags": []
+        },
+        {
+          "name": "はじめてセット（クリアファイル謎1・2＋はじめてのナゾトキBOOK）",
+          "price": 1700,
+          "priceNote": "通常1,980円から280円引き",
+          "category": "kit",
+          "oneLiner": "クリアファイル謎1・2とはじめてのナゾトキBOOKのセット",
+          "description": "クリアファイル謎1・2（各660円）と『はじめてのナゾトキBOOK』のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": null,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": [
+            "現金のみ"
+          ],
+          "sources": [
+            {
+              "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no35-5",
+          "hashtags": []
+        }
+      ],
       "candidates": [
         {
           "name": "ミステリーテリングゲーム『夕陽が落ちるまでに』",

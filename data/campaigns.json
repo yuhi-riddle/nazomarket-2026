@@ -194,6 +194,10 @@
       {
         "url": "https://prtimes.jp/main/html/rd/p/000000195.000052049.html",
         "retrievedAt": "2026-10-30"
+      },
+      {
+        "url": "https://x.com/nazogla/status/2118637765185396790",
+        "retrievedAt": "2026-11-06"
       }
     ]
   },
@@ -1920,6 +1924,32 @@
       },
       {
         "url": "https://x.com/NaZO_LAB/status/2118627157593477469",
+        "retrievedAt": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "id": "no35-c1",
+    "boothId": "no35",
+    "productIds": [
+      "no35-1",
+      "no35-2",
+      "no35-3",
+      "no35-4",
+      "no35-5"
+    ],
+    "kind": "discount",
+    "title": "お得なセット2種（新作セット・はじめてセット）",
+    "detail": "新作セット（水神に捧げる謎＋クリアファイル謎1・2）が2,970円→2,600円、はじめてセット（クリアファイル謎1・2＋はじめてのナゾトキBOOK）が1,980円→1,700円。支払いは現金のみ",
+    "endsAt": null,
+    "days": [
+      "sat",
+      "sun"
+    ],
+    "limit": null,
+    "sources": [
+      {
+        "url": "https://x.com/JOKer_Project_/status/2118629464842104989",
         "retrievedAt": "2026-11-06"
       }
     ]

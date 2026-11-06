@@ -140,34 +140,6 @@
     ]
   },
   {
-    "boothId": "no18",
-    "name": "シアター系謎解き シネマ・ニューウェーブへようこそ",
-    "price": 1540,
-    "reason": "2026年9月17日発売の新作。ナゾマの告知に作品名の記載なし(通販・全国小売店でも販売)",
-    "sources": [
-      {
-        "url": "https://www.clagla.jp/blog/2026/09/260917/",
-        "retrievedAt": "2026-10-25"
-      },
-      {
-        "url": "https://www.clagla.jp/blog/2026/10/261009/",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
-    "boothId": "no18",
-    "name": "解くまで飲めないナゾトキブリューイング",
-    "price": 1500,
-    "reason": "2025年のナゾマでの出品(B5・土日)。今回も持ってくるとは書いていない",
-    "sources": [
-      {
-        "url": "https://www.atpress.ne.jp/news/1001937",
-        "retrievedAt": "2026-10-25"
-      }
-    ]
-  },
-  {
     "boothId": "no21",
     "name": "絆 -ツナグ- 2つの時と場所を絆ぐあなただけの物語。",
     "price": 2500,
