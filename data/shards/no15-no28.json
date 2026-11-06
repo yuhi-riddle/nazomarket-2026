@@ -1336,6 +1336,37 @@
               "retrievedAt": "2026-11-03"
             }
           ]
+        },
+        {
+          "name": "新作3作品セット",
+          "price": null,
+          "priceNote": "セット価格は未発表（11/5 の告知で「3作品セットのご用意もございます」とだけ案内）",
+          "category": "kit",
+          "oneLiner": "マレーシア・スプリット、ユリイカの森vol.2、ぜここみの3作品セット",
+          "description": "新作3作品（ミステリーレターシリーズ「マレーシア・スプリット」、ユリイカの森からの招待状 vol.2、幻境堂 電話帳『ぜここみ』）のセット。",
+          "difficulty": {
+            "level": null,
+            "source": "unknown",
+            "basis": null
+          },
+          "playMinutes": null,
+          "players": null,
+          "isNew": true,
+          "limited": null,
+          "days": [
+            "sat",
+            "sun"
+          ],
+          "imageUrl": null,
+          "payment": null,
+          "sources": [
+            {
+              "url": "https://x.com/NAZOGUMI/status/2118282173858136108",
+              "retrievedAt": "2026-11-06"
+            }
+          ],
+          "id": "no17-10",
+          "hashtags": []
         }
       ],
       "candidates": [],

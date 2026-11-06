@@ -645,7 +645,7 @@
           },
           "playMinutes": null,
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -679,7 +679,7 @@
           },
           "playMinutes": null,
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
@@ -713,7 +713,7 @@
           },
           "playMinutes": null,
           "players": null,
-          "isNew": null,
+          "isNew": true,
           "limited": null,
           "days": [
             "sat",
