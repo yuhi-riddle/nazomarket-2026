@@ -11,6 +11,7 @@ import {
   toggleBought,
   type CartItem,
 } from "../logic/cart.ts";
+import { boothPayment } from "../logic/boothPayment.ts";
 import { sortCatalog, type ProductView } from "../logic/catalog.ts";
 import { summarizeMembers, type MemberSummaryRow } from "../logic/memberSummary.ts";
 import type { AppState } from "../state.ts";
@@ -38,7 +39,7 @@ type MemberTableRow = {
   remove: HTMLButtonElement;
   current: MemberSummaryRow | null;
 };
-type CartSection = { element: HTMLElement; heading: HTMLElement; rows: HTMLElement; idsKey: string; ids: string[]; title: string };
+type CartSection = { element: HTMLElement; heading: HTMLElement; payment: HTMLElement; rows: HTMLElement; idsKey: string; ids: string[]; title: string };
 type CartBucket = { key: string; title: string; ids: string[]; organization: string; boothCode: string };
 
 export type CartView = {
@@ -589,9 +590,10 @@ export function cartView(
     if (existing) return existing;
     const section = el("section", "today-route-group cart-route-group");
     const groupHeading = el("h4", "today-route-heading");
+    const payment = el("p", "today-route-payment");
     const groupRows = el("div", "today-route-rows cart-group-rows");
-    section.append(groupHeading, groupRows);
-    const created = { element: section, heading: groupHeading, rows: groupRows, idsKey: "", ids: [], title: "" };
+    section.append(groupHeading, payment, groupRows);
+    const created = { element: section, heading: groupHeading, payment, rows: groupRows, idsKey: "", ids: [], title: "" };
     sections.set(key, created);
     return created;
   };
@@ -682,6 +684,10 @@ export function cartView(
         if (section.idsKey !== idsKey) {
           section.idsKey = idsKey;
           section.ids = bucket.ids;
+          const paymentInfo = boothPayment(bucket.ids.map((id) => viewById.get(id)?.product.payment ?? null));
+          section.payment.textContent = paymentInfo.text;
+          section.payment.classList.toggle("is-cash-only", paymentInfo.cashOnly);
+          section.payment.classList.toggle("is-unknown", paymentInfo.unknown);
           let cursor: ChildNode | null = section.rows.firstChild;
           for (const id of bucket.ids) {
             const row = rows.get(id)?.element;
