@@ -2896,6 +2896,8 @@ noscript {
 
 .product-price {
   flex: none;
+  min-width: 0;
+  max-width: 100%;
   grid-column: 2;
   grid-row: 1;
   margin: 0;
@@ -2903,7 +2905,7 @@ noscript {
   color: var(--ink);
   font-size: 22px;
   line-height: 1.2;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .product-price-unit {
@@ -2919,7 +2921,8 @@ noscript {
   margin: 0;
 }
 
-.product-price-limited-label {
+.product-price-limited-label,
+.product-copies {
   border: 1px solid var(--key);
   color: var(--key);
   border-radius: var(--radius-control);
