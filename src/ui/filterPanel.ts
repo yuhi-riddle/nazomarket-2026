@@ -260,14 +260,19 @@ export function filterPanel(options: {
   const dialog = el("dialog", "filter-dialog");
   dialog.setAttribute("aria-labelledby", "filter-dialog-title");
   const sheet = el("div", "filter-sheet");
+  const header = el("div", "filter-sheet-header");
   const heading = el("h2", "section-title");
   heading.id = "filter-dialog-title";
+  const close = button("×", "button button-secondary dialog-close filter-dialog-close");
+  close.setAttribute("aria-label", "閉じる");
+  close.addEventListener("click", () => dialog.close());
+  header.append(heading, close);
   const mobileControls = filterControls({ ...options, includeSearch: false });
   const footer = el("div", "filter-sheet-footer");
   const apply = button("0件を表示", "button button-primary");
   apply.addEventListener("click", () => dialog.close());
   footer.append(apply);
-  sheet.append(heading, mobileControls.element, footer);
+  sheet.append(header, mobileControls.element, footer);
   dialog.append(sheet);
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) dialog.close();
