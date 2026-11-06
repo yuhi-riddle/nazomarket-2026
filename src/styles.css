@@ -1305,6 +1305,59 @@ a {
   font-weight: 700;
 }
 
+.shared-list-heading {
+  min-width: 0;
+}
+
+.shared-list-toggle {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.shared-list-toggle-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.shared-list-chevron {
+  flex: 0 0 auto;
+  color: var(--ink-muted);
+  transform: rotate(0deg);
+  transition: transform 160ms ease;
+}
+
+.shared-list-toggle[aria-expanded="true"] .shared-list-chevron {
+  transform: rotate(180deg);
+}
+
+.shared-list-body {
+  min-width: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.shared-list-body[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shared-list-chevron {
+    transition: none;
+  }
+}
+
 .shared-list-status,
 .shared-list-error,
 .shared-copy-status,
