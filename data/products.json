@@ -2249,7 +2249,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/riddlebox_2x-100.jpg?v=1702389179",
     "payment": [
       "クレジットカード",
       "交通系電子マネー",
@@ -2267,14 +2267,17 @@
       {
         "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://shop.riddler.co.jp/products/riddle-box",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no03",
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -2301,7 +2304,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/riddlebox2_2x-100.jpg?v=1702390395",
     "payment": [
       "クレジットカード",
       "交通系電子マネー",
@@ -2319,14 +2322,17 @@
       {
         "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://shop.riddler.co.jp/products/riddle-box2",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no03",
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -2353,7 +2359,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/2112_ALPHABETZ_product_f_2x-100.jpg?v=1730203201",
     "payment": [
       "クレジットカード",
       "交通系電子マネー",
@@ -2371,14 +2377,17 @@
       {
         "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://shop.riddler.co.jp/products/alphabetz",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no03",
     "hashtags": [],
     "unconfirmed": [
       "difficulty",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -4019,19 +4028,22 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HImJFl0asAARxiv.jpg?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2056698884252942751",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no09",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4059,19 +4071,22 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HImIuelboAAo55d.jpg?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2056336498702573994",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no09",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4177,19 +4192,22 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HJvDTFybEAAcE_q.jpg?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2061456021269393827",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no09",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -4256,19 +4274,22 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HR1LoylaMAAkgYZ.jpg?format=jpg&name=small",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/THE_NAZO_STORE/status/2100513087359205858",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no09",
     "hashtags": [],
     "unconfirmed": [
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -5021,7 +5042,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/ffb767090dbaca8682ef604dd88061f6.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5034,6 +5055,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/137345968",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5041,8 +5066,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5066,7 +5090,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/70302038ff359e09cf8d54b96e495f9c.png?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5079,6 +5103,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/144969682",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5086,8 +5114,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5111,7 +5138,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/89c90d8934954b0a765a939d1a625f62.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5124,6 +5151,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/15011246",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5131,8 +5162,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5156,7 +5186,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/d07519471f85f20c6f19317e1c180d99.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5169,6 +5199,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/28435801",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5176,8 +5210,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5201,7 +5234,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/94d4a570547c0e4419547ac2a97bb6ca.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5214,6 +5247,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/70624107",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5221,8 +5258,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5246,7 +5282,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/8510c3657a592821d0f85e5f51f96c8a.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5259,6 +5295,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/74085868",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5266,8 +5306,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5291,7 +5330,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/0282e3f045fafa0b37a2284431ef266a.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5304,6 +5343,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/76904200",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5311,8 +5354,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5336,7 +5378,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/d49fe27738595dc1cd3c2d4d5ec655de.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5349,6 +5391,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/79405908",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5356,8 +5402,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -5381,7 +5426,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/ccaf54a865fc97d7de67940a8bd9c8fb.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
     "payment": [
       "現金",
       "キャッシュレス"
@@ -5394,6 +5439,10 @@
       {
         "url": "https://x.com/efex_info/status/2109939701239218542",
         "retrievedAt": "2026-11-06"
+      },
+      {
+        "url": "https://efex.official.ec/items/81425204",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no11",
@@ -5401,8 +5450,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -15208,12 +15256,16 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://nazoad.com/wp-content/uploads/2025/10/100yen-707x1000.jpg",
     "payment": null,
     "sources": [
       {
         "url": "https://x.com/nazotoki_adv/status/2117540595363455289",
         "retrievedAt": "2026-11-03"
+      },
+      {
+        "url": "https://nazoad.com/event/100yen/",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no33",
@@ -15222,7 +15274,6 @@
       "difficulty",
       "playMinutes",
       "players",
-      "imageUrl",
       "payment"
     ]
   },
@@ -18404,7 +18455,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HWRCn_ja8AAOLuN.jpg?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -18423,6 +18474,10 @@
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/calette_pj/status/2117891031199011230",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no54",
@@ -18430,8 +18485,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -18455,7 +18509,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/HWRCpTJbAAAIzgn.jpg?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -18474,6 +18528,10 @@
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/calette_pj/status/2117891031199011230",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no54",
@@ -18481,8 +18539,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -18506,7 +18563,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/G-1hAcib0AAkWjr.jpg?format=jpg&name=small",
     "payment": [
       "現金",
       "クレジットカード",
@@ -18525,6 +18582,10 @@
       {
         "url": "https://x.com/calette_pj/status/2117889585619574961",
         "retrievedAt": "2026-11-05"
+      },
+      {
+        "url": "https://x.com/calette_pj/status/2012374318819237978",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no54",
@@ -18532,8 +18593,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -25724,7 +25784,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/e875d59b813781540ef27f6dadf239a7.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
     "payment": [
       "現金",
       "PayPay",
@@ -25734,6 +25794,10 @@
       {
         "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://shop.mikan-box.net/items/68650151",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no75",
@@ -25741,8 +25805,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -25766,7 +25829,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/2411391f94834251ae08c6c63b1c2c5e.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
     "payment": [
       "現金",
       "PayPay",
@@ -25776,6 +25839,10 @@
       {
         "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://shop.mikan-box.net/items/63062975",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no75",
@@ -25783,8 +25850,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -25808,7 +25874,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/37e47afa8eca07f58fe869640739b57f.png?im=Resize%2Cwidth%3D1280%2Ctype%3Dnormal&imformat=generic&q=90",
     "payment": [
       "現金",
       "PayPay",
@@ -25818,6 +25884,10 @@
       {
         "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://shop.mikan-box.net/items/124673520",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no75",
@@ -25825,8 +25895,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {
@@ -25850,7 +25919,7 @@
       "sat",
       "sun"
     ],
-    "imageUrl": null,
+    "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/37035635a7e81a7971859b8bef3dad92.png?im=Resize%2Cwidth%3D1280%2Ctype%3Dnormal&imformat=generic&q=90",
     "payment": [
       "現金",
       "PayPay",
@@ -25860,6 +25929,10 @@
       {
         "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
         "retrievedAt": "2026-11-02"
+      },
+      {
+        "url": "https://shop.mikan-box.net/items/124674705",
+        "retrievedAt": "2026-11-06"
       }
     ],
     "boothId": "no75",
@@ -25867,8 +25940,7 @@
     "unconfirmed": [
       "difficulty",
       "playMinutes",
-      "players",
-      "imageUrl"
+      "players"
     ]
   },
   {

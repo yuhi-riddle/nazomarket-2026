@@ -2142,7 +2142,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/e875d59b813781540ef27f6dadf239a7.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
           "payment": [
             "現金",
             "PayPay",
@@ -2152,6 +2152,10 @@
             {
               "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://shop.mikan-box.net/items/68650151",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2176,7 +2180,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/2411391f94834251ae08c6c63b1c2c5e.png?imformat=generic&q=90&im=Resize,width=1200,type=normal",
           "payment": [
             "現金",
             "PayPay",
@@ -2186,6 +2190,10 @@
             {
               "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://shop.mikan-box.net/items/63062975",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2210,7 +2218,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/37e47afa8eca07f58fe869640739b57f.png?im=Resize%2Cwidth%3D1280%2Ctype%3Dnormal&imformat=generic&q=90",
           "payment": [
             "現金",
             "PayPay",
@@ -2220,6 +2228,10 @@
             {
               "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://shop.mikan-box.net/items/124673520",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2244,7 +2256,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/37035635a7e81a7971859b8bef3dad92.png?im=Resize%2Cwidth%3D1280%2Ctype%3Dnormal&imformat=generic&q=90",
           "payment": [
             "現金",
             "PayPay",
@@ -2254,6 +2266,10 @@
             {
               "url": "https://x.com/nazo_mikanbox/status/2115064054352146819",
               "retrievedAt": "2026-11-02"
+            },
+            {
+              "url": "https://shop.mikan-box.net/items/124674705",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },

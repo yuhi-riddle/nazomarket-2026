@@ -1410,7 +1410,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWRCn_ja8AAOLuN.jpg?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -1429,6 +1429,10 @@
             {
               "url": "https://x.com/calette_pj/status/2117889585619574961",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/calette_pj/status/2117891031199011230",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1453,7 +1457,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HWRCpTJbAAAIzgn.jpg?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -1472,6 +1476,10 @@
             {
               "url": "https://x.com/calette_pj/status/2117889585619574961",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/calette_pj/status/2117891031199011230",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -1496,7 +1504,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/G-1hAcib0AAkWjr.jpg?format=jpg&name=small",
           "payment": [
             "現金",
             "クレジットカード",
@@ -1515,6 +1523,10 @@
             {
               "url": "https://x.com/calette_pj/status/2117889585619574961",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/calette_pj/status/2012374318819237978",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },

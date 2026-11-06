@@ -1964,7 +1964,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/riddlebox_2x-100.jpg?v=1702389179",
           "payment": [
             "クレジットカード",
             "交通系電子マネー",
@@ -1982,6 +1982,10 @@
             {
               "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://shop.riddler.co.jp/products/riddle-box",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2009,7 +2013,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/riddlebox2_2x-100.jpg?v=1702390395",
           "payment": [
             "クレジットカード",
             "交通系電子マネー",
@@ -2027,6 +2031,10 @@
             {
               "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://shop.riddler.co.jp/products/riddle-box2",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -2054,7 +2062,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0609/0316/1949/files/2112_ALPHABETZ_product_f_2x-100.jpg?v=1730203201",
           "payment": [
             "クレジットカード",
             "交通系電子マネー",
@@ -2072,6 +2080,10 @@
             {
               "url": "https://x.com/RIDDLER_nazo/status/2118282185471918274",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://shop.riddler.co.jp/products/alphabetz",
+              "retrievedAt": "2026-11-06"
             }
           ]
         }
@@ -3859,12 +3871,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HImJFl0asAARxiv.jpg?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2056698884252942751",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -3892,12 +3908,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HImIuelboAAo55d.jpg?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2056336498702573994",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -3985,12 +4005,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HJvDTFybEAAcE_q.jpg?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2061456021269393827",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4048,12 +4072,16 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://pbs.twimg.com/media/HR1LoylaMAAkgYZ.jpg?format=jpg&name=small",
           "payment": null,
           "sources": [
             {
               "url": "https://x.com/THE_NAZO_STORE/status/2118279671582478799",
               "retrievedAt": "2026-11-05"
+            },
+            {
+              "url": "https://x.com/THE_NAZO_STORE/status/2100513087359205858",
+              "retrievedAt": "2026-11-06"
             }
           ]
         },
@@ -4794,7 +4822,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/ffb767090dbaca8682ef604dd88061f6.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -4806,6 +4834,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/137345968",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -4831,7 +4863,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/70302038ff359e09cf8d54b96e495f9c.png?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -4843,6 +4875,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/144969682",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -4868,7 +4904,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/89c90d8934954b0a765a939d1a625f62.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -4880,6 +4916,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/15011246",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -4905,7 +4945,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/d07519471f85f20c6f19317e1c180d99.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -4917,6 +4957,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/28435801",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -4942,7 +4986,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/94d4a570547c0e4419547ac2a97bb6ca.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -4954,6 +4998,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/70624107",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -4979,7 +5027,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/8510c3657a592821d0f85e5f51f96c8a.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -4991,6 +5039,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/74085868",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -5016,7 +5068,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/0282e3f045fafa0b37a2284431ef266a.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -5028,6 +5080,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/76904200",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -5053,7 +5109,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/d49fe27738595dc1cd3c2d4d5ec655de.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -5065,6 +5121,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/79405908",
               "retrievedAt": "2026-11-06"
             }
           ]
@@ -5090,7 +5150,7 @@
             "sat",
             "sun"
           ],
-          "imageUrl": null,
+          "imageUrl": "https://baseec-img-mng.akamaized.net/images/item/origin/ccaf54a865fc97d7de67940a8bd9c8fb.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal",
           "payment": [
             "現金",
             "キャッシュレス"
@@ -5102,6 +5162,10 @@
             },
             {
               "url": "https://x.com/efex_info/status/2109939701239218542",
+              "retrievedAt": "2026-11-06"
+            },
+            {
+              "url": "https://efex.official.ec/items/81425204",
               "retrievedAt": "2026-11-06"
             }
           ]
